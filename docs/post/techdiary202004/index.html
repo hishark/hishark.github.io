@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang='zh'><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<title>四月の技术日记 | 777&#39;s BLOG</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_180x180_fill_box_center_2.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/css/eureka.min.css">
+
+
+
+
+<script defer src="https://hishark777.com/js/eureka.min.js"></script>
+
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo=" crossorigin="anonymous"></script>
+
+<meta itemprop="name" content="四月の技术日记 | 777&#39;s BLOG">
+<meta itemprop="description"
+    content="这里是777的四月份bb日记">
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "name": "777's BLOG",
+        "item": "https://hishark777.com/"
+    },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "name": "Posts",
+        "item": "https://hishark777.com/post/"
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "name": "四月の技术日记",
+        "item": "https://hishark777.com/post/techdiary202004/"
+    }]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hishark777.com/post/techdiary202004/"
+    },
+    "headline": "四月の技术日记 | 777\u0027s BLOG","datePublished": "2020-04-01T22:27:09+00:00",
+    "dateModified": "2020-04-01T22:27:09+00:00",
+    "wordCount":  4572 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Example publisher",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://hishark777.com/images/icon.png"
+        }
+        },
+    "description": "\u003cp\u003e这里是777的四月份bb日记\u003c\/p\u003e"
+}
+</script>
+
+<meta property="og:title" content="四月の技术日记 | 777&#39;s BLOG" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/techdiary202004/" />
+
+
+
+
+<meta property="og:description" content="这里是777的四月份bb日记" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="777&#39;s BLOG" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2020-04-01T22:27:09&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2020-04-01T22:27:09&#43;00:00" />
+
+
+
+<meta property="article:section" content="post" />
+
+
+<meta property="article:tag" content="TechDiary" />
+
+
+
+
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary202003/" />
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary202002/" />
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary201912/" />
+
+
+<body class="flex flex-col min-h-screen">
+    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    } else if (storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap p-4">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold ">777&#39;s BLOG</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
+            currenturl="https://hishark777.com/post/techdiary202004/">
+            
+            <a href="/authors/hishark777"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">关于</a>
+            
+            <a href="/post/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
+            
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">技术日记</a>
+            
+            <a href="https://hishark777.gitbook.io/android-interview/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">校招笔记</a>
+            
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+        
+    });
+
+    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
+        if (currenturl.length > 1) {
+            currenturl = currenturl.substr(0, currenturl.length - 1)
+        }
+
+        sessionStorage.setItem("mainKey", currenturl)
+
+        let elements = document.getElementsByClassName('main-a');
+        for (let i in elements) {
+            if (typeof elements[i] === "object") {
+                let elementurl = elements[i].getAttribute('href')
+                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
+                    elementurl = elementurl.substr(0, elementurl.length - 1)
+                }
+                if (elementurl == sessionStorage.getItem("mainKey")) {
+                    elements[i].classList.add('text-eureka')
+                } else {
+                    elements[i].classList.remove('text-eureka')
+                }
+            }
+        }
+</script></div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16">
+        
+        <div class="container mx-auto ">
+            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">四月の技术日记</h1>
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Apr 1, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>10分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/" class="hover:text-eureka">技术日记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        <div class="content">
+            <p>这里是777的四月份bb日记</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="2020-04-29">2020-04-29</h1>
+<h2 id="educative"><strong>Educative</strong></h2>
+<p>种草了几门课 观望一下</p>
+<h2 id="en"><strong>En</strong></h2>
+<blockquote>
+<p>Educative’s courses were made to help you learn faster, and get your hands dirty along the way.</p>
+</blockquote>
+<p>我想了半天怎么会帮我弄脏手，查了一下是亲身体验的意思。</p>
+<h1 id="2020-04-28">2020-04-28</h1>
+<h2 id="room-database-viewer"><strong>Room Database Viewer</strong></h2>
+<p><a href="https://plugins.jetbrains.com/plugin/1800-database-navigator">Database Navigator</a></p>
+<p><a href="https://sqlitebrowser.org/dl/">SQLite Browser</a></p>
+<p><a href="https://stackoverflow.com/questions/44429372/view-contents-of-database-created-with-room-persistence-library">View contents of database created with Room Persistence Library</a></p>
+<p><a href="https://my.oschina.net/u/3157597/blog/1790201">Android Debug Database无法浏览Android Room创建的数据库信息</a> - 奇怪哦 我就是databaseBuilder可是没用？而且ADD现在github上写的是支持Room inMemory诶？ 破案了，不能自定义路径！！</p>
+<p><a href="https://stackoverflow.com/questions/54424594/how-can-i-use-stetho-with-roomdatabase-in-android-studio">How can I use Stetho with RoomDataBase in Android Studio?</a></p>
+<h2 id="other"><strong>Other</strong></h2>
+<p><a href="https://learnku.com/articles/18908">执行 brew install 命令长时间卡在 Updating Homebrew 的解决方法</a></p>
+<h2 id="room"><strong>Room</strong></h2>
+<p><a href="https://stackoverflow.com/questions/44582397/android-room-persistent-library-typeconverter-error-of-error-cannot-figure-ou">Android room persistent library - TypeConverter error of error: Cannot figure out how to save field to database&rdquo;</a> - List</p>
+<p><a href="https://developer.android.com/training/data-storage/room/relationships?hl=zh-cn">定义对象之间的关系</a> - Room不允许实体对象互相引用哦 和大多数ORM框架不一样！</p>
+<h1 id="2020-04-24">2020-04-24</h1>
+<h2 id="constraintlayout"><strong>ConstraintLayout</strong></h2>
+<p>下面两篇杠上了啊哈哈哈哈哈哈</p>
+<p><a href="https://www.jianshu.com/p/17ec9bd6ca8a">约束布局ConstraintLayout看这一篇就够了</a></p>
+<p><a href="https://juejin.im/post/5d12c4146fb9a07ea33c24b7">ConstraintLayout,看完一篇真的就够了么？</a></p>
+<p>话说ConstraintLayout里面是不支持嵌套LinearLayout嘛目前没用</p>
+<p>之后看看</p>
+<h2 id="bug"><strong>Bug</strong></h2>
+<p><a href="https://blog.csdn.net/y_panda520/article/details/50952438">关于Linearlayout中控件设置为其底部的问题,android:layout_gravity=&quot;bottom&quot;没效果</a></p>
+<p><a href="http://awuxiaolong.me/2017/07/19/mac-adb-gradlew/">http://awuxiaolong.me/2017/07/19/mac-adb-gradlew/</a></p>
+<p><a href="https://blog.csdn.net/Picasso_L/article/details/53085299">https://blog.csdn.net/Picasso_L/article/details/53085299</a></p>
+<h2 id="坑"><strong>坑</strong></h2>
+<p>app:layout_constraintBottom_toBottomOf=&rdquo;@+id/ll_record_pic&rdquo;</p>
+<p>app:layout_constraintTop_toBottomOf=&rdquo;@+id/ll_record_pic&rdquo;</p>
+<p>两个效果不一样啊看清楚了</p>
+<h2 id="android"><strong>Android</strong></h2>
+<p><a href="https://www.cnblogs.com/macher/p/5077388.html">Android中修改ArrayAdapter字体以及颜色</a></p>
+<h2 id="androidx"><strong>AndroidX</strong></h2>
+<p>glide最新4.0的版本是用的androidX</p>
+<p>掌超项目之前用的都是surpport</p>
+<p>这样很多类都冲突了很麻烦</p>
+<p>所以glide用3.7就好了哈哈哈哈</p>
+<p>implementation &lsquo;com.github.bumptech.glide:glide:3.7.0&rsquo;
+implementation &lsquo;com.android.support:support-v4:23.2.1&rsquo;</p>
+<h2 id="杂"><strong>杂</strong></h2>
+<p>我觉得我还是少运行</p>
+<p>不要加一两行代码就运行</p>
+<p>至少写完一整个功能再去测试</p>
+<p>不然运行n次好浪费时间</p>
+<h1 id="2020-04-23">2020-04-23</h1>
+<h2 id="kotlin"><strong>Kotlin</strong></h2>
+<p><a href="https://stackoverflow.com/questions/34145495/2d-array-in-kotlin">2D Array in Kotlin</a></p>
+<p><a href="https://bezkoder.com/kotlin-queue/">Kotlin Queue tutorial with examples</a></p>
+<h2 id="as"><strong>AS</strong></h2>
+<p>as新建一个java括号莫名其妙跑到新的一行了 改回end of line</p>
+<p><a href="https://blog.csdn.net/tyndale1993/article/details/50369954">Android Studio修改大括号位置</a></p>
+<h2 id="android-1"><strong>Android</strong></h2>
+<p><a href="https://www.jianshu.com/p/17ec9bd6ca8a">ConstraintLayout</a> 稳定版1.1.3，出了2.0beta：<a href="https://developer.android.com/jetpack/androidx/releases/constraintlayout">https://developer.android.com/jetpack/androidx/releases/constraintlayout</a></p>
+<p><a href="https://www.jianshu.com/p/cfde3535233d">Android—Room数据库</a></p>
+<p><a href="https://blog.csdn.net/bear_huangzhen/article/details/46618475">Android 设置横屏或竖屏 设置全屏</a></p>
+<h2 id="error"><strong>Error</strong></h2>
+<p><a href="https://blog.csdn.net/ouyang_peng/article/details/51334761">You need to use a Theme.AppCompat theme (or descendant) with this activity.</a></p>
+<h2 id="room-1"><strong>Room</strong></h2>
+<p>@Dao
+public interface PatientDao { &hellip;
+}
+不要extends Dao，CURD不写全会报错</p>
+<h1 id="2020-04-21">2020-04-21</h1>
+<h2 id="讯飞语音听写"><strong>讯飞语音听写</strong></h2>
+<p><a href="https://www.xfyun.cn/doc/asr/voicedictation/Android-SDK.html">https://www.xfyun.cn/doc/asr/voicedictation/Android-SDK.html</a></p>
+<p>集成到新增病历里头去</p>
+<h2 id="algorithm"><strong>Algorithm</strong></h2>
+<p>看到好几个位运算题目都不想做，囤一下之后一次多做几个</p>
+<h2 id="kotlin-1"><strong>Kotlin</strong></h2>
+<p><a href="https://try.kotlinlang.org/">https://try.kotlinlang.org/</a></p>
+<p><a href="https://www.yiibai.com/kotlin/kotlin-hashmap.html">https://www.yiibai.com/kotlin/kotlin-hashmap.html</a></p>
+<p>在看郭霖新出的第一行代码</p>
+<p>新增了Kotlin的内容</p>
+<p>郭神还是稳</p>
+<p>写得好好</p>
+<p>不过书好厚啊 要有电子版就更好看了OTZ</p>
+<p>另外感觉之后做leetcode一个题可以分别用java和kotlin实现一下</p>
+<p>或许可以建一个新仓库</p>
+<p>建好了嘎嘎嘎 <a href="https://www.yuque.com/xiaoqizhang/leetcode">LeetCode J&amp;K</a></p>
+<h2 id="bug-1"><strong>Bug</strong></h2>
+<p><a href="https://stackoverflow.com/questions/57664688/kotin-type-mismatch-inferred-type-is-int-but-int-was-expected">https://stackoverflow.com/questions/57664688/kotin-type-mismatch-inferred-type-is-int-but-int-was-expected</a></p>
+<p><a href="https://stackoverflow.com/questions/9562315/in-kotlin-how-can-i-convert-an-int-to-an-int">https://stackoverflow.com/questions/9562315/in-kotlin-how-can-i-convert-an-int-to-an-int</a> ⭐️</p>
+<h2 id="杂-1"><strong>杂</strong></h2>
+<p>之前做阿里云直播/视频会议/环信视频会议的时候</p>
+<p>都忘记记下集成的流程以及途中遇到的坑</p>
+<p>这次搞讯飞语音听写要记录下来</p>
+<p>每发现一个好用的软件我都要开心一会儿</p>
+<p>toggl本周最佳</p>
+<p>全平台同步而且同步太牛批了👍</p>
+<h1 id="2020-04-17">2020-04-17</h1>
+<h2 id="android-2"><strong>Android</strong></h2>
+<p><a href="https://blog.csdn.net/weixin_41101173/article/details/80460632">事件处理之onTouchEvent()和onTouch()方法精炼详解</a></p>
+<p><a href="https://www.bbsmax.com/A/gVdnEKVN5W/">Android 画直线并实现拖动</a></p>
+<p><a href="https://blog.csdn.net/sollian/article/details/38038377">paint画虚线的问题</a></p>
+<p><a href="https://www.iteye.com/blog/androidbin-1487567">PathEffect类简单认识</a></p>
+<p><a href="https://www.jianshu.com/p/76603b122fb4">Android 自定义View之绘图</a></p>
+<p><a href="https://www.twle.cn/l/yufei/android/android-basic-index.html">教程 挺全</a></p>
+<h2 id="other-1"><strong>Other</strong></h2>
+<p>找了一晚上bug结果是width和height两个为0所以看不到线</p>
+<p>我吐血啦</p>
+<h1 id="2020-04-16">2020-04-16</h1>
+<h2 id="canvas"><strong>Canvas</strong></h2>
+<p><a href="https://developer.android.com/guide/topics/graphics/drawables">可绘制对象概览</a></p>
+<p>onTouchEvent 解决移动的问题</p>
+<h2 id="other-2"><strong>Other</strong></h2>
+<p>微博上看到一个好的idea</p>
+<p>想要尝试做出来</p>
+<p>have a try!</p>
+<h1 id="2020-04-15">2020-04-15</h1>
+<h2 id="spinner"><strong>Spinner</strong></h2>
+<p>这玩意官方中文名居然叫微调框 怎么不叫下拉框！</p>
+<p><a href="https://developer.android.com/guide/topics/ui/controls/spinner?hl=zh-cn">https://developer.android.com/guide/topics/ui/controls/spinner?hl=zh-cn</a></p>
+<h2 id="canvas-1"><strong>Canvas</strong></h2>
+<ul>
+<li>🔲<a href="https://developer.android.com/reference/android/graphics/Canvas">https://developer.android.com/reference/android/graphics/Canvas</a></li>
+</ul>
+<p><a href="https://juejin.im/post/5be29aa2e51d45228170ff33">https://juejin.im/post/5be29aa2e51d45228170ff33</a></p>
+<h2 id="view"><strong>View</strong></h2>
+<ul>
+<li>✅<a href="https://blog.csdn.net/carson_ho/article/details/56009827">https://blog.csdn.net/carson_ho/article/details/56009827</a></li>
+</ul>
+<h2 id="杂-2"><strong>杂</strong></h2>
+<p>最近老跑医院啊&hellip;</p>
+<p>希望家人都平平安安</p>
+<h1 id="2020-04-14">2020-04-14</h1>
+<h2 id="android-3"><strong>Android</strong></h2>
+<p><a href="https://blog.csdn.net/CrazyMo_/article/details/48931681">Android入门——利用Canvas完成绘制点、圆、直线、路径、椭圆、多边形等2D图形</a></p>
+<h2 id="other-3"><strong>Other</strong></h2>
+<p><a href="https://github.com/squidfunk/mkdocs-material">mkdocs-material</a> 这个看起来不错诶，有空试试</p>
+<h1 id="2020-04-08">2020-04-08</h1>
+<h2 id="android-4"><strong>Android</strong></h2>
+<ol>
+<li>在android开发时，很多时候我们会使用可视化界面创建数据库，或者拿到别人的数据库使用，这时就需要我们将db文件手动加入到文件夹中并读取。但是当我们把应用的apk部署到真机上的时候，已经创建好的数据库及其里边的数据是不能随着apk一起安装到真机上的。</li>
+</ol>
+<p><a href="https://blog.csdn.net/x15037308498/article/details/79458655">https://blog.csdn.net/x15037308498/article/details/79458655</a></p>
+<ol>
+<li><a href="https://blog.csdn.net/guozhaohui628/article/details/88936079">Android SharedPreferences 卸载 App 后还存在如何解决</a></li>
+<li>APP卸载后，如果数据库在默认的<code>/data/data</code>路径下，那么数据库也会被清除。如果在自定义到<code>/sdcard/</code>目录下就不会被清除。</li>
+<li>Room升级数据库时，如果不需要保留数据，可以直接使用<code>fallbackToDestructiveMigration</code>。</li>
+<li><a href="https://stackoverflow.com/questions/48903918/how-to-change-the-default-database-file-location-of-room-database">How to change the default database file location of Room DataBase</a>?</li>
+</ol>
+<p>自定义room数据库存储的位置（不用root）</p>
+<ol>
+<li>Room数据库数据导出后在Project目录下才找得到，Android目录下找不到哈。</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/1063797/1586329205542-5733176f-562e-4a69-89d8-8dad8acb4898.png" alt="https://cdn.nlark.com/yuque/0/2020/png/1063797/1586329205542-5733176f-562e-4a69-89d8-8dad8acb4898.png"></p>
+<ol>
+<li>
+<p>开发时，不停的重新build app，数据库db和自动生成的db-wal不变，db-shm随着每次重新build而更新，我还不知道这俩的作用和区别。先放着。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/1063797/1586331394783-7f114584-77e6-4316-995b-801dd93e22af.png" alt="https://cdn.nlark.com/yuque/0/2020/png/1063797/1586331394783-7f114584-77e6-4316-995b-801dd93e22af.png"></p>
+</li>
+<li>
+<p><a href="https://developer.android.com/guide/topics/ui/controls/togglebutton">ToggleButton</a></p>
+</li>
+</ol>
+<p>A toggle button allows the user to change a setting between two states.</p>
+<ol>
+<li>适配问题</li>
+</ol>
+<p><a href="https://www.jianshu.com/p/1302ad5a4b04">https://www.jianshu.com/p/1302ad5a4b04</a></p>
+<ul>
+<li>🔲搞清楚dimens适配</li>
+</ul>
+<h2 id="error-1"><strong>Error</strong></h2>
+<p>有个报错一闪而过</p>
+<p>先复制过来记一下明天看</p>
+<pre><code class="language-java">I/Choreographer: Skipped 42 frames! The application may be doing too much work on its main thread.
+I/super.usb.debu: Compiler allocated 5370KB to compile void com.viewphii.ussuper.MsActivity.onCreate(android.os.Bundle)
+D/MesureSurfaceView: surfaceCreated() surfaceChanged() w = 0 -&gt; 1045
+D/ViewphiiUSSuper: .MsSurfaceView#surfaceChanged[268] Enter
+D/MesureSurfaceView: doDraw()
+D/MesureSurfaceView: doDraw() : canvas(w, h) = (1045, 888) doDraw() : canvas_W = 1045 doDraw() : centerLine = 0 doDraw() : drawBmp == null
+D/ViewphiiUSSuper: .MsSurfaceView#surfaceChanged[268] Leave
+E/ActivityThread: Activity com.viewphii.ussuper.MsActivity has leaked IntentReceiver com.viewphii.ussuper.MsActivity$6@6f85294 that was originally registered here. Are you missing a call to unregisterReceiver()? android.app.IntentReceiverLeaked: Activity com.viewphii.ussuper.MsActivity has leaked IntentReceiver com.viewphii.ussuper.MsActivity$6@6f85294 that was originally registered here. Are you missing a call to unregisterReceiver()? at android.app.LoadedApk$ReceiverDispatcher.&lt;init&gt;(LoadedApk.java:1588) at android.app.LoadedApk.getReceiverDispatcher(LoadedApk.java:1368) at android.app.ContextImpl.registerReceiverInternal(ContextImpl.java:1515) at android.app.ContextImpl.registerReceiver(ContextImpl.java:1488) at android.app.ContextImpl.registerReceiver(ContextImpl.java:1476) at android.content.ContextWrapper.registerReceiver(ContextWrapper.java:627) at com.viewphii.ussuper.MsActivity.onCreate(MsActivity.java:1651) at android.app.Activity.performCreate(Activity.java:7825) at android.app.Activity.performCreate(Activity.java:7814) at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1306) at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3245) at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3409) at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:83) at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135) at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95) at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2016) at android.os.Handler.dispatchMessage(Handler.java:107) at android.os.Looper.loop(Looper.java:214) at android.app.ActivityThread.main(ActivityThread.java:7356) at java.lang.reflect.Method.invoke(Native Method) at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492) at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+D/History#: doSort() : 0 doSortDate() : false
+D/History#: doSort() : Loop END doSort() : View Start setGridView()
+D/History#: setListView()
+D/History#: doSort() : View END
+I/OpenGLRenderer: Davey! duration=862ms; Flags=1, IntendedVsync=617069625672818, Vsync=617070325672790, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=617070332748090, AnimationStart=617070332853871, PerformTraversalsStart=617070332898194, DrawStart=617070443047163, SyncQueued=617070450537685, SyncStart=617070450742945, IssueDrawCommandsStart=617070451586643, SwapBuffers=617070484228782, FrameCompleted=617070488713209, DequeueBufferDuration=3021000, QueueBufferDuration=208000,
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter
+D/ViewphiiUSSuper: .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter
+D/ViewphiiUSSuper: .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave .MsActivity#changeStartStopButton172[7839] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter
+D/ViewphiiUSSuper: .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Leave
+D/ViewphiiUSSuper: com.viewphii.customview.SettingView#updateWpsBtn[252] Enter
+D/ViewphiiUSSuper: .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave
+D/ViewphiiUSSuper: com.viewphii.customview.SettingView#updateWpsBtn[252] Leave com.viewphii.customview.SettingView#updateWpsBtn[253] Enter
+D/ViewphiiUSSuper: com.viewphii.customview.SettingView#updateWpsBtn[253] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave .MsActivity#changeStartStopButton172[7839] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave .MsActivity#changeStartStopButton172[7839] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter
+D/ViewphiiUSSuper: .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave .MsActivity#changeStartStopButton172[7839] Leave
+D/ViewphiiUSSuper: com.viewphii.customview.SettingView#updateWpsBtn[252] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave com.viewphii.customview.SettingView#updateWpsBtn[252] Leave
+D/ViewphiiUSSuper: com.viewphii.customview.SettingView#updateWpsBtn[253] Enter com.viewphii.customview.SettingView#updateWpsBtn[253] Leave
+D/### MsActivity ###: RequestPowerOff()
+D/WifiControl: ReqWait()#commandId：15 getRequestNumber() sendMsg★ ① mUSSocket が NULLではない★ sendMsg★ ②
+D/SensorParameter: loadPreset(name, send) = (Unconnected, false)
+D/ViewphiiUSSuper: .MsActivity$117#run[6262] Enter
+D/WifiControl: reqDisconnection() reqWiFiDisconnection()★mUSSocket が NULLでない reqDisconnection()#① reqWiFiDisconnection()# successfully?：true
+D/ViewphiiUSSuper: .MsActivity$117#run[6262] Leave
+D/WifiControl: terminate()
+D/ViewphiiUSSuper: .ViewphiiApplication#terminate[248] Enter
+D/ViewphiiUSSuper: .WifiControl#terminate[917] Enter
+E/ViewphiiUSSuper: .BaseSocket#terminate[182] disconnect java.lang.NullPointerException: Attempt to invoke virtual method 'void android.hardware.usb.UsbDeviceConnection.close()' on a null object reference
+D/ViewphiiUSSuper: .WifiControl#terminate[917] Leave .ViewphiiApplication#terminate[248] Leave
+D/ViewphiiApplication: ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────── │ main, com.viewphii.ussuper.ViewphiiApplication.setSsid(ViewphiiApplication.java:287) ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄ │ args[0] = ViewphiiApplication │ args[1] = setSsid() └────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+D/WifiControl: CONNECTION：切断
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave .MsActivity#changeStartStopButton172[7839] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Leave
+D/WifiControl: CONNECTION：切断
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave .MsActivity#changeStartStopButton172[7839] Leave
+D/ViewphiiUSSuper: .MsActivity#changeStartStopButton172[7839] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Enter .SettingsParamSharedPreferences#&lt;init&gt;[24] Leave .MsActivity#changeStartStopButton172[7839] Leave
+D/WifiControl: CONNECTION：切断
+D/ViewphiiUSSuper: .MsActivity#prepareForReconnect[10369] Enter
+D/WifiControl: reqDisconnection() reqWiFiDisconnection()★mUSSocket が NULLでない reqDisconnection()#①
+D/AndroidRuntime: Shutting down VM
+E/AndroidRuntime: FATAL EXCEPTION: main Process: com.viewphii.ussuper.usb.debug, PID: 4601 java.lang.NullPointerException: Attempt to invoke virtual method 'android.os.Message android.os.Handler.obtainMessage(int, java.lang.Object)' on a null object reference at com.viewphii.ussuper.BaseSocket.disconnect(BaseSocket.java:428) at com.viewphii.ussuper.WifiControl.reqWifiDisconnection(WifiControl.java:864) at com.viewphii.ussuper.WifiControl.reqDisconnection(WifiControl.java:839) at com.viewphii.ussuper.MsActivity.prepareForReconnect(MsActivity.java:10369) at com.viewphii.ussuper.WifiControl$WifiConHandler$1.run(WifiControl.java:547) at android.app.Activity.runOnUiThread(Activity.java:6923) at com.viewphii.ussuper.WifiControl$WifiConHandler.handleMessage(WifiControl.java:544) at android.os.Handler.dispatchMessage(Handler.java:107) at android.os.Looper.loop(Looper.java:214) at android.app.ActivityThread.main(ActivityThread.java:7356) at java.lang.reflect.Method.invoke(Native Method) at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492) at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+D/CrashHandler: 异常信息-&gt;com.viewphii.ussuper.BaseSocket.disconnect(BaseSocket.java:428)
+W/CrashHandler: ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────── │ Thread-5, com.viewphii.ussuper.CrashHandler$1.run(CrashHandler.java:164) ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄ │ Exception:+ │ java.lang.NullPointerException: Attempt to invoke virtual method 'android.os.Message android.os.Handler.obtainMessage(int, java.lang.Object)' on a null object reference │ at com.viewphii.ussuper.BaseSocket.disconnect(BaseSocket.java:428) │ at com.viewphii.ussuper.WifiControl.reqWifiDisconnection(WifiControl.java:864) │ at com.viewphii.ussuper.WifiControl.reqDisconnection(WifiControl.java:839) │ at com.viewphii.ussuper.MsActivity.prepareForReconnect(MsActivity.java:10369) │ at com.viewphii.ussuper.WifiControl$WifiConHandler$1.run(WifiControl.java:547) │ at android.app.Activity.runOnUiThread(Activity.java:6923) │ at com.viewphii.ussuper.WifiControl$WifiConHandler.handleMessage(WifiControl.java:544) │ at android.os.Handler.dispatchMessage(Handler.java:107) │ at a └──────────────────────────────────────────────────────────────────────────────────────────────────────────────── ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────── │ ndroid.os.Looper.loop(Looper.java:214) │ at android.app.ActivityThread.main(ActivityThread.java:7356) │ at java.lang.reflect.Method.invoke(Native Method) │ at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492) │ at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930) └────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+I/Process: Sending signal. PID: 4601 SIG: 9
+</code></pre>
+<h1 id="2020-04-06">2020-04-06</h1>
+<h2 id="orm"><strong>ORM</strong></h2>
+<p>Object Relation Mapping 对象关系映射</p>
+<p>简单来讲，我们使用的编程语言是面向对象语言，而使用的数据库则是关系型数据库，将面向对象的语言和面向关系的数据库之间建立一种映射关系，这就是ORM了。</p>
+<p>使用ORM框架的好处：可以用面向对象的思维来和数据库进行交互，绝大多数情况下不用在再和SQL语句打交道了，同时也不用担心操作数据库的逻辑会让项目的整体代码变得混乱。</p>
+<h2 id="java"><strong>Java</strong></h2>
+<p><a href="https://www.runoob.com/java/method-varargs.html">varargs 可变参数使用</a></p>
+<h1 id="2020-04-04">2020-04-04</h1>
+<blockquote>
+<p>404 Not Found</p>
+</blockquote>
+<h2 id="blog"><strong>Blog</strong></h2>
+<p>昨晚通宵了</p>
+<ol>
+<li>把Gitbook迁移到语雀（语雀牛批</li>
+<li>更换为国内CDN（访问速度变快太多了TuT</li>
+<li>添加评论系统（果然还是valine最快最好用！</li>
+<li>添加不蒜子访问统计（换了个域名都清零了 重新来过啦</li>
+<li>修改默认的配色（icarus好像没有一键修改主题色的选项 于是一边F12一边在css文件里修改</li>
+<li>买了本书（刷到郭神的公众号发现出新书了 用kotlin更新了《第一行代码》正好买来边学kotlin边复习一下android一些基础知识</li>
+</ol>
+<h2 id="color"><strong>Color</strong></h2>
+<p>修改配色的时候发现<a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">w3school的颜色转换</a>特别好用</p>
+<p>以前在用的还有<a href="https://www.sioe.cn/yingyong/yanse-rgb-16/">RGB转16进制</a></p>
+<h2 id="algorithm-1"><strong>Algorithm</strong></h2>
+<p>以前做算法题老是有意无意的无视题解下方的复杂度分析</p>
+<p>不能这样子啦以后每次都好好看一下！</p>
+<p>Github的Algorithm仓库慢慢被我堆起来了</p>
+<p>每天一题感觉好像有点太少啊</p>
+<p>有时间的话就多做两题</p>
+<h2 id="java-1"><strong>Java</strong></h2>
+<p><a href="https://www.runoob.com/java/java-stack-class.html">Stack</a></p>
+<h2 id="other-4"><strong>Other</strong></h2>
+<p>时间真的是海绵🧽</p>
+<p>挤一挤一定会有的</p>
+<p>我还以为语雀这边是markdown编辑器结果原来是富文本编辑器</p>
+<p>不过也挺好用的</p>
+<h1 id="2020-04-03">2020-04-03</h1>
+<h2 id="cdn"><strong>CDN</strong></h2>
+<p>今天突然发现icarus官网上的这篇blog：<a href="https://blog.zhangruipeng.me/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/">Speed up Your Site with Custom CDN</a></p>
+<p>然后照着<a href="https://www.hongfs.cn/2019/01/javascript/hexo-theme-icarus-domestic-acceleration/">hexo-theme-icarus 国内加速</a>修改了一下博客配置</p>
+<p>访问速度chuachua的上去了555开心</p>
+<h1 id="2020-04-02">2020-04-02</h1>
+<h2 id="icon"><strong>Icon</strong></h2>
+<p>使用Image Asset Studio创建应用图标</p>
+<p>以前都没怎么用过这个</p>
+<p><a href="https://developer.android.com/studio/write/image-asset-studio?hl=zh-cn">https://developer.android.com/studio/write/image-asset-studio?hl=zh-cn</a></p>
+<h2 id="androidx-1"><strong>androidx</strong></h2>
+<p><a href="https://www.jianshu.com/p/41de8689615d">https://www.jianshu.com/p/41de8689615d</a></p>
+<h2 id="杂-3"><strong>杂</strong></h2>
+<p>感觉每周可以用周末的空闲时间来把这边记的一些东西给看了</p>
+<p>看完标个已读哈哈</p>
+<h2 id="room对比其他数据库框架"><strong>Room对比其他数据库框架</strong></h2>
+<p><a href="https://android.ctolib.com/EdisonLiao-DBDemo.html">https://android.ctolib.com/EdisonLiao-DBDemo.html</a></p>
+<h1 id="2020-04-01">2020-04-01</h1>
+<h2 id="android-5"><strong>Android</strong></h2>
+<ol>
+<li><a href="https://juejin.im/post/5bac92f2f265da0aba70c1bf">https://juejin.im/post/5bac92f2f265da0aba70c1bf</a>找时间补一下这个</li>
+<li><a href="https://www.jianshu.com/p/7286e1be14fa">https://www.jianshu.com/p/7286e1be14fa</a>相对布局 有些记不清楚</li>
+</ol>
+<h2 id="rxjava"><strong>RxJava</strong></h2>
+<p><a href="https://github.com/ReactiveX/RxJava">https://github.com/ReactiveX/RxJava</a></p>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="https://hishark777.com/tags/techdiary/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#TechDiary</a>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">上一篇</span>
+        <a href="https://hishark777.com/post/roomdatabaseviewer/" class="block">
+            Room Database Viewer
+        </a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">下一篇</span>
+        <a href="https://hishark777.com/post/genymotion/" class="block">
+            使用Genymotion运行基于ARM架构的APP
+        </a>
+        
+    </div>
+</div>
+
+        
+    </div>
+    
+
+    
+    
+    <div
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">相关</h2>
+        <div class="content">
+            
+            <a href="https://hishark777.com/post/techdiary202003/">三月の技术日记</a>
+            <br />
+            
+            <a href="https://hishark777.com/post/techdiary202002/">过了个宅宅的年</a>
+            <br />
+            
+            <a href="https://hishark777.com/post/techdiary201912/">又一年末</a>
+            <br />
+            
+        </div>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
+    <p>&copy; 2017 - 2020 <a href="https://hishark777.com/">hishark777</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</footer></div>
+        </div>
+    </footer>
+</body>
+
+</html>

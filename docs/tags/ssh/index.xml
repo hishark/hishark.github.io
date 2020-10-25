@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on 777&#39;s BLOG</title>
+    <link>https://hishark777.com/tags/ssh/</link>
+    <description>Recent content in ssh on 777&#39;s BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2017 - 2020 &lt;a href=&#34;https://hishark777.com/&#34;&gt;hishark777&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 23 Nov 2019 09:29:24 +0000</lastBuildDate>
+    
+	<atom:link href="https://hishark777.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在同一台电脑上绑定Github和阿里云Code</title>
+      <link>https://hishark777.com/post/git_ssh/</link>
+      <pubDate>Sat, 23 Nov 2019 09:29:24 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/git_ssh/</guid>
+      <description>&lt;p&gt;老板昨天扔了个阿里云code的项目，电脑之前已经绑定了Github的账号，于是查了一下如何在同一台电脑上绑定两个账号，存档记录一下。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang='zh'><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<title>LruCache | 777&#39;s BLOG</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_180x180_fill_box_center_2.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/css/eureka.min.css">
+
+
+
+
+<script defer src="https://hishark777.com/js/eureka.min.js"></script>
+
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo=" crossorigin="anonymous"></script>
+
+<meta itemprop="name" content="LruCache | 777&#39;s BLOG">
+<meta itemprop="description"
+    content="一直拖着图片缓存的小视频没看今天看了一哈
+梳理一下">
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "name": "777's BLOG",
+        "item": "https://hishark777.com/"
+    },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "name": "Posts",
+        "item": "https://hishark777.com/post/"
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "name": "LruCache",
+        "item": "https://hishark777.com/post/lrucache/"
+    }]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hishark777.com/post/lrucache/"
+    },
+    "headline": "LruCache | 777\u0027s BLOG","datePublished": "2017-12-30T21:28:47+00:00",
+    "dateModified": "2017-12-30T21:28:47+00:00",
+    "wordCount":  477 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Example publisher",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://hishark777.com/images/icon.png"
+        }
+        },
+    "description": "\u003cp\u003e一直拖着图片缓存的小视频没看今天看了一哈\n梳理一下\u003c\/p\u003e"
+}
+</script>
+
+<meta property="og:title" content="LruCache | 777&#39;s BLOG" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/lrucache/" />
+
+
+
+
+<meta property="og:description" content="一直拖着图片缓存的小视频没看今天看了一哈
+梳理一下" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="777&#39;s BLOG" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2017-12-30T21:28:47&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2017-12-30T21:28:47&#43;00:00" />
+
+
+
+<meta property="article:section" content="post" />
+
+
+<meta property="article:tag" content="Android" />
+
+
+
+
+<body class="flex flex-col min-h-screen">
+    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    } else if (storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap p-4">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold ">777&#39;s BLOG</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
+            currenturl="https://hishark777.com/post/lrucache/">
+            
+            <a href="/authors/hishark777"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">关于</a>
+            
+            <a href="/post/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
+            
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">技术日记</a>
+            
+            <a href="https://hishark777.gitbook.io/android-interview/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">校招笔记</a>
+            
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+        
+    });
+
+    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
+        if (currenturl.length > 1) {
+            currenturl = currenturl.substr(0, currenturl.length - 1)
+        }
+
+        sessionStorage.setItem("mainKey", currenturl)
+
+        let elements = document.getElementsByClassName('main-a');
+        for (let i in elements) {
+            if (typeof elements[i] === "object") {
+                let elementurl = elements[i].getAttribute('href')
+                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
+                    elementurl = elementurl.substr(0, elementurl.length - 1)
+                }
+                if (elementurl == sessionStorage.getItem("mainKey")) {
+                    elements[i].classList.add('text-eureka')
+                } else {
+                    elements[i].classList.remove('text-eureka')
+                }
+            }
+        }
+</script></div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16">
+        
+        <div class="container mx-auto ">
+            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">LruCache</h1>
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Dec 30, 2017</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        <div class="content">
+            <p>一直拖着图片缓存的小视频没看今天看了一哈
+梳理一下</p>
+<h4 id="创建一个lrucache">创建一个LruCache</h4>
+<p>LruCache实际上是一个Map，指定它的键值对类型。</p>
+<pre><code class="language-java">private LruCache&lt;String,Bitmap&gt; mCaches;
+</code></pre>
+<h4 id="从缓存中获取数据">从缓存中获取数据</h4>
+<pre><code class="language-java">public Bitmap getBitmapFromCache(String url){
+	return mCaches.get(url);
+}
+</code></pre>
+<h4 id="把图片添加到缓存">把图片添加到缓存</h4>
+<pre><code class="language-java">public void addBitmapToCache(String url,Bitmap bitmap){
+	//如果缓存中没有该图片就噗特进去
+	if(getBitmapFromCache(url) == null){
+		mCaches.put(url,bitmap);
+	}
+}
+</code></pre>
+<h4 id="获取最大内存">获取最大内存</h4>
+<p>获取当前应用所可以使用的最大内存，并设置一个缓存的大小值来初始化LruCache。</p>
+<pre><code class="language-java">int maxMemory = (int) Runtime.getRuntime().maxMemory();
+int cacheSize = maxMemory / 4;
+mCaches = new LruCache&lt;String,Bitmap&gt;(cacheSize){
+	@Override
+	protected int sizeOf(String key,Bitmap value){
+		// 在每次存入缓存的时候调用，告诉系统当前存的对象到底有多大
+		// 所以返回一个实际的大小
+		return value.getByteCount();
+	}
+}
+</code></pre>
+<h4 id="获取图片">获取图片</h4>
+<pre><code class="language-java">//获取图片的时候，第一步会去内存缓存中取出图片
+Bitmap bitmap = getBitmapFromCache(url);
+if(bitmap == null){
+	//如果缓存中没有，就直接使用异步任务从网络上下载图片
+}else{
+	//如果缓存中有，就直接使用图片
+}
+</code></pre>
+<h4 id="下载图片的同时保存至lrucache">下载图片的同时保存至LruCache</h4>
+<pre><code class="language-java">//在异步任务的下载逻辑中，还需要将下载完毕的图片保存到LruCache中
+@Override
+protected Bitmap doInBackground(String... params){
+	String url = params[0];
+	//从网络上获取图片
+	Bitmap bitmap = getBitmapFromURL(url);
+	if(bitmap != null){
+		//将不在缓存的图片加入缓存
+		addBitmapToCache(url,bitmap);
+	}
+	return bitmap;
+}
+</code></pre>
+<blockquote>
+<p>通过这个方法就可以把下载过的图片存入缓存
+刷新时就不用每次都从网上下载
+典型的&quot;以内存换效率&rdquo;
+listview常用</p>
+</blockquote>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="https://hishark777.com/tags/android/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Android</a>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">上一篇</span>
+        <a href="https://hishark777.com/post/2018-1-1/" class="block">
+            新年快乐
+        </a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">下一篇</span>
+        <a href="https://hishark777.com/post/2017-12-30/" class="block">
+            毛哥有话说
+        </a>
+        
+    </div>
+</div>
+
+        
+    </div>
+    
+
+    
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
+    <p>&copy; 2017 - 2020 <a href="https://hishark777.com/">hishark777</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</footer></div>
+        </div>
+    </footer>
+</body>
+
+</html>
