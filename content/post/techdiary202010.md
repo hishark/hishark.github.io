@@ -10,33 +10,33 @@ categories: 技术日记
 年初立的FLAG怎么样了？
 <!--more-->
 
-# 2020-10-25
+## 2020-10-25
 
-## macos 终端科学上网
+### macos 终端科学上网
 
 [macos 终端科学上网](https://yaolianhua.cn/archives/macos%E7%BB%88%E7%AB%AF%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91)
 
-## Hugo
+### Hugo
 
 > 生命在于折腾
 
 [Hugo - Quick Start](https://gohugo.io/getting-started/quick-start/)
 
-## homebrew
+### homebrew
 
 [执行 brew install 命令长时间卡在 Updating Homebrew 的解决方法](https://learnku.com/articles/18908)
 
-# 2020-10-22
+## 2020-10-22
 
-## Java
+### Java
 
 [List.toArray() 将列表转换为数组 - 需要注意的点](https://blog.csdn.net/judyfun/article/details/50239127)
 
-## Kotlin
+### Kotlin
 
 [数据类 data](https://www.kotlincn.net/docs/reference/data-classes.html)
 
-## Interview
+### Interview
 
 闲来逛逛trending（一点也不闲好多事没做- -
 
@@ -44,7 +44,7 @@ categories: 技术日记
 
 [Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook)
 
-## 杂
+### 杂
 
 imovie 有点厉害哈
 
@@ -56,27 +56,27 @@ imovie 有点厉害哈
 
 可能是我太菜 我还是喜欢看逻辑结构清晰的代码OTZ
 
-# 2020-10-21
+## 2020-10-21
 
-## 测试
+### 测试
 
 规范一点
 
 [在 Android 平台上测试应用](https://developer.android.com/training/testing?hl=zh-cn)
 
-#  2020-10-19
+##  2020-10-19
 
-## 杂
+### 杂
 
 《一天一个EMOJI》
 
-# 2020-10-18
+## 2020-10-18
 
-## Plugin
+### Plugin
 
 [hexo-butterfly-douban](https://www.npmjs.com/package/hexo-butterfly-douban)
 
-## 杂
+### 杂
 
 不必对自己太过苛刻
 
@@ -86,9 +86,9 @@ imovie 有点厉害哈
 
 就好啦
 
-# 2020-10-16
+## 2020-10-16
 
-## 一些大哥们
+### 一些大哥们
 
 > 太强了这位姐 全都是干货
 
@@ -102,25 +102,25 @@ imovie 有点厉害哈
 
 [鸿洋 CSDN](https://blog.csdn.net/lmj623565791)
 
-## OOM
+### OOM
 
 [经典 OOM 问题｜pthread_create](https://www.jianshu.com/p/378e11fc3b34)
 
-## Android Repo
+### Android Repo
 
 [超强Android知识库](https://github.com/feelschaotic/AndroidKnowledgeSystem)
 
-# 2020-10-14
+## 2020-10-14
 
-## Deque
+### Deque
 [Java双端队列](https://www.jianshu.com/p/1e4db41ba1b8)
 
-## 杂
+### 杂
 整到草坪音乐会的门票啦🎫🎵
 
-# 2020-10-13
+## 2020-10-13
 
-## final
+### final
 
 ```
 Variable 'invite_dialog' is accessed from within inner class, needs to be final of effectively final
@@ -130,13 +130,13 @@ Variable 'invite_dialog' is accessed from within inner class, needs to be final 
 
 [Stackoverflow - Solution](https://stackoverflow.com/questions/14425826/variable-is-accessed-within-inner-class-needs-to-be-declared-final)
 
-## Dialog
+### Dialog
 
 可以简单的添加输入框，不一定要去自定义布局
 
 [Android在Dialog中添加输入框](https://blog.csdn.net/DeMonliuhui/article/details/53411202)
 
-## Error log
+### Error log
 
 ```
 android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
@@ -145,7 +145,7 @@ android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thre
 - [Stackoverflow Solution](https://stackoverflow.com/questions/5161951/android-only-the-original-thread-that-created-a-view-hierarchy-can-touch-its-vi)
 - 在子线程中更新了UI导致
 
-## 杂
+### 杂
 
 Screen 原来还有 `筛` 的意思！
 
@@ -161,9 +161,9 @@ n. (Screen)人名；(英)斯克林
 
 \_(:ᗤ」ㄥ)\_这个表情哈哈哈哈哈哈哈欠死了
 
-# 2020-10-12
+## 2020-10-12
 
-## 偶现bug
+### 偶现bug
 
 之前出现了几次没抓住没看到log
 
@@ -199,7 +199,7 @@ n. (Screen)人名；(英)斯克林
 
 - 可是崩溃的时候Activity是好好的？
 
-## bootcamp
+### bootcamp
 
 想打游戏了 然后：
 
@@ -207,7 +207,7 @@ n. (Screen)人名；(英)斯克林
 
 还挺快的睡个午觉就装好了！而且非常流畅！
 
-## 杂
+### 杂
 
 things + apple自带日历
 
@@ -217,9 +217,9 @@ things + apple自带日历
 
 我就是全场最菜！
 
-# 2020-10-11
+## 2020-10-11
 
-## git
+### git
 
 >  忽略本地修改 强制pull最新代码
 
@@ -233,25 +233,25 @@ things + apple自带日历
 
 ref: https://www.cnblogs.com/cyl048/p/13040118.html
 
-## clipboard.js
+### clipboard.js
 
 [[利用HIGHTLIGHTJS和CLIPBOARDJS给代码添加高亮染色+复制代码功能](https://tetsai.net/697.html)](https://tetsai.net/697.html)
 
-## icons
+### icons
 
 [feather icon](https://feathericons.com/)
 
-## 杂
+### 杂
 
 > 有时候别太依赖轮子了，有些轮子又大又全然而你只需要其中一个小功能，那为什么不研究一下原生怎么写？
 
-# 2020-10-10
+## 2020-10-10
 
-## sass not found
+### sass not found
 
 [安装sass，npm install node-sass --save报错的原因和解决办法](https://blog.csdn.net/lgysjfs/article/details/83039906)
 
-## highlight.js
+### highlight.js
 
 [使用 Highlight.js 优化代码块高亮效果](https://cps.ninja/2019/03/25/add-highlightjs-to-hexo-blog/)
 
@@ -260,19 +260,17 @@ ref: https://www.cnblogs.com/cyl048/p/13040118.html
 node-sass  --style compressed themes/pln/source/css/main.scss themes/pln/source/css/m.min.css
 ```
 
-
-
-## savedInstanceState
+### savedInstanceState
 
 [What's onCreate(Bundle savedInstanceState)](https://stackoverflow.com/questions/10810418/whats-oncreatebundle-savedinstancestate)
 
 [关于onCreate方法的参数 Bundle savedInstanceState的作用](https://blog.csdn.net/u011240877/article/details/39552043)
 
-## Git
+### Git
 
 [Git pull code常用问题汇总](https://cloud.tencent.com/developer/article/1554281)
 
-## 纪录片
+### 纪录片
 
 [History 101](https://www.imdb.com/title/tt11958648/)
 
@@ -287,7 +285,7 @@ node-sass  --style compressed themes/pln/source/css/main.scss themes/pln/source/
 - [x] The Social Dilemma
 - [x] High Score
 
-## Apps
+### Apps
 
 [Notable](https://notable.app/) 真的太好用了吧 无敌 
 
@@ -295,9 +293,9 @@ node-sass  --style compressed themes/pln/source/css/main.scss themes/pln/source/
 
 标签化管理挺像bear的
 
-# 2020-10-09
+## 2020-10-09
 
-## 语义化版本
+### 语义化版本
 
 [Semver - Github](https://github.com/semver/semver)
 
@@ -305,21 +303,21 @@ node-sass  --style compressed themes/pln/source/css/main.scss themes/pln/source/
 
 - dependency hell 哈哈哈哈哈哈
 
-## 中文排版指北
+### 中文排版指北
 
 [chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)
 
-## blog 
+### blog 
 
 [美团技术团队](https://tech.meituan.com/)
 
 - 干货挺多
 
-## 毕业论文格式要求
+### 毕业论文格式要求
 
 [华东师大信息公开- 学术规范制度（论文基本格式要求）](https://www.malic.xyz/archives/2430)
 
-## IDE Theme
+### IDE Theme
 
 [换个主题换个心情](https://plugins.jetbrains.com/search?tags=Theme)
 
@@ -327,13 +325,13 @@ node-sass  --style compressed themes/pln/source/css/main.scss themes/pln/source/
 
 [10个字体](https://zhuanlan.zhihu.com/p/36918101) 找不同？
 
-## 杂
+### 杂
 
 发现自己声明变量的时候永远下意识 `int` OTZ
 
-# 2020-10-08
+## 2020-10-08
 
-## Course
+### Course
 
 [FullStackOpen](https://fullstackopen.com/)
 
@@ -341,33 +339,33 @@ node-sass  --style compressed themes/pln/source/css/main.scss themes/pln/source/
 
 [database learning](https://github.com/pingcap/awesome-database-learning)
 
-## 杂
+### 杂
 
 假期最后一天
 
 忧愁 为什么不能一直躺平-a-
 
-# 2020-10-07
+## 2020-10-07
 
-## equals & ==
+### equals & ==
 
 [java基础中Integer值用==和equals判断相等问题解析](https://blog.csdn.net/w112736112736/article/details/77986283)
 
 [Java Integer的==和.equals()之间的区别](https://blog.csdn.net/Yaokai_AssultMaster/article/details/53276041)
 
-## the social dilemma
+### the social dilemma
 
 [Task Action](https://www.thesocialdilemma.com/take-action/)
 
 有点意思
 
-# 2020-10-06
+## 2020-10-06
 
-## 配色
+### 配色
 
 [lolcolors](https://www.webdesignrankings.com/resources/lolcolors/)
 
-## command line tools
+### command line tools
 
 [gyp: No Xcode or CLT version detected macOS Catalina | Anansewaa](https://medium.com/flawless-app-stories/gyp-no-xcode-or-clt-version-detected-macos-catalina-anansewaa-38b536389e8d)
 
@@ -379,33 +377,33 @@ xcode-select --install
 
 [macOS “不能安装该软件，因为当前无法从软件更新服务器获得” 解决方法](https://www.macwk.com/article/macos-command-line-tools-cannot-be-installed)
 
-## Gatsby
+### Gatsby
 
 [中文文档](https://www.gatsbyjs.cn/docs/)
 
-## img图片裂开问题
+### img图片裂开问题
 
 [img引用网络图片资源无法加载问题解决](https://my.oschina.net/u/4390999/blog/3418807)
 
 成了
 
-## Netflix
+### Netflix
 
 国庆疯狂补电影然后想到可以开个netflix 找了个车上车啦
 
 [强制设置netflix为1080p](https://medium.com/@Kyle591/%E5%A6%82%E4%BD%95%E5%BC%BA%E5%88%B6%E6%92%AD%E6%94%BE-netflix-1080p-%E6%B8%85%E6%99%B0%E5%BA%A6%E8%A7%86%E9%A2%91-super-netflix-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B-4cc4c2824de7)
 
-## 杂
+### 杂
 
 怎么就六号了，放假放的过于安逸，呜呜想退休了（还没工作的我在想些什么OTZ
 
-# 2020-10-04
+## 2020-10-04
 
-## 豆瓣
+### 豆瓣
 
 [豆瓣收藏秀](https://www.douban.com/service/badgemakerjs)好玩，捯饬了一下效果如[博客-关于](https://hishark777.com/about/)
 
-## 杂
+### 杂
 
 好的我终于打开了电脑
 
