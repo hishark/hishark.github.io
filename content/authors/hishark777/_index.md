@@ -13,7 +13,7 @@ avatar = ""
 # You can get similar results like this <i class="fab fa-github"></i> after searching.
 # Then icon is github and icon_pack is fab for this case.
 [[social]]
-  icon = "github"
+  icon = "github-alt"
   icon_pack = "fab"
   url = "https://github.com/hishark"
 
@@ -23,24 +23,31 @@ avatar = ""
   url = "https://weibo.com/hishark777"
 
 [[social]]
-  icon = "github"
+  icon = "twitter"
   icon_pack = "fab"
-  url = "https://github.com/hishark"
+  url = "https://twitter.com/hishark777"
+
+
 
 [[social]]
-  icon = "github"
-  icon_pack = "fab"
-  url = "https://github.com/hishark"
+  icon = "music"
+  icon_pack = "fas"
+  url = "http://music.163.com/#/user/home?id=97746388"
 
 [[social]]
-  icon = "github"
-  icon_pack = "fab"
-  url = "https://github.com/hishark"
+  icon = "play-circle"
+  icon_pack = "fas"
+  url = "https://space.bilibili.com/167148/#/channel/detail?cid=55848"
 
 [[social]]
-  icon = "github"
+  icon = "bug"
+  icon_pack = "fas"
+  url = "https://leetcode-cn.com/u/hishark/"
+
+[[social]]
+  icon = "instagram"
   icon_pack = "fab"
-  url = "https://github.com/hishark"
+  url = "https://www.instagram.com/hishark777"
 
 +++
 

@@ -8,10 +8,10 @@
   url = "/post/"
   weight = 20
 
-# [[main]]
-#  name = "归档"
-#  url = "/archive/"
-#  weight = 40
+ [[main]]
+  name = "相册"
+  url = "https://www.douban.com/people/hishark/photos"
+  weight = 40
 
 [[main]]
   name = "技术日记"
@@ -20,3 +20,4 @@
 [[main]]
   name = "校招笔记"
   url = "https://hishark777.gitbook.io/android-interview/"
+
