@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang='zh'><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<title>学习笔记 | 777&#39;s BLOG</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_180x180_fill_box_center_2.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/css/eureka.min.css">
+
+
+
+
+<script defer src="https://hishark777.com/js/eureka.min.js"></script>
+
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo=" crossorigin="anonymous"></script>
+
+<meta itemprop="name" content="学习笔记 | 777&#39;s BLOG">
+<meta itemprop="description"
+    content="Eureka is a elegant and powerful theme for Hugo.">
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "name": "777's BLOG",
+        "item": "https://hishark777.com/"
+    },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "name": "Categories",
+        "item": "https://hishark777.com/categories/"
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "name": "学习笔记",
+        "item": "https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+    }]
+}
+</script>
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[{
+            "@type":"ListItem",
+            "position":  1 ,
+            "name": "What’s new in AS 4.1",
+            "description": "\u003cp\u003e看看 Android Studio 4.1 更新了一些什么新特性：\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://developer.android.com/studio/releases#4-0-0\"\u003eAndroid Studio release notes  |  Android Developers\u003c/a\u003e\u003c/p\u003e",
+            "url": "https://hishark777.com/post/as-4-1/"
+        },{
+            "@type":"ListItem",
+            "position":  2 ,
+            "name": "Room Database",
+            "description": "\u003cp\u003e虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。\u003c/p\u003e\n\u003cp\u003e来看看 Room 怎么用。\u003c/p\u003e",
+            "url": "https://hishark777.com/post/room-database/"
+        },{
+            "@type":"ListItem",
+            "position":  3 ,
+            "name": "SRGAN",
+            "description": "\u003c!-- raw HTML omitted --\u003e\n\u003cp\u003e好的，为了毕业，开始读论文 T T\u003c/p\u003e",
+            "url": "https://hishark777.com/post/srgan/"
+        },{
+            "@type":"ListItem",
+            "position":  4 ,
+            "name": "Mkdocs-Material Tutorial",
+            "description": "\u003cp\u003e总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个\u003ca href=\"https://hishark777.com/777-Tech-Diary/\"\u003eGitbook\u003c/a\u003e放\u003cdel\u003e技术日记\u003c/del\u003e乱七八糟的碎碎念，最后迁移到了\u003ca href=\"http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/\"\u003e博客\u003c/a\u003e。前阵子看到有人用\u003ca href=\"https://squidfunk.github.io/mkdocs-material/\"\u003eMkdocs-Material\u003c/a\u003e写博客，转了一圈官网觉得有点意思，\u003cdel\u003e也比Gitbook更好看\u003c/del\u003e（比以前的Gitbook好看），于是来整一个做校招笔记。\u003c/p\u003e",
+            "url": "https://hishark777.com/post/mkdocs-material-tutorial/"
+        },{
+            "@type":"ListItem",
+            "position":  5 ,
+            "name": "Room Database Viewer",
+            "description": "\u003cp\u003eAndroid已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。\u003c/p\u003e\n\u003cp\u003e纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？\u003c/p\u003e\n\u003cp\u003e查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。\u003c/p\u003e",
+            "url": "https://hishark777.com/post/roomdatabaseviewer/"
+        },{
+            "@type":"ListItem",
+            "position":  6 ,
+            "name": "使用Genymotion运行基于ARM架构的APP",
+            "description": "\u003cp\u003e前阵子需要做个直播demo，用到了阿里云的直播sdk，阿里云文档中说明了只支持arm架构的cpu，而Android Studio自带的模拟器只能顺畅的跑x86架构的虚拟机，跑arm64架构的简直卡成树懒，查了一下发现Android Studio自带的AVD就是这个德行，遂放弃，转用Genymotion。\u003c/p\u003e\n\u003cp\u003e二月底决定毕业找Android岗的时候，下单了一台Pixel 2XL做自己以后的测试机，这篇文章写于购入Pixel之前，现在发现真机+模拟器一起用的测试环境还是挺舒服的。BTW谷歌亲儿子是真的好用啊，原生Android太香了，不出啥意外的话我以后就是iPhone主力机+Pixel备用机的快乐配置了哈哈哈哈哈。\u003c/p\u003e\n\u003cp\u003e好的扯远了，聊正事。\u003c/p\u003e",
+            "url": "https://hishark777.com/post/genymotion/"
+        },{
+            "@type":"ListItem",
+            "position":  7 ,
+            "name": "借助Gitbook搭建一个技术日记簿",
+            "description": "\u003cp\u003e整了个Gitbook挂到博客下面\n来写技术日记\u003c/p\u003e\n\u003cp\u003e去年十二月偶然发现了\u003ca href=\"https://www.github.com/joyeecheung/diary\"\u003ejoyee的tech-diary\u003c/a\u003e\n觉得挺有意思于是依葫芦画瓢也给自己整了个\u003ca href=\"https://www.hishark777.com/diary/\"\u003e777-Tech-Diary\u003c/a\u003e\n用了大概一个月发现了一些小问题：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e查看某日日记时无法直接查看前一日和后一日的内容\u003c/li\u003e\n\u003cli\u003e日历小bug有点多\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。\u003c/p\u003e\n\u003cp\u003e找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。\u003c/p\u003e",
+            "url": "https://hishark777.com/post/gitbook_techdiary/"
+        }
+    ]
+}
+</script>
+
+
+<meta property="og:title" content="学习笔记 | 777&#39;s BLOG" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+
+
+
+
+
+<meta property="og:description" content="Eureka is a elegant and powerful theme for Hugo." />
+
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="777&#39;s BLOG" />
+
+
+
+
+
+
+<meta property="og:updated_time" content="2020-10-19T21:18:33&#43;00:00" />
+
+
+
+<meta property="article:section" content="categories" />
+
+
+
+<link rel="alternate" type="application/rss+xml" href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" title="777's BLOG" />
+<body class="flex flex-col min-h-screen">
+    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    } else if (storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap p-4">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold ">777&#39;s BLOG</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
+            currenturl="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+            
+            <a href="/authors/hishark777"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">关于</a>
+            
+            <a href="/post/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
+            
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">技术日记</a>
+            
+            <a href="https://hishark777.gitbook.io/android-interview/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">校招笔记</a>
+            
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+        
+    });
+
+    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
+        if (currenturl.length > 1) {
+            currenturl = currenturl.substr(0, currenturl.length - 1)
+        }
+
+        sessionStorage.setItem("mainKey", currenturl)
+
+        let elements = document.getElementsByClassName('main-a');
+        for (let i in elements) {
+            if (typeof elements[i] === "object") {
+                let elementurl = elements[i].getAttribute('href')
+                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
+                    elementurl = elementurl.substr(0, elementurl.length - 1)
+                }
+                if (elementurl == sessionStorage.getItem("mainKey")) {
+                    elements[i].classList.add('text-eureka')
+                } else {
+                    elements[i].classList.remove('text-eureka')
+                }
+            }
+        }
+</script></div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16">
+        
+        <div class="container mx-auto ">
+            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+<article class="mx-6 my-8">
+    <h1 class="font-bold text-3xl text-primary-text">学习笔记</h1>
+    
+</article>
+<div class="bg-secondary-bg rounded overflow-hidden px-4 divide-y">
+    
+    <div class="px-2 py-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
+    <div class="w-full">
+        <div class="my-2">
+            <div class="mb-4">
+                <a href="https://hishark777.com/post/as-4-1/" class="font-bold text-xl hover:text-eureka">What’s new in AS 4.1</a>
+            </div>
+            <div class="content">
+                看看 Android Studio 4.1 更新了一些什么新特性：
+Android Studio release notes | Android Developers
+
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Oct 19, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+    </div>
+    
+    
+</div>
+    </div>
+    
+    <div class="px-2 py-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
+    <div class="w-full">
+        <div class="my-2">
+            <div class="mb-4">
+                <a href="https://hishark777.com/post/room-database/" class="font-bold text-xl hover:text-eureka">Room Database</a>
+            </div>
+            <div class="content">
+                虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
+来看看 Room 怎么用。
+
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Oct 15, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>3分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+    </div>
+    
+    
+</div>
+    </div>
+    
+    <div class="px-2 py-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
+    <div class="w-full">
+        <div class="my-2">
+            <div class="mb-4">
+                <a href="https://hishark777.com/post/srgan/" class="font-bold text-xl hover:text-eureka">SRGAN</a>
+            </div>
+            <div class="content">
+                好的，为了毕业，开始读论文 T T
+
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Sep 29, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+    </div>
+    
+    
+</div>
+    </div>
+    
+    <div class="px-2 py-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
+    <div class="w-full">
+        <div class="my-2">
+            <div class="mb-4">
+                <a href="https://hishark777.com/post/mkdocs-material-tutorial/" class="font-bold text-xl hover:text-eureka">Mkdocs-Material Tutorial</a>
+            </div>
+            <div class="content">
+                总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个Gitbook放技术日记乱七八糟的碎碎念，最后迁移到了博客。前阵子看到有人用Mkdocs-Material写博客，转了一圈官网觉得有点意思，也比Gitbook更好看（比以前的Gitbook好看），于是来整一个做校招笔记。
+
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Sep 7, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>2分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+    </div>
+    
+    
+</div>
+    </div>
+    
+    <div class="px-2 py-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
+    <div class="w-full">
+        <div class="my-2">
+            <div class="mb-4">
+                <a href="https://hishark777.com/post/roomdatabaseviewer/" class="font-bold text-xl hover:text-eureka">Room Database Viewer</a>
+            </div>
+            <div class="content">
+                Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
+纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？
+查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。
+
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>May 1, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>2分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+    </div>
+    
+    
+</div>
+    </div>
+    
+    <div class="px-2 py-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
+    <div class="w-full">
+        <div class="my-2">
+            <div class="mb-4">
+                <a href="https://hishark777.com/post/genymotion/" class="font-bold text-xl hover:text-eureka">使用Genymotion运行基于ARM架构的APP</a>
+            </div>
+            <div class="content">
+                前阵子需要做个直播demo，用到了阿里云的直播sdk，阿里云文档中说明了只支持arm架构的cpu，而Android Studio自带的模拟器只能顺畅的跑x86架构的虚拟机，跑arm64架构的简直卡成树懒，查了一下发现Android Studio自带的AVD就是这个德行，遂放弃，转用Genymotion。
+二月底决定毕业找Android岗的时候，下单了一台Pixel 2XL做自己以后的测试机，这篇文章写于购入Pixel之前，现在发现真机&#43;模拟器一起用的测试环境还是挺舒服的。BTW谷歌亲儿子是真的好用啊，原生Android太香了，不出啥意外的话我以后就是iPhone主力机&#43;Pixel备用机的快乐配置了哈哈哈哈哈。
+好的扯远了，聊正事。
+
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Apr 1, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>3分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+    </div>
+    
+    
+</div>
+    </div>
+    
+    <div class="px-2 py-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
+    <div class="w-full">
+        <div class="my-2">
+            <div class="mb-4">
+                <a href="https://hishark777.com/post/gitbook_techdiary/" class="font-bold text-xl hover:text-eureka">借助Gitbook搭建一个技术日记簿</a>
+            </div>
+            <div class="content">
+                整了个Gitbook挂到博客下面 来写技术日记
+去年十二月偶然发现了joyee的tech-diary 觉得挺有意思于是依葫芦画瓢也给自己整了个777-Tech-Diary 用了大概一个月发现了一些小问题：
+ 查看某日日记时无法直接查看前一日和后一日的内容 日历小bug有点多  第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。
+找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。
+
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Feb 15, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+    </div>
+    
+    
+</div>
+    </div>
+    
+</div>
+
+<ul class="pagination">
+  <li class="page-item">
+    <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+  </li>
+  <li class="page-item disabled">
+    <a  class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+  </li>
+  <li class="page-item active">
+    <a class="page-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/page/2/">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/page/3/">3</a>
+  </li>
+  <li class="page-item disabled">
+    <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/page/6/">6</a>
+  </li>
+  <li class="page-item">
+    <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/page/6/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+  </li>
+</ul>
+
+
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
+    <p>&copy; 2017 - 2020 <a href="https://hishark777.com/">hishark777</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</footer></div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang='zh'><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<title>倒数三个数 | 777&#39;s BLOG</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_180x180_fill_box_center_2.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/css/eureka.min.css">
+
+
+
+
+<script defer src="https://hishark777.com/js/eureka.min.js"></script>
+
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo=" crossorigin="anonymous"></script>
+
+<meta itemprop="name" content="倒数三个数 | 777&#39;s BLOG">
+<meta itemprop="description"
+    content="庆祝祖国母亲生日 这个月我一定好好学习
+还有三个月2020就结束啦
+年初立的FLAG怎么样了？">
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "name": "777's BLOG",
+        "item": "https://hishark777.com/"
+    },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "name": "Posts",
+        "item": "https://hishark777.com/post/"
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "name": "倒数三个数",
+        "item": "https://hishark777.com/post/techdiary202010/"
+    }]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hishark777.com/post/techdiary202010/"
+    },
+    "headline": "倒数三个数 | 777\u0027s BLOG","datePublished": "2020-10-01T09:50:41+00:00",
+    "dateModified": "2020-10-01T09:50:41+00:00",
+    "wordCount":  2395 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Example publisher",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://hishark777.com/images/icon.png"
+        }
+        },
+    "description": "\u003cp\u003e庆祝祖国母亲生日 这个月我一定好好学习\n还有三个月2020就结束啦\n年初立的FLAG怎么样了？\u003c\/p\u003e"
+}
+</script>
+
+<meta property="og:title" content="倒数三个数 | 777&#39;s BLOG" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/techdiary202010/" />
+
+
+
+
+<meta property="og:description" content="庆祝祖国母亲生日 这个月我一定好好学习
+还有三个月2020就结束啦
+年初立的FLAG怎么样了？" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="777&#39;s BLOG" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2020-10-01T09:50:41&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2020-10-01T09:50:41&#43;00:00" />
+
+
+
+<meta property="article:section" content="post" />
+
+
+<meta property="article:tag" content="TechDiary" />
+
+
+
+
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary202009/" />
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary202008/" />
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary202007/" />
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary202006/" />
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary202005/" />
+
+<meta property="og:see_also" content="https://hishark777.com/post/techdiary202004/" />
+
+
+<body class="flex flex-col min-h-screen">
+    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    } else if (storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap p-4">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold ">777&#39;s BLOG</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
+            currenturl="https://hishark777.com/post/techdiary202010/">
+            
+            <a href="/authors/hishark777"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">关于</a>
+            
+            <a href="/post/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
+            
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">技术日记</a>
+            
+            <a href="https://hishark777.gitbook.io/android-interview/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">校招笔记</a>
+            
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+        
+    });
+
+    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
+        if (currenturl.length > 1) {
+            currenturl = currenturl.substr(0, currenturl.length - 1)
+        }
+
+        sessionStorage.setItem("mainKey", currenturl)
+
+        let elements = document.getElementsByClassName('main-a');
+        for (let i in elements) {
+            if (typeof elements[i] === "object") {
+                let elementurl = elements[i].getAttribute('href')
+                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
+                    elementurl = elementurl.substr(0, elementurl.length - 1)
+                }
+                if (elementurl == sessionStorage.getItem("mainKey")) {
+                    elements[i].classList.add('text-eureka')
+                } else {
+                    elements[i].classList.remove('text-eureka')
+                }
+            }
+        }
+</script></div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16">
+        
+        <div class="container mx-auto ">
+            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">倒数三个数</h1>
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Oct 1, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>5分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/" class="hover:text-eureka">技术日记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        <div class="content">
+            <p>庆祝祖国母亲生日 这个月我一定好好学习
+还有三个月2020就结束啦
+年初立的FLAG怎么样了？</p>
+<h1 id="2020-10-25">2020-10-25</h1>
+<h2 id="macos-终端科学上网">macos 终端科学上网</h2>
+<p><a href="https://yaolianhua.cn/archives/macos%E7%BB%88%E7%AB%AF%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91">macos 终端科学上网</a></p>
+<h2 id="hugo">Hugo</h2>
+<blockquote>
+<p>生命在于折腾</p>
+</blockquote>
+<p><a href="https://gohugo.io/getting-started/quick-start/">Hugo - Quick Start</a></p>
+<h2 id="homebrew">homebrew</h2>
+<p><a href="https://learnku.com/articles/18908">执行 brew install 命令长时间卡在 Updating Homebrew 的解决方法</a></p>
+<h1 id="2020-10-22">2020-10-22</h1>
+<h2 id="java">Java</h2>
+<p><a href="https://blog.csdn.net/judyfun/article/details/50239127">List.toArray() 将列表转换为数组 - 需要注意的点</a></p>
+<h2 id="kotlin">Kotlin</h2>
+<p><a href="https://www.kotlincn.net/docs/reference/data-classes.html">数据类 data</a></p>
+<h2 id="interview">Interview</h2>
+<p>闲来逛逛trending（一点也不闲好多事没做- -</p>
+<p>介个不错，resume那块儿抽空看看</p>
+<p><a href="https://github.com/yangshun/tech-interview-handbook">Tech Interview Handbook</a></p>
+<h2 id="杂">杂</h2>
+<p>imovie 有点厉害哈</p>
+<p>我觉得 ios 端的反而最好用？</p>
+<p>//</p>
+<p>我非常不喜欢 为了减少代码行数 然后把易读的代码变成一行 的行为</p>
+<p>可能是我太菜 我还是喜欢看逻辑结构清晰的代码OTZ</p>
+<h1 id="2020-10-21">2020-10-21</h1>
+<h2 id="测试">测试</h2>
+<p>规范一点</p>
+<p><a href="https://developer.android.com/training/testing?hl=zh-cn">在 Android 平台上测试应用</a></p>
+<h1 id="2020-10-19">2020-10-19</h1>
+<h2 id="杂-1">杂</h2>
+<p>《一天一个EMOJI》</p>
+<h1 id="2020-10-18">2020-10-18</h1>
+<h2 id="plugin">Plugin</h2>
+<p><a href="https://www.npmjs.com/package/hexo-butterfly-douban">hexo-butterfly-douban</a></p>
+<h2 id="杂-2">杂</h2>
+<p>不必对自己太过苛刻</p>
+<p>也不必太过纵容</p>
+<p>取个对自己来说最佳的平衡点</p>
+<p>就好啦</p>
+<h1 id="2020-10-16">2020-10-16</h1>
+<h2 id="一些大哥们">一些大哥们</h2>
+<blockquote>
+<p>太强了这位姐 全都是干货</p>
+</blockquote>
+<p><a href="https://github.com/feelschaotic">Feelchaotic Github</a></p>
+<p><a href="https://www.jianshu.com/u/79087863dce7">Feelchaotic 简书</a></p>
+<p><a href="https://www.jianshu.com/nb/15961211?order_by=seq">Feelchaotic 校招专题笔记</a></p>
+<blockquote>
+<p>这位哥也全是干货</p>
+</blockquote>
+<p><a href="https://blog.csdn.net/lmj623565791">鸿洋 CSDN</a></p>
+<h2 id="oom">OOM</h2>
+<p><a href="https://www.jianshu.com/p/378e11fc3b34">经典 OOM 问题｜pthread_create</a></p>
+<h2 id="android-repo">Android Repo</h2>
+<p><a href="https://github.com/feelschaotic/AndroidKnowledgeSystem">超强Android知识库</a></p>
+<h1 id="2020-10-14">2020-10-14</h1>
+<h2 id="deque">Deque</h2>
+<p><a href="https://www.jianshu.com/p/1e4db41ba1b8">Java双端队列</a></p>
+<h2 id="杂-3">杂</h2>
+<p>整到草坪音乐会的门票啦🎫🎵</p>
+<h1 id="2020-10-13">2020-10-13</h1>
+<h2 id="final">final</h2>
+<pre><code>Variable 'invite_dialog' is accessed from within inner class, needs to be final of effectively final
+</code></pre>
+<p><a href="https://cuipengfei.me/blog/2013/06/22/why-does-it-have-to-be-final/">为什么必须是final的呢？</a></p>
+<p><a href="https://stackoverflow.com/questions/14425826/variable-is-accessed-within-inner-class-needs-to-be-declared-final">Stackoverflow - Solution</a></p>
+<h2 id="dialog">Dialog</h2>
+<p>可以简单的添加输入框，不一定要去自定义布局</p>
+<p><a href="https://blog.csdn.net/DeMonliuhui/article/details/53411202">Android在Dialog中添加输入框</a></p>
+<h2 id="error-log">Error log</h2>
+<pre><code>android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+</code></pre>
+<ul>
+<li><a href="https://stackoverflow.com/questions/5161951/android-only-the-original-thread-that-created-a-view-hierarchy-can-touch-its-vi">Stackoverflow Solution</a></li>
+<li>在子线程中更新了UI导致</li>
+</ul>
+<h2 id="杂-4">杂</h2>
+<p>Screen 原来还有 <code>筛</code> 的意思！</p>
+<pre><code class="language-java">screen  
+ 英  [skriːn]   美  [skriːn]
+
+n. 屏，幕；屏风
+vt. 筛；拍摄；放映；掩蔽
+vi. 拍电影
+n. (Screen)人名；(英)斯克林
+</code></pre>
+<p>_(:ᗤ」ㄥ)_这个表情哈哈哈哈哈哈哈欠死了</p>
+<h1 id="2020-10-12">2020-10-12</h1>
+<h2 id="偶现bug">偶现bug</h2>
+<p>之前出现了几次没抓住没看到log</p>
+<p>这次终于给我逮到了 看看咋回事</p>
+<pre><code>2020-10-12 15:12:46.551 28737-29750/com.viewphii.ussuper.usb.debug W/CrashHandler:  
+    ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    │ Thread-22, com.viewphii.ussuper.CrashHandler$1.run(CrashHandler.java:164)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+    │ Exception:+
+    │ android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@23b40b is not valid; is your activity running?
+    │ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:780)
+    │ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:373)
+    │ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:114)
+    │ 	at android.app.Dialog.show(Dialog.java:436)
+    │ 	at com.viewphii.ussuper.MsActivity.createDialog(MsActivity.java:4876)
+    │ 	at com.viewphii.ussuper.MsActivity$107.handleMessage(MsActivity.java:4832)
+    │ 	at android.os.Handler.dispatchMessage(Handler.java:102)
+    │ 	at android.os.Looper.loop(Looper.java:156)
+    │ 	at android.app.ActivityThread.main(ActivityThread.java:6524)
+    │ 	at java.lang.reflect.Method.invoke(Native Method)
+    └────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2020-10-12 15:12:46.551 28737-29750/com.viewphii.ussuper.usb.debug W/CrashHandler:  
+    ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    │ 
+    │ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:941)
+    │ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:831)
+    └────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</code></pre>
+<p><a href="https://blog.csdn.net/qq_34369025/article/details/68489245">解决Unable to add window</a></p>
+<ul>
+<li>可是崩溃的时候Activity是好好的？</li>
+</ul>
+<h2 id="bootcamp">bootcamp</h2>
+<p>想打游戏了 然后：</p>
+<p><a href="https://support.apple.com/zh-cn/guide/bootcamp-assistant/bcmp173b3bf2/mac">使用“启动转换”安装 Windows</a></p>
+<p>还挺快的睡个午觉就装好了！而且非常流畅！</p>
+<h2 id="杂-5">杂</h2>
+<p>things + apple自带日历</p>
+<p>最强组合👍</p>
+<p>晚上吃完饭在实验室一起打party animals哈哈哈哈哈笑死我了好好玩</p>
+<p>我就是全场最菜！</p>
+<h1 id="2020-10-11">2020-10-11</h1>
+<h2 id="git">git</h2>
+<blockquote>
+<p>忽略本地修改 强制pull最新代码</p>
+</blockquote>
+<p>不晓得查了多少次了老不记得，熟读背诵默写！（。</p>
+<pre><code class="language-git">1. git fetch --all // 从远程拉取最新的代码，不merge
+2. git reset --hard origin/master // 使用指定分支master的代码强制覆盖本地
+3. git pull // 从远程拉取最新的代码，自动merge
+</code></pre>
+<p>ref: <a href="https://www.cnblogs.com/cyl048/p/13040118.html">https://www.cnblogs.com/cyl048/p/13040118.html</a></p>
+<h2 id="clipboardjs">clipboard.js</h2>
+<p>[<a href="https://tetsai.net/697.html">利用HIGHTLIGHTJS和CLIPBOARDJS给代码添加高亮染色+复制代码功能</a>](<a href="https://tetsai.net/697.html">https://tetsai.net/697.html</a>)</p>
+<h2 id="icons">icons</h2>
+<p><a href="https://feathericons.com/">feather icon</a></p>
+<h2 id="杂-6">杂</h2>
+<blockquote>
+<p>有时候别太依赖轮子了，有些轮子又大又全然而你只需要其中一个小功能，那为什么不研究一下原生怎么写？</p>
+</blockquote>
+<h1 id="2020-10-10">2020-10-10</h1>
+<h2 id="sass-not-found">sass not found</h2>
+<p><a href="https://blog.csdn.net/lgysjfs/article/details/83039906">安装sass，npm install node-sass &ndash;save报错的原因和解决办法</a></p>
+<h2 id="highlightjs">highlight.js</h2>
+<p><a href="https://cps.ninja/2019/03/25/add-highlightjs-to-hexo-blog/">使用 Highlight.js 优化代码块高亮效果</a></p>
+<pre><code>## 生成压缩版的 css（让 pln 主题的相关设置生效）
+node-sass  --style compressed themes/pln/source/css/main.scss themes/pln/source/css/m.min.css
+</code></pre>
+<h2 id="savedinstancestate">savedInstanceState</h2>
+<p><a href="https://stackoverflow.com/questions/10810418/whats-oncreatebundle-savedinstancestate">What&rsquo;s onCreate(Bundle savedInstanceState)</a></p>
+<p><a href="https://blog.csdn.net/u011240877/article/details/39552043">关于onCreate方法的参数 Bundle savedInstanceState的作用</a></p>
+<h2 id="git-1">Git</h2>
+<p><a href="https://cloud.tencent.com/developer/article/1554281">Git pull code常用问题汇总</a></p>
+<h2 id="纪录片">纪录片</h2>
+<p><a href="https://www.imdb.com/title/tt11958648/">History 101</a></p>
+<p>去豆瓣上想标记一下「想看」</p>
+<p>然后发现搜不到这部纪录片，然后我去豆瓣添加的时候提示「此编号对应的条目不在豆瓣电影收录范围」</p>
+<p>啊 好奇为什么 抽空看一下这个片 看简介还挺有意思的</p>
+<p>国庆看了两部纪录片 好喜欢纪录片啊哈哈哈哈</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> The Social Dilemma</li>
+<li><input checked="" disabled="" type="checkbox"> High Score</li>
+</ul>
+<h2 id="apps">Apps</h2>
+<p><a href="https://notable.app/">Notable</a> 真的太好用了吧 无敌</p>
+<p>轻量 启动快 该有的都有</p>
+<p>标签化管理挺像bear的</p>
+<h1 id="2020-10-09">2020-10-09</h1>
+<h2 id="语义化版本">语义化版本</h2>
+<p><a href="https://github.com/semver/semver">Semver - Github</a></p>
+<p><a href="https://semver.org/">Semantic Versioning 2.0.0</a></p>
+<ul>
+<li>dependency hell 哈哈哈哈哈哈</li>
+</ul>
+<h2 id="中文排版指北">中文排版指北</h2>
+<p><a href="https://github.com/sparanoid/chinese-copywriting-guidelines">chinese-copywriting-guidelines</a></p>
+<h2 id="blog">blog</h2>
+<p><a href="https://tech.meituan.com/">美团技术团队</a></p>
+<ul>
+<li>干货挺多</li>
+</ul>
+<h2 id="毕业论文格式要求">毕业论文格式要求</h2>
+<p><a href="https://www.malic.xyz/archives/2430">华东师大信息公开- 学术规范制度（论文基本格式要求）</a></p>
+<h2 id="ide-theme">IDE Theme</h2>
+<p><a href="https://plugins.jetbrains.com/search?tags=Theme">换个主题换个心情</a></p>
+<p><a href="https://plugins.jetbrains.com/plugin/12317-espresso-light-theme/versions/">espresso-light-theme</a> 这个light theme看着舒服</p>
+<p><a href="https://zhuanlan.zhihu.com/p/36918101">10个字体</a> 找不同？</p>
+<h2 id="杂-7">杂</h2>
+<p>发现自己声明变量的时候永远下意识 <code>int</code> OTZ</p>
+<h1 id="2020-10-08">2020-10-08</h1>
+<h2 id="course">Course</h2>
+<p><a href="https://fullstackopen.com/">FullStackOpen</a></p>
+<p><a href="https://cs50.harvard.edu/x/2020/">CS50-Harvard</a></p>
+<p><a href="https://github.com/pingcap/awesome-database-learning">database learning</a></p>
+<h2 id="杂-8">杂</h2>
+<p>假期最后一天</p>
+<p>忧愁 为什么不能一直躺平-a-</p>
+<h1 id="2020-10-07">2020-10-07</h1>
+<h2 id="equals--">equals &amp; ==</h2>
+<p><a href="https://blog.csdn.net/w112736112736/article/details/77986283">java基础中Integer值用==和equals判断相等问题解析</a></p>
+<p><a href="https://blog.csdn.net/Yaokai_AssultMaster/article/details/53276041">Java Integer的==和.equals()之间的区别</a></p>
+<h2 id="the-social-dilemma">the social dilemma</h2>
+<p><a href="https://www.thesocialdilemma.com/take-action/">Task Action</a></p>
+<p>有点意思</p>
+<h1 id="2020-10-06">2020-10-06</h1>
+<h2 id="配色">配色</h2>
+<p><a href="https://www.webdesignrankings.com/resources/lolcolors/">lolcolors</a></p>
+<h2 id="command-line-tools">command line tools</h2>
+<p><a href="https://medium.com/flawless-app-stories/gyp-no-xcode-or-clt-version-detected-macos-catalina-anansewaa-38b536389e8d">gyp: No Xcode or CLT version detected macOS Catalina | Anansewaa</a></p>
+<pre><code>xcode-select --install
+</code></pre>
+<p>↑输入这个炸了，然后↓</p>
+<p><a href="https://www.macwk.com/article/macos-command-line-tools-cannot-be-installed">macOS “不能安装该软件，因为当前无法从软件更新服务器获得” 解决方法</a></p>
+<h2 id="gatsby">Gatsby</h2>
+<p><a href="https://www.gatsbyjs.cn/docs/">中文文档</a></p>
+<h2 id="img图片裂开问题">img图片裂开问题</h2>
+<p><a href="https://my.oschina.net/u/4390999/blog/3418807">img引用网络图片资源无法加载问题解决</a></p>
+<p>成了</p>
+<h2 id="netflix">Netflix</h2>
+<p>国庆疯狂补电影然后想到可以开个netflix 找了个车上车啦</p>
+<p><a href="https://medium.com/@Kyle591/%E5%A6%82%E4%BD%95%E5%BC%BA%E5%88%B6%E6%92%AD%E6%94%BE-netflix-1080p-%E6%B8%85%E6%99%B0%E5%BA%A6%E8%A7%86%E9%A2%91-super-netflix-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B-4cc4c2824de7">强制设置netflix为1080p</a></p>
+<h2 id="杂-9">杂</h2>
+<p>怎么就六号了，放假放的过于安逸，呜呜想退休了（还没工作的我在想些什么OTZ</p>
+<h1 id="2020-10-04">2020-10-04</h1>
+<h2 id="豆瓣">豆瓣</h2>
+<p><a href="https://www.douban.com/service/badgemakerjs">豆瓣收藏秀</a>好玩，捯饬了一下效果如<a href="https://hishark777.com/about/">博客-关于</a></p>
+<h2 id="杂-10">杂</h2>
+<p>好的我终于打开了电脑</p>
+<p>放了三天假是真快乐-a-</p>
+<p>通宵花了一天把《想见你》看完了</p>
+<p>怎么会有这么好看的剧啦呜呜呜呜</p>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="https://hishark777.com/tags/techdiary/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#TechDiary</a>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">上一篇</span>
+        <a href="https://hishark777.com/post/room-database/" class="block">
+            Room Database
+        </a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">下一篇</span>
+        <a href="https://hishark777.com/post/srgan/" class="block">
+            SRGAN
+        </a>
+        
+    </div>
+</div>
+
+        
+    </div>
+    
+
+    
+    
+    <div
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">相关</h2>
+        <div class="content">
+            
+            <a href="https://hishark777.com/post/techdiary202009/">匆匆忙忙开了学</a>
+            <br />
+            
+            <a href="https://hishark777.com/post/techdiary202008/">最后一个快乐暑假 Part2</a>
+            <br />
+            
+            <a href="https://hishark777.com/post/techdiary202007/">最后一个快乐暑假 Part1</a>
+            <br />
+            
+            <a href="https://hishark777.com/post/techdiary202006/">过半</a>
+            <br />
+            
+            <a href="https://hishark777.com/post/techdiary202005/">五月很开心</a>
+            <br />
+            
+            <a href="https://hishark777.com/post/techdiary202004/">四月の技术日记</a>
+            <br />
+            
+        </div>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
+    <p>&copy; 2017 - 2020 <a href="https://hishark777.com/">hishark777</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</footer></div>
+        </div>
+    </footer>
+</body>
+
+</html>

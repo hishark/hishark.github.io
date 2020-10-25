@@ -1,0 +1,22 @@
+[[main]]
+  name = "关于"
+  url = "/authors/hishark777"
+  weight = 10
+
+[[main]]
+  name = "文章"
+  url = "/post/"
+  weight = 20
+
+# [[main]]
+#  name = "归档"
+#  url = "/archive/"
+#  weight = 40
+
+[[main]]
+  name = "技术日记"
+  url = "/categories/技术日记/"
+
+[[main]]
+  name = "校招笔记"
+  url = "https://hishark777.gitbook.io/android-interview/"
