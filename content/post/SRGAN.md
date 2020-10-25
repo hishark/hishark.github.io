@@ -7,6 +7,8 @@ tags:
 categories: 
 - 学习笔记
 hide: false
+authors: 
+- hishark777
 ---
 <!-- 我决定等论文ppt做的多了之后再整一个论文笔记的分类，不然之后就这一篇岂不是很尴尬OTZ -->
 

@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2017 - 2020 &lt;a href=&#34;https://hishark777.com/&#34;&gt;hishark777&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 19 Oct 2020 21:18:33 +0000</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/authors/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hello, I&#39;m 777</title>
+      <link>https://hishark777.com/authors/hishark777/</link>
+      <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
+      
+      <guid>https://hishark777.com/authors/hishark777/</guid>
+      <description>关于我 你好我是小7 普陀女子师专软工研二在读 欢迎光临我的bb空间 博客内容很杂 爱记录生活 爱碎碎念 一般般爱学习 没什么大理想 希望天天开心 (ง ◍&#39;u&#39;◍)ว✧</description>
+    </item>
     
     <item>
       <title>Example Author</title>
@@ -18,15 +28,6 @@
       
       <guid>https://hishark777.com/authors/example-author/</guid>
       <description>Self Introduction Cras ex dui, tristique a libero eget, consectetur semper ligula. Nunc augue arcu, malesuada a nisi et, molestie finibus metus. Sed lacus odio, ultricies a nisl vitae, sollicitudin tempor ipsum. Vivamus quis feugiat arcu. Sed mi nunc, efficitur quis tellus vitae, posuere mattis metus. Phasellus in mattis dui. Nullam blandit, augue non ullamcorper dapibus, lacus dui molestie massa, in iaculis purus lectus eu lectus. Duis hendrerit lacinia tellus, sit amet feugiat dolor placerat id.</description>
-    </item>
-    
-    <item>
-      <title>Hello, I&#39;m 777</title>
-      <link>https://hishark777.com/authors/hishark777/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hishark777.com/authors/hishark777/</guid>
-      <description>关于我 你好我是小7 普陀女子师专软工研二在读 欢迎光临我的bb空间 博客内容很杂 爱记录生活 爱碎碎念 一般般爱学习 没什么大理想 希望天天开心 (ง ◍&#39;u&#39;◍)ว✧</description>
     </item>
     
     <item>

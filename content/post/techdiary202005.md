@@ -4,6 +4,8 @@ date: 2020-05-01 22:10:51
 tags:
 - TechDiary
 categories: 技术日记
+authors: 
+- hishark777
 ---
 武功山好难爬哦
 但是看到了星空和日出日落(＾－＾)V

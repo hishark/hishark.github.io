@@ -5,6 +5,8 @@ tags:
 categories: 
 - 碎碎念
 thumbnail: https://i.loli.net/2020/03/14/JhpyOWxXk6zMYSa.png
+authors:
+- hishark777
 ---
 折腾了半天终于搞清楚怎么弄了
 有一个自己的网站就很开心嘿嘿嘿

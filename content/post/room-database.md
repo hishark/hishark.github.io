@@ -6,6 +6,10 @@ tags:
 - Android
 categories: 
 - 学习笔记
+authors: 
+- hishark777
+toc:
+- true
 ---
 虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
 

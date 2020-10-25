@@ -5,6 +5,8 @@ tags:
 - markdown
 categories: 学习笔记
 hide: false
+authors: 
+- hishark777
 ---
 总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个[Gitbook](https://hishark777.com/777-Tech-Diary/)放~~技术日记~~乱七八糟的碎碎念，最后迁移到了[博客](http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/)。前阵子看到有人用[Mkdocs-Material](https://squidfunk.github.io/mkdocs-material/)写博客，转了一圈官网觉得有点意思，~~也比Gitbook更好看~~（比以前的Gitbook好看），于是来整一个做校招笔记。
 

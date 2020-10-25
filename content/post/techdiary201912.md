@@ -5,6 +5,8 @@ tags:
 - TechDiary
 categories: 技术日记
 excerpt: 这里是777的十二月份bb日记
+authors: 
+- hishark777
 ---
 <!-- # 日记打卡
 |  一  |  二  |  三  |  四  |  五  |  六  |  日  |
