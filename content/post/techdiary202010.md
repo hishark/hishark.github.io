@@ -30,6 +30,8 @@ authors:
 
 [Hugo - Quick Start](https://gohugo.io/getting-started/quick-start/)
 
+[hexo 迁移到 hugo](https://sspai.com/post/59904)
+
 ### homebrew
 
 [执行 brew install 命令长时间卡在 Updating Homebrew 的解决方法](https://learnku.com/articles/18908)
