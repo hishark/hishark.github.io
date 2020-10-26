@@ -21,21 +21,21 @@ authors:
 |  24  |  25  |  26  |  27  |  [28](#2020-08-28)  |  [29](#2020-08-29)  |  30  |
 |  31  |      |      |      |      |      |  | -->
 
-# 2020-08-29
-## WifiManager
+## 2020-08-29
+### WifiManager
 [Android-Docs: WifiManager](https://developer.android.com/reference/android/net/wifi/WifiManager)
 
-## WifiInfo
+### WifiInfo
 [Android-Docs: WifiInfo](https://developer.android.com/reference/android/net/wifi/WifiInfo)
 - wifiinfo: Describes the state of any Wi-Fi connection that is active or is in the process of being set up.
 
-## 硬件连接APP
+### 硬件连接APP
 [IoT 智能硬件与App的三种连接方式](https://www.jianshu.com/p/ad7ef0f60feb)
 [android : 1、从头开始开发一个控制硬件的app（通讯协议部分）](https://blog.csdn.net/qq_33570093/article/details/81318125)
 [android : 2、从头开始开发一个控制硬件的app（给设备联网）](https://blog.csdn.net/qq_33570093/article/details/81567758?utm_medium=distribute.pc_relevant.none-task-blog-title-1&spm=1001.2101.3001.4242)
 [智能交互(一) - app配置智能硬件解决方案](https://www.jianshu.com/p/aaf963fd6ebe)
 
-## MacOS Keyboard
+### MacOS Keyboard
 买了静电容之后已经回不去别的键盘了
 82配列的长度直接压在内置键盘上也比较合适
 找了一下有没有软件可以做这事
@@ -44,29 +44,29 @@ authors:
 
 不过这样长期压着内置键盘会不会压坏OTZ
 
-## 杂
+### 杂
 耐下心读代码才是正道 兄弟 别代码还没看就一顿乱搜 能知道啥啊
 
-# 2020-08-28
-## SSID
+## 2020-08-28
+### SSID
 [SSID百度百科](https://baike.baidu.com/item/SSID/10823867?fr=aladdin)
 - 通俗地说，SSID便是你给自己的无线网络所取的名字。
 
-## WPS
+### WPS
 WPS (Wi-Fi Protected Setup)，与普通连接最大的区别就是，不需要输入密码，不需要知道目标网络的SSID，路由上和客户端的WPS都按一下就自动连接了。
 
-## ML
+### ML
 马了就是看了
 - [《动手学深度学习》](http://zh.d2l.ai/index.html)
 - [《动手学深度学习》(PyTorch版)](http://tangshusen.me/Dive-into-DL-PyTorch/#/)
 - [李宏毅机器学习笔记(LeeML-Notes)](https://datawhalechina.github.io/leeml-notes/#/)
   
-## 杂
+### 杂
 今天提交返校申请了
 31号晚上就要躺在寝室小床上啦
 大半年没洗澡堂子了OTZ
 
-# 2020-08-23
+## 2020-08-23
 
 [pkg_resources.DistributionNotFound: 解决方法](https://www.cnblogs.com/celine-huang/p/10695041.html)
 
@@ -74,21 +74,21 @@ WPS (Wi-Fi Protected Setup)，与普通连接最大的区别就是，不需要�
 
 [mac 终端总是显示“进程已完成”](https://blog.csdn.net/wode_dream/article/details/54346265?locationNum=1&fps=1)
 
-# 2020-08-22
+## 2020-08-22
 
-## icon
+### icon
 
 [阿里健康](https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=1312)这套图标还挺可爱的
 
 美容那个好好玩啊哈哈哈哈
 
-## Android
+### Android
 
 [android布局属性tools:context的作用](https://www.cnblogs.com/guoshuguang/p/10454522.html)
 
-# 2020-08-19
+## 2020-08-19
 
-## 数学建模
+### 数学建模
 
 还是看司守奎好了 看了下目录感觉比姜启源的舒服点
 
@@ -100,15 +100,15 @@ http://www.ndip.cn
 
 [2019年中国研究生数学建模竞赛经验之谈](https://zhuanlan.zhihu.com/p/128081571)
 
-## 杂
+### 杂
 
 https://www.zhihu.com/question/50186945/answer/1401848132
 
 - 以后过这样的生活也不错啊 不过我应该买不起两室一厅哈哈哈 攒攒钱凑个一室一厅
 
-# 2020-08-18
+## 2020-08-18
 
-## hexo
+### hexo
 
 [Hexo主题开发](https://www.cnblogs.com/yyhh/p/11058985.html)
 
@@ -118,13 +118,13 @@ https://www.zhihu.com/question/50186945/answer/1401848132
 
 - [[hexo-generator-index2](https://github.com/Jamling/hexo-generator-index2)](https://github.com/Jamling/hexo-generator-index2/blob/master/README_zh.md)：这个插件稳✅
 
-# 2020-08-17
+## 2020-08-17
 
-## 超声成像
+### 超声成像
 
 [医学超声成像原理](https://www.jianshu.com/p/ddbe5e632f13)
 
-## 伪彩处理
+### 伪彩处理
 
 伪彩处理就是把灰度图变成彩色图，和血流没关系（吧
 
@@ -138,7 +138,7 @@ https://www.zhihu.com/question/50186945/answer/1401848132
 
 - 代码不用看，最后两张图看一下就行
 
-## Android
+### Android
 
 [Android必知必会 - RecyclerView 恢复上次滚动位置](https://likfe.com/2020/04/22/android-recycleview-log-resume-position/)
 
@@ -148,17 +148,17 @@ https://www.zhihu.com/question/50186945/answer/1401848132
 
 [Android 拖动滑动条、快速滑动，ScrollView和SeekBar结合](https://www.jianshu.com/p/c0de871137aa)
 
-## Intercom
+### Intercom
 
 https://www.intercom.com/
 
 介个好！
 
-## ML
+### ML
 
 [Hung-yi Lee ML20](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html)
 
-## 杂
+### 杂
 
 格志出了2之后一直没有下下来用过
 
@@ -174,9 +174,9 @@ https://www.intercom.com/
 
 等Mac版本一出我立马就交年费哈哈哈哈
 
-# 2020-08-16
+## 2020-08-16
 
-## GAN
+### GAN
 
 [【干货】生成对抗网络GANs算法在医学图像领域应用总结](https://blog.csdn.net/hahabeibei123456789/article/details/97626923)
 
@@ -188,15 +188,15 @@ https://www.intercom.com/
 
 [医学图像领域的GANs](https://zhuanlan.zhihu.com/p/59521772)
 
-## 杂
+### 杂
 
 愁 
 
 最近天天为自己的菜发愁
 
-# 2020-08-15
+## 2020-08-15
 
-## 杂
+### 杂
 
 听说下半个月的返校审批好像不给通过
 
@@ -222,9 +222,9 @@ https://www.intercom.com/
 
 摆在桌子上的时候肯定还是侧刻更好看捏 以后搞一把无刻玩玩吧(≧∇≦)ﾉ
 
-# 2020-08-10
+## 2020-08-10
 
-## 伪彩处理
+### 伪彩处理
 [彩色图像--伪彩处理 灰度图转伪彩色图像](https://www.cnblogs.com/yxwkf/p/5132697.html)
 
 [伪彩色处理](https://baike.baidu.com/item/伪彩色处理/22235777?fr=aladdin)
@@ -237,8 +237,8 @@ https://www.intercom.com/
 
 [彩色多普勒血流成像（彩超）与伪彩（B彩）的描述](https://www.360ksw.com/view/r540.html)
 
-# 2020-08-09
-## Doc
+## 2020-08-09
+### Doc
 [Resources](https://developer.android.com/reference/android/content/res/Resources)
 - Class for accessing an application's resources.
 
@@ -251,7 +251,7 @@ https://www.intercom.com/
 [Runnable](https://developer.android.com/reference/java/lang/Runnable)
 - The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread. The class must define a method of no arguments called run.
 
-## 超声
+### 超声
 新需求想让掌超加上血流速度，先看点科普
 
 [超声测定血流速度和血流方向的原理](https://zhidao.baidu.com/question/2011399223631228788.html)
@@ -265,49 +265,49 @@ https://www.intercom.com/
 - 彩超是用来显示血流的，用不同的颜色、亮度显示血流的方向、速度，有助于我们观察血管，心脏。
 - 医生需要准确的观察血流的波形，测量它的速度时，又会换另外一种超声：多普勒超声。
 
-## FPS
+### FPS
 - 每秒传输帧数(Frames Per Second)
 - FPS是图像领域中的定义，是指画面每秒传输帧数，通俗来讲就是指动画或视频的画面数。FPS是测量用于保存、显示动态视频的信息数量。每秒钟帧数越多，所显示的动作就会越流畅。通常，要避免动作不流畅的最低是30。某些计算机视频格式，每秒只能提供15帧。
 - 电影以每秒24张画面的速度播放，也就是一秒钟内在屏幕上连续投射出24张静止画面。有关动画播放速度的单位是fps，其中的f就是英文单词Frame（画面、帧），p就是Per（每），s就是Second（秒）。用中文表达就是多少帧每秒，或每秒多少帧。电影是24fps，通常简称为24帧。
 
-## IDE Plugin
+### IDE Plugin
 [Material Theme UI Plugin](https://plugins.jetbrains.com/plugin/8006-material-theme-ui/)
 - 一日一主题 天天好心情
 
-## 快速返回
+### 快速返回
 之前看代码每次要回去都重新找，我好像确实是有点蠢😑
 [快速返回上次查看代码的位置](https://blog.csdn.net/LONG_Yi_1994/article/details/84644349)
 - mac: command+option+⬅️
 
-## 杂
+### 杂
 昨天去看了《1917》
 超 级 喜 欢
 
-# 2020-08-06
-## Git
+## 2020-08-06
+### Git
 有个数模的仓库贼大
 只想下载几个文件夹的东西
 于是找了一下如何下载github仓库里的指定文件夹
 - [DownGit](https://yehonal.github.io/DownGit/#/home)
 
-## LaTeX
+### LaTeX
 https://exp.newsmth.net/topic/article/1a5bdaae352d3582ab366f7e1a943458
 - `fc-cache`
 - 下载缺失字体
 - http://www.xiazaiziti.com/ 这个网站就是坠叼的
 
-## 杂
+### 杂
 要准备准备数模了
 保佑我能水到个三等奖落户咧
 阿门
 
-# 2020-08-05
-## Git
+## 2020-08-05
+### Git
 毛工升级代码库了，换个地址
 [Git远程仓库地址变更本地如何修改](https://www.cnblogs.com/vickystudy/p/11505936.html)
 - 查看远程仓库地址`git remote -v`
 
-# 2020-08-02
-## 杂
+## 2020-08-02
+### 杂
 2020年怎么一下就过到八月了
 我晕厥

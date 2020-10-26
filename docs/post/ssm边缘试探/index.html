@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -256,16 +256,27 @@
         
         <div class="content">
             <p>SSM真的很好用啊鼓掌！👏</p>
+
 <h4 id="安装mysql数据库">安装Mysql数据库</h4>
+
 <p>MySQL-Front贼好用b（￣▽￣）d　</p>
-<p><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fq0wqi52jij30m70fjab6.jpg" alt=""></p>
+
+<p><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fq0wqi52jij30m70fjab6.jpg" alt="" /></p>
+
 <h4 id="创建动态web工程">创建动态Web工程</h4>
+
 <p>创建一个Dynamic Web Project。</p>
-<p><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fq0wt4rtgcj30i10hit9r.jpg" alt=""></p>
-<h4 id="把jar包导入web-inflib">把jar包导入WEB-INF/lib</h4>
-<p><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fq0gm9e2vyj30p805xmxn.jpg" alt=""></p>
+
+<p><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fq0wt4rtgcj30i10hit9r.jpg" alt="" /></p>
+
+<h4 id="把jar包导入web-inf-lib">把jar包导入WEB-INF/lib</h4>
+
+<p><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fq0gm9e2vyj30p805xmxn.jpg" alt="" /></p>
+
 <h4 id="创建bean">创建bean</h4>
+
 <p>该bean和数据库中的表产生映射。</p>
+
 <pre><code class="language-java">package pojo;
 
 public class Book {
@@ -308,8 +319,11 @@ public class Book {
 	}
 }
 </code></pre>
+
 <h4 id="创建bookmapper">创建BookMapper</h4>
+
 <p>说明对数据库中表的相关操作</p>
+
 <pre><code class="language-java">package mapper;
 
 import java.util.List;
@@ -333,8 +347,11 @@ public interface BookMapper {
 	public void update(Book book);
 }
 </code></pre>
-<h4 id="创建bookxml">创建Book.xml</h4>
+
+<h4 id="创建book-xml">创建Book.xml</h4>
+
 <p>Book.xml将bean与数据库中的表建立关联并实现对数据库的相关操作。</p>
+
 <pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!-- 需要这个xml来发生映射 --&gt;
 &lt;!-- book.xml建立关联并且执行相关操作 --&gt;
@@ -367,8 +384,11 @@ public interface BookMapper {
 	&lt;/update&gt;
 &lt;/mapper&gt;
 </code></pre>
+
 <h4 id="创建bookservice接口">创建BookService接口</h4>
+
 <p>业务逻辑层，对外提供的功能。</p>
+
 <pre><code class="language-java">package service;
 
 import java.util.List;
@@ -390,10 +410,15 @@ public interface BookService {
 	public void update(Book book);
 }
 </code></pre>
+
 <h4 id="实现bookservice接口">实现BookService接口</h4>
+
 <p>控制器类Controller首先调用这里面的方法，然后这里面的方法又调用BookMapper的方法，最后BookMapper调用Book.xml执行相关SQL操作。</p>
+
 <p>要加上各种注解——Service、Autowired。</p>
+
 <p>注解的好处：比如<code>@Autowired</code>主要声明一个引用变量，不需要实例化，spring框架会帮我们实例化，简化了操作。</p>
+
 <pre><code class="language-java">package serviceImp;
 
 import java.util.List;
@@ -447,9 +472,13 @@ public class BookServiceImp implements BookService {
 	}
 }
 </code></pre>
+
 <h4 id="创建控制器类">创建控制器类</h4>
+
 <p>Controller通过<code>@RequestMapping(&quot;&quot;)</code>内的操作名接收用户请求。</p>
+
 <p>JSP页面通过操作名调用相关操作，Controller首先调用BookService里的方法，然后BookService里的方法又调用BookMapper的方法，最后BookMapper调用Book.xml执行相关SQL操作。</p>
+
 <pre><code class="language-java">package controller;
 
 import java.util.List;
@@ -522,8 +551,11 @@ public class BookController {
 	}
 }
 </code></pre>
+
 <h4 id="编写配置文件">编写配置文件</h4>
-<h5 id="applicationcontextxml">applicationContext.xml</h5>
+
+<h5 id="applicationcontext-xml">applicationContext.xml</h5>
+
 <pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
 	xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
@@ -577,7 +609,9 @@ public class BookController {
 	&lt;/bean&gt;
 &lt;/beans&gt;
 </code></pre>
-<h5 id="springmvcxml">springMVC.xml</h5>
+
+<h5 id="springmvc-xml">springMVC.xml</h5>
+
 <pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
 	xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:aop=&quot;http://www.springframework.org/schema/aop&quot;
@@ -616,7 +650,9 @@ public class BookController {
 	&lt;/bean&gt;
 &lt;/beans&gt;
 </code></pre>
-<h5 id="webxml">web.xml</h5>
+
+<h5 id="web-xml">web.xml</h5>
+
 <pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;web-app xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
 		 xmlns=&quot;http://java.sun.com/xml/ns/javaee&quot;
@@ -660,8 +696,11 @@ public class BookController {
 	&lt;/filter-mapping&gt;
 &lt;/web-app&gt;
 </code></pre>
+
 <h4 id="view层">View层</h4>
-<h5 id="booklistjsp">BookList.jsp</h5>
+
+<h5 id="booklist-jsp">BookList.jsp</h5>
+
 <pre><code class="language-jsp">&lt;%@ page language=&quot;java&quot; pageEncoding=&quot;utf-8&quot;%&gt;
 &lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot;%&gt;
 &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
@@ -720,7 +759,9 @@ table tbody tr td {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h5 id="bookaddjsp">BookAdd.jsp</h5>
+
+<h5 id="bookadd-jsp">BookAdd.jsp</h5>
+
 <pre><code class="language-jsp">&lt;%@ page language=&quot;java&quot; import=&quot;java.util.*&quot; pageEncoding=&quot;utf-8&quot;%&gt;
 &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
 &lt;html&gt;
@@ -743,7 +784,9 @@ table tbody tr td {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h5 id="bookeditjsp">BookEdit.jsp</h5>
+
+<h5 id="bookedit-jsp">BookEdit.jsp</h5>
+
 <pre><code class="language-jsp">&lt;%@ page language=&quot;java&quot; import=&quot;java.util.*&quot; pageEncoding=&quot;utf-8&quot;%&gt;
 &lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
 &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
@@ -767,9 +810,13 @@ table tbody tr td {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<hr>
+
+<hr />
+
 <h4 id="杂">杂</h4>
+
 <h5 id="踩坑记录">踩坑记录</h5>
+
 <ol>
 <li>bean里面的字段，如果首字母是大写，在JSP中引用的时候首字母一定要改成小写，不然gg。如果字段为BookId，引用的时候一定要写bookId，写bookid也会报错啦，只有首字母需要小写。</li>
 <li>表单提交中文乱码<a href="https://blog.csdn.net/u013009808/article/details/48325243">解决方案</a>，然后再在JSP加上<code>&lt;%@ page language=&quot;java&quot; pageEncoding=&quot;utf-8&quot;%&gt;</code>即可。</li>
@@ -777,7 +824,9 @@ table tbody tr td {
 <li>找了好久的bug，包名<code>service.Imp</code>被我写成了<code>serviceImp</code>。写成后者其实也没猫饼，但是没有在<code>applicationContext.xml</code>里面把<code>serviceImp</code>包纳入spring框架进行管理所以出错啦。如果只注解<code>service</code>包的话包名一定要有层级关系啦，如果两个包都注解了就无所谓了OTZ。</li>
 <li>xml取值用#{}，jsp取值用${}。</li>
 </ol>
+
 <h5 id="unsolved">Unsolved</h5>
+
 <ol>
 <li>由于在控制器类里的添加图书操作中设置了将要跳转的JSP页面<code>mav.setViewName(&quot;BookList&quot;)</code>,所以在添加图书后自动跳转到BookList.jsp页面，但是问题出现了，此时浏览器的地址还处在addBook状态，所以如果刷新浏览器就会重复添加图书。</li>
 <li>编辑图书出现的问题同上。</li>

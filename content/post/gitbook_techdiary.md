@@ -3,6 +3,8 @@ title: 借助Gitbook搭建一个技术日记簿
 date: 2020-02-15 13:24:17
 tags:
 categories: 学习笔记
+authors:
+- hishark777
 ---
 整了个Gitbook挂到博客下面 
 来写技术日记
@@ -17,13 +19,13 @@ categories: 学习笔记
 
 找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。
 <!--more-->
-### 1. 安装Gitbook
+## 1. 安装Gitbook
 跟着[Gitbook入门](https://www.jianshu.com/p/dc53e589897a)把Gitbook装好了在本地跑了起来，安装过程中遇到个[小错误](https://blog.csdn.net/w5688414/article/details/94172354)，重装node解决了。
 
-### 2. 部署到Github
+## 2. 部署到Github
 再参照[用gitbook做笔记如何部署到github](https://www.jianshu.com/p/4e109a1113b2)成功把gitbook挂到博客域名下。
 
-### 3. Gitbook更新步骤
+## 3. Gitbook更新步骤
 上面两步全部做好之后，以后只需要四条指令即可更新日记。
 ```
 1. npm run build

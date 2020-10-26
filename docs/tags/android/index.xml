@@ -19,6 +19,7 @@
       
       <guid>https://hishark777.com/post/as-4-1/</guid>
       <description>&lt;p&gt;看看 Android Studio 4.1 更新了一些什么新特性：&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://developer.android.com/studio/releases#4-0-0&#34;&gt;Android Studio release notes  |  Android Developers&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -29,6 +30,7 @@
       
       <guid>https://hishark777.com/post/room-database/</guid>
       <description>&lt;p&gt;虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。&lt;/p&gt;
+
 &lt;p&gt;来看看 Room 怎么用。&lt;/p&gt;</description>
     </item>
     
@@ -39,7 +41,9 @@
       
       <guid>https://hishark777.com/post/roomdatabaseviewer/</guid>
       <description>&lt;p&gt;Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。&lt;/p&gt;
+
 &lt;p&gt;纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？&lt;/p&gt;
+
 &lt;p&gt;查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。&lt;/p&gt;</description>
     </item>
     
@@ -50,7 +54,9 @@
       
       <guid>https://hishark777.com/post/genymotion/</guid>
       <description>&lt;p&gt;前阵子需要做个直播demo，用到了阿里云的直播sdk，阿里云文档中说明了只支持arm架构的cpu，而Android Studio自带的模拟器只能顺畅的跑x86架构的虚拟机，跑arm64架构的简直卡成树懒，查了一下发现Android Studio自带的AVD就是这个德行，遂放弃，转用Genymotion。&lt;/p&gt;
+
 &lt;p&gt;二月底决定毕业找Android岗的时候，下单了一台Pixel 2XL做自己以后的测试机，这篇文章写于购入Pixel之前，现在发现真机+模拟器一起用的测试环境还是挺舒服的。BTW谷歌亲儿子是真的好用啊，原生Android太香了，不出啥意外的话我以后就是iPhone主力机+Pixel备用机的快乐配置了哈哈哈哈哈。&lt;/p&gt;
+
 &lt;p&gt;好的扯远了，聊正事。&lt;/p&gt;</description>
     </item>
     
@@ -90,7 +96,7 @@
       <pubDate>Tue, 27 Mar 2018 16:02:17 +0000</pubDate>
       
       <guid>https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</guid>
-      <description>&lt;p&gt;HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和&lt;a href=&#34;http://hishark.cc/2018/03/26/Android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/&#34;&gt;Android客户端访问Tomcat服务器端&lt;/a&gt;一致，只需要改动LoginActivity和LoginUtil即可。&lt;/p&gt;</description>
+      <description>&lt;p&gt;HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和&lt;a href=&#34;http://hishark.cc/2018/03/26/Android客户端访问Tomcat服务器端/&#34;&gt;Android客户端访问Tomcat服务器端&lt;/a&gt;一致，只需要改动LoginActivity和LoginUtil即可。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -111,10 +117,12 @@
       <description>&lt;p&gt;项目突然要加几个界面
 然后打开了将近两个月没摸过的的AS
 findViewById都给忘了我怕是智障&lt;/p&gt;
+
 &lt;p&gt;真是开张大吉呢一运行就OOM
 记得上学期被这个鬼东西烦到爆炸
 搜了很多图片加载的工具类都没有用
 然后就自己压缩图片让他勉强显示&lt;/p&gt;
+
 &lt;p&gt;现在回头看我可能是猪吧
 Glide这么美好的库为什么上学期没发现
 简直是居家旅行必备产品啊呜呜呜

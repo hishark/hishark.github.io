@@ -22,10 +22,10 @@ authors:
 |  <font color="#B22222">**29**</font>  |  30  |      |      |      |      |      | -->
 
 
-# **2020-06-29**
-## 配置文件们
+## **2020-06-29**
+### 配置文件们
 
-### properties
+#### properties
 
 [Configuration properties file in Android project](https://stackoverflow.com/questions/35075619/configuration-properties-file-in-android-project)
 
@@ -33,7 +33,7 @@ authors:
 
 [Android之资源打包方式--Assets](https://www.jianshu.com/p/27032bba4c14)
 
-### json
+#### json
 
 [Reading a json file in Android](https://stackoverflow.com/questions/13814503/reading-a-json-file-in-android/13814551#13814551)
 
@@ -41,20 +41,18 @@ authors:
 
 [7.2.2 Android JSON数据解析 | 菜鸟教程](https://www.runoob.com/w3cnote/android-tutorial-json.html)
 
-## JSONArray
+#### JSONArray
 
 [Not a primitive array: class org.json.JSONArray问题解决_akuma_的博客-CSDN博客_not a primitive array: class org.json.jsonarray](https://blog.csdn.net/akuma_/article/details/83992871)
 
-
-
-# **2020-06-28**
-## VideoView
+## **2020-06-28**
+### VideoView
 
 OnClick没有用，要用OnTouch
 
 [android VideoView点击事件_专注移动开发-CSDN博客_videoview点击事件](https://blog.csdn.net/yangliang8/article/details/77900560)
 
-## Date
+### Date
 
 [java.sql.Date与java.util.Date相互转换_蜗牛学习笔记-CSDN博客_import java.sql.date;只需要换成 import java.util.date;](https://blog.csdn.net/magi1201/article/details/17559459)
 
@@ -62,16 +60,14 @@ OnClick没有用，要用OnTouch
 
 [chrisbanes/PhotoView](https://github.com/chrisbanes/PhotoView)
 
-
-
-# **2020-06-27**
-## AS
+## **2020-06-27**
+### AS
 
 万事clean+rebuild
 
 [Android Studio Gradle Build Error: Read Time Out](https://stackoverflow.com/questions/50605734/android-studio-gradle-build-error-read-time-out)
 
-## Toolbar
+### Toolbar
 
 [How to change menu icon size on toolbar?](https://stackoverflow.com/questions/51093676/how-to-change-menu-icon-size-on-toolbar)
 
@@ -79,10 +75,8 @@ OnClick没有用，要用OnTouch
 
 [](https://developer.android.com/studio/write/image-asset-studio.html#create-actionbartab)
 
-
-
-# **2020-06-26**
-## VideoView
+## **2020-06-26**
+### VideoView
 
 Android开发 VideoView视频播放详解
 
@@ -92,25 +86,25 @@ Android开发 VideoView视频播放详解
 
 [What is the difference between VideoView's setVideoPath and setVideoURI](https://stackoverflow.com/questions/30428438/what-is-the-difference-between-videoviews-setvideopath-and-setvideouri)
 
-## AS
+### AS
 
 实践最有效的提高Android Studio运行、编译速度方案
 
 [](https://blog.csdn.net/xwh_1230/article/details/60961723)
 
-## Log
+### Log
 
 一堆快捷键
 
 [Android Studio快捷键生成TAG、Log.x日志输出_颜的博客-CSDN博客_android studio tag](https://blog.csdn.net/qq_28193019/article/details/91050915)
 
-## Glide
+### Glide
 
 [Glide4-入门教程-3-加载本地图片(Uri, File, resourceId等)](https://www.niwoxuexi.com/blog/android/article/328)
 
 加载本地图片用path别用uri
 
-## MBP
+### MBP
 
 发热有点严重
 
@@ -122,16 +116,14 @@ Android开发 VideoView视频播放详解
 
 [如何在 Mac 上使用安全模式](https://support.apple.com/zh-cn/HT201262)
 
-
-
-# **2020-06-25**
-## VideoView
+## **2020-06-25**
+### VideoView
 
 Android开发 VideoView视频播放详解
 
 [观心静](https://www.cnblogs.com/guanxinjing/p/11177739.html)
 
-## 杂
+### 杂
 
 端午节快乐奥
 
@@ -141,16 +133,14 @@ Android开发 VideoView视频播放详解
 
 还没到可以想不做就不做的时候
 
-
-
-# **2020-06-24**
-## 迁移到AndroidX
+## **2020-06-24**
+### 迁移到AndroidX
 
 [迁移到 AndroidX | Android 开发者 | Android Developers](https://developer.android.google.cn/jetpack/androidx/migrate?hl=zh-cn)
 
 报什么错直接删了重新导androidx的包就好啦！！
 
-## Matisse
+### Matisse
 
 哈哈哈哈哈哈哈要是没有Attention我也以为他写错了 dbq
 
@@ -161,11 +151,11 @@ dontwarn 字面意思 不提示warning
 这位老哥写得很详细：
 [Matisse 知乎图片选择框架](https://www.jianshu.com/p/41e09238d61b)
 
-## 代码混淆
+### 代码混淆
 
 [Android APK 代码混淆与资源混淆详解, 你确定不看?](https://juejin.im/entry/57ff58edbf22ec0064b72201)
 
-## Dex Version
+### Dex Version
 
 但凡出现什么奇奇怪怪的问题
 
@@ -175,7 +165,7 @@ dontwarn 字面意思 不提示warning
 
 [Dex file with version '39' cannot be used with min sdk level '29' · Issue #84 · google/bundletool](https://github.com/google/bundletool/issues/84)
 
-## 华为Debug
+### 华为Debug
 
 Debug的时候发现没有Log 
 
@@ -183,14 +173,12 @@ Debug的时候发现没有Log
 
 [华为手机USB测试灰色_guozhaohui628-CSDN博客_华为usb灰色打不开](https://blog.csdn.net/guozhaohui628/article/details/53096585)
 
-## provider
+### provider
 
 [](https://developer.android.com/guide/topics/manifest/provider-element?hl=zh_cn)
 
-
-
-# **2020-06-22**
-## 活动监视器
+## **2020-06-22**
+### 活动监视器
 
 笑死我了哈哈哈哈哈我和他问题一毛一样
 
@@ -202,7 +190,7 @@ Debug的时候发现没有Log
 
 [](https://discussionschinese.apple.com/thread/250804337)
 
-## 风扇问题
+### 风扇问题
 
 看到第二个答案疯狂点头
 
@@ -210,7 +198,7 @@ Debug的时候发现没有Log
 
 [让macbook pro的风扇保持中高转速有没有坏处？](https://www.zhihu.com/question/340436100)
 
-## 图片
+### 图片
 
 [Android开发常用开源框架：图片处理](https://www.cnblogs.com/Free-Thinker/p/11949889.html)
 
@@ -226,10 +214,8 @@ Debug的时候发现没有Log
 
 而且可以选择图片和视频，比较符合这次的需求
 
-
-
-# **2020-06-18**
-## 环信外部输入音频
+## **2020-06-18**
+### 环信外部输入音频
 
 感谢这位老哥救命，环信升级到3.6.3就有了-..-
 
@@ -237,7 +223,7 @@ Debug的时候发现没有Log
 
 [http://docs-im.easemob.com/im/android/sdk/releasenote](http://docs-im.easemob.com/im/android/sdk/releasenote)
 
-## AudioRecord
+### AudioRecord
 
 [AudioRecord | Android Developers](https://developer.android.com/reference/android/media/AudioRecord)
 
@@ -259,14 +245,12 @@ Debug的时候发现没有Log
 
 最后整了两个流过去，一个是普通的音视频流，一个是共享桌面的流，第一个流关闭视频，负责传声音过去，第二个流负责传送桌面回去
 
-
-
-# **2020-06-17**
-## okhttp
+## **2020-06-17**
+### okhttp
 
 [使用OkHttp3在Android P 出现的错误：CLEARTEXT communication to host not permitted by network](https://www.jianshu.com/p/fa6664cda808)
 
-## Tablayout
+### Tablayout
 
 [TabLayout | Android 开发者 | Android Developers](https://developer.android.google.cn/reference/com/google/android/material/tabs/TabLayout)
 
@@ -274,7 +258,7 @@ Debug的时候发现没有Log
 
 [TabLayout+ViewPager联动](https://www.jianshu.com/p/60523f244d75)
 
-## Viewpager
+### Viewpager
 
 [The application's PagerAdapter changed the adapter's contents without calling PagerAdapter#notifyDa](https://www.cnblogs.com/ldq2016/p/5383727.html)
 
@@ -282,10 +266,8 @@ Debug的时候发现没有Log
 
 [java.lang.UnsupportedOperationException: Required method destroyItem was not overridden](https://blog.csdn.net/u014299265/article/details/70224469)
 
-
-
-# **2020-06-15**
-## ADB
+## **2020-06-15**
+### ADB
 
 [mzlogin/awesome-adb](https://github.com/mzlogin/awesome-adb)
 
@@ -293,7 +275,7 @@ Debug的时候发现没有Log
 
 那时候天天对着terminal搞啊OTZ
 
-## Logcat
+### Logcat
 
 我的天之前为什么没想到独立logcat窗口放到分屏里
 
@@ -305,7 +287,7 @@ Debug的时候发现没有Log
 
 [](https://developer.android.com/studio/debug/am-logcat?hl=zh-cn)
 
-## Root
+### Root
 
 Kingroot一键root也忒好用了
 
@@ -315,32 +297,30 @@ Kingroot一键root也忒好用了
 
 提交了机型适配请求只有142个人哈哈哈pixel用户好少噢
 
-## 查看图片视频
+### 查看图片视频
 
 用ACTION_VIEW查看视频
 
 [Android使用ACTION_VIEW查看图片和视频_济沧海x远沧溟-CSDN博客](https://blog.csdn.net/chuyangchangxi/article/details/95060761)
 
-## Wifi&4G
+### Wifi&4G
 
 [android系统同时使用wifi和4g上网_qingcai_yuanzi的博客-CSDN博客](https://blog.csdn.net/qingcai_yuanzi/article/details/80745131)
 
 [android 手机同时使用wifi 和数据流量（3G/4G...）_lqxandroid2012的专栏-CSDN博客](https://blog.csdn.net/lqxandroid2012/article/details/79071027)
 
-## WPS连接
+### WPS连接
 
 插上SIM卡测试移动数据，拔了之后突然没有办法连接到掌超了，整了半天最后去wifi设置里头把保存过的掌超wifi删掉了，再重新走一遍流程就好了
 
-## 杂
+### 杂
 
 妈妈下午买了榴莲披萨回来
 
 真 好 吃 啊
 
-
-
-# **2020-06-14**
-## Bitmap花屏
+## **2020-06-14**
+### Bitmap花屏
 
 没找到花屏的相关博客，只看到颜色不对的，试了一下也没解决掌超生成截图花屏的问题，关键是这问题之前毛工没有出现过奥，我也没动过相关代码，可能是不同设备导致的兼容性问题，暂时搁置。
 
@@ -358,13 +338,13 @@ Kingroot一键root也忒好用了
 
 [记录一个绘图花屏的低级错误_天道酬勤-CSDN博客](https://blog.csdn.net/xiongya8888/article/details/97977419)
 
-## View
+### View
 
 这个可以学一下【TODO】
 
 [Android截取View，获取View的Bitmap的方法_c15522627353的博客-CSDN博客](https://blog.csdn.net/c15522627353/article/details/54342247)
 
-## WPS
+### WPS
 
 陷入知识盲区，掌超和手机端用wps连接了之后，手机端不就不可以联网了吗咋远程会诊？
 
@@ -374,29 +354,25 @@ Kingroot一键root也忒好用了
 
 跟呵呵说了他明天跟刚潘反映一下
 
-
-
-# **2020-06-11**
-## Menu
+## **2020-06-11**
+### Menu
 
 [Android中Menu菜单的使用详解(大全)](https://www.jianshu.com/p/16c927af94be)
 
-## Pull Request
+### Pull Request
 
 [About pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 
-## AlarmManager
+### AlarmManager
 
 [AndroidManager之AlarmManager(闹钟服务)_听海的博客-CSDN博客](https://blog.csdn.net/weixin_37730482/article/details/80564018)
 
-## PendingIntent
+### PendingIntent
 
 [Android学习笔记之PendingIntent_Ein3614的博客-CSDN博客](https://blog.csdn.net/ein3614/article/details/81672940)
 
-
-
-# **2020-06-10**
-## Android - ListView
+## **2020-06-10**
+### Android - ListView
 
 [ListView隐藏右侧滚动条_Sunrise的专栏-CSDN博客_listview什么属性去下侧滚动条](https://blog.csdn.net/uestcyms/article/details/50583817)
 
@@ -420,17 +396,17 @@ android:minHeight="100dp"
 
 哈哈哈哈哈哈哈哈哈是我是我就是我！
 
-## Android - 线性布局的权重问题
+### Android - 线性布局的权重问题
 
 有官方文档的就老实看官方文档
 
 [线性布局](https://developer.android.com/guide/topics/ui/layout/linear)
 
-## Java Date
+### Java Date
 
 [java日期格式化--SimpleDateFormat的使用。字符串转日期，日期转字符串_请叫我大师兄-CSDN博客_java日期格式](https://blog.csdn.net/qq_27093465/article/details/53034427)
 
-## 快捷键失效
+### 快捷键失效
 
 网易云你别捣乱
 
@@ -438,7 +414,7 @@ android:minHeight="100dp"
 
 [Androidstudio格式化代码快捷键失效问题_byongchen的博客-CSDN博客_androidstudio格式化代码无效](https://blog.csdn.net/byongchen/article/details/80082038)
 
-## Git Merge
+### Git Merge
 
 merge的时候提示Already up to date
 
@@ -447,17 +423,17 @@ merge的时候提示Already up to date
 3. git merge remotes/origin/branchName
 4. git push origin HEAD:master
 
-## icon lib
+### icon lib
 
 [这个图标库存一下](https://www.iconfont.cn/collections/detail?spm=a313x.7781069.0.da5a778a4&cid=7442)
 
-## CardView
+### CardView
 
 搞点水波纹！
 
 [使用CardView来设置阴影效果及点击效果](https://www.jianshu.com/p/9dd4db80d37a)
 
-## 杂
+### 杂
 
 花了大半个下午把博客整理了一下
 
@@ -466,8 +442,8 @@ merge的时候提示Already up to date
 晚上加个班把今天必须完成的任务给做掉先
 
 
-# **2020-06-08**
-## Algorithm
+## **2020-06-08**
+### Algorithm
 
 [傻子都能看懂的并查集入门](https://segmentfault.com/a/1190000004023326)
 
@@ -475,7 +451,7 @@ merge的时候提示Already up to date
 
 这种标题就是很容易吸引我这种傻子 ^皿^
 
-## 杂
+### 杂
 
 下单了大英赛的单词书
 
@@ -493,7 +469,7 @@ merge的时候提示Already up to date
 
 阿门
 
-## Upwork
+### Upwork
 
 昨晚上随手申请了一下
 
@@ -505,7 +481,7 @@ merge的时候提示Already up to date
 
 >卧槽怎么申请成功了？？？不是说很难申请吗！！！！谢谢谢谢谢谢谢谢审核人
 
-## Android
+### Android
 
 [Linear Layout | Android Developers](https://developer.android.com/guide/topics/ui/layout/linear)
 
@@ -515,20 +491,20 @@ scrollview内部无法使用weight
 
 
 
-# **2020-06-07**
-## SVG
+## **2020-06-07**
+### SVG
 
 [Android使用矢量图（SVG, VectorDrawable）实践篇](https://www.jianshu.com/p/0555b8c1d26a)
 
 [使用 Image Asset Studio 创建应用图标 | Android 开发者 | Android Developers](https://developer.android.com/studio/write/image-asset-studio?hl=zh-cn)
 
-## Mac Address
+### Mac Address
 
 获取macaddress别忘记加权限
 
 [Get Bluetooth local mac address in Marshmallow](https://stackoverflow.com/questions/33377982/get-bluetooth-local-mac-address-in-marshmallow)
 
-## Toolbar
+### Toolbar
 
 [Android开发：最详细的 Toolbar 开发实践总结](https://www.jianshu.com/p/79604c3ddcae)
 
@@ -540,13 +516,13 @@ scrollview内部无法使用weight
 
 [Androidtoolbar左边距问题_little_shengsheng的博客-CSDN博客_androidtoolbar左边](https://blog.csdn.net/little_shengsheng/article/details/51744248)
 
-## Time
+### Time
 
 获取当前时间
 
 [Android获取当前系统日期和时间_独享一世温柔的博客-CSDN博客_android获取今天日期](https://blog.csdn.net/huangshenshen_/article/details/57161724)
 
-## ICON
+### ICON
 
 这个库和as自带的那些图标好像就是一套
 
@@ -556,8 +532,8 @@ scrollview内部无法使用weight
 
 
 
-# **2020-06-05**
-## Git
+## **2020-06-05**
+### Git
 
 [Git如何删除版本库中的一个提交?](https://segmentfault.com/q/1010000000115900)
 
@@ -575,11 +551,11 @@ git push origin HEAD:master
 
 即可。
 
-## Service通信
+### Service通信
 
 [Android中通过Messenger与Service实现进程间双向通信_孙群-CSDN博客_androidservicemessenger](https://blog.csdn.net/iispring/article/details/48329925)
 
-## GreenDao
+### GreenDao
 
 [SQL语句写到累了？试试GreenDAO](https://juejin.im/post/5abf6ef9f265da2396128456#heading-14)
 
@@ -589,15 +565,15 @@ git push origin HEAD:master
 
 [Java List 去重](https://www.cnblogs.com/hsz-csy/p/10241964.html)
 
-## Log
+### Log
 
 还挺省Log哈，我用xiaoqizhang筛选了log然后两百多个日期只出来2个想了我半天为什么 原来是重复的log都省略了！！！不早讲！！第一次碰到！！！学到了！！
 
 
-## Java Date
+### Java Date
 
 [java中date获取前一天和后一天](https://www.jianshu.com/p/bfe0f8354d81)
 
-## SQL
+### SQL
 
 [A SQLiteConnection object for database was leaked! Please fix your application](https://stackoverflow.com/questions/25307868/a-sqliteconnection-object-for-database-was-leaked-please-fix-your-application)

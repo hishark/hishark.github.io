@@ -7,7 +7,7 @@ theme = "eureka"
 # Uncomment when installing using Hugo Modules
 # theme = "github.com/wangchucheng/hugo-eureka"
 
-paginate = 7
+paginate = 20
 copyright = "&copy; 2017 - 2020 <a href=\"https://hishark777.com/\">hishark777</a>"
 enableEmoji = true
 enableGitInfo = false
@@ -21,6 +21,7 @@ defaultContentLanguageInSubdir = false
 # googleAnalytics = "UA-123-45"
 
 [markup]
+  defaultMarkdownHandler = "blackfriday"
   # Do not modify markup.highlight
   [markup.highlight]
     codeFences = false

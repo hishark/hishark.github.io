@@ -34,7 +34,9 @@
 <meta itemprop="name" content="Room Database Viewer | 777&#39;s BLOG">
 <meta itemprop="description"
     content="Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
+
 纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？
+
 查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。">
 
 
@@ -53,7 +55,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -77,6 +79,10 @@
     "headline": "Room Database Viewer | 777\u0027s BLOG","datePublished": "2020-05-01T01:18:15+00:00",
     "dateModified": "2020-05-01T01:18:15+00:00",
     "wordCount":  704 ,
+    "author": {
+        "@type": "Person",
+        "name": ["hishark777"]
+    },
     "publisher": {
         "@type": "Person",
         "name": "Example publisher",
@@ -85,7 +91,7 @@
             "url": "https://hishark777.com/images/icon.png"
         }
         },
-    "description": "\u003cp\u003eAndroid已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。\u003c\/p\u003e\n\u003cp\u003e纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？\u003c\/p\u003e\n\u003cp\u003e查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。\u003c\/p\u003e"
+    "description": "\u003cp\u003eAndroid已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。\u003c\/p\u003e\n\n\u003cp\u003e纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？\u003c\/p\u003e\n\n\u003cp\u003e查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。\u003c\/p\u003e"
 }
 </script>
 
@@ -97,7 +103,9 @@
 
 
 <meta property="og:description" content="Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
+
 纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？
+
 查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。" />
 
 
@@ -278,25 +286,40 @@
         
         <div class="content">
             <p>Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。</p>
+
 <p>纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？</p>
+
 <p>查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。</p>
+
 <h2 id="1-stetho">1. Stetho</h2>
+
 <p>Github: <a href="https://github.com/facebook/stetho">https://github.com/facebook/stetho</a></p>
+
 <p>Stetho是Facebook开发的工具，功能还是非常强大的，具体使用方法README里说得很清楚。</p>
+
 <p>如果按照教程做完了还是没用，检查一下是否在Application里对Stetho进行了初始化。</p>
+
 <h2 id="2-android-debug-database">2. Android Debug Database</h2>
+
 <p>Github: <a href="https://github.com/amitshekhariitbhu/Android-Debug-Database">https://github.com/amitshekhariitbhu/Android-Debug-Database</a></p>
-<p>如果按照教程做完了还是没用，打开终端输入<code>adb forward tcp:8080 tcp:8080</code>，再访问http://localhost:8080 就ok了。</p>
+
+<p>如果按照教程做完了还是没用，打开终端输入<code>adb forward tcp:8080 tcp:8080</code>，再访问<a href="http://localhost:8080">http://localhost:8080</a> 就ok了。</p>
+
 <h2 id="3-注意">3. 注意⚠️</h2>
+
 <p>不管是Stetho还是Android Debug Database，二者的共同点就是不能自定义Room Database的路径。由于我之前自定义了路径，导致使用这两个都没法取到数据库，坑了我好一会儿。</p>
+
 <p>像下面这样就是只指定了数据库的名字，没有自定义路径，是可行的。</p>
+
 <pre><code class="language-java">String DB_NAME = &quot;xxx-db&quot;;
 Room.databaseBuilder(context, AppDatabase.class, DB_NAME)
                 .fallbackToDestructiveMigration()
                 .allowMainThreadQueries()  
                 .build();  
 </code></pre>
+
 <p>像下面这样就是自定义了数据库的存储路径，最终导致取不到数据库的数据。</p>
+
 <pre><code class="language-java">String DB_NAME = &quot;xxx-db&quot;;
 String DB_PATH = String.format(&quot;%s/%s&quot;,Environment.getExternalStorageDirectory().getAbsolutePath(), DB_NAME);
 Room.databaseBuilder(context, AppDatabase.class, DB_PATH)
@@ -304,9 +327,13 @@ Room.databaseBuilder(context, AppDatabase.class, DB_PATH)
                 .allowMainThreadQueries()
                 .build();
 </code></pre>
+
 <h2 id="4-总结">4. 总结</h2>
+
 <p>虽然Stetho在Github的Star更多，但是我个人还是更喜欢ADD，毕竟界面好看就很吸引本颜狗了哈！还能直接修改、删除数据，Debug效率蹭蹭往上涨📈。</p>
+
 <h2 id="5-参考">5. 参考</h2>
+
 <ul>
 <li><a href="https://stackoverflow.com/questions/44429372/view-contents-of-database-created-with-room-persistence-library">https://stackoverflow.com/questions/44429372/view-contents-of-database-created-with-room-persistence-library</a></li>
 <li><a href="https://developer.android.com/training/data-storage/room?hl=zh-cn">https://developer.android.com/training/data-storage/room?hl=zh-cn</a></li>
@@ -326,6 +353,59 @@ Room.databaseBuilder(context, AppDatabase.class, DB_PATH)
         
         
         
+        
+        <div class="py-2">
+    
+    <div class="flex flex-col md:flex-row items-center my-8">
+        <a href="https://hishark777.com/authors/hishark777/" class="w-24 h-24 md:mr-4">
+            
+            
+            <img src="https://hishark777.com/authors/hishark777/avatar.jpg" class="w-full bg-primary-bg rounded-full" alt="Avatar">
+            
+        </a>
+        <div class="w-full md:w-auto mt-4 md:mt-0">
+            <a href="https://hishark777.com/authors/hishark777/" class="block font-bold text-lg pb-1 mb-2 border-b">Hello, I&#39;m 777</a>
+            <span class="block pb-2"></span>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-github-alt"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-weibo"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-twitter"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-music"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-play-circle"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-bug"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+        </div>
+    </div>
+    
+</div>
         
         
         

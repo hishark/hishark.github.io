@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -74,7 +74,7 @@
     },
     "headline": "分页\/通配符\/ORDER | 777\u0027s BLOG","datePublished": "2018-03-13T13:44:56+00:00",
     "dateModified": "2018-03-13T13:44:56+00:00",
-    "wordCount":  551 ,
+    "wordCount":  597 ,
     "publisher": {
         "@type": "Person",
         "name": "Example publisher",
@@ -264,15 +264,20 @@
         
         <div class="content">
             <p>乱七八糟的笔记</p>
+
 <h4 id="分页">分页</h4>
+
 <p>没啥难点
 注意几个变量就好</p>
+
 <pre><code class="language-jsp">&lt;a href='&lt;s:url action=&quot;page&quot;&gt;&lt;s:param name=&quot;pageNow&quot; value=&quot;1&quot;/&gt;&lt;/s:url&gt;'&gt;首页&lt;/a&gt; 
 &lt;a href='&lt;s:url action=&quot;page&quot;&gt;&lt;s:param name=&quot;pageNow&quot; value=&quot;pageNow-1&quot;/&gt;&lt;/s:url&gt;'&gt;上页&lt;/a&gt;
 &lt;a href='&lt;s:url action=&quot;page&quot;&gt;&lt;s:param name=&quot;pageNow&quot; value=&quot;pageNow+1&quot;/&gt;&lt;/s:url&gt;'&gt;下页&lt;/a&gt;
 &lt;a href='&lt;s:url action=&quot;page&quot;&gt;&lt;s:param name=&quot;pageNow&quot; value=&quot;pageCount&quot;/&gt;&lt;/s:url&gt;'&gt;末页&lt;/a&gt; 
 </code></pre>
+
 <p>SQL语句注意一哈</p>
+
 <pre><code class="language-java">@Override
 public List&lt;Book&gt; getBookListByPage(int pageNow, int pageSize) {
 	// TODO Auto-generated method stub
@@ -295,19 +300,27 @@ public List&lt;Book&gt; getBookListByPage(int pageNow, int pageSize) {
 	return books;
 }
 </code></pre>
+
 <h4 id="通配符">通配符</h4>
+
 <p>用通配符来代替你的操作名称从而简化struts.xml文档中的配置</p>
+
 <pre><code class="language-xml">&lt;action name=&quot;book_*&quot; class=&quot;jxnu.edu.cn.x3321.BookManegementAction&quot; method=&quot;{1}&quot;&gt;
 </code></pre>
+
 <ol>
 <li>优点：简化</li>
 <li>缺点：可读性降低</li>
 </ol>
+
 <p>我还是喜欢分开写啊</p>
+
 <blockquote>
 <p>举个栗子🌰</p>
 </blockquote>
-<p><em><!-- raw HTML omitted -->BoodAdd.jsp<!-- raw HTML omitted --></em></p>
+
+<p><em><font color='#FF8C00'>BoodAdd.jsp</font></em></p>
+
 <pre><code class="language-jsp">&lt;s:form action=&quot;book_add&quot; method=&quot;post&quot; &gt;
      &lt;s:textfield name=&quot;book.isbn&quot;  label=&quot;isbn&quot;&gt;&lt;/s:textfield&gt;
      &lt;s:textfield name=&quot;book.title&quot; label=&quot;title&quot;&gt;&lt;/s:textfield&gt;
@@ -315,7 +328,9 @@ public List&lt;Book&gt; getBookListByPage(int pageNow, int pageSize) {
      &lt;s:submit value=&quot;增加&quot;&gt;&lt;/s:submit&gt;
 &lt;/s:form&gt;
 </code></pre>
-<p><em><!-- raw HTML omitted -->BookManagementAction.java<!-- raw HTML omitted --></em></p>
+
+<p><em><font color='#FF8C00'>BookManagementAction.java</font></em></p>
+
 <pre><code class="language-java">public String add() {
 	String str = &quot;AddBookFail&quot;;
 	if (bs.AddBook(book) != 0) {
@@ -324,12 +339,17 @@ public List&lt;Book&gt; getBookListByPage(int pageNow, int pageSize) {
 	return str;
 }
 </code></pre>
+
 <h4 id="order-by">ORDER BY</h4>
+
 <p>之前在jsp页面上添加数据时总是莫名其妙插到表的中间
 没有插到最后一行
 就很奇怪啊
-查来查去查到这位老哥</p>
-<!-- raw HTML omitted -->
+查来查去查到这位老哥
+<center><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fpb5c1hs59j30k005vaab.jpg" alt="" /></center>
+很有道理了&gt; &lt;
+select的时候order一下就很美了
+数据库里插到哪里随便了哈哈哈哈哈</p>
         </div>
         
         <div class="my-4">

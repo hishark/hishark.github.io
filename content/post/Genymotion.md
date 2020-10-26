@@ -4,6 +4,8 @@ date: 2020-04-01 15:55:55
 tags:
 - Android
 categories: 学习笔记
+authors:
+- hishark777
 ---
 前阵子需要做个直播demo，用到了阿里云的直播sdk，阿里云文档中说明了只支持arm架构的cpu，而Android Studio自带的模拟器只能顺畅的跑x86架构的虚拟机，跑arm64架构的简直卡成树懒，查了一下发现Android Studio自带的AVD就是这个德行，遂放弃，转用Genymotion。
 

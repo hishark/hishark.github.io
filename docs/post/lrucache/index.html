@@ -52,7 +52,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -75,7 +75,7 @@
     },
     "headline": "LruCache | 777\u0027s BLOG","datePublished": "2017-12-30T21:28:47+00:00",
     "dateModified": "2017-12-30T21:28:47+00:00",
-    "wordCount":  477 ,
+    "wordCount":  478 ,
     "publisher": {
         "@type": "Person",
         "name": "Example publisher",
@@ -259,16 +259,23 @@
         <div class="content">
             <p>一直拖着图片缓存的小视频没看今天看了一哈
 梳理一下</p>
+
 <h4 id="创建一个lrucache">创建一个LruCache</h4>
+
 <p>LruCache实际上是一个Map，指定它的键值对类型。</p>
+
 <pre><code class="language-java">private LruCache&lt;String,Bitmap&gt; mCaches;
 </code></pre>
+
 <h4 id="从缓存中获取数据">从缓存中获取数据</h4>
+
 <pre><code class="language-java">public Bitmap getBitmapFromCache(String url){
 	return mCaches.get(url);
 }
 </code></pre>
+
 <h4 id="把图片添加到缓存">把图片添加到缓存</h4>
+
 <pre><code class="language-java">public void addBitmapToCache(String url,Bitmap bitmap){
 	//如果缓存中没有该图片就噗特进去
 	if(getBitmapFromCache(url) == null){
@@ -276,8 +283,11 @@
 	}
 }
 </code></pre>
+
 <h4 id="获取最大内存">获取最大内存</h4>
+
 <p>获取当前应用所可以使用的最大内存，并设置一个缓存的大小值来初始化LruCache。</p>
+
 <pre><code class="language-java">int maxMemory = (int) Runtime.getRuntime().maxMemory();
 int cacheSize = maxMemory / 4;
 mCaches = new LruCache&lt;String,Bitmap&gt;(cacheSize){
@@ -289,7 +299,9 @@ mCaches = new LruCache&lt;String,Bitmap&gt;(cacheSize){
 	}
 }
 </code></pre>
+
 <h4 id="获取图片">获取图片</h4>
+
 <pre><code class="language-java">//获取图片的时候，第一步会去内存缓存中取出图片
 Bitmap bitmap = getBitmapFromCache(url);
 if(bitmap == null){
@@ -298,7 +310,9 @@ if(bitmap == null){
 	//如果缓存中有，就直接使用图片
 }
 </code></pre>
+
 <h4 id="下载图片的同时保存至lrucache">下载图片的同时保存至LruCache</h4>
+
 <pre><code class="language-java">//在异步任务的下载逻辑中，还需要将下载完毕的图片保存到LruCache中
 @Override
 protected Bitmap doInBackground(String... params){
@@ -312,10 +326,11 @@ protected Bitmap doInBackground(String... params){
 	return bitmap;
 }
 </code></pre>
+
 <blockquote>
 <p>通过这个方法就可以把下载过的图片存入缓存
 刷新时就不用每次都从网上下载
-典型的&quot;以内存换效率&rdquo;
+典型的&rdquo;以内存换效率&rdquo;
 listview常用</p>
 </blockquote>
         </div>

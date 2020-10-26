@@ -20,18 +20,18 @@ authors:
 |  27  |  <font color="#B22222">**28**  |  <font color="#B22222">**29**  |  30  |      |      |      | -->
 
 
-# 2020-04-29
-## **Educative**
+## 2020-04-29
+### **Educative**
 
 种草了几门课 观望一下
 
-## **En**
+### **En**
 
 > Educative’s courses were made to help you learn faster, and get your hands dirty along the way.
 
 我想了半天怎么会帮我弄脏手，查了一下是亲身体验的意思。
-# 2020-04-28
-## **Room Database Viewer**
+## 2020-04-28
+### **Room Database Viewer**
 
 [Database Navigator](https://plugins.jetbrains.com/plugin/1800-database-navigator)
 
@@ -43,18 +43,18 @@ authors:
 
 [How can I use Stetho with RoomDataBase in Android Studio?](https://stackoverflow.com/questions/54424594/how-can-i-use-stetho-with-roomdatabase-in-android-studio)
 
-## **Other**
+### **Other**
 
 [执行 brew install 命令长时间卡在 Updating Homebrew 的解决方法](https://learnku.com/articles/18908)
 
-## **Room**
+### **Room**
 
 [Android room persistent library - TypeConverter error of error: Cannot figure out how to save field to database"](https://stackoverflow.com/questions/44582397/android-room-persistent-library-typeconverter-error-of-error-cannot-figure-ou) - List
 
 [定义对象之间的关系](https://developer.android.com/training/data-storage/room/relationships?hl=zh-cn) - Room不允许实体对象互相引用哦 和大多数ORM框架不一样！
 
-# 2020-04-24
-## **ConstraintLayout**
+## 2020-04-24
+### **ConstraintLayout**
 
 下面两篇杠上了啊哈哈哈哈哈哈
 
@@ -66,7 +66,7 @@ authors:
 
 之后看看
 
-## **Bug**
+### **Bug**
 
 [关于Linearlayout中控件设置为其底部的问题,android:layout_gravity="bottom"没效果](https://blog.csdn.net/y_panda520/article/details/50952438)
 
@@ -74,7 +74,7 @@ authors:
 
 [https://blog.csdn.net/Picasso_L/article/details/53085299](https://blog.csdn.net/Picasso_L/article/details/53085299)
 
-## **坑**
+### **坑**
 
 app:layout_constraintBottom_toBottomOf="@+id/ll_record_pic"
 
@@ -82,11 +82,11 @@ app:layout_constraintTop_toBottomOf="@+id/ll_record_pic"
 
 两个效果不一样啊看清楚了
 
-## **Android**
+### **Android**
 
 [Android中修改ArrayAdapter字体以及颜色](https://www.cnblogs.com/macher/p/5077388.html)
 
-## **AndroidX**
+### **AndroidX**
 
 glide最新4.0的版本是用的androidX
 
@@ -99,7 +99,7 @@ glide最新4.0的版本是用的androidX
 implementation 'com.github.bumptech.glide:glide:3.7.0'
 implementation 'com.android.support:support-v4:23.2.1'
 
-## **杂**
+### **杂**
 
 我觉得我还是少运行
 
@@ -109,20 +109,20 @@ implementation 'com.android.support:support-v4:23.2.1'
 
 不然运行n次好浪费时间
 
-# 2020-04-23
-## **Kotlin**
+## 2020-04-23
+### **Kotlin**
 
 [2D Array in Kotlin](https://stackoverflow.com/questions/34145495/2d-array-in-kotlin)
 
 [Kotlin Queue tutorial with examples](https://bezkoder.com/kotlin-queue/)
 
-## **AS**
+### **AS**
 
 as新建一个java括号莫名其妙跑到新的一行了 改回end of line
 
 [Android Studio修改大括号位置](https://blog.csdn.net/tyndale1993/article/details/50369954)
 
-## **Android**
+### **Android**
 
 [ConstraintLayout](https://www.jianshu.com/p/17ec9bd6ca8a) 稳定版1.1.3，出了2.0beta：[https://developer.android.com/jetpack/androidx/releases/constraintlayout](https://developer.android.com/jetpack/androidx/releases/constraintlayout)
 
@@ -130,29 +130,29 @@ as新建一个java括号莫名其妙跑到新的一行了 改回end of line
 
 [Android 设置横屏或竖屏 设置全屏](https://blog.csdn.net/bear_huangzhen/article/details/46618475)
 
-## **Error**
+### **Error**
 
 [You need to use a Theme.AppCompat theme (or descendant) with this activity.](https://blog.csdn.net/ouyang_peng/article/details/51334761)
 
-## **Room**
+### **Room**
 
 @Dao
 public interface PatientDao { ...
 }
 不要extends Dao，CURD不写全会报错
 
-# 2020-04-21
-## **讯飞语音听写**
+## 2020-04-21
+### **讯飞语音听写**
 
 [https://www.xfyun.cn/doc/asr/voicedictation/Android-SDK.html](https://www.xfyun.cn/doc/asr/voicedictation/Android-SDK.html)
 
 集成到新增病历里头去
 
-## **Algorithm**
+### **Algorithm**
 
 看到好几个位运算题目都不想做，囤一下之后一次多做几个
 
-## **Kotlin**
+### **Kotlin**
 
 [https://try.kotlinlang.org/](https://try.kotlinlang.org/)
 
@@ -174,13 +174,13 @@ public interface PatientDao { ...
 
 建好了嘎嘎嘎 [LeetCode J&K](https://www.yuque.com/xiaoqizhang/leetcode)
 
-## **Bug**
+### **Bug**
 
 [https://stackoverflow.com/questions/57664688/kotin-type-mismatch-inferred-type-is-int-but-int-was-expected](https://stackoverflow.com/questions/57664688/kotin-type-mismatch-inferred-type-is-int-but-int-was-expected)
 
 [https://stackoverflow.com/questions/9562315/in-kotlin-how-can-i-convert-an-int-to-an-int](https://stackoverflow.com/questions/9562315/in-kotlin-how-can-i-convert-an-int-to-an-int) ⭐️
 
-## **杂**
+### **杂**
 
 之前做阿里云直播/视频会议/环信视频会议的时候
 
@@ -194,8 +194,8 @@ toggl本周最佳
 
 全平台同步而且同步太牛批了👍
 
-# 2020-04-17
-## **Android**
+## 2020-04-17
+### **Android**
 
 [事件处理之onTouchEvent()和onTouch()方法精炼详解](https://blog.csdn.net/weixin_41101173/article/details/80460632)
 
@@ -209,20 +209,20 @@ toggl本周最佳
 
 [教程 挺全](https://www.twle.cn/l/yufei/android/android-basic-index.html)
 
-## **Other**
+### **Other**
 
 找了一晚上bug结果是width和height两个为0所以看不到线
 
 我吐血啦
 
-# 2020-04-16
-## **Canvas**
+## 2020-04-16
+### **Canvas**
 
 [可绘制对象概览](https://developer.android.com/guide/topics/graphics/drawables)
 
 onTouchEvent 解决移动的问题
 
-## **Other**
+### **Other**
 
 微博上看到一个好的idea
 
@@ -230,41 +230,41 @@ onTouchEvent 解决移动的问题
 
 have a try!
 
-# 2020-04-15
-## **Spinner**
+## 2020-04-15
+### **Spinner**
 
 这玩意官方中文名居然叫微调框 怎么不叫下拉框！
 
 [https://developer.android.com/guide/topics/ui/controls/spinner?hl=zh-cn](https://developer.android.com/guide/topics/ui/controls/spinner?hl=zh-cn)
 
-## **Canvas**
+### **Canvas**
 
 - 🔲[https://developer.android.com/reference/android/graphics/Canvas](https://developer.android.com/reference/android/graphics/Canvas)
 
 [https://juejin.im/post/5be29aa2e51d45228170ff33](https://juejin.im/post/5be29aa2e51d45228170ff33)
 
-## **View**
+### **View**
 
 - ✅[https://blog.csdn.net/carson_ho/article/details/56009827](https://blog.csdn.net/carson_ho/article/details/56009827)
 
-## **杂**
+### **杂**
 
 最近老跑医院啊...
 
 希望家人都平平安安
 
-# 2020-04-14
-## **Android**
+## 2020-04-14
+### **Android**
 
 [Android入门——利用Canvas完成绘制点、圆、直线、路径、椭圆、多边形等2D图形](https://blog.csdn.net/CrazyMo_/article/details/48931681)
 
-## **Other**
+### **Other**
 
 [mkdocs-material](https://github.com/squidfunk/mkdocs-material) 这个看起来不错诶，有空试试
 
 
-# 2020-04-08
-## **Android**
+## 2020-04-08
+### **Android**
 
 1. 在android开发时，很多时候我们会使用可视化界面创建数据库，或者拿到别人的数据库使用，这时就需要我们将db文件手动加入到文件夹中并读取。但是当我们把应用的apk部署到真机上的时候，已经创建好的数据库及其里边的数据是不能随着apk一起安装到真机上的。
 
@@ -295,7 +295,7 @@ A toggle button allows the user to change a setting between two states.
 
 - 🔲搞清楚dimens适配
 
-## **Error**
+### **Error**
 
 有个报错一闪而过
 
@@ -362,8 +362,8 @@ W/CrashHandler: ┌────────────────────�
 I/Process: Sending signal. PID: 4601 SIG: 9
 ```
 
-# 2020-04-06
-## **ORM**
+## 2020-04-06
+### **ORM**
 
 Object Relation Mapping 对象关系映射
 
@@ -371,14 +371,14 @@ Object Relation Mapping 对象关系映射
 
 使用ORM框架的好处：可以用面向对象的思维来和数据库进行交互，绝大多数情况下不用在再和SQL语句打交道了，同时也不用担心操作数据库的逻辑会让项目的整体代码变得混乱。
 
-## **Java**
+### **Java**
 
 [varargs 可变参数使用](https://www.runoob.com/java/method-varargs.html)
 
 # 2020-04-04
 > 404 Not Found
 
-## **Blog**
+### **Blog**
 
 昨晚通宵了
 
@@ -389,13 +389,13 @@ Object Relation Mapping 对象关系映射
 5. 修改默认的配色（icarus好像没有一键修改主题色的选项 于是一边F12一边在css文件里修改
 6. 买了本书（刷到郭神的公众号发现出新书了 用kotlin更新了《第一行代码》正好买来边学kotlin边复习一下android一些基础知识
 
-## **Color**
+### **Color**
 
 修改配色的时候发现[w3school的颜色转换](https://www.w3schools.com/colors/colors_hexadecimal.asp)特别好用
 
 以前在用的还有[RGB转16进制](https://www.sioe.cn/yingyong/yanse-rgb-16/)
 
-## **Algorithm**
+### **Algorithm**
 
 以前做算法题老是有意无意的无视题解下方的复杂度分析
 
@@ -407,11 +407,11 @@ Github的Algorithm仓库慢慢被我堆起来了
 
 有时间的话就多做两题
 
-## **Java**
+### **Java**
 
 [Stack](https://www.runoob.com/java/java-stack-class.html)
 
-## **Other**
+### **Other**
 
 时间真的是海绵🧽
 
@@ -421,8 +421,8 @@ Github的Algorithm仓库慢慢被我堆起来了
 
 不过也挺好用的
 
-# 2020-04-03
-## **CDN**
+## 2020-04-03
+### **CDN**
 
 今天突然发现icarus官网上的这篇blog：[Speed up Your Site with Custom CDN](https://blog.zhangruipeng.me/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/)
 
@@ -430,8 +430,8 @@ Github的Algorithm仓库慢慢被我堆起来了
 
 访问速度chuachua的上去了555开心
 
-# 2020-04-02
-## **Icon**
+## 2020-04-02
+### **Icon**
 
 使用Image Asset Studio创建应用图标
 
@@ -439,26 +439,26 @@ Github的Algorithm仓库慢慢被我堆起来了
 
 [https://developer.android.com/studio/write/image-asset-studio?hl=zh-cn](https://developer.android.com/studio/write/image-asset-studio?hl=zh-cn)
 
-## **androidx**
+### **androidx**
 
 [https://www.jianshu.com/p/41de8689615d](https://www.jianshu.com/p/41de8689615d)
 
-## **杂**
+### **杂**
 
 感觉每周可以用周末的空闲时间来把这边记的一些东西给看了
 
 看完标个已读哈哈
 
-## **Room对比其他数据库框架**
+### **Room对比其他数据库框架**
 
 [https://android.ctolib.com/EdisonLiao-DBDemo.html](https://android.ctolib.com/EdisonLiao-DBDemo.html)
 
-# 2020-04-01
-## **Android**
+## 2020-04-01
+### **Android**
 
 1. [https://juejin.im/post/5bac92f2f265da0aba70c1bf](https://juejin.im/post/5bac92f2f265da0aba70c1bf)找时间补一下这个
 2. [https://www.jianshu.com/p/7286e1be14fa](https://www.jianshu.com/p/7286e1be14fa)相对布局 有些记不清楚
 
-## **RxJava**
+### **RxJava**
 
 [https://github.com/ReactiveX/RxJava](https://github.com/ReactiveX/RxJava)

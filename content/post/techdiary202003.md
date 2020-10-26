@@ -4,7 +4,7 @@ date: 2020-03-01 22:41:57
 tags:
 - TechDiary
 categories: 技术日记
-authors: 
+authors:
 - hishark777
 ---
 有在好好做算法题
@@ -21,8 +21,8 @@ authors:
 |  <font color="#B22222">**30**  |  <font color="#B22222">**31**  |      |      |      |      |      | -->
 
 
-# 2020-03-31
-## **Algorithm - sort**
+## 2020-03-31
+### **Algorithm - sort**
 
 面试的时候考排序直接用Arrays.sort()可能会挨打。
 
@@ -30,21 +30,21 @@ authors:
 2. [https://leetcode-cn.com/problems/sort-an-array/solution/fu-xi-ji-chu-pai-xu-suan-fa-java-by-liweiwei1419/](https://leetcode-cn.com/problems/sort-an-array/solution/fu-xi-ji-chu-pai-xu-suan-fa-java-by-liweiwei1419/)wei哥总结的不错
 3. [https://www.cs.usfca.edu/~galles/visualization/Algorithms.html](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)题解里看到的学习算法的可视化网站
 
-## **Android**
+### **Android**
 
 > Build anything on Android
 
 喜欢android开发者官网的这个slogan
 
-# 2020-03-30
-## **Android**
+## 2020-03-30
+### **Android**
 
 检测常用手势
 
 [https://developer.android.com/training/gestures/detector?hl=zh-cn](https://developer.android.com/training/gestures/detector?hl=zh-cn)
 
-# 2020-03-29
-## **Android Studio**
+## 2020-03-29
+### **Android Studio**
 
 AS更新到3.6.1了，这个logo颜色。。好刺眼啊，还是之前的版本更好看（可能会真香
 
@@ -69,7 +69,7 @@ AS更新到3.6.1了，这个logo颜色。。好刺眼啊，还是之前的版本
 - Win32 deprecated
 - New option for optimizing Gradle sync time
 
-## **Algorithm**
+### **Algorithm**
 
 1. [LeetCode1162](https://leetcode-cn.com/problems/as-far-from-land-as-possible/)
 - [java queue](https://blog.csdn.net/u012050154/article/details/60572567)
@@ -87,7 +87,7 @@ AS更新到3.6.1了，这个logo颜色。。好刺眼啊，还是之前的版本
 - 希尔排序
 - 直接选择排序
 
-## **App**
+### **App**
 
 Android端发现一个好用的时间追踪app——Boosted
 
@@ -110,7 +110,7 @@ Android端发现一个好用的时间追踪app——Boosted
 
 star一下⭐️
 
-## **Android**
+### **Android**
 
 1. include标签的目的是解决对布局的重复定义，从而提高代码的复用性。
 - include标签如果定义了id，若layout也定义了id，那么会被include的id所覆盖。
@@ -119,8 +119,8 @@ star一下⭐️
 1. [自适应界面的 Material 指南](https://material.io/guidelines/layout/responsive-ui.html)
 - 马一下这个
 
-# 2020-03-28
-## **Algorithm**
+## 2020-03-28
+### **Algorithm**
 
 字典树
 
@@ -130,33 +130,31 @@ star一下⭐️
 
 `->` [https://www.runoob.com/java/java8-lambda-expressions.html](https://www.runoob.com/java/java8-lambda-expressions.html)
 
-# 2020-03-26
-## **Algorithm**
+## 2020-03-26
+### **Algorithm**
 
 [借助数组对坐标进行平移！](https://leetcode-cn.com/problems/available-captures-for-rook/)
 
-# 2020-03-25
-## **Algorithm**
+## 2020-03-25
+### **Algorithm**
 
 调整一点代码实现节省时间真的有爽到哈
 
-## **杂**
+### **杂**
 
 最近玩动森玩到日夜颠倒
 
 time to study!
 
-# 2020-03-18
-## **Algorithm**
+## 2020-03-18
+### **Algorithm**
 
 正着想不明白就反着想嘛
 
 莫死磕
 
-## **Android phone-tablet适配方案**
-
-# 2020-03-17
-## **Algorithm**
+## 2020-03-17
+### **Algorithm**
 
 我终于可以不看题解做出一点题目了
 
@@ -172,7 +170,7 @@ keep moving!
 
 说不定成了呢哈哈哈哈
 
-## **杂**
+### **杂**
 
 无语
 
@@ -182,8 +180,8 @@ keep moving!
 
 睡成一滩泥巴了
 
-# 2020-03-16
-## **环信视频会议集成**
+## 2020-03-16
+### **环信视频会议集成**
 
 集成完了
 
@@ -191,13 +189,13 @@ keep moving!
 
 文档详细真是使人愉悦
 
-## **Android Error**
+### **Android Error**
 
 java.lang.RuntimeException: Failed to create EGL context: 0x3003
 
 [https://stackoverflow.com/questions/45392309/failed-to-create-egl-context](https://stackoverflow.com/questions/45392309/failed-to-create-egl-context)
 
-## **杂**
+### **杂**
 
 好的
 
@@ -205,8 +203,8 @@ java.lang.RuntimeException: Failed to create EGL context: 0x3003
 
 我在`resultCode != RESULT_OK`里写了大半天`resultCode == RESULT_OK`的逻辑
 
-# 2020-03-15
-## **环信视频会议**
+## 2020-03-15
+### **环信视频会议**
 
 注册的时候记得新建一个线程！
 
@@ -237,7 +235,7 @@ API文档太详细了
 
 PS: ScreenCaptureManager要记得在onActivityResult做判断啊兄弟
 
-## **Android Error**
+### **Android Error**
 
 1. Can't create handler inside thread that has not called Looper.prepare()
 [https://blog.csdn.net/sun_promise/article/details/45168027](https://blog.csdn.net/sun_promise/article/details/45168027)
@@ -248,11 +246,11 @@ PS: ScreenCaptureManager要记得在onActivityResult做判断啊兄弟
 4. surfaceViewAlready initialized
 publishDesktop之前不要publishCamera就好啦！重复publish就出错了
 
-## **Handler**
+### **Handler**
 
 [https://juejin.im/post/5910533dac502e006cfe01cd](https://juejin.im/post/5910533dac502e006cfe01cd)
 
-## **杂**
+### **杂**
 
 写代码态度有变端正哦zxq
 
@@ -268,8 +266,8 @@ publishDesktop之前不要publishCamera就好啦！重复publish就出错了
 
 晚安😴
 
-# 2020-03-14
-## **Hexo Theme**
+## 2020-03-14
+### **Hexo Theme**
 
 知乎突然给我推送了个问题：[求推荐一款hexo博客主题？](https://www.zhihu.com/question/316666767)
 
@@ -285,7 +283,7 @@ publishDesktop之前不要publishCamera就好啦！重复publish就出错了
 
 重装hexo了哈哈哈哈哈哈哈
 
-## **访问速度优化**
+### **访问速度优化**
 
 搞不懂为什么会慢
 
@@ -295,13 +293,13 @@ publishDesktop之前不要publishCamera就好啦！重复publish就出错了
 
 [Hexo博客访问速度优化](https://github.com/SimpleJian/Hexo/blob/master/source/_posts/Hexo%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96.md)
 
-## **环信视频会议集成**
+### **环信视频会议集成**
 
 本来想今天搞定，结果今天被博客勾走了
 
 明天做完周一交差！
 
-## **杂**
+### **杂**
 
 腾讯企业邮箱有毒哦
 
@@ -323,15 +321,15 @@ publishDesktop之前不要publishCamera就好啦！重复publish就出错了
 
 一起冲🦷！
 
-# 2020-03-13
-## **Android Error - Missing Library**
+## 2020-03-13
+### **Android Error - Missing Library**
 
 [https://blog.csdn.net/zuo_er_lyf/article/details/78593636](https://blog.csdn.net/zuo_er_lyf/article/details/78593636)
 
 如果本来就有其他sdk，且已在src/main/jniLibs下已有文件，那就把环信的sdk也塞到里头去，然后就ok啦。
 
-# 2020-03-12
-## **Android Error - Duplicate Class**
+## 2020-03-12
+### **Android Error - Duplicate Class**
 
 Duplicate class com.hyphenate.EMChatRoomChangeListener found in modules classes.jar (com.hyphenate:hyphenate-sdk:3.6.1) and hyphenatechat_3.6.4.jar (hyphenatechat_3.6.4.jar)
 Duplicate class com.hyphenate.EMClientListener found in modules classes.jar (com.hyphenate:hyphenate-sdk:3.6.1) and hyphenatechat_3.6.4.jar (hyphenatechat_3.6.4.jar)
@@ -340,7 +338,7 @@ Duplicate class com.hyphenate.EMClientListener found in modules classes.jar (com
 
 找到冲突的删掉就好了
 
-## **Android Error - Program type already present**
+### **Android Error - Program type already present**
 
 [https://www.jianshu.com/p/eee41ec17606](https://www.jianshu.com/p/eee41ec17606)
 
@@ -350,19 +348,19 @@ Duplicate class com.hyphenate.EMClientListener found in modules classes.jar (com
 
 该做的都做了之后，如果还是报错，rebuild一下就ok了！
 
-# 2020-03-09
-## **Roadmap**
+## 2020-03-09
+### **Roadmap**
 
 [Android App Developer Roadmap Curated by the Programming Community | Hackr.io](https://hackr.io/roadmaps/android-app-developer-roadmap)
 
 [Android Development Learning Path - 2020 Edition](https://medium.com/mindorks/android-development-learning-path-2020-edition-3f464ac56dbf)
 
-## **Interview Questions**
+### **Interview Questions**
 
 [Android-interview-questions](https://github.com/MindorksOpenSource/android-interview-questions)
 
-# 2020-03-03
-## **Kotlin**
+## 2020-03-03
+### **Kotlin**
 
 [English Version](https://kotlinlang.org/)
 
@@ -370,8 +368,8 @@ Duplicate class com.hyphenate.EMClientListener found in modules classes.jar (com
 
 [Smart cast to 'XXX' is impossible](https://blog.csdn.net/shichimiyasatone/article/details/97917106)
 
-# 2020-03-02
-## **SS**
+## 2020-03-02
+### **SS**
 
 用了好几年一直没在意PAC和全局的区别，哪个舒畅选哪个，今天突然google了一下
 

@@ -18,7 +18,7 @@
       <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://hishark777.com/about/</guid>
-      <description>你好我是小7 普陀女子师专软工研二在读 欢迎光临我的bb空间 博客内容很杂 爱记录生活 爱碎碎念 一般般爱学习 没什么大理想 希望天天开心 (ง ◍&#39;u&#39;◍)ว✧</description>
+      <description>你好我是小7 普陀女子师专软工研二在读 欢迎光临我的bb空间 博客内容很杂 爱记录生活 爱碎碎念 一般般爱学习 没什么大理想 希望天天开心 (ง ◍&amp;rsquo;u&amp;rs</description>
     </item>
     
     <item>
@@ -28,6 +28,7 @@
       
       <guid>https://hishark777.com/post/as-4-1/</guid>
       <description>&lt;p&gt;看看 Android Studio 4.1 更新了一些什么新特性：&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://developer.android.com/studio/releases#4-0-0&#34;&gt;Android Studio release notes  |  Android Developers&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -38,6 +39,7 @@
       
       <guid>https://hishark777.com/post/room-database/</guid>
       <description>&lt;p&gt;虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。&lt;/p&gt;
+
 &lt;p&gt;来看看 Room 怎么用。&lt;/p&gt;</description>
     </item>
     
@@ -58,7 +60,8 @@
       <pubDate>Tue, 29 Sep 2020 13:39:31 +0000</pubDate>
       
       <guid>https://hishark777.com/post/srgan/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;!-- 我决定等论文ppt做的多了之后再整一个论文笔记的分类，不然之后就这一篇岂不是很尴尬OTZ --&gt;
+
 &lt;p&gt;好的，为了毕业，开始读论文 T T&lt;/p&gt;</description>
     </item>
     
@@ -149,7 +152,9 @@
       
       <guid>https://hishark777.com/post/roomdatabaseviewer/</guid>
       <description>&lt;p&gt;Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。&lt;/p&gt;
+
 &lt;p&gt;纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？&lt;/p&gt;
+
 &lt;p&gt;查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。&lt;/p&gt;</description>
     </item>
     
@@ -169,7 +174,9 @@
       
       <guid>https://hishark777.com/post/genymotion/</guid>
       <description>&lt;p&gt;前阵子需要做个直播demo，用到了阿里云的直播sdk，阿里云文档中说明了只支持arm架构的cpu，而Android Studio自带的模拟器只能顺畅的跑x86架构的虚拟机，跑arm64架构的简直卡成树懒，查了一下发现Android Studio自带的AVD就是这个德行，遂放弃，转用Genymotion。&lt;/p&gt;
+
 &lt;p&gt;二月底决定毕业找Android岗的时候，下单了一台Pixel 2XL做自己以后的测试机，这篇文章写于购入Pixel之前，现在发现真机+模拟器一起用的测试环境还是挺舒服的。BTW谷歌亲儿子是真的好用啊，原生Android太香了，不出啥意外的话我以后就是iPhone主力机+Pixel备用机的快乐配置了哈哈哈哈哈。&lt;/p&gt;
+
 &lt;p&gt;好的扯远了，聊正事。&lt;/p&gt;</description>
     </item>
     
@@ -181,6 +188,7 @@
       <guid>https://hishark777.com/post/my2019/</guid>
       <description>&lt;p&gt;想对2019说：
 “再来一瓶🍾”&lt;/p&gt;
+
 &lt;p&gt;2019大概被切割成了三大块
 1到6月在度厂搬砖
 7到8月猫在家里&amp;amp;出去旅游
@@ -204,14 +212,15 @@
       <guid>https://hishark777.com/post/gitbook_techdiary/</guid>
       <description>&lt;p&gt;整了个Gitbook挂到博客下面
 来写技术日记&lt;/p&gt;
+
 &lt;p&gt;去年十二月偶然发现了&lt;a href=&#34;https://www.github.com/joyeecheung/diary&#34;&gt;joyee的tech-diary&lt;/a&gt;
 觉得挺有意思于是依葫芦画瓢也给自己整了个&lt;a href=&#34;https://www.hishark777.com/diary/&#34;&gt;777-Tech-Diary&lt;/a&gt;
-用了大概一个月发现了一些小问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;查看某日日记时无法直接查看前一日和后一日的内容&lt;/li&gt;
-&lt;li&gt;日历小bug有点多&lt;/li&gt;
-&lt;/ol&gt;
+用了大概一个月发现了一些小问题：
+1. 查看某日日记时无法直接查看前一日和后一日的内容
+2. 日历小bug有点多&lt;/p&gt;
+
 &lt;p&gt;第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。&lt;/p&gt;
+
 &lt;p&gt;找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。&lt;/p&gt;</description>
     </item>
     
@@ -230,7 +239,9 @@
       <pubDate>Sun, 01 Dec 2019 22:54:01 +0000</pubDate>
       
       <guid>https://hishark777.com/post/techdiary201912/</guid>
-      <description>2019-12-23 医疗项目开会听到的 DICOM baidu DICOM wiki 2019-12-21 Roadmap 嗨呀下周一要对需求 然而我安卓差不多忘光了OTZ Android developer Roadmap for 2019 Improving yourself as an Android developer Understand the Activity Lifecycle to push a bug free application Leverage dynamic and flexible and dynamic UI designs using Fragments Learn how to debug your</description>
+      <description>&lt;p&gt;2019拜拜&lt;/p&gt;
+
+&lt;p&gt;2020加油啦&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -260,9 +271,11 @@
       <guid>https://hishark777.com/post/19october/</guid>
       <description>&lt;p&gt;十月
 也是拾月&lt;/p&gt;
+
 &lt;p&gt;今天是11月18日
 下午刚做完pre
 终于闲下来写个博客&lt;/p&gt;
+
 &lt;p&gt;于是维持了一分钟双手放在键盘上的姿势
 想不起来十月是怎么度过的&lt;/p&gt;</description>
     </item>
@@ -285,11 +298,12 @@
       
       <guid>https://hishark777.com/post/jetbrains%E5%AD%A6%E7%94%9F%E7%94%B3%E8%AF%B7/</guid>
       <description>&lt;p&gt;为了下&lt;code&gt;Ultimate&lt;/code&gt;版本申请一下学生免费授权。&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/zh/student/&#34;&gt;学生申请&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;选择邮箱申请。&lt;/li&gt;
 &lt;li&gt;邮箱会收到一封邮件，邮件内的链接科学上网才可以打开。&lt;/li&gt;
-&lt;li&gt;按提示操作。&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;按提示操作。&lt;/br&gt;&lt;/li&gt;
 &lt;li&gt;打开IDEA，验证页面使用账号密码登陆，会报错&lt;code&gt;Connection Refused&lt;/code&gt;，打开终端输入&lt;code&gt;vim /etc/hosts&lt;/code&gt;把jetbrains那一行注释掉即可。&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
@@ -301,40 +315,6 @@
       
       <guid>https://hishark777.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</guid>
       <description>&lt;p&gt;昨天小翁提醒我LeanCloud中国版要停止没绑定备案域名的应用服务了，刚打算把评论系统换回来必力，点击详情发现LeanCloud国际版可以用，做个记录。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MacOS Python2.7-&gt;3.7</title>
-      <link>https://hishark777.com/post/macos_pythonupgrade/</link>
-      <pubDate>Sat, 28 Sep 2019 15:08:48 +0000</pubDate>
-      
-      <guid>https://hishark777.com/post/macos_pythonupgrade/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;已经有两位朋友来跟我说用homebrew了，dbq我真的智障🤦🏻‍♀️
-brew install python3就好啦！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;以防万一还是没动系统自带的2.7&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;官网下3.7.4
-&lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;https://www.python.org/downloads/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;open ~/.bash_profile加几行代码&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.7/bin:
-alias python=&amp;quot;/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7&amp;quot;
-alias python2=&#39;/usr/bin/python2.7&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;pip也记得在bash_profile里加一下&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias pip=&#39;/Library/Frameworks/Python.framework/Versions/3.7/bin/pip3.7&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;source ~/.bash_profile&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description>
     </item>
     
     <item>
@@ -370,17 +350,6 @@ alias python2=&#39;/usr/bin/python2.7&#39;
       <guid>https://hishark777.com/post/%E4%BA%8C%E4%B8%80%E4%B9%9D%E4%BA%8C%E6%9C%88/</guid>
       <description>&lt;p&gt;猪年啦
 诸事大吉&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Jenkins</title>
-      <link>https://hishark777.com/post/jenkins/</link>
-      <pubDate>Thu, 28 Feb 2019 20:05:33 +0000</pubDate>
-      
-      <guid>https://hishark777.com/post/jenkins/</guid>
-      <description>&lt;p&gt;好久没写正经博客了OTZ
-碎碎念大半年了
-实习学了这个就记录一下吧&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -470,7 +439,7 @@ alias python2=&#39;/usr/bin/python2.7&#39;
       
       <guid>https://hishark777.com/post/the-economist/</guid>
       <description>&lt;p&gt;发现了一个不错的公众号
-👉 &lt;em&gt;&lt;strong&gt;onebabbler&lt;/strong&gt;&lt;/em&gt;
+👉 &lt;strong&gt;&lt;em&gt;onebabbler&lt;/em&gt;&lt;/strong&gt;
 每天一小段经济学人
 之前特意买了一本英语本摘抄
 可是越发觉得效率低下 不如电子笔记
@@ -535,7 +504,7 @@ btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;</description>
       <pubDate>Thu, 10 May 2018 09:51:05 +0000</pubDate>
       
       <guid>https://hishark777.com/post/%E6%AF%95%E4%B8%9A%E5%AD%A3/</guid>
-      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;p&gt;&lt;embed src=&#34;//music.163.com/style/swf/widget.swf?sid=480286151&amp;type=2&amp;auto=1&amp;width=320&amp;height=66&#34; width=&#34;340&#34; height=&#34;86&#34;  allowNetworking=&#34;all&#34;&gt;&lt;/embed&gt;
 学校里到处都是穿着学士服拍照的学长学姐
 天天在工作室都能听到窗外的毕业快乐
 一年年看下来
@@ -570,7 +539,8 @@ btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;</description>
       <pubDate>Sat, 21 Apr 2018 17:29:17 +0000</pubDate>
       
       <guid>https://hishark777.com/post/lucky/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/29684201/48276067-1096cd80-e482-11e8-84e2-f07cbb508985.JPG&#34; width=&#34;350&#34; height=&#34;350&#34;&gt;&lt;/p&gt;
+
 &lt;p&gt;小爱心终于到了 比心&lt;/p&gt;</description>
     </item>
     
@@ -581,6 +551,7 @@ btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;</description>
       
       <guid>https://hishark777.com/post/sunny-day/</guid>
       <description>&lt;p&gt;昨天在微博上看到同性恋拥抱的那个视频&lt;/p&gt;
+
 &lt;p&gt;啊真的看的我很难过：（&lt;/p&gt;</description>
     </item>
     
@@ -672,7 +643,7 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
       <pubDate>Tue, 27 Mar 2018 16:02:17 +0000</pubDate>
       
       <guid>https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</guid>
-      <description>&lt;p&gt;HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和&lt;a href=&#34;http://hishark.cc/2018/03/26/Android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/&#34;&gt;Android客户端访问Tomcat服务器端&lt;/a&gt;一致，只需要改动LoginActivity和LoginUtil即可。&lt;/p&gt;</description>
+      <description>&lt;p&gt;HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和&lt;a href=&#34;http://hishark.cc/2018/03/26/Android客户端访问Tomcat服务器端/&#34;&gt;Android客户端访问Tomcat服务器端&lt;/a&gt;一致，只需要改动LoginActivity和LoginUtil即可。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -833,10 +804,12 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
       <description>&lt;p&gt;项目突然要加几个界面
 然后打开了将近两个月没摸过的的AS
 findViewById都给忘了我怕是智障&lt;/p&gt;
+
 &lt;p&gt;真是开张大吉呢一运行就OOM
 记得上学期被这个鬼东西烦到爆炸
 搜了很多图片加载的工具类都没有用
 然后就自己压缩图片让他勉强显示&lt;/p&gt;
+
 &lt;p&gt;现在回头看我可能是猪吧
 Glide这么美好的库为什么上学期没发现
 简直是居家旅行必备产品啊呜呜呜
@@ -871,6 +844,7 @@ Glide这么美好的库为什么上学期没发现
       
       <guid>https://hishark777.com/post/got-a-meeting-take-a-walk/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/nilofer_merchant_got_a_meeting_take_a_walk?referrer=playlist-short_talks_to_watch_during_yo&#34;&gt;Nilofer Merchant at TED2013 &amp;ndash; Got a meeting? Take a walk&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -881,10 +855,13 @@ Glide这么美好的库为什么上学期没发现
       
       <guid>https://hishark777.com/post/%E7%9E%8E%E9%80%9B%E7%9C%8B%E7%94%B5%E5%BD%B1%E6%97%A5/</guid>
       <description>&lt;h4 id=&#34;碎碎念&#34;&gt;碎碎念&lt;/h4&gt;
+
 &lt;p&gt;连看了两场电影
 看晕了
 都很好看嘿嘿&lt;/p&gt;
+
 &lt;h4 id=&#34;vlog&#34;&gt;VLOG&lt;/h4&gt;
+
 &lt;p&gt;用回一闪
 画质比猫饼好太多啦b（￣▽￣）d
 走路上瞎拍了点
@@ -898,6 +875,7 @@ Glide这么美好的库为什么上学期没发现
       
       <guid>https://hishark777.com/post/to-learn-is-to-be-free/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/jason_shen_looking_for_a_job_highlight_your_ability_not_your_experience&#34;&gt;Jason Shen at TED Residency &amp;ndash; Looking for a job? Highlight your ability, not your experience&lt;/a&gt;
 我的妈这小哥太帅了
 笑起来很好看
@@ -920,7 +898,9 @@ Glide这么美好的库为什么上学期没发现
       
       <guid>https://hishark777.com/post/you-dont-have-to-be-an-expert-to-solve-big-problems/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/tapiwa_chiwewe_you_don_t_have_to_be_an_expert_to_solve_big_problems&#34;&gt;Tapiwa Chiwewe at TED@IBM You don&amp;rsquo;t have to be an expert to solve big problems&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;这个小哥就很酷了
 做AI的突然想为空气污染做点什么
 然后就！
@@ -974,15 +954,19 @@ Glide这么美好的库为什么上学期没发现
       
       <guid>https://hishark777.com/post/2018-1-30/</guid>
       <description>&lt;h4 id=&#34;碎碎念&#34;&gt;碎碎念&lt;/h4&gt;
+
 &lt;p&gt;气哭
 手贱往git上传大文件
 作死了吧
 噩梦
 再也不乱搞了
 乖乖用七牛存视频&lt;/p&gt;
+
 &lt;p&gt;数模那本书终于过完了
 稀里糊涂过了一遍OTZ&lt;/p&gt;
+
 &lt;h4 id=&#34;vlog&#34;&gt;VLOG&lt;/h4&gt;
+
 &lt;p&gt;瞎拍&lt;/p&gt;</description>
     </item>
     
@@ -1038,9 +1022,11 @@ Glide这么美好的库为什么上学期没发现
       
       <guid>https://hishark777.com/post/2018-1-23/</guid>
       <description>&lt;p&gt;Want to be happier? Stay in the moment&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;二十岁不要想象三十岁的生活&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;未来这个东西
 只适合去想象一个轮廓
 想太细只是徒增烦恼罢了
@@ -1070,7 +1056,8 @@ Glide这么美好的库为什么上学期没发现
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;09:19 am&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2018/01/14/5a5ac2c3ea265.jpg&#34; alt=&#34;&#34;&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2018/01/14/5a5ac2c3ea265.jpg&#34; alt=&#34;&#34; /&gt;
 水星记太好听了 听了一天
 TUT&lt;/p&gt;</description>
     </item>
@@ -1100,6 +1087,7 @@ TUT&lt;/p&gt;</description>
       
       <guid>https://hishark777.com/post/2018-1-11/</guid>
       <description>&lt;p&gt;五天倒计时&lt;/p&gt;
+
 &lt;p&gt;昨晚吃了小洁几根辣条
 然后早上就拉肚子
 &amp;hellip;算了我还是别碰了&lt;/p&gt;</description>
@@ -1132,7 +1120,8 @@ TUT&lt;/p&gt;</description>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;02:07 pm&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://ws1.sinaimg.cn/large/0068SXX6ly1fnvib2k53ej307n07n74b.jpg&#34; alt=&#34;&#34;&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws1.sinaimg.cn/large/0068SXX6ly1fnvib2k53ej307n07n74b.jpg&#34; alt=&#34;&#34; /&gt;
 IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
     </item>
     
@@ -1145,6 +1134,7 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;08:07 am&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;自制力还是不行
 老想摸手机
 还是老实种树吧- -&lt;/p&gt;</description>
@@ -1159,6 +1149,7 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;10:21 am&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;总算是磕磕绊绊把前三章看完了
 刚开始看的时候真滴很晕
 要看一会睡一会
@@ -1186,6 +1177,7 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;06:42 pm&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;今天吃了超多
 我忏悔
 明天当兔子
@@ -1201,6 +1193,7 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;01:09 pm&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;新年快乐
 昨天出去玩了一天 开心
 看了两场电影
@@ -1213,7 +1206,8 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
 然后继续该干啥干啥啦
 新的一年没什么特别的愿望
 只希望大家都一切顺利吧&amp;gt; &amp;lt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ws1.sinaimg.cn/large/0068SXX6ly1fnvihxqsgpj30ez0angmi.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+
+&lt;p&gt;&lt;img src=&#34;https://ws1.sinaimg.cn/large/0068SXX6ly1fnvihxqsgpj30ez0angmi.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1232,16 +1226,16 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
       <pubDate>Sat, 30 Dec 2017 08:47:51 +0000</pubDate>
       
       <guid>https://hishark777.com/post/2017-12-30/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;08:50 pm&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;08:50 pm&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;昨天在自习室看到了一个牌子
 本来想拍下来可是手机没电了OTZ
-牌子上是&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;饭可以一日不吃
-觉可以一日不睡
-书不可以一日不读
-——毛泽东&lt;/p&gt;
-&lt;/blockquote&gt;
+牌子上是
+&amp;gt;饭可以一日不吃
+ 觉可以一日不睡
+ 书不可以一日不读
+    ——毛泽东&lt;/p&gt;
+
 &lt;p&gt;好的毛哥&lt;/p&gt;</description>
     </item>
     
@@ -1254,6 +1248,7 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;06:07 pm&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;刚把手放上键盘准备打字
 外面就放起了爱要坦荡荡
 有点恍惚哦
@@ -1263,8 +1258,10 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
 那时候才高一高二吧
 老了老了
 昨天晚上守门爷爷的小孙子跟我讲话&lt;/p&gt;
+
 &lt;p&gt;姐姐我今年五岁啦你几岁了呀
 &amp;hellip;我20了&lt;/p&gt;
+
 &lt;p&gt;sad&lt;/p&gt;</description>
     </item>
     
@@ -1277,7 +1274,9 @@ IU这张专好好听b（￣▽￣）d　&lt;/p&gt;</description>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;04:08 pm&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;国誉的方格纸真滴是满分&lt;/p&gt;
+
 &lt;p&gt;基本上算是结课了
 只有下个礼拜计网的三节复习课了
 yw说第五章有个小题wtf？
@@ -1307,6 +1306,7 @@ yw说第五章有个小题wtf？
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;09:04 pm&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;哇今天吃了一天素
 两日素食者计划本周已完成一半！
 没吃到肉好空虚哦明天去胖老板吃辣子鸡(￣▽￣)&amp;rdquo;
@@ -1324,12 +1324,15 @@ yw说第五章有个小题wtf？
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;02:42 pm&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;圣诞节🎅
 一直没什么感觉
 圣诞对于我来说一直就是“明天春哥要生日啦”的日子&lt;/p&gt;
+
 &lt;p&gt;刚中午去寄礼物
 快递中心的人都戴上了圣诞帽
 超可爱哈哈&lt;/p&gt;
+
 &lt;p&gt;上午考完了两门
 后天考计组
 再之后就是答辩 计网
@@ -1343,7 +1346,9 @@ yw说第五章有个小题wtf？
       
       <guid>https://hishark777.com/post/why-i-m-a-weekday-vegetarian/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/graham_hill_weekday_vegetarian/transcript?referrer=playlist-short_talks_to_watch_during_yo#t-223126&#34;&gt;Graham Hill at TED2010 &amp;ndash; Why I&amp;rsquo;m a weekday vegetarian&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;哇这篇真的听的很糟糕
 很多都没听出来
 这个卷毛有些地方讲的贼快啊!!
@@ -1360,6 +1365,7 @@ yw说第五章有个小题wtf？
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;05:06 pm&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;班上发了圣诞节大礼包🎅
 破戒吃巧克力了还吃了辣条
 怕是要胖死哦
@@ -1373,7 +1379,9 @@ yw说第五章有个小题wtf？
       
       <guid>https://hishark777.com/post/try-sth-new-for-30-days/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/matt_cutts_try_something_new_for_30_days&#34;&gt;Matt Cutts at TED2011 &amp;ndash; Try something new for 30 days&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;就很喜欢这个胖子
 没时间或者不想找新的视频的时候
 就老看他
@@ -1392,6 +1400,7 @@ yw说第五章有个小题wtf？
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;01:19 am&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;把前两个礼拜在hdu oj上做的题目搬过来了
 本来之前打算存到他那的notelist里
 今天发现代码莫名其妙缺失了？？

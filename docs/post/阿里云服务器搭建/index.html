@@ -52,7 +52,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -255,38 +255,62 @@
         <div class="content">
             <p>和小洁一起买了个半年的服务器，学生特惠还挺便宜。
 脑子不好，记一下流程。</p>
+
 <h4 id="买个服务器">买个服务器</h4>
+
 <p>阿里云学生特惠超贴心啦。windows server 2012卡成狗，换成2008美滋滋。</p>
+
 <h4 id="远程连接">远程连接</h4>
+
 <p>阿里云控制台的远程连接不太好用，用windows自带的远程连接。</p>
+
 <h4 id="安装jdk">安装jdk</h4>
+
 <p>装好之后记得配置环境变量。</p>
+
 <pre><code>CLASSPATH=C:\Program Files (x86)\Java\jdk1.8.0_144\lib\dt.jar;C:\Program Files (x86)\Java\jdk1.8.0_144\lib\tools.jar;
 JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_144
 </code></pre>
+
 <p>Path后面加上<code>C:\Program Files (x86)\Java\jdk1.8.0_144\bin;</code></p>
+
 <h4 id="安装tomcat">安装tomcat</h4>
+
 <ol>
 <li>解压文件apache-tomcat-8.0.9-windows-x64.zip到C:\中，改名为tomcat</li>
-<li>装好之后记得设置环境变量。
+
+<li><p>装好之后记得设置环境变量。
 在CLASSPATH后加上<code>%TALINA_HOME%\lib\servlet.jar;</code>
-添加俩变量</li>
-</ol>
+添加俩变量</p>
+
 <pre><code>CATALINA_BASE=C:\tomcat
 CATALINA_HOME=C:\tomcat
-</code></pre>
+</code></pre></li>
+</ol>
+
 <h4 id="安装mysql">安装MySQL</h4>
+
 <p>装的时候选Server only就好了，装完装个MySQL-Front。</p>
+
 <h4 id="启动mysql">启动MySQL</h4>
-<p>安装过程中有出现过这个<img src="https://user-images.githubusercontent.com/29684201/48275529-aa5d7b00-e480-11e8-87a3-39ab8d77b66d.PNG" alt="12121212">
+
+<p>安装过程中有出现过这个<img src="https://user-images.githubusercontent.com/29684201/48275529-aa5d7b00-e480-11e8-87a3-39ab8d77b66d.PNG" alt="12121212" />
 打开cmd输入<code>net start mysql57</code>即可启动MySQL。</p>
+
 <h4 id="安全组">安全组</h4>
+
 <p>阿里云安全组添加一条8080的记录。</p>
+
 <h4 id="部署项目">部署项目</h4>
+
 <p>导出项目的war包，放到服务器<code>tomcat\webapps</code>下即可。</p>
+
 <h4 id="启动tomcat">启动tomcat</h4>
+
 <p>打开<code>tomcat\bin</code>，运行<code>startup.bat</code>即可。</p>
+
 <h4 id="大功告成">大功告成</h4>
+
 <p>外网ip:8080/projectName就可以访问项目了hiahiahia(/≧▽≦)/~。</p>
         </div>
         

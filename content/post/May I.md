@@ -5,6 +5,8 @@ tags:
 - DIARIES
 - VLOG
 categories: 碎碎念
+authors:
+- hishark777
 ---
 
 嗯好久没写博客了

@@ -4,6 +4,8 @@ date: 2019-11-18 19:46:21
 tags: 
 - DIARIES
 categories: 碎碎念
+authors:
+- hishark777
 ---
 十月 
 也是拾月
@@ -96,4 +98,5 @@ apple的生态系统建立起来之后真的太方便啦
 
 以及
 10月VLOG
+
 <iframe src="//player.bilibili.com/player.html?aid=74136621&cid=126741969&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="550"> </iframe>

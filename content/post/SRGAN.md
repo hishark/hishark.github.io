@@ -16,12 +16,12 @@ authors:
 好的，为了毕业，开始读论文 T T
 <!--more-->
 
-# 1. Paper
+## 1. Paper
 
 还挺有意思
 [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
 
-# 2. Pre
+## 2. Pre
 
 <center>
 

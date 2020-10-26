@@ -6,6 +6,8 @@ tags:
 categories: 杂七杂八
 banner_img: https://777blog.oss-cn-shanghai.aliyuncs.com/wallpaper/Sunset_by_Banned.png
 hide: true
+authors:
+- hishark777
 ---
 放点生活可爱瞬间🧸
 <!--more-->

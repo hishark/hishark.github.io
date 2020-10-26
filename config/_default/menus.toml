@@ -11,7 +11,7 @@
  [[main]]
   name = "相册"
   url = "https://www.douban.com/people/hishark/photos"
-  weight = 40
+  weight = 30
 
 [[main]]
   name = "技术日记"

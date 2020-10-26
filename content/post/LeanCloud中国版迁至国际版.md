@@ -5,6 +5,8 @@ tags:
 - LeanCloud
 - Valine
 categories: 学习笔记
+authors:
+- hishark777
 ---
 昨天小翁提醒我LeanCloud中国版要停止没绑定备案域名的应用服务了，刚打算把评论系统换回来必力，点击详情发现LeanCloud国际版可以用，做个记录。
 <!--more-->

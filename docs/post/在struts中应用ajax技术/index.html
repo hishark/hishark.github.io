@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -74,7 +74,7 @@
     },
     "headline": "在Struts中应用Ajax技术 | 777\u0027s BLOG","datePublished": "2018-03-19T14:28:25+00:00",
     "dateModified": "2018-03-19T14:28:25+00:00",
-    "wordCount":  939 ,
+    "wordCount":  950 ,
     "publisher": {
         "@type": "Person",
         "name": "Example publisher",
@@ -268,22 +268,32 @@
         
         <div class="content">
             <p>Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。</p>
+
 <h4 id="一个简单的应用">一个简单的应用</h4>
+
 <p>注册时输入用户名，要检测该用户名是否已被注册。</p>
-<h5 id="在webcontentweb-inflib中添加jar包">在\WebContent\WEB-INF\lib中添加jar包</h5>
-<!-- raw HTML omitted -->
+
+<h5 id="在-webcontent-web-inf-lib中添加jar包">在\WebContent\WEB-INF\lib中添加jar包</h5>
+
+<p><center><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fpi4a7fbkzj305m00nwe9.jpg" alt="" /></center></p>
+
 <h5 id="在jsp中配置库">在jsp中配置库</h5>
+
 <pre><code class="language-jsp">&lt;%@ taglib uri=&quot;/struts-tags&quot; prefix=&quot;s&quot;%&gt;
 &lt;%@ taglib uri=&quot;/struts-dojo-tags&quot; prefix=&quot;sx&quot; %&gt;
 </code></pre>
+
 <h5 id="添加头部">添加头部</h5>
+
 <pre><code class="language-jsp">&lt;head&gt;
 &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=GB18030&quot;&gt;
 &lt;title&gt;用户注册&lt;/title&gt;
 &lt;sx:head/&gt;
 &lt;/head&gt;
 </code></pre>
+
 <h5 id="添加一个链接">添加一个链接</h5>
+
 <pre><code class="language-jsp">&lt;!-- 添加一个链接检查用户是否存在 --&gt;
 &lt;s:url id=&quot;check&quot; value=&quot;checkUser.action&quot;&gt;&lt;/s:url&gt;
 
@@ -301,7 +311,9 @@
 &lt;sx:div id=&quot;receiveResult&quot; theme=&quot;simple&quot;&gt;&lt;/sx:div&gt;
 &lt;/s:form&gt;
 </code></pre>
+
 <h5 id="userservice接口以及接口的实现">UserService接口以及接口的实现</h5>
+
 <pre><code class="language-java">public interface UserService {
 	boolean checkUser(User user);
 }
@@ -332,7 +344,9 @@ public class UserServiceImp implements UserService {
 
 }
 </code></pre>
+
 <h5 id="在regaction中添加checkuser方法">在RegAction中添加checkUser方法</h5>
+
 <pre><code class="language-java">User user;
 String checkUserResult = &quot;&quot;;
 UserService us = new UserServiceImp();
@@ -347,22 +361,36 @@ public String checkUser() {
 	return str;
 }
 </code></pre>
-<h5 id="在strutsxml中配置checkuseraction">在struts.xml中配置checkUser.action</h5>
+
+<h5 id="在struts-xml中配置checkuser-action">在struts.xml中配置checkUser.action</h5>
+
 <pre><code class="language-xml">&lt;action name=&quot;checkUser&quot; class=&quot;jxnu.edu.cn.x3321.action.RegAction&quot; method=&quot;checkUser&quot;&gt;
 &lt;result name=&quot;checkDone&quot;&gt;/reg/ajaxResult.jsp&lt;/result&gt;
 &lt;/action&gt;
 </code></pre>
-<h5 id="ajaxresultjsp中即可获得checkuserresult的值">ajaxResult.jsp中即可获得checkUserResult的值</h5>
+
+<h5 id="ajaxresult-jsp中即可获得checkuserresult的值">ajaxResult.jsp中即可获得checkUserResult的值</h5>
+
 <pre><code class="language-jsp">&lt;s:property value=&quot;checkUserResult&quot;/&gt;
 </code></pre>
-<h5 id="整个jsp页面将返回到regjsp中id为receiveresult的盒子里">整个jsp页面将返回到reg.jsp中id为receiveResult的盒子里</h5>
-<!-- raw HTML omitted -->
+
+<h5 id="整个jsp页面将返回到reg-jsp中id为receiveresult的盒子里">整个jsp页面将返回到reg.jsp中id为receiveResult的盒子里</h5>
+
+<p><center><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fpi5an2gvoj308a01i3yb.jpg" alt="" /></center>
+<hr></p>
+
+<h4 id="踩了一些坑">踩了一些坑</h4>
+
 <ol>
 <li>struts.xml改动了就要重启服务器。</li>
 <li>前面的工程中有写过一个注册校验的功能，检测用户名是否存在时会提交整个表单所以无法通过校验，会报错。</li>
-<li>表单提交中文没有正确获得中文，而是获得<code>&amp;#21834;&amp;#21834;&amp;#21834;</code>编码，把struts中这一句的gbk换成utf-8即可。</li>
+<li>表单提交中文没有正确获得中文，而是获得<code>&amp;#21834;&amp;#21834;&amp;#21834;</code>编码，把struts中这一句的gbk换成utf-8即可。
+<center>
+<div>
+<del><code>&lt;constant name=&quot;struts.i18n.encoding&quot; value=&quot;gbk&quot;&gt;&lt;/constant&gt;</code></del>
+<code>&lt;constant name=&quot;struts.i18n.encoding&quot; value=&quot;utf-8&quot;&gt;&lt;/constant&gt;</code>
+</div></center></li>
 </ol>
-<!-- raw HTML omitted -->
         </div>
         
         <div class="my-4">

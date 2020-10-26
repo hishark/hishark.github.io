@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -260,7 +260,9 @@
         
         <div class="content">
             <p>CURD教你做人</p>
-<h4 id="curd之r--查询">CURD之R&ndash;查询</h4>
+
+<h4 id="curd之r-查询">CURD之R&ndash;查询</h4>
+
 <ol>
 <li>创建一个Javabean&ndash;Book。</li>
 <li>创建一个接口Bookservice，在接口中定义一个得到所有图书的抽象方法。</li>
@@ -269,7 +271,9 @@
 <li>记得在struts.xml中配置action。（name,method）</li>
 <li>在jsp中设置一个按钮，点击即可查询出所有图书并显示出来。</li>
 </ol>
-<h4 id="curd之u--增">CURD之U&ndash;增</h4>
+
+<h4 id="curd之u-增">CURD之U&ndash;增</h4>
+
 <ol>
 <li>在接口中定义一个添加图书的抽象方法</li>
 <li>在BookServiceImp类中实现上面定义的抽象方法，实现添加一本图书。</li>
@@ -277,8 +281,11 @@
 <li>在struts.xml中配置action。(配置name,method)</li>
 <li>在BookAdd.jsp表单的action属性中填入AddBook。</li>
 </ol>
-<h4 id="curd之u--删除">CURD之U&ndash;删除</h4>
+
+<h4 id="curd之u-删除">CURD之U&ndash;删除</h4>
+
 <h5 id="删除一本图书">删除一本图书</h5>
+
 <ol>
 <li>在接口中定义一个删除图书的抽象方法。</li>
 <li>在BookServiceImp类中实现上面定义的抽象方法，实现删除一本图书。</li>
@@ -286,37 +293,44 @@
 <li>在struts.xml中配置action。（需求是删除后立马显示当前图书列表所以记得将result的type设置为chain）</li>
 <li><code>&lt;a href='&lt;s:url action=&quot;bookDelete&quot;&gt;&lt;s:param name=&quot;bookId&quot; value=&quot;bookId&quot;/&gt;&lt;/s:url&gt;'&gt;Delete&lt;/a&gt;</code>以获取想要删除的图书的bookId，则点击Delete链接时调用action——bookDelete。</li>
 </ol>
+
 <h5 id="删除多本图书">删除多本图书</h5>
+
 <ol>
 <li>在BookManagementAction中定义一个方法，在其中循环调用BookServiceImp中的删除图书方法即可。还要定义一个数组bookIds[]用于存储待删除图书的Id。</li>
 <li>在struts.xml中配置action。（需求是删除后立马显示当前图书列表所以记得将result的type设置为chain）</li>
-<li>选中一个checkbox就获得一个bookId。↓</li>
-</ol>
+
+<li><p>选中一个checkbox就获得一个bookId。↓</p>
+
 <pre><code class="language-jsp">&lt;!-- 用户选中的bookId全部放入bookIds --&gt;
 &lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;bookIds&quot; value='&lt;s:property value=&quot;bookId&quot;/&gt;'&gt;&lt;/td&gt;
 &lt;td&gt;&lt;s:property value=&quot;isbn&quot; /&gt;&lt;/td&gt;
 &lt;td&gt;&lt;s:property value=&quot;title&quot; /&gt;&lt;/td&gt;
 &lt;td&gt;&lt;s:property value=&quot;price&quot; /&gt;&lt;/td&gt;
-</code></pre>
-<ol start="4">
-<li>修改提交表单时调用action——bookDeletes。<code>&lt;s:form theme=&quot;simple&quot; action=&quot;bookDeletes&quot;&gt;</code></li>
+</code></pre></li>
+
+<li><p>修改提交表单时调用action——bookDeletes。<code>&lt;s:form theme=&quot;simple&quot; action=&quot;bookDeletes&quot;&gt;</code></p></li>
 </ol>
-<h4 id="curd之u--修改">CURD之U&ndash;修改</h4>
+
+<h4 id="curd之u-修改">CURD之U&ndash;修改</h4>
+
 <ol>
 <li>修改需要两个action——bookLoad和bookUpdate。</li>
 <li>点击Edit时调用bookLoad获取选中图书的信息并显示出来。别忘了这句<code>&lt;a href='&lt;s:url action=&quot;bookLoad&quot;&gt;&lt;s:param name=&quot;bookId&quot; value=&quot;bookId&quot;/&gt;&lt;/s:url&gt;'&gt;Edit&lt;/a&gt;</code>，不然获取不到选中的bookId。</li>
 <li>修改完成后，提交表单时再调用bookUpdate更新图书信息。</li>
 </ol>
-<hr>
-<p><em><!-- raw HTML omitted -->ResultSet<!-- raw HTML omitted --></em>
+
+<hr />
+
+<p><em><font color='#FF8C00'>ResultSet</font></em>
 数据库结果集的数据表，通常通过执行查询数据库的语句生成。
-<em><!-- raw HTML omitted -->href写绝对路径<!-- raw HTML omitted --></em>
+<em><font color='#FF8C00'>href写绝对路径</font></em>
 <code>&lt;a href='/15Struts2-09-curd/curd/BookList.jsp'&gt;return&lt;/a&gt;</code>
-<em><!-- raw HTML omitted -->数据setget<!-- raw HTML omitted --></em>
+<em><font color='#FF8C00'>数据setget</font></em>
 拦截器在action中拦截数据
-<em><!-- raw HTML omitted -->href嵌套s:url<!-- raw HTML omitted --></em>
+<em><font color='#FF8C00'>href嵌套s:url</font></em>
 <code>&lt;a href='&lt;s:url action=&quot;bookList&quot;&gt;&lt;/s:url&gt;'&gt;返回&lt;/a&gt;</code>
-<em><!-- raw HTML omitted -->hidden隐藏<!-- raw HTML omitted --></em>
+<em><font color='#FF8C00'>hidden隐藏</font></em>
 <code>&lt;s:hidden name=&quot;book.bookId&quot;&gt;&lt;/s:hidden&gt;</code></p>
         </div>
         

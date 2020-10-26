@@ -19,6 +19,7 @@
       
       <guid>https://hishark777.com/post/as-4-1/</guid>
       <description>&lt;p&gt;看看 Android Studio 4.1 更新了一些什么新特性：&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&#34;https://developer.android.com/studio/releases#4-0-0&#34;&gt;Android Studio release notes  |  Android Developers&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -29,6 +30,7 @@
       
       <guid>https://hishark777.com/post/room-database/</guid>
       <description>&lt;p&gt;虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。&lt;/p&gt;
+
 &lt;p&gt;来看看 Room 怎么用。&lt;/p&gt;</description>
     </item>
     
@@ -39,7 +41,9 @@
       
       <guid>https://hishark777.com/post/roomdatabaseviewer/</guid>
       <description>&lt;p&gt;Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。&lt;/p&gt;
+
 &lt;p&gt;纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？&lt;/p&gt;
+
 &lt;p&gt;查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。&lt;/p&gt;</description>
     </item>
     

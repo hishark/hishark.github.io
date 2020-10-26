@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -74,7 +74,7 @@
     },
     "headline": "利用OkHttp请求网络 | 777\u0027s BLOG","datePublished": "2018-03-27T16:02:17+00:00",
     "dateModified": "2018-03-27T16:02:17+00:00",
-    "wordCount":  767 ,
+    "wordCount":  1183 ,
     "publisher": {
         "@type": "Person",
         "name": "Example publisher",
@@ -83,7 +83,7 @@
             "url": "https://hishark777.com/images/icon.png"
         }
         },
-    "description": "\u003cp\u003eHttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和\u003ca href=\u0022http:\/\/hishark.cc\/2018\/03\/26\/Android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF\/\u0022\u003eAndroid客户端访问Tomcat服务器端\u003c\/a\u003e一致，只需要改动LoginActivity和LoginUtil即可。\u003c\/p\u003e"
+    "description": "\u003cp\u003eHttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和\u003ca href=\u0022http:\/\/hishark.cc\/2018\/03\/26\/Android客户端访问Tomcat服务器端\/\u0022\u003eAndroid客户端访问Tomcat服务器端\u003c\/a\u003e一致，只需要改动LoginActivity和LoginUtil即可。\u003c\/p\u003e"
 }
 </script>
 
@@ -250,7 +250,7 @@
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
-        <span>2分钟</span>
+        <span>3分钟</span>
     </div>
     
     
@@ -267,8 +267,10 @@
         
         
         <div class="content">
-            <p>HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和<a href="http://hishark.cc/2018/03/26/Android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/">Android客户端访问Tomcat服务器端</a>一致，只需要改动LoginActivity和LoginUtil即可。</p>
-<h4 id="loginactivityjava">LoginActivity.java</h4>
+            <p>HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和<a href="http://hishark.cc/2018/03/26/Android客户端访问Tomcat服务器端/">Android客户端访问Tomcat服务器端</a>一致，只需要改动LoginActivity和LoginUtil即可。</p>
+
+<h4 id="loginactivity-java">LoginActivity.java</h4>
+
 <pre><code class="language-java">public class LoginActivity extends AppCompatActivity {
     /**
      * 定义控件
@@ -318,7 +320,9 @@
     }
 }
 </code></pre>
-<h4 id="loginutiljava">LoginUtil.java</h4>
+
+<h4 id="loginutil-java">LoginUtil.java</h4>
+
 <pre><code class="language-java">public  class LoginUtil {
 
     //模拟器用10.0.2.2，真机用无线局域网适配器ip——192.168.137.1
@@ -391,9 +395,20 @@
 
 }
 </code></pre>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<hr>
+
+<h4 id="踩坑">踩坑</h4>
+
+<ol>
+<li>如果报错<font color="#FF8C00"><code>FATAL EXCEPTION: OkHttp Dispatcher java.lang.IllegalStateException: closed</code></font>，检查<font color="#FF8C00"><code>response.body().string()</code></font>是否使用了多次，这个只能用一次。原因：从源码中可以发现调用一次<font color="#FF8C00"><code>.string</code></font>方法后又有close方法，流会被关闭，所以会报错。</li>
+<li>直接在主线程中实例化一个<font color="#FF8C00"><code>Handler</code></font>对象传给<font color="#FF8C00"><code>LoginUtil</code></font>工具类，在工具类中<font color="#FF8C00"><code>OkHttp</code></font>的异步请求会有一个回调方法是在子线程中执行，拿到网络请求结果之后直接通过<font color="#FF8C00"><code>Handler</code></font>传回主线程更新<font color="#FF8C00"><code>UI</code></font>即可。*AsyncTask未解决，应该哪一步出了点错，下次试一下。*</li>
+<li>一开始想学之前用<font color="#FF8C00"><code>HttpClient</code></font>那样从<font color="#FF8C00"><code>Entity</code></font>中拿到<font color="#FF8C00"><code>Json</code></font>对象结果<font color="#FF8C00"><code>OkHttp</code></font>的<font color="#FF8C00"><code>Response</code></font>没有<font color="#FF8C00"><code>getEntity</code></font>噢。查了查发现<font color="#FF8C00"><code>Gson</code></font>很方便很好用。</li>
+<li>往表单请求体<font color="#FF8C00"><code>FormBody</code></font>中传递键值对时，要注意<font color="#FF8C00"><code>key</code></font>的值要和服务器端写的<font color="#FF8C00"><code>LoginActivityAction</code></font>中的变量同名噢不然得不到数据- -，有两个字母忘记大写了坑了我半天。</li>
+</ol>
+
 <h4 id="tips">TIPS</h4>
+
 <ol>
 <li>以上是Struts2框架，SSM把URL最后改为<code>@RequestMapping</code>设置的名字即可。</li>
 </ol>

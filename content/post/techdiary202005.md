@@ -19,8 +19,8 @@ authors:
 |  18  |  <font color="#B22222">**19**  |  <font color="#B22222">**20**  |  <font color="#B22222">**21**  |  <font color="#B22222">**22**  |  23  |  24  |
 |  <font color="#B22222">**25**  |  <font color="#B22222">**26**  |  <font color="#B22222">**27**  |  <font color="#B22222">**28**  |  <font color="#B22222">**29**  |  30  |  31  | -->
 
-# 2020-05-29
-## Notion
+## 2020-05-29
+### Notion
 
 [Work at Notion](https://www.notion.so/Work-at-Notion-e7aeb157238a4603a2964b28c646f07f)
 
@@ -30,13 +30,13 @@ authors:
 
 You can readily learn most technologies as you go. To you, technologies are about tools and tradeoffs, not an ideology.
 
-## Android
+### Android
 
 不小心搜到 之后应该会需要用到
 
 [Android平台图像压缩方案](https://juejin.im/post/5a1bd6595188254cc067981f)
 
-## 站点管理
+### 站点管理
 
 把站子添加到百度和谷歌收录了
 
@@ -46,7 +46,7 @@ You can readily learn most technologies as you go. To you, technologies are abou
 
 [3.添加验证网站之CNAME验证操作-百度搜索资源平台系列教程](https://www.seoshipin.cn/baiduseo/baidupingtai/1905.html)
 
-## 杂
+### 杂
 
 mbp触控板超级好用毋庸置疑
 
@@ -72,8 +72,8 @@ mbp触控板超级好用毋庸置疑
 
 滴 加入购物车
 
-# 2020-05-28
-## Android
+## 2020-05-28
+### Android
 
 开发横屏app时总会碰到的烦人事
 
@@ -89,7 +89,7 @@ mbp触控板超级好用毋庸置疑
 
 个鬼，不知道是因为我没root还是- -可是有一个是非root的手机解决方案嘛！！
 
-## Error
+### Error
 
 【如果又碰到奇奇怪怪的错误先看下是不是又忘记关掉梯子了OTZ】
 
@@ -100,8 +100,8 @@ mbp触控板超级好用毋庸置疑
 2020-05-28 11:57:50.144 5423-5468/com.example.getmeetingdemo W/OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xca76bee0, error=EGL_BAD_MATCH
 ```
 
-# 2020-05-27
-## Image Storage
+## 2020-05-27
+### Image Storage
 
 掌超的原始图像存储方案
 
@@ -112,7 +112,7 @@ mbp触控板超级好用毋庸置疑
 * {@link UsSnapshot} 截图 {@link #tglBtnSavePic}监听事件截图
 ```
 
-## ImageReader
+### ImageReader
 
 ImageReader.OnImageAvailableListener
 用于通知新图像可用的回调接口。
@@ -130,7 +130,7 @@ setOnImageAvailableListener(ImageReader.OnImageAvailableListener listener, Handl
 
 [android.hardware.camera2 使用指南_liang9zi的专栏-CSDN博客](https://blog.csdn.net/liang9zi/article/details/79296769)
 
-## 环信视频会议
+### 环信视频会议
 
 上次集成忘记把步骤记下来了
 
@@ -140,23 +140,23 @@ setOnImageAvailableListener(ImageReader.OnImageAvailableListener listener, Handl
 
 [blog draft - huanxin](https://www.notion.so/blog-draft-huanxin-5c70208cb7154ff081fa3efbd90120c0)
 
-## Notion
+### Notion
 
 资源整合
 
 [Notion Expert](https://www.notionexpert.com/)
 
-## 讯飞语音输入
+### 讯飞语音输入
 
 [blog draft - xfyun](https://www.notion.so/blog-draft-xfyun-f459ad704d2c43e0a85e541d2e0ab1d3)
 
-## Room Image
+### Room Image
 
 [How insert image in room persistence library?](https://stackoverflow.com/questions/46337519/how-insert-image-in-room-persistence-library)
 
 看大家的留言都不推荐直接存Image，最好是存图片路径！
 
-## Room autoGenerate Error
+### Room autoGenerate Error
 
 A实体的主键如果autoGenerate的话，设置为B实体的外键后，会导致错误。解决方案是别用int作为id自增，换用uuid当作实体的id。还有个方法是把int换为long，这个还没试，明天来试试。
 
@@ -170,17 +170,17 @@ int→long
 
 uuid
 
-## Github
+### Github
 
 发现一个不错的仓库
 
 [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub)
 
-## Java多线程
+### Java多线程
 
 [本书简介](http://concurrent.redspider.group/)
 
-## APK打包
+### APK打包
 
 [Android开发：使用Android Studio打包APK文件的步骤_移动开发_iOS软贱攻城狮-CSDN博客](https://blog.csdn.net/CC1991_/article/details/103285684)
 
@@ -192,7 +192,7 @@ uuid
 
 [安卓打包后的apk安装后闪退解决策略_开发工具_silence2015的专栏-CSDN博客](https://blog.csdn.net/silence2015/article/details/51457571)
 
-## 杂
+### 杂
 
 付了osmo action的定金之后天天心里都只有它
 
@@ -200,14 +200,14 @@ uuid
 
 Notion里面还是Serif字体最好看！
 
-# 2020-05-26
-## Notion
+## 2020-05-26
+### Notion
 
 [Notion 中如何添加目录？ - Linmi](https://linmi.cc/2446.html)
 
 把Tech Diary和LeetCode搬来Notion啦
 
-## Kotlin
+### Kotlin
 
 [https://www.jianshu.com/p/27646c6561a7](https://www.jianshu.com/p/27646c6561a7)  Kotlin for循环的几种使用方法
 
@@ -217,7 +217,7 @@ Notion里面还是Serif字体最好看！
 
 [Kotlin集合--Map集合](https://www.jianshu.com/p/da5cc9072f1e)
 
-## 杂
+### 杂
 
 早上收到Ivan群发的email 说国内服务恢复了
 
@@ -229,30 +229,30 @@ Notion里面还是Serif字体最好看！
 
 btw恢复之后比以前不搭梯子用起来速度快很多诶！
 
-# 2020-05-25
-## **Room**
+## 2020-05-25
+### **Room**
 
 [Android—Room数据库多表查询(Relationships)](https://www.tinymind.net.cn/articles/9e81b5f629f824)
 
-## **Github**
+### **Github**
 
 [What is “Developer Program Member” on Github.com](https://stackoverflow.com/questions/28255341/what-is-developer-program-member-on-github-com)
 
 [Getting Started](https://developer.github.com/v3/guides/getting-started/)
 
-## **杂**
+### **杂**
 
 error log太关键了别看错啊
 
-# 2020-05-22
-## **Room List**
+## 2020-05-22
+### **Room List**
 
 [Android Room 之存储 Objects 中的 List](https://www.jianshu.com/p/3f148b1e34d4)
 
 [Room数据库使用指北List<>的问题](https://www.jianshu.com/p/392c63660ad4)
 
-# 2020-05-21
-## **Android**
+## 2020-05-21
+### **Android**
 
 [Android如何让EditText不自动获取焦点](https://blog.csdn.net/qq_15784961/article/details/84982421?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)
 
@@ -268,7 +268,7 @@ Caused by: java.lang.IllegalStateException: You need to use a Theme.AppCompat th
 
 [Android Intent 传递自定义对象](https://www.jianshu.com/p/6b6adaeadc15)
 
-## **Butterknife**
+### **Butterknife**
 
 [Manifest merger failed with multiple errors, see logs 问题处理](https://www.jianshu.com/p/a22c55a28064)
 
@@ -276,8 +276,8 @@ Caused by: java.lang.IllegalStateException: You need to use a Theme.AppCompat th
 
 8.0够用的样子
 
-# 2020-05-20
-## **Android**
+## 2020-05-20
+### **Android**
 
 老弹出内存不足窗口这个问题烦死了
 
@@ -295,7 +295,7 @@ profiler看到最高到了200+
 
 [alertDialog设立主题theme的方法](https://blog.csdn.net/u011131296/article/details/39546901)
 
-## **杂**
+### **杂**
 
 大好日子怎能不工作学习！
 
@@ -313,32 +313,32 @@ profiler看到最高到了200+
 
 看中一套102平方米的不错
 
-# 2020-05-19
-## **Android**
+## 2020-05-19
+### **Android**
 
 我觉得用户表用一张就够了吧
 
-## **Java**
+### **Java**
 
 [JAVA - String 中删除指定字符（11种方法）](https://blog.csdn.net/linzhiqiang0316/article/details/90440696)
 
-## **杂**
+### **杂**
 
 本人典型间断性鸡血+间断性歇菜
 
-# 2020-05-13
-## **异或运算**
+## 2020-05-13
+### **异或运算**
 
 - 任何数和 0 做异或运算，结果仍然是原来的数。
 - 任何数和其自身做异或运算，结果是 0。
 - 异或运算满足交换律和结合律。
 
-# 2020-05-12
-## **Kotlin**
+## 2020-05-12
+### **Kotlin**
 
 [How can I use stack in Kotlin?](https://stackoverflow.com/questions/46900048/how-can-i-use-stack-in-kotlin/49843441)
 
-## **杂**
+### **杂**
 
 心狗今天复试
 
@@ -348,8 +348,8 @@ profiler看到最高到了200+
 
 > 上岸啦！！！！！！！！！！！开心！！！！！！！！！！
 
-# 2020-05-11
-## **Yuque**
+## 2020-05-11
+### **Yuque**
 
 终于出桌面端了哈哈哈哈哈好用！！
 
@@ -359,17 +359,17 @@ web端我房间网不稳定有时候急着记东西又打不开的时候可以�
 
 happyyy
 
-## **Algorithm**
+### **Algorithm**
 
 [https://leetcode-cn.com/problems/powx-n/](https://leetcode-cn.com/problems/powx-n/submissions/)
 
 实现pow(x,n) 要利用n奇偶性进行递归
 
-## **Kotlin**
+### **Kotlin**
 
 和Java不一样： [Kotlin秘籍之类型转换](https://www.jianshu.com/p/7009a9941360)
 
-## **杂**
+### **杂**
 
 昨天终于清了一些破事
 
@@ -377,12 +377,12 @@ happyyy
 
 太 爽 了 ！
 
-# 2020-05-10
-## **分割线**
+## 2020-05-10
+### **分割线**
 
 [Android 布局中分割线创建的三种方式](https://www.jianshu.com/p/2347f68b2e5d)
 
-## **EditText**
+### **EditText**
 
 [Android之自定义EditText光标和下划线颜色](https://blog.csdn.net/Lindroid20/article/details/72551102)
 
@@ -390,11 +390,11 @@ happyyy
 
 android:background="@android:drawable/editbox_background_normal"
 
-## **Menu**
+### **Menu**
 
 [Android创建右上角菜单](https://www.jianshu.com/p/bd4f73f76c88)
 
-## **PDF**
+### **PDF**
 
 [Exploring iText : To Create PDF in Android](https://medium.com/android-school/exploring-itext-to-create-pdf-in-android-5577881998c8)
 
@@ -412,31 +412,31 @@ android:background="@android:drawable/editbox_background_normal"
 
 [【PDF】java使用Itext生成pdf文档--详解](https://www.cnblogs.com/ssslinppp/p/4976922.html)
 
-## **PDF Viewer**
+### **PDF Viewer**
 
 [Android view for displaying PDFs rendered with PdfiumAndroid](https://github.com/barteksc/AndroidPdfViewer)
 
 [Android PdfViewer案例使用](https://www.cnblogs.com/zoro-zero/p/12092109.html)
 
-## **Gradle**
+### **Gradle**
 
 [Unable to determine application id: com.android.tools.idea.run.ApkProvisionException: No outputs for the main artifact of variant: debug](https://stackoverflow.com/questions/56440572/how-to-fix-unable-to-determine-application-id-com-android-tools-idea-run-apkpr)
 
-# 2020-05-09
-## **数据刷新**
+## 2020-05-09
+### **数据刷新**
 
 [RecyclerView调用notifyDataSetChanged()不起作用](https://www.jianshu.com/p/975ab1391e78)
 
-## **Room模糊查询**
+### **Room模糊查询**
 
 [关于Room数据库，拼写模糊查找的语句遇到问题](https://www.jianshu.com/p/61e7a92d3ba1)
 
-## **Dialog**
+### **Dialog**
 
 [Unable to add window -- token null is not valid; is your activity running?](https://blog.csdn.net/Mr_ziheng/article/details/90256642)
 
-# 2020-05-08
-## **Room**
+## 2020-05-08
+### **Room**
 
 [Room + Time](https://medium.com/androiddevelopers/room-time-2b4cf9672b98)
 
@@ -455,16 +455,16 @@ import java.sql.Date; // right
 
 [Android Room compile-time warning about column in foreign key not part of an index. What does it mean?](https://stackoverflow.com/questions/44480761/android-room-compile-time-warning-about-column-in-foreign-key-not-part-of-an-ind)
 
-## **Read Later**
+### **Read Later**
 
 - [7 Pro-tips for Room](https://medium.com/androiddevelopers/7-pro-tips-for-room-fbadea4bfbd1)
 
-## **Database**
+### **Database**
 
 [类的继承关系如何在关系型数据库体现](https://blog.csdn.net/kevinofneu/article/details/38873293)
 
-# 2020-05-07
-## **Room**
+## 2020-05-07
+### **Room**
 
 果然stackoverflow是万能的
 
@@ -478,15 +478,15 @@ import java.sql.Date; // right
                       @ForeignKey(entity = MedicalVideo.class, parentColumns = "id", childColumns = "video_id")})
 ```
 
-## **Matlab**
+### **Matlab**
 
 [MATLAB 2019b not responding on Mac OS Catalina](https://ww2.mathworks.cn/matlabcentral/answers/491996-matlab-2019b-not-responding-on-mac-os-catalina?s_tid=prof_contriblnk)
 
 - 刚开始忘记给隐私权限
 - Magnet
 
-# 2020-05-01
-## **Java**
+## 2020-05-01
+### **Java**
 
 n%10 * n%10;
 (n%10) * (n%10)

@@ -5,6 +5,8 @@ tags:
 - ssh
 - git
 categories: 学习笔记
+authors:
+- hishark777
 ---
 
 老板昨天扔了个阿里云code的项目，电脑之前已经绑定了Github的账号，于是查了一下如何在同一台电脑上绑定两个账号，存档记录一下。

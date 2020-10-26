@@ -4,6 +4,8 @@ date: 2018-07-30 20:39:20
 tags: 
 - Deep Learning
 categories: 学习笔记
+authors:
+- hishark777
 ---
 deadline是第一生产力\*(੭\*ˊᵕˋ)੭\*ଘ
 <!--more-->

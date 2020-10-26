@@ -5,6 +5,8 @@ tags:
 - ML
 - 论文复现
 categories: 学习笔记
+authors:
+- hishark777
 ---
 人工智能课程概论作业——论文复现
 期末汇报存档
@@ -25,7 +27,9 @@ categories: 学习笔记
 
 &nbsp;&nbsp;&nbsp;&nbsp;有意思的是这60个人很有可能都是华南理工大学的学生和教职工，从另一个层面来看，根据这个数据集训练出来的模型很大程度上反应了华南理工大学师生对人脸的喜好。
 
+<center>
 <img src="https://i.loli.net/2020/03/06/t8GedRIl5nYWVP4.jpg" style="zoom: 35%;" />
+</center>
 
 ## 3 数据分析
 
@@ -33,7 +37,9 @@ categories: 学习笔记
 
 &nbsp;&nbsp;&nbsp;&nbsp;经过60个人的评分最终得到了330000个分数，对每张照片的所有得分取平均求出每张照片的平均得分作为最终得分。
 
+<center>
 <img src="https://i.loli.net/2020/03/06/DWQ417PfTuM32Hn.png" style="zoom:33%;" />
+</center>
 
 ### 3-2 异常值
 
@@ -103,7 +109,9 @@ feature_vector =
 
 &nbsp;&nbsp;&nbsp;&nbsp;本项目使用到的caffe深度学习框架需要使用CUDA进行GPU加速，同时CUDA只支持Nvidia图形卡，由于我电脑的图形卡不是N卡，只能使用CPU，所以无法使用GPU进行模型训练，耗费时间过长，故直接使用作者已训练好的模型进行5折交叉验证。
 
+<center>
 <img src="https://i.loli.net/2020/03/06/jgwDlrIGQK5AOJN.png" style="zoom: 30%;" />
+</center>
 
 #### 4-2-1 模型性能分析
 

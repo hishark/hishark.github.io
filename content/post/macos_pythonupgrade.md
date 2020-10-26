@@ -4,7 +4,9 @@ date: 2019-09-28 15:08:48
 tags: 
 - MacOS
 categories: 学习笔记
-hide: true
+draft: true
+authors:
+- hishark777
 ---
 >已经有两位朋友来跟我说用homebrew了，dbq我真的智障🤦🏻‍♀️
 brew install python3就好啦！

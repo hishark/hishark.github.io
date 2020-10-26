@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -74,7 +74,11 @@
     },
     "headline": "卡片校园踩坑记录 | 777\u0027s BLOG","datePublished": "2018-04-08T09:43:08+00:00",
     "dateModified": "2018-04-08T09:43:08+00:00",
-    "wordCount":  3098 ,
+    "wordCount":  3249 ,
+    "author": {
+        "@type": "Person",
+        "name": ["hishark777"]
+    },
     "publisher": {
         "@type": "Person",
         "name": "Example publisher",
@@ -274,224 +278,209 @@
         
         <div class="content">
             <p>这次开发过程中碰到的问题都扔这，看最后能不能破百哦哈哈</p>
+
 <ol>
-<li>
-<p>标签云的属性要记得设置，只设置宽高运行时会报错。</p>
-</li>
-<li>
-<p>登录成功后，按返回键出去后再进来又要登录，<a href="https://blog.csdn.net/li15225271052/article/details/62884597">解决方法</a>，重写onKeyDown即可。</p>
-</li>
-<li>
-<p>登录界面如果用了<code>TextInputLayout</code>，那么获取到EditText输入值的语句要放在登录按钮的点击事件里，不知道为什么，玄学。<a href="https://blog.csdn.net/tmaskboy/article/details/41047997">这个人能发现也是无敌</a>。</p>
-</li>
-<li>
-<p>GridView的Item居中直接在getView里面动态设置即可</p>
-</li>
-<li>
-<p>使用同类多个视图解析器，比如jsp视图解析器，直接在Controller里设置好路径就好了，不要在springMVC.xml里用order设置优先级，没有用噢。</p>
+<li><p>标签云的属性要记得设置，只设置宽高运行时会报错。</p></li>
+
+<li><p>登录成功后，按返回键出去后再进来又要登录，<a href="https://blog.csdn.net/li15225271052/article/details/62884597">解决方法</a>，重写onKeyDown即可。</p></li>
+
+<li><p>登录界面如果用了<code>TextInputLayout</code>，那么获取到EditText输入值的语句要放在登录按钮的点击事件里，不知道为什么，玄学。<a href="https://blog.csdn.net/tmaskboy/article/details/41047997">这个人能发现也是无敌</a>。</p></li>
+
+<li><p>GridView的Item居中直接在getView里面动态设置即可</p></li>
+
+<li><p>使用同类多个视图解析器，比如jsp视图解析器，直接在Controller里设置好路径就好了，不要在springMVC.xml里用order设置优先级，没有用噢。</p>
+
 <pre><code class="language-java">ModelAndView mav=new ModelAndView();
 mav.setViewName(&quot;userCURD/UserList&quot;);
-</code></pre>
-</li>
-<li>
-<p>MySQL-Front导出的sql代码会按照数据库目前表格顺序排序，这样可能会导致找不到外键关联的表的问题。</p>
-</li>
-<li>
-<p>eclipse pull下来的时候报错<code>checkout conflict with files</code>，右键项目<code>Team-&gt;Advanced-&gt;Assume Unchanged</code>，然后再pull即可。（这个方法是忽略了自己的修改，如果不想忽略就是别的情况了）</p>
-</li>
-<li>
-<p>莫名其妙的404问题直接删了Tomcat新建一个就好了，没有什么是删掉一个垃圾汤姆猫不能解决的，如果不能，就删两遍：）</p>
-</li>
-<li>
-<p>数据库表里字段为user_sno，javabean里属性为User，在mapper.xml中使用association即可。</p>
-</li>
-<li>
-<p>html和js忘了个精光，页面加载时就调用函数用这个</p>
-</li>
-</ol>
+</code></pre></li>
+
+<li><p>MySQL-Front导出的sql代码会按照数据库目前表格顺序排序，这样可能会导致找不到外键关联的表的问题。</p></li>
+
+<li><p>eclipse pull下来的时候报错<code>checkout conflict with files</code>，右键项目<code>Team-&gt;Advanced-&gt;Assume Unchanged</code>，然后再pull即可。（这个方法是忽略了自己的修改，如果不想忽略就是别的情况了）</p></li>
+
+<li><p>莫名其妙的404问题直接删了Tomcat新建一个就好了，没有什么是删掉一个垃圾汤姆猫不能解决的，如果不能，就删两遍：）</p></li>
+
+<li><p>数据库表里字段为user_sno，javabean里属性为User，在mapper.xml中使用association即可。</p></li>
+
+<li><p>html和js忘了个精光，页面加载时就调用函数用这个</p>
+
 <pre><code class="language-jsp">&lt;script type=&quot;text/javascript&quot;&gt;
 window.onload = function()
 {
-   showAtRight('${c}')
+  showAtRight('${c}')
 }
 &lt;/script&gt;
-</code></pre>
-<ol start="11">
-<li>
-<p>如果右边加载的内容显示页里面有css，必须放在主页index.jsp才起作用。</p>
-</li>
-<li>
-<p>用json时如果找不到<code>.fromObject</code>方法，看一下导的json包是<code>net.sf.json.JSONObject</code>还是<code>org.json.JSONObject</code>。如果是后者，换成前者即可。</p>
-</li>
-<li>
-<p>水平的线性布局不能用layout_gravity使控件居右，用weight即可。</p>
-</li>
-<li>
-<p>Handler可以定义多个啦智障。</p>
-</li>
-<li>
-<p>捷豹那个intent传递数据的问题，因为传的不是Object，传过来的实际上是HashMap。还需要注意的是在两个Activity之间传送数据时，需要读或者写其他的bean数据的话，这些bean需要实现Serializable序列化接口。（有几个就实现几个，不要漏了）</p>
+</code></pre></li>
+
+<li><p>如果右边加载的内容显示页里面有css，必须放在主页index.jsp才起作用。</p></li>
+
+<li><p>用json时如果找不到<code>.fromObject</code>方法，看一下导的json包是<code>net.sf.json.JSONObject</code>还是<code>org.json.JSONObject</code>。如果是后者，换成前者即可。</p></li>
+
+<li><p>水平的线性布局不能用layout_gravity使控件居右，用weight即可。</p></li>
+
+<li><p>Handler可以定义多个啦智障。</p></li>
+
+<li><p>捷豹那个intent传递数据的问题，因为传的不是Object，传过来的实际上是HashMap。还需要注意的是在两个Activity之间传送数据时，需要读或者写其他的bean数据的话，这些bean需要实现Serializable序列化接口。（有几个就实现几个，不要漏了）</p>
+
 <pre><code class="language-java">intent.putExtra(&quot;BookPost&quot;,BookPostResult.get(i));
 currentBookPost = (HashMap&lt;String,Object&gt;)getIntent().getSerializableExtra(&quot;BookPost&quot;);
-</code></pre>
-</li>
-<li>
-<p>自定义标题栏，使用Toolbar时，最左边总会有一点间距，设置<code>app:contentInsetStart=&quot;0dp&quot;</code>即可。</p>
-</li>
-<li>
-<p>从数据库查出时间JSON为下面的代码，想直接按照以前的方法用Gson解析出时间，解析不出来。用其他的办法，利用阿里的fastjson得到time的值。然后再<code>Timestamp = new Timestamp(1524323880000L)</code>即可。有个坑，千万要记得加L，不加L会默认为int，就会报错说太长啦。加个L表示就会作为Long类型来处理了。</p>
-</li>
-</ol>
+</code></pre></li>
+
+<li><p>自定义标题栏，使用Toolbar时，最左边总会有一点间距，设置<code>app:contentInsetStart=&quot;0dp&quot;</code>即可。</p></li>
+
+<li><p>从数据库查出时间JSON为下面的代码，想直接按照以前的方法用Gson解析出时间，解析不出来。用其他的办法，利用阿里的fastjson得到time的值。然后再<code>Timestamp = new Timestamp(1524323880000L)</code>即可。有个坑，千万要记得加L，不加L会默认为int，就会报错说太长啦。加个L表示就会作为Long类型来处理了。</p>
+
 <pre><code class="language-json">{&quot;date&quot;:21,&quot;day&quot;:6,&quot;hours&quot;:23,&quot;minutes&quot;:18,&quot;month&quot;:3,&quot;nanos&quot;:0,&quot;seconds&quot;:0,&quot;time&quot;:1524323880000,&quot;timezoneOffset&quot;:-480,&quot;year&quot;:118}
-</code></pre>
-<ol start="18">
-<li>
-<p>Java不支持范型数组。</p>
-</li>
-<li>
-<p>controller改变了，一定要重启服务器才能看到改变。</p>
-</li>
-<li>
-<p>MyBatis要求如果参数为String的话，不管接口方法的形参是什么，在Mapper.xml中引用时需要改变为_parameter才能识别。(您可真坑- -)</p>
-</li>
-</ol>
-<pre><code class="language-xml"> &lt;select id=&quot;getUserBySno&quot; parameterType=&quot;String&quot; resultType=&quot;User&quot;&gt;
-     select * from user_info where user_sno= #{_parameter}
- &lt;/select&gt;
-</code></pre>
-<ol start="21">
-<li>
-<p>当前用户自定义一个静态类保存就好了。</p>
-</li>
-<li>
-<p>TextView设置字体颜色</p>
-</li>
-</ol>
+</code></pre></li>
+
+<li><p>Java不支持范型数组。</p></li>
+
+<li><p>controller改变了，一定要重启服务器才能看到改变。</p></li>
+
+<li><p>MyBatis要求如果参数为String的话，不管接口方法的形参是什么，在Mapper.xml中引用时需要改变为_parameter才能识别。(您可真坑- -)</p>
+
+<pre><code class="language-xml">	&lt;select id=&quot;getUserBySno&quot; parameterType=&quot;String&quot; resultType=&quot;User&quot;&gt;
+		select * from user_info where user_sno= #{_parameter}
+	&lt;/select&gt;
+</code></pre></li>
+
+<li><p>当前用户自定义一个静态类保存就好了。</p></li>
+
+<li><p>TextView设置字体颜色</p>
+
 <pre><code class="language-java">textview.setTextColor(Color.parseColor(&quot;#757575&quot;));
-</code></pre>
-<ol start="23">
-<li><code>FloatingActionButton</code>默认会使用配置中<code>colorAccent</code>的颜色，所以如果想自定义<code>FloatingActionButton</code>的背景颜色就去<code>styles.xml</code>中自定义一个style即可。</li>
-</ol>
+</code></pre></li>
+
+<li><p><code>FloatingActionButton</code>默认会使用配置中<code>colorAccent</code>的颜色，所以如果想自定义<code>FloatingActionButton</code>的背景颜色就去<code>styles.xml</code>中自定义一个style即可。</p>
+
 <pre><code class="language-xml">&lt;style name=&quot;DaiFloatingButton&quot;&gt;
-     &lt;item name=&quot;colorAccent&quot;&gt;@color/colorPrimary&lt;/item&gt;
- &lt;/style&gt;
- ```
- ```java
- &lt;android.support.design.widget.FloatingActionButton
-     android:layout_width=&quot;wrap_content&quot;
-     android:layout_height=&quot;wrap_content&quot;
-     android:theme=&quot;@style/DaiFloatingButton&quot;
- /&gt;
- ```
+    &lt;item name=&quot;colorAccent&quot;&gt;@color/colorPrimary&lt;/item&gt;
+&lt;/style&gt;
+	```
+	```java
+	&lt;android.support.design.widget.FloatingActionButton
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:theme=&quot;@style/DaiFloatingButton&quot;
+	/&gt;
+	```
 24. 报错【You need to use a Theme.AppCompat theme (or descendant) with this activity.】解决方法：将AndroidManifest.xml文件中关于Activity的主题配置改一下即可。()
-```xml
-&lt;activity
-         android:name=&quot;.activity.MainActivity&quot;
-         android:label=&quot;@string/title_activity_main&quot;
-         android:theme=&quot;@style/Theme.AppCompat.Light.NoActionBar&quot;&gt;
-&lt;/activity&gt;
 </code></pre>
-<ol start="25">
-<li>
-<p><a href="https://blog.csdn.net/weixin_41828085/article/details/79571728">ListView实现item内部控件的点击事件</a>。把Button换成ImageButton就行不通了，查了一下ImageButton的父类居然不是Button，而是ImageView。</p>
-</li>
-<li>
-<p>睡了一个午觉起来突然被世界抛弃，tomcat莫名其妙一直无法运行，删了重新来也没用我真的崩溃。弄了一下午也没弄好好烦哦T T。终于解决了呜呜呜！也没报错，启动过程就一直卡在log4j的三条警告那里，查了一下午资料都没法解决。以前的struts2和ssm的项目也都无法运行。把汤姆猫删了重装然后把项目重新从git导入，运行之前去tomcat根目录bin下面打开shutdown.bat。然后就OK啦！万岁可以睡个好觉了TUT。重装是第一生产力，谨记。好个球吧注解突然没法用了我要自杀。不自杀了重启eclipse就好了哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈。</p>
-</li>
-<li>
-<p>找到罪魁祸首了！！parameterMap！！！少了个属性也不报错就直接无法部署你这个垃圾！！！哇气死！！！</p>
-</li>
-<li>
-<p>服务器改了代码也不要重新启动啦，直接看着console等他reloading completed就好了。</p>
-</li>
-<li>
-<p>百事通这个模块真是无数的坑啊&hellip;<code>QuestionReplySQL.xml</code>里<code>questionreplyResultMap</code>这个结果集里面包括了<code>QuestionPost</code>和<code>User</code>，<code>QuestionPost</code>里面还包括了<code>User</code>，啧啧啧一环扣一环别忘了<code>QuestionPost</code>里的<code>User</code>，实践表明<code>association</code>可以嵌套。不然客户端取不到<code>QuestionPost</code>的<code>User</code>值噢。</p>
-</li>
-<li>
-<p>广播真是个好东西，我为啥把他给忘了。<a href="https://blog.csdn.net/jason0539/article/details/18075293">利用广播在Activity之间传递数据</a></p>
-</li>
-<li>
-<p>哇哈哈哈哈哈哈哈哈哈百事通搞定了！！</p>
-</li>
-<li>
-<p>数据库表中的id不要用int啊智障用String，然后生成随机字符串设置成id。</p>
-</li>
-<li>
-<p>调用相机时报错</p>
-<pre><code class="language-java">java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.XmlResourceParser android.content.pm.ProviderInfo.loadXmlMetaData(android.content.pm.PackageManager, java.lang.String)' on a null object reference
-</code></pre>
-<p>记得检查一下manifests里面有没有注册provider。</p>
-<pre><code class="language-xml">&lt;provider
-        android:name=&quot;android.support.v4.content.FileProvider&quot;
-        android:authorities=&quot;${applicationId}.provider&quot;
-        android:exported=&quot;false&quot;
-        android:grantUriPermissions=&quot;true&quot;&gt;
-        &lt;meta-data
-            android:name=&quot;android.support.FILE_PROVIDER_PATHS&quot;
-            android:resource=&quot;@xml/filepaths&quot; /&gt;
-&lt;/provider&gt;
-</code></pre>
-</li>
-<li>
-<p>一个boolean可以解决的问题请你不要想的那么复杂- -</p>
-</li>
-<li>
-<p>之前没想到要FloatingActionButton下滑消失上滑出现，等想到要用的时候大多数都是<code>CoordinatorLayout</code>+<code>RecyclerView</code>的组合，之前用的都是ListView和GridView就懒得改了，找到这个FloatingActionButton无敌呀hiahiahia。https://github.com/makovkastar/FloatingActionButton</p>
-</li>
-<li>
-<p>json转HashMap，借助fastjson。封装成一个工具类用很方便。</p>
-<pre><code class="language-java">import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.TypeReference;
 
-import java.util.HashMap;
+<p>xml
+<activity
+        android:name=".activity.MainActivity"
+        android:label="@string/title_activity_main"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+</activity></p>
 
-/**
-* Created by mac on 2018/5/29.
+<pre><code>25. [ListView实现item内部控件的点击事件](https://blog.csdn.net/weixin_41828085/article/details/79571728)。把Button换成ImageButton就行不通了，查了一下ImageButton的父类居然不是Button，而是ImageView。
+
+26. 睡了一个午觉起来突然被世界抛弃，tomcat莫名其妙一直无法运行，删了重新来也没用我真的崩溃。弄了一下午也没弄好好烦哦T T。终于解决了呜呜呜！也没报错，启动过程就一直卡在log4j的三条警告那里，查了一下午资料都没法解决。以前的struts2和ssm的项目也都无法运行。把汤姆猫删了重装然后把项目重新从git导入，运行之前去tomcat根目录bin下面打开shutdown.bat。然后就OK啦！万岁可以睡个好觉了TUT。重装是第一生产力，谨记。好个球吧注解突然没法用了我要自杀。不自杀了重启eclipse就好了哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈。
+
+27. 找到罪魁祸首了！！parameterMap！！！少了个属性也不报错就直接无法部署你这个垃圾！！！哇气死！！！
+
+28. 服务器改了代码也不要重新启动啦，直接看着console等他reloading completed就好了。
+
+29. 百事通这个模块真是无数的坑啊...`QuestionReplySQL.xml`里`questionreplyResultMap`这个结果集里面包括了`QuestionPost`和`User`，`QuestionPost`里面还包括了`User`，啧啧啧一环扣一环别忘了`QuestionPost`里的`User`，实践表明`association`可以嵌套。不然客户端取不到`QuestionPost`的`User`值噢。
+
+30. 广播真是个好东西，我为啥把他给忘了。[利用广播在Activity之间传递数据](https://blog.csdn.net/jason0539/article/details/18075293)
+
+31. 哇哈哈哈哈哈哈哈哈哈百事通搞定了！！
+
+32. 数据库表中的id不要用int啊智障用String，然后生成随机字符串设置成id。
+
+33. 调用相机时报错
+</code></pre>
+
+<p>java
+java.lang.NullPointerException: Attempt to invoke virtual method &lsquo;android.content.res.XmlResourceParser android.content.pm.ProviderInfo.loadXmlMetaData(android.content.pm.PackageManager, java.lang.String)&rsquo; on a null object reference</p>
+
+<pre><code>记得检查一下manifests里面有没有注册provider。
+</code></pre>
+
+<p>xml
+<provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="${applicationId}.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/filepaths" />
+</provider></p>
+
+<pre><code>34. 一个boolean可以解决的问题请你不要想的那么复杂- -
+
+35. 之前没想到要FloatingActionButton下滑消失上滑出现，等想到要用的时候大多数都是`CoordinatorLayout`+`RecyclerView`的组合，之前用的都是ListView和GridView就懒得改了，找到这个FloatingActionButton无敌呀hiahiahia。https://github.com/makovkastar/FloatingActionButton
+
+36. json转HashMap，借助fastjson。封装成一个工具类用很方便。
+</code></pre>
+
+<p>java
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;</p>
+
+<p>import java.util.HashMap;</p>
+
+<p>/**</p>
+
+<ul>
+<li>Created by mac on 2018/5/29.
+*/</li>
+</ul>
+
+<p>public class JsonUtil {</p>
+
+<pre><code>/**
+* 将json转化成HashMap
+* @param jsonStr
+* @return
 */
+public static HashMap&lt;String, Object&gt; convertJsonStrToMap(String jsonStr){
 
-public class JsonUtil {
-
-    /**
-    * 将json转化成HashMap
-    * @param jsonStr
-    * @return
-    */
-    public static HashMap&lt;String, Object&gt; convertJsonStrToMap(String jsonStr){
-                                                                                  
-        HashMap&lt;String, Object&gt; hashmap = JSON.parseObject(jsonStr,new TypeReference&lt;HashMap&lt;String, Object&gt;&gt;(){} );
-        return hashmap;
-    }
+    HashMap&lt;String, Object&gt; hashmap = JSON.parseObject(jsonStr,new TypeReference&lt;HashMap&lt;String, Object&gt;&gt;(){} );
+    return hashmap;
 }
 </code></pre>
-<p>然后如下步骤使用即可。</p>
-<pre><code class="language-java">//从服务器取到Json键值对{“key”:“value”}
+
+<p>}</p>
+
+<pre><code>然后如下步骤使用即可。
+</code></pre>
+
+<p>java
+//从服务器取到Json键值对{“key”:“value”}
 String temp = response.body().string();
 JSONObject jsonObject=new JSONObject(temp);
-String jsonResult = jsonObject.get(&quot;key&quot;).toString();
-HashMap&lt;String, Object&gt; hashmap = JsonUtil.convertJsonStrToMap(jsonResult);
+String jsonResult = jsonObject.get(&ldquo;key&rdquo;).toString();
+HashMap<String, Object> hashmap = JsonUtil.convertJsonStrToMap(jsonResult);</p>
+
+<pre><code>37. notifyDataSetChanged失效问题。http://www.bkjia.com/Androidjc/869179.html
+
+38. apk运行崩溃问题，首先报错
 </code></pre>
-</li>
-<li>
-<p>notifyDataSetChanged失效问题。http://www.bkjia.com/Androidjc/869179.html</p>
-</li>
-<li>
-<p>apk运行崩溃问题，首先报错</p>
-<pre><code class="language-error">java.lang.RuntimeException: Unable to get provider android.support.v4.content.FileProvider: java.lang.ClassNotFoundException: Didn't find class &quot;android.support.v4.content.FileProvider&quot; on path: DexPathList[[zip file &quot;/data/app/***.apk&quot;],nativeLibraryDirectories=[/data/app-lib/***-1, /vendor/lib, /system/lib]]
+
+<p>error
+java.lang.RuntimeException: Unable to get provider android.support.v4.content.FileProvider: java.lang.ClassNotFoundException: Didn&rsquo;t find class &ldquo;android.support.v4.content.FileProvider&rdquo; on path: DexPathList[[zip file &ldquo;/data/app/<strong><em>.apk&rdquo;],nativeLibraryDirectories=[/data/app-lib/</em></strong>-1, /vendor/lib, /system/lib]]</p>
+
+<pre><code>找到解决方法https://blog.csdn.net/fangood/article/details/78726005
+自定义的MyApplication在manifest的application节点下添加name属性即可。(Myapplication在util目录下)
 </code></pre>
-<p>找到解决方法https://blog.csdn.net/fangood/article/details/78726005
-自定义的MyApplication在manifest的application节点下添加name属性即可。(Myapplication在util目录下)</p>
-<pre><code class="language-java">android:name=&quot;.util.MyApplication&quot;
+
+<p>java
+android:name=&ldquo;.util.MyApplication&rdquo;</p>
+
+<pre><code>然后又报错了┑(￣Д ￣)┍，报错如下
 </code></pre>
-<p>然后又报错了┑(￣Д ￣)┍，报错如下</p>
-<pre><code class="language-error">java.lang.RuntimeException: Unable to instantiate application package.MyApplication:java.lang.ClassNotFoundException: Didn't find class &quot;package.MyApplication&quot; on path:
-</code></pre>
-<p>再次找到解决方法，有两种
+
+<p>error
+java.lang.RuntimeException: Unable to instantiate application package.MyApplication:java.lang.ClassNotFoundException: Didn&rsquo;t find class &ldquo;package.MyApplication&rdquo; on path:
+```
+再次找到解决方法，有两种
 a. 直接Build-Build APK就可以得到apk <a href="https://blog.csdn.net/u013258802/article/details/76021714">https://blog.csdn.net/u013258802/article/details/76021714</a>
-b. 直接把gradle改成2.2.3 <a href="https://blog.csdn.net/xufazhong/article/details/71155528">https://blog.csdn.net/xufazhong/article/details/71155528</a></p>
-<blockquote>
-<p>bingo~( •̀ ω •́ )y 卡片校园.apk GET！</p>
-</blockquote>
-</li>
+b. 直接把gradle改成2.2.3 <a href="https://blog.csdn.net/xufazhong/article/details/71155528">https://blog.csdn.net/xufazhong/article/details/71155528</a>
+&gt;bingo~( •̀ ω •́ )y 卡片校园.apk GET！</p></li>
 </ol>
         </div>
         
@@ -508,6 +497,59 @@ b. 直接把gradle改成2.2.3 <a href="https://blog.csdn.net/xufazhong/article/d
         
         
         
+        
+        <div class="py-2">
+    
+    <div class="flex flex-col md:flex-row items-center my-8">
+        <a href="https://hishark777.com/authors/hishark777/" class="w-24 h-24 md:mr-4">
+            
+            
+            <img src="https://hishark777.com/authors/hishark777/avatar.jpg" class="w-full bg-primary-bg rounded-full" alt="Avatar">
+            
+        </a>
+        <div class="w-full md:w-auto mt-4 md:mt-0">
+            <a href="https://hishark777.com/authors/hishark777/" class="block font-bold text-lg pb-1 mb-2 border-b">Hello, I&#39;m 777</a>
+            <span class="block pb-2"></span>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-github-alt"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-weibo"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-twitter"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-music"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-play-circle"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-bug"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+        </div>
+    </div>
+    
+</div>
         
         
         

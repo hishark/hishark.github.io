@@ -4,6 +4,8 @@ date: 2018-06-01 23:21:16
 tags: 
 - DIARIES
 categories: 碎碎念
+authors:
+- hishark777
 ---
 什么六一儿童节 六一情人节吧^^
 终于去电影院看了一次哆啦A梦

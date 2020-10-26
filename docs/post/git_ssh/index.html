@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -75,6 +75,10 @@
     "headline": "在同一台电脑上绑定Github和阿里云Code | 777\u0027s BLOG","datePublished": "2019-11-23T09:29:24+00:00",
     "dateModified": "2019-11-23T09:29:24+00:00",
     "wordCount":  666 ,
+    "author": {
+        "@type": "Person",
+        "name": ["hishark777"]
+    },
     "publisher": {
         "@type": "Person",
         "name": "Example publisher",
@@ -264,21 +268,34 @@
         
         <div class="content">
             <p>老板昨天扔了个阿里云code的项目，电脑之前已经绑定了Github的账号，于是查了一下如何在同一台电脑上绑定两个账号，存档记录一下。</p>
+
 <h2 id="1-生成ssh-key">1. 生成SSH key</h2>
+
 <p>SSH key 可以让你在你的电脑和Code服务器之间建立安全的加密连接，由于这里需要连接Github和阿里云code，所以需要生成两个ssh key，重复执行以下指令即可。</p>
+
 <pre><code class="language-bash">ssh-keygen -t rsa -C &quot;your email&quot;//github or codealiyun
 </code></pre>
+
 <p>执行以上命令后会出现以下提示，直接回车就默认在<code>/Users/a777/.ssh/</code>路径下生成<code>id_rsa</code>。</p>
-<p><img src="https://i.loli.net/2020/03/14/BfpXnjJm3TKyUQe.png" alt="image.png"></p>
+
+<p><img src="https://i.loli.net/2020/03/14/BfpXnjJm3TKyUQe.png" alt="image.png" /></p>
+
 <p>由于这里需要生成两个SSH key，所以最好修改一下文件名，由于我之前绑定github的时候直接用的默认文件名<code>id_rsa</code>，所以把阿里云code的文件名修改为<code>id_rsa_codealiyun</code>。</p>
+
 <p>最后<code>/Users/a777/.ssh/</code>内的文件如下：</p>
-<p><img src="https://i.loli.net/2020/03/14/uYGbdN8AjwzfQ6R.png" alt="image.png"></p>
+
+<p><img src="https://i.loli.net/2020/03/14/uYGbdN8AjwzfQ6R.png" alt="image.png" /></p>
+
 <h2 id="2-生成config">2. 生成config</h2>
+
 <p>可以看到以上文件里除了密钥还有一个<code>config</code>文件，由于本地调用密钥的时默认使用<code>id_rsa</code>，所以需要一个配置文件来指定Github/阿里云code应该使用哪个ssh key。</p>
+
 <pre><code class="language-bash">cd /Users/a777/.ssh
 vim config
 </code></pre>
+
 <p>在<code>config</code>里输入以下内容：</p>
+
 <pre><code class="language-bash">Host github.com 
  HostName github.com
  User hishark #这里可以输入任意名称
@@ -289,17 +306,29 @@ Host code.aliyun.com
  User hishark #这里可以输入任意名称
  IdentityFile ~/.ssh/id_rsa_codealiyun
 </code></pre>
+
 <h2 id="3-创建ssh-key">3. 创建ssh key</h2>
+
 <p>最后在Github/阿里云Code上创建ssh key即可。</p>
-<h3 id="31-github">3.1 Github</h3>
+
+<h3 id="3-1-github">3.1 Github</h3>
+
 <p><a href="https://github.com/settings/ssh/new">点击此处创建Github SSH key</a></p>
-<!-- raw HTML omitted -->
+
+<p><img src="https://i.loli.net/2020/03/14/mxThreuSQc2g3oP.png" width="600"/></p>
+
 <p>在key输入框中填入<code>id_rsa.pub</code>内<code>ssh-rsa</code>开头的所有字符即可。</p>
-<h3 id="32-阿里云code">3.2 阿里云Code</h3>
+
+<h3 id="3-2-阿里云code">3.2 阿里云Code</h3>
+
 <p><a href="https://code.aliyun.com/profile/keys/new">点击此处创建阿里云code SSH key</a></p>
-<p><!-- raw HTML omitted --></p>
+
+<p><img src="https://i.loli.net/2020/03/14/8nHkR6jWZrG9T1I.png" /></p>
+
 <p>在公钥输入框中填入<code>id_rsa_codealiyun.pub</code>内<code>ssh-rsa</code>开头的所有字符即可。</p>
+
 <h2 id="4-done">4. Done</h2>
+
 <p>ok现在就可以愉快了拉代码了~</p>
         </div>
         
@@ -314,6 +343,59 @@ Host code.aliyun.com
         
         
         
+        
+        <div class="py-2">
+    
+    <div class="flex flex-col md:flex-row items-center my-8">
+        <a href="https://hishark777.com/authors/hishark777/" class="w-24 h-24 md:mr-4">
+            
+            
+            <img src="https://hishark777.com/authors/hishark777/avatar.jpg" class="w-full bg-primary-bg rounded-full" alt="Avatar">
+            
+        </a>
+        <div class="w-full md:w-auto mt-4 md:mt-0">
+            <a href="https://hishark777.com/authors/hishark777/" class="block font-bold text-lg pb-1 mb-2 border-b">Hello, I&#39;m 777</a>
+            <span class="block pb-2"></span>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-github-alt"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-weibo"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-twitter"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-music"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-play-circle"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-bug"></i>
+            </a>
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+        </div>
+    </div>
+    
+</div>
         
         
         

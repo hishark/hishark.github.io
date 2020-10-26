@@ -22,9 +22,9 @@ authors:
 | 21   | [22](#2020-09-22) | 23   | [24](#2020-09-24) | 25   | 26   | [27](#2020-09-27) |
 | [28](#2020-09-28) | [29](#2020-09-29) | 30   |      |      |      |  | -->
 
-# 2020-09-29
+## 2020-09-29
 
-## SR
+### SR
 
 图像超分辨率重建 - Encounter的文章 - 知乎 https://zhuanlan.zhihu.com/p/66423158
 
@@ -32,13 +32,13 @@ authors:
 
 [cvpr2020论文大盘点-超分辨率篇](https://mp.weixin.qq.com/s/6Khg-hoY58nw9XfJkeEpnA)
 
-## FNN
+### FNN
 
 [前馈神经网络](https://www.jiqizhixin.com/graph/technologies/bdf1ccff-fee9-40a5-9c69-76d2483d12d3)
 
 - 其中，卷积神经网络（CNN）是一种典型的深度前馈神经网络，对于大规模图像处理有出色表现。
 
-## NN
+### NN
 
 [批标准化，又叫批量归一化](https://baike.baidu.com/item/%E6%89%B9%E6%A0%87%E5%87%86%E5%8C%96/22778547)
 
@@ -46,19 +46,19 @@ authors:
 
 [跳跃连接](https://blog.csdn.net/legend_hua/article/details/79876168)
 
-## PPT Web
+### PPT Web
 
 [在网页或博客中嵌入演示文稿](https://support.microsoft.com/zh-cn/office/%E5%9C%A8%E7%BD%91%E9%A1%B5%E6%88%96%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%B5%8C%E5%85%A5%E6%BC%94%E7%A4%BA%E6%96%87%E7%A8%BF-19668a1d-2299-4af3-91e1-ae57af723a60)
 
 - 这个牛批👍：OneDrive 上的演示文稿的更新将自动反映在嵌入演示文稿的页面上。
 
-## Android
+### Android
 
 [Android操作系统架构开篇](http://gityuan.com/android/)
 
-# 2020-09-28
+## 2020-09-28
 
-## 一切都是为了毕业T.T
+### 一切都是为了毕业T.T
 
 [CNN基础知识](https://zhuanlan.zhihu.com/p/77471866)
 
@@ -100,15 +100,15 @@ authors:
 
 - PReLU就是增加了参数修正的ReLU
 
-# 2020-09-27
+## 2020-09-27
 
-## GAN
+### GAN
 
 [SRGAN-超分辨率图像复原](https://zhuanlan.zhihu.com/p/61009624)
 
-# 2020-09-24
+## 2020-09-24
 
-## Popupmenu
+### Popupmenu
 
 [Android-Menu](https://developer.android.com/guide/topics/ui/menus?hl=zh-cn)
 
@@ -123,45 +123,45 @@ popupmenu报错：
 
 https://github.com/li-xiaojun/XPopup
 
-## UI
+### UI
 
 [GitHub上受欢迎的Android UI Library(上)](https://www.jianshu.com/p/1ffa661e2b83)
 
-## 数据同步
+### 数据同步
 
 [多终端数据同步机制设计（一）](https://www.jianshu.com/p/4e59d19d0632)
 
 [多终端数据同步机制设计（二）](https://www.jianshu.com/p/87c7a7fda032)
 
-## Algorithm
+### Algorithm
 
 - [ ] [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 
-## Github
+### Github
 
 - [ ] blog
 - [ ] algorithm
 - [ ] interview
 
-# 2020-09-22
+## 2020-09-22
 
-## Algorithm
+### Algorithm
 
 - [x] 剑指offer 26. 树的子结构
 
-## Github Update
+### Github Update
 
 - [x] blog
 - [x] algorithm
 - [x] interview
 
-## Apple Calendar
+### Apple Calendar
 
 原生日历才是坠屌的
 
 国庆假写个blog #todo
 
-## 杂
+### 杂
 
 终于建模完了累死爷了 希望能水到一个三等奖吧 阿门
 
@@ -169,39 +169,39 @@ https://github.com/li-xiaojun/XPopup
 
 继续续上
 
-# 2020-09-16
+## 2020-09-16
 
-## openconnect
+### openconnect
 
 [macos上使用openconnect代替cisco anyconnect](https://www.mobibrw.com/2019/19391)
 
-## LaTex
+### LaTex
 
 [LaTeX目录定制——titlecontents](https://www.jianshu.com/p/ccd14653a128)
 
-# 2020-09-15
+## 2020-09-15
 
-## ViewRootImpl
+### ViewRootImpl
 
 [Android窗口机制（四）ViewRootImpl与View和WindowManager](https://www.jianshu.com/p/9da7bfe18374)
 
-## mkdocs
+### mkdocs
 
 [Material for MkDocs 注解11种颜色样式]https://cyent.github.io/markdown-with-mkdocs-material/syntax/note_style/)
 
-# 2020-09-14
+## 2020-09-14
 
-## super-resolution
+### super-resolution
 
 [基于GAN的超分辨率方案——SRGAN，ESRGAN](https://www.jianshu.com/p/ab91f124285f)
 
-## &
+### &
 
 [n&1 判断奇偶 (位运算符)](https://blog.csdn.net/m0_37345402/article/details/77429245?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-1-77429245.nonecase&utm_term=%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6%E5%88%A4%E6%96%AD%E5%A5%87%E5%81%B6)
 
-# 2020-09-11
+## 2020-09-11
 
-## Medical Data
+### Medical Data
 
 [medical-imaging-datasets](https://github.com/sfikas/medical-imaging-datasets)
 
@@ -209,25 +209,25 @@ https://github.com/li-xiaojun/XPopup
 
 医学影像能找到的数据集还是有很多的
 
-## POCUS
+### POCUS
 
 [什么是POCUS？](https://www.sonosite.com/cn/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E4%BB%80%E4%B9%88%E6%98%AF-pocus%EF%BC%88%E5%8C%BB%E7%96%97%E7%82%B9%E8%B6%85%E5%A3%B0%EF%BC%89%EF%BC%9F)
 
-## Acrobat
+### Acrobat
 
 acrobat打开pdf文档很烦人，总是弹出一个“内容准备进度”，去首选项里关掉它！
 
 [隐藏打开PDF文件时出现的消息“内容准备进度”](https://helpx.adobe.com/cn/acrobat/kb/message-content-preparation-progress-opening.html)
 
-## License
+### License
 
 [choose license](https://choosealicense.com/)
 
-## Github
+### Github
 
 [为你的Github仓库添加徽章](https://yinguobing.com/adding-badges-to-your-github-repository/)
 
-## 杂
+### 杂
 
 想去实习的心好像没那么强烈了 反正迟早要去当社畜 研二老老实实在学校呆着学习也挺舒服
 
@@ -241,9 +241,9 @@ acrobat打开pdf文档很烦人，总是弹出一个“内容准备进度”，�
 
 不用发论文真是太好了555好好把毕业论文写完就行啦！
 
-# 2020-09-10
+## 2020-09-10
 
-## 力扣
+### 力扣
 
 力扣搞教育优惠了哈哈哈不错 等我双十一来冲一波一年会员
 
@@ -253,7 +253,7 @@ https://leetcode-cn.com/premium/edu-auth/?utm_campaign=edu_discount_plus_member&
 
 会员可以选多个题目面试有点方便哒
 
-## 杂
+### 杂
 
 今天老王拉我们去会议室暂定了一下毕业课题
 
@@ -261,21 +261,21 @@ https://leetcode-cn.com/premium/edu-auth/?utm_campaign=edu_discount_plus_member&
 
 感觉还挺有意思的，希望能整出来
 
-# 2020-09-09
+## 2020-09-09
 
-## Git
+### Git
 
 [git 推送出现 "fatal: The remote end hung up unexpectedly" 解决方案](https://blog.csdn.net/weixin_38450840/article/details/80701173)
 
 - f个q就好啦
 
-## HTML
+### HTML
 
 [HTML5 中， 的 placeholder 如何进行换行？](https://segmentfault.com/q/1010000000801051)
 
 校招笔记里的模拟面试用到了textarea，打算在placeholder里放上参考答案，我真是个小天才o(￣▽￣)ｄ
 
-## Time Machine
+### Time Machine
 
 买了个东芝的硬盘（话说toshiba我老会念茬 dbq）来做time machine的备份，之前没怎么了解过，查了一通之后发现时间机器也太方便了8！插上电脑之后顺手点了加密备份，但是感觉我这点破资料感觉也没啥必要加密OTZ 把密码重新删掉备份了嘿嘿
 
@@ -285,7 +285,7 @@ https://leetcode-cn.com/premium/edu-auth/?utm_campaign=edu_discount_plus_member&
 
 开始不加密的备份，比加密备份快多了！
 
-## AutoEncoder
+### AutoEncoder
 
 潘博给了一篇论文是用autoencoder来优化超声影像的
 
@@ -293,7 +293,7 @@ https://leetcode-cn.com/premium/edu-auth/?utm_campaign=edu_discount_plus_member&
 
 [AutoEncoder](https://www.cnblogs.com/mathor/p/12416575.html)
 
-## Typora Theme
+### Typora Theme
 
 [theme](http://theme.typora.io/)
 
@@ -307,28 +307,28 @@ vue的好好看 绿色漂亮
 
 也省得我挑半天了哈哈哈哈哈下了一大堆下来慢慢换-。-
 
-## mkdocs-material
+### mkdocs-material
 
 这个现在做的太完善了吧，中文搜索已经直接支持啦不需要自己去改什么文件了
 
 搜了半天嫌弃麻烦直接去[官网](https://squidfunk.github.io/mkdocs-material/)试着搜了一下`zh`看能不能搜出啥，结果搜出了[更改语言](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#changing-the-language)哈哈哈哈哈之前没注意，直接把language的值改成zh就支持中文搜索啦！
 
-## 文献管理软件
+### 文献管理软件
 
 [文献管理神器 Zotero 学习路径指南](https://sspai.com/post/56724)
 
 - zotero
 - endnote
 
-## 杂
+### 杂
 
 其实有时候谷歌出来的搜索结果不一定完全优于百度
 
 还是要两个一起用咧
 
-# 2020-09-08
+## 2020-09-08
 
-## Mkdocs
+### Mkdocs
 
 [基于mkdocs-material实现的帮助中心(markdown + 中文搜索 + 图片放大)](https://segmentfault.com/a/1190000018592279)
 
@@ -338,9 +338,9 @@ vue的好好看 绿色漂亮
 
 [Mkdocs 配置和使用](https://www.xncoding.com/2020/03/01/tool/mkdocs.html)
 
-# 2020-09-07
+## 2020-09-07
 
-## Algorithm
+### Algorithm
 
 整点官方解释
 
@@ -348,7 +348,7 @@ vue的好好看 绿色漂亮
 
 [分治算法](https://baike.baidu.com/item/%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95/3263297?fr=aladdin)
 
-## gitignore
+### gitignore
 
 .gitignore
 
@@ -358,23 +358,23 @@ vue的好好看 绿色漂亮
 
 比如MAC里随处可见的.DS_Store
 
-## 基本类型回顾
+### 基本类型回顾
 
 [Java 基本数据类型](https://www.runoob.com/java/java-basic-datatypes.html)
 
-## 杂
+### 杂
 
 不喜欢一些太啰嗦的题解
 
 题解写了一大堆给我看晕了 代码看一下就懂了OTZ
 
-# 2020-09-06
+## 2020-09-06
 
-## 无线安装apk
+### 无线安装apk
 
 [使用adb命令进行无线安装调试apk](https://blog.csdn.net/philos3/article/details/76763198)
 
-## Android
+### Android
 
 [AndroidStudio一步步教你修改项目包名](https://blog.csdn.net/qq_35270692/article/details/78336049?utm_medium=distribute.pc_relevant.none-task-blog-title-1&spm=1001.2101.3001.4242)
 
@@ -386,13 +386,13 @@ vue的好好看 绿色漂亮
 
 [Unable to add window -- token android.os.BinderProxy@XXX is not valid;](https://blog.csdn.net/qq_29125669/article/details/89880169)
 
-## 截图花屏问题
+### 截图花屏问题
 
 分辨率导致的，改成和联想那个平板一样的分辨率就ok了
 
 [通过framebuffer截屏出现花屏的问题](http://www.apkbus.com/forum.php?mod=viewthread&tid=116484)
 
-## 环信
+### 环信
 
 找了半天bug发现是SDK更新了之后调用方式变了- -有毒哈
 
@@ -403,12 +403,12 @@ vue的好好看 绿色漂亮
 不然有改动自己这边立马崩掉
 
 
-# 2020-09-03
-## Wifi
+## 2020-09-03
+### Wifi
 
 [Android 在APP内、应用内 连接WiFi](https://www.jianshu.com/p/812044763444)
 
-## 移位运算符
+### 移位运算符
 
 [Java中的移位运算符](https://zhuanlan.zhihu.com/p/30108890)
 
@@ -419,50 +419,50 @@ vue的好好看 绿色漂亮
 - 有符号右移\>> : 符号位是什么，最左边就补什么。符号位为1，最左边就补1；符号位为0，最左边就补0。
 - 无符号右移\>>> : 不管符号位，最左边补0即可。
 
-## Merge
+### Merge
 
 [Android 布局优化 Merge的使用](https://www.jianshu.com/p/69e1a3743960)
 
 [Drag views freely in ScrollView android](https://stackoverflow.com/questions/23112697/drag-views-freely-in-scrollview-android)
 
-## FrameLayout
+### FrameLayout
 
 [Android - FrameLayout覆盖顺序](https://blog.csdn.net/caroline_wendy/article/details/40887397)
 
 - Child views are drawn in a stack, with the most recently added child on top.
 
-## LayoutInflater
+### LayoutInflater
 
 [Android中LayoutInflater的使用](https://www.iteye.com/blog/erbo2008-1542733)
 
-# 2020-09-02
+## 2020-09-02
 
-## 环信
+### 环信
 定期看看[更新日志](http://docs-im.easemob.com/im/android/sdk/releasenote)
 3.7.0 新增了一个对掌超目前的使用场景很有用的回调接口：增加网络等异常无视频 音频数据，无数据回调接口
 - 当会议中的成员A因断网或异常退出，而无音视频数据上传时，订阅该流的其他成员会收到下面的回调通知。
 
-## SystemClock
+### SystemClock
 [Android Developer Docs Reference](https://developer.android.com/reference/android/os/SystemClock)
 [时间间隔： SystemClock.uptimeMillis与System.currentTimeMillis](https://blog.csdn.net/qingye_love/article/details/8862076)
 
-## postAtTime
+### postAtTime
 
 [Handler.postAtTime vs Handler.postDelayed](https://stackoverflow.com/questions/14690093/handler-postattime-vs-handler-postdelayed)
 
-## 杂
+### 杂
 [resume](https://resume.io/)
 - 还挺好看 下回瞅瞅
 
-# 2020-09-01
-## 均值插补
+## 2020-09-01
+### 均值插补
 [借助 scikit-learn 以 均值插补法 完成缺失数据的填充](https://www.cnblogs.com/shanger/articles/11865912.html)
-## latex
+### latex
 [LaTeX中三线表、并置图片、固定表格](https://alexander-qi.github.io/2019/latexskills-1/)
 [LaTeX教学2.9 交叉引用](https://www.jianshu.com/p/58e7d0a6d97a)
 [Latex添加新一页——用“\clearpage” 不要用“\newpage”](https://blog.csdn.net/zd0303/article/details/7572992)
 https://blog.csdn.net/weixin_40628705/article/details/90481303
 [【Latex】Latex调整行间距](https://blog.csdn.net/u010297791/article/details/54232542)
 
-## 杂
+### 杂
 坐我工位的学弟正好回去放假了哈哈哈哈哈我直接过来补位

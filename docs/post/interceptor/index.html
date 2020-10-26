@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -74,7 +74,7 @@
     },
     "headline": "Interceptor | 777\u0027s BLOG","datePublished": "2018-03-14T09:00:54+00:00",
     "dateModified": "2018-03-14T09:00:54+00:00",
-    "wordCount":  1002 ,
+    "wordCount":  1009 ,
     "publisher": {
         "@type": "Person",
         "name": "Example publisher",
@@ -246,7 +246,7 @@
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
-        <span>2分钟</span>
+        <span>3分钟</span>
     </div>
     
     
@@ -264,7 +264,9 @@
         
         <div class="content">
             <h4 id="拦截器流程概览">拦截器流程概览</h4>
+
 <h5 id="定义一个自定义拦截器myinterceptor实现interceptor接口">定义一个自定义拦截器MyInterceptor实现Interceptor接口</h5>
+
 <pre><code class="language-java">/*
  * 拦截器需要定义 
  * 默认的那些拦截器都定义在struts-default.xml中 
@@ -308,13 +310,17 @@ public class MyInterceptor implements Interceptor {
 
 }
 </code></pre>
-<h5 id="在strutsxml中定义拦截器">在struts.xml中定义拦截器</h5>
+
+<h5 id="在struts-xml中定义拦截器">在struts.xml中定义拦截器</h5>
+
 <pre><code class="language-xml">&lt;!-- 定义自定义的拦截器 --&gt;
 &lt;interceptors&gt;
 	&lt;interceptor name=&quot;MyInterceptor&quot; class=&quot;interceptor.MyInterceptor&quot;/&gt;
 &lt;/interceptors&gt;
 </code></pre>
+
 <h5 id="创建一个action来进行拦截器测试">创建一个action来进行拦截器测试</h5>
+
 <pre><code class="language-java">import com.opensymphony.xwork2.ActionSupport;
 
 public class InterceptorTestAction extends ActionSupport {
@@ -327,7 +333,9 @@ public class InterceptorTestAction extends ActionSupport {
 	}
 }
 </code></pre>
-<h5 id="在strutsxml中定义action">在struts.xml中定义action</h5>
+
+<h5 id="在struts-xml中定义action">在struts.xml中定义action</h5>
+
 <pre><code class="language-xml">&lt;action name=&quot;InterceptorTest&quot; class=&quot;jxnu.edu.cn.x3321.action.InterceptorTestAction&quot;&gt;
 	&lt;!-- 在想要插入拦截器的action中加上下一句 --&gt;
 	&lt;interceptor-ref name=&quot;MyInterceptor&quot; /&gt;
@@ -337,16 +345,26 @@ public class InterceptorTestAction extends ActionSupport {
 	&lt;result name=&quot;fail&quot;&gt;/login/error.jsp&lt;/result&gt;
 &lt;/action&gt;
 </code></pre>
+
 <h5 id="调用interceptortestaction">调用InterceptorTestAction</h5>
-<!-- raw HTML omitted -->
+
+<p><center><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fpc2uyze19j304n01oq2p.jpg" alt="" /></center>
+<br></p>
+
+<h4 id="拦截器简单应用">拦截器简单应用</h4>
+
 <blockquote>
 <p>实际上应该在User表里定义一个Role字段来判断用户的角色，这里为了应用演示就简化为直接通过用户名来判断用户角色。</p>
 </blockquote>
+
 <h5 id="先在loginaction中定义一个session来存储登录的用户名">先在LoginAction中定义一个session来存储登录的用户名</h5>
+
 <pre><code class="language-java">Map&lt;String,Object&gt; session = ActionContext.getContext().getSession();
 session.put(&quot;role&quot;, user.getUserName());
 </code></pre>
+
 <h5 id="创建一个自定义的权限判断拦截器">创建一个自定义的权限判断拦截器</h5>
+
 <pre><code class="language-java">public class InterceptorPower implements Interceptor {
 
 	@Override
@@ -394,7 +412,9 @@ session.put(&quot;role&quot;, user.getUserName());
 
 }
 </code></pre>
-<h5 id="在strutsxml中配置拦截器">在struts.xml中配置拦截器</h5>
+
+<h5 id="在struts-xml中配置拦截器">在struts.xml中配置拦截器</h5>
+
 <pre><code class="language-xml">&lt;action name=&quot;book_*&quot; class=&quot;jxnu.edu.cn.x3321.action.BookManagementAction&quot; method=&quot;{1}&quot;&gt;
 	&lt;!-- 添加图书时需要进行用户权限判断 所以加上一个拦截器 --&gt;
 	&lt;interceptor-ref name=&quot;InterceptorPower&quot; /&gt;

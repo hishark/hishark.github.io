@@ -34,6 +34,7 @@
 <meta itemprop="name" content="Room Database | 777&#39;s BLOG">
 <meta itemprop="description"
     content="虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
+
 来看看 Room 怎么用。">
 
 
@@ -52,7 +53,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -88,7 +89,7 @@
             "url": "https://hishark777.com/images/icon.png"
         }
         },
-    "description": "\u003cp\u003e虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。\u003c\/p\u003e\n\u003cp\u003e来看看 Room 怎么用。\u003c\/p\u003e"
+    "description": "\u003cp\u003e虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。\u003c\/p\u003e\n\n\u003cp\u003e来看看 Room 怎么用。\u003c\/p\u003e"
 }
 </script>
 
@@ -100,6 +101,7 @@
 
 
 <meta property="og:description" content="虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
+
 来看看 Room 怎么用。" />
 
 
@@ -251,7 +253,7 @@
 
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
     <div
-        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
         <h1 class="font-bold text-3xl text-primary-text">Room Database</h1>
         <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
     <div class="mr-6 my-2">
@@ -278,49 +280,59 @@
         
         <div class="content">
             <p>虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。</p>
+
 <p>来看看 Room 怎么用。</p>
+
 <h2 id="1-前言">1. 前言</h2>
+
 <p>ORM，Object Relational Mapping，对象关系映射，用于实现面向对象编程语言里不同类型系统的数据之间的转换。</p>
+
 <p>目前有很多优秀的第三方框架比如：</p>
+
 <ul>
 <li><a href="https://github.com/greenrobot/greenDAO">GreenDao</a></li>
 <li><a href="https://github.com/j256/ormlite-android">Ormlite</a></li>
 <li><a href="https://github.com/guolindev/LitePal">LitePal</a></li>
 </ul>
+
 <p>上面这些也不是不能用，但是每次要用的时候左看看右看看，选数据库都要选个半天，直接用原生的 Room 比较省事啦。</p>
+
 <h2 id="2-room-是什么">2. Room 是什么</h2>
+
 <p>Room 在 SQLite 上提供了一个抽象层，以便在充分利用 SQLite 的强大功能的同时，能够流畅地访问数据库。</p>
+
 <p>Room 主要包含三个主要的组件：</p>
+
 <ol>
-<li>
-<p><strong><a href="https://developer.android.com/reference/androidx/room/Database">数据库</a></strong>：包含数据库持有者，并作为应用已保留的持久关系型数据的底层连接的主要接入点。</p>
+<li><p><strong><a href="https://developer.android.com/reference/androidx/room/Database">数据库</a></strong>：包含数据库持有者，并作为应用已保留的持久关系型数据的底层连接的主要接入点。</p>
+
 <p>使用 <a href="https://developer.android.com/reference/androidx/room/Database"><code>@Database</code></a> 注解的类应该满足以下三个条件：</p>
+
 <ul>
-<li>
-<p>该类是继承 <a href="https://developer.android.com/reference/androidx/room/RoomDatabase"><code>RoomDatabase</code></a> 的抽象类。</p>
-</li>
-<li>
-<p>在注解中需要添加与数据库关联的实体列表</p>
-</li>
-<li>
-<p>需要包含具 0 个参数且返回使用 <a href="https://developer.android.com/reference/androidx/room/Dao"><code>@Dao</code></a> 注解的类的抽象方法。</p>
-</li>
-</ul>
-</li>
+<li><p>该类是继承 <a href="https://developer.android.com/reference/androidx/room/RoomDatabase"><code>RoomDatabase</code></a> 的抽象类。</p></li>
+
+<li><p>在注解中需要添加与数据库关联的实体列表</p></li>
+
+<li><p>需要包含具 0 个参数且返回使用 <a href="https://developer.android.com/reference/androidx/room/Dao"><code>@Dao</code></a> 注解的类的抽象方法。</p></li>
+</ul></li>
 </ol>
+
 <p>在运行时，可以通过调用 <code>Room.databaseBuilder()</code> 或 <code>Room.inMemoryDatabaseBuilder()</code> 获取 <code>Database</code> 的实例。</p>
-<ol start="2">
-<li>
-<p><a href="https://developer.android.com/training/data-storage/room/defining-data"><strong>Entity</strong></a>：实体，表示数据库中的表。</p>
-</li>
-<li>
-<p><strong><a href="https://developer.android.com/training/data-storage/room/accessing-data">DAO</a></strong>：包含用于访问数据库的方法。</p>
-</li>
+
+<ol>
+<li><p><a href="https://developer.android.com/training/data-storage/room/defining-data"><strong>Entity</strong></a>：实体，表示数据库中的表。</p></li>
+
+<li><p><strong><a href="https://developer.android.com/training/data-storage/room/accessing-data">DAO</a></strong>：包含用于访问数据库的方法。</p></li>
 </ol>
+
 <p>首先，使用 Room 数据库来获取与该数据库相关联的数据访问对象 (DAO)。然后，使用每个 DAO 从数据库中获取实体，再将对这些实体的所有更改保存回数据库中。 最后，使用实体来获取和设置与数据库中的表列相对应的值。</p>
+
 <h2 id="3-使用方法">3. 使用方法</h2>
-<h3 id="31-添加依赖">3.1 添加依赖</h3>
+
+<h3 id="3-1-添加依赖">3.1 添加依赖</h3>
+
 <p><strong>Java</strong></p>
+
 <pre><code class="language-java">    dependencies {
       def room_version = &quot;2.2.5&quot;
 
@@ -338,7 +350,9 @@
       testImplementation &quot;androidx.room:room-testing:$room_version&quot;
     }
 </code></pre>
+
 <p><strong>Kotlin</strong></p>
+
 <pre><code class="language-kotlin">    dependencies {
       def room_version = &quot;2.2.5&quot;
 
@@ -352,9 +366,13 @@
       testImplementation &quot;androidx.room:room-testing:$room_version&quot;
     }
 </code></pre>
-<h3 id="32-创建entity">3.2 创建Entity</h3>
+
+<h3 id="3-2-创建entity">3.2 创建Entity</h3>
+
 <p>在 <code>Entity</code> 中，至少需要包含一个主键 <code>@PrimaryKey</code>。</p>
+
 <p><strong>Java</strong></p>
+
 <pre><code class="language-java">    @Entity
     public class User {
         @PrimaryKey
@@ -367,7 +385,9 @@
         public String lastName;
     }
 </code></pre>
+
 <p><strong>Kotlin</strong></p>
+
 <pre><code class="language-kotlin">    @Entity
     data class User(
         @PrimaryKey val uid: Int,
@@ -375,9 +395,13 @@
         @ColumnInfo(name = &quot;last_name&quot;) val lastName: String?
     )
 </code></pre>
-<h3 id="33-创建dao">3.3 创建DAO</h3>
+
+<h3 id="3-3-创建dao">3.3 创建DAO</h3>
+
 <p><code>DAO</code> 表示数据访问对象，在 <code>DAO</code> 中，需要创建一系列用于访问数据库的方法，典型的包括下面的增删改查操作。</p>
+
 <p><strong>Java</strong></p>
+
 <pre><code class="language-java">    @Dao
     public interface UserDao {
         @Query(&quot;SELECT * FROM user&quot;)
@@ -400,7 +424,9 @@
         void update(User user);
     }
 </code></pre>
+
 <p><strong>Kotlin</strong></p>
+
 <pre><code class="language-kotlin">    @Dao
     interface UserDao {
         @Query(&quot;SELECT * FROM user&quot;)
@@ -424,10 +450,15 @@
     }
     
 </code></pre>
-<h3 id="34-创建数据库">3.4 创建数据库</h3>
+
+<h3 id="3-4-创建数据库">3.4 创建数据库</h3>
+
 <p>数据库类需要使用 <code>@Database</code> 来注解，且在紧跟着的括号中，要添加与该数据库相关联的实体列表，如代码中的 <code>User.class</code>。注解中的 <code>version</code> 代表版本号。</p>
+
 <p>如果应用在单个进程中运行，在实例化 AppDatabase 对象时应遵循单例设计模式。每个 RoomDatabase 实例的成本相当高，而应用几乎不需要在单个进程中访问多个实例。</p>
+
 <p><strong>Java</strong></p>
+
 <pre><code class="language-java">    @Database(entities = {User.class}, version = 1)
     public abstract class AppDatabase extends RoomDatabase {
         public abstract UserDao userDao();
@@ -446,7 +477,9 @@
     }
     
 </code></pre>
+
 <p><strong>Kotlin</strong></p>
+
 <pre><code class="language-kotlin">    @Database(entities = arrayOf(User::class), version = 1)
     abstract class AppDatabase : RoomDatabase() {
         abstract fun userDao(): UserDao
@@ -468,9 +501,13 @@
 }
     
 </code></pre>
-<h3 id="35-使用数据库">3.5 使用数据库</h3>
+
+<h3 id="3-5-使用数据库">3.5 使用数据库</h3>
+
 <p>创建数据库实例之后就可以愉快的增删改查啦。</p>
+
 <p><strong>Java</strong></p>
+
 <pre><code class="language-java">    AppDatabase db;
     db = AppDatabase.getInstance(context);
     // 增
@@ -482,7 +519,9 @@
     // 查
     List&lt;User&gt; users = db.userDao().getAll();
 </code></pre>
+
 <p><strong>Kotlin</strong></p>
+
 <pre><code class="language-kotlin">    val db: AppDatabase
     db = AppDatabase.getInstance(context)
     // 增
@@ -494,9 +533,13 @@
     // 查
     val users = db.userDao().getAll()
 </code></pre>
+
 <h2 id="4-注意事项">4. 注意事项</h2>
+
 <p>使用过程中碰到了一些坑，之后补充在这里。#TODO</p>
+
 <h2 id="5-参考">5. 参考</h2>
+
 <ul>
 <li><a href="https://developer.android.com/training/data-storage/room">https://developer.android.com/training/data-storage/room</a></li>
 <li><a href="https://www.jianshu.com/p/cfde3535233d">https://www.jianshu.com/p/cfde3535233d</a></li>
@@ -592,44 +635,11 @@
         
     </div>
     
-    <div class="col-span-2">
-        
-        
-        <div class="sticky top-16 z-10 text-lg font-semibold bg-primary-bg hidden lg:block px-6 py-4">
-    <h2 class="subtitle">目录</h2>
-</div>
-<div class="sticky-toc top-32 hidden lg:block px-6 pb-6">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#1-前言">1. 前言</a></li>
-    <li><a href="#2-room-是什么">2. Room 是什么</a></li>
-    <li><a href="#3-使用方法">3. 使用方法</a>
-      <ul>
-        <li><a href="#31-添加依赖">3.1 添加依赖</a></li>
-        <li><a href="#32-创建entity">3.2 创建Entity</a></li>
-        <li><a href="#33-创建dao">3.3 创建DAO</a></li>
-        <li><a href="#34-创建数据库">3.4 创建数据库</a></li>
-        <li><a href="#35-使用数据库">3.5 使用数据库</a></li>
-      </ul>
-    </li>
-    <li><a href="#4-注意事项">4. 注意事项</a></li>
-    <li><a href="#5-参考">5. 参考</a></li>
-  </ul>
-</nav>
-</div>
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        enableStickyToc();
-    });
-</script>
-        
-    </div>
-    
 
     
     
     <div
-        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded p-6">
         <h2 class="text-lg font-semibold mb-4">相关</h2>
         <div class="content">
             

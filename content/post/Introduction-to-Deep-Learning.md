@@ -4,6 +4,8 @@ date: 2018-07-20 15:42:35
 tags: 
 - Deep Learning
 categories: 学习笔记
+authors:
+- hishark777
 ---
 暑假好忙啊又要复习又要自学新东西OTZ
 btw Ng讲话真的好温柔啊哈哈哈

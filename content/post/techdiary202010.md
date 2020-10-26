@@ -12,7 +12,14 @@ authors:
 年初立的FLAG怎么样了？
 <!--more-->
 
+## 2020-10-26
+
+### hugo html
+
+[Content inside HTML tags missing in Latest Hugo?](https://jdhao.github.io/2019/12/29/hugo_html_not_shown/)
+
 ## 2020-10-25
+
 ### macos 终端科学上网
 
 [macos 终端科学上网](https://yaolianhua.cn/archives/macos%E7%BB%88%E7%AB%AF%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91)

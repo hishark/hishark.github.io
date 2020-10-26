@@ -51,7 +51,7 @@
     },{
         "@type": "ListItem",
         "position":  2 ,
-        "name": "Posts",
+        "name": "文章",
         "item": "https://hishark777.com/post/"
     },{
         "@type": "ListItem",
@@ -74,7 +74,7 @@
     },
     "headline": "Mkdocs-Material Tutorial | 777\u0027s BLOG","datePublished": "2020-09-07T20:06:19+00:00",
     "dateModified": "2020-09-07T20:06:19+00:00",
-    "wordCount":  590 ,
+    "wordCount":  591 ,
     "author": {
         "@type": "Person",
         "name": ["hishark777"]
@@ -259,28 +259,43 @@
         
         
         <div class="content">
-            <p>总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个<a href="https://hishark777.com/777-Tech-Diary/">Gitbook</a>放<del>技术日记</del>乱七八糟的碎碎念，最后迁移到了<a href="http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/">博客</a>。前阵子看到有人用<a href="https://squidfunk.github.io/mkdocs-material/">Mkdocs-Material</a>写博客，转了一圈官网觉得有点意思，<del>也比Gitbook更好看</del>（比以前的Gitbook好看），于是来整一个做校招笔记。</p>
+            
+
+<p>总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个<a href="https://hishark777.com/777-Tech-Diary/">Gitbook</a>放<del>技术日记</del>乱七八糟的碎碎念，最后迁移到了<a href="http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/">博客</a>。前阵子看到有人用<a href="https://squidfunk.github.io/mkdocs-material/">Mkdocs-Material</a>写博客，转了一圈官网觉得有点意思，<del>也比Gitbook更好看</del>（比以前的Gitbook好看），于是来整一个做校招笔记。</p>
+
 <h2 id="1-安装">1. 安装</h2>
+
 <p>输入以下命令：</p>
+
 <pre><code>pip install mkdocs-material
 </code></pre>
+
 <h2 id="2-创建站点">2. 创建站点</h2>
+
 <p>在Github上创建一个仓库，比如我的：<a href="https://github.com/hishark/Android-Interview/tree/master">Android-Interview</a>，拉到本地之后在根目录下输入以下命令：</p>
+
 <pre><code class="language-shell">mkdocs new .
 </code></pre>
+
 <p>输入这个命令之后会生成如下的目录结构</p>
+
 <pre><code>.
 ├─ docs/
 │  └─ index.md
 └─ mkdocs.yml
 </code></pre>
+
 <h2 id="3-配置">3. 配置</h2>
+
 <p>打开<code>mkdocs.yml</code>，添加主题：</p>
+
 <pre><code>site_name: Android Interview
 theme:
   name: material
 </code></pre>
+
 <p>添加扩展：</p>
+
 <pre><code>markdown_extensions:
   - admonition
   - codehilite:
@@ -307,25 +322,37 @@ theme:
   - pymdownx.tasklist
   - pymdownx.tilde
 </code></pre>
+
 <p>其他配置可以在这里看到：<a href="https://squidfunk.github.io/mkdocs-material/creating-your-site/#advanced-configuration">Advanced configuration</a></p>
+
 <h2 id="4-预览">4. 预览</h2>
+
 <p>输入以下命令：</p>
+
 <pre><code class="language-shell">mkdocs serve
 </code></pre>
+
 <p>于是你就得到了一个乖巧的静态网站，在<code>docs/</code>目录下创建markdown文件就可以愉快的瞎写了。</p>
+
 <h2 id="5-部署">5. 部署</h2>
+
 <p>在包含<code>mkdocs.yml</code>文件的路径下输入以下命令：</p>
+
 <pre><code class="language-shell">mkdocs gh-deploy --force
 </code></pre>
+
 <p>就可以在<code>https://yourname.github.io/repo_name</code>下看到生成的Mkdocs啦~其中<code>yourname</code>是Github的用户名，<code>repo_name</code>就是第二步中创建的仓库名称。</p>
+
 <p><a href="https://hishark777.com/Android-Interview/">校招笔记</a>启动！</p>
+
 <h2 id="6-搬回gitbook">6. 搬回Gitbook</h2>
+
 <p>偶然发现Gitbook现在非常好！看！了！
-于是我又搬回去了：</p>
-<ul>
-<li><a href="https://hishark777.gitbook.io/android-interview/">Gitbook-Android-Interview</a></li>
-</ul>
+于是我又搬回去了：
+- <a href="https://hishark777.gitbook.io/android-interview/">Gitbook-Android-Interview</a></p>
+
 <h2 id="参考">参考</h2>
+
 <ul>
 <li><a href="https://squidfunk.github.io/mkdocs-material/">https://squidfunk.github.io/mkdocs-material/</a></li>
 </ul>

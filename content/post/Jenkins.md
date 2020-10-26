@@ -3,6 +3,9 @@ title: Jenkins
 date: 2019-02-28 20:05:33
 tags: 
 categories: 学习笔记
+draft: true
+authors:
+- hishark777
 ---
 
 好久没写正经博客了OTZ
