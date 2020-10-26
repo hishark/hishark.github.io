@@ -32,6 +32,8 @@ authors:
 
 [hexo 迁移到 hugo](https://sspai.com/post/59904)
 
+> MacOS 想要把电脑上的 hugo 换成指定版本只要去 github-release 中下载指定版本然后把得到的 hugo 放入 `/usr/local/bin` 即可
+
 ### homebrew
 
 [执行 brew install 命令长时间卡在 Updating Homebrew 的解决方法](https://learnku.com/articles/18908)
@@ -78,7 +80,7 @@ imovie 有点厉害哈
 
 ### 杂
 
-《一天一个EMOJI》
+《日更朋友圈之一天一个EMOJI》
 
 ## 2020-10-18
 
