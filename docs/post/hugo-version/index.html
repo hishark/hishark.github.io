@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang='zh'><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<title>Hugo 安装指定版本 | 777&#39;s BLOG</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_180x180_fill_box_center_2.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/css/eureka.min.css">
+
+
+
+
+<script defer src="https://hishark777.com/js/eureka.min.js"></script>
+
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo=" crossorigin="anonymous"></script>
+
+<meta itemprop="name" content="Hugo 安装指定版本 | 777&#39;s BLOG">
+<meta itemprop="description"
+    content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。">
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "name": "777's BLOG",
+        "item": "https://hishark777.com/"
+    },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "name": "文章",
+        "item": "https://hishark777.com/post/"
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "name": "Hugo 安装指定版本",
+        "item": "https://hishark777.com/post/hugo-version/"
+    }]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hishark777.com/post/hugo-version/"
+    },
+    "headline": "Hugo 安装指定版本 | 777\u0027s BLOG","datePublished": "2020-10-27T15:00:32+08:00",
+    "dateModified": "2020-10-27T15:00:32+08:00",
+    "wordCount":  1015 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Example publisher",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://hishark777.com/images/icon.png"
+        }
+        },
+    "description": "\u003cp\u003e前些天逛博客看到 \u003ca href=\u0022https:\/\/gohugo.io\/\u0022\u003eHugo\u003c\/a\u003e 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 \u003ca href=\u0022https:\/\/github.com\/wangchucheng\/hugo-eureka\u0022\u003eEureka\u003c\/a\u003e，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。\u003c\/p\u003e"
+}
+</script>
+
+<meta property="og:title" content="Hugo 安装指定版本 | 777&#39;s BLOG" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/hugo-version/" />
+
+
+
+
+<meta property="og:description" content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="777&#39;s BLOG" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2020-10-27T15:00:32&#43;08:00" />
+
+
+<meta property="article:modified_time" content="2020-10-27T15:00:32&#43;08:00" />
+
+
+
+<meta property="article:section" content="post" />
+
+
+<meta property="article:tag" content="hugo" />
+
+
+
+
+<body class="flex flex-col min-h-screen">
+    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    } else if (storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap p-4">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold ">777&#39;s BLOG</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
+            currenturl="https://hishark777.com/post/hugo-version/">
+            
+            <a href="/authors/hishark777"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">关于</a>
+            
+            <a href="/post/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
+            
+            <a href="https://www.douban.com/people/hishark/photos"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">相册</a>
+            
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">技术日记</a>
+            
+            <a href="https://hishark777.gitbook.io/android-interview/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">校招笔记</a>
+            
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+        
+    });
+
+    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
+        if (currenturl.length > 1) {
+            currenturl = currenturl.substr(0, currenturl.length - 1)
+        }
+
+        sessionStorage.setItem("mainKey", currenturl)
+
+        let elements = document.getElementsByClassName('main-a');
+        for (let i in elements) {
+            if (typeof elements[i] === "object") {
+                let elementurl = elements[i].getAttribute('href')
+                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
+                    elementurl = elementurl.substr(0, elementurl.length - 1)
+                }
+                if (elementurl == sessionStorage.getItem("mainKey")) {
+                    elements[i].classList.add('text-eureka')
+                } else {
+                    elements[i].classList.remove('text-eureka')
+                }
+            }
+        }
+</script></div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16">
+        
+        <div class="container mx-auto ">
+            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">Hugo 安装指定版本</h1>
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Oct 27, 2020</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>3分钟</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        <div class="content">
+            <p>前些天逛博客看到 <a href="https://gohugo.io/">Hugo</a> 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 <a href="https://github.com/wangchucheng/hugo-eureka">Eureka</a>，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。</p>
+
+<h2 id="1-起因">1. 起因</h2>
+
+<blockquote>
+<p>我真是浪费了无数时间在折腾博客上- - 不过真好玩哈哈</p>
+</blockquote>
+
+<p>电脑系统为 MacOS，直接执行了 <code>brew install hugo</code> 安装了 Hugo，装完之后按照 <a href="https://www.wangchucheng.com/zh/docs/">Eureka 的文档</a> 一步步来配置，最后快乐的执行  <code>hugo server</code> 收到了一大串报错，现场未保留，总之是对主题中的一些文件进行了报错。</p>
+
+<p>接着回头思考是哪一步出了错，发现在<a href="https://www.wangchucheng.com/zh/docs/eureka/getting-started/#%E5%89%8D%E6%8F%90">前提</a>中提到了 Eureka 需要安装 v0.74.0 的 Hugo，瞅了瞅 Hugo 官方<a href="https://github.com/gohugoio/hugo/releases/tag/v0.76.5">最新发布的版本</a>是 v0.76.5，错以为自己电脑上的版本就是 v0.76.5，然后开始 Google 要如何对 Hugo 进行降级。</p>
+
+<h2 id="2-经过">2. 经过</h2>
+
+<p>经过 Google 找到了一篇靠谱的教程来安装旧版本的 Hugo：</p>
+
+<p><a href="https://networm.me/2019/10/27/installing-old-homebrew-formulas/">Homebrew 安装旧版本软件 - 狂飙</a></p>
+
+<!-- 这里闲下来也写一下详细的步骤 -->
+
+<p>之前这个方法应该是管用的，毕竟评论区中前排的评论都在感谢作者哈哈，但是现在按照这个流程来做会出现报错：</p>
+
+<pre><code class="language-txt">Error: Calling Non-checksummed download of hugo formula file 
+from an arbitrary URL is disabled! Use 'brew extract' 
+or 'brew create' and 'brew tap-new' to create a formula file 
+in a tap on GitHub instead.
+</code></pre>
+
+<p>这个时候，我起身去了一趟洗手间 🚻 ，回来随手在终端敲下了一句 <code>hugo version</code>，然后发现自己电脑上 Hugo 的版本实际上是 v0.73.0。</p>
+
+<p>行。</p>
+
+<p>所以我应该升级而不是降级。</p>
+
+<h2 id="3-究极解决方案">3. 究极解决方案</h2>
+
+<p>想升级很简单，直接执行 <code>brew upgrade hugo</code> 就好啦，会自动给你的电脑安装 hugo 的最新稳定版本。但是问题又来了，目前通过 brew 成功安装到的 Hugo 版本为 v0.73.0，比我需要的 v0.74.0更低，所以我执行该条指令并没有任何帮助。</p>
+
+<p>最后，我需要解决的问题应该是——如何安装指定版本的 Hugo。很简单，根据 <a href="https://discourse.gohugo.io/t/how-to-install-a-specific-version-of-gohugo/23542">How to install a specific version of gohugo </a>这个问题中的第二个评论找到了解决方案：</p>
+
+<ol>
+<li><p>去 Hugo-Github 的 <a href="https://github.com/gohugoio/hugo/releases">Releases</a> 页面找到你需要的指定版本</p></li>
+
+<li><p>根据电脑系统定位到对应的压缩包进行下载（我的电脑系统为 MacOS 所以选择的是 <a href="https://github.com/gohugoio/hugo/releases/download/v0.74.0/hugo_0.74.0_macOS-64bit.tar.gz">hugo_0.74.0_macOS-64bit.tar.gz</a>）</p></li>
+
+<li><p>解压该压缩包，用其中名为 <code>hugo</code> 的可执行文件去替换当前电脑中已有的 <code>hugo</code> 可执行文件，MacOS 下 hugo 所在的路径为 <code>/usr/local/bin</code>。</p></li>
+</ol>
+
+<p>替换后就成功装上想要的版本啦～</p>
+
+<h2 id="4-注意">4. 注意</h2>
+
+<p>另外有个要注意的小问题是 MacOS 使用 homebrew 安装的话默认会安装 extended 版本。发现这个问题是还看上了另外一款主题 <a href="https://github.com/reuixiy/hugo-theme-meme">MemE</a>，这款主题要求安装 extended 版本的 Hugo，而我在 <a href="https://gohugo.io/getting-started/installing/">Install-Hugo</a> 中也没有查找到 MacOS 中要如何安装 extended 版本，最后在 Hugo 的 Github 库中看到了一个 <a href="https://github.com/gohugoio/hugoDocs/issues/823">issue</a>，里面提到：</p>
+
+<blockquote>
+<p>An extended is default on macOS with <code>brew install hugo</code></p>
+</blockquote>
+
+<p>所以 MacOS 中使用 homebrew 安装 Hugo 的话是默认安装 extended 版本的。</p>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><a href="https://discourse.gohugo.io/t/how-to-install-a-specific-version-of-gohugo/23542">How to install a specific version of gohugo </a></li>
+<li><a href="https://networm.me/2019/10/27/installing-old-homebrew-formulas/">Homebrew 安装旧版本软件 - 狂飙</a></li>
+</ul>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="https://hishark777.com/tags/hugo/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#hugo</a>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">上一篇</span>
+        <a href="https://hishark777.com/post/chinese-copywriting/" class="block">
+            中英文空格使用指北
+        </a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">下一篇</span>
+        <a href="https://hishark777.com/post/as-4-1/" class="block">
+            What’s new in AS 4.1
+        </a>
+        
+    </div>
+</div>
+
+        
+    </div>
+    
+
+    
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
+    <p>&copy; 2017 - 2020 <a href="https://hishark777.com/">hishark777</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</footer></div>
+        </div>
+    </footer>
+</body>
+
+</html>

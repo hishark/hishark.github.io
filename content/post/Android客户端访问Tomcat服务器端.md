@@ -1,5 +1,5 @@
 ---
-title: Android客户端访问Tomcat服务器端
+title: Android 客户端访问 Tomcat 服务器端
 date: 2018-03-26 14:47:24
 tags: 
 - Android
@@ -275,7 +275,7 @@ public class loginActivity extends AppCompatActivity {
 ####  实现效果
 
 <center><img src="http://p3as6e9rs.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720180326160633.gif" width="" height="100"></center>
-  
+
 ####  访问方式
 
 ##### 安卓模拟器访问

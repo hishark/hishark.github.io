@@ -1,5 +1,5 @@
 ---
-title: 在同一台电脑上绑定Github和阿里云Code
+title: 在同一台电脑上绑定 Github 和阿里云 Code
 date: 2019-11-23 09:29:24
 tags: 
 - ssh

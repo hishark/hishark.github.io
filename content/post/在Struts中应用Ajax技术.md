@@ -1,5 +1,5 @@
 ---
-title: 在Struts中应用Ajax技术
+title: 在 Struts 中应用 Ajax 技术
 date: 2018-03-19 14:28:25
 tags: 
 - Struts

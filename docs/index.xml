@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2017 - 2020 &lt;a href=&#34;https://hishark777.com/&#34;&gt;hishark777&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 19 Oct 2020 21:18:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2020 18:18:26 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>中英文空格使用指北</title>
+      <link>https://hishark777.com/post/chinese-copywriting/</link>
+      <pubDate>Tue, 27 Oct 2020 18:18:26 +0800</pubDate>
+      
+      <guid>https://hishark777.com/post/chinese-copywriting/</guid>
+      <description>&lt;p&gt;你会在中文和英文之间加空格「 」吗？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo 安装指定版本</title>
+      <link>https://hishark777.com/post/hugo-version/</link>
+      <pubDate>Tue, 27 Oct 2020 15:00:32 +0800</pubDate>
+      
+      <guid>https://hishark777.com/post/hugo-version/</guid>
+      <description>&lt;p&gt;前些天逛博客看到 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 &lt;a href=&#34;https://github.com/wangchucheng/hugo-eureka&#34;&gt;Eureka&lt;/a&gt;，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>关于我</title>
@@ -49,9 +67,11 @@
       <pubDate>Thu, 01 Oct 2020 09:50:41 +0000</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202010/</guid>
-      <description>&lt;p&gt;庆祝祖国母亲生日 这个月我一定好好学习
-还有三个月2020就结束啦
-年初立的FLAG怎么样了？&lt;/p&gt;</description>
+      <description>&lt;p&gt;庆祝祖国母亲生日 这个月我一定好好学习&lt;/p&gt;
+
+&lt;p&gt;还有三个月 2020 就结束啦&lt;/p&gt;
+
+&lt;p&gt;年初立的 FLAG 怎么样了？&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,7 +105,7 @@
     </item>
     
     <item>
-      <title>最后一个快乐暑假 Part2</title>
+      <title>最后一个快乐暑假 Part 2</title>
       <link>https://hishark777.com/post/techdiary202008/</link>
       <pubDate>Sat, 01 Aug 2020 17:26:04 +0000</pubDate>
       
@@ -116,7 +136,7 @@
     </item>
     
     <item>
-      <title>最后一个快乐暑假 Part1</title>
+      <title>最后一个快乐暑假 Part 1</title>
       <link>https://hishark777.com/post/techdiary202007/</link>
       <pubDate>Wed, 01 Jul 2020 19:38:55 +0000</pubDate>
       
@@ -159,7 +179,7 @@
     </item>
     
     <item>
-      <title>四月の技术日记</title>
+      <title>四月 の 技术日记</title>
       <link>https://hishark777.com/post/techdiary202004/</link>
       <pubDate>Wed, 01 Apr 2020 22:27:09 +0000</pubDate>
       
@@ -168,7 +188,7 @@
     </item>
     
     <item>
-      <title>使用Genymotion运行基于ARM架构的APP</title>
+      <title>使用 Genymotion 运行基于 ARM 架构的 APP</title>
       <link>https://hishark777.com/post/genymotion/</link>
       <pubDate>Wed, 01 Apr 2020 15:55:55 +0000</pubDate>
       
@@ -196,7 +216,7 @@
     </item>
     
     <item>
-      <title>三月の技术日记</title>
+      <title>三月 の 技术日记</title>
       <link>https://hishark777.com/post/techdiary202003/</link>
       <pubDate>Sun, 01 Mar 2020 22:41:57 +0000</pubDate>
       
@@ -205,7 +225,7 @@
     </item>
     
     <item>
-      <title>借助Gitbook搭建一个技术日记簿</title>
+      <title>借助 Gitbook 搭建一个技术日记簿</title>
       <link>https://hishark777.com/post/gitbook_techdiary/</link>
       <pubDate>Sat, 15 Feb 2020 13:24:17 +0000</pubDate>
       
@@ -245,7 +265,7 @@
     </item>
     
     <item>
-      <title>在同一台电脑上绑定Github和阿里云Code</title>
+      <title>在同一台电脑上绑定 Github 和阿里云 Code</title>
       <link>https://hishark777.com/post/git_ssh/</link>
       <pubDate>Sat, 23 Nov 2019 09:29:24 +0000</pubDate>
       
@@ -309,7 +329,7 @@
     </item>
     
     <item>
-      <title>LeanCloud中国版迁移至国际版</title>
+      <title>LeanCloud 中国版迁移至国际版</title>
       <link>https://hishark777.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</link>
       <pubDate>Mon, 30 Sep 2019 09:35:44 +0000</pubDate>
       
@@ -515,7 +535,7 @@ btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>阿里云服务器部署Java Web项目</title>
+      <title>阿里云服务器部署 Java Web 项目</title>
       <link>https://hishark777.com/post/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 03 May 2018 15:04:57 +0000</pubDate>
       
@@ -610,7 +630,7 @@ btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>SSM边缘试探</title>
+      <title>SSM 边缘试探</title>
       <link>https://hishark777.com/post/ssm%E8%BE%B9%E7%BC%98%E8%AF%95%E6%8E%A2/</link>
       <pubDate>Tue, 03 Apr 2018 20:38:10 +0000</pubDate>
       
@@ -628,7 +648,7 @@ btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>为BufferedReader爆灯</title>
+      <title>为 BufferedReader 爆灯</title>
       <link>https://hishark777.com/post/bufferedreader%E4%B8%87%E5%B2%81%E5%93%88%E5%93%88%E5%93%88%E5%93%88/</link>
       <pubDate>Thu, 29 Mar 2018 21:35:22 +0000</pubDate>
       
@@ -638,7 +658,7 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>利用OkHttp请求网络</title>
+      <title>利用 OkHttp 请求网络</title>
       <link>https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Tue, 27 Mar 2018 16:02:17 +0000</pubDate>
       
@@ -656,7 +676,7 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Android客户端访问Tomcat服务器端</title>
+      <title>Android 客户端访问 Tomcat 服务器端</title>
       <link>https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/</link>
       <pubDate>Mon, 26 Mar 2018 14:47:24 +0000</pubDate>
       
@@ -665,7 +685,7 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>JAVA选手无人权</title>
+      <title>JAVA 选手无人权</title>
       <link>https://hishark777.com/post/java%E9%80%89%E6%89%8B%E6%97%A0%E4%BA%BA%E6%9D%83/</link>
       <pubDate>Thu, 22 Mar 2018 21:30:18 +0000</pubDate>
       
@@ -684,7 +704,7 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>在Struts中应用Ajax技术</title>
+      <title>在 Struts 中应用 Ajax 技术</title>
       <link>https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Mon, 19 Mar 2018 14:28:25 +0000</pubDate>
       
@@ -693,7 +713,7 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>AS - Github踩坑</title>
+      <title>AS - Github 踩坑</title>
       <link>https://hishark777.com/post/as-github%E8%B8%A9%E5%9D%91/</link>
       <pubDate>Sun, 18 Mar 2018 20:14:40 +0000</pubDate>
       
@@ -742,7 +762,7 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Comparable接口和Arrays.sort()实现对对象数组的排序</title>
+      <title>Comparable 接口和 Arrays.sort() 实现对对象数组的排序</title>
       <link>https://hishark777.com/post/%E5%88%A9%E7%94%A8comparable%E6%8E%A5%E5%8F%A3%E5%92%8Carrays-sort-%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/</link>
       <pubDate>Mon, 12 Mar 2018 19:37:37 +0000</pubDate>
       
@@ -796,7 +816,7 @@ BufferedReader一句话让你飞嘻嘻嘻&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Glide大法好</title>
+      <title>Glide 大法好</title>
       <link>https://hishark777.com/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/</link>
       <pubDate>Fri, 09 Mar 2018 13:03:01 +0000</pubDate>
       
@@ -838,7 +858,7 @@ Glide这么美好的库为什么上学期没发现
     </item>
     
     <item>
-      <title>Got a meeting?Take a walk</title>
+      <title>Got a meeting? Take a walk</title>
       <link>https://hishark777.com/post/got-a-meeting-take-a-walk/</link>
       <pubDate>Sat, 03 Mar 2018 21:41:16 +0000</pubDate>
       
@@ -1357,7 +1377,7 @@ yw说第五章有个小题wtf？
     </item>
     
     <item>
-      <title>gavin真可爱</title>
+      <title>gavin 真可爱</title>
       <link>https://hishark777.com/post/2017-12-24/</link>
       <pubDate>Sun, 24 Dec 2017 08:29:34 +0000</pubDate>
       

@@ -8,9 +8,24 @@ authors:
 - hishark777
 ---
 庆祝祖国母亲生日 这个月我一定好好学习
-还有三个月2020就结束啦
-年初立的FLAG怎么样了？
+
+还有三个月 2020 就结束啦
+
+年初立的 FLAG 怎么样了？
+
 <!--more-->
+
+## 2020-10-27
+
+## DICOM
+
+[DICOM - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/DICOM)
+
+[DICOM_百度百科](https://baike.baidu.com/item/DICOM/2171358?fr=aladdin)
+
+### 杂
+
+[BYVoid - blog](https://byvoid.com/zhs/blog/archive/)
 
 ## 2020-10-26
 

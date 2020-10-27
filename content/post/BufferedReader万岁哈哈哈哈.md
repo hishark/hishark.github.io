@@ -1,5 +1,5 @@
 ---
-title: 为BufferedReader爆灯
+title: 为 BufferedReader 爆灯
 date: 2018-03-29 21:35:22
 tags: 
 - DIARIES
@@ -22,4 +22,3 @@ BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 把博客主题换了，之前的主题还是感觉太花啦而且老要找图片、P图片太麻烦了，Next大片留白很好看，简单粗暴不需要配图嘻嘻。
 
 后天就天梯赛了，也不希望拿多少分吧只希望不要拖队友的后腿。大后天蓝桥杯无所谓啦，去年去过一次了感觉就不咋紧张了，而且今年有老老实实刷题，虽然刷的都很基础啦哈哈哈，应该能比去年好一些吧！顺便去昌大看看那个贼大的校门♪(´▽｀)
- 

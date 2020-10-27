@@ -1,5 +1,5 @@
 ---
-title: Comparable接口和Arrays.sort()实现对对象数组的排序
+title: Comparable 接口和 Arrays.sort() 实现对对象数组的排序
 date: 2018-03-12 19:37:37
 tags: 
 - java
