@@ -15,6 +15,40 @@ authors:
 
 <!--more-->
 
+## 2020-10-28
+
+### Taxonomies
+
+[Hugo - Taxonomies](https://gohugo.io/content-management/taxonomies/)
+
+### 归档页
+
+https://xbc.me/how-to-create-an-archives-page-with-hugo/
+
+https://www.ariesme.com/posts/2019/add_archive_page_for_hugo/
+
+加个归档页不难，ddl 赶完闲下来自己搞一下。
+
+### DICOM
+
+[医疗信息化DICOM教程DICOM标准简介 - 云+社区 - 腾讯云](https://cloud.tencent.com/developer/article/1675155)
+
+⬆️找到这一篇讲得不错，然后看着看着越发感觉像一篇译文，还没找到原文OTZ
+
+[DICOM is Easy](http://dicomiseasy.blogspot.com/2011/10/introduction-to-dicom-chapter-1.html)
+
+⬆️这个网站不错耶
+
+### Osirix Dicom Viewer
+
+[Download Lite](https://www.osirix-viewer.com/osirix/osirix-md/download-osirix-lite/)
+
+### 杂
+
+https://saravanansubramanian.com/about/
+
+⬆️ 这个大叔好酷啊 
+
 ## 2020-10-27
 
 ## DICOM
