@@ -28,7 +28,6 @@ avatar = ""
   url = "https://twitter.com/hishark777"
 
 
-
 [[social]]
   icon = "music"
   icon_pack = "fas"
@@ -48,6 +47,11 @@ avatar = ""
   icon = "instagram"
   icon_pack = "fab"
   url = "https://www.instagram.com/hishark777"
+
+[[social]]
+  icon = "hand-peace"
+  icon_pack = "far"
+  url = "https://www.douban.com/people/hishark/"
 
 +++
 
