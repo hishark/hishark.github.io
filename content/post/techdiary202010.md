@@ -15,6 +15,12 @@ authors:
 
 <!--more-->
 
+## 2020-10-29
+
+### Java
+
+[classpath 和 jar](https://www.liaoxuefeng.com/wiki/1252599548343744/1260466914339296)
+
 ## 2020-10-28
 
 ### Taxonomies
@@ -37,7 +43,7 @@ https://www.ariesme.com/posts/2019/add_archive_page_for_hugo/
 
 [DICOM is Easy](http://dicomiseasy.blogspot.com/2011/10/introduction-to-dicom-chapter-1.html)
 
-⬆️这个网站不错耶
+⬆️这个网站不错
 
 ### Osirix Dicom Viewer
 
@@ -47,7 +53,7 @@ https://www.ariesme.com/posts/2019/add_archive_page_for_hugo/
 
 https://saravanansubramanian.com/about/
 
-⬆️ 这个大叔好酷啊 
+⬆️ 这个大叔好酷
 
 ## 2020-10-27
 

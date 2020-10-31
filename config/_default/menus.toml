@@ -18,10 +18,6 @@
   url = "/tags/"
   weight = 40
 
- [[main]]
-  name = "相册"
-  url = "https://www.douban.com/people/hishark/photos"
-
 [[main]]
   name = "技术日记"
   url = "/categories/技术日记/"
