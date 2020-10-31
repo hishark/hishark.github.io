@@ -1,0 +1,29 @@
+[readMore]
+other = "阅读更多"
+
+[readingTime]
+other = "{{ .ReadingTime }}分钟"
+
+[toc]
+other = "目录"
+
+[seriesOfPosts]
+other = "系列文章"
+
+[previous]
+other = "上一篇"
+
+[next]
+other = "下一篇"
+
+[seeAlso]
+other = "相关"
+
+[recent]
+other = "最近"
+
+[onThisPage]
+other = "本页内容"
+
+[editThisPage]
+other = "编辑本页"

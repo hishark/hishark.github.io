@@ -1,0 +1,42 @@
+<div class="flex flex-col lg:flex-row items-center justify-center py-12">
+    {{ $img := partial "get_image.html" (dict "context" . "url" .Params.avatar "keyword" "*avatar*")}}
+    {{ with $img }}
+    <div class="w-48 mx-auto lg:-my-8 lg:ml-0 lg:mr-8 lg:pr-8 lg:py-8 lg:border-r">
+        <img src="{{ . }}" class="rounded-full" alt="Avatar">  
+    </div>
+    {{ end }}
+    <div class="flex-grow mt-4 md:mt-0">
+        <div class="text-6xl font-medium leading-tight py-4">{{ .Title }}</div>
+        <!-- <div class="w-3/12 xl:w-2/12 border-b"></div>
+        <div class="flex items-center pt-4">
+            {{ with or (.Params.role) (.Params.organizations)}}
+            <i class="fas fa-user-tag"></i>
+            {{ end }}
+            <div class="flex flex-wrap">
+                {{ with .Params.role }}
+                <span class="pl-4">{{ . }}</span>
+                {{ end }}
+
+                {{ with .Params.organization }}
+                <a href="{{ .url }}" class="pl-4">{{ .name }}</a>
+                {{ end }}
+            </div>
+
+        </div> -->
+
+        {{ with .Params.bio }}
+        <div class="py-8 text-lg leading-normal font-medium">
+            {{ . }}
+        </div>
+        {{ end }}
+    </div>
+    <div class="flex lg:flex-col justify-center items-end ml-8">
+        {{ $brand := $.Param "social"}}
+        {{ range $brand }}
+        {{ $src :=  print .icon_pack " fa-" .icon }}
+        <div class="pb-2 pr-4 lg:pr-0 pt-4 lg:pt-0">
+            <a href="{{ .url }}"><i class="{{ print $src }}"></i></a>
+        </div>
+        {{ end }}
+    </div>
+</div>
