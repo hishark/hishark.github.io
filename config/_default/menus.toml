@@ -19,10 +19,6 @@
   weight = 40
 
 [[main]]
-  name = "技术日记"
-  url = "/categories/技术日记/"
-
-[[main]]
   name = "校招笔记"
   url = "https://hishark777.gitbook.io/android-interview/"
 
