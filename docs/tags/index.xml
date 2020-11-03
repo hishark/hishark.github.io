@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2017 - 2020 &lt;a href=&#34;https://hishark777.com/&#34;&gt;hishark777&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 27 Oct 2020 18:18:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 14:27:04 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TechDiary</title>
+      <link>https://hishark777.com/tags/techdiary/</link>
+      <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
+      
+      <guid>https://hishark777.com/tags/techdiary/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>中文排版</title>
@@ -45,15 +54,6 @@
       <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
       
       <guid>https://hishark777.com/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TechDiary</title>
-      <link>https://hishark777.com/tags/techdiary/</link>
-      <pubDate>Thu, 01 Oct 2020 09:50:41 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/techdiary/</guid>
       <description></description>
     </item>
     
