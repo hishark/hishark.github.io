@@ -15,6 +15,46 @@ authors:
 
 <!--more-->
 
+## 2020-11-06
+
+### Java
+
+[String.split](https://www.cnblogs.com/wzj4858/p/8204967.html)
+
+- 别忘记转义字符 `.` 和 `|` 
+
+### Android
+
+[CircularArray](https://developer.android.com/reference/androidx/collection/CircularArray)
+
+- 延展：[Circular Buffer - Wiki](https://zh.wikipedia.org/wiki/%E7%92%B0%E5%BD%A2%E7%B7%A9%E8%A1%9D%E5%8D%80)
+
+### Jpeg
+
+[理解jpeg文件头的格式](https://blog.csdn.net/ryfdizuo/article/details/41250775)
+
+[jpeg图片格式详解](https://blog.csdn.net/yun_hen/article/details/78135122)
+
+### Android - OpenCV
+
+[Android OpenCV（零）：OpenCV Android SDK](https://juejin.im/post/6871382621017309197)
+
+### Blog
+
+[网易云音乐大前端团队](https://juejin.im/user/4265760847567016)
+
+### Dicom View
+
+[DicomGo-Web](https://www.dicomgo.com/dgv/viewer#/view)
+
+## 2020-11-05
+
+### adb
+
+[[解决 'adb root' 时提示 'adbd cannot run as root in production builds'](https://www.cnblogs.com/jeason1997/p/12410537.html)](https://www.cnblogs.com/jeason1997/p/12410537.html)
+
+[/system/bin/sh: su: not found的解决办法](https://blog.csdn.net/TheWhiteFox/article/details/84142524)
+
 ## 2020-11-03
 
 ### 存储
