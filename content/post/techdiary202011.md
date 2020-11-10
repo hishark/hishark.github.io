@@ -15,6 +15,48 @@ authors:
 
 <!--more-->
 
+## 2020-11-09
+
+### 设计模式
+
+[说说MVP](https://xiaozhuanlan.com/topic/0642317958)
+
+### WinHex替代
+
+winhex 只能在 windows 上用，macos上找到了完美替代：
+
+- [HexFriend](https://github.com/ridiculousfish/hexfiend)
+
+### Launchpad
+
+烦死咯啥法子都试了，有个程序就是死活没法显示到启动台里OTZ 
+
+[Apple Doc](https://support.apple.com/zh-cn/guide/mac-help/mh35840/mac)
+
+[MacOS启动台(launchpad)缺少应用软件图标](https://blog.csdn.net/weixin_43735348/article/details/105218458)
+
+### Error
+
+[Unable to resolve dependency for ':app@debug/compileClasspath': Could not resolve com.android.support:appcompat-v7:26.1.0](https://stackoverflow.com/questions/46999594/unable-to-resolve-dependency-for-appdebug-compileclasspath-could-not-resolv)
+
+- File -> invalidate caches/Restart Then select invalidate and restart 妥    
+
+## 2020-11-08
+
+### Java
+
+[compareTo()](https://www.runoob.com/java/java-string-compareto.html)用于两种方式的比较
+
+- 字符串与对象进行比较
+- 按照字典顺序比较两个字符串 `a.compareTo(b)`
+  - a == b return`0`
+  - a < b return `<0`
+  - a > b return `>0`
+
+[Comparator - 1](https://www.cnblogs.com/skywang12345/p/3324788.html)
+
+[Comparator - 2](https://zhuanlan.zhihu.com/p/54004622)
+
 ## 2020-11-06
 
 ### Java
