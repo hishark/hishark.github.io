@@ -15,6 +15,48 @@ authors:
 
 <!--more-->
 
+## 2020-11-11
+
+### java xml
+
+
+
+### dicom
+
+[dicom 文件 tag 详解](https://blog.csdn.net/wenzhi20102321/article/details/75127101)
+
+[dicom view](https://www.dicomgo.com/dgv/viewer#/view)
+
+## 2020-11-10
+
+### jpg png
+
+[invalid JPEG format: missing SOI marker](https://stackoverflow.com/questions/50358935/invalid-jpeg-format-missing-soi-marker)
+
+- 好不容易找到个回答结果发现带jpg后缀的图片实际上是个 png - -爷吐辽
+
+[PNG文件头格式解析](https://blog.csdn.net/u013943420/article/details/76855416)
+
+[JPEG文件编/解码详解](https://blog.csdn.net/yuan892173701/article/details/8710316)
+
+- 我用 HexFriend 打开了一个带 jpg 后缀的图片看到了 PNG 的文件头 苍天啊
+
+哦，原有代码太奇怪了为什么按照 PNG 的格式生成但是又给个 jpg 后缀，奇奇怪怪
+
+不管了反正找到问题了改好了- - 
+
+### jar
+
+[android 添加 jar 包](https://www.cnblogs.com/candyzhmm/p/11721557.html)
+
+### 杂
+
+明天双十一
+
+还没想好买啥 
+
+想买个灰色牛角扣咧
+
 ## 2020-11-09
 
 ### 设计模式
