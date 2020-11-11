@@ -17,15 +17,15 @@ authors:
 
 ## 2020-11-11
 
-### java xml
-
-
-
 ### dicom
 
 [dicom 文件 tag 详解](https://blog.csdn.net/wenzhi20102321/article/details/75127101)
 
 [dicom view](https://www.dicomgo.com/dgv/viewer#/view)
+
+### 位运算
+
+[位运算（&、|、^、~、>>、<<）](https://www.runoob.com/w3cnote/bit-operation.html)
 
 ## 2020-11-10
 
