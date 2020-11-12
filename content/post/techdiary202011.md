@@ -15,6 +15,22 @@ authors:
 
 <!--more-->
 
+## 2020-11-12
+
+### 剑指offer完成
+
+我终于
+
+把剑指offer[全部过了一遍！](https://hishark777.gitbook.io/android-interview/algorithm/lcof)
+
+感谢[Krahets](https://leetcode-cn.com/u/jyd/)所有的剑指offer题解哈哈哈哈哈哈简直是指路明灯！
+
+### 杂
+
+K佬剑指offer的题解我全部看完了才发现
+
+我居然一直忘记关注Krahets- -
+
 ## 2020-11-11
 
 ### dicom
