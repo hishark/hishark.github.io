@@ -15,13 +15,47 @@ authors:
 
 <!--more-->
 
+## 2020-11-13
+
+### H264
+
+[H264编码profile & level控制](https://www.cnblogs.com/tinywan/p/6402007.html)
+
+[h264 : 关于level_idc和Profile_IDC的解释](https://blog.csdn.net/newarow/article/details/42496325)
+
+[MTK平台H264编码profile_idc和level_idc的小问题](https://blog.csdn.net/houyizi337825770/article/details/89520512)
+
+### WebRTC
+
+[WebRTC H.264编码的Profile和Level](https://blog.piasy.com/2020/01/04/WebRTC-H264-Profile-Levels/index.html)
+
+[为 WebRTC Android (M70) 添加 H.264 编解码](https://blog.dio.wtf/post/enable-h264-codec-for-webrtc/)
+
+- Google的p2p音视频方案
+
+[WebRTC android h264编解码适配](https://blog.csdn.net/m370809968/article/details/88743953)
+
+### SR
+
+[图像上下采样 + 金字塔](https://zhuanlan.zhihu.com/p/93050659)
+
+### MediaFormat
+
+[Android视频录制-屏幕录制](https://blog.csdn.net/l00149133/article/details/50483327)
+
 ## 2020-11-12
 
-### 剑指offer完成
+### java xml
 
-我终于
+[菜鸟教程 - Java Dom4j](http://www.51gjie.com/java/746.html)
 
-把剑指offer[全部过了一遍！](https://hishark777.gitbook.io/android-interview/algorithm/lcof)
+[Github - dom4j](https://github.com/dom4j/dom4j)
+
+[DOM4j doesn't work on Android](https://stackoverflow.com/questions/15437010/dom4j-doesnt-work-on-android)
+
+### 《剑指offer》Done
+
+我终于把剑指offer[全部过了一遍！](https://hishark777.gitbook.io/777-interview-notes/algorithm/lcof)
 
 感谢[Krahets](https://leetcode-cn.com/u/jyd/)所有的剑指offer题解哈哈哈哈哈哈简直是指路明灯！
 
