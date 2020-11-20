@@ -1,6 +1,6 @@
 +++
 # Name
-title = "Hello, I'm 777"
+title = "Hey, I'm 777"
 role = "还有一年就要成为社畜的末期研究生"
 bio = ""
 avatar = ""

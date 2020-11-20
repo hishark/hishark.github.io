@@ -12,10 +12,10 @@ publisherName = "Example publisher"
 publisherLogo = ""
 
 [hero]
-  slogan = "Let It Be :P"
+  slogan = "Hey!"
   # Specify the image name in `assets/images/` folder.
-  imgLeft = "images/left.jpg"
-  imgRight = "images/right.jpg"
+  imgLeft = "images/hero-left.jpg"
+  imgRight = "images/hero-right.jpg"
 
 [comment]
   # Options: disqus and commento.
