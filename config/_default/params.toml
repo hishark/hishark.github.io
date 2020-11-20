@@ -14,15 +14,15 @@ publisherLogo = ""
 [hero]
   slogan = "Let It Be :P"
   # Specify the image name in `assets/images/` folder.
-  imgLeft = "images/hero-left.jpg"
-  imgRight = "images/hero-right.jpg"
+  imgLeft = "images/left.jpg"
+  imgRight = "images/right.jpg"
 
 [comment]
   # Options: disqus and commento.
-  platform = ""
+  platform = "disqus"
 
   [comment.disqus]
-    shortname = ""
+    shortname = "hishark777"
 
   [comment.commento]
     # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty. 

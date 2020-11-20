@@ -15,6 +15,32 @@ authors:
 
 <!--more-->
 
+## 2020-11-19
+
+### DisplayMetrics
+
+[Android DisplayMetrics 获取和屏幕相关的信息](https://www.cnblogs.com/zhouliweiblog/p/5142863.html)
+
+### FullScreen
+
+[Android SurfaceView to full screen](https://stackoverflow.com/questions/33607629/android-surfaceview-to-full-screen)
+
+### MVVM
+
+[Android之MVVM架构指南](https://www.jianshu.com/p/b493e6f7388e)
+
+## 2020-11-18
+
+### Big Sur Charging Problem
+
+[“Battery is not charging” after updating to MacOS Big Sur](https://apple.stackexchange.com/questions/401862/battery-is-not-charging-after-updating-to-macos-big-su)
+
+[如果 kernel_task 正在大量占用 Mac CPU 资源](https://support.apple.com/zh-cn/HT207359)
+
+### fullscreen
+
+[【Android】【全屏切换】优雅地实现播放器全屏切换](https://blog.csdn.net/u013718730/article/details/108070657)
+
 ## 2020-11-13
 
 ### H264
