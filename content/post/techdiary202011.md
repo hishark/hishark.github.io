@@ -15,6 +15,20 @@ authors:
 
 <!--more-->
 
+## 2020-11-23
+
+### Wifi连接方式
+
+[Android 代码连接wifi](https://blog.csdn.net/qq_32680169/article/details/106390017)
+
+### 依赖注入框架
+
+[使用 Hilt 实现依赖项注入](https://developer.android.com/training/dependency-injection/hilt-android?hl=zh-cn)
+
+### ConstraintLayout
+
+[使用ConstraintLayout构建自适应界面](https://developer.android.google.cn/training/constraint-layout?hl=zh-cn)
+
 ## 2020-11-19
 
 ### DisplayMetrics
