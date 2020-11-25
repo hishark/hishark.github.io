@@ -1,7 +1,6 @@
 ---
 title: "十一月学习废话集"
 date: 2020-11-02T14:27:04+08:00
-draft: false
 categories: 
 - 技术日记
 tags:
@@ -14,6 +13,18 @@ authors:
 2020年倒计时开始
 
 <!--more-->
+
+## 2020-11-25
+
+### 启动优化
+
+[深入探索Android启动速度优化](https://jsonchao.github.io/2019/11/10/%E6%B7%B1%E5%85%A5%E6%8E%A2%E7%B4%A2Android%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/)
+
+## 2020-11-24
+
+### Intent & IntentFilter
+
+[Intent 和 Intent 过滤器](https://developer.android.com/guide/components/intents-filters?hl=zh-cn)
 
 ## 2020-11-23
 
