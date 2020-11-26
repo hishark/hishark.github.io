@@ -9,10 +9,11 @@ authors:
 - hishark777
 ---
 整理博客时发现
+
 很久没有在这里碎碎念啦
+
 最近在干一些什么呢
 <!--more-->
-<br>
 
 
 今天是七月十五号
@@ -21,7 +22,7 @@ authors:
 
 在家的日子还剩下一个半月
 
-#
+//
 
 本人从记事起二十年来
 
@@ -39,7 +40,7 @@ authors:
 
 效果显著 瘦了六斤 血糖也降到了正常范围内
 
-#
+//
 
 很久没有晨跑了
 
@@ -59,7 +60,7 @@ authors:
 
 肯定帮了大忙
 
-#
+//
 
 寒假回家时没想到能在家呆这么久的
 
@@ -73,7 +74,7 @@ authors:
 
 谁曾想他俩就这样结伴在我桌子上冬眠了下去💤
 
-#
+//
 
 上周西瓜找到了我
 
@@ -89,7 +90,7 @@ authors:
 
 果然zxq从小到大只会写流水账哈😴
 
-#
+//
 
 最近有在好好坚持的两件小事
 
@@ -110,7 +111,7 @@ authors:
 
 <img src="https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/1%2B1%3Dme.jpg" width="500">
 
-#
+//
 
 [LeetCode](https://leetcode-cn.com/u/hishark/)呢从三月份开始坚持每天做一个题
 偶尔断了几天但是整体来看还是坚持了下来
@@ -137,7 +138,7 @@ debug的时候也不自己乖乖debug
 
 🈚️
 
-#
+//
 
 于是六月开始在本子上记笔记
 
@@ -153,7 +154,7 @@ debug的时候也不自己乖乖debug
 
 上道了
 
-#
+//
 
 六月中旬yzh来家里玩
 
@@ -173,7 +174,7 @@ debug的时候也不自己乖乖debug
 
 开心(\*^▽^\*)
 
-#
+//
 
 之前老iPad上的GoodNotes是用淘宝大礼包里别人的账号安装的
 
@@ -191,7 +192,7 @@ Notability实在是没有GoodNotes貌美喔
 
 而且GN可以在MaoOS和iPasOS之间同步真是太舒服了> <
 
-#
+//
 
 从六月底开始
 
@@ -206,7 +207,7 @@ Notability实在是没有GoodNotes貌美喔
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/goodnotes.jpg)
 
 
-#
+//
 
 在家办公也有一段时间了
 
@@ -232,7 +233,7 @@ Notability实在是没有GoodNotes貌美喔
 
 总而言之`ddl永远是生产力`这句话永远正确就对了（。）
 
-#
+//
 
 上周使用的博客主题还是[paper](https://github.com/random-yang/paper)
 

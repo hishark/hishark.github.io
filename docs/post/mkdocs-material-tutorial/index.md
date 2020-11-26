@@ -1,5 +1,6 @@
 总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个[Gitbook](https://hishark777.com/777-Tech-Diary/)放~~技术日记~~乱七八糟的碎碎念，最后迁移到了[博客](http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/)。前阵子看到有人用[Mkdocs-Material](https://squidfunk.github.io/mkdocs-material/)写博客，转了一圈官网觉得有点意思，~~也比Gitbook更好看~~（比以前的Gitbook好看），于是来整一个做校招笔记。
 
+<!--more-->
 
 
 ## 1. 安装
@@ -8,7 +9,7 @@
 pip install mkdocs-material
 ```
 ## 2. 创建站点
-在Github上创建一个仓库，比如我的：[Android-Interview](https://github.com/hishark/Android-Interview/tree/master)，拉到本地之后在根目录下输入以下命令：
+在Github上创建一个仓库，拉到本地之后在根目录下输入以下命令：
 ```shell
 mkdocs new .
 ```
@@ -24,7 +25,7 @@ mkdocs new .
 ## 3. 配置
 打开`mkdocs.yml`，添加主题：
 ```
-site_name: Android Interview
+site_name: Your site name
 theme:
   name: material
 ```
@@ -76,12 +77,12 @@ mkdocs gh-deploy --force
 
 就可以在`https://yourname.github.io/repo_name`下看到生成的Mkdocs啦~其中`yourname`是Github的用户名，`repo_name`就是第二步中创建的仓库名称。
 
-[校招笔记](https://hishark777.com/Android-Interview/)启动！
+[校招笔记](https://hishark777.com/777-Interview-Notes/)启动！
 
 ## 6. 搬回Gitbook
 偶然发现Gitbook现在非常好！看！了！
 于是我又搬回去了：
-- [Gitbook-Android-Interview](https://hishark777.gitbook.io/android-interview/)
+- [Gitbook 777-Intervie-Notes](https://hishark777.gitbook.io/777-interview-notes/)
 
 ## 参考
 - [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/)
