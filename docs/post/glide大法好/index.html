@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Glide 大法好 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="777" /><meta name="description" content="项目突然要加几个界面 然后打开了将近两个月没摸过的的AS findViewById都给忘了我怕是智障
+真是开张大吉呢一运行就OOM 记得上学期被这个鬼东西烦到爆炸 搜了很多图片加载的工具类都没有用 然后就自己压缩图片让他勉强显示
+现在回头看我可能是猪吧 Glide这么美好的库为什么上学期没发现 简直是居家旅行必备产品啊呜呜呜 导个包然后用上这一句 什么OOM给我见鬼去886
+" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.74.0 with theme even" />
+
+
+<link rel="canonical" href="https://hishark777.com/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Glide 大法好" />
+<meta property="og:description" content="项目突然要加几个界面
+然后打开了将近两个月没摸过的的AS
+findViewById都给忘了我怕是智障
+真是开张大吉呢一运行就OOM
+记得上学期被这个鬼东西烦到爆炸
+搜了很多图片加载的工具类都没有用
+然后就自己压缩图片让他勉强显示
+现在回头看我可能是猪吧
+Glide这么美好的库为什么上学期没发现
+简直是居家旅行必备产品啊呜呜呜
+导个包然后用上这一句
+什么OOM给我见鬼去886" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/" />
+<meta property="article:published_time" content="2018-03-09T13:03:01+00:00" />
+<meta property="article:modified_time" content="2018-03-09T13:03:01+00:00" />
+<meta itemprop="name" content="Glide 大法好">
+<meta itemprop="description" content="项目突然要加几个界面
+然后打开了将近两个月没摸过的的AS
+findViewById都给忘了我怕是智障
+真是开张大吉呢一运行就OOM
+记得上学期被这个鬼东西烦到爆炸
+搜了很多图片加载的工具类都没有用
+然后就自己压缩图片让他勉强显示
+现在回头看我可能是猪吧
+Glide这么美好的库为什么上学期没发现
+简直是居家旅行必备产品啊呜呜呜
+导个包然后用上这一句
+什么OOM给我见鬼去886">
+<meta itemprop="datePublished" content="2018-03-09T13:03:01&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-09T13:03:01&#43;00:00" />
+<meta itemprop="wordCount" content="583">
+
+
+
+<meta itemprop="keywords" content="Android," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Glide 大法好"/>
+<meta name="twitter:description" content="项目突然要加几个界面
+然后打开了将近两个月没摸过的的AS
+findViewById都给忘了我怕是智障
+真是开张大吉呢一运行就OOM
+记得上学期被这个鬼东西烦到爆炸
+搜了很多图片加载的工具类都没有用
+然后就自己压缩图片让他勉强显示
+现在回头看我可能是猪吧
+Glide这么美好的库为什么上学期没发现
+简直是居家旅行必备产品啊呜呜呜
+导个包然后用上这一句
+什么OOM给我见鬼去886"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hishark777</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">相册</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">校招笔记</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hishark777</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">相册</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">校招笔记</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Glide 大法好</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-09 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 学习笔记 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <p>项目突然要加几个界面
+然后打开了将近两个月没摸过的的AS
+findViewById都给忘了我怕是智障</p>
+<p>真是开张大吉呢一运行就OOM
+记得上学期被这个鬼东西烦到爆炸
+搜了很多图片加载的工具类都没有用
+然后就自己压缩图片让他勉强显示</p>
+<p>现在回头看我可能是猪吧
+Glide这么美好的库为什么上学期没发现
+简直是居家旅行必备产品啊呜呜呜
+导个包然后用上这一句
+什么OOM给我见鬼去886</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">compile</span> <span class="err">&#39;</span><span class="n">com</span><span class="o">.</span><span class="na">github</span><span class="o">.</span><span class="na">bumptech</span><span class="o">.</span><span class="na">glide</span><span class="o">:</span><span class="n">glide</span><span class="o">:</span><span class="n">3</span><span class="o">.</span><span class="na">7</span><span class="o">.</span><span class="na">0</span><span class="err">&#39;</span><span class="o">;</span>
+
+<span class="n">Glide</span><span class="o">.</span><span class="na">with</span><span class="o">(</span><span class="n">Context</span><span class="o">).</span><span class="na">load</span><span class="o">(</span><span class="n">ImageId</span><span class="o">).</span><span class="na">into</span><span class="o">(</span><span class="n">ImageView</span><span class="o">);</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>另外如果是网络加载图片
+就</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Glide</span><span class="o">.</span><span class="na">with</span><span class="o">(</span><span class="k">this</span><span class="o">).</span><span class="na">load</span><span class="o">(</span><span class="n">url</span><span class="o">).</span><span class="na">into</span><span class="o">(</span><span class="n">imageView</span><span class="o">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>赶项目过程还碰到点问题
+记一下</p>
+<h4 id="recycleview设置点击事件">RecycleView设置点击事件</h4>
+<p>我一开始以为会提供
+结果还要自定义的噢</p>
+<ol>
+<li>自定义接口</li>
+<li>在适配器中声明接口</li>
+<li>在适配器的构造方法中添加自定义接口</li>
+<li>在<font color="#FF8C00"><code>onCreateViewHolder()</code></font>中给item的view对象设置点击监听</li>
+<li>在<font color="#FF8C00"><code>onBindViewHolder()</code></font>中给view设置tag以作为参数传递到监听回调方法中</li>
+<li>在<font color="#FF8C00"><code>onClick()</code></font>中将监听传递给自定义接口</li>
+<li>在Activity或fragment中声明自定义的监听接口</li>
+<li>将接口作为参数传入啊适配器的构造方法中即可</li>
+</ol>
+<p>流程是酱紫
+具体代码要用再搜</p>
+<h4 id="获取resdrawable目录下的图片uri">获取res/drawable目录下的图片Uri</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**
+</span><span class="cm">  * 得到资源文件中图片的Uri
+</span><span class="cm">  * @param context 上下文对象
+</span><span class="cm">  * @param id 资源id
+</span><span class="cm">  * @return Uri
+</span><span class="cm">  */</span>
+<span class="kd">public</span> <span class="n">Uri</span> <span class="nf">getUriFromDrawableRes</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">,</span> <span class="kt">int</span> <span class="n">id</span><span class="o">){</span>
+     <span class="n">Resources</span> <span class="n">resources</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="na">getResources</span><span class="o">();</span>
+     <span class="n">String</span> <span class="n">path</span> <span class="o">=</span>
+	 <span class="n">ContentResolver</span><span class="o">.</span><span class="na">SCHEME_ANDROID_RESOURCE</span> <span class="o">+</span> <span class="s">&#34;://&#34;</span> 
+	 <span class="o">+</span> <span class="n">resources</span><span class="o">.</span><span class="na">getResourcePackageName</span><span class="o">(</span><span class="n">id</span><span class="o">)</span> <span class="o">+</span> <span class="s">&#34;/&#34;</span>
+     <span class="o">+</span> <span class="n">resources</span><span class="o">.</span><span class="na">getResourceTypeName</span><span class="o">(</span><span class="n">id</span><span class="o">)</span> <span class="o">+</span> <span class="s">&#34;/&#34;</span>
+     <span class="o">+</span> <span class="n">resources</span><span class="o">.</span><span class="na">getResourceEntryName</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
+     <span class="k">return</span> <span class="n">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">path</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="as预览">AS预览</h4>
+<p><img src="https://ws1.sinaimg.cn/large/0068SXX6gy1fp6j1lgx1mj30eh0c1glv.jpg" alt="">
+BTW用了这么久预览
+一直没有打开过右边这个的我
+简直是暴殄天物</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">777</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-03-09
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/android/">Android</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E5%8F%88%E4%B9%B0%E6%9D%BF%E6%A0%97%E5%90%83%E4%BA%86/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">又买板栗吃了</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2018-3-5/">
+            <span class="next-text nav-default">无题</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hishark777';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:hishark777@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/hishark777" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/hishark" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/hishark777" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/hishark/" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.instagram.com/hishark777" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://space.bilibili.com/167148/#/channel/detail?cid=55848" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://hishark777.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>777</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

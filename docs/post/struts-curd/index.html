@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Struts-CURD - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="777" /><meta name="description" content="CURD教你做人
+" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.74.0 with theme even" />
+
+
+<link rel="canonical" href="https://hishark777.com/post/struts-curd/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Struts-CURD" />
+<meta property="og:description" content="CURD教你做人" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/struts-curd/" />
+<meta property="article:published_time" content="2018-03-09T15:33:53+00:00" />
+<meta property="article:modified_time" content="2020-11-26T19:41:49+08:00" />
+<meta itemprop="name" content="Struts-CURD">
+<meta itemprop="description" content="CURD教你做人">
+<meta itemprop="datePublished" content="2018-03-09T15:33:53&#43;00:00" />
+<meta itemprop="dateModified" content="2020-11-26T19:41:49&#43;08:00" />
+<meta itemprop="wordCount" content="1442">
+
+
+
+<meta itemprop="keywords" content="Struts," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Struts-CURD"/>
+<meta name="twitter:description" content="CURD教你做人"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hishark777</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">相册</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">校招笔记</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hishark777</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">相册</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">校招笔记</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Struts-CURD</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-09 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 学习笔记 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <p>CURD教你做人</p>
+<h4 id="curd之r--查询">CURD之R&ndash;查询</h4>
+<ol>
+<li>创建一个Javabean&ndash;Book。</li>
+<li>创建一个接口Bookservice，在接口中定义一个得到所有图书的抽象方法。</li>
+<li>业务逻辑层M：创建一个实现接口的类。BookServiceImp，在该类中实现上面定义的抽象方法，得到所有图书。</li>
+<li>控制层C：创建一个Action-BookManagementAction，拦截器会自动通过get、set方法取得、设置数据。定义一个方法，jsp调用时就将数据显示到jsp。</li>
+<li>记得在struts.xml中配置action。（name,method）</li>
+<li>在jsp中设置一个按钮，点击即可查询出所有图书并显示出来。</li>
+</ol>
+<h4 id="curd之u--增">CURD之U&ndash;增</h4>
+<ol>
+<li>在接口中定义一个添加图书的抽象方法</li>
+<li>在BookServiceImp类中实现上面定义的抽象方法，实现添加一本图书。</li>
+<li>在Action中定义一个方法，在其中调用BookServiceImp中的添加图书方法即可。</li>
+<li>在struts.xml中配置action。(配置name,method)</li>
+<li>在BookAdd.jsp表单的action属性中填入AddBook。</li>
+</ol>
+<h4 id="curd之u--删除">CURD之U&ndash;删除</h4>
+<h5 id="删除一本图书">删除一本图书</h5>
+<ol>
+<li>在接口中定义一个删除图书的抽象方法。</li>
+<li>在BookServiceImp类中实现上面定义的抽象方法，实现删除一本图书。</li>
+<li>在BookManagementAction中定义一个方法，在其中调用BookServiceImp中的删除图书方法即可。还要定义一个变量bookId用于存储待删除图书的Id。</li>
+<li>在struts.xml中配置action。（需求是删除后立马显示当前图书列表所以记得将result的type设置为chain）</li>
+<li><code>&lt;a href='&lt;s:url action=&quot;bookDelete&quot;&gt;&lt;s:param name=&quot;bookId&quot; value=&quot;bookId&quot;/&gt;&lt;/s:url&gt;'&gt;Delete&lt;/a&gt;</code>以获取想要删除的图书的bookId，则点击Delete链接时调用action——bookDelete。</li>
+</ol>
+<h5 id="删除多本图书">删除多本图书</h5>
+<ol>
+<li>在BookManagementAction中定义一个方法，在其中循环调用BookServiceImp中的删除图书方法即可。还要定义一个数组bookIds[]用于存储待删除图书的Id。</li>
+<li>在struts.xml中配置action。（需求是删除后立马显示当前图书列表所以记得将result的type设置为chain）</li>
+<li>选中一个checkbox就获得一个bookId。↓</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;!-- 用户选中的bookId全部放入bookIds --&gt;
+&lt;td&gt;&lt;input type=&#34;checkbox&#34; name=&#34;bookIds&#34; value=&#39;&lt;s:property value=&#34;bookId&#34;/&gt;&#39;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;s:property value=&#34;isbn&#34; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;s:property value=&#34;title&#34; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;s:property value=&#34;price&#34; /&gt;&lt;/td&gt;
+</code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>修改提交表单时调用action——bookDeletes。<code>&lt;s:form theme=&quot;simple&quot; action=&quot;bookDeletes&quot;&gt;</code></li>
+</ol>
+<h4 id="curd之u--修改">CURD之U&ndash;修改</h4>
+<ol>
+<li>修改需要两个action——bookLoad和bookUpdate。</li>
+<li>点击Edit时调用bookLoad获取选中图书的信息并显示出来。别忘了这句<code>&lt;a href='&lt;s:url action=&quot;bookLoad&quot;&gt;&lt;s:param name=&quot;bookId&quot; value=&quot;bookId&quot;/&gt;&lt;/s:url&gt;'&gt;Edit&lt;/a&gt;</code>，不然获取不到选中的bookId。</li>
+<li>修改完成后，提交表单时再调用bookUpdate更新图书信息。</li>
+</ol>
+<hr>
+<p><em><font color='#FF8C00'>ResultSet</font></em>
+数据库结果集的数据表，通常通过执行查询数据库的语句生成。
+<em><font color='#FF8C00'>href写绝对路径</font></em>
+<code>&lt;a href='/15Struts2-09-curd/curd/BookList.jsp'&gt;return&lt;/a&gt;</code>
+<em><font color='#FF8C00'>数据setget</font></em>
+拦截器在action中拦截数据
+<em><font color='#FF8C00'>href嵌套s:url</font></em>
+<code>&lt;a href='&lt;s:url action=&quot;bookList&quot;&gt;&lt;/s:url&gt;'&gt;返回&lt;/a&gt;</code>
+<em><font color='#FF8C00'>hidden隐藏</font></em>
+<code>&lt;s:hidden name=&quot;book.bookId&quot;&gt;&lt;/s:hidden&gt;</code></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">777</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-11-26
+        <a href="https://github.com/hishark/hishark.github.io//commit/4d13c3053228fa495de0cebccfc7cfa8ce9e4e5a" title="update">(4d13c30)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/struts/">Struts</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E5%A5%BD%E5%88%A9%E6%97%B6%E7%9C%9F%E5%A5%BD%E5%90%83%E5%95%8A555/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">好时真好吃啊555</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/">
+            <span class="next-text nav-default">访问数据库的工具类</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hishark777';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:hishark777@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/hishark777" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/hishark" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/hishark777" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/hishark/" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.instagram.com/hishark777" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://space.bilibili.com/167148/#/channel/detail?cid=55848" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://hishark777.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>777</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

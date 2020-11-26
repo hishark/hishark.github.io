@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分类 on Even - A super concise theme for Hugo</title>
+    <link>https://hishark777.com/categories/</link>
+    <description>Recent content in 分类 on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://hishark777.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学习笔记</title>
+      <link>https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 23 Nov 2020 19:20:55 +0800</pubDate>
+      
+      <guid>https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>技术日记</title>
+      <link>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
+      
+      <guid>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>杂七杂八</title>
+      <link>https://hishark777.com/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
+      <pubDate>Thu, 16 Jul 2020 00:35:42 +0000</pubDate>
+      
+      <guid>https://hishark777.com/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>碎碎念</title>
+      <link>https://hishark777.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+      <pubDate>Wed, 15 Jul 2020 14:55:52 +0000</pubDate>
+      
+      <guid>https://hishark777.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

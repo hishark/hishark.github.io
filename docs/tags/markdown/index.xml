@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on Even - A super concise theme for Hugo</title>
+    <link>https://hishark777.com/tags/markdown/</link>
+    <description>Recent content in markdown on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Sep 2020 20:06:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://hishark777.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mkdocs-Material Tutorial</title>
+      <link>https://hishark777.com/post/mkdocs-material-tutorial/</link>
+      <pubDate>Mon, 07 Sep 2020 20:06:19 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/mkdocs-material-tutorial/</guid>
+      <description>总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个Gitbook放技术日记乱七八糟的碎碎念，最后迁移到了博客。前阵子看到有人用Mkd</description>
+    </item>
+    
+  </channel>
+</rss>

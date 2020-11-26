@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Android 客户端访问 Tomcat 服务器端 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="777" /><meta name="description" content="终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。
+" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.74.0 with theme even" />
+
+
+<link rel="canonical" href="https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Android 客户端访问 Tomcat 服务器端" />
+<meta property="og:description" content="终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/" />
+<meta property="article:published_time" content="2018-03-26T14:47:24+00:00" />
+<meta property="article:modified_time" content="2018-03-26T14:47:24+00:00" />
+<meta itemprop="name" content="Android 客户端访问 Tomcat 服务器端">
+<meta itemprop="description" content="终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。">
+<meta itemprop="datePublished" content="2018-03-26T14:47:24&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-26T14:47:24&#43;00:00" />
+<meta itemprop="wordCount" content="2059">
+
+
+
+<meta itemprop="keywords" content="Android,Tomcat,Struts,HttpClient," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Android 客户端访问 Tomcat 服务器端"/>
+<meta name="twitter:description" content="终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hishark777</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">相册</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">校招笔记</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hishark777</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">相册</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">校招笔记</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Android 客户端访问 Tomcat 服务器端</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-26 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 学习笔记 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <p>终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。</p>
+<h4 id="服务器端">服务器端</h4>
+<h5 id="导包">导包</h5>
+<p>放到WEB-INF/lib下</p>
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpq8o4qlw5j30hm05q3yr.jpg)</center>
+<h5 id="定义抽象方法logincheck">定义抽象方法loginCheck</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">UserService</span> <span class="o">{</span>
+	<span class="kt">boolean</span> <span class="nf">loginCheck</span><span class="o">(</span><span class="n">String</span> <span class="n">userName</span><span class="o">,</span><span class="n">String</span> <span class="n">passWord</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="实现logincheck">实现loginCheck</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UserServiceImpl</span> <span class="kd">implements</span> <span class="n">UserService</span> <span class="o">{</span>
+	<span class="n">DbConnection</span>  <span class="n">db</span><span class="o">=</span><span class="k">new</span> <span class="n">DbConnection</span><span class="o">();</span>
+	<span class="n">ResultSet</span> <span class="n">rs</span><span class="o">=</span><span class="kc">null</span><span class="o">;</span>
+
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">loginCheck</span><span class="o">(</span><span class="n">String</span> <span class="n">userName</span><span class="o">,</span> <span class="n">String</span> <span class="n">passWord</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">// TODO Auto-generated method stub
+</span><span class="c1"></span>		<span class="kt">boolean</span> <span class="n">bl</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
+		
+		<span class="cm">/*
+</span><span class="cm">		 * 这里只是走个流程 查个名字出来就好
+</span><span class="cm">		 */</span>
+		<span class="n">String</span> <span class="n">strSql</span><span class="o">=</span><span class="s">&#34;select * from user_table where userName=&#39;&#34;</span><span class="o">+</span><span class="n">userName</span><span class="o">+</span><span class="s">&#34;&#39;&#34;</span><span class="o">;</span>
+		
+		<span class="n">rs</span><span class="o">=</span><span class="n">db</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">(</span><span class="n">strSql</span><span class="o">);</span>
+		<span class="k">try</span> <span class="o">{</span>
+			<span class="k">while</span><span class="o">(</span><span class="n">rs</span><span class="o">.</span><span class="na">next</span><span class="o">()){</span>
+				<span class="n">bl</span><span class="o">=</span><span class="kc">true</span><span class="o">;</span>
+				<span class="k">break</span><span class="o">;</span>
+			<span class="o">}</span>
+		<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">SQLException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+			<span class="c1">// TODO Auto-generated catch block
+</span><span class="c1"></span>			<span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+		<span class="o">}</span>
+		<span class="k">return</span> <span class="n">bl</span><span class="o">;</span>
+	<span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="创建loginactivityaction">创建LoginActivityAction</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoginActivityAction</span> <span class="kd">extends</span> <span class="n">ActionSupport</span> <span class="o">{</span>
+	<span class="cm">/*
+</span><span class="cm">	 * 用户名和密码
+</span><span class="cm">	 */</span>
+	<span class="n">String</span> <span class="n">userName</span><span class="o">;</span>
+	<span class="n">String</span> <span class="n">passWord</span><span class="o">;</span>
+	
+	<span class="n">UserService</span> <span class="n">us</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UserServiceImpl</span><span class="o">();</span>
+	
+	<span class="cm">/*
+</span><span class="cm">	 * 得到response对象,通过这个来响应客户端的请求 （把JSON返回给客户端）
+</span><span class="cm">	 */</span>
+	<span class="n">HttpServletResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="n">ServletActionContext</span><span class="o">.</span><span class="na">getResponse</span><span class="o">();</span>
+	
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getUserName</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">userName</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setUserName</span><span class="o">(</span><span class="n">String</span> <span class="n">userName</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">userName</span> <span class="o">=</span> <span class="n">userName</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getPassWord</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">passWord</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setPassWord</span><span class="o">(</span><span class="n">String</span> <span class="n">passWord</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">passWord</span> <span class="o">=</span> <span class="n">passWord</span><span class="o">;</span>
+	<span class="o">}</span>
+	
+	<span class="cm">/*
+</span><span class="cm">	 * 没有返回值啦！是void！
+</span><span class="cm">	 * 处理客户端LoginActivity过来的登录信息
+</span><span class="cm">	 * 成功不成功的信息全靠JSON传递
+</span><span class="cm">	 * 不需要跟之前一样返回字符串啥的
+</span><span class="cm">	 */</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">loginActivity</span><span class="o">()</span> <span class="o">{</span>
+		<span class="cm">/*
+</span><span class="cm">		 * 这里的JSONObject和客户端的JSONObject导的不是同一个包
+</span><span class="cm">		 */</span>
+		<span class="n">JSONObject</span> <span class="n">jsonObject</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JSONObject</span><span class="o">();</span>
+		
+		<span class="k">if</span><span class="o">(</span><span class="n">us</span><span class="o">.</span><span class="na">loginCheck</span><span class="o">(</span><span class="n">userName</span><span class="o">,</span> <span class="n">passWord</span><span class="o">))</span> <span class="o">{</span>
+			<span class="n">jsonObject</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;message&#34;</span><span class="o">,</span> <span class="s">&#34;欢迎&#34;</span><span class="o">+</span><span class="n">userName</span><span class="o">+</span><span class="s">&#34;这位胖友！&#34;</span><span class="o">);</span>
+		<span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+			<span class="n">jsonObject</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;message&#34;</span><span class="o">,</span> <span class="s">&#34;老哥你谁？？？&#34;</span><span class="o">);</span>
+		<span class="o">}</span>
+
+		<span class="cm">/*
+</span><span class="cm">		 * 先封装成text即字符串 再转换成JSON
+</span><span class="cm">		 * 安卓Activity的中文显示只认UTF-8！GBK不可以哦
+</span><span class="cm">		 * 这里是指在客户端显示的编码格式
+</span><span class="cm">		 */</span>
+		<span class="n">response</span><span class="o">.</span><span class="na">setContentType</span><span class="o">(</span><span class="s">&#34;text/json;charset=utf-8&#34;</span><span class="o">);</span>
+		
+		<span class="cm">/*
+</span><span class="cm">		 * 这里是指在网络传输过程中的编码方式
+</span><span class="cm">		 */</span>
+		<span class="n">response</span><span class="o">.</span><span class="na">setCharacterEncoding</span><span class="o">(</span><span class="s">&#34;utf-8&#34;</span><span class="o">);</span>
+		
+		<span class="cm">/*
+</span><span class="cm">		 * 用管道流传东西啦
+</span><span class="cm">		 * 把JSON转换成byte再传
+</span><span class="cm">		 * 编码方式UTF-8！
+</span><span class="cm">		 */</span>
+		<span class="k">try</span> <span class="o">{</span>
+			<span class="kt">byte</span><span class="o">[]</span> <span class="n">bytes</span> <span class="o">=</span> <span class="n">jsonObject</span><span class="o">.</span><span class="na">toString</span><span class="o">().</span><span class="na">getBytes</span><span class="o">(</span><span class="s">&#34;utf-8&#34;</span><span class="o">);</span>
+			
+			<span class="c1">//把字节数组写入输出流
+</span><span class="c1"></span>			<span class="n">response</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">().</span><span class="na">write</span><span class="o">(</span><span class="n">bytes</span><span class="o">);</span>
+			
+			<span class="c1">//设置传输内容的长度，方便response处理
+</span><span class="c1"></span>			<span class="n">response</span><span class="o">.</span><span class="na">setContentLength</span><span class="o">(</span><span class="n">bytes</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+			
+			<span class="c1">//清空缓存（把缓存里的全部发出去
+</span><span class="c1"></span>			<span class="n">response</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">().</span><span class="na">flush</span><span class="o">();</span>
+			
+			<span class="c1">//用完要关啦
+</span><span class="c1"></span>			<span class="n">response</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">().</span><span class="na">close</span><span class="o">();</span>
+			
+		<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+			<span class="c1">// TODO Auto-generated catch block
+</span><span class="c1"></span>			<span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+		<span class="o">};</span>
+		
+	<span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="在sturtsxml中进行配置">在sturts.xml中进行配置</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- 客户端和服务端交互要定义新的命名空间 --&gt;</span>
+<span class="nt">&lt;package</span> <span class="na">name=</span><span class="s">&#34;activity&#34;</span> <span class="na">namespace=</span><span class="s">&#34;/&#34;</span> <span class="na">extends=</span><span class="s">&#34;json-default&#34;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- result的type现在就只有json了 --&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;loginActivity&#34;</span> <span class="na">class=</span><span class="s">&#34;jxnu.edu.cn.x3321.action.LoginActivityAction&#34;</span>
+    <span class="na">method=</span><span class="s">&#34;loginActivity&#34;</span><span class="nt">&gt;</span>
+    	<span class="c">&lt;!-- result没有名字 因为loginActivity返回为空  但是type是json！只能是json！--&gt;</span>
+    	<span class="nt">&lt;result</span> <span class="na">type=</span><span class="s">&#34;json&#34;</span><span class="nt">&gt;</span>
+    		<span class="c">&lt;!-- 这里是空的！因为所有的数据都在json里头！struts自动记录了从哪来到哪去 --&gt;</span>
+    	<span class="nt">&lt;/result&gt;</span>
+    <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/package&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="客户端">客户端</h4>
+<h5 id="编写访问服务器端的工具类loginutil">编写访问服务器端的工具类LoginUtil</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoginUtil</span> <span class="o">{</span>
+
+    <span class="c1">//模拟器用10.0.2.2，真机用无线局域网适配器ip——192.168.137.1
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">String</span> <span class="n">URL</span><span class="o">=</span><span class="s">&#34;http://192.168.137.1:8080/15Struts2-16-Struts-server/loginActivity.action?&#34;</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">loginToServer</span><span class="o">(</span><span class="n">String</span> <span class="n">userName</span><span class="o">,</span><span class="n">String</span> <span class="n">passWord</span><span class="o">){</span>
+        <span class="n">String</span> <span class="n">result</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">strURL</span><span class="o">=</span><span class="n">URL</span><span class="o">+</span><span class="s">&#34;userName=&#34;</span><span class="o">+</span><span class="n">userName</span><span class="o">+</span><span class="s">&#34;&amp;passWord=&#34;</span><span class="o">+</span><span class="n">passWord</span><span class="o">;</span>
+
+        <span class="n">HttpClient</span> <span class="n">hc</span><span class="o">=</span><span class="k">new</span> <span class="n">DefaultHttpClient</span><span class="o">();</span>
+        <span class="n">HttpPost</span> <span class="n">request</span><span class="o">=</span><span class="k">new</span> <span class="n">HttpPost</span><span class="o">(</span><span class="n">strURL</span><span class="o">);</span>
+        <span class="n">HttpResponse</span> <span class="n">response</span><span class="o">=</span><span class="kc">null</span><span class="o">;</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">response</span><span class="o">=</span><span class="n">hc</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">response</span><span class="o">.</span><span class="na">getStatusLine</span><span class="o">().</span><span class="na">getStatusCode</span><span class="o">()==</span><span class="n">200</span><span class="o">){</span>
+                <span class="c1">//取得服务器传来的响应
+</span><span class="c1"></span>                <span class="n">HttpEntity</span> <span class="n">entity</span><span class="o">=</span><span class="n">response</span><span class="o">.</span><span class="na">getEntity</span><span class="o">();</span>
+
+                <span class="c1">//这里仍然乱码，还要继续还原成json对象
+</span><span class="c1"></span>                <span class="n">String</span> <span class="n">strJson</span><span class="o">=</span><span class="n">EntityUtils</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">entity</span><span class="o">,</span><span class="s">&#34;utf-8&#34;</span><span class="o">);</span>
+
+                <span class="k">if</span><span class="o">(</span><span class="n">strJson</span><span class="o">!=</span><span class="kc">null</span><span class="o">){</span>
+                    <span class="n">JSONObject</span> <span class="n">jsonObject</span><span class="o">=</span><span class="k">new</span> <span class="n">JSONObject</span><span class="o">(</span><span class="n">strJson</span><span class="o">);</span>
+                    <span class="n">result</span><span class="o">=</span><span class="n">jsonObject</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">&#34;message&#34;</span><span class="o">).</span><span class="na">toString</span><span class="o">();</span>
+                <span class="o">}</span>
+            <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                <span class="n">result</span><span class="o">=</span><span class="s">&#34;没有网络或服务器连接不上&#34;</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="c1">// TODO Auto-generated catch block
+</span><span class="c1"></span>            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="创建loginactivity">创建LoginActivity</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">loginActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+    <span class="cm">/**
+</span><span class="cm">     * 定义控件
+</span><span class="cm">     */</span>
+    <span class="n">EditText</span> <span class="n">et_username</span><span class="o">,</span><span class="n">et_password</span><span class="o">;</span>
+    <span class="n">Button</span> <span class="n">bt_login</span><span class="o">;</span>
+
+    <span class="n">String</span> <span class="n">userName</span><span class="o">,</span><span class="n">passWord</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">strResult</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_login</span><span class="o">);</span>
+
+        <span class="n">et_username</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span><span class="k">this</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">username</span><span class="o">);</span>
+        <span class="n">et_password</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span><span class="k">this</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">password</span><span class="o">);</span>
+        <span class="n">bt_login</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span><span class="k">this</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">login</span><span class="o">);</span>
+
+        <span class="n">bt_login</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">userName</span> <span class="o">=</span> <span class="n">et_username</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">();</span>
+                <span class="n">passWord</span> <span class="o">=</span> <span class="n">et_password</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">();</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">userName</span><span class="o">==</span><span class="kc">null</span><span class="o">||</span><span class="n">userName</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">&#34;&#34;</span><span class="o">)||</span><span class="n">passWord</span><span class="o">==</span><span class="kc">null</span><span class="o">||</span><span class="n">passWord</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">&#34;&#34;</span><span class="o">)){</span>
+                    <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span><span class="s">&#34;请输入完整的登录信息&#34;</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                    <span class="c1">//异步任务访问网络更方便啦
+</span><span class="c1"></span>                    <span class="k">new</span> <span class="n">AsyncTask</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">Void</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;()</span> <span class="o">{</span>
+                        <span class="nd">@Override</span>
+                        <span class="kd">protected</span> <span class="n">String</span> <span class="nf">doInBackground</span><span class="o">(</span><span class="n">String</span><span class="o">...</span> <span class="n">params</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="c1">// TODO Auto-generated method stub
+</span><span class="c1"></span>                            <span class="cm">/*
+</span><span class="cm">                             * 利用编写的LoginUtil工具类访问服务器端
+</span><span class="cm">                             */</span>
+                            <span class="n">LoginUtil</span> <span class="n">lu</span><span class="o">=</span><span class="k">new</span> <span class="n">LoginUtil</span><span class="o">();</span>
+                            <span class="n">strResult</span><span class="o">=</span><span class="n">lu</span><span class="o">.</span><span class="na">loginToServer</span><span class="o">(</span><span class="n">userName</span><span class="o">,</span> <span class="n">passWord</span><span class="o">);</span>
+
+                            <span class="c1">//这里返回的值传给下面的onPostExecute与主线程产生交互
+</span><span class="c1"></span>                            <span class="k">return</span> <span class="n">strResult</span><span class="o">;</span>
+                        <span class="o">}</span>
+
+                        <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onPostExecute</span><span class="o">(</span><span class="n">String</span> <span class="n">strResult</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="cm">/**
+</span><span class="cm">                             * 和主线程进行交互
+</span><span class="cm">                             * 可以直接访问界面上的东西
+</span><span class="cm">                             * 对话框要在这里产生
+</span><span class="cm">                             */</span>
+                            <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span> <span class="n">bd</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AlertDialog</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">loginActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
+                            <span class="n">bd</span><span class="o">.</span><span class="na">setTitle</span><span class="o">(</span><span class="s">&#34;提示信息&#34;</span><span class="o">);</span>
+                            <span class="n">bd</span><span class="o">.</span><span class="na">setMessage</span><span class="o">(</span><span class="n">strResult</span><span class="o">);</span>
+                            <span class="n">bd</span><span class="o">.</span><span class="na">setPositiveButton</span><span class="o">(</span><span class="s">&#34;OK&#34;</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+                            <span class="n">bd</span><span class="o">.</span><span class="na">create</span><span class="o">().</span><span class="na">show</span><span class="o">();</span>
+                        <span class="o">}</span>
+                    <span class="c1">//execute里面为空，因为LoginUtil里已经定义好访问地址了
+</span><span class="c1"></span>                    <span class="o">}.</span><span class="na">execute</span><span class="o">(</span><span class="s">&#34;&#34;</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="实现效果">实现效果</h4>
+<center><img src="http://p3as6e9rs.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720180326160633.gif" width="" height="100"></center>
+<h4 id="访问方式">访问方式</h4>
+<h5 id="安卓模拟器访问">安卓模拟器访问</h5>
+<p>IP为10.0.2.2</p>
+<h5 id="真机访问">真机访问</h5>
+<p>使用Android真机连接的Wifi的IP地址进行访问
+我这里电脑开了热点给手机用
+直接ipconfig查到ip就ok了</p>
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpqal8pwnzj30et03hwee.jpg)</center>
+IP为192.168.137.1
+<hr>
+<h4 id="tips">TIPS</h4>
+<ol>
+<li>sql注入攻击
+如果sql语句为<font color='#FF8C00'><code>select * from user_table where username = '' and password = ''</code></font>会很危险，有username就可以登入了，添添说会被老板炒鱿鱼的哈哈哈哈哈</li>
+<li>导包
+有六个包别漏了，添添debug了大半个上午结果是少导了个包OTZ</li>
+<li><font color='#FF8C00'><code>URL=&quot;http://192.168.137.1:8080/15Struts2-16-Struts-server/loginActivity.action?&quot;;</code></font>这里的loginActivity是Action的name属性，不是Action的文件名。</li>
+<li>权限
+记得去Manifest添加访问网络的权限。</li>
+</ol>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">777</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-03-26
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/android/">Android</a>
+          <a href="/tags/tomcat/">Tomcat</a>
+          <a href="/tags/struts/">Struts</a>
+          <a href="/tags/httpclient/">HttpClient</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E5%B8%88%E5%A4%A7%E7%9A%84%E8%8A%B1%E6%AF%94%E4%BA%BA%E5%A8%87/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">花比人娇</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/java%E9%80%89%E6%89%8B%E6%97%A0%E4%BA%BA%E6%9D%83/">
+            <span class="next-text nav-default">JAVA 选手无人权</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hishark777';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:hishark777@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/hishark777" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/hishark" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/hishark777" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/hishark/" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.instagram.com/hishark777" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://space.bilibili.com/167148/#/channel/detail?cid=55848" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://hishark777.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>777</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

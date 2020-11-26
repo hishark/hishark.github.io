@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSM on Even - A super concise theme for Hugo</title>
+    <link>https://hishark777.com/tags/ssm/</link>
+    <description>Recent content in SSM on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Nov 2018 20:54:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://hishark777.com/tags/ssm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>卡片盒子踩坑记录</title>
+      <link>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 01 Nov 2018 20:54:46 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;毕设over🎈
+两周爆肝碰到不少问题
+记录一下&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>卡片校园踩坑记录</title>
+      <link>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 08 Apr 2018 09:43:08 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;这次开发过程中碰到的问题都扔这，看最后能不能破百哦哈哈&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SSM 边缘试探</title>
+      <link>https://hishark777.com/post/ssm%E8%BE%B9%E7%BC%98%E8%AF%95%E6%8E%A2/</link>
+      <pubDate>Tue, 03 Apr 2018 20:38:10 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/ssm%E8%BE%B9%E7%BC%98%E8%AF%95%E6%8E%A2/</guid>
+      <description>&lt;p&gt;SSM真的很好用啊鼓掌！👏&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
