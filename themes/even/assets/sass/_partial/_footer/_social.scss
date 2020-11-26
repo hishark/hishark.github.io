@@ -6,7 +6,7 @@
   text-align: center;
 
   .iconfont {
-    font-size: 10px;
+    font-size: $social-icon-font-size;
 
     & + .iconfont {
       margin-left: $social-link-margin-left;
