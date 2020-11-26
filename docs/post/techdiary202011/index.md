@@ -9,6 +9,14 @@
 
 这种语言就是领域特定语言（Domain Specific Language，简称 DSL），它是一种用于某个特定领域的程序设计语言。这种特定于某个领域是相对于通用语言而言的，通用语言可以横跨各个领域，我们熟悉的大多数程序设计语言都是通用语言。我在第 8 讲说过，它们都是图灵完备的，但 DSL 不必做到图灵完备，它只要做到满足特定领域的业务需求，就足以缩短问题和解决方案之间的距离，降低理解的门槛。
 
+### hugo-even
+
+[even自定义配置1](https://factory011.github.io/post/2019-06-24-hugohexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ahugo%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE/)
+
+[even自定义配置2](https://blog.javachen.space/2020/01/07/config-hugo-theme-even/)
+
+> yarn build报错 先不搞了OTZ
+
 ## 2020-11-25
 
 ### 启动优化

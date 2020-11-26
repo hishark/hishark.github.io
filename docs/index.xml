@@ -49,15 +49,6 @@
     </item>
     
     <item>
-      <title>关于我</title>
-      <link>https://hishark777.com/about/</link>
-      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://hishark777.com/about/</guid>
-      <description>你好我是小7 普陀女子师专软工研二在读 欢迎光临我的bb空间 博客内容很杂 爱记录生活 爱碎碎念 一般般爱学习 没什么大理想 希望天天开心 (ง ◍&#39;u&#39;◍)ว</description>
-    </item>
-    
-    <item>
       <title>What’s new in AS 4.1</title>
       <link>https://hishark777.com/post/as-4-1/</link>
       <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
@@ -1408,6 +1399,15 @@ for循环的括号都不见了有毒吧哈哈哈哈&lt;/p&gt;</description>
       
       <guid>https://hishark777.com/post/hi/</guid>
       <description>折腾了半天终于搞清楚怎么弄了 有一个自己的网站就很开心嘿嘿嘿 也找到了自己喜欢的主题 这个主题真是超喜欢了 为作者打call 域名其实想要hishar</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://hishark777.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hishark777.com/about/</guid>
+      <description>你好我是小7 普陀女子师专软工研二在读 欢迎光临我的bb空间 博客内容很杂 爱记录生活 爱碎碎念 一般般爱学习 没什么大理想 希望天天开心 (ง ◍&#39;u&#39;◍)ว</description>
     </item>
     
   </channel>

@@ -1,10 +1,7 @@
-+++
-title = "关于我"
-description = ""
-date = "2020-10-24"
-aliases = ["about-us","about-hugo","contact"]
-author = "hishark777"
-+++
+---
+title: 关于我
+---
+
 <center>
 你好我是小7
 
