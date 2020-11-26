@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>paper on Even - A super concise theme for Hugo</title>
-    <link>http://hishark777.com/tags/paper/</link>
+    <link>https://hishark777.com/tags/paper/</link>
     <description>Recent content in paper on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 29 Sep 2020 13:39:31 +0000</lastBuildDate>
     
-	<atom:link href="http://hishark777.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hishark777.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SRGAN</title>
-      <link>http://hishark777.com/post/srgan/</link>
+      <link>https://hishark777.com/post/srgan/</link>
       <pubDate>Tue, 29 Sep 2020 13:39:31 +0000</pubDate>
       
-      <guid>http://hishark777.com/post/srgan/</guid>
+      <guid>https://hishark777.com/post/srgan/</guid>
       <description>&lt;!-- 我决定等论文ppt做的多了之后再整一个论文笔记的分类，不然之后就这一篇岂不是很尴尬OTZ --&gt;
 &lt;p&gt;好的，为了毕业，开始读论文 T T&lt;/p&gt;</description>
     </item>
