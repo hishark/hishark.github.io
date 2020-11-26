@@ -3,7 +3,8 @@ title: Struts-CURD
 date: 2018-03-09 15:33:53
 tags: 
 - Struts
-categories: 学习笔记
+categories: 
+- 学习笔记
 thumbnail:
 ---
 CURD教你做人

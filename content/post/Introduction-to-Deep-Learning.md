@@ -3,7 +3,8 @@ title: Introduction to Deep Learning
 date: 2018-07-20 15:42:35
 tags: 
 - Deep Learning
-categories: 学习笔记
+categories: 
+- 学习笔记
 authors:
 - hishark777
 ---

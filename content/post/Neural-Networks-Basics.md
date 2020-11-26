@@ -3,7 +3,8 @@ title: Neural Networks Basics
 date: 2018-07-30 20:39:20
 tags: 
 - Deep Learning
-categories: 学习笔记
+categories: 
+- 学习笔记
 authors:
 - hishark777
 ---

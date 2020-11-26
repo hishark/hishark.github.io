@@ -1,276 +1,154 @@
 <!DOCTYPE html>
-<html lang='zh'><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
-<title>Room Database | 777&#39;s BLOG</title>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Room Database - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_32x32_fill_box_center_2.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_180x180_fill_box_center_2.png">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://hishark777.com/css/eureka.min.css">
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-
-
-<script defer src="https://hishark777.com/js/eureka.min.js"></script>
-
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css">
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
-<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo=" crossorigin="anonymous"></script>
-
-<meta itemprop="name" content="Room Database | 777&#39;s BLOG">
-<meta itemprop="description"
-    content="虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
-来看看 Room 怎么用。">
+<meta name="author" content="777" /><meta name="description" content="虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
+来看看 Room 怎么用。
+" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
 
 
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-        "@type": "ListItem",
-        "position":  1 ,
-        "name": "777's BLOG",
-        "item": "https://hishark777.com/"
-    },{
-        "@type": "ListItem",
-        "position":  2 ,
-        "name": "Posts",
-        "item": "https://hishark777.com/post/"
-    },{
-        "@type": "ListItem",
-        "position":  3 ,
-        "name": "Room Database",
-        "item": "https://hishark777.com/post/room-database/"
-    }]
-}
-</script>
+
+<meta name="generator" content="Hugo 0.74.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/room-database/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://hishark777.com/post/room-database/"
-    },
-    "headline": "Room Database | 777\u0027s BLOG","datePublished": "2020-10-15T17:04:10+00:00",
-    "dateModified": "2020-10-15T17:04:10+00:00",
-    "wordCount":  1159 ,
-    "publisher": {
-        "@type": "Person",
-        "name": "Example publisher",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://hishark777.com/images/icon.png"
-        }
-        },
-    "description": "\u003cp\u003e虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。\u003c\/p\u003e\n\u003cp\u003e来看看 Room 怎么用。\u003c\/p\u003e"
-}
-</script>
-
-<meta property="og:title" content="Room Database | 777&#39;s BLOG" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://hishark777.com/post/room-database/" />
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-
-
+<meta property="og:title" content="Room Database" />
 <meta property="og:description" content="虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
 来看看 Room 怎么用。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/room-database/" />
+<meta property="article:published_time" content="2020-10-15T17:04:10+00:00" />
+<meta property="article:modified_time" content="2020-10-15T17:04:10+00:00" />
+<meta itemprop="name" content="Room Database">
+<meta itemprop="description" content="虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
+来看看 Room 怎么用。">
+<meta itemprop="datePublished" content="2020-10-15T17:04:10&#43;00:00" />
+<meta itemprop="dateModified" content="2020-10-15T17:04:10&#43;00:00" />
+<meta itemprop="wordCount" content="1304">
 
 
 
+<meta itemprop="keywords" content="Database,Android," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Room Database"/>
+<meta name="twitter:description" content="虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
+来看看 Room 怎么用。"/>
 
-<meta property="og:locale" content="zh" />
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
 
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
 
-
-
-<meta property="og:site_name" content="777&#39;s BLOG" />
-
-
-
-
-
-
-<meta property="article:published_time" content="2020-10-15T17:04:10&#43;00:00" />
-
-
-<meta property="article:modified_time" content="2020-10-15T17:04:10&#43;00:00" />
-
-
-
-<meta property="article:section" content="post" />
-
-
-<meta property="article:tag" content="Database" />
-
-<meta property="article:tag" content="Android" />
-
-
-
-
-
-<meta property="og:see_also" content="https://hishark777.com/post/roomdatabaseviewer/" />
-
-<meta property="og:see_also" content="https://hishark777.com/post/genymotion/" />
-
-<meta property="og:see_also" content="https://hishark777.com/post/cardbox/" />
-
-<meta property="og:see_also" content="https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" />
-
-<meta property="og:see_also" content="https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" />
-
-<meta property="og:see_also" content="https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/" />
-
-
-<body class="flex flex-col min-h-screen">
-    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
-        <div class="container mx-auto">
-            <div class="max-w-screen-xl"><script>
-    let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-        || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-    } else if (storageColorScheme == "Light") {
-        document.getElementsByTagName('html')[0].classList.remove('dark')
-    }
-</script>
-<nav class="flex items-center justify-between flex-wrap p-4">
-    <a href="/" class="mr-6 text-primary-text text-xl font-bold ">777&#39;s BLOG</a>
-    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2">
-        <i class="fas fa-bars"></i>
-    </button>
-
-    <div id="target"
-        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
-        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
-            currenturl="https://hishark777.com/post/room-database/">
-            
-            <a href="/authors/hishark777"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">关于</a>
-            
-            <a href="/post/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
-            
-            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">技术日记</a>
-            
-            <a href="https://hishark777.gitbook.io/android-interview/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">校招笔记</a>
-            
-        </div>
-
-        <div class="flex">
-            <div class="relative pt-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
-                </div>
-                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='lightDarkOptions'>
-                    <span class="px-4 py-1 hover:text-eureka">Light</span>
-                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
-                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
-                </div>
-            </div>
-
-            
-        </div>
-    </div>
-
-    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
-    </div>
-
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hishark777</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">相册</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">校招笔记</li>
+      </a>
+  </ul>
 </nav>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        getcolorscheme();
-        switchBurger();
-        
-    });
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hishark777</a>
+</div>
 
-    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
-        if (currenturl.length > 1) {
-            currenturl = currenturl.substr(0, currenturl.length - 1)
-        }
-
-        sessionStorage.setItem("mainKey", currenturl)
-
-        let elements = document.getElementsByClassName('main-a');
-        for (let i in elements) {
-            if (typeof elements[i] === "object") {
-                let elementurl = elements[i].getAttribute('href')
-                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
-                    elementurl = elementurl.substr(0, elementurl.length - 1)
-                }
-                if (elementurl == sessionStorage.getItem("mainKey")) {
-                    elements[i].classList.add('text-eureka')
-                } else {
-                    elements[i].classList.remove('text-eureka')
-                }
-            }
-        }
-</script></div>
-        </div>
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">相册</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">校招笔记</a>
+      </li>
+  </ul>
+</nav>
     </header>
 
-    <main class="flex-grow pt-16">
-        
-        <div class="container mx-auto ">
-            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Room Database</h1>
 
-
-<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
-    <div
-        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">Room Database</h1>
-        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>Oct 15, 2020</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>3分钟</span>
-    </div>
-    
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-folder mr-1"></i>
+      <div class="post-meta">
+        <span class="post-time"> 2020-10-15 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 学习笔记 </a>
+            </div>
         
-        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
-        
-    </div>
-    
+      </div>
+    </header>
 
     
-</div>
-        
-        
-        <div class="content">
-            <p>虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。</p>
+    <div class="post-content">
+      <p>虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。</p>
 <p>来看看 Room 怎么用。</p>
 <h2 id="1-前言">1. 前言</h2>
 <p>ORM，Object Relational Mapping，对象关系映射，用于实现面向对象编程语言里不同类型系统的数据之间的转换。</p>
@@ -314,272 +192,494 @@
 <h2 id="3-使用方法">3. 使用方法</h2>
 <h3 id="31-添加依赖">3.1 添加依赖</h3>
 <p><strong>Java</strong></p>
-<pre><code class="language-java">    dependencies {
-      def room_version = &quot;2.2.5&quot;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">    <span class="n">dependencies</span> <span class="o">{</span>
+      <span class="n">def</span> <span class="n">room_version</span> <span class="o">=</span> <span class="s">&#34;2.2.5&#34;</span>
 
-      implementation &quot;androidx.room:room-runtime:$room_version&quot;
-      annotationProcessor &quot;androidx.room:room-compiler:$room_version&quot;
+      <span class="n">implementation</span> <span class="s">&#34;androidx.room:room-runtime:$room_version&#34;</span>
+      <span class="n">annotationProcessor</span> <span class="s">&#34;androidx.room:room-compiler:$room_version&#34;</span>
 
-      // optional - RxJava support for Room
-      implementation &quot;androidx.room:room-rxjava2:$room_version&quot;
+      <span class="c1">// optional - RxJava support for Room
+</span><span class="c1"></span>      <span class="n">implementation</span> <span class="s">&#34;androidx.room:room-rxjava2:$room_version&#34;</span>
 
-      // optional - Guava support for Room, 
-      // including Optional and ListenableFuture
-      implementation &quot;androidx.room:room-guava:$room_version&quot;
+      <span class="c1">// optional - Guava support for Room, 
+</span><span class="c1"></span>      <span class="c1">// including Optional and ListenableFuture
+</span><span class="c1"></span>      <span class="n">implementation</span> <span class="s">&#34;androidx.room:room-guava:$room_version&#34;</span>
 
-      // optional - Test helpers
-      testImplementation &quot;androidx.room:room-testing:$room_version&quot;
-    }
-</code></pre>
-<p><strong>Kotlin</strong></p>
-<pre><code class="language-kotlin">    dependencies {
-      def room_version = &quot;2.2.5&quot;
+      <span class="c1">// optional - Test helpers
+</span><span class="c1"></span>      <span class="n">testImplementation</span> <span class="s">&#34;androidx.room:room-testing:$room_version&#34;</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Kotlin</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-kotlin" data-lang="kotlin">    <span class="n">dependencies</span> <span class="p">{</span>
+      <span class="n">def</span> <span class="n">room_version</span> <span class="p">=</span> <span class="s">&#34;2.2.5&#34;</span>
 
-      implementation &quot;androidx.room:room-runtime:$room_version&quot;
-      kapt &quot;androidx.room:room-compiler:$room_version&quot;
+      <span class="n">implementation</span> <span class="s">&#34;androidx.room:room-runtime:$room_version&#34;</span>
+      <span class="n">kapt</span> <span class="s">&#34;androidx.room:room-compiler:$room_version&#34;</span>
 
-      // optional - Kotlin Extensions and Coroutines support for Room
-      implementation &quot;androidx.room:room-ktx:$room_version&quot;
+      <span class="c1">// optional - Kotlin Extensions and Coroutines support for Room
+</span><span class="c1"></span>      <span class="n">implementation</span> <span class="s">&#34;androidx.room:room-ktx:$room_version&#34;</span>
 
-      // optional - Test helpers
-      testImplementation &quot;androidx.room:room-testing:$room_version&quot;
-    }
-</code></pre>
-<h3 id="32-创建entity">3.2 创建Entity</h3>
+      <span class="c1">// optional - Test helpers
+</span><span class="c1"></span>      <span class="n">testImplementation</span> <span class="s">&#34;androidx.room:room-testing:$room_version&#34;</span>
+    <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="32-创建entity">3.2 创建Entity</h3>
 <p>在 <code>Entity</code> 中，至少需要包含一个主键 <code>@PrimaryKey</code>。</p>
 <p><strong>Java</strong></p>
-<pre><code class="language-java">    @Entity
-    public class User {
-        @PrimaryKey
-        public int uid;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">    <span class="nd">@Entity</span>
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">User</span> <span class="o">{</span>
+        <span class="nd">@PrimaryKey</span>
+        <span class="kd">public</span> <span class="kt">int</span> <span class="n">uid</span><span class="o">;</span>
 
-        @ColumnInfo(name = &quot;first_name&quot;)
-        public String firstName;
+        <span class="nd">@ColumnInfo</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;first_name&#34;</span><span class="o">)</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">firstName</span><span class="o">;</span>
 
-        @ColumnInfo(name = &quot;last_name&quot;)
-        public String lastName;
-    }
-</code></pre>
-<p><strong>Kotlin</strong></p>
-<pre><code class="language-kotlin">    @Entity
-    data class User(
-        @PrimaryKey val uid: Int,
-        @ColumnInfo(name = &quot;first_name&quot;) val firstName: String?,
-        @ColumnInfo(name = &quot;last_name&quot;) val lastName: String?
-    )
-</code></pre>
-<h3 id="33-创建dao">3.3 创建DAO</h3>
+        <span class="nd">@ColumnInfo</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;last_name&#34;</span><span class="o">)</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">lastName</span><span class="o">;</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Kotlin</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-kotlin" data-lang="kotlin">    <span class="n">@Entity</span>
+    <span class="k">data</span> <span class="k">class</span> <span class="nc">User</span><span class="p">(</span>
+        <span class="n">@PrimaryKey</span> <span class="k">val</span> <span class="py">uid</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span>
+        <span class="n">@ColumnInfo</span><span class="p">(</span><span class="n">name</span> <span class="p">=</span> <span class="s">&#34;first_name&#34;</span><span class="p">)</span> <span class="k">val</span> <span class="py">firstName</span><span class="p">:</span> <span class="n">String</span><span class="p">?,</span>
+        <span class="n">@ColumnInfo</span><span class="p">(</span><span class="n">name</span> <span class="p">=</span> <span class="s">&#34;last_name&#34;</span><span class="p">)</span> <span class="k">val</span> <span class="py">lastName</span><span class="p">:</span> <span class="n">String</span><span class="p">?</span>
+    <span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="33-创建dao">3.3 创建DAO</h3>
 <p><code>DAO</code> 表示数据访问对象，在 <code>DAO</code> 中，需要创建一系列用于访问数据库的方法，典型的包括下面的增删改查操作。</p>
 <p><strong>Java</strong></p>
-<pre><code class="language-java">    @Dao
-    public interface UserDao {
-        @Query(&quot;SELECT * FROM user&quot;)
-        List&lt;User&gt; getAll();
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">    <span class="nd">@Dao</span>
+    <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">UserDao</span> <span class="o">{</span>
+        <span class="nd">@Query</span><span class="o">(</span><span class="s">&#34;SELECT * FROM user&#34;</span><span class="o">)</span>
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span> <span class="nf">getAll</span><span class="o">();</span>
 
-        @Query(&quot;SELECT * FROM user WHERE uid IN (:userIds)&quot;)
-        List&lt;User&gt; loadAllByIds(int[] userIds);
+        <span class="nd">@Query</span><span class="o">(</span><span class="s">&#34;SELECT * FROM user WHERE uid IN (:userIds)&#34;</span><span class="o">)</span>
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span> <span class="nf">loadAllByIds</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">userIds</span><span class="o">);</span>
 
-        @Query(&quot;SELECT * FROM user WHERE first_name LIKE :first AND &quot; +
-               &quot;last_name LIKE :last LIMIT 1&quot;)
-        User findByName(String first, String last);
+        <span class="nd">@Query</span><span class="o">(</span><span class="s">&#34;SELECT * FROM user WHERE first_name LIKE :first AND &#34;</span> <span class="o">+</span>
+               <span class="s">&#34;last_name LIKE :last LIMIT 1&#34;</span><span class="o">)</span>
+        <span class="n">User</span> <span class="nf">findByName</span><span class="o">(</span><span class="n">String</span> <span class="n">first</span><span class="o">,</span> <span class="n">String</span> <span class="n">last</span><span class="o">);</span>
 
-        @Insert
-        void insertAll(User... users);
+        <span class="nd">@Insert</span>
+        <span class="kt">void</span> <span class="nf">insertAll</span><span class="o">(</span><span class="n">User</span><span class="o">...</span> <span class="n">users</span><span class="o">);</span>
 
-        @Delete
-        void delete(User user);
+        <span class="nd">@Delete</span>
+        <span class="kt">void</span> <span class="nf">delete</span><span class="o">(</span><span class="n">User</span> <span class="n">user</span><span class="o">);</span>
 
-        @Update
-        void update(User user);
-    }
-</code></pre>
-<p><strong>Kotlin</strong></p>
-<pre><code class="language-kotlin">    @Dao
-    interface UserDao {
-        @Query(&quot;SELECT * FROM user&quot;)
-        fun getAll(): List&lt;User&gt;
+        <span class="nd">@Update</span>
+        <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="n">User</span> <span class="n">user</span><span class="o">);</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Kotlin</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-kotlin" data-lang="kotlin">    <span class="n">@Dao</span>
+    <span class="k">interface</span> <span class="nc">UserDao</span> <span class="p">{</span>
+        <span class="n">@Query</span><span class="p">(</span><span class="s">&#34;SELECT * FROM user&#34;</span><span class="p">)</span>
+        <span class="k">fun</span> <span class="nf">getAll</span><span class="p">():</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;</span>
 
-        @Query(&quot;SELECT * FROM user WHERE uid IN (:userIds)&quot;)
-        fun loadAllByIds(userIds: IntArray): List&lt;User&gt;
+        <span class="n">@Query</span><span class="p">(</span><span class="s">&#34;SELECT * FROM user WHERE uid IN (:userIds)&#34;</span><span class="p">)</span>
+        <span class="k">fun</span> <span class="nf">loadAllByIds</span><span class="p">(</span><span class="n">userIds</span><span class="p">:</span> <span class="n">IntArray</span><span class="p">):</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;</span>
 
-        @Query(&quot;SELECT * FROM user WHERE first_name LIKE :first AND &quot; +
-               &quot;last_name LIKE :last LIMIT 1&quot;)
-        fun findByName(first: String, last: String): User
+        <span class="n">@Query</span><span class="p">(</span><span class="s">&#34;SELECT * FROM user WHERE first_name LIKE :first AND &#34;</span> <span class="p">+</span>
+               <span class="s">&#34;last_name LIKE :last LIMIT 1&#34;</span><span class="p">)</span>
+        <span class="k">fun</span> <span class="nf">findByName</span><span class="p">(</span><span class="n">first</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">last</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">User</span>
 
-        @Insert
-        fun insertAll(vararg users: User)
+        <span class="n">@Insert</span>
+        <span class="k">fun</span> <span class="nf">insertAll</span><span class="p">(</span><span class="k">vararg</span> <span class="n">users</span><span class="p">:</span> <span class="n">User</span><span class="p">)</span>
 
-        @Delete
-        fun delete(user: User)
+        <span class="n">@Delete</span>
+        <span class="k">fun</span> <span class="nf">delete</span><span class="p">(</span><span class="n">user</span><span class="p">:</span> <span class="n">User</span><span class="p">)</span>
 
-        @Update
-        fun update(user: User)
-    }
+        <span class="n">@Update</span>
+        <span class="k">fun</span> <span class="nf">update</span><span class="p">(</span><span class="n">user</span><span class="p">:</span> <span class="n">User</span><span class="p">)</span>
+    <span class="p">}</span>
     
-</code></pre>
-<h3 id="34-创建数据库">3.4 创建数据库</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="34-创建数据库">3.4 创建数据库</h3>
 <p>数据库类需要使用 <code>@Database</code> 来注解，且在紧跟着的括号中，要添加与该数据库相关联的实体列表，如代码中的 <code>User.class</code>。注解中的 <code>version</code> 代表版本号。</p>
 <p>如果应用在单个进程中运行，在实例化 AppDatabase 对象时应遵循单例设计模式。每个 RoomDatabase 实例的成本相当高，而应用几乎不需要在单个进程中访问多个实例。</p>
 <p><strong>Java</strong></p>
-<pre><code class="language-java">    @Database(entities = {User.class}, version = 1)
-    public abstract class AppDatabase extends RoomDatabase {
-        public abstract UserDao userDao();
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">    <span class="nd">@Database</span><span class="o">(</span><span class="n">entities</span> <span class="o">=</span> <span class="o">{</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">},</span> <span class="n">version</span> <span class="o">=</span> <span class="n">1</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">AppDatabase</span> <span class="kd">extends</span> <span class="n">RoomDatabase</span> <span class="o">{</span>
+        <span class="kd">public</span> <span class="kd">abstract</span> <span class="n">UserDao</span> <span class="nf">userDao</span><span class="o">();</span>
 
-        public static synchronized AppDatabase getInstance(Context context) {
-          if (instance == null) {
-              instance = create(context);
-          }
-          return instance;
-        }
+        <span class="kd">public</span> <span class="kd">static</span> <span class="kd">synchronized</span> <span class="n">AppDatabase</span> <span class="nf">getInstance</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+          <span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+              <span class="n">instance</span> <span class="o">=</span> <span class="n">create</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+          <span class="o">}</span>
+          <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+        <span class="o">}</span>
 
-        private static AppDatabase create(Context context) {
-          return Room.databaseBuilder(getApplicationContext(),
-                    AppDatabase.class, &quot;database-name&quot;).build();
-        }
-    }
+        <span class="kd">private</span> <span class="kd">static</span> <span class="n">AppDatabase</span> <span class="nf">create</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+          <span class="k">return</span> <span class="n">Room</span><span class="o">.</span><span class="na">databaseBuilder</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span>
+                    <span class="n">AppDatabase</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">&#34;database-name&#34;</span><span class="o">).</span><span class="na">build</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
     
-</code></pre>
-<p><strong>Kotlin</strong></p>
-<pre><code class="language-kotlin">    @Database(entities = arrayOf(User::class), version = 1)
-    abstract class AppDatabase : RoomDatabase() {
-        abstract fun userDao(): UserDao
-    }
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Kotlin</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-kotlin" data-lang="kotlin">    <span class="n">@Database</span><span class="p">(</span><span class="n">entities</span> <span class="p">=</span> <span class="n">arrayOf</span><span class="p">(</span><span class="n">User</span><span class="o">::</span><span class="k">class</span><span class="p">),</span> <span class="n">version</span> <span class="p">=</span> <span class="m">1</span><span class="p">)</span>
+    <span class="k">abstract</span> <span class="k">class</span> <span class="nc">AppDatabase</span> <span class="p">:</span> <span class="n">RoomDatabase</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">abstract</span> <span class="k">fun</span> <span class="nf">userDao</span><span class="p">():</span> <span class="n">UserDao</span>
+    <span class="p">}</span>
 
-    @Synchronized
-    fun getInstance(context: Context): AppDatabase {
-        if (instance == null) {
-            instance = create(context)
-        }
-        return instance
-    }
+    <span class="n">@Synchronized</span>
+    <span class="k">fun</span> <span class="nf">getInstance</span><span class="p">(</span><span class="n">context</span><span class="p">:</span> <span class="n">Context</span><span class="p">):</span> <span class="n">AppDatabase</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">instance</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">instance</span> <span class="p">=</span> <span class="n">create</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">instance</span>
+    <span class="p">}</span>
 
-    private fun create(context: Context): AppDatabase {
-        return Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java, &quot;database-name&quot;
-        ).build()
-}
+    <span class="k">private</span> <span class="k">fun</span> <span class="nf">create</span><span class="p">(</span><span class="n">context</span><span class="p">:</span> <span class="n">Context</span><span class="p">):</span> <span class="n">AppDatabase</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">Room</span><span class="p">.</span><span class="n">databaseBuilder</span><span class="p">(</span>
+            <span class="n">applicationContext</span><span class="p">,</span>
+            <span class="n">AppDatabase</span><span class="o">::</span><span class="k">class</span><span class="p">.</span><span class="n">java</span><span class="p">,</span> <span class="s">&#34;database-name&#34;</span>
+        <span class="p">).</span><span class="n">build</span><span class="p">()</span>
+<span class="p">}</span>
     
-</code></pre>
-<h3 id="35-使用数据库">3.5 使用数据库</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="35-使用数据库">3.5 使用数据库</h3>
 <p>创建数据库实例之后就可以愉快的增删改查啦。</p>
 <p><strong>Java</strong></p>
-<pre><code class="language-java">    AppDatabase db;
-    db = AppDatabase.getInstance(context);
-    // 增
-    db.userDao().insertAll(users);
-    // 删
-    db.userDao().delete(user);
-    // 改 
-    db.userDao().update(user);
-    // 查
-    List&lt;User&gt; users = db.userDao().getAll();
-</code></pre>
-<p><strong>Kotlin</strong></p>
-<pre><code class="language-kotlin">    val db: AppDatabase
-    db = AppDatabase.getInstance(context)
-    // 增
-    db.userDao().insertAll(users)
-    // 删
-    db.userDao().delete(user)
-    // 改 
-    db.userDao().update(user)
-    // 查
-    val users = db.userDao().getAll()
-</code></pre>
-<h2 id="4-注意事项">4. 注意事项</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">    <span class="n">AppDatabase</span> <span class="n">db</span><span class="o">;</span>
+    <span class="n">db</span> <span class="o">=</span> <span class="n">AppDatabase</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+    <span class="c1">// 增
+</span><span class="c1"></span>    <span class="n">db</span><span class="o">.</span><span class="na">userDao</span><span class="o">().</span><span class="na">insertAll</span><span class="o">(</span><span class="n">users</span><span class="o">);</span>
+    <span class="c1">// 删
+</span><span class="c1"></span>    <span class="n">db</span><span class="o">.</span><span class="na">userDao</span><span class="o">().</span><span class="na">delete</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
+    <span class="c1">// 改 
+</span><span class="c1"></span>    <span class="n">db</span><span class="o">.</span><span class="na">userDao</span><span class="o">().</span><span class="na">update</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
+    <span class="c1">// 查
+</span><span class="c1"></span>    <span class="n">List</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span> <span class="n">users</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="na">userDao</span><span class="o">().</span><span class="na">getAll</span><span class="o">();</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Kotlin</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-kotlin" data-lang="kotlin">    <span class="k">val</span> <span class="py">db</span><span class="p">:</span> <span class="n">AppDatabase</span>
+    <span class="n">db</span> <span class="p">=</span> <span class="n">AppDatabase</span><span class="p">.</span><span class="n">getInstance</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+    <span class="c1">// 增
+</span><span class="c1"></span>    <span class="n">db</span><span class="p">.</span><span class="n">userDao</span><span class="p">().</span><span class="n">insertAll</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+    <span class="c1">// 删
+</span><span class="c1"></span>    <span class="n">db</span><span class="p">.</span><span class="n">userDao</span><span class="p">().</span><span class="n">delete</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+    <span class="c1">// 改 
+</span><span class="c1"></span>    <span class="n">db</span><span class="p">.</span><span class="n">userDao</span><span class="p">().</span><span class="n">update</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+    <span class="c1">// 查
+</span><span class="c1"></span>    <span class="k">val</span> <span class="py">users</span> <span class="p">=</span> <span class="n">db</span><span class="p">.</span><span class="n">userDao</span><span class="p">().</span><span class="n">getAll</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="4-注意事项">4. 注意事项</h2>
 <p>使用过程中碰到了一些坑，之后补充在这里。#TODO</p>
 <h2 id="5-参考">5. 参考</h2>
 <ul>
 <li><a href="https://developer.android.com/training/data-storage/room">https://developer.android.com/training/data-storage/room</a></li>
 <li><a href="https://www.jianshu.com/p/cfde3535233d">https://www.jianshu.com/p/cfde3535233d</a></li>
 </ul>
-        </div>
-        
-        <div class="my-4">
-    
-    <a href="https://hishark777.com/tags/database/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Database</a>
-    
-    <a href="https://hishark777.com/tags/android/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Android</a>
-    
-</div>
-        
-        
-        
-        
-        
-        
-        
-<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
-    <div>
-        
-        <span class="block font-bold">上一篇</span>
-        <a href="https://hishark777.com/post/as-4-1/" class="block">
-            What’s new in AS 4.1
-        </a>
-        
     </div>
-    <div class="md:text-right mt-4 md:mt-0">
-        
-        <span class="block font-bold">下一篇</span>
-        <a href="https://hishark777.com/post/techdiary202010/" class="block">
-            倒数三个数
-        </a>
-        
-    </div>
-</div>
 
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">777</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-10-15
         
-    </div>
-    
-
-    
-    
-    <div
-        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded p-6">
-        <h2 class="text-lg font-semibold mb-4">相关</h2>
-        <div class="content">
-            
-            <a href="https://hishark777.com/post/roomdatabaseviewer/">Room Database Viewer</a>
-            <br />
-            
-            <a href="https://hishark777.com/post/genymotion/">使用Genymotion运行基于ARM架构的APP</a>
-            <br />
-            
-            <a href="https://hishark777.com/post/cardbox/">卡片盒子</a>
-            <br />
-            
-            <a href="https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">卡片盒子踩坑记录</a>
-            <br />
-            
-            <a href="https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">卡片校园踩坑记录</a>
-            <br />
-            
-            <a href="https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/">利用OkHttp请求网络</a>
-            <br />
-            
-        </div>
-    </div>
-    
+    </span>
+  </p>
+  
+  
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', ()=>{
-        hljs.initHighlightingOnLoad();
-    })
-</script>
-
-            </div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/database/">Database</a>
+          <a href="/tags/android/">Android</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/as-4-1/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">What’s new in AS 4.1</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/techdiary202010/">
+            <span class="next-text nav-default">倒数三个数</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
-        
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hishark777';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+
+      </div>
     </main>
 
-    <footer>
-        <div class="container mx-auto">
-            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
-    <p>&copy; 2017 - 2020 <a href="https://hishark777.com/">hishark777</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
-</footer></div>
-        </div>
-    </footer>
-</body>
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:hishark777@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/hishark777" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/hishark" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/hishark777" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/hishark/" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.instagram.com/hishark777" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://space.bilibili.com/167148/#/channel/detail?cid=55848" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
 
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>777</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
 </html>

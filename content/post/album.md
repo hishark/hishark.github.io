@@ -3,7 +3,8 @@ title: 一点照片
 date: 2020-07-16 00:35:42
 tags:
 - life
-categories: 杂七杂八
+categories: 
+- 杂七杂八
 banner_img: https://777blog.oss-cn-shanghai.aliyuncs.com/wallpaper/Sunset_by_Banned.png
 hide: true
 authors:

@@ -3,7 +3,8 @@ title: 过了个宅宅的年
 date: 2020-02-01 22:48:36
 tags:
 - TechDiary
-categories: 技术日记
+categories: 
+- 技术日记
 authors: 
 - hishark777
 ---

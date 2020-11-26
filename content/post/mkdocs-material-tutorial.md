@@ -3,7 +3,8 @@ title: Mkdocs-Material Tutorial
 date: 2020-09-07 20:06:19
 tags: 
 - markdown
-categories: 学习笔记
+categories: 
+- 学习笔记
 hide: false
 authors: 
 - hishark777

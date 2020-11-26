@@ -2,7 +2,8 @@
 title: 借助 Gitbook 搭建一个技术日记簿
 date: 2020-02-15 13:24:17
 tags:
-categories: 学习笔记
+categories: 
+- 学习笔记
 authors:
 - hishark777
 ---

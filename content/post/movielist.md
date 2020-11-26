@@ -4,7 +4,8 @@ date: 2018-03-04 13:29:28
 tags: 
 - MOVIE
 - life
-categories: 杂七杂八
+categories: 
+- 杂七杂八
 thumbnail: https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/H4QwfbZBE18hirX.png
 ---
 文采不行 写不出什么影评

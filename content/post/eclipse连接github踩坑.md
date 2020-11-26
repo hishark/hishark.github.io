@@ -4,7 +4,8 @@ date: 2018-04-06 10:35:11
 tags:
 - 踩坑
 - git
-categories: 学习笔记
+categories: 
+- 学习笔记
 ---
 
 1. 从github上push下来的时候项目出现红叉叉。[解决方法](https://blog.csdn.net/cnzyyh/article/details/51115377)

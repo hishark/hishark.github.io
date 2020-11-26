@@ -3,7 +3,8 @@ title: LUCKY
 date: 2018-04-21 17:29:17
 tags: 
 - DIARIES
-categories: 碎碎念
+categories: 
+- 碎碎念
 ---
 
 <img src="https://user-images.githubusercontent.com/29684201/48276067-1096cd80-e482-11e8-84e2-f07cbb508985.JPG" width="350" height="350">

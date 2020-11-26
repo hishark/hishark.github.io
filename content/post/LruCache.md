@@ -3,7 +3,8 @@ title: LruCache
 date: 2017-12-30 21:28:47
 tags: 
 - Android
-categories: 学习笔记
+categories: 
+- 学习笔记
 thumbnail:
 ---
 一直拖着图片缓存的小视频没看今天看了一哈

@@ -3,11 +3,9 @@ title: SUNNY DAY?
 date: 2018-04-15 12:54:20
 tags: 
 - DIARIES
-categories: 碎碎念
+categories: 
+- 碎碎念
 ---
-
-
-
 昨天在微博上看到同性恋拥抱的那个视频
 
 啊真的看的我很难过：（

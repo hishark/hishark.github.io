@@ -3,7 +3,8 @@ title: AS - Github 踩坑
 date: 2018-03-18 20:14:40
 tags: 
 - git
-categories: 学习笔记
+categories: 
+- 学习笔记
 thumbnail: 
 ---
 踩了一点坑记一下

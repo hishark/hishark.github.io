@@ -3,7 +3,8 @@ title: 又一年末
 date: 2019-12-01 22:54:01
 tags:
 - TechDiary
-categories: 技术日记
+categories: 
+- 技术日记
 excerpt: 这里是777的十二月份bb日记
 authors: 
 - hishark777

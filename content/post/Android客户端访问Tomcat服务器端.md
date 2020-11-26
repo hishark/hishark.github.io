@@ -6,7 +6,8 @@ tags:
 - Tomcat
 - Struts
 - HttpClient
-categories: 学习笔记
+categories: 
+- 学习笔记
 ---
 终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。
 <!--more-->

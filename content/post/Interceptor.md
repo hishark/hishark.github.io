@@ -3,7 +3,8 @@ title: Interceptor
 date: 2018-03-14 09:00:54
 tags:
 - Struts
-categories: 学习笔记
+categories: 
+- 学习笔记
 thumbnail:
 ---
 #### 拦截器流程概览

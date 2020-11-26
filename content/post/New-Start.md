@@ -3,7 +3,8 @@ title: 2019/06~2019/09
 date: 2019-10-13 14:46:21
 tags: 
 - DIARIES
-categories: 碎碎念
+categories: 
+- 碎碎念
 authors:
 - hishark777
 ---

@@ -5,7 +5,8 @@ tags:
 - OkHttp
 - Android
 - Gson
-categories: 学习笔记
+categories: 
+- 学习笔记
 thumbnail: 
 ---
 HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和[Android客户端访问Tomcat服务器端](http://hishark.cc/2018/03/26/Android客户端访问Tomcat服务器端/)一致，只需要改动LoginActivity和LoginUtil即可。

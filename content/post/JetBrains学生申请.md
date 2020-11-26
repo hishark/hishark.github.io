@@ -2,7 +2,8 @@
 title: JetBrains Student
 date: 2019-10-01 22:13:03
 tags:
-categories: 学习笔记
+categories: 
+- 学习笔记
 authors:
 - hishark777
 ---

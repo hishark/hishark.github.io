@@ -5,7 +5,7 @@ date = "2020-10-24"
 aliases = ["about-us","about-hugo","contact"]
 author = "hishark777"
 +++
-
+<center>
 你好我是小7
 
 普陀女子师专软工研二在读
@@ -21,3 +21,4 @@ author = "hishark777"
 没什么大理想 希望天天开心
 
 (ง ◍'u'◍)ว✧
+</center>

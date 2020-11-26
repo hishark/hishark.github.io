@@ -3,7 +3,8 @@ title: JAVA 选手无人权
 date: 2018-03-22 21:30:18
 tags: 
 - DIARIES
-categories: 碎碎念
+categories: 
+- 碎碎念
 thumbnail: 
 ---
 555

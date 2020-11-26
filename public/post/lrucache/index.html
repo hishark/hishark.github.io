@@ -1,378 +1,394 @@
 <!DOCTYPE html>
-<html lang='zh'><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
-<title>LruCache | 777&#39;s BLOG</title>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>LruCache - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_32x32_fill_box_center_2.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/images/icon_hucb6d30ae160e77f6d8262745024b319d_9098_180x180_fill_box_center_2.png">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://hishark777.com/css/eureka.min.css">
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-
-
-<script defer src="https://hishark777.com/js/eureka.min.js"></script>
-
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css">
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
-<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo=" crossorigin="anonymous"></script>
-
-<meta itemprop="name" content="LruCache | 777&#39;s BLOG">
-<meta itemprop="description"
-    content="一直拖着图片缓存的小视频没看今天看了一哈
-梳理一下">
+<meta name="author" content="777" /><meta name="description" content="一直拖着图片缓存的小视频没看今天看了一哈 梳理一下
+" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
 
 
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-        "@type": "ListItem",
-        "position":  1 ,
-        "name": "777's BLOG",
-        "item": "https://hishark777.com/"
-    },{
-        "@type": "ListItem",
-        "position":  2 ,
-        "name": "Posts",
-        "item": "https://hishark777.com/post/"
-    },{
-        "@type": "ListItem",
-        "position":  3 ,
-        "name": "LruCache",
-        "item": "https://hishark777.com/post/lrucache/"
-    }]
-}
-</script>
+
+<meta name="generator" content="Hugo 0.74.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/lrucache/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://hishark777.com/post/lrucache/"
-    },
-    "headline": "LruCache | 777\u0027s BLOG","datePublished": "2017-12-30T21:28:47+00:00",
-    "dateModified": "2017-12-30T21:28:47+00:00",
-    "wordCount":  477 ,
-    "publisher": {
-        "@type": "Person",
-        "name": "Example publisher",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://hishark777.com/images/icon.png"
-        }
-        },
-    "description": "\u003cp\u003e一直拖着图片缓存的小视频没看今天看了一哈\n梳理一下\u003c\/p\u003e"
-}
-</script>
-
-<meta property="og:title" content="LruCache | 777&#39;s BLOG" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://hishark777.com/post/lrucache/" />
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-
-
+<meta property="og:title" content="LruCache" />
 <meta property="og:description" content="一直拖着图片缓存的小视频没看今天看了一哈
 梳理一下" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/lrucache/" />
+<meta property="article:published_time" content="2017-12-30T21:28:47+00:00" />
+<meta property="article:modified_time" content="2017-12-30T21:28:47+00:00" />
+<meta itemprop="name" content="LruCache">
+<meta itemprop="description" content="一直拖着图片缓存的小视频没看今天看了一哈
+梳理一下">
+<meta itemprop="datePublished" content="2017-12-30T21:28:47&#43;00:00" />
+<meta itemprop="dateModified" content="2017-12-30T21:28:47&#43;00:00" />
+<meta itemprop="wordCount" content="516">
 
 
 
+<meta itemprop="keywords" content="Android," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="LruCache"/>
+<meta name="twitter:description" content="一直拖着图片缓存的小视频没看今天看了一哈
+梳理一下"/>
 
-<meta property="og:locale" content="zh" />
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
 
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
 
-
-
-<meta property="og:site_name" content="777&#39;s BLOG" />
-
-
-
-
-
-
-<meta property="article:published_time" content="2017-12-30T21:28:47&#43;00:00" />
-
-
-<meta property="article:modified_time" content="2017-12-30T21:28:47&#43;00:00" />
-
-
-
-<meta property="article:section" content="post" />
-
-
-<meta property="article:tag" content="Android" />
-
-
-
-
-<body class="flex flex-col min-h-screen">
-    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
-        <div class="container mx-auto">
-            <div class="max-w-screen-xl"><script>
-    let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-        || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-    } else if (storageColorScheme == "Light") {
-        document.getElementsByTagName('html')[0].classList.remove('dark')
-    }
-</script>
-<nav class="flex items-center justify-between flex-wrap p-4">
-    <a href="/" class="mr-6 text-primary-text text-xl font-bold ">777&#39;s BLOG</a>
-    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2">
-        <i class="fas fa-bars"></i>
-    </button>
-
-    <div id="target"
-        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
-        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
-            currenturl="https://hishark777.com/post/lrucache/">
-            
-            <a href="/authors/hishark777"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">关于</a>
-            
-            <a href="/post/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
-            
-            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">技术日记</a>
-            
-            <a href="https://hishark777.gitbook.io/android-interview/"
-                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">校招笔记</a>
-            
-        </div>
-
-        <div class="flex">
-            <div class="relative pt-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
-                </div>
-                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='lightDarkOptions'>
-                    <span class="px-4 py-1 hover:text-eureka">Light</span>
-                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
-                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
-                </div>
-            </div>
-
-            
-        </div>
-    </div>
-
-    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
-    </div>
-
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hishark777</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">相册</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">校招笔记</li>
+      </a>
+  </ul>
 </nav>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        getcolorscheme();
-        switchBurger();
-        
-    });
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hishark777</a>
+</div>
 
-    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
-        if (currenturl.length > 1) {
-            currenturl = currenturl.substr(0, currenturl.length - 1)
-        }
-
-        sessionStorage.setItem("mainKey", currenturl)
-
-        let elements = document.getElementsByClassName('main-a');
-        for (let i in elements) {
-            if (typeof elements[i] === "object") {
-                let elementurl = elements[i].getAttribute('href')
-                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
-                    elementurl = elementurl.substr(0, elementurl.length - 1)
-                }
-                if (elementurl == sessionStorage.getItem("mainKey")) {
-                    elements[i].classList.add('text-eureka')
-                } else {
-                    elements[i].classList.remove('text-eureka')
-                }
-            }
-        }
-</script></div>
-        </div>
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">相册</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">校招笔记</a>
+      </li>
+  </ul>
+</nav>
     </header>
 
-    <main class="flex-grow pt-16">
-        
-        <div class="container mx-auto ">
-            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">LruCache</h1>
 
-
-<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
-    <div
-        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">LruCache</h1>
-        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>Dec 30, 2017</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>1分钟</span>
-    </div>
-    
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-folder mr-1"></i>
+      <div class="post-meta">
+        <span class="post-time"> 2017-12-30 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 学习笔记 </a>
+            </div>
         
-        <a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="hover:text-eureka">学习笔记</a>
-        
-    </div>
-    
+      </div>
+    </header>
 
     
-</div>
-        
-        
-        <div class="content">
-            <p>一直拖着图片缓存的小视频没看今天看了一哈
+    <div class="post-content">
+      <p>一直拖着图片缓存的小视频没看今天看了一哈
 梳理一下</p>
 <h4 id="创建一个lrucache">创建一个LruCache</h4>
 <p>LruCache实际上是一个Map，指定它的键值对类型。</p>
-<pre><code class="language-java">private LruCache&lt;String,Bitmap&gt; mCaches;
-</code></pre>
-<h4 id="从缓存中获取数据">从缓存中获取数据</h4>
-<pre><code class="language-java">public Bitmap getBitmapFromCache(String url){
-	return mCaches.get(url);
-}
-</code></pre>
-<h4 id="把图片添加到缓存">把图片添加到缓存</h4>
-<pre><code class="language-java">public void addBitmapToCache(String url,Bitmap bitmap){
-	//如果缓存中没有该图片就噗特进去
-	if(getBitmapFromCache(url) == null){
-		mCaches.put(url,bitmap);
-	}
-}
-</code></pre>
-<h4 id="获取最大内存">获取最大内存</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="n">LruCache</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">Bitmap</span><span class="o">&gt;</span> <span class="n">mCaches</span><span class="o">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="从缓存中获取数据">从缓存中获取数据</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">Bitmap</span> <span class="nf">getBitmapFromCache</span><span class="o">(</span><span class="n">String</span> <span class="n">url</span><span class="o">){</span>
+	<span class="k">return</span> <span class="n">mCaches</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">url</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="把图片添加到缓存">把图片添加到缓存</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addBitmapToCache</span><span class="o">(</span><span class="n">String</span> <span class="n">url</span><span class="o">,</span><span class="n">Bitmap</span> <span class="n">bitmap</span><span class="o">){</span>
+	<span class="c1">//如果缓存中没有该图片就噗特进去
+</span><span class="c1"></span>	<span class="k">if</span><span class="o">(</span><span class="n">getBitmapFromCache</span><span class="o">(</span><span class="n">url</span><span class="o">)</span> <span class="o">==</span> <span class="kc">null</span><span class="o">){</span>
+		<span class="n">mCaches</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">url</span><span class="o">,</span><span class="n">bitmap</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="获取最大内存">获取最大内存</h4>
 <p>获取当前应用所可以使用的最大内存，并设置一个缓存的大小值来初始化LruCache。</p>
-<pre><code class="language-java">int maxMemory = (int) Runtime.getRuntime().maxMemory();
-int cacheSize = maxMemory / 4;
-mCaches = new LruCache&lt;String,Bitmap&gt;(cacheSize){
-	@Override
-	protected int sizeOf(String key,Bitmap value){
-		// 在每次存入缓存的时候调用，告诉系统当前存的对象到底有多大
-		// 所以返回一个实际的大小
-		return value.getByteCount();
-	}
-}
-</code></pre>
-<h4 id="获取图片">获取图片</h4>
-<pre><code class="language-java">//获取图片的时候，第一步会去内存缓存中取出图片
-Bitmap bitmap = getBitmapFromCache(url);
-if(bitmap == null){
-	//如果缓存中没有，就直接使用异步任务从网络上下载图片
-}else{
-	//如果缓存中有，就直接使用图片
-}
-</code></pre>
-<h4 id="下载图片的同时保存至lrucache">下载图片的同时保存至LruCache</h4>
-<pre><code class="language-java">//在异步任务的下载逻辑中，还需要将下载完毕的图片保存到LruCache中
-@Override
-protected Bitmap doInBackground(String... params){
-	String url = params[0];
-	//从网络上获取图片
-	Bitmap bitmap = getBitmapFromURL(url);
-	if(bitmap != null){
-		//将不在缓存的图片加入缓存
-		addBitmapToCache(url,bitmap);
-	}
-	return bitmap;
-}
-</code></pre>
-<blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">maxMemory</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="n">Runtime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">().</span><span class="na">maxMemory</span><span class="o">();</span>
+<span class="kt">int</span> <span class="n">cacheSize</span> <span class="o">=</span> <span class="n">maxMemory</span> <span class="o">/</span> <span class="n">4</span><span class="o">;</span>
+<span class="n">mCaches</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LruCache</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">Bitmap</span><span class="o">&gt;(</span><span class="n">cacheSize</span><span class="o">){</span>
+	<span class="nd">@Override</span>
+	<span class="kd">protected</span> <span class="kt">int</span> <span class="nf">sizeOf</span><span class="o">(</span><span class="n">String</span> <span class="n">key</span><span class="o">,</span><span class="n">Bitmap</span> <span class="n">value</span><span class="o">){</span>
+		<span class="c1">// 在每次存入缓存的时候调用，告诉系统当前存的对象到底有多大
+</span><span class="c1"></span>		<span class="c1">// 所以返回一个实际的大小
+</span><span class="c1"></span>		<span class="k">return</span> <span class="n">value</span><span class="o">.</span><span class="na">getByteCount</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="获取图片">获取图片</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//获取图片的时候，第一步会去内存缓存中取出图片
+</span><span class="c1"></span><span class="n">Bitmap</span> <span class="n">bitmap</span> <span class="o">=</span> <span class="n">getBitmapFromCache</span><span class="o">(</span><span class="n">url</span><span class="o">);</span>
+<span class="k">if</span><span class="o">(</span><span class="n">bitmap</span> <span class="o">==</span> <span class="kc">null</span><span class="o">){</span>
+	<span class="c1">//如果缓存中没有，就直接使用异步任务从网络上下载图片
+</span><span class="c1"></span><span class="o">}</span><span class="k">else</span><span class="o">{</span>
+	<span class="c1">//如果缓存中有，就直接使用图片
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="下载图片的同时保存至lrucache">下载图片的同时保存至LruCache</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//在异步任务的下载逻辑中，还需要将下载完毕的图片保存到LruCache中
+</span><span class="c1"></span><span class="nd">@Override</span>
+<span class="kd">protected</span> <span class="n">Bitmap</span> <span class="nf">doInBackground</span><span class="o">(</span><span class="n">String</span><span class="o">...</span> <span class="n">params</span><span class="o">){</span>
+	<span class="n">String</span> <span class="n">url</span> <span class="o">=</span> <span class="n">params</span><span class="o">[</span><span class="n">0</span><span class="o">];</span>
+	<span class="c1">//从网络上获取图片
+</span><span class="c1"></span>	<span class="n">Bitmap</span> <span class="n">bitmap</span> <span class="o">=</span> <span class="n">getBitmapFromURL</span><span class="o">(</span><span class="n">url</span><span class="o">);</span>
+	<span class="k">if</span><span class="o">(</span><span class="n">bitmap</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+		<span class="c1">//将不在缓存的图片加入缓存
+</span><span class="c1"></span>		<span class="n">addBitmapToCache</span><span class="o">(</span><span class="n">url</span><span class="o">,</span><span class="n">bitmap</span><span class="o">);</span>
+	<span class="o">}</span>
+	<span class="k">return</span> <span class="n">bitmap</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>通过这个方法就可以把下载过的图片存入缓存
 刷新时就不用每次都从网上下载
 典型的&quot;以内存换效率&rdquo;
 listview常用</p>
 </blockquote>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">777</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2017-12-30
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/android/">Android</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2018-1-1/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">新年快乐</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2017-12-30/">
+            <span class="next-text nav-default">毛哥有话说</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
-        
-        <div class="my-4">
-    
-    <a href="https://hishark777.com/tags/android/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Android</a>
-    
-</div>
-        
-        
-        
-        
-        
-        
-        
-<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
-    <div>
-        
-        <span class="block font-bold">上一篇</span>
-        <a href="https://hishark777.com/post/2018-1-1/" class="block">
-            新年快乐
-        </a>
-        
-    </div>
-    <div class="md:text-right mt-4 md:mt-0">
-        
-        <span class="block font-bold">下一篇</span>
-        <a href="https://hishark777.com/post/2017-12-30/" class="block">
-            毛哥有话说
-        </a>
-        
-    </div>
-</div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
 
-        
-    </div>
-    
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hishark777';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    
-    
-</div>
-<script>
-    document.addEventListener('DOMContentLoaded', ()=>{
-        hljs.initHighlightingOnLoad();
-    })
-</script>
+  
 
-            </div>
-        </div>
-        
+  
+
+      </div>
     </main>
 
-    <footer>
-        <div class="container mx-auto">
-            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
-    <p>&copy; 2017 - 2020 <a href="https://hishark777.com/">hishark777</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
-</footer></div>
-        </div>
-    </footer>
-</body>
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:hishark777@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/hishark777" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/hishark" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/hishark777" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/hishark/" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.instagram.com/hishark777" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://space.bilibili.com/167148/#/channel/detail?cid=55848" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
 
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>777</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
 </html>

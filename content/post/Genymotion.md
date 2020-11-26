@@ -3,7 +3,8 @@ title: 使用 Genymotion 运行基于 ARM 架构的 APP
 date: 2020-04-01 15:55:55
 tags:
 - Android
-categories: 学习笔记
+categories: 
+- 学习笔记
 authors:
 - hishark777
 ---

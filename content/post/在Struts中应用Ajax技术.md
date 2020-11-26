@@ -4,7 +4,8 @@ date: 2018-03-19 14:28:25
 tags: 
 - Struts
 - Ajax
-categories: 学习笔记
+categories: 
+- 学习笔记
 thumbnail:
 ---
 Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。

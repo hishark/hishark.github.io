@@ -3,7 +3,8 @@ title: 为 BufferedReader 爆灯
 date: 2018-03-29 21:35:22
 tags: 
 - DIARIES
-categories: 碎碎念
+categories: 
+- 碎碎念
 ---
 不超时真是太幸福了555
 BufferedReader一句话让你飞嘻嘻嘻

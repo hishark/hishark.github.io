@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Example Author on 777&#39;s BLOG</title>
-    <link>https://hishark777.com/authors/example-author/</link>
-    <description>Recent content in Example Author on 777&#39;s BLOG</description>
+    <title>Example Author on Even - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/authors/example-author/</link>
+    <description>Recent content in Example Author on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>&amp;copy; 2017 - 2020 &lt;a href=&#34;https://hishark777.com/&#34;&gt;hishark777&lt;/a&gt;</copyright>
+    <language>en</language>
     
-	<atom:link href="https://hishark777.com/authors/example-author/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/authors/example-author/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

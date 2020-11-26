@@ -3,7 +3,8 @@ title: び太の宝島
 date: 2018-06-01 23:21:16
 tags: 
 - DIARIES
-categories: 碎碎念
+categories: 
+- 碎碎念
 authors:
 - hishark777
 ---

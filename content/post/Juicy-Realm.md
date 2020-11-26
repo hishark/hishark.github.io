@@ -3,7 +3,8 @@ title: Juicy Realm
 date: 2018-05-01 11:38:15
 tags: 
 - DIARIES
-categories: 碎碎念
+categories: 
+- 碎碎念
 ---
 恶果之地终于要上架啦
 <!--more-->

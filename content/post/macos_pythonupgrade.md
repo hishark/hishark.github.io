@@ -3,7 +3,8 @@ title: MacOS Python2.7->3.7
 date: 2019-09-28 15:08:48
 tags: 
 - MacOS
-categories: 学习笔记
+categories: 
+- 学习笔记
 draft: true
 authors:
 - hishark777
