@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>中文排版 on Even - A super concise theme for Hugo</title>
+    <title>中文排版 on 777&#39;s Blog</title>
     <link>https://hishark777.com/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/</link>
-    <description>Recent content in 中文排版 on Even - A super concise theme for Hugo</description>
+    <description>Recent content in 中文排版 on 777&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>hishark777</copyright>
     <lastBuildDate>Tue, 27 Oct 2020 18:18:26 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/index.xml" rel="self" type="application/rss+xml" />

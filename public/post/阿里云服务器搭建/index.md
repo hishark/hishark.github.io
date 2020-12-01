@@ -1,0 +1,56 @@
+和小洁一起买了个半年的服务器，学生特惠还挺便宜。
+脑子不好，记一下流程。
+<!--more-->
+
+#### 买个服务器
+
+阿里云学生特惠超贴心啦。windows server 2012卡成狗，换成2008美滋滋。
+
+#### 远程连接
+
+阿里云控制台的远程连接不太好用，用windows自带的远程连接。
+
+#### 安装jdk
+
+装好之后记得配置环境变量。
+```
+CLASSPATH=C:\Program Files (x86)\Java\jdk1.8.0_144\lib\dt.jar;C:\Program Files (x86)\Java\jdk1.8.0_144\lib\tools.jar;
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_144
+```
+Path后面加上`C:\Program Files (x86)\Java\jdk1.8.0_144\bin;`
+
+#### 安装tomcat
+
+1. 解压文件apache-tomcat-8.0.9-windows-x64.zip到C:\中，改名为tomcat
+2. 装好之后记得设置环境变量。
+在CLASSPATH后加上`%TALINA_HOME%\lib\servlet.jar;`
+添加俩变量
+```
+CATALINA_BASE=C:\tomcat
+CATALINA_HOME=C:\tomcat
+```
+
+#### 安装MySQL
+
+装的时候选Server only就好了，装完装个MySQL-Front。
+
+#### 启动MySQL
+
+安装过程中有出现过这个![12121212](https://user-images.githubusercontent.com/29684201/48275529-aa5d7b00-e480-11e8-87a3-39ab8d77b66d.PNG)
+打开cmd输入`net start mysql57`即可启动MySQL。
+
+#### 安全组
+
+阿里云安全组添加一条8080的记录。
+
+#### 部署项目
+
+导出项目的war包，放到服务器`tomcat\webapps`下即可。
+
+#### 启动tomcat
+
+打开`tomcat\bin`，运行`startup.bat`即可。
+#### 大功告成
+
+外网ip:8080/projectName就可以访问项目了hiahiahia(/≧▽≦)/~。
+

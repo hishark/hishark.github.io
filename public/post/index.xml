@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Even - A super concise theme for Hugo</title>
+    <title>Posts on 777&#39;s Blog</title>
     <link>https://hishark777.com/post/</link>
-    <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
+    <description>Recent content in Posts on 777&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>hishark777</copyright>
     <lastBuildDate>Mon, 23 Nov 2020 19:20:55 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/post/index.xml" rel="self" type="application/rss+xml" />
@@ -93,7 +94,7 @@
       <pubDate>Mon, 07 Sep 2020 20:06:19 +0000</pubDate>
       
       <guid>https://hishark777.com/post/mkdocs-material-tutorial/</guid>
-      <description>总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个Gitbook放技术日记乱七八糟的碎碎念，最后迁移到了博客。前阵子看到有人用Mkd</description>
+      <description>&lt;p&gt;总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个&lt;a href=&#34;https://hishark777.com/777-Tech-Diary/&#34;&gt;Gitbook&lt;/a&gt;放&lt;del&gt;技术日记&lt;/del&gt;乱七八糟的碎碎念，最后迁移到了&lt;a href=&#34;http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/&#34;&gt;博客&lt;/a&gt;。前阵子看到有人用&lt;a href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;&gt;Mkdocs-Material&lt;/a&gt;写博客，转了一圈官网觉得有点意思，&lt;del&gt;也比Gitbook更好看&lt;/del&gt;（比以前的Gitbook好看），于是来整一个做校招笔记。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -102,8 +103,8 @@
       <pubDate>Tue, 01 Sep 2020 13:45:48 +0000</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202009/</guid>
-      <description>&lt;p&gt;稀里糊涂就
-研二啦&lt;/p&gt;</description>
+      <description>&lt;p&gt;稀里糊涂就&lt;/p&gt;
+&lt;p&gt;研二啦&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -112,8 +113,8 @@
       <pubDate>Sat, 01 Aug 2020 17:26:04 +0000</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202008/</guid>
-      <description>&lt;p&gt;最后一个在家的暑假
-珍惜自由摸鱼的最后一个月_(:з」∠)_&lt;/p&gt;</description>
+      <description>&lt;p&gt;最后一个在家的暑假&lt;/p&gt;
+&lt;p&gt;珍惜自由摸鱼的最后一个月_(:з」∠)_&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,9 +132,9 @@
       <pubDate>Wed, 15 Jul 2020 14:55:52 +0000</pubDate>
       
       <guid>https://hishark777.com/post/summer-2020/</guid>
-      <description>&lt;p&gt;整理博客时发现
-很久没有在这里碎碎念啦
-最近在干一些什么呢&lt;/p&gt;</description>
+      <description>&lt;p&gt;整理博客时发现&lt;/p&gt;
+&lt;p&gt;很久没有在这里碎碎念啦&lt;/p&gt;
+&lt;p&gt;最近在干一些什么呢&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -142,8 +143,8 @@
       <pubDate>Wed, 01 Jul 2020 19:38:55 +0000</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202007/</guid>
-      <description>&lt;p&gt;明年暑假在校招
-今年暑假在撒欢&lt;/p&gt;</description>
+      <description>&lt;p&gt;明年暑假在校招&lt;/p&gt;
+&lt;p&gt;今年暑假在撒欢&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -152,8 +153,8 @@
       <pubDate>Mon, 01 Jun 2020 19:19:19 +0000</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202006/</guid>
-      <description>&lt;p&gt;猝不及防
-半年又没了&lt;/p&gt;</description>
+      <description>&lt;p&gt;猝不及防&lt;/p&gt;
+&lt;p&gt;半年又没了&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -162,8 +163,8 @@
       <pubDate>Fri, 01 May 2020 22:10:51 +0000</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202005/</guid>
-      <description>&lt;p&gt;武功山好难爬哦
-但是看到了星空和日出日落(＾－＾)V&lt;/p&gt;</description>
+      <description>&lt;p&gt;武功山好难爬哦&lt;/p&gt;
+&lt;p&gt;但是看到了星空和日出日落(＾－＾)V&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -203,8 +204,8 @@
       <pubDate>Wed, 01 Apr 2020 11:32:20 +0000</pubDate>
       
       <guid>https://hishark777.com/post/my2019/</guid>
-      <description>&lt;p&gt;想对2019说：
-“再来一瓶🍾”&lt;/p&gt;
+      <description>&lt;p&gt;想对2019说：&lt;/p&gt;
+&lt;p&gt;“再来一瓶🍾”&lt;/p&gt;
 &lt;p&gt;2019大概被切割成了三大块&lt;/p&gt;
 &lt;p&gt;1到6月在度厂搬砖&lt;/p&gt;
 &lt;p&gt;7到8月猫在家里&amp;amp;出去旅游&lt;/p&gt;
@@ -283,8 +284,7 @@
       <pubDate>Mon, 18 Nov 2019 19:46:21 +0000</pubDate>
       
       <guid>https://hishark777.com/post/19october/</guid>
-      <description>&lt;p&gt;十月
-也是拾月&lt;/p&gt;
+      <description>&lt;p&gt;十月 也是拾月&lt;/p&gt;
 &lt;p&gt;今天是11月18日&lt;/p&gt;
 &lt;p&gt;下午刚做完pre&lt;/p&gt;
 &lt;p&gt;终于闲下来写个博客&lt;/p&gt;
@@ -298,9 +298,9 @@
       <pubDate>Sun, 13 Oct 2019 14:46:21 +0000</pubDate>
       
       <guid>https://hishark777.com/post/new-start/</guid>
-      <description>&lt;p&gt;JXNU 🚌ECNU
-毕业也就是一眨眼的事情
-我又来另一个师大开始上学了&lt;/p&gt;</description>
+      <description>&lt;p&gt;JXNU 🚌ECNU&lt;/p&gt;
+&lt;p&gt;毕业也就是一眨眼的事情&lt;/p&gt;
+&lt;p&gt;我又来另一个师大开始上学了&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -334,11 +334,11 @@
       <pubDate>Thu, 13 Jun 2019 23:08:48 +0000</pubDate>
       
       <guid>https://hishark777.com/post/may-i/</guid>
-      <description>&lt;p&gt;嗯好久没写博客了
-五月结束了
-六月也到中旬了
-2019的进度条马上就要走到1/2
-又要感叹一句时间过得好快&lt;/p&gt;</description>
+      <description>&lt;p&gt;嗯好久没写博客了&lt;/p&gt;
+&lt;p&gt;五月结束了&lt;/p&gt;
+&lt;p&gt;六月也到中旬了&lt;/p&gt;
+&lt;p&gt;2019的进度条马上就要走到1/2&lt;/p&gt;
+&lt;p&gt;又要感叹一句时间过得好快&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -347,10 +347,10 @@
       <pubDate>Sun, 07 Apr 2019 13:51:09 +0000</pubDate>
       
       <guid>https://hishark777.com/post/springgg/</guid>
-      <description>&lt;p&gt;三月碎碎念一拖拖了一礼拜
-春天来啦
-上周和同事吃完饭散步去看公司附近的樱花一条街
-拍了超可爱的樱花放四月vlog里&lt;/p&gt;</description>
+      <description>&lt;p&gt;三月碎碎念一拖拖了一礼拜&lt;/p&gt;
+&lt;p&gt;春天来啦&lt;/p&gt;
+&lt;p&gt;上周和同事吃完饭散步去看公司附近的樱花一条街&lt;/p&gt;
+&lt;p&gt;拍了超可爱的樱花放四月vlog里&lt;/p&gt;</description>
     </item>
     
     <item>

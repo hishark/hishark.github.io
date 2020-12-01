@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>life on Even - A super concise theme for Hugo</title>
+    <title>life on 777&#39;s Blog</title>
     <link>https://hishark777.com/tags/life/</link>
-    <description>Recent content in life on Even - A super concise theme for Hugo</description>
+    <description>Recent content in life on 777&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>hishark777</copyright>
     <lastBuildDate>Thu, 16 Jul 2020 00:35:42 +0000</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
