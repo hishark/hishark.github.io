@@ -1,14 +1,3 @@
----
-title: "再见吧 2020"
-date: 2020-11-24T14:05:48+08:00
-draft: false
-categories: 
-- 技术日记
-tags:
-- TechDiary
-authors:
-- hishark777
----
 
 最后一个月
 
