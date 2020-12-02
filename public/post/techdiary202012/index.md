@@ -1,4 +1,6 @@
 
+
+
 最后一个月
 
 支棱起来咯
@@ -34,4 +36,3 @@ Listify 作者的博客：[MikeTech](https://miketech.it/)
 ### receiver
 
 [android:报Activity has leaked IntentReceiver或者receiver is not registered错误](https://blog.csdn.net/weiren1101/article/details/51752498)
-

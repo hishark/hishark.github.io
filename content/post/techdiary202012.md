@@ -1,14 +1,16 @@
 ---
-title: "再见吧 2020"
-date: 2020-12-01T14:05:48+08:00
-draft: false
+title: "再见啦 2020"
+date: 2020-12-02T08:40:36+08:00
 categories: 
 - 技术日记
 tags:
 - TechDiary
+draft: false
 authors:
 - hishark777
 ---
+
+
 
 最后一个月
 
@@ -45,4 +47,3 @@ Listify 作者的博客：[MikeTech](https://miketech.it/)
 ### receiver
 
 [android:报Activity has leaked IntentReceiver或者receiver is not registered错误](https://blog.csdn.net/weiren1101/article/details/51752498)
-
