@@ -3,7 +3,35 @@
   
   <url>
     <loc>https://hishark777.com/</loc>
-    <lastmod>2020-11-26T21:45:26+08:00</lastmod>
+    <lastmod>2020-12-02T08:41:35+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://hishark777.com/post/</loc>
+    <lastmod>2020-12-02T08:41:35+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://hishark777.com/tags/techdiary/</loc>
+    <lastmod>2020-12-02T08:41:35+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://hishark777.com/post/techdiary202012/</loc>
+    <lastmod>2020-12-02T08:41:35+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</loc>
+    <lastmod>2020-12-02T08:41:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -11,13 +39,6 @@
   <url>
     <loc>https://hishark777.com/tags/android/</loc>
     <lastmod>2020-11-26T19:41:49+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://hishark777.com/post/</loc>
-    <lastmod>2020-11-26T21:45:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -37,22 +58,8 @@
   </url>
   
   <url>
-    <loc>https://hishark777.com/tags/techdiary/</loc>
-    <lastmod>2020-11-26T21:45:26+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://hishark777.com/post/techdiary202011/</loc>
-    <lastmod>2020-11-26T21:45:26+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2020-11-26T21:45:26+08:00</lastmod>
+    <lastmod>2020-12-01T21:44:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1172,6 +1179,7 @@
   
   <url>
     <loc>https://hishark777.com/about/</loc>
+    <lastmod>2020-11-26T21:48:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

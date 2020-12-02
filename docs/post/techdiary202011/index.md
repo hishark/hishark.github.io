@@ -3,6 +3,26 @@
 
 <!--more-->
 
+## 2020-11-30
+
+
+
+## 2020-11-27
+
+### Doocs
+
+[如何加入](https://doocs.github.io/#/README_CN?id=%e5%a6%82%e4%bd%95%e5%8a%a0%e5%85%a5)
+
+- 加入啦！
+
+### First-contribution
+
+[How to?](https://github.com/firstcontributions/first-contributions/blob/master/translations/README.chs.md)
+
+- 明天来提交第一个PR！
+
+https://github.com/doocs/technical-books/blob/b3fd88c6b39efad1b2235a1f40d26d7be7a0646d/README.md
+
 ## 2020-11-26
 
 ### DSL
@@ -147,7 +167,7 @@ K佬剑指offer的题解我全部看完了才发现
 
 哦，原有代码太奇怪了为什么按照 PNG 的格式生成但是又给个 jpg 后缀，奇奇怪怪
 
-不管了反正找到问题了改好了- - 
+ 啊找到问题了改好了- - 
 
 ### jar
 
@@ -160,6 +180,8 @@ K佬剑指offer的题解我全部看完了才发现
 还没想好买啥 
 
 想买个灰色牛角扣咧
+
+> 到货了 挺好看
 
 ## 2020-11-09
 
