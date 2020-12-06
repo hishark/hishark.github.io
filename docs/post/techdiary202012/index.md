@@ -1,11 +1,72 @@
 
-
-
 最后一个月
 
 支棱起来咯
 
 <!--more-->
+
+## 2020-12-04
+
+### @string
+
+对文本内容不要硬编码
+
+[Android Developer - 字符串资源](https://developer.android.com/guide/topics/resources/string-resource?hl=zh-cn)
+
+[你真的会用Android中Strings资源吗](https://cloud.tencent.com/developer/article/1035180)
+
+- Android为了帮助开发者把应用更方便发布给全球不同语言的人们使用，建议开发者在进行开发时不要把UI呈现相关的文本内容硬编码，而是把内容写入到strings.xml中，这样做更加灵活，也更方便翻译成不同其他语言。
+
+### Java
+
+[Java注释会被执行吗](https://mp.weixin.qq.com/s/st3LORDRXMwADsCWdBH1KQ)
+
+- 这个真的有点意思
+
+### RecyclerView
+
+[添加分割线](https://blog.csdn.net/Lindroid20/article/details/76407954)
+
+[添加点击事件](https://www.jianshu.com/p/971396467a62)
+
+- 诶居然没有直接提供 `ListView` 那样的 `setOnItemClickListener()` ？觉得很神奇于是去查了一下，还是有道理的：https://stackoverflow.com/questions/24885223/why-doesnt-recyclerview-have-onitemclicklistener，RecyclerView 的使用要比 ListView 使用要灵活得多。之前用 ListView 的时候如果 item 里面的布局复杂的话确实是比较难搞。
+- 注意是在item的布局文件里设置点击事件，不是给recyclerview设置哦。
+
+### WifiManager
+
+[wifiManager.getScanResult() returns null value](https://stackoverflow.com/questions/56379635/wifimanager-getscanresult-returns-null-value)
+
+- 有毒，我怎么就是拿不到这个列表呢- -
+
+[WLAN 扫描功能概览](https://developer.android.com/guide/topics/connectivity/wifi-scan#java)
+
+气死我了气死我了整了一下午都找不出任何bug，然后最后找到的解决方法就是打开位置信息OTZ：https://clz.me/ionic-android-wifimanager-getscanresults/****
+
+官方文档里也没说Android7.0要打开位置信息啊5555就说了8.0以上要加位置权限嘛555气死我了 
+
+### 连接指定wifi
+
+[Android自定义连接指定WiFi&热点开关](https://blog.csdn.net/weixin_43835637/article/details/91350820)
+
+## 2020-12-02
+
+### Android Code Search
+
+Android 代码搜索 ([cs.android.com](https://cs.android.com/?hl=zh-cn)) 是一款可帮助开发者查看实际使用的 Android 源代码的工具。
+
+利用代码搜索，您可以点击源代码的一部分到另一部分，从而更轻松地在所有 AOSP 中浏览交叉引用。这有助于您在 Android 的开源分支之间切换。只有主分支在 Java 和 CPP 中有交叉引用信息，而 Go 则没有。
+
+### AOSP
+
+https://source.android.google.cn/
+
+### RecyclerView
+
+[使用 RecyclerView 创建列表](https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=zh-cn)
+
+- 看啥博客都不如直接看官网文档靠谱哈
+
+《第一行代码》里有的东西必不找其他的看，郭霖写东西确实有一手。
 
 ## 2020-12-01
 
