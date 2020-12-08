@@ -16,7 +16,29 @@ authors:
 
 <!--more-->
 
-## 2020-12-04
+## 2020-12-08 Tue
+
+### ARTS
+
+学到个好登西：https://juejin.cn/post/6902996077549617160
+
+另外突然发现掘金真的是个很不错的社区
+
+忙完这个月的事开始 ARTS 打卡！
+
+能坚持下来的话真的超好哈哈哈哈哈
+
+### Typora
+
+一直觉得 typora 的宽度太窄了很浪费空间
+
+反正是自己看东西也无所谓什么留白美观
+
+查了一下改主题源代码就可以扩宽编辑器的长度
+
+https://blog.csdn.net/wsq119/article/details/104611585
+
+## 2020-12-04 Fri
 
 ### @string
 
@@ -59,7 +81,7 @@ authors:
 
 [Android自定义连接指定WiFi&热点开关](https://blog.csdn.net/weixin_43835637/article/details/91350820)
 
-## 2020-12-02
+## 2020-12-02 Wed
 
 ### Android Code Search
 
@@ -79,7 +101,7 @@ https://source.android.google.cn/
 
 《第一行代码》里有的东西必不找其他的看，郭霖写东西确实有一手。
 
-## 2020-12-01
+## 2020-12-01 Tue
 
 ### Jenkins
 
