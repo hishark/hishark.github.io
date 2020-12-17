@@ -5,7 +5,77 @@
 
 <!--more-->
 
+## 2020-12-16 Wed
+
+### Dom4j
+
+[Dom4j增加，修改，删除XML文件](https://www.jianshu.com/p/b617266bc2df)
+
+[Android 资源(Resources)访问](https://www.runoob.com/android/android-resources.html)
+
+xml/可以通过调用Resources.getXML()来在运行时读取任意的XML文件。可以在这里保存运行时使用的各种配置文件
+
+[How to edit XML in Android and save?](https://stackoverflow.com/questions/7162285/how-to-edit-xml-in-android-and-save)
+
+- 我悟了，找到盲点了，明天再来改！
+
+### Room
+
+Error：`java.lang.IllegalStateException: attempt to re-open an already-closed object:`
+
+[Room attempt to re-open an already closed database](https://stackoverflow.com/questions/45376492/room-attempt-to-re-open-an-already-closed-database)
+
+- 还有个办法删了db就好
+
+[Room数据库的版本升级姿势](https://www.jianshu.com/p/fae0245cf384)
+
+[Room踩坑：理解Room的正确升库](https://juejin.cn/post/6844903889611800584)
+
+### Json
+
+[浅谈x-www-form-urlencoded与json的区别](https://blog.csdn.net/qq_23049221/article/details/108621301)
+
+## 2020-12-15 Tue
+
+### DICOM协议基本内容
+
+[医疗业务学习笔记--DICOM协议的基础内容](https://zhuanlan.zhihu.com/p/74966427)
+
+[DICOM LIBRARY - TAGS](https://www.dicomlibrary.com/dicom/dicom-tags/)
+
+### AS Error
+
+Error Log
+
+```
+java.lang.UnsatisfiedLinkError: Unable to load library 'CoreFoundation':
+dlopen(libCoreFoundation.dylib, 9): image not found
+dlopen(libCoreFoundation.dylib, 9): image not found
+Native library (darwin/libCoreFoundation.dylib) not found in resource path (/Applications/Android Studio 2.app/Contents/lib/bootstrap.jar:/Applications/Android Studio 2.app/Contents/lib/extensions.jar:/Applications/Android Studio 2.app/Contents/lib/util.jar:/Applications/Android Studio 2.app/Contents/lib/jdom.jar:/Applications/Android Studio 2.app/Contents/lib/log4j.jar:/Applications/Android Studio 2.app/Contents/lib/trove4j.jar:/Applications/Android Studio 2.app/Contents/lib/jna.jar:/Applications/Android Studio 2.app/Contents/jre/jdk/Contents/Home/lib/tools.jar)
+```
+
+好像是因为更新完系统导致的
+
+### Sublime
+
+[Sublime打开报错：Error trying to parse file](https://blog.csdn.net/mayfla/article/details/79157463)
+
+- `Preferences -> Browse Packages` 点开删除 `User` 文件夹就好啦。
+
+### 杂
+
+事情扎堆的感觉让人崩溃
+
 ## 2020-12-08 Tue
+
+### RecyclerView
+
+[RecyclerView 实现item点击水波纹动画](https://blog.csdn.net/android_zhengyongbo/article/details/70171631)
+
+- 加个水波纹
+- 法一比较快
+
+[添加下拉刷新](https://www.jianshu.com/p/3bf125b4917d)
 
 ### ARTS
 
@@ -26,6 +96,14 @@
 查了一下改主题源代码就可以扩宽编辑器的长度
 
 https://blog.csdn.net/wsq119/article/details/104611585
+
+### Activity通信方式
+
+https://www.jianshu.com/p/c833eb46bc73
+
+https://www.jianshu.com/p/12438e23c6b8
+
+https://www.jianshu.com/p/75eccd29c229
 
 ## 2020-12-04 Fri
 
