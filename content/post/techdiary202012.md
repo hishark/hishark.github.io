@@ -16,6 +16,75 @@ authors:
 
 <!--more-->
 
+## 2020-12-22 // Tue
+
+> 要相信 Bug总是会一个一个一个的解决的
+
+Bug终于解开了呜呜呜感谢呵呵！呵总永远滴神！
+
+- SAXReader解析xml必须在xml路径前面加上 `file://` 不然解析不到，但是图片路径直接 `/xx/xx` 是ok的
+
+- 以及 `Didn't find class "java.nio.file.Paths" on path:` 是版本问题导致，这个minSdkversion必须要26，然而手上的华为只有24- - 
+
+## 2020-12-21 // Mon
+
+### Split
+
+https://www.runoob.com/java/java-string-split.html
+
+记得加转义符啊啊啊啊
+
+### Jar包
+
+[Android Studio导入和删除jar包](https://blog.csdn.net/renwudao24/article/details/69071410)
+
+## 2020-12-19
+
+### AS
+
+[INSTALL_PARSE_FAILED_NO_CERTIFICATES](https://blog.csdn.net/yanghrwork/article/details/103983275)
+
+### Office
+
+[Office 为何不设计 tab 标签？ - 尼欧的回答 - 知乎](https://www.zhihu.com/question/21905040/answer/751983175) 
+
+- 用word就在疑惑为什么不跟WPS设计一个tab，找到了office tab这个完美插件后又发现只支持windows，是我mac不配555
+- 看了知乎这个回答之后，妙啊原来藏起来啦。
+
+### 输入法
+
+还是换成了落格
+
+按shift之后光标右下方显示【En】和【中】真是太舒服了
+
+默认的样式也和自带输入法一模一样 太完美噜
+
+用一段时间如果很喜欢的话我就去买个完全版～
+
+[mac 删除自带 ABC 输入法的方法](https://www.jianshu.com/p/0ba1292441b9)
+
+## 2020-12-18
+
+### 自定义view
+
+[HenCoder Android 开发进阶：自定义 View 1-5 绘制顺序](https://hencoder.com/ui-1-5/)
+
+[Android自定义View：MeasureSpec的真正意义与View大小控制](https://segmentfault.com/a/1190000007948959)
+
+### XML
+
+读写以及移动存储位置
+
+[DOM4J解析XML](https://www.freesion.com/article/495782425/)
+
+[Dom4j解析和生成XML文档](https://www.cnblogs.com/yucongblog/p/6588798.html)
+
+[android用流把项目里的xml文件复制到sdcard的方法（含乱码问题）](https://blog.csdn.net/lucherr/article/details/7520122)
+
+[Android复制asset目录的文件到SD卡下](https://blog.csdn.net/u013693649/article/details/61623697)
+
+- dom4j改完之后要写回文件的呀。
+
 ## 2020-12-16 Wed
 
 ### Dom4j
