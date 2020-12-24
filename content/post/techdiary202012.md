@@ -16,7 +16,25 @@ authors:
 
 <!--more-->
 
+## 2020-12-23 // Wed
+
+### AS打开崩溃问题
+
+最近每次打开 AS 都会卡死在 [Tip of the day] 那个界面上，而且是全屏卡住OTZ
+
+查到这个终于解决了：[A1ndroid Studio suddenly crashes at startup](https://stackoverflow.com/questions/44239791/android-studio-suddenly-crashes-at-startup)
+
+stackoverflow永远滴神！
+
+### 杂
+
+遇到问题千万不要一个人死磕 谨记
+
+问题抛出去之后往往比你一个人钻牛角尖解决起来快得多🆙
+
 ## 2020-12-22 // Tue
+
+### DICOM生成问题
 
 > 要相信 Bug总是会一个一个一个的解决的
 
@@ -25,6 +43,16 @@ Bug终于解开了呜呜呜感谢呵呵！呵总永远滴神！
 - SAXReader解析xml必须在xml路径前面加上 `file://` 不然解析不到，但是图片路径直接 `/xx/xx` 是ok的
 
 - 以及 `Didn't find class "java.nio.file.Paths" on path:` 是版本问题导致，这个minSdkversion必须要26，然而手上的华为只有24- - 
+
+### okhttp cookie
+
+[Add cookie to client request OkHttp](https://stackoverflow.com/questions/35743291/add-cookie-to-client-request-okhttp)
+
+之前都自定义cookiejar
+
+这次发现个方便的轮子：[PersistentCookieJar](https://github.com/franmontiel/PersistentCookieJar)
+
+用法非常简单，保证 cookieJar 是同一个就可以啦
 
 ## 2020-12-21 // Mon
 
@@ -220,7 +248,7 @@ https://www.jianshu.com/p/75eccd29c229
 
 [WLAN 扫描功能概览](https://developer.android.com/guide/topics/connectivity/wifi-scan#java)
 
-气死我了气死我了整了一下午都找不出任何bug，然后最后找到的解决方法就是打开位置信息OTZ：https://clz.me/ionic-android-wifimanager-getscanresults/****
+气死我了气死我了整了一下午都找不出任何bug，然后最后找到的解决方法就是打开位置信息OTZ：https://clz.me/ionic-android-wifimanager-getscanresults/
 
 官方文档里也没说Android7.0要打开位置信息啊5555就说了8.0以上要加位置权限嘛555气死我了 
 
