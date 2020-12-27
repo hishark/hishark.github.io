@@ -4,6 +4,7 @@ theme = "hello-friend"
 paginate = 7
 disqusShortname = "hishark777"
 
+
 [params]
   # dir name of your blog content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
@@ -33,7 +34,7 @@ disqusShortname = "hishark777"
     keywords = ""
     copyright = "hishark777"
     menuMore = "Show more"
-    writtenBy = "Written by"
+    writtenBy = "Written by 777"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
     newerPosts = "Newer posts"
@@ -42,7 +43,7 @@ disqusShortname = "hishark777"
     dateFormatSingle = "2006-01-02"
     dateFormatList = "2006-01-02"
     # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
+    lastModDisplay = "Modified:"
 
     [languages.en.params.logo]
       logoText = "hishark777"
