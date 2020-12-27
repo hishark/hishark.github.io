@@ -1,8 +1,7 @@
 baseurl = "https://hishark777.com"
 languageCode = "en-us"
 theme = "hello-friend"
-paginate = 5
-
+paginate = 7
 disqusShortname = "hishark777"
 
 [params]
@@ -56,17 +55,17 @@ disqusShortname = "hishark777"
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
-        name = "About"
+        name = "关于"
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "tags"
-        name = "Tags"
+        name = "标签"
         url = "/tags"
       [[languages.en.menu.main]]
         identifier = "categories"
-        name = "Categories"
+        name = "分类"
         url = "/categories"
       [[languages.en.menu.main]]
         identifier = "archive"
-        name = "Archive"
+        name = "归档"
         url = "/archive"

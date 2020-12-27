@@ -1,5 +1,6 @@
 +++
 title = "关于我"
+date = 1997-02-10
 +++
 
 😉 嗨，你好，如你所见这里是一个乱七八糟啥都有一点的小博客。我是777，普陀女子师专研二在读，欢迎光临我的 BB 空间。我不怎么会写东西，写下的文字大多都是碎碎念。喜欢记录生活，想让以后的我可以无缝回忆起过去每一年的我自己。
@@ -34,9 +35,12 @@ title = "关于我"
 - [Yiya](https://yiyacheng.github.io)
 - [Glassy](glassywu.github.io)
 - [Qian](https://miaodzz.github.io/)
-- [Mo](http://moqiling.net)
 - [Tocz9ea](https://blog.tocz9ea.com)
 - [Jerakrs](https://jerakrs.github.io/)
 - [LauZyHou](https://blog.csdn.net/SHU15121856)
 - [Wind](https://roaringwind.github.io)
 - [LiuJ](https://lliujj.github.io)
+- [AmyZhoucc](https://amyzhoucc.github.io/)
+- [Sophia-fez](https://sophia-fez.blog.csdn.net/)
+
+<!-- - [Mo](http://moqiling.net) -->
