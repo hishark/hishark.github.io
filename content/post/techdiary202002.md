@@ -1,5 +1,5 @@
 ---
-title: 过了个宅宅的年
+title: Tech Diary | 2020.02
 date: 2020-02-01 22:48:36
 tags:
 - TechDiary

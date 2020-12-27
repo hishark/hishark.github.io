@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>再见啦 2020 - 777&#39;s Blog</title>
+  <title>Tech Diary | 2020.12 - 777&#39;s Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -41,24 +41,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="再见啦 2020" />
+<meta property="og:title" content="Tech Diary | 2020.12" />
 <meta property="og:description" content="最后一个月
 支棱起来咯" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hishark777.com/post/techdiary202012/" />
 <meta property="article:published_time" content="2020-12-01T08:40:36+08:00" />
-<meta property="article:modified_time" content="2020-12-02T08:47:19+08:00" />
-<meta itemprop="name" content="再见啦 2020">
+<meta property="article:modified_time" content="2020-12-24T09:57:57+08:00" />
+<meta itemprop="name" content="Tech Diary | 2020.12">
 <meta itemprop="description" content="最后一个月
 支棱起来咯">
 <meta itemprop="datePublished" content="2020-12-01T08:40:36&#43;08:00" />
-<meta itemprop="dateModified" content="2020-12-02T08:47:19&#43;08:00" />
-<meta itemprop="wordCount" content="664">
+<meta itemprop="dateModified" content="2020-12-24T09:57:57&#43;08:00" />
+<meta itemprop="wordCount" content="2539">
 
 
 
 <meta itemprop="keywords" content="TechDiary," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="再见啦 2020"/>
+<meta name="twitter:title" content="Tech Diary | 2020.12"/>
 <meta name="twitter:description" content="最后一个月
 支棱起来咯"/>
 
@@ -135,15 +135,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">再见啦 2020</h1>
+      <h1 class="post-title">Tech Diary | 2020.12</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2020-12-01 </span>
         <div class="post-category">
             <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"> 技术日记 </a>
             </div>
-          <span class="more-meta"> 约 664 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+          <span class="more-meta"> 约 2539 字 </span>
+          <span class="more-meta"> 预计阅读 6 分钟 </span>
         
       </div>
     </header>
@@ -152,7 +152,147 @@
     <div class="post-content">
       <p>最后一个月</p>
 <p>支棱起来咯</p>
-<h2 id="2020-12-04">2020-12-04</h2>
+<h2 id="2020-12-24--thu">2020-12-24 // Thu</h2>
+<p>🎄</p>
+<h3 id="huawei安装app">HUAWEI安装app</h3>
+<p>烦死了老跳出来那个应用安装确认</p>
+<p><a href="https://club.huawei.com/thread-15131985-1-1.html">如何彻底关闭“外部来源应用检查”，真的很烦</a></p>
+<ul>
+<li>安全设置里搞一下</li>
+<li>开发人员选项里搞一下</li>
+</ul>
+<p>成了</p>
+<h2 id="2020-12-23--wed">2020-12-23 // Wed</h2>
+<h3 id="as打开崩溃问题">AS打开崩溃问题</h3>
+<p>最近每次打开 AS 都会卡死在 [Tip of the day] 那个界面上，而且是全屏卡住OTZ</p>
+<p>查到这个终于解决了：<a href="https://stackoverflow.com/questions/44239791/android-studio-suddenly-crashes-at-startup">A1ndroid Studio suddenly crashes at startup</a></p>
+<p>stackoverflow永远滴神！</p>
+<h3 id="杂">杂</h3>
+<p>遇到问题千万不要一个人死磕 谨记</p>
+<p>问题抛出去之后往往比你一个人钻牛角尖解决起来快得多🆙</p>
+<h2 id="2020-12-22--tue">2020-12-22 // Tue</h2>
+<h3 id="dicom生成问题">DICOM生成问题</h3>
+<blockquote>
+<p>要相信 Bug总是会一个一个一个的解决的</p>
+</blockquote>
+<p>Bug终于解开了呜呜呜感谢呵呵！呵总永远滴神！</p>
+<ul>
+<li>
+<p>SAXReader解析xml必须在xml路径前面加上 <code>file://</code> 不然解析不到，但是图片路径直接 <code>/xx/xx</code> 是ok的</p>
+</li>
+<li>
+<p>以及 <code>Didn't find class &quot;java.nio.file.Paths&quot; on path:</code> 是版本问题导致，这个minSdkversion必须要26，然而手上的华为只有24- -</p>
+</li>
+</ul>
+<h3 id="okhttp-cookie">okhttp cookie</h3>
+<p><a href="https://stackoverflow.com/questions/35743291/add-cookie-to-client-request-okhttp">Add cookie to client request OkHttp</a></p>
+<p>之前都自定义cookiejar</p>
+<p>这次发现个方便的轮子：<a href="https://github.com/franmontiel/PersistentCookieJar">PersistentCookieJar</a></p>
+<p>用法非常简单，保证 cookieJar 是同一个就可以啦</p>
+<h2 id="2020-12-21--mon">2020-12-21 // Mon</h2>
+<h3 id="split">Split</h3>
+<p><a href="https://www.runoob.com/java/java-string-split.html">https://www.runoob.com/java/java-string-split.html</a></p>
+<p>记得加转义符啊啊啊啊</p>
+<h3 id="jar包">Jar包</h3>
+<p><a href="https://blog.csdn.net/renwudao24/article/details/69071410">Android Studio导入和删除jar包</a></p>
+<h2 id="2020-12-19">2020-12-19</h2>
+<h3 id="as">AS</h3>
+<p><a href="https://blog.csdn.net/yanghrwork/article/details/103983275">INSTALL_PARSE_FAILED_NO_CERTIFICATES</a></p>
+<h3 id="office">Office</h3>
+<p><a href="https://www.zhihu.com/question/21905040/answer/751983175">Office 为何不设计 tab 标签？ - 尼欧的回答 - 知乎</a></p>
+<ul>
+<li>用word就在疑惑为什么不跟WPS设计一个tab，找到了office tab这个完美插件后又发现只支持windows，是我mac不配555</li>
+<li>看了知乎这个回答之后，妙啊原来藏起来啦。</li>
+</ul>
+<h3 id="输入法">输入法</h3>
+<p>还是换成了落格</p>
+<p>按shift之后光标右下方显示【En】和【中】真是太舒服了</p>
+<p>默认的样式也和自带输入法一模一样 太完美噜</p>
+<p>用一段时间如果很喜欢的话我就去买个完全版～</p>
+<p><a href="https://www.jianshu.com/p/0ba1292441b9">mac 删除自带 ABC 输入法的方法</a></p>
+<h2 id="2020-12-18">2020-12-18</h2>
+<h3 id="自定义view">自定义view</h3>
+<p><a href="https://hencoder.com/ui-1-5/">HenCoder Android 开发进阶：自定义 View 1-5 绘制顺序</a></p>
+<p><a href="https://segmentfault.com/a/1190000007948959">Android自定义View：MeasureSpec的真正意义与View大小控制</a></p>
+<h3 id="xml">XML</h3>
+<p>读写以及移动存储位置</p>
+<p><a href="https://www.freesion.com/article/495782425/">DOM4J解析XML</a></p>
+<p><a href="https://www.cnblogs.com/yucongblog/p/6588798.html">Dom4j解析和生成XML文档</a></p>
+<p><a href="https://blog.csdn.net/lucherr/article/details/7520122">android用流把项目里的xml文件复制到sdcard的方法（含乱码问题）</a></p>
+<p><a href="https://blog.csdn.net/u013693649/article/details/61623697">Android复制asset目录的文件到SD卡下</a></p>
+<ul>
+<li>dom4j改完之后要写回文件的呀。</li>
+</ul>
+<h2 id="2020-12-16-wed">2020-12-16 Wed</h2>
+<h3 id="dom4j">Dom4j</h3>
+<p><a href="https://www.jianshu.com/p/b617266bc2df">Dom4j增加，修改，删除XML文件</a></p>
+<p><a href="https://www.runoob.com/android/android-resources.html">Android 资源(Resources)访问</a></p>
+<p>xml/可以通过调用Resources.getXML()来在运行时读取任意的XML文件。可以在这里保存运行时使用的各种配置文件</p>
+<p><a href="https://stackoverflow.com/questions/7162285/how-to-edit-xml-in-android-and-save">How to edit XML in Android and save?</a></p>
+<ul>
+<li>我悟了，找到盲点了，明天再来改！</li>
+</ul>
+<h3 id="room">Room</h3>
+<p>Error：<code>java.lang.IllegalStateException: attempt to re-open an already-closed object:</code></p>
+<p><a href="https://stackoverflow.com/questions/45376492/room-attempt-to-re-open-an-already-closed-database">Room attempt to re-open an already closed database</a></p>
+<ul>
+<li>还有个办法删了db就好</li>
+</ul>
+<p><a href="https://www.jianshu.com/p/fae0245cf384">Room数据库的版本升级姿势</a></p>
+<p><a href="https://juejin.cn/post/6844903889611800584">Room踩坑：理解Room的正确升库</a></p>
+<h3 id="json">Json</h3>
+<p><a href="https://blog.csdn.net/qq_23049221/article/details/108621301">浅谈x-www-form-urlencoded与json的区别</a></p>
+<h2 id="2020-12-15-tue">2020-12-15 Tue</h2>
+<h3 id="dicom协议基本内容">DICOM协议基本内容</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/74966427">医疗业务学习笔记&ndash;DICOM协议的基础内容</a></p>
+<p><a href="https://www.dicomlibrary.com/dicom/dicom-tags/">DICOM LIBRARY - TAGS</a></p>
+<h3 id="as-error">AS Error</h3>
+<p>Error Log</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">java.lang.UnsatisfiedLinkError: Unable to load library &#39;CoreFoundation&#39;:
+dlopen(libCoreFoundation.dylib, 9): image not found
+dlopen(libCoreFoundation.dylib, 9): image not found
+Native library (darwin/libCoreFoundation.dylib) not found in resource path (/Applications/Android Studio 2.app/Contents/lib/bootstrap.jar:/Applications/Android Studio 2.app/Contents/lib/extensions.jar:/Applications/Android Studio 2.app/Contents/lib/util.jar:/Applications/Android Studio 2.app/Contents/lib/jdom.jar:/Applications/Android Studio 2.app/Contents/lib/log4j.jar:/Applications/Android Studio 2.app/Contents/lib/trove4j.jar:/Applications/Android Studio 2.app/Contents/lib/jna.jar:/Applications/Android Studio 2.app/Contents/jre/jdk/Contents/Home/lib/tools.jar)
+</code></pre></td></tr></table>
+</div>
+</div><p>好像是因为更新完系统导致的</p>
+<h3 id="sublime">Sublime</h3>
+<p><a href="https://blog.csdn.net/mayfla/article/details/79157463">Sublime打开报错：Error trying to parse file</a></p>
+<ul>
+<li><code>Preferences -&gt; Browse Packages</code> 点开删除 <code>User</code> 文件夹就好啦。</li>
+</ul>
+<h3 id="杂-1">杂</h3>
+<p>事情扎堆的感觉让人崩溃</p>
+<h2 id="2020-12-08-tue">2020-12-08 Tue</h2>
+<h3 id="recyclerview">RecyclerView</h3>
+<p><a href="https://blog.csdn.net/android_zhengyongbo/article/details/70171631">RecyclerView 实现item点击水波纹动画</a></p>
+<ul>
+<li>加个水波纹</li>
+<li>法一比较快</li>
+</ul>
+<p><a href="https://www.jianshu.com/p/3bf125b4917d">添加下拉刷新</a></p>
+<h3 id="arts">ARTS</h3>
+<p>学到个好登西：https://juejin.cn/post/6902996077549617160</p>
+<p>另外突然发现掘金真的是个很不错的社区</p>
+<p>忙完这个月的事开始 ARTS 打卡！</p>
+<p>能坚持下来的话真的超好哈哈哈哈哈</p>
+<h3 id="typora">Typora</h3>
+<p>一直觉得 typora 的宽度太窄了很浪费空间</p>
+<p>反正是自己看东西也无所谓什么留白美观</p>
+<p>查了一下改主题源代码就可以扩宽编辑器的长度</p>
+<p><a href="https://blog.csdn.net/wsq119/article/details/104611585">https://blog.csdn.net/wsq119/article/details/104611585</a></p>
+<h3 id="activity通信方式">Activity通信方式</h3>
+<p><a href="https://www.jianshu.com/p/c833eb46bc73">https://www.jianshu.com/p/c833eb46bc73</a></p>
+<p><a href="https://www.jianshu.com/p/12438e23c6b8">https://www.jianshu.com/p/12438e23c6b8</a></p>
+<p><a href="https://www.jianshu.com/p/75eccd29c229">https://www.jianshu.com/p/75eccd29c229</a></p>
+<h2 id="2020-12-04-fri">2020-12-04 Fri</h2>
 <h3 id="string">@string</h3>
 <p>对文本内容不要硬编码</p>
 <p><a href="https://developer.android.com/guide/topics/resources/string-resource?hl=zh-cn">Android Developer - 字符串资源</a></p>
@@ -165,25 +305,36 @@
 <ul>
 <li>这个真的有点意思</li>
 </ul>
-<h3 id="recyclerview">RecyclerView</h3>
+<h3 id="recyclerview-1">RecyclerView</h3>
 <p><a href="https://blog.csdn.net/Lindroid20/article/details/76407954">添加分割线</a></p>
 <p><a href="https://www.jianshu.com/p/971396467a62">添加点击事件</a></p>
 <ul>
-<li>诶居然没有直接提供 <code>ListView</code> 那样的 <code>setOnItemClickListener()</code> ?</li>
+<li>诶居然没有直接提供 <code>ListView</code> 那样的 <code>setOnItemClickListener()</code> ？觉得很神奇于是去查了一下，还是有道理的：https://stackoverflow.com/questions/24885223/why-doesnt-recyclerview-have-onitemclicklistener，RecyclerView 的使用要比 ListView 使用要灵活得多。之前用 ListView 的时候如果 item 里面的布局复杂的话确实是比较难搞。</li>
+<li>注意是在item的布局文件里设置点击事件，不是给recyclerview设置哦。</li>
 </ul>
-<h2 id="2020-12-02">2020-12-02</h2>
+<h3 id="wifimanager">WifiManager</h3>
+<p><a href="https://stackoverflow.com/questions/56379635/wifimanager-getscanresult-returns-null-value">wifiManager.getScanResult() returns null value</a></p>
+<ul>
+<li>有毒，我怎么就是拿不到这个列表呢- -</li>
+</ul>
+<p><a href="https://developer.android.com/guide/topics/connectivity/wifi-scan#java">WLAN 扫描功能概览</a></p>
+<p>气死我了气死我了整了一下午都找不出任何bug，然后最后找到的解决方法就是打开位置信息OTZ：https://clz.me/ionic-android-wifimanager-getscanresults/</p>
+<p>官方文档里也没说Android7.0要打开位置信息啊5555就说了8.0以上要加位置权限嘛555气死我了</p>
+<h3 id="连接指定wifi">连接指定wifi</h3>
+<p><a href="https://blog.csdn.net/weixin_43835637/article/details/91350820">Android自定义连接指定WiFi&amp;热点开关</a></p>
+<h2 id="2020-12-02-wed">2020-12-02 Wed</h2>
 <h3 id="android-code-search">Android Code Search</h3>
 <p>Android 代码搜索 (<a href="https://cs.android.com/?hl=zh-cn">cs.android.com</a>) 是一款可帮助开发者查看实际使用的 Android 源代码的工具。</p>
 <p>利用代码搜索，您可以点击源代码的一部分到另一部分，从而更轻松地在所有 AOSP 中浏览交叉引用。这有助于您在 Android 的开源分支之间切换。只有主分支在 Java 和 CPP 中有交叉引用信息，而 Go 则没有。</p>
 <h3 id="aosp">AOSP</h3>
 <p><a href="https://source.android.google.cn/">https://source.android.google.cn/</a></p>
-<h3 id="recyclerview-1">RecyclerView</h3>
+<h3 id="recyclerview-2">RecyclerView</h3>
 <p><a href="https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=zh-cn">使用 RecyclerView 创建列表</a></p>
 <ul>
 <li>看啥博客都不如直接看官网文档靠谱哈</li>
 </ul>
 <p>《第一行代码》里有的东西必不找其他的看，郭霖写东西确实有一手。</p>
-<h2 id="2020-12-01">2020-12-01</h2>
+<h2 id="2020-12-01-tue">2020-12-01 Tue</h2>
 <h3 id="jenkins">Jenkins</h3>
 <p><a href="https://juejin.cn/post/6844903879725809678">Jenkins</a>是一款开源的CI工具，利用Jenkins可以通过规范化的操作流程避免一些低级错误，将开发人员从简单、繁琐的工作中释放出来。关于Jenkins的配置教程网上也是有很多，<a href="https://juejin.im/post/6844903592608923655">Jenkins 持续集成使用教程</a>就比较详细。</p>
 <h3 id="android---surface">Android - Surface</h3>
@@ -212,8 +363,8 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2020-12-02
-        <a href="https://github.com/hishark/hishark.github.io//commit/796d8ef4a950116d5b8a9f9e4571b78d6abdccce" title="update">(796d8ef)</a>
+        2020-12-24
+        <a href="https://github.com/hishark/hishark.github.io//commit/44acdc4863945855521798d3f35f460aa9260441" title="update">(44acdc4)</a>
     </span>
   </p>
   <p class="copyright-item">

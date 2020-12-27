@@ -1,5 +1,5 @@
 ---
-title: 匆匆忙忙开了学
+title: Tech Diary | 2020.09
 date: 2020-09-01 13:45:48
 tags:
 - TechDiary

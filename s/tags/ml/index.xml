@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML on 777&#39;s Blog</title>
+    <link>https://hishark777.com/tags/ml/</link>
+    <description>Recent content in ML on 777&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>hishark777</copyright>
+    <lastBuildDate>Mon, 18 Nov 2019 20:46:21 +0000</lastBuildDate>
+    
+	<atom:link href="https://hishark777.com/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Facial Beauty Prediction</title>
+      <link>https://hishark777.com/post/facial_beauty_prediction/</link>
+      <pubDate>Mon, 18 Nov 2019 20:46:21 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/facial_beauty_prediction/</guid>
+      <description>&lt;p&gt;人工智能课程概论作业——论文复现
+期末汇报存档&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

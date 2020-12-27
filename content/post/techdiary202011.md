@@ -1,5 +1,5 @@
 ---
-title: "十一月学习废话集"
+title: "Tech Diary | 2020.11"
 date: 2020-11-02T14:27:04+08:00
 categories: 
 - 技术日记

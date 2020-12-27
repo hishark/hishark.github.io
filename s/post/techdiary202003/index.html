@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>三月 の 技术日记 - 777&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="777" /><meta name="description" content="有在好好做算法题
+" /><meta name="keywords" content="hishark, 777, hishark777, 777&#39;s blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.74.0 with theme even" />
+
+
+<link rel="canonical" href="https://hishark777.com/post/techdiary202003/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="三月 の 技术日记" />
+<meta property="og:description" content="有在好好做算法题" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/techdiary202003/" />
+<meta property="article:published_time" content="2020-03-01T22:41:57+00:00" />
+<meta property="article:modified_time" content="2020-11-26T19:41:49+08:00" />
+<meta itemprop="name" content="三月 の 技术日记">
+<meta itemprop="description" content="有在好好做算法题">
+<meta itemprop="datePublished" content="2020-03-01T22:41:57&#43;00:00" />
+<meta itemprop="dateModified" content="2020-11-26T19:41:49&#43;08:00" />
+<meta itemprop="wordCount" content="2366">
+
+
+
+<meta itemprop="keywords" content="TechDiary," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="三月 の 技术日记"/>
+<meta name="twitter:description" content="有在好好做算法题"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hishark777</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="https://www.douban.com/people/hishark/photos">
+        <li class="mobile-menu-item">相册</li>
+      </a><a href="https://hishark777.gitbook.io/777-interview-notes/">
+        <li class="mobile-menu-item">校招笔记</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hishark777</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="https://www.douban.com/people/hishark/photos">相册</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">三月 の 技术日记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-03-01 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/"> 技术日记 </a>
+            </div>
+          <span class="more-meta"> 约 2366 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <p>有在好好做算法题</p>
+<!-- # 日记打卡
+|  一  |  二  |  三  |  四  |  五  |  六  |  日  |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|      |      |      |      |      |      |  1   |
+|  <font color="#B22222">**2**   |  <font color="#B22222">**3**   |  4   |  5   |  6   |  7   |  8   |
+|  <font color="#B22222">**9**   |  10  |  11  |  <font color="#B22222">**12**  |  <font color="#B22222">**13**  |  <font color="#B22222">**14**  |  <font color="#B22222">**15**  |
+|  <font color="#B22222">**16**  |  <font color="#B22222">**17**  |  <font color="#B22222">**18**  |  19  |  20  |  21  |  22  |
+|  23  |  24  |  <font color="#B22222">**25**  |  <font color="#B22222">**26**  |  27  |  <font color="#B22222">**28**  |  <font color="#B22222">**29**  |
+|  <font color="#B22222">**30**  |  <font color="#B22222">**31**  |      |      |      |      |      | -->
+<h2 id="2020-03-31">2020-03-31</h2>
+<h3 id="algorithm---sort"><strong>Algorithm - sort</strong></h3>
+<p>面试的时候考排序直接用Arrays.sort()可能会挨打。</p>
+<ol>
+<li><a href="http://panthema.net/2013/sound-of-sorting/">http://panthema.net/2013/sound-of-sorting/</a>这个好好玩哈哈哈</li>
+<li><a href="https://leetcode-cn.com/problems/sort-an-array/solution/fu-xi-ji-chu-pai-xu-suan-fa-java-by-liweiwei1419/">https://leetcode-cn.com/problems/sort-an-array/solution/fu-xi-ji-chu-pai-xu-suan-fa-java-by-liweiwei1419/</a>wei哥总结的不错</li>
+<li><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html">https://www.cs.usfca.edu/~galles/visualization/Algorithms.html</a>题解里看到的学习算法的可视化网站</li>
+</ol>
+<h3 id="android"><strong>Android</strong></h3>
+<blockquote>
+<p>Build anything on Android</p>
+</blockquote>
+<p>喜欢android开发者官网的这个slogan</p>
+<h2 id="2020-03-30">2020-03-30</h2>
+<h3 id="android-1"><strong>Android</strong></h3>
+<p>检测常用手势</p>
+<p><a href="https://developer.android.com/training/gestures/detector?hl=zh-cn">https://developer.android.com/training/gestures/detector?hl=zh-cn</a></p>
+<h2 id="2020-03-29">2020-03-29</h2>
+<h3 id="android-studio"><strong>Android Studio</strong></h3>
+<p>AS更新到3.6.1了，这个logo颜色。。好刺眼啊，还是之前的版本更好看（可能会真香</p>
+<p><a href="https://developer.android.com/studio/releases">https://developer.android.com/studio/releases</a></p>
+<p>中文页面还没更新，粗略看了一下新特性感觉更新蛮大啊，另外感觉可以学学kotlin了。</p>
+<ul>
+<li>Design Tools</li>
+<li>妈呀代码区和预览区终于可以一起看了我哭 好方便</li>
+<li>Color Picker Resource Tab</li>
+<li>Resource Manager</li>
+<li>Updates to the Android Gradle plugin</li>
+<li>findViewById被替换了</li>
+<li>Apply Changes</li>
+<li>Refactor menu option to enable Instant Apps support</li>
+<li>Deobfuscate class and method bytecode in APK Analyzer</li>
+<li>Native tooling</li>
+<li>Attach Kotlin-only APK sources</li>
+<li>Leak detection in Memory Profiler</li>
+<li>Emulators</li>
+<li>Resumable SDK downloads</li>
+<li>Win32 deprecated</li>
+<li>New option for optimizing Gradle sync time</li>
+</ul>
+<h3 id="algorithm"><strong>Algorithm</strong></h3>
+<ol>
+<li><a href="https://leetcode-cn.com/problems/as-far-from-land-as-possible/">LeetCode1162</a></li>
+</ol>
+<ul>
+<li><a href="https://blog.csdn.net/u012050154/article/details/60572567">java queue</a></li>
+<li>使用常量增量数组进行坐标的平移 again</li>
+<li>宽度/广度优先搜索BFS</li>
+</ul>
+<ol>
+<li>稳定的排序算法</li>
+</ol>
+<ul>
+<li>基数排序</li>
+<li>冒泡排序</li>
+<li>直接插入排序</li>
+<li>二分插入排序</li>
+<li>归并排序</li>
+</ul>
+<ol>
+<li>不稳定的排序算法</li>
+</ol>
+<ul>
+<li>堆排序</li>
+<li>快速排序</li>
+<li>希尔排序</li>
+<li>直接选择排序</li>
+</ul>
+<h3 id="app"><strong>App</strong></h3>
+<p>Android端发现一个好用的时间追踪app——Boosted</p>
+<p>巨好用喔完全切合我的需求👍（话说买了pixel2xl之后，感觉原生安卓现在真滴好好用啊，以后的备用机估计会一直买pixel了哈哈哈哈）</p>
+<p>开发者把用到的库放出来了我记一下以后瞅瞅</p>
+<ul>
+<li><a href="https://developer.android.com/topic/libraries/architecture">Android Architecture Components</a></li>
+<li><a href="https://jitpack.io/p/kmenager/android-week-view">Android Week View</a></li>
+<li><a href="https://jakewharton.github.io/butterknife">Butter Knife</a></li>
+<li><a href="https://github.com/google/dagger">Dagger 2</a></li>
+<li><a href="https://github.com/google/gson">Gson</a></li>
+<li><a href="https://github.com/JodaOrg/joda-time">Joda Time</a></li>
+<li><a href="https://github.com/wdullaer/MaterialDateTimePicker">Material DateTime Picker</a></li>
+<li><a href="https://github.com/PhilJay/MPAndroidChart">MPAndroidChart</a></li>
+<li><a href="https://fonts.google.com/specimen/Open+Sans">OpenSans font</a></li>
+<li><a href="https://www.flaticon.com/">Third-party icons</a></li>
+</ul>
+<p>还有一个很喜欢的<a href="https://github.com/iSoron/uhabits">habit tracker</a>突然发现源代码作者放在github上了</p>
+<p>star一下⭐️</p>
+<h3 id="android-2"><strong>Android</strong></h3>
+<ol>
+<li>include标签的目的是解决对布局的重复定义，从而提高代码的复用性。</li>
+</ol>
+<ul>
+<li>include标签如果定义了id，若layout也定义了id，那么会被include的id所覆盖。</li>
+</ul>
+<ol>
+<li><a href="https://developer.android.com/training/multiscreen/screensizes?hl=zh-cn">支持不同的屏幕尺寸</a></li>
+</ol>
+<ul>
+<li>有一说一我感觉官方文档真滴好全，i了。</li>
+</ul>
+<ol>
+<li><a href="https://material.io/guidelines/layout/responsive-ui.html">自适应界面的 Material 指南</a></li>
+</ol>
+<ul>
+<li>马一下这个</li>
+</ul>
+<h2 id="2020-03-28">2020-03-28</h2>
+<h3 id="algorithm-1"><strong>Algorithm</strong></h3>
+<p>字典树</p>
+<p><a href="https://leetcode-cn.com/problems/short-encoding-of-words/solution/99-java-trie-tu-xie-gong-lue-bao-jiao-bao-hui-by-s/">https://leetcode-cn.com/problems/short-encoding-of-words/solution/99-java-trie-tu-xie-gong-lue-bao-jiao-bao-hui-by-s/</a></p>
+<p><code>Arrays.sort()</code> <a href="https://stackoverflow.com/questions/21970719/java-arrays-sort-with-lambda-expression">https://stackoverflow.com/questions/21970719/java-arrays-sort-with-lambda-expression</a></p>
+<p><code>-&gt;</code> <a href="https://www.runoob.com/java/java8-lambda-expressions.html">https://www.runoob.com/java/java8-lambda-expressions.html</a></p>
+<h2 id="2020-03-26">2020-03-26</h2>
+<h3 id="algorithm-2"><strong>Algorithm</strong></h3>
+<p><a href="https://leetcode-cn.com/problems/available-captures-for-rook/">借助数组对坐标进行平移！</a></p>
+<h2 id="2020-03-25">2020-03-25</h2>
+<h3 id="algorithm-3"><strong>Algorithm</strong></h3>
+<p>调整一点代码实现节省时间真的有爽到哈</p>
+<h3 id="杂"><strong>杂</strong></h3>
+<p>最近玩动森玩到日夜颠倒</p>
+<p>time to study!</p>
+<h2 id="2020-03-18">2020-03-18</h2>
+<h3 id="algorithm-4"><strong>Algorithm</strong></h3>
+<p>正着想不明白就反着想嘛</p>
+<p>莫死磕</p>
+<h2 id="2020-03-17">2020-03-17</h2>
+<h3 id="algorithm-5"><strong>Algorithm</strong></h3>
+<p>我终于可以不看题解做出一点题目了</p>
+<p>虽然是简单题</p>
+<p>但是还是比以前好些了555</p>
+<p>keep moving!</p>
+<p>每日刷题能坚持到找到工作的那一天吗</p>
+<p>试试吧试试吧</p>
+<p>说不定成了呢哈哈哈哈</p>
+<h3 id="杂-1"><strong>杂</strong></h3>
+<p>无语</p>
+<p>中午吃完犯困钻到被窝里忘记定闹钟</p>
+<p>然后睡了一下午</p>
+<p>睡成一滩泥巴了</p>
+<h2 id="2020-03-16">2020-03-16</h2>
+<h3 id="环信视频会议集成"><strong>环信视频会议集成</strong></h3>
+<p>集成完了</p>
+<p>集成过程很舒服</p>
+<p>文档详细真是使人愉悦</p>
+<h3 id="android-error"><strong>Android Error</strong></h3>
+<p>java.lang.RuntimeException: Failed to create EGL context: 0x3003</p>
+<p><a href="https://stackoverflow.com/questions/45392309/failed-to-create-egl-context">https://stackoverflow.com/questions/45392309/failed-to-create-egl-context</a></p>
+<h3 id="杂-2"><strong>杂</strong></h3>
+<p>好的</p>
+<p>我是猪</p>
+<p>我在<code>resultCode != RESULT_OK</code>里写了大半天<code>resultCode == RESULT_OK</code>的逻辑</p>
+<h2 id="2020-03-15">2020-03-15</h2>
+<h3 id="环信视频会议"><strong>环信视频会议</strong></h3>
+<p>注册的时候记得新建一个线程！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//新建一个线程来进行网络请求注册
+</span><span class="c1"></span><span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="n">EMClient</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">createAccount</span><span class="o">(</span><span class="s">&#34;robot003&#34;</span><span class="o">,</span> <span class="s">&#34;123456&#34;</span><span class="o">);</span><span class="c1">//同步方法
+</span><span class="c1"></span>      <span class="n">ToastUtils</span><span class="o">.</span><span class="na">showLong</span><span class="o">(</span><span class="s">&#34;注册成功！&#34;</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">HyphenateException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+      <span class="n">ToastUtils</span><span class="o">.</span><span class="na">showLong</span><span class="o">(</span><span class="s">&#34;注册失败&#34;</span><span class="o">+</span><span class="n">e</span><span class="o">.</span><span class="na">getMessage</span><span class="o">()+</span><span class="n">e</span><span class="o">.</span><span class="na">getErrorCode</span><span class="o">());</span>
+
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}).</span><span class="na">start</span><span class="o">();</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>夸一下环信</p>
+<p>API文档太详细了</p>
+<p>用得相当舒爽</p>
+<p>此处diss一万遍阿里云视频会议SDK</p>
+<p>PS: ScreenCaptureManager要记得在onActivityResult做判断啊兄弟</p>
+<h3 id="android-error-1"><strong>Android Error</strong></h3>
+<ol>
+<li>Can&rsquo;t create handler inside thread that has not called Looper.prepare()
+<a href="https://blog.csdn.net/sun_promise/article/details/45168027">https://blog.csdn.net/sun_promise/article/details/45168027</a></li>
+<li>使用AlertDialog报错 You need to use a Theme.AppCompat theme (or descendant) with this activity.之解决
+<a href="https://blog.csdn.net/tiankongcheng6/article/details/78133028">https://blog.csdn.net/tiankongcheng6/article/details/78133028</a></li>
+<li>Unable to add window &ndash; token null is not for an application
+<a href="https://stackoverflow.com/questions/5796611/dialog-throwing-unable-to-add-window-token-null-is-not-for-an-application-wi">https://stackoverflow.com/questions/5796611/dialog-throwing-unable-to-add-window-token-null-is-not-for-an-application-wi</a></li>
+<li>surfaceViewAlready initialized
+publishDesktop之前不要publishCamera就好啦！重复publish就出错了</li>
+</ol>
+<h3 id="handler"><strong>Handler</strong></h3>
+<p><a href="https://juejin.im/post/5910533dac502e006cfe01cd">https://juejin.im/post/5910533dac502e006cfe01cd</a></p>
+<h3 id="杂-3"><strong>杂</strong></h3>
+<p>写代码态度有变端正哦zxq</p>
+<p>稳住稳住</p>
+<p>下一步是好好睡觉</p>
+<p>这周晚上还是睡太晚</p>
+<p>争取11点30上床</p>
+<p>玩一会就睡觉</p>
+<p>晚安😴</p>
+<h2 id="2020-03-14">2020-03-14</h2>
+<h3 id="hexo-theme"><strong>Hexo Theme</strong></h3>
+<p>知乎突然给我推送了个问题：<a href="https://www.zhihu.com/question/316666767">求推荐一款hexo博客主题？</a></p>
+<p>在里头看到了看到<a href="https://github.com/ppoffice/hexo-theme-icarus">icarus</a>一见钟情于是又换主题了</p>
+<p>换的时候碰到一系列莫名其妙小问题</p>
+<p>然后</p>
+<p>我就</p>
+<p>直接</p>
+<p>重装hexo了哈哈哈哈哈哈哈</p>
+<h3 id="访问速度优化"><strong>访问速度优化</strong></h3>
+<p>搞不懂为什么会慢</p>
+<p>已经用Dnspod解析了哇</p>
+<p>明天看看</p>
+<p><a href="https://github.com/SimpleJian/Hexo/blob/master/source/_posts/Hexo%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96.md">Hexo博客访问速度优化</a></p>
+<h3 id="环信视频会议集成-1"><strong>环信视频会议集成</strong></h3>
+<p>本来想今天搞定，结果今天被博客勾走了</p>
+<p>明天做完周一交差！</p>
+<h3 id="杂-4"><strong>杂</strong></h3>
+<p>腾讯企业邮箱有毒哦</p>
+<p>上个月我用得好好的</p>
+<p>能正常收发邮件</p>
+<p>今天闲得无聊给hello@xiaoqizhang.com发了一封邮件结果收不到？？</p>
+<p>垃圾箱里也没有</p>
+<p>我哭辽</p>
+<p>还是乖乖用gmail吧=。=</p>
+<p>另外今天凌晨和月月聊了大半天</p>
+<p>各种想法完全一致，不愧是睡了三年的对床哈哈哈哈哈！！！</p>
+<p>一起冲🦷！</p>
+<h2 id="2020-03-13">2020-03-13</h2>
+<h3 id="android-error---missing-library"><strong>Android Error - Missing Library</strong></h3>
+<p><a href="https://blog.csdn.net/zuo_er_lyf/article/details/78593636">https://blog.csdn.net/zuo_er_lyf/article/details/78593636</a></p>
+<p>如果本来就有其他sdk，且已在src/main/jniLibs下已有文件，那就把环信的sdk也塞到里头去，然后就ok啦。</p>
+<h2 id="2020-03-12">2020-03-12</h2>
+<h3 id="android-error---duplicate-class"><strong>Android Error - Duplicate Class</strong></h3>
+<p>Duplicate class com.hyphenate.EMChatRoomChangeListener found in modules classes.jar (com.hyphenate:hyphenate-sdk:3.6.1) and hyphenatechat_3.6.4.jar (hyphenatechat_3.6.4.jar)
+Duplicate class com.hyphenate.EMClientListener found in modules classes.jar (com.hyphenate:hyphenate-sdk:3.6.1) and hyphenatechat_3.6.4.jar (hyphenatechat_3.6.4.jar)</p>
+<p><a href="https://developer.android.com/studio/build/dependencies#duplicate_classes">https://developer.android.com/studio/build/dependencies#duplicate_classes</a></p>
+<p>找到冲突的删掉就好了</p>
+<h3 id="android-error---program-type-already-present"><strong>Android Error - Program type already present</strong></h3>
+<p><a href="https://www.jianshu.com/p/eee41ec17606">https://www.jianshu.com/p/eee41ec17606</a></p>
+<p><a href="https://blog.csdn.net/qq_35008279/article/details/86310339">https://blog.csdn.net/qq_35008279/article/details/86310339</a></p>
+<p><a href="https://blog.csdn.net/Calvin_zhou/article/details/80880501">https://blog.csdn.net/Calvin_zhou/article/details/80880501</a> ⭐️</p>
+<p>该做的都做了之后，如果还是报错，rebuild一下就ok了！</p>
+<h2 id="2020-03-09">2020-03-09</h2>
+<h3 id="roadmap"><strong>Roadmap</strong></h3>
+<p><a href="https://hackr.io/roadmaps/android-app-developer-roadmap">Android App Developer Roadmap Curated by the Programming Community | Hackr.io</a></p>
+<p><a href="https://medium.com/mindorks/android-development-learning-path-2020-edition-3f464ac56dbf">Android Development Learning Path - 2020 Edition</a></p>
+<h3 id="interview-questions"><strong>Interview Questions</strong></h3>
+<p><a href="https://github.com/MindorksOpenSource/android-interview-questions">Android-interview-questions</a></p>
+<h2 id="2020-03-03">2020-03-03</h2>
+<h3 id="kotlin"><strong>Kotlin</strong></h3>
+<p><a href="https://kotlinlang.org/">English Version</a></p>
+<p><a href="https://www.kotlincn.net/">Chinese Version</a></p>
+<p><a href="https://blog.csdn.net/shichimiyasatone/article/details/97917106">Smart cast to &lsquo;XXX&rsquo; is impossible</a></p>
+<h2 id="2020-03-02">2020-03-02</h2>
+<h3 id="ss"><strong>SS</strong></h3>
+<p>用了好几年一直没在意PAC和全局的区别，哪个舒畅选哪个，今天突然google了一下</p>
+<p><a href="https://www.yuque.com/xiaoqizhang/techdiary/50674685f8d4ec76bc653d7bbf3600be">SS的PAC模式与全局模式</a></p>
+<p><a href="https://www.zybuluo.com/gongzhen/note/472805">SS PAC模式和全局模式的区别</a></p>
+<p>另外ssrcloud涨价了，原来10RMB-100G，现在10元20G，好的我溜了换下一个机场✈️</p>
+<p>这位兄弟总结的巨全</p>
+<p><a href="https://www.evernote.com/shard/s609/client/snv?sn=https://www.evernote.com/shard/s609/sh/087d120a-d07f-4b13-95d4-95af5d573db5%2F43c350e6c55ac4c3">浅谈部分机场（SS/SSR提供商）的使用感受&ndash;毒药笔记持续更新中</a></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">777</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-11-26
+        <a href="https://github.com/hishark/hishark.github.io//commit/4d13c3053228fa495de0cebccfc7cfa8ce9e4e5a" title="update">(4d13c30)</a>
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">原始文档</span>
+      <span class="item-content"><a class="link-to-markdown" href="https://hishark777.com/post/techdiary202003/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+    </p>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/techdiary/">TechDiary</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/my2019/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">My 2019</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/gitbook_techdiary/">
+            <span class="next-text nav-default">借助 Gitbook 搭建一个技术日记簿</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hishark777';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:hishark777@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/hishark777" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/hishark" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/hishark777" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.douban.com/people/hishark/" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.instagram.com/hishark777" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://space.bilibili.com/167148/#/channel/detail?cid=55848" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://hishark777.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>hishark777</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "en".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

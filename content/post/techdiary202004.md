@@ -1,5 +1,5 @@
 ---
-title: 四月 の 技术日记
+title: Tech Diary | 2020.04
 date: 2020-04-01 22:27:09
 tags:
 - TechDiary

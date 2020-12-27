@@ -2,10 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ajax on 777&#39;s Blog</title>
+    
+    
+    
     <link>https://hishark777.com/tags/ajax/</link>
     <description>Recent content in Ajax on 777&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <copyright>hishark777</copyright>
     <lastBuildDate>Mon, 19 Mar 2018 14:28:25 +0000</lastBuildDate>
     
@@ -18,7 +21,18 @@
       <pubDate>Mon, 19 Mar 2018 14:28:25 +0000</pubDate>
       
       <guid>https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</guid>
-      <description>&lt;p&gt;Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。&lt;/p&gt;</description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          &lt;p&gt;Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。&lt;/p&gt;
+          
+        
+        </description>
     </item>
     
   </channel>

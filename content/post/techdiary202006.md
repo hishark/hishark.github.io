@@ -1,5 +1,5 @@
 ---
-title: 过半
+title: Tech Diary | 2020.06
 date: 2020-06-01 19:19:19
 tags:
 - TechDiary

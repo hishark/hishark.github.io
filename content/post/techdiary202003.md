@@ -1,5 +1,5 @@
 ---
-title: 三月 の 技术日记
+title: Tech Diary | 2020.03
 date: 2020-03-01 22:41:57
 tags:
 - TechDiary

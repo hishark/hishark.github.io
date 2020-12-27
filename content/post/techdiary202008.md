@@ -1,5 +1,5 @@
 ---
-title: 最后一个快乐暑假 Part 2
+title: Tech Diary | 2020.08
 date: 2020-08-01 17:26:04
 tags:
 - TechDiary

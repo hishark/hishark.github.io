@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>在 Struts 中应用 Ajax 技术 - 777&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="777" /><meta name="description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。
+" /><meta name="keywords" content="hishark, 777, hishark777, 777&#39;s blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.74.0 with theme even" />
+
+
+<link rel="canonical" href="https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="在 Struts 中应用 Ajax 技术" />
+<meta property="og:description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/" />
+<meta property="article:published_time" content="2018-03-19T14:28:25+00:00" />
+<meta property="article:modified_time" content="2018-03-19T14:28:25+00:00" />
+<meta itemprop="name" content="在 Struts 中应用 Ajax 技术">
+<meta itemprop="description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。">
+<meta itemprop="datePublished" content="2018-03-19T14:28:25&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-19T14:28:25&#43;00:00" />
+<meta itemprop="wordCount" content="1010">
+
+
+
+<meta itemprop="keywords" content="Struts,Ajax," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="在 Struts 中应用 Ajax 技术"/>
+<meta name="twitter:description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hishark777</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="https://www.douban.com/people/hishark/photos">
+        <li class="mobile-menu-item">相册</li>
+      </a><a href="https://hishark777.gitbook.io/777-interview-notes/">
+        <li class="mobile-menu-item">校招笔记</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hishark777</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="https://www.douban.com/people/hishark/photos">相册</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">在 Struts 中应用 Ajax 技术</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-19 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 学习笔记 </a>
+            </div>
+          <span class="more-meta"> 约 1010 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
+      </div>
+    </header>
+
+    
+  <div class="post-outdated">
+    <div class="warn">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2018-03-19T14:28:25" title="March 19, 2018">March 19, 2018</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
+    <div class="post-content">
+      <p>Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。</p>
+<h4 id="一个简单的应用">一个简单的应用</h4>
+<p>注册时输入用户名，要检测该用户名是否已被注册。</p>
+<h5 id="在webcontentweb-inflib中添加jar包">在\WebContent\WEB-INF\lib中添加jar包</h5>
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpi4a7fbkzj305m00nwe9.jpg)</center>
+<h5 id="在jsp中配置库">在jsp中配置库</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;%@ taglib uri=&#34;/struts-tags&#34; prefix=&#34;s&#34;%&gt;
+&lt;%@ taglib uri=&#34;/struts-dojo-tags&#34; prefix=&#34;sx&#34; %&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="添加头部">添加头部</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;head&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=GB18030&#34;&gt;
+&lt;title&gt;用户注册&lt;/title&gt;
+&lt;sx:head/&gt;
+&lt;/head&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="添加一个链接">添加一个链接</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;!-- 添加一个链接检查用户是否存在 --&gt;
+&lt;s:url id=&#34;check&#34; value=&#34;checkUser.action&#34;&gt;&lt;/s:url&gt;
+
+&lt;s:form id=&#34;regForm&#34; action=&#34;regAction&#34; method=&#34;post&#34;&gt;
+&lt;s:textfield label=&#34;用户名&#34; name=&#34;user.userName&#34; title=&#34;请输入用户名！&#34;/&gt;
+
+&lt;!-- 
+	参数含义：
+	1.href：提交给哪个action处理，这里即提交给name为checkUser的action处理。
+	2.formId：提交的是哪个表单，这里提交id为regForm的表单。
+	3.targets：结果返回到哪里，这里就是返回到下面id为receiveResult的盒子里。
+--&gt;
+&lt;sx:a href=&#34;%{check}&#34; formId=&#34;regForm&#34; targets=&#34;receiveResult&#34;&gt;check&lt;/sx:a&gt;
+
+&lt;sx:div id=&#34;receiveResult&#34; theme=&#34;simple&#34;&gt;&lt;/sx:div&gt;
+&lt;/s:form&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="userservice接口以及接口的实现">UserService接口以及接口的实现</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">UserService</span> <span class="o">{</span>
+	<span class="kt">boolean</span> <span class="nf">checkUser</span><span class="o">(</span><span class="n">User</span> <span class="n">user</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">UserServiceImp</span> <span class="kd">implements</span> <span class="n">UserService</span> <span class="o">{</span>
+	<span class="c1">//从数据库里取数据要用db里的一个查询方法！
+</span><span class="c1"></span>	<span class="n">DbConnection</span> <span class="n">db</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DbConnection</span><span class="o">();</span>
+	<span class="c1">//取数据先要放到这个里头 利用db查询得到的是一个resultset结果集
+</span><span class="c1"></span>	<span class="n">ResultSet</span> <span class="n">rs</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+	
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">checkUser</span><span class="o">(</span><span class="n">User</span> <span class="n">user</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">// TODO Auto-generated method stub
+</span><span class="c1"></span>		<span class="kt">boolean</span> <span class="n">bl</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+		<span class="n">String</span> <span class="n">strSql</span> <span class="o">=</span> <span class="s">&#34;select * from user_table where userName=N&#39;&#34;</span><span class="o">+</span><span class="n">user</span><span class="o">.</span><span class="na">getUserName</span><span class="o">()+</span><span class="s">&#34;&#39;&#34;</span><span class="o">;</span>
+		<span class="n">rs</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">(</span><span class="n">strSql</span><span class="o">);</span>
+		<span class="k">try</span> <span class="o">{</span>
+			<span class="k">while</span><span class="o">(</span><span class="n">rs</span><span class="o">.</span><span class="na">next</span><span class="o">())</span> <span class="o">{</span>
+				<span class="n">bl</span><span class="o">=</span><span class="kc">true</span><span class="o">;</span>
+				<span class="k">break</span><span class="o">;</span>
+			<span class="o">}</span>
+		<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">SQLException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+			<span class="c1">// TODO Auto-generated catch block
+</span><span class="c1"></span>			<span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+		<span class="o">}</span>
+		<span class="k">return</span> <span class="n">bl</span><span class="o">;</span>
+	<span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="在regaction中添加checkuser方法">在RegAction中添加checkUser方法</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">User</span> <span class="n">user</span><span class="o">;</span>
+<span class="n">String</span> <span class="n">checkUserResult</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="o">;</span>
+<span class="n">UserService</span> <span class="n">us</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UserServiceImp</span><span class="o">();</span>
+
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">checkUser</span><span class="o">()</span> <span class="o">{</span>
+	<span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&#34;checkDone&#34;</span><span class="o">;</span>
+	<span class="k">if</span><span class="o">(</span><span class="n">us</span><span class="o">.</span><span class="na">checkUser</span><span class="o">(</span><span class="n">user</span><span class="o">))</span> <span class="o">{</span>
+		<span class="n">checkUserResult</span> <span class="o">=</span> <span class="s">&#34;用户名已存在！换一个啦！&#34;</span><span class="o">;</span>
+	<span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+		<span class="n">checkUserResult</span> <span class="o">=</span> <span class="s">&#34;用户名不存在！可以使用！&#34;</span><span class="o">;</span>
+	<span class="o">}</span>	
+	<span class="k">return</span> <span class="n">str</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="在strutsxml中配置checkuseraction">在struts.xml中配置checkUser.action</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;checkUser&#34;</span> <span class="na">class=</span><span class="s">&#34;jxnu.edu.cn.x3321.action.RegAction&#34;</span> <span class="na">method=</span><span class="s">&#34;checkUser&#34;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;result</span> <span class="na">name=</span><span class="s">&#34;checkDone&#34;</span><span class="nt">&gt;</span>/reg/ajaxResult.jsp<span class="nt">&lt;/result&gt;</span>
+<span class="nt">&lt;/action&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="ajaxresultjsp中即可获得checkuserresult的值">ajaxResult.jsp中即可获得checkUserResult的值</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;s:property value=&#34;checkUserResult&#34;/&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="整个jsp页面将返回到regjsp中id为receiveresult的盒子里">整个jsp页面将返回到reg.jsp中id为receiveResult的盒子里</h5>
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpi5an2gvoj308a01i3yb.jpg)</center>
+<hr>
+#### 踩了一些坑
+<ol>
+<li>struts.xml改动了就要重启服务器。</li>
+<li>前面的工程中有写过一个注册校验的功能，检测用户名是否存在时会提交整个表单所以无法通过校验，会报错。</li>
+<li>表单提交中文没有正确获得中文，而是获得<code>&amp;#21834;&amp;#21834;&amp;#21834;</code>编码，把struts中这一句的gbk换成utf-8即可。</li>
+</ol>
+<center>
+<div>
+~~`<constant name="struts.i18n.encoding" value="gbk"></constant>`~~
+`<constant name="struts.i18n.encoding" value="utf-8"></constant>`
+</div></center>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">777</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-03-19
+        
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">原始文档</span>
+      <span class="item-content"><a class="link-to-markdown" href="https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+    </p>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/struts/">Struts</a>
+          <a href="/tags/ajax/">Ajax</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E9%95%BF%E7%97%98%E4%BA%86/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">怎么又长痘了</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/as-github%E8%B8%A9%E5%9D%91/">
+            <span class="next-text nav-default">AS - Github 踩坑</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hishark777';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:hishark777@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/hishark777" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/hishark" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/hishark777" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.douban.com/people/hishark/" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.instagram.com/hishark777" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="https://space.bilibili.com/167148/#/channel/detail?cid=55848" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://hishark777.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>hishark777</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "en".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
