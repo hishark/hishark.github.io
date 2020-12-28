@@ -32,7 +32,7 @@ disqusShortname = "hishark777"
     title = "777's Blog"
     subtitle = ""
     keywords = ""
-    copyright = "hishark777"
+    copyright = "© 2017-2020 ✌️ hishark777"
     menuMore = "其他"
     writtenBy = "Written by 777"
     readMore = "Read more"
@@ -46,7 +46,7 @@ disqusShortname = "hishark777"
     lastModDisplay = "Modified:"
 
     [languages.en.params.logo]
-      logoText = "hishark777"
+      logoText = "777's Blog"
       logoHomeLink = "/"
     # or
     #
