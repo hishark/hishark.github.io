@@ -4,6 +4,12 @@ theme = "hello-friend"
 paginate = 15
 disqusShortname = "hishark777"
 
+[blackfriday]
+extensionsmask = ["noIntraEmphasis"]
+fractions = false
+
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
   # dir name of your blog content (default is `content/posts`).

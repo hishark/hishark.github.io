@@ -255,7 +255,7 @@
 <span style="color:#f92672">}</span>
 </code></pre></div><h2 id="2-转换布局">2. 转换布局</h2>
 <p>如果想将其他布局转换为 <code>ConstraintLayout</code> 约束布局，可以直接在 Component Tree 窗口中，右键该布局，点击 <strong>Convert xxx to ConstraintLayout</strong> 即可。</p>
-<!-- raw HTML omitted -->
+<img src="https://developer.android.google.cn/training/constraint-layout/images/layout-editor-convert-to-constraint_2x.png?hl=zh-cn" width="400">
 <h2 id="3-约束条件">3. 约束条件</h2>
 <p>要在 <code>ConstraintLayout</code> 中定义某个控件的位置，必须为该控件添加至少一个水平约束条件和一个垂直约束条件。</p>
 <p>每个约束条件均定义了控件在竖轴或者横轴上的位置，同时均表示了当前控件与其他控件、父布局或隐形引导线之间的连接或对齐方式。因此每个控件在每个轴上都至少有一个约束条件，但通常情况下会需要更多约束条件。</p>
@@ -279,11 +279,11 @@
 <li>在 Component Tree 窗口中，选择要放入屏障内的控件，然后将其拖动到屏障组件中。</li>
 <li>在 Component Tree 中选择屏障，打开 Attributes 窗口，然后设置 barrierDirection。</li>
 </ol>
-<!-- raw HTML omitted -->
+<!-- 现在，您可以从另一个控件创建屏障约束。 -->
 <p>我们还可以将屏障内的控件约束到屏障。这样就可以确保屏障中的所有控件始终相互对齐，即使我们并不知道哪个控件最长或最高。同时，还可以在屏障内添加引导线，以确保屏障的位置“最小”。</p>
 <p>与引导线类似，屏障是一条隐藏的线，我们可以用它来约束控件。屏障不会定义自己的位置。相反，屏障的位置会随着其中所含控件的位置而移动。如果希望将控件限制到一组控件而不是某个特定控件时，屏障约束就非常好用。</p>
 <p>例如在下图中，控件 C 被约束在屏障的右侧。该屏障设置为控件 A 和控件 B 的右侧。因此，屏障根据控件 A 或控件 B 的右侧是否为最右侧来移动。</p>
-<!-- raw HTML omitted -->
+<img src="https://developer.android.google.cn/training/constraint-layout/images/barrier-constraint_2x.png?hl=zh-cn" width="400">
 <h3 id="32-创建约束条件">3.2 创建约束条件</h3>
 <ol>
 <li>

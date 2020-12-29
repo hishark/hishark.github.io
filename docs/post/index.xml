@@ -10,10 +10,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2017-2020 ✌️ hishark777</copyright>
-    <lastBuildDate>Tue, 01 Dec 2020 08:40:36 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Dec 2020 16:46:47 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>二〇二〇小记</title>
+      <link>https://hishark777.com/post/my2020/</link>
+      <pubDate>Tue, 29 Dec 2020 16:46:47 +0800</pubDate>
+      
+      <guid>https://hishark777.com/post/my2020/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          &lt;p&gt;为什么是小记&lt;/p&gt;
+&lt;p&gt;因为这一年感觉&lt;/p&gt;
+&lt;p&gt;好像没有干什么&lt;/p&gt;
+&lt;p&gt;又好像干了点什么&lt;/p&gt;
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>Tech Diary | 2020.12</title>
@@ -193,7 +216,7 @@
         
         
         
-          &lt;!-- raw HTML omitted --&gt;
+          &lt;!-- 我决定等论文ppt做的多了之后再整一个论文笔记的分类，不然之后就这一篇岂不是很尴尬OTZ --&gt;
 &lt;p&gt;好的，为了毕业，开始读论文 T T&lt;/p&gt;
           
         
@@ -654,7 +677,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/zh/student/&#34;&gt;学生申请&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;选择邮箱申请。&lt;/li&gt;
 &lt;li&gt;邮箱会收到一封邮件，邮件内的链接科学上网才可以打开。&lt;/li&gt;
-&lt;li&gt;按提示操作。&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;按提示操作。&lt;/br&gt;&lt;/li&gt;
 &lt;li&gt;打开IDEA，验证页面使用账号密码登陆，会报错&lt;code&gt;Connection Refused&lt;/code&gt;，打开终端输入&lt;code&gt;vim /etc/hosts&lt;/code&gt;把jetbrains那一行注释掉即可。&lt;/li&gt;
 &lt;/ol&gt;
           
@@ -1064,7 +1087,7 @@ btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;
         
         
         
-          &lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+          &lt;p&gt;&lt;embed src=&#34;//music.163.com/style/swf/widget.swf?sid=480286151&amp;type=2&amp;auto=1&amp;width=320&amp;height=66&#34; width=&#34;340&#34; height=&#34;86&#34;  allowNetworking=&#34;all&#34;&gt;&lt;/embed&gt;
 学校里到处都是穿着学士服拍照的学长学姐
 天天在工作室都能听到窗外的毕业快乐
 一年年看下来
@@ -1132,7 +1155,7 @@ btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;
         
         
         
-          &lt;!-- raw HTML omitted --&gt;
+          &lt;img src=&#34;https://user-images.githubusercontent.com/29684201/48276067-1096cd80-e482-11e8-84e2-f07cbb508985.JPG&#34; width=&#34;350&#34; height=&#34;350&#34;&gt;
 &lt;p&gt;小爱心终于到了 比心&lt;/p&gt;
           
         

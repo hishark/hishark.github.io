@@ -244,7 +244,7 @@
 <h4 id="一个简单的应用">一个简单的应用</h4>
 <p>注册时输入用户名，要检测该用户名是否已被注册。</p>
 <h5 id="在webcontentweb-inflib中添加jar包">在\WebContent\WEB-INF\lib中添加jar包</h5>
-<!-- raw HTML omitted -->
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpi4a7fbkzj305m00nwe9.jpg)</center>
 <h5 id="在jsp中配置库">在jsp中配置库</h5>
 <pre><code class="language-jsp" data-lang="jsp">&lt;%@ taglib uri=&quot;/struts-tags&quot; prefix=&quot;s&quot;%&gt;
 &lt;%@ taglib uri=&quot;/struts-dojo-tags&quot; prefix=&quot;sx&quot; %&gt;
@@ -322,13 +322,19 @@ UserService us <span style="color:#f92672">=</span> <span style="color:#66d9ef">
 </code></pre></div><h5 id="ajaxresultjsp中即可获得checkuserresult的值">ajaxResult.jsp中即可获得checkUserResult的值</h5>
 <pre><code class="language-jsp" data-lang="jsp">&lt;s:property value=&quot;checkUserResult&quot;/&gt;
 </code></pre><h5 id="整个jsp页面将返回到regjsp中id为receiveresult的盒子里">整个jsp页面将返回到reg.jsp中id为receiveResult的盒子里</h5>
-<!-- raw HTML omitted -->
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpi5an2gvoj308a01i3yb.jpg)</center>
+<hr>
+#### 踩了一些坑
 <ol>
 <li>struts.xml改动了就要重启服务器。</li>
 <li>前面的工程中有写过一个注册校验的功能，检测用户名是否存在时会提交整个表单所以无法通过校验，会报错。</li>
 <li>表单提交中文没有正确获得中文，而是获得<code>&amp;#21834;&amp;#21834;&amp;#21834;</code>编码，把struts中这一句的gbk换成utf-8即可。</li>
 </ol>
-<!-- raw HTML omitted -->
+<center>
+<div>
+~~`<constant name="struts.i18n.encoding" value="gbk"></constant>`~~
+`<constant name="struts.i18n.encoding" value="utf-8"></constant>`
+</div></center>
     </div>
     
       

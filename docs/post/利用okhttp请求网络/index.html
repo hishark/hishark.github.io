@@ -364,8 +364,14 @@
     <span style="color:#f92672">}</span>
 
 <span style="color:#f92672">}</span>
-</code></pre></div><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</code></pre></div><hr>
+#### 踩坑
+<ol>
+<li>如果报错<font color="#FF8C00"><code>FATAL EXCEPTION: OkHttp Dispatcher java.lang.IllegalStateException: closed</code></font>，检查<font color="#FF8C00"><code>response.body().string()</code></font>是否使用了多次，这个只能用一次。原因：从源码中可以发现调用一次<font color="#FF8C00"><code>.string</code></font>方法后又有close方法，流会被关闭，所以会报错。</li>
+<li>直接在主线程中实例化一个<font color="#FF8C00"><code>Handler</code></font>对象传给<font color="#FF8C00"><code>LoginUtil</code></font>工具类，在工具类中<font color="#FF8C00"><code>OkHttp</code></font>的异步请求会有一个回调方法是在子线程中执行，拿到网络请求结果之后直接通过<font color="#FF8C00"><code>Handler</code></font>传回主线程更新<font color="#FF8C00"><code>UI</code></font>即可。*AsyncTask未解决，应该哪一步出了点错，下次试一下。*</li>
+<li>一开始想学之前用<font color="#FF8C00"><code>HttpClient</code></font>那样从<font color="#FF8C00"><code>Entity</code></font>中拿到<font color="#FF8C00"><code>Json</code></font>对象结果<font color="#FF8C00"><code>OkHttp</code></font>的<font color="#FF8C00"><code>Response</code></font>没有<font color="#FF8C00"><code>getEntity</code></font>噢。查了查发现<font color="#FF8C00"><code>Gson</code></font>很方便很好用。</li>
+<li>往表单请求体<font color="#FF8C00"><code>FormBody</code></font>中传递键值对时，要注意<font color="#FF8C00"><code>key</code></font>的值要和服务器端写的<font color="#FF8C00"><code>LoginActivityAction</code></font>中的变量同名噢不然得不到数据- -，有两个字母忘记大写了坑了我半天。</li>
+</ol>
 <h4 id="tips">TIPS</h4>
 <ol>
 <li>以上是Struts2框架，SSM把URL最后改为<code>@RequestMapping</code>设置的名字即可。</li>

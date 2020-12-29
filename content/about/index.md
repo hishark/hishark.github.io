@@ -44,5 +44,6 @@ showReadingTime = false
 - [LiuJ](https://lliujj.github.io)
 - [AmyZhoucc](https://amyzhoucc.github.io/)
 - [Sophia-fez](https://sophia-fez.blog.csdn.net/)
+- [Zijian Wu](https://zijianlalala.github.io/)
 
 <!-- - [Mo](http://moqiling.net) -->

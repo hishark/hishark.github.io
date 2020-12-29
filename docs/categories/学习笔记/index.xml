@@ -130,7 +130,7 @@
         
         
         
-          &lt;!-- raw HTML omitted --&gt;
+          &lt;!-- 我决定等论文ppt做的多了之后再整一个论文笔记的分类，不然之后就这一篇岂不是很尴尬OTZ --&gt;
 &lt;p&gt;好的，为了毕业，开始读论文 T T&lt;/p&gt;
           
         
@@ -291,7 +291,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/zh/student/&#34;&gt;学生申请&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;选择邮箱申请。&lt;/li&gt;
 &lt;li&gt;邮箱会收到一封邮件，邮件内的链接科学上网才可以打开。&lt;/li&gt;
-&lt;li&gt;按提示操作。&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;按提示操作。&lt;/br&gt;&lt;/li&gt;
 &lt;li&gt;打开IDEA，验证页面使用账号密码登陆，会报错&lt;code&gt;Connection Refused&lt;/code&gt;，打开终端输入&lt;code&gt;vim /etc/hosts&lt;/code&gt;把jetbrains那一行注释掉即可。&lt;/li&gt;
 &lt;/ol&gt;
           
