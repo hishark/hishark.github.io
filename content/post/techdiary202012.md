@@ -16,6 +16,30 @@ authors:
 
 <!--more-->
 
+## 2020-12-30 Wed
+
+### VS Code
+
+[VS-Code-Extension-Doc-ZH](https://github.com/Liiked/VS-Code-Extension-Doc-ZH)
+
+有一个想法，有空了试试看
+
+### IconPark
+
+字节跳动的开源图标库：http://iconpark.bytedance.com/
+
+### Hugo
+
+换了个主题发现 html 代码无法渲染了 查了一下配置里加点东西就成了
+
+[Hugo博客中.md文件中嵌入的html代码无法被渲染](https://d.cosx.org/d/421422-hugomdhtml)
+
+hugo 真的比 hexo 好用好多
+
+最喜欢的是 url
+
+实在是受不了 hexo 那个日期拼接的 url 了- -
+
 ## 2020-12-29 Tue
 
 ### chrome extension

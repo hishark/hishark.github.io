@@ -1,7 +1,7 @@
 ---
 title: "ARTS 1"
 date: 2020-12-28T09:29:49+08:00
-draft: true
+draft: false
 tags:
 - ARTS
 categories: 
@@ -24,28 +24,73 @@ categories:
 
 ## Algorithm
 
-这周做了几个算法题：
+这周做了几个算法题
 
-- [LeetCode 205. 同构字符串](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/string/leetcode-205)
-- 
+都是贪心题
+
+- [LeetCode 122. 买卖股票的最佳时机 II](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-122)
+  - 因为交易次数不受限，如果可以把所有的上坡全部收集到，一定是利益最大化的。——[seven](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/mai-mai-gu-piao-de-zui-jia-shi-ji-ii-by-leetcode-s/658886)
+- [LeetCode 316. 去除重复字母](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-316)
+  - 这个有点难想嗷
+- [LeetCode 605. 种花问题](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-605)
+  - 这个判断条件官方题解写太好了
+- [LeetCode 860. 柠檬水找零](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-860)
+  - 核心是模拟
 
 ## Review
 
 Medium 上的优质文章有很多，找了一篇对比 MVC、MVP、MVVM 的文章看看：[MVC vs MVP vs MVVM](https://levelup.gitconnected.com/mvc-vs-mvp-vs-mvvm-35e0d4b933b4)
 
-这篇文章简单的对比
+顺便翻译了一下：[译] MVX 一锅端 （ing）
+
+感觉以后每周的 R 环节确实可以看一篇译一篇诶
+
+不戳
 
 ## Tips
 
+一直看人使用 Markdown 的脚注
 
+自己还没用过，来学一下
+
+使用方法很简单：
+
+- 在正文中想要添加脚注的地方加上 `[^1]`
+- 在文章末尾加上 `[^1]: Hello Footnote`
+
+然后就可以愉快地使用脚注啦[^1]
 
 ## Share
 
-- [要想读懂HashMap的源码，你得这样看](https://mp.weixin.qq.com/s/WDEnG3KroN5D0xbQxe-WBg)
+[要想读懂HashMap的源码，你得这样看](https://mp.weixin.qq.com/s/WDEnG3KroN5D0xbQxe-WBg)
 
-- [用烂的LruCache，你真的完全懂了么？](https://mp.weixin.qq.com/s/5hK2JFghfh4JTnxrqBurHg)
+- HashMap 允许空键和空值。
 
+- 最多允许一条记录的键为空，允许多条记录的值为空。
+- HashMap 为基本操作（get 和 put）提供了恒定时间的性能。
+- HashMap 实例有两个影响其性能的参数：初始容量（initial capacity）和负荷系数（load factor）。通常，默认的负荷系数（0.75）在时间和空间成本之间提供了一个很好的权衡，在大部分下情况下，不建议修改该值。如果设为较高的值，可以减少空间开销，但是会增加查找成本。
+- HashMap 是线程不安全的，可以使用 Collections 的 synchronizedMap 来使 HashMap 具备线程安全的能力，或者使用 ConcurrentHashMap。
+- 有个很重要的字段table数组，类型是Node<K,V>[]，也就是哈希桶数组，table 数组的初始长度是 16，负荷系数（load factor）默认值是0.75f，threshold 是 HashMap 所能容纳的最大数据量的节点（Node）个数，有如下公式：`threshold = loadFactor * length`，loadFactor是负荷系数，length 是数组长度，也就是数组在定义好长度后，负荷系数越大，所能容量的节点就越多，前面也提到了，当节点个数超过这个数值时，HashMap 就会扩容，扩容后的容量是原来的两倍。
+- HashMap 使用哈希表存储数据。哈希表可以使用四种方式来解决哈希冲突。
+- HashMap 是使用链地址法来解决哈希冲突的。
+- Map 是一个接口，它是将键映射到值的对象，映射不能包含重复的键，每个键最多可以映射一个值，常见的 Map 实现类有 HashMap、ConcurrentHashMap、Hashtable、LinkedHashMap 和 TreeMap 等。
+- ConcurrentHashMap 是线程安全的 HashMap，JDK1.8 之前使用分段锁，JDK1.8 之后抛弃了分段锁，利用内置锁 synchronized 和 CAS 来保证线程安全。
+- Hashtable 是线程安全的，但是并发性不如 ConcurrentHashMap，不建议使用。
+- LinkedHashMap 通过维护一个双向链表来保证迭代顺序，可以实现 LRU 算法。
+- TreeMap 基于红黑树。
+- 解决哈希冲突的四种方法：开放地址法、链地址法、再哈希法、建立公共溢出区。
 
+[用烂的LruCache，你真的完全懂了么？](https://mp.weixin.qq.com/s/5hK2JFghfh4JTnxrqBurHg)
 
+> 看到这篇想起了三年前写的一篇博客：
+>
+> 当时用 ListView 的时候一滑动就崩溃 搞得糊里糊涂的
+>
+> 后面一查才知道是加载图片导致的 OOM
+>
+> 使用 LruCache 来缓存图片就可以避免 OOM 的发生
 
+Glide 的内存缓存就是通过 LruCache 实现的，LruCache 内部持有的是 LinkedHashMap。
+
+[^1]: Hello Footnote
 

@@ -10,10 +10,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2017-2020 ✌️ hishark777</copyright>
-    <lastBuildDate>Mon, 23 Nov 2020 19:20:55 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Dec 2020 09:29:49 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ARTS 1</title>
+      <link>https://hishark777.com/post/arts1/</link>
+      <pubDate>Mon, 28 Dec 2020 09:29:49 +0800</pubDate>
+      
+      <guid>https://hishark777.com/post/arts1/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          &lt;p&gt;2020 年的最后一周，不如就来开启第一个 ARTS 吧。&lt;/p&gt;
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>使用 ConstraintLayout 构建自适应布局</title>
