@@ -26,8 +26,6 @@ categories:
 
 这周做了几个算法题
 
-都是贪心题
-
 - [LeetCode 122. 买卖股票的最佳时机 II](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-122)
   - 因为交易次数不受限，如果可以把所有的上坡全部收集到，一定是利益最大化的。——[seven](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/mai-mai-gu-piao-de-zui-jia-shi-ji-ii-by-leetcode-s/658886)
 - [LeetCode 316. 去除重复字母](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-316)
@@ -36,6 +34,8 @@ categories:
   - 这个判断条件官方题解写太好了
 - [LeetCode 860. 柠檬水找零](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-860)
   - 核心是模拟
+- [LeetCode 239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
+  - 好题
 
 ## Review
 
