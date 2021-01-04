@@ -34,18 +34,31 @@ categories:
   - 这个判断条件官方题解写太好了
 - [LeetCode 860. 柠檬水找零](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-860)
   - 核心是模拟
-- [LeetCode 239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
-  - 好题
+- [LeetCode 239. 滑动窗口最大值](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/slidewindow/leetcode-239)
+  - 如题
+- [LeetCode 86. 分隔链表](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/pointer/leetcode-86)
+  - 双指针
 
 ## Review
 
 Medium 上的优质文章有很多，找了一篇对比 MVC、MVP、MVVM 的文章看看：[MVC vs MVP vs MVVM](https://levelup.gitconnected.com/mvc-vs-mvp-vs-mvvm-35e0d4b933b4)
 
-顺便翻译了一下：[译] MVX 一锅端 （ing）
+不过类似的 MVX 的总结其实看过不少了
 
-感觉以后每周的 R 环节确实可以看一篇译一篇诶
+文末提到三者最主要的区别：
 
-不戳
+**Performance Evaluation** — When we are testing the UI performance, MVP turns out to be the one with the highest reliability and lowest hindrance when it comes to rendering frames. Data binding in MVVM creates an additional overload that could drastically affect its performance when performing complex tasks.
+
+**Compatibility** — When testing the patterns based on their compatibility, MVVM was the best of the lot due to its data binding which had a positive impact. MVP fared better than MVC, which had serious restating issues.
+
+**Modifiability** — When we talk about design patterns, it is evident that it should be modifiable since that gives us the option of adding new features and strategies into our app.
+
+- Based on these factors, we observed that changes are very less in MVP and MVVM, with MVVM contributing a lot towards maintainability.
+- MVC tends to increase the number of changes in the majority of the cases.
+
+**References** — In MVC, the View doesn’t have reference to the Controller while in MVP, the View has reference to the presenter and in MVVM, the View has reference to the View-Model.
+
+**Entry Point** — For MVC, the entry point to the application is the Controller whereas, for MVP and MVVM, the entry point is the View.
 
 ## Tips
 
