@@ -1,10 +1,20 @@
 ---
 title: "ARTS 2"
 date: 2021-01-04T13:49:44+08:00
-draft: true
+draft: false
+tags:
+- ARTS
+categories: 
+- 学习笔记
 ---
 
-2021 也要是元气满满的一年！
+第二周～
+
+这周做点每日一题
+
+看一篇论文
+
+学一学调试技巧
 
 <!--more-->
 
@@ -24,8 +34,12 @@ draft: true
 
 - 1月4号 [LeetCode 509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
   - 嗯嗯谢谢大哥
-- 1月5号 LeetCode 830. 较大分组的位置
+- 1月5号 [LeetCode 830. 较大分组的位置](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/string/leetcode-830)
   - 数组简单题
+- 1月6号 [LeetCode 5. 最长回文子串](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/dp/leetcode-5)
+  - 这个题居然还没做
+- 1月7号 [LeetCode 547. 省份数量](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/bfs/leetcode-547)
+  - 考察连通分量的确定
 
 ## Review
 
@@ -34,6 +48,8 @@ draft: true
 看一下 [ESRGAN](https://arxiv.org/abs/1809.00219)
 
 Keynote 真滴好好用嗷
+
+[Slide - ESRGAN](https://www.icloud.com/keynote/0uAdsLn3Lep_9UpsyT_ZL_TVw#ESRGAN)
 
 ## Tips
 
@@ -45,3 +61,4 @@ Keynote 真滴好好用嗷
 
 ## Share
 
+还没看 ⌛️
