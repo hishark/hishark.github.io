@@ -35,7 +35,7 @@ showReadingTime = false
 
 - [Shawvey](https://shawvey.github.io)
 - [Yiya](https://yiyacheng.github.io)
-- [Glassy](glassywu.github.io)
+- [Glassy](https://glassywu.github.io)
 - [Qian](https://miaodzz.github.io/)
 - [Tocz9ea](https://blog.tocz9ea.com)
 - [Jerakrs](https://jerakrs.github.io/)
