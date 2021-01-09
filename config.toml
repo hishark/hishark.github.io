@@ -2,7 +2,6 @@ baseURL = "https://hishark777.com"
 title   = "777's blog"
 languageCode = "en-us"
 theme = "hello-friend-ng-test"
-disqusShortname = "hishark777"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
