@@ -30,7 +30,7 @@ tags:
 
 [https://realfavicongenerator.net/](https://realfavicongenerator.net/)
 
-这个生成 favicon 也太方便了
+这个生成 favicon 也太方便了8
 
 ## 2021-01-08 Fri
 

@@ -7,31 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 04 Jan 2021 13:49:44 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2020 19:20:55 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>ARTS 2</title>
-      <link>https://hishark777.com/post/arts2/</link>
-      <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
-      
-      <guid>https://hishark777.com/post/arts2/</guid>
-      <description>&lt;p&gt;第二周～&lt;/p&gt;
-&lt;p&gt;这周做点每日一题&lt;/p&gt;
-&lt;p&gt;看一篇论文&lt;/p&gt;
-&lt;p&gt;学一学调试技巧&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ARTS 1</title>
-      <link>https://hishark777.com/post/arts1/</link>
-      <pubDate>Mon, 28 Dec 2020 09:29:49 +0800</pubDate>
-      
-      <guid>https://hishark777.com/post/arts1/</guid>
-      <description>&lt;p&gt;2020 年的最后一周，不如就来开启第一个 ARTS 吧。&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>使用 ConstraintLayout 构建自适应布局</title>
@@ -107,6 +86,36 @@
       <description>&lt;p&gt;Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。&lt;/p&gt;
 &lt;p&gt;纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？&lt;/p&gt;
 &lt;p&gt;查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Genymotion 运行基于 ARM 架构的 APP</title>
+      <link>https://hishark777.com/post/genymotion/</link>
+      <pubDate>Wed, 01 Apr 2020 15:55:55 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/genymotion/</guid>
+      <description>&lt;p&gt;前阵子需要做个直播demo，用到了阿里云的直播sdk，阿里云文档中说明了只支持arm架构的cpu，而Android Studio自带的模拟器只能顺畅的跑x86架构的虚拟机，跑arm64架构的简直卡成树懒，查了一下发现Android Studio自带的AVD就是这个德行，遂放弃，转用Genymotion。&lt;/p&gt;
+&lt;p&gt;二月底决定毕业找Android岗的时候，下单了一台Pixel 2XL做自己以后的测试机，这篇文章写于购入Pixel之前，现在发现真机+模拟器一起用的测试环境还是挺舒服的。BTW谷歌亲儿子是真的好用啊，原生Android太香了，不出啥意外的话我以后就是iPhone主力机+Pixel备用机的快乐配置了哈哈哈哈哈。&lt;/p&gt;
+&lt;p&gt;好的扯远了，聊正事。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>借助 Gitbook 搭建一个技术日记簿</title>
+      <link>https://hishark777.com/post/gitbook_techdiary/</link>
+      <pubDate>Sat, 15 Feb 2020 13:24:17 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/gitbook_techdiary/</guid>
+      <description>&lt;p&gt;整了个Gitbook挂到博客下面
+来写技术日记&lt;/p&gt;
+&lt;p&gt;去年十二月偶然发现了&lt;a href=&#34;https://www.github.com/joyeecheung/diary&#34;&gt;joyee的tech-diary&lt;/a&gt;
+觉得挺有意思于是依葫芦画瓢也给自己整了个&lt;a href=&#34;https://www.hishark777.com/diary/&#34;&gt;777-Tech-Diary&lt;/a&gt;
+用了大概一个月发现了一些小问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;查看某日日记时无法直接查看前一日和后一日的内容&lt;/li&gt;
+&lt;li&gt;日历小bug有点多&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。&lt;/p&gt;
+&lt;p&gt;找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。&lt;/p&gt;</description>
     </item>
     
   </channel>

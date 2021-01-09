@@ -5,7 +5,7 @@ draft: false
 tags:
 - ARTS
 categories: 
-- 学习笔记
+- 打卡周报
 ---
 
 第二周～
