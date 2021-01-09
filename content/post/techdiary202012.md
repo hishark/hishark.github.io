@@ -26,7 +26,7 @@ authors:
 
 ### IconPark
 
-字节跳动的开源图标库：http://iconpark.bytedance.com/
+字节跳动的开源图标库：[http://iconpark.bytedance.com/](http://iconpark.bytedance.com/)
 
 ### Hugo
 

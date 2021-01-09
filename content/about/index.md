@@ -1,5 +1,5 @@
 +++
-title = "关于我"
+title = "关于"
 date = 1997-02-10
 comments = true
 showReadingTime = false

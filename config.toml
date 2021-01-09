@@ -42,7 +42,6 @@ disableHugoGeneratorInject = false
 [blackfriday]
   hrefTargetBlank = true
 
-
 [taxonomies]
   tag      = "tags"
   category = "categories"
@@ -97,9 +96,9 @@ disableHugoGeneratorInject = false
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
   # footerLeft = "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
-  footerLeft = "1"
+  # footerLeft = "1"
   # footerRight = "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
-  footerRight = "2"
+  # footerRight = "2"
 
   # Colors for favicons
   #
@@ -124,6 +123,7 @@ disableHugoGeneratorInject = false
     path     = "/img/avatar.jpg"
     alt      = "Portrait"
     maxWidth = "250px"
+    position = "center"
 
   # Social icons
   [[params.social]]
@@ -155,7 +155,6 @@ disableHugoGeneratorInject = false
     subtitle  = ""
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
 
   [languages.fr]
     subtitle  = ""

@@ -28,11 +28,6 @@
   </url>
   
   <url>
-    <loc>https://hishark777.com/post/</loc>
-    <lastmod>2021-01-09T11:49:40+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-01-09T11:49:40+08:00</lastmod>
   </url>
@@ -909,6 +904,11 @@
                 hreflang="en"
                 href="https://hishark777.com/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://hishark777.com/post/</loc>
+    <lastmod>2020-11-26T19:41:49+08:00</lastmod>
   </url>
   
   <url>
