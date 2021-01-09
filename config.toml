@@ -13,7 +13,7 @@ rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 # googleAnalytics = ""
-disqusShortname = "hishark777"
+# disqusShortname = "hishark777"
 
 archetypeDir = "archetypes"
 contentDir   = "content"
