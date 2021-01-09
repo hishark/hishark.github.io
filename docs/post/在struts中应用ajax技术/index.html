@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
     <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -7,7 +7,7 @@
 <meta name="author" content="777 ">
 <meta name="description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。
 " />
-<meta name="keywords" content="777, Struts, Ajax" />
+<meta name="keywords" content=", Struts, Ajax" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/" />
@@ -46,7 +46,7 @@
 <meta itemprop="description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。">
 <meta itemprop="datePublished" content="2018-03-19T14:28:25&#43;00:00" />
 <meta itemprop="dateModified" content="2018-03-19T14:28:25&#43;00:00" />
-<meta itemprop="wordCount" content="178">
+<meta itemprop="wordCount" content="945">
 <meta itemprop="image" content="https://hishark777.com/"/>
 
 
@@ -133,26 +133,33 @@
 
             <div class="content">
                 
-    <main class="post">
+  <main class="post">
 
-        <div class="post-info">
-            
-            </p>
-        </div>
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2分钟
 
-        <article>
-            <h2 class="post-title"><a href="https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/">在 Struts 中应用 Ajax 技术</a></h2>
+        
+      </p>
+    </div>
 
-            
+    <article>
+      <h1 class="post-title">
+        <a href="https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/">在 Struts 中应用 Ajax 技术</a>
+      </h1>
 
-            
+      
 
-            <div class="post-content">
-                <p>Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。</p>
+      <div class="post-content">
+        <p>Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。</p>
 <h4 id="一个简单的应用">一个简单的应用</h4>
 <p>注册时输入用户名，要检测该用户名是否已被注册。</p>
 <h5 id="在webcontentweb-inflib中添加jar包">在\WebContent\WEB-INF\lib中添加jar包</h5>
-<!-- raw HTML omitted -->
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpi4a7fbkzj305m00nwe9.jpg)</center>
 <h5 id="在jsp中配置库">在jsp中配置库</h5>
 <pre><code class="language-jsp" data-lang="jsp">&lt;%@ taglib uri=&quot;/struts-tags&quot; prefix=&quot;s&quot;%&gt;
 &lt;%@ taglib uri=&quot;/struts-dojo-tags&quot; prefix=&quot;sx&quot; %&gt;
@@ -230,20 +237,26 @@ UserService us <span style="color:#f92672">=</span> <span style="color:#66d9ef">
 </code></pre></div><h5 id="ajaxresultjsp中即可获得checkuserresult的值">ajaxResult.jsp中即可获得checkUserResult的值</h5>
 <pre><code class="language-jsp" data-lang="jsp">&lt;s:property value=&quot;checkUserResult&quot;/&gt;
 </code></pre><h5 id="整个jsp页面将返回到regjsp中id为receiveresult的盒子里">整个jsp页面将返回到reg.jsp中id为receiveResult的盒子里</h5>
-<!-- raw HTML omitted -->
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpi5an2gvoj308a01i3yb.jpg)</center>
+<hr>
+#### 踩了一些坑
 <ol>
 <li>struts.xml改动了就要重启服务器。</li>
 <li>前面的工程中有写过一个注册校验的功能，检测用户名是否存在时会提交整个表单所以无法通过校验，会报错。</li>
 <li>表单提交中文没有正确获得中文，而是获得<code>&amp;#21834;&amp;#21834;&amp;#21834;</code>编码，把struts中这一句的gbk换成utf-8即可。</li>
 </ol>
-<!-- raw HTML omitted -->
-            </div>
-        </article>
+<center>
+<div>
+~~`<constant name="struts.i18n.encoding" value="gbk"></constant>`~~
+`<constant name="struts.i18n.encoding" value="utf-8"></constant>`
+</div></center>
+      </div>
+    </article>
 
-        <hr />
+    <hr />
 
-        <div class="post-info">
-            
+    <div class="post-info">
+      
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
@@ -252,7 +265,7 @@ UserService us <span style="color:#f92672">=</span> <span style="color:#66d9ef">
         
     </p>
 
-            
+      
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
@@ -260,8 +273,93 @@ UserService us <span style="color:#f92672">=</span> <span style="color:#66d9ef">
         
     </p>
 
-  		</div>
-    </main>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        945字
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2018-03-19 22:28
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://hishark777.com/post/%E9%95%BF%E7%97%98%E4%BA%86/">
+                <span class="button__icon">←</span>
+                <span class="button__text">怎么又长痘了</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://hishark777.com/post/as-github%E8%B8%A9%E5%9D%91/">
+                <span class="button__text">AS - Github 踩坑</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+  </main>
 
             </div>
 
