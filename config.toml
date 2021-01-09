@@ -1,5 +1,5 @@
 baseURL = "https://hishark777.com/"
-title   = "hishark777"
+title   = "Xiaoqi Zhang"
 languageCode = "zh-cn"
 theme = "hello-friend-edit"
 
@@ -127,6 +127,7 @@ disableHugoGeneratorInject = false
     path     = "/img/avatar.jpg"
     alt      = "Portrait"
     maxWidth = "250px"
+    position = "center"
 
   # Social icons
   [[params.social]]
