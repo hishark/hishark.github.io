@@ -26,6 +26,12 @@ tags:
 
 `single.html` 要放到 `layouts/_default/` 下
 
+### favicon
+
+[https://realfavicongenerator.net/](https://realfavicongenerator.net/)
+
+这个生成 favicon 也太方便了
+
 ## 2021-01-08 Fri
 
 ### Android 技术博客
