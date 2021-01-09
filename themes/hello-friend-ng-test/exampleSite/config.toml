@@ -1,13 +1,12 @@
 baseURL = "https://example.com"
-title   = "777's blog"
+title   = "Hello Friend NG"
 languageCode = "en-us"
-theme = "hello-friend-ng-test"
-disqusShortname = "hishark777"
+theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-paginate  = 25
+paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
@@ -26,7 +25,7 @@ buildExpired = false
 canonifyURLs = true
 
 enableRobotsTXT = true
-enableGitInfo   = true
+enableGitInfo   = false
 enableEmoji     = true
 enableMissingTranslationPlaceholders = false
 disableRSS     = false
@@ -38,7 +37,7 @@ disableHugoGeneratorInject = false
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "777"
+  name = "Jane Doe"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -60,7 +59,7 @@ disableHugoGeneratorInject = false
   keywords = ""
   images = [""]
 
-  homeSubtitle = "欢迎来到我的 bb 空间"
+  homeSubtitle = "Hello Friend NG"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -76,7 +75,7 @@ disableHugoGeneratorInject = false
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
   #
-  enableSharingButtons = false
+  enableSharingButtons = true
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -95,10 +94,9 @@ disableHugoGeneratorInject = false
 
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
+  #
   # footerLeft = "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
-  footerLeft = " "
   # footerRight = "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
-  footerRight = " "
 
   # Colors for favicons
   #
@@ -108,7 +106,7 @@ disableHugoGeneratorInject = false
     theme = "#252627"
 
   [params.logo]
-    logoText     = "$ cd /777/blog"
+    logoText     = "$ cd /home/"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -127,29 +125,23 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/hishark777"
-
-  [[params.social]]
-    name = "instagram"
-    url  = "https://www.instagram.com/hishark777"
+    url  = "https://twitter.com/"
 
   [[params.social]]
     name = "email"
-    url  = "mailto:hishark777@gmail.com"
+    url  = "mailto:nobody@example.com"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/hishark"
-
-
-
-  [[params.social]]
-    name = "telegram"
-    url  = "https://t.me/hishark777"
+    url  = "https://github.com/"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/"
+    url  = "https://www.linkedin.com/"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://www.stackoverflow.com/"
 
 [languages]
   [languages.en]
@@ -165,36 +157,9 @@ disableHugoGeneratorInject = false
 [menu]
   [[menu.main]]
     identifier = "about"
-    name       = "关于"
+    name       = "About"
     url        = "about/"
-    weight = 1
-
   [[menu.main]]
     identifier = "posts"
-    name = "归档"
-    url = "posts/"
-    weight = 2
-
-  [[menu.main]]
-    identifier = "tags"
-    name = "标签"
-    url = "/tags"
-    weight = 3
-
-  [[menu.main]]
-    identifier = "categories"
-    name = "分类"
-    url = "/categories"
-    weight = 4
-
-  [[menu.main]]
-    identifier = ""
-    name = "相册"
-    url = "https://www.douban.com/people/hishark/photos"
-    weight = 5
-
-  [[menu.main]]
-    identifier = ""
-    name = "校招笔记"
-    url = "https://hishark777.gitbook.io/777-interview-notes/"
-    weight = 6
+    name       = "Posts"
+    url        = "posts/"
