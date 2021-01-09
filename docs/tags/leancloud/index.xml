@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LeanCloud on 777&#39;s blog</title>
-    <link>https://example.com/tags/leancloud/</link>
+    <link>https://hishark777.com/tags/leancloud/</link>
     <description>Recent content in LeanCloud on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 30 Sep 2019 09:35:44 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/leancloud/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hishark777.com/tags/leancloud/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LeanCloud 中国版迁移至国际版</title>
-      <link>https://example.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</link>
+      <link>https://hishark777.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</link>
       <pubDate>Mon, 30 Sep 2019 09:35:44 +0000</pubDate>
       
-      <guid>https://example.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</guid>
+      <guid>https://hishark777.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</guid>
       <description>&lt;p&gt;昨天小翁提醒我LeanCloud中国版要停止没绑定备案域名的应用服务了，刚打算把评论系统换回来必力，点击详情发现LeanCloud国际版可以用，做个记录。&lt;/p&gt;</description>
     </item>
     

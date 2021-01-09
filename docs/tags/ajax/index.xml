@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ajax on 777&#39;s blog</title>
-    <link>https://example.com/tags/ajax/</link>
+    <link>https://hishark777.com/tags/ajax/</link>
     <description>Recent content in Ajax on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 19 Mar 2018 14:28:25 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/ajax/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hishark777.com/tags/ajax/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>在 Struts 中应用 Ajax 技术</title>
-      <link>https://example.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</link>
+      <link>https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Mon, 19 Mar 2018 14:28:25 +0000</pubDate>
       
-      <guid>https://example.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</guid>
       <description>&lt;p&gt;Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。&lt;/p&gt;</description>
     </item>
     

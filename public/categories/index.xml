@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>分类 on Even - A super concise theme for Hugo</title>
+    <title>分类 on 777&#39;s blog</title>
     <link>https://hishark777.com/categories/</link>
-    <description>Recent content in 分类 on Even - A super concise theme for Hugo</description>
+    <description>Recent content in 分类 on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
 	<atom:link href="https://hishark777.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>学习笔记</title>
       <link>https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 23 Nov 2020 19:20:55 +0800</pubDate>
+      <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
       
       <guid>https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
@@ -22,9 +23,18 @@
     <item>
       <title>技术日记</title>
       <link>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</link>
-      <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
+      <pubDate>Sun, 03 Jan 2021 12:38:50 +0800</pubDate>
       
       <guid>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>碎碎念</title>
+      <link>https://hishark777.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+      <pubDate>Tue, 29 Dec 2020 16:46:47 +0800</pubDate>
+      
+      <guid>https://hishark777.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
       <description></description>
     </item>
     
@@ -34,15 +44,6 @@
       <pubDate>Thu, 16 Jul 2020 00:35:42 +0000</pubDate>
       
       <guid>https://hishark777.com/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>碎碎念</title>
-      <link>https://hishark777.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
-      <pubDate>Wed, 15 Jul 2020 14:55:52 +0000</pubDate>
-      
-      <guid>https://hishark777.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
       <description></description>
     </item>
     

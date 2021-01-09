@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>标签 on 777&#39;s blog</title>
-    <link>https://example.com/tags/</link>
+    <link>https://hishark777.com/tags/</link>
     <description>Recent content in 标签 on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hishark777.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ARTS</title>
-      <link>https://example.com/tags/arts/</link>
+      <link>https://hishark777.com/tags/arts/</link>
       <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
       
-      <guid>https://example.com/tags/arts/</guid>
+      <guid>https://hishark777.com/tags/arts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TechDiary</title>
-      <link>https://example.com/tags/techdiary/</link>
+      <link>https://hishark777.com/tags/techdiary/</link>
       <pubDate>Sun, 03 Jan 2021 12:38:50 +0800</pubDate>
       
-      <guid>https://example.com/tags/techdiary/</guid>
+      <guid>https://hishark777.com/tags/techdiary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DIARIES</title>
-      <link>https://example.com/tags/diaries/</link>
+      <link>https://hishark777.com/tags/diaries/</link>
       <pubDate>Tue, 29 Dec 2020 16:46:47 +0800</pubDate>
       
-      <guid>https://example.com/tags/diaries/</guid>
+      <guid>https://hishark777.com/tags/diaries/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>https://example.com/tags/android/</link>
+      <link>https://hishark777.com/tags/android/</link>
       <pubDate>Mon, 23 Nov 2020 19:20:55 +0800</pubDate>
       
-      <guid>https://example.com/tags/android/</guid>
+      <guid>https://hishark777.com/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>中文排版</title>
-      <link>https://example.com/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/</link>
+      <link>https://hishark777.com/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/</link>
       <pubDate>Tue, 27 Oct 2020 18:18:26 +0800</pubDate>
       
-      <guid>https://example.com/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/</guid>
+      <guid>https://hishark777.com/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://example.com/tags/hugo/</link>
+      <link>https://hishark777.com/tags/hugo/</link>
       <pubDate>Tue, 27 Oct 2020 15:00:32 +0800</pubDate>
       
-      <guid>https://example.com/tags/hugo/</guid>
+      <guid>https://hishark777.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Database</title>
-      <link>https://example.com/tags/database/</link>
+      <link>https://hishark777.com/tags/database/</link>
       <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
       
-      <guid>https://example.com/tags/database/</guid>
+      <guid>https://hishark777.com/tags/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>paper</title>
-      <link>https://example.com/tags/paper/</link>
+      <link>https://hishark777.com/tags/paper/</link>
       <pubDate>Tue, 29 Sep 2020 13:39:31 +0000</pubDate>
       
-      <guid>https://example.com/tags/paper/</guid>
+      <guid>https://hishark777.com/tags/paper/</guid>
       <description></description>
     </item>
     
     <item>
       <title>super-resolution</title>
-      <link>https://example.com/tags/super-resolution/</link>
+      <link>https://hishark777.com/tags/super-resolution/</link>
       <pubDate>Tue, 29 Sep 2020 13:39:31 +0000</pubDate>
       
-      <guid>https://example.com/tags/super-resolution/</guid>
+      <guid>https://hishark777.com/tags/super-resolution/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://example.com/tags/markdown/</link>
+      <link>https://hishark777.com/tags/markdown/</link>
       <pubDate>Mon, 07 Sep 2020 20:06:19 +0000</pubDate>
       
-      <guid>https://example.com/tags/markdown/</guid>
+      <guid>https://hishark777.com/tags/markdown/</guid>
       <description></description>
     </item>
     

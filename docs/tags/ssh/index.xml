@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ssh on 777&#39;s blog</title>
-    <link>https://example.com/tags/ssh/</link>
+    <link>https://hishark777.com/tags/ssh/</link>
     <description>Recent content in ssh on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 23 Nov 2019 09:29:24 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hishark777.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>在同一台电脑上绑定 Github 和阿里云 Code</title>
-      <link>https://example.com/post/git_ssh/</link>
+      <link>https://hishark777.com/post/git_ssh/</link>
       <pubDate>Sat, 23 Nov 2019 09:29:24 +0000</pubDate>
       
-      <guid>https://example.com/post/git_ssh/</guid>
+      <guid>https://hishark777.com/post/git_ssh/</guid>
       <description>&lt;p&gt;老板昨天扔了个阿里云code的项目，电脑之前已经绑定了Github的账号，于是查了一下如何在同一台电脑上绑定两个账号，存档记录一下。&lt;/p&gt;</description>
     </item>
     

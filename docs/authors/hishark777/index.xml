@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hey, I&#39;m 777 on 777&#39;s blog</title>
-    <link>https://example.com/authors/hishark777/</link>
+    <link>https://hishark777.com/authors/hishark777/</link>
     <description>Recent content in Hey, I&#39;m 777 on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
-	<atom:link href="https://example.com/authors/hishark777/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hishark777.com/authors/hishark777/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

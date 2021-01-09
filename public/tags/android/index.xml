@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on 777&#39;s Blog</title>
+    <title>Android on 777&#39;s blog</title>
     <link>https://hishark777.com/tags/android/</link>
-    <description>Recent content in Android on 777&#39;s Blog</description>
+    <description>Recent content in Android on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>hishark777</copyright>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 23 Nov 2020 19:20:55 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
@@ -108,36 +108,6 @@
       
       <guid>https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/</guid>
       <description>&lt;p&gt;终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Glide 大法好</title>
-      <link>https://hishark777.com/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/</link>
-      <pubDate>Fri, 09 Mar 2018 13:03:01 +0000</pubDate>
-      
-      <guid>https://hishark777.com/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/</guid>
-      <description>&lt;p&gt;项目突然要加几个界面
-然后打开了将近两个月没摸过的的AS
-findViewById都给忘了我怕是智障&lt;/p&gt;
-&lt;p&gt;真是开张大吉呢一运行就OOM
-记得上学期被这个鬼东西烦到爆炸
-搜了很多图片加载的工具类都没有用
-然后就自己压缩图片让他勉强显示&lt;/p&gt;
-&lt;p&gt;现在回头看我可能是猪吧
-Glide这么美好的库为什么上学期没发现
-简直是居家旅行必备产品啊呜呜呜
-导个包然后用上这一句
-什么OOM给我见鬼去886&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>LruCache</title>
-      <link>https://hishark777.com/post/lrucache/</link>
-      <pubDate>Sat, 30 Dec 2017 21:28:47 +0000</pubDate>
-      
-      <guid>https://hishark777.com/post/lrucache/</guid>
-      <description>&lt;p&gt;一直拖着图片缓存的小视频没看今天看了一哈
-梳理一下&lt;/p&gt;</description>
     </item>
     
   </channel>

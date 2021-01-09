@@ -1,2 +1,1 @@
 User-agent: *
-Sitemap: https://hishark777.com/sitemap.xml

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>super-resolution on 777&#39;s Blog</title>
+    <title>super-resolution on 777&#39;s blog</title>
     <link>https://hishark777.com/tags/super-resolution/</link>
-    <description>Recent content in super-resolution on 777&#39;s Blog</description>
+    <description>Recent content in super-resolution on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>hishark777</copyright>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 29 Sep 2020 13:39:31 +0000</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/tags/super-resolution/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,7 @@
       <pubDate>Tue, 29 Sep 2020 13:39:31 +0000</pubDate>
       
       <guid>https://hishark777.com/post/srgan/</guid>
-      <description>&lt;!-- 我决定等论文ppt做的多了之后再整一个论文笔记的分类，不然之后就这一篇岂不是很尴尬OTZ --&gt;
+      <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;好的，为了毕业，开始读论文 T T&lt;/p&gt;</description>
     </item>
     

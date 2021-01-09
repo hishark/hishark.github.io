@@ -1,155 +1,157 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Facial Beauty Prediction - 777&#39;s Blog</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author" content="777" /><meta name="description" content="人工智能课程概论作业——论文复现 期末汇报存档
-" /><meta name="keywords" content="hishark, 777, hishark777, 777&#39;s blog" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.74.0 with theme even" />
-
-
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="777 ">
+<meta name="description" content="人工智能课程概论作业——论文复现 期末汇报存档
+" />
+<meta name="keywords" content=", ML, 论文复现" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://hishark777.com/post/facial_beauty_prediction/" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+    <title>
+        
+            Facial Beauty Prediction :: 777&#39;s blog  — Hello Friend NG Theme
+        
+    </title>
 
 
 
-<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
 
 
-<meta property="og:title" content="Facial Beauty Prediction" />
-<meta property="og:description" content="人工智能课程概论作业——论文复现
-期末汇报存档" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://hishark777.com/post/facial_beauty_prediction/" />
-<meta property="article:published_time" content="2019-11-18T20:46:21+00:00" />
-<meta property="article:modified_time" content="2020-11-26T19:41:49+08:00" />
+
+<link rel="stylesheet" href="https://hishark777.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://hishark777.com/favicon-16x16.png">
+    <link rel="manifest" href="https://hishark777.com/site.webmanifest">
+    <link rel="mask-icon" href="https://hishark777.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://hishark777.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
 <meta itemprop="name" content="Facial Beauty Prediction">
 <meta itemprop="description" content="人工智能课程概论作业——论文复现
 期末汇报存档">
 <meta itemprop="datePublished" content="2019-11-18T20:46:21&#43;00:00" />
 <meta itemprop="dateModified" content="2020-11-26T19:41:49&#43;08:00" />
-<meta itemprop="wordCount" content="2377">
+<meta itemprop="wordCount" content="239">
+<meta itemprop="image" content="https://hishark777.com"/>
 
 
 
-<meta itemprop="keywords" content="ML,论文复现," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="ML,论文复现," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hishark777.com"/>
+
 <meta name="twitter:title" content="Facial Beauty Prediction"/>
 <meta name="twitter:description" content="人工智能课程概论作业——论文复现
 期末汇报存档"/>
 
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
 
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
 
-</head>
-<body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Hishark777</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
-      </a><a href="/about/">
-        <li class="mobile-menu-item">关于</li>
-      </a><a href="https://www.douban.com/people/hishark/photos">
-        <li class="mobile-menu-item">相册</li>
-      </a><a href="https://hishark777.gitbook.io/777-interview-notes/">
-        <li class="mobile-menu-item">校招笔记</li>
-      </a>
-  </ul>
-</nav>
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">Hishark777</a>
-</div>
+    <meta property="og:title" content="Facial Beauty Prediction" />
+<meta property="og:description" content="人工智能课程概论作业——论文复现
+期末汇报存档" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/post/facial_beauty_prediction/" />
+<meta property="og:image" content="https://hishark777.com"/>
+<meta property="article:published_time" content="2019-11-18T20:46:21+00:00" />
+<meta property="article:modified_time" content="2020-11-26T19:41:49+08:00" />
 
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">关于</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="https://www.douban.com/people/hishark/photos">相册</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a>
-      </li>
-  </ul>
-</nav>
-    </header>
 
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-    
-    <header class="post-header">
-      <h1 class="post-title">Facial Beauty Prediction</h1>
 
-      <div class="post-meta">
-        <span class="post-time"> 2019-11-18 </span>
-        <div class="post-category">
-            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 学习笔记 </a>
-            </div>
-          <span class="more-meta"> 约 2377 字 </span>
-          <span class="more-meta"> 预计阅读 5 分钟 </span>
+
+    <meta property="article:section" content="学习笔记" />
+
+
+
+    <meta property="article:published_time" content="2019-11-18 20:46:21 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://hishark777.com/" style="text-decoration: none;">
+    <div class="logo">
         
-      </div>
-    </header>
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /777/blog</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
 
-    
-    <div class="post-content">
-      <p>人工智能课程概论作业——论文复现
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://hishark777.com/about/">关于</a></li><li><a href="https://hishark777.com/posts/">归档</a></li><li><a href="https://hishark777.com/tags">标签</a></li><li><a href="https://hishark777.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://hishark777.com/post/facial_beauty_prediction/">Facial Beauty Prediction</a></h2>
+
+            
+
+            
+
+            <div class="post-content">
+                <p>人工智能课程概论作业——论文复现
 期末汇报存档</p>
 <h2 id="1-简介">1 简介</h2>
 <h3 id="1-1-论文简介">1-1 论文简介</h3>
@@ -159,15 +161,11 @@
 <h2 id="2-数据集">2 数据集</h2>
 <p>    SCUT-5500由5500张正脸人像照片组成，其中包括2000个亚洲女性、2000个亚洲男性、750个白种女性以及750个白种男性。照片的来源主要是互联网，亚洲人的照片大部分来源于<a href="datatang.com">数据堂</a>，白种人的照片大部分来源于<a href="https://wilmabainbridge.com/facememorability2.html">10k US Adult Faces Database </a>。对照片的评分共由60个人完成，每个人都对5500张照片进行了颜值打分，最后得到了330000个分数，分数区间处于[1,5]。</p>
 <p>    有意思的是这60个人很有可能都是华南理工大学的学生和教职工，从另一个层面来看，根据这个数据集训练出来的模型很大程度上反应了华南理工大学师生对人脸的喜好。</p>
-<center>
-<img src="https://i.loli.net/2020/03/06/t8GedRIl5nYWVP4.jpg" style="zoom: 35%;" />
-</center>
+<!-- raw HTML omitted -->
 <h2 id="3-数据分析">3 数据分析</h2>
 <h3 id="3-1-平均得分">3-1 平均得分</h3>
 <p>    经过60个人的评分最终得到了330000个分数，对每张照片的所有得分取平均求出每张照片的平均得分作为最终得分。</p>
-<center>
-<img src="https://i.loli.net/2020/03/06/DWQ417PfTuM32Hn.png" style="zoom:33%;" />
-</center>
+<!-- raw HTML omitted -->
 <h3 id="3-2-异常值">3-2 异常值</h3>
 <p>    遍历所有人脸得分，若发现有评分与平均分相差2分以上，就将该评分视为异常值，并进行剔除。整个数据集中的异常值占比如以下表格所示。</p>
 <p>    从表格中可以看出，异常值相较于总数目来说非常少，所以剔除异常值后造成的影响可忽略不计。</p>
@@ -208,32 +206,18 @@
 <h3 id="3-3-分数分布">3-3 分数分布</h3>
 <p>    由于数据集中的异常值占比较小，原始数据和预处理数据的分布基本相似，因此分别使用剔除了异常值的四个子集数据来可视化SCUT-FBP5500数据集的分数分布，如下图所示。</p>
 <p>    可以看到有超过一半的照片评分都在2～3分这个路人阶段，1～2分和4～5分的极端情况占比较小。</p>
-<center><img src="https://i.loli.net/2020/03/06/bFD5uPBQdZrgJOK.png"  style="zoom: 40%;" /><img src="https://i.loli.net/2020/03/06/6CpdnPIEFb2w8MS.png"  style="zoom: 40%;" /><img src="https://i.loli.net/2020/03/06/k3gX9PoZ4VDAIuC.png" style="zoom: 40%;" /><img src="https://i.loli.net/2020/03/06/pDFdHn5PIj8OhEV.png"  style="zoom: 40%;" /></center>
+<!-- raw HTML omitted -->
 <h3 id="3-4-人脸特征向量提取">3-4 人脸特征向量提取</h3>
 <p>    使用人脸识别库<a href="https://github.com/ageitgey/face_recognition/">Face Recognition</a>从人脸照片中提取到128维的人脸特征向量如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">feature_vector</span> <span class="o">=</span>
-  <span class="p">[</span><span class="o">-</span><span class="mf">5.35460114e-02</span><span class="p">,</span>  <span class="mf">1.04834020e-01</span><span class="p">,</span>  <span class="mf">5.82005121e-02</span><span class="p">,</span> <span class="o">-</span><span class="mf">6.23208508e-02</span><span class="p">,</span>
-   <span class="o">-</span><span class="mf">1.20127812e-01</span><span class="p">,</span>  <span class="mf">1.96827948e-03</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.26909046e-02</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.48328632e-01</span><span class="p">,</span>
-   <span class="mf">1.40360817e-01</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.83582366e-01</span><span class="p">,</span>  <span class="mf">2.92252243e-01</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.40107957e-02</span><span class="p">,</span>
-   <span class="o">......</span>           <span class="o">......</span>           <span class="o">......</span>          <span class="o">......</span>
-   <span class="mf">6.61701858e-02</span><span class="p">,</span>  <span class="mf">8.83736014e-02</span><span class="p">,</span>  <span class="mf">1.50460765e-01</span><span class="p">,</span>  <span class="mf">4.80800048e-02</span><span class="p">,</span>
-   <span class="mf">2.50568688e-02</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.27672938e-02</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.44506165e-01</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.89822307e-02</span><span class="p">,</span>
-   <span class="mf">6.45350441e-02</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.25964147e-02</span><span class="p">,</span>  <span class="mf">5.43840826e-02</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.32909557e-02</span><span class="p">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="4-模型">4 模型</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">feature_vector <span style="color:#f92672">=</span>
+  [<span style="color:#f92672">-</span><span style="color:#ae81ff">5.35460114e-02</span>,  <span style="color:#ae81ff">1.04834020e-01</span>,  <span style="color:#ae81ff">5.82005121e-02</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">6.23208508e-02</span>,
+   <span style="color:#f92672">-</span><span style="color:#ae81ff">1.20127812e-01</span>,  <span style="color:#ae81ff">1.96827948e-03</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">5.26909046e-02</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1.48328632e-01</span>,
+   <span style="color:#ae81ff">1.40360817e-01</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1.83582366e-01</span>,  <span style="color:#ae81ff">2.92252243e-01</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">4.40107957e-02</span>,
+   <span style="color:#f92672">......</span>           <span style="color:#f92672">......</span>           <span style="color:#f92672">......</span>          <span style="color:#f92672">......</span>
+   <span style="color:#ae81ff">6.61701858e-02</span>,  <span style="color:#ae81ff">8.83736014e-02</span>,  <span style="color:#ae81ff">1.50460765e-01</span>,  <span style="color:#ae81ff">4.80800048e-02</span>,
+   <span style="color:#ae81ff">2.50568688e-02</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">4.27672938e-02</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2.44506165e-01</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">5.89822307e-02</span>,
+   <span style="color:#ae81ff">6.45350441e-02</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">4.25964147e-02</span>,  <span style="color:#ae81ff">5.43840826e-02</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">5.32909557e-02</span>]
+</code></pre></div><h2 id="4-模型">4 模型</h2>
 <p>    本论文共训练了两类模型来进行颜值预测，其中包括浅层预测与深层预测。浅层预测使用了三种浅层机器学习模型——线性回归模型、高斯回归模型、支持向量回归模型。深层预测使用了三种卷积神经网络——AlexNet、ResNet18、ResNext50。</p>
 <h3 id="4-1-浅层预测">4-1 浅层预测</h3>
 <h4 id="4-1-1-模型训练">4-1-1 模型训练</h4>
@@ -241,17 +225,15 @@
 <h4 id="4-1-2-模型性能分析">4-1-2 模型性能分析</h4>
 <p>    在每次交叉验证时都计算出皮尔逊相关系数（PC）、平均绝对误差（MAE）、均方根误差（RMSE）来衡量模型的性能，经过10次交叉验证后，将10次计算的PC、MAR、RMSE取平均数得到最后的值。</p>
 <p>    对数据集的四个子集——亚洲女性（AF）、亚洲男性（AM）、白种女性（CF）、白种男性（CM）通过10折交叉验证后计算了PC、MAE、RMSE的平均值如下表所示。</p>
-<p><img src="https://i.loli.net/2020/03/06/fknPwC3WNSzQOlR.png" style="zoom:50%;" /></p>
+<p><!-- raw HTML omitted --></p>
 <p>    对整个数据集通过10折交叉验证后计算了PC、MAE、RMSE的平均值如下表所示。可以看到支持向量回归模型是三种回归模型中表现最好的模型，相关系数最高，误差最小。</p>
-<p><img src="https://i.loli.net/2020/03/06/hVBxHwfLjIEoNZd.png" style="zoom: 37%;" /></p>
+<p><!-- raw HTML omitted --></p>
 <h4 id="4-1-3-实际得分vs预测得分">4-1-3 实际得分VS预测得分</h4>
 <p>    对测试集进行测试时，将预测得分记录下来与实际得分进行对比，得到三个回归模型的得分折线对比图如下。橙线为预测得分的折线，蓝线为实际得分的折线，可以看到预测效果还是不错的。</p>
-<center><img src="https://i.loli.net/2020/03/06/QIN8XjvT5Votxq9.png" style="zoom: 25%;" /><img src="https://i.loli.net/2020/03/06/I8iD3jGRl5XgZWB.png" style="zoom: 25%;" /><img src="https://i.loli.net/2020/03/06/N6jTh4sF8xHcLSD.png" style="zoom: 25%;" /></center>
+<!-- raw HTML omitted -->
 <h3 id="4-2-深层预测">4-2 深层预测</h3>
 <p>    本项目使用到的caffe深度学习框架需要使用CUDA进行GPU加速，同时CUDA只支持Nvidia图形卡，由于我电脑的图形卡不是N卡，只能使用CPU，所以无法使用GPU进行模型训练，耗费时间过长，故直接使用作者已训练好的模型进行5折交叉验证。</p>
-<center>
-<img src="https://i.loli.net/2020/03/06/jgwDlrIGQK5AOJN.png" style="zoom: 30%;" />
-</center>
+<!-- raw HTML omitted -->
 <h4 id="4-2-1-模型性能分析">4-2-1 模型性能分析</h4>
 <p>    与浅层预测略有不同，在深度预测中，使用5折交叉验证对测试集进行验证。图片减去均值后，再进行训练和测试，会提高速度和精度。这里通过caffe自带的用于计算平均值的c++接口对每次交叉验证的测试集计算平均值，并保存为一个均值文件，在之后的测试中可以直接使用这个均值来相减，而不需要对测试图片重新计算。</p>
 <p>    将5次交叉验证得到的PC、MAE、RMSE取平均值得到最终的结果，可以看到三个不同结构的卷积神经网络中表现最好的为<strong>ResNeXt-50</strong>——皮尔逊相关系数最高，误差最小。</p>
@@ -394,25 +376,25 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://i.loli.net/2020/03/06/qRJkUa4mGo57vbt.jpg" width="100" /></td>
+<td align="center"><!-- raw HTML omitted --></td>
 <td align="center">3.86</td>
 <td align="center">3.92</td>
 <td align="center"><strong>3.89</strong></td>
 </tr>
 <tr>
-<td align="center"><img src="https://i.loli.net/2020/03/06/fpRkXYAuzGJ8jTE.png" width="100" /></td>
+<td align="center"><!-- raw HTML omitted --></td>
 <td align="center">4.04</td>
 <td align="center">4.13</td>
 <td align="center"><strong>4.09</strong></td>
 </tr>
 <tr>
-<td align="center"><img src="https://i.loli.net/2020/03/06/GV4KEHd3nU1hOty.png" width="100" /></td>
+<td align="center"><!-- raw HTML omitted --></td>
 <td align="center">3.45</td>
 <td align="center">3.84</td>
 <td align="center"><strong>3.65</strong></td>
 </tr>
 <tr>
-<td align="center"><img src="https://i.loli.net/2020/03/06/ghvxmb8aUuek4t6.png" width="100" /></td>
+<td align="center"><!-- raw HTML omitted --></td>
 <td align="center">4.11</td>
 <td align="center">4.27</td>
 <td align="center"><strong>4.19</strong></td>
@@ -431,139 +413,62 @@
 <li><a href="https://towardsdatascience.com/how-attractive-are-you-in-the-eyes-of-deep-neural-network-3d71c0755ccc">How Attractive Are You in the Eyes of Deep Neural Network?</a></li>
 <li><a href="https://github.com/jackhuntcn/facial_beauty_prediction">facial_beauty_prediction</a></li>
 </ul>
-    </div>
+            </div>
+        </article>
 
-    <div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">文章作者</span>
-    <span class="item-content">777</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">上次更新</span>
-    <span class="item-content">
-        2020-11-26
-        <a href="https://github.com/hishark/hishark.github.io//commit/4d13c3053228fa495de0cebccfc7cfa8ce9e4e5a" title="update">(4d13c30)</a>
-    </span>
-  </p>
-  <p class="copyright-item">
-      <span class="item-title">原始文档</span>
-      <span class="item-content"><a class="link-to-markdown" href="https://hishark777.com/post/facial_beauty_prediction/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://hishark777.com/tags/ml/">ML</a></span>
+        <span class="tag"><a href="https://hishark777.com/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/">论文复现</a></span>
+        
     </p>
-  <p class="copyright-item">
-    <span class="item-title">许可协议</span>
-    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
-  </p>
-</div>
-<footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/ml/">ML</a>
-          <a href="/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/">论文复现</a>
-          </div>
-      <nav class="post-nav">
-        <a class="prev" href="/post/git_ssh/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">在同一台电脑上绑定 Github 和阿里云 Code</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        <a class="next" href="/post/19october/">
-            <span class="next-text nav-default">拾</span>
-            <span class="next-text nav-mobile">下一篇</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-        </div>
-        <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    (function() {
-      
-      
-      if (window.location.hostname === 'localhost') return;
 
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      var disqus_shortname = 'hishark777';
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
-  
+        <span class="tag"><a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+        
+    </p>
 
-  
-
-      </div>
+			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="4d13c3053228fa495de0cebccfc7cfa8ce9e4e5a" target="_blank" rel="noopener">4d13c30</a> @ 2020-11-26</p>
+  		</div>
     </main>
 
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:hishark777@gmail.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://twitter.com/hishark777" class="iconfont icon-twitter" title="twitter"></a>
-      <a href="https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/" class="iconfont icon-linkedin" title="linkedin"></a>
-      <a href="https://github.com/hishark" class="iconfont icon-github" title="github"></a>
-      <a href="https://weibo.com/hishark777" class="iconfont icon-weibo" title="weibo"></a>
-      <a href="https://www.douban.com/people/hishark/" class="iconfont icon-douban" title="douban"></a>
-      <a href="https://www.instagram.com/hishark777" class="iconfont icon-instagram" title="instagram"></a>
-      <a href="https://space.bilibili.com/167148/#/channel/detail?cid=55848" class="iconfont icon-bilibili" title="bilibili"></a>
-  <a href="https://hishark777.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
+            </div>
 
-<div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    2017 - 
-    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>hishark777</span>
-  </span>
-</div>
-
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2017 - 2021</span>
+            
+        </div>
     </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
-  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
-    var languageCode = "en".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
-    timeago().render(document.querySelectorAll('.timeago'), languageCode);
-    timeago.cancel();  
-  </script>
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+          </div>
+    </div>
+</footer>
 
+            
+        </div>
 
-
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        }
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+        
 
 
 
 
+<script type="text/javascript" src="https://hishark777.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
 
 
 
-
-</body>
+    </body>
 </html>

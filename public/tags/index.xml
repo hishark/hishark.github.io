@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>标签 on Even - A super concise theme for Hugo</title>
+    <title>标签 on 777&#39;s blog</title>
     <link>https://hishark777.com/tags/</link>
-    <description>Recent content in 标签 on Even - A super concise theme for Hugo</description>
+    <description>Recent content in 标签 on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
 	<atom:link href="https://hishark777.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ARTS</title>
+      <link>https://hishark777.com/tags/arts/</link>
+      <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
+      
+      <guid>https://hishark777.com/tags/arts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TechDiary</title>
+      <link>https://hishark777.com/tags/techdiary/</link>
+      <pubDate>Sun, 03 Jan 2021 12:38:50 +0800</pubDate>
+      
+      <guid>https://hishark777.com/tags/techdiary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DIARIES</title>
+      <link>https://hishark777.com/tags/diaries/</link>
+      <pubDate>Tue, 29 Dec 2020 16:46:47 +0800</pubDate>
+      
+      <guid>https://hishark777.com/tags/diaries/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Android</title>
@@ -16,15 +44,6 @@
       <pubDate>Mon, 23 Nov 2020 19:20:55 +0800</pubDate>
       
       <guid>https://hishark777.com/tags/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TechDiary</title>
-      <link>https://hishark777.com/tags/techdiary/</link>
-      <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
-      
-      <guid>https://hishark777.com/tags/techdiary/</guid>
       <description></description>
     </item>
     
@@ -79,240 +98,6 @@
       <pubDate>Mon, 07 Sep 2020 20:06:19 +0000</pubDate>
       
       <guid>https://hishark777.com/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>life</title>
-      <link>https://hishark777.com/tags/life/</link>
-      <pubDate>Thu, 16 Jul 2020 00:35:42 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DIARIES</title>
-      <link>https://hishark777.com/tags/diaries/</link>
-      <pubDate>Wed, 15 Jul 2020 14:55:52 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/diaries/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Room</title>
-      <link>https://hishark777.com/tags/room/</link>
-      <pubDate>Fri, 01 May 2020 01:18:15 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/room/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://hishark777.com/tags/git/</link>
-      <pubDate>Sat, 23 Nov 2019 09:29:24 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ssh</title>
-      <link>https://hishark777.com/tags/ssh/</link>
-      <pubDate>Sat, 23 Nov 2019 09:29:24 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ML</title>
-      <link>https://hishark777.com/tags/ml/</link>
-      <pubDate>Mon, 18 Nov 2019 20:46:21 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/ml/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>论文复现</title>
-      <link>https://hishark777.com/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/</link>
-      <pubDate>Mon, 18 Nov 2019 20:46:21 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LeanCloud</title>
-      <link>https://hishark777.com/tags/leancloud/</link>
-      <pubDate>Mon, 30 Sep 2019 09:35:44 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/leancloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Valine</title>
-      <link>https://hishark777.com/tags/valine/</link>
-      <pubDate>Mon, 30 Sep 2019 09:35:44 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/valine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VLOG</title>
-      <link>https://hishark777.com/tags/vlog/</link>
-      <pubDate>Thu, 13 Jun 2019 23:08:48 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/vlog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SSM</title>
-      <link>https://hishark777.com/tags/ssm/</link>
-      <pubDate>Thu, 01 Nov 2018 20:54:46 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/ssm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>踩坑</title>
-      <link>https://hishark777.com/tags/%E8%B8%A9%E5%9D%91/</link>
-      <pubDate>Thu, 01 Nov 2018 20:54:46 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/%E8%B8%A9%E5%9D%91/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ENGLISH</title>
-      <link>https://hishark777.com/tags/english/</link>
-      <pubDate>Wed, 01 Aug 2018 10:17:34 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>https://hishark777.com/tags/deep-learning/</link>
-      <pubDate>Mon, 30 Jul 2018 20:39:20 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>aliyun</title>
-      <link>https://hishark777.com/tags/aliyun/</link>
-      <pubDate>Thu, 03 May 2018 15:04:57 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/aliyun/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>设计模式</title>
-      <link>https://hishark777.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
-      <pubDate>Tue, 10 Apr 2018 09:58:05 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gson</title>
-      <link>https://hishark777.com/tags/gson/</link>
-      <pubDate>Tue, 27 Mar 2018 16:02:17 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/gson/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OkHttp</title>
-      <link>https://hishark777.com/tags/okhttp/</link>
-      <pubDate>Tue, 27 Mar 2018 16:02:17 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/okhttp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HttpClient</title>
-      <link>https://hishark777.com/tags/httpclient/</link>
-      <pubDate>Mon, 26 Mar 2018 14:47:24 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/httpclient/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Struts</title>
-      <link>https://hishark777.com/tags/struts/</link>
-      <pubDate>Mon, 26 Mar 2018 14:47:24 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/struts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tomcat</title>
-      <link>https://hishark777.com/tags/tomcat/</link>
-      <pubDate>Mon, 26 Mar 2018 14:47:24 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/tomcat/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ajax</title>
-      <link>https://hishark777.com/tags/ajax/</link>
-      <pubDate>Mon, 19 Mar 2018 14:28:25 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/ajax/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SQL</title>
-      <link>https://hishark777.com/tags/sql/</link>
-      <pubDate>Tue, 13 Mar 2018 13:44:56 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://hishark777.com/tags/java/</link>
-      <pubDate>Mon, 12 Mar 2018 19:37:37 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MOVIE</title>
-      <link>https://hishark777.com/tags/movie/</link>
-      <pubDate>Sun, 04 Mar 2018 13:29:28 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/movie/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ted</title>
-      <link>https://hishark777.com/tags/ted/</link>
-      <pubDate>Sat, 03 Mar 2018 21:41:16 +0000</pubDate>
-      
-      <guid>https://hishark777.com/tags/ted/</guid>
       <description></description>
     </item>
     

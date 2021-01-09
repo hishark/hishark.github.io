@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>777&#39;s blog</title>
-    <link>https://example.com/</link>
+    <link>https://hishark777.com/</link>
     <description>Recent content on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 04 Jan 2021 13:49:44 +0800</lastBuildDate>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hishark777.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ARTS 2</title>
-      <link>https://example.com/post/arts2/</link>
+      <link>https://hishark777.com/post/arts2/</link>
       <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
       
-      <guid>https://example.com/post/arts2/</guid>
+      <guid>https://hishark777.com/post/arts2/</guid>
       <description>&lt;p&gt;第二周～&lt;/p&gt;
 &lt;p&gt;这周做点每日一题&lt;/p&gt;
 &lt;p&gt;看一篇论文&lt;/p&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>Tech Diary | 2021.01</title>
-      <link>https://example.com/post/techdiary202101/</link>
+      <link>https://hishark777.com/post/techdiary202101/</link>
       <pubDate>Sun, 03 Jan 2021 12:38:50 +0800</pubDate>
       
-      <guid>https://example.com/post/techdiary202101/</guid>
+      <guid>https://hishark777.com/post/techdiary202101/</guid>
       <description>&lt;p&gt;2021 年也要&lt;/p&gt;
 &lt;p&gt;好好学习&lt;/p&gt;
 &lt;p&gt;天天向上&lt;/p&gt;</description>
@@ -37,10 +37,10 @@
     
     <item>
       <title>二〇二〇小记</title>
-      <link>https://example.com/post/my2020/</link>
+      <link>https://hishark777.com/post/my2020/</link>
       <pubDate>Tue, 29 Dec 2020 16:46:47 +0800</pubDate>
       
-      <guid>https://example.com/post/my2020/</guid>
+      <guid>https://hishark777.com/post/my2020/</guid>
       <description>&lt;p&gt;为什么是小记&lt;/p&gt;
 &lt;p&gt;因为这一年感觉&lt;/p&gt;
 &lt;p&gt;好像没有干什么&lt;/p&gt;
@@ -49,65 +49,65 @@
     
     <item>
       <title>ARTS 1</title>
-      <link>https://example.com/post/arts1/</link>
+      <link>https://hishark777.com/post/arts1/</link>
       <pubDate>Mon, 28 Dec 2020 09:29:49 +0800</pubDate>
       
-      <guid>https://example.com/post/arts1/</guid>
+      <guid>https://hishark777.com/post/arts1/</guid>
       <description>&lt;p&gt;2020 年的最后一周，不如就来开启第一个 ARTS 吧。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.12</title>
-      <link>https://example.com/post/techdiary202012/</link>
+      <link>https://hishark777.com/post/techdiary202012/</link>
       <pubDate>Tue, 01 Dec 2020 08:40:36 +0800</pubDate>
       
-      <guid>https://example.com/post/techdiary202012/</guid>
+      <guid>https://hishark777.com/post/techdiary202012/</guid>
       <description>&lt;p&gt;最后一个月&lt;/p&gt;
 &lt;p&gt;支棱起来咯&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用 ConstraintLayout 构建自适应布局</title>
-      <link>https://example.com/post/constraint-layout/</link>
+      <link>https://hishark777.com/post/constraint-layout/</link>
       <pubDate>Mon, 23 Nov 2020 19:20:55 +0800</pubDate>
       
-      <guid>https://example.com/post/constraint-layout/</guid>
+      <guid>https://hishark777.com/post/constraint-layout/</guid>
       <description>&lt;p&gt;抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.11</title>
-      <link>https://example.com/post/techdiary202011/</link>
+      <link>https://hishark777.com/post/techdiary202011/</link>
       <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
       
-      <guid>https://example.com/post/techdiary202011/</guid>
+      <guid>https://hishark777.com/post/techdiary202011/</guid>
       <description>&lt;p&gt;2020年倒计时开始&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>中英文空格使用指北</title>
-      <link>https://example.com/post/chinese-copywriting/</link>
+      <link>https://hishark777.com/post/chinese-copywriting/</link>
       <pubDate>Tue, 27 Oct 2020 18:18:26 +0800</pubDate>
       
-      <guid>https://example.com/post/chinese-copywriting/</guid>
+      <guid>https://hishark777.com/post/chinese-copywriting/</guid>
       <description>&lt;p&gt;你会在中文和英文之间加空格「 」吗？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo 安装指定版本</title>
-      <link>https://example.com/post/hugo-version/</link>
+      <link>https://hishark777.com/post/hugo-version/</link>
       <pubDate>Tue, 27 Oct 2020 15:00:32 +0800</pubDate>
       
-      <guid>https://example.com/post/hugo-version/</guid>
+      <guid>https://hishark777.com/post/hugo-version/</guid>
       <description>&lt;p&gt;前些天逛博客看到 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 &lt;a href=&#34;https://github.com/wangchucheng/hugo-eureka&#34;&gt;Eureka&lt;/a&gt;，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>What’s new in AS 4.1</title>
-      <link>https://example.com/post/as-4-1/</link>
+      <link>https://hishark777.com/post/as-4-1/</link>
       <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
       
-      <guid>https://example.com/post/as-4-1/</guid>
+      <guid>https://hishark777.com/post/as-4-1/</guid>
       <description>&lt;p&gt;看看 Android Studio 4.1 更新了一些什么新特性&lt;/p&gt;</description>
     </item>
     
