@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
     <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -7,7 +7,7 @@
 <meta name="author" content="777 ">
 <meta name="description" content="终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。
 " />
-<meta name="keywords" content="777, Android, Tomcat, Struts, HttpClient" />
+<meta name="keywords" content=", Android, Tomcat, Struts, HttpClient" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/" />
@@ -46,7 +46,7 @@
 <meta itemprop="description" content="终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。">
 <meta itemprop="datePublished" content="2018-03-26T14:47:24&#43;00:00" />
 <meta itemprop="dateModified" content="2018-03-26T14:47:24&#43;00:00" />
-<meta itemprop="wordCount" content="453">
+<meta itemprop="wordCount" content="1837">
 <meta itemprop="image" content="https://hishark777.com/"/>
 
 
@@ -133,26 +133,33 @@
 
             <div class="content">
                 
-    <main class="post">
+  <main class="post">
 
-        <div class="post-info">
-            
-            </p>
-        </div>
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4分钟
 
-        <article>
-            <h2 class="post-title"><a href="https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/">Android 客户端访问 Tomcat 服务器端</a></h2>
+        
+      </p>
+    </div>
 
-            
+    <article>
+      <h1 class="post-title">
+        <a href="https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/">Android 客户端访问 Tomcat 服务器端</a>
+      </h1>
 
-            
+      
 
-            <div class="post-content">
-                <p>终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。</p>
+      <div class="post-content">
+        <p>终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。</p>
 <h4 id="服务器端">服务器端</h4>
 <h5 id="导包">导包</h5>
 <p>放到WEB-INF/lib下</p>
-<!-- raw HTML omitted -->
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpq8o4qlw5j30hm05q3yr.jpg)</center>
 <h5 id="定义抽象方法logincheck">定义抽象方法loginCheck</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">UserService</span> <span style="color:#f92672">{</span>
 	<span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">loginCheck</span><span style="color:#f92672">(</span>String userName<span style="color:#f92672">,</span>String passWord<span style="color:#f92672">);</span>
@@ -383,7 +390,7 @@
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span>
 </code></pre></div><h4 id="实现效果">实现效果</h4>
-<!-- raw HTML omitted -->
+<center><img src="http://p3as6e9rs.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720180326160633.gif" width="" height="100"></center>
 <h4 id="访问方式">访问方式</h4>
 <h5 id="安卓模拟器访问">安卓模拟器访问</h5>
 <p>IP为10.0.2.2</p>
@@ -391,25 +398,26 @@
 <p>使用Android真机连接的Wifi的IP地址进行访问
 我这里电脑开了热点给手机用
 直接ipconfig查到ip就ok了</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpqal8pwnzj30et03hwee.jpg)</center>
+IP为192.168.137.1
+<hr>
 <h4 id="tips">TIPS</h4>
 <ol>
 <li>sql注入攻击
-如果sql语句为<!-- raw HTML omitted --><code>select * from user_table where username = '' and password = ''</code><!-- raw HTML omitted -->会很危险，有username就可以登入了，添添说会被老板炒鱿鱼的哈哈哈哈哈</li>
+如果sql语句为<font color='#FF8C00'><code>select * from user_table where username = '' and password = ''</code></font>会很危险，有username就可以登入了，添添说会被老板炒鱿鱼的哈哈哈哈哈</li>
 <li>导包
 有六个包别漏了，添添debug了大半个上午结果是少导了个包OTZ</li>
-<li><!-- raw HTML omitted --><code>URL=&quot;http://192.168.137.1:8080/15Struts2-16-Struts-server/loginActivity.action?&quot;;</code><!-- raw HTML omitted -->这里的loginActivity是Action的name属性，不是Action的文件名。</li>
+<li><font color='#FF8C00'><code>URL=&quot;http://192.168.137.1:8080/15Struts2-16-Struts-server/loginActivity.action?&quot;;</code></font>这里的loginActivity是Action的name属性，不是Action的文件名。</li>
 <li>权限
 记得去Manifest添加访问网络的权限。</li>
 </ol>
-            </div>
-        </article>
+      </div>
+    </article>
 
-        <hr />
+    <hr />
 
-        <div class="post-info">
-            
+    <div class="post-info">
+      
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
@@ -420,7 +428,7 @@
         
     </p>
 
-            
+      
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
@@ -428,8 +436,93 @@
         
     </p>
 
-  		</div>
-    </main>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1837字
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2018-03-26 22:47
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://hishark777.com/post/%E5%B8%88%E5%A4%A7%E7%9A%84%E8%8A%B1%E6%AF%94%E4%BA%BA%E5%A8%87/">
+                <span class="button__icon">←</span>
+                <span class="button__text">花比人娇</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://hishark777.com/post/java%E9%80%89%E6%89%8B%E6%97%A0%E4%BA%BA%E6%9D%83/">
+                <span class="button__text">JAVA 选手无人权</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+  </main>
 
             </div>
 

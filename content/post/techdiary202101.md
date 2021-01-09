@@ -24,6 +24,8 @@ tags:
 
 - 智障了忘记改baseurl
 
+`single.html` 要放到 `layouts/_default/` 下
+
 ## 2021-01-08 Fri
 
 ### Android 技术博客

@@ -1,17 +1,19 @@
 baseURL = "https://hishark777.com/"
 title   = "hishark777"
-languageCode = "en-us"
+languageCode = "zh-cn"
 theme = "hello-friend-edit"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
+
+defaultContentLanguage = "zh-cn"
 
 paginate  = 25
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 # googleAnalytics = ""
-# disqusShortname = "hishark777"
+disqusShortname = "hishark777"
 
 archetypeDir = "archetypes"
 contentDir   = "content"
@@ -42,6 +44,9 @@ disableHugoGeneratorInject = false
 [blackfriday]
   hrefTargetBlank = true
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [taxonomies]
   tag      = "tags"
   category = "categories"
@@ -56,7 +61,7 @@ disableHugoGeneratorInject = false
   # Metadata mostly used in document's head
   # 
   description = ""
-  keywords = "777"
+  keywords = ""
   images = [""]
 
   homeSubtitle = ""
@@ -69,7 +74,6 @@ disableHugoGeneratorInject = false
   #
   disableReadOtherPosts = false
   
-
   # Sharing buttons
   #
   # There are a lot of buttons preconfigured. If you want to change them,
@@ -123,7 +127,6 @@ disableHugoGeneratorInject = false
     path     = "/img/avatar.jpg"
     alt      = "Portrait"
     maxWidth = "250px"
-    position = "center"
 
   # Social icons
   [[params.social]]
@@ -151,15 +154,19 @@ disableHugoGeneratorInject = false
     url  = "https://www.linkedin.com/in/%E5%B0%8F%E7%90%AA-%E5%BC%A0-a23a82194/"
 
 [languages]
-  [languages.en]
+  [languages.zh-cn]
+    hasCJKLanguage = true
     subtitle  = ""
-    weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-  [languages.fr]
-    subtitle  = ""
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+ # [languages.en]
+  #  subtitle  = ""
+  #  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+ # [languages.fr]
+  #  subtitle  = ""
+  #  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]

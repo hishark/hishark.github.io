@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
     <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -7,7 +7,7 @@
 <meta name="author" content="777 ">
 <meta name="description" content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。
 " />
-<meta name="keywords" content="777, hugo" />
+<meta name="keywords" content=", hugo" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://hishark777.com/post/hugo-version/" />
@@ -46,7 +46,7 @@
 <meta itemprop="description" content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。">
 <meta itemprop="datePublished" content="2020-10-27T15:00:32&#43;08:00" />
 <meta itemprop="dateModified" content="2021-01-09T11:49:40&#43;08:00" />
-<meta itemprop="wordCount" content="197">
+<meta itemprop="wordCount" content="1015">
 <meta itemprop="image" content="https://hishark777.com/"/>
 
 
@@ -133,22 +133,29 @@
 
             <div class="content">
                 
-    <main class="post">
+  <main class="post">
 
-        <div class="post-info">
-            
-            </p>
-        </div>
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        3分钟
 
-        <article>
-            <h2 class="post-title"><a href="https://hishark777.com/post/hugo-version/">Hugo 安装指定版本</a></h2>
+        
+      </p>
+    </div>
 
-            
+    <article>
+      <h1 class="post-title">
+        <a href="https://hishark777.com/post/hugo-version/">Hugo 安装指定版本</a>
+      </h1>
 
-            
+      
 
-            <div class="post-content">
-                <p>前些天逛博客看到 <a href="https://gohugo.io/">Hugo</a> 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 <a href="https://github.com/wangchucheng/hugo-eureka">Eureka</a>，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。</p>
+      <div class="post-content">
+        <p>前些天逛博客看到 <a href="https://gohugo.io/">Hugo</a> 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 <a href="https://github.com/wangchucheng/hugo-eureka">Eureka</a>，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。</p>
 <h2 id="1-起因">1. 起因</h2>
 <blockquote>
 <p>我真是浪费了无数时间在折腾博客上- - 不过真好玩哈哈</p>
@@ -158,7 +165,7 @@
 <h2 id="2-经过">2. 经过</h2>
 <p>经过 Google 找到了一篇靠谱的教程来安装旧版本的 Hugo：</p>
 <p><a href="https://networm.me/2019/10/27/installing-old-homebrew-formulas/">Homebrew 安装旧版本软件 - 狂飙</a></p>
-<!-- raw HTML omitted -->
+<!-- 这里闲下来也写一下详细的步骤 -->
 <p>之前这个方法应该是管用的，毕竟评论区中前排的评论都在感谢作者哈哈，但是现在按照这个流程来做会出现报错：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">Error: Calling Non-checksummed download of hugo formula file 
 from an arbitrary URL is disabled! Use &#39;brew extract&#39; 
@@ -193,13 +200,13 @@ in a tap on GitHub instead.
 <li><a href="https://discourse.gohugo.io/t/how-to-install-a-specific-version-of-gohugo/23542">How to install a specific version of gohugo </a></li>
 <li><a href="https://networm.me/2019/10/27/installing-old-homebrew-formulas/">Homebrew 安装旧版本软件 - 狂飙</a></li>
 </ul>
-            </div>
-        </article>
+      </div>
+    </article>
 
-        <hr />
+    <hr />
 
-        <div class="post-info">
-            
+    <div class="post-info">
+      
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
@@ -207,7 +214,7 @@ in a tap on GitHub instead.
         
     </p>
 
-            
+      
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
@@ -215,9 +222,107 @@ in a tap on GitHub instead.
         
     </p>
 
-			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="5044ede160eb23c0e54c85dcf336fe7c8baacf27" target="_blank" rel="noopener">5044ede</a> @ 2021-01-09</p>
-  		</div>
-    </main>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1015字
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-10-27 15:00
+        
+
+         
+          
+            
+              (最后修改: 2021-01-09 11:49)
+            
+          
+        
+      </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit">
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="1.05" y1="12" x2="7" y2="12"></line>
+            <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
+          </svg>
+
+          <a href="5044ede160eb23c0e54c85dcf336fe7c8baacf27" target="_blank" rel="noopener">5044ede</a>
+          @ 2021-01-09
+        </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://hishark777.com/post/chinese-copywriting/">
+                <span class="button__icon">←</span>
+                <span class="button__text">中英文空格使用指北</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://hishark777.com/post/as-4-1/">
+                <span class="button__text">What’s new in AS 4.1</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+  </main>
 
             </div>
 
