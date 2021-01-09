@@ -5,7 +5,7 @@ draft: false
 tags:
 - ARTS
 categories: 
-- 打卡周报
+- 周报打卡
 ---
 
 2020 年的最后一周，不如就来开启第一个 ARTS 吧。
