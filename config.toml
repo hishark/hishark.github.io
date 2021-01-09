@@ -89,7 +89,7 @@ disableHugoGeneratorInject = false
 
   # Default theme "light" or "dark"
   #
-  defaultTheme = "dark"
+  defaultTheme = "light"
   themeColor = "#252627"
 
   # Custom footer 
@@ -169,9 +169,9 @@ disableHugoGeneratorInject = false
     weight = 1
 
   [[menu.main]]
-    identifier = "posts"
+    identifier = "post"
     name = "归档"
-    url = "posts/"
+    url = "/post"
     weight = 2
 
   [[menu.main]]
