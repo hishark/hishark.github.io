@@ -1,80 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>踩坑 on 777&#39;s Blog</title>
-    
-    
-    
-    <link>https://hishark777.com/tags/%E8%B8%A9%E5%9D%91/</link>
-    <description>Recent content in 踩坑 on 777&#39;s Blog</description>
+    <title>踩坑 on 777&#39;s blog</title>
+    <link>https://example.com/tags/%E8%B8%A9%E5%9D%91/</link>
+    <description>Recent content in 踩坑 on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2017-2020 ✌️ hishark777</copyright>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 01 Nov 2018 20:54:46 +0000</lastBuildDate>
     
-	<atom:link href="https://hishark777.com/tags/%E8%B8%A9%E5%9D%91/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/%E8%B8%A9%E5%9D%91/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>卡片盒子踩坑记录</title>
-      <link>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <link>https://example.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Thu, 01 Nov 2018 20:54:46 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;毕设over🎈
+      <guid>https://example.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;毕设over🎈
 两周爆肝碰到不少问题
-记录一下&lt;/p&gt;
-          
-        
-        </description>
+记录一下&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>卡片校园踩坑记录</title>
-      <link>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <link>https://example.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 08 Apr 2018 09:43:08 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;这次开发过程中碰到的问题都扔这，看最后能不能破百哦哈哈&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;这次开发过程中碰到的问题都扔这，看最后能不能破百哦哈哈&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>eclipse连接github踩坑</title>
-      <link>https://hishark777.com/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</link>
+      <link>https://example.com/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</link>
       <pubDate>Fri, 06 Apr 2018 10:35:11 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-           从github上push下来的时候项目出现红叉叉。解决方法 无法pull。解决方法  
-          
-        
-        </description>
+      <guid>https://example.com/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</guid>
+      <description> 从github上push下来的时候项目出现红叉叉。解决方法 无法pull。解决方法  </description>
     </item>
     
   </channel>

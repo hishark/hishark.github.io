@@ -1,267 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TechDiary on 777&#39;s Blog</title>
-    
-    
-    
-    <link>https://hishark777.com/tags/techdiary/</link>
-    <description>Recent content in TechDiary on 777&#39;s Blog</description>
+    <title>TechDiary on 777&#39;s blog</title>
+    <link>https://example.com/tags/techdiary/</link>
+    <description>Recent content in TechDiary on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2017-2020 ✌️ hishark777</copyright>
-    <lastBuildDate>Tue, 01 Dec 2020 08:40:36 +0800</lastBuildDate>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 03 Jan 2021 12:38:50 +0800</lastBuildDate>
     
-	<atom:link href="https://hishark777.com/tags/techdiary/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/techdiary/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Tech Diary | 2021.01</title>
+      <link>https://example.com/post/techdiary202101/</link>
+      <pubDate>Sun, 03 Jan 2021 12:38:50 +0800</pubDate>
+      
+      <guid>https://example.com/post/techdiary202101/</guid>
+      <description>&lt;p&gt;2021 年也要&lt;/p&gt;
+&lt;p&gt;好好学习&lt;/p&gt;
+&lt;p&gt;天天向上&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Tech Diary | 2020.12</title>
-      <link>https://hishark777.com/post/techdiary202012/</link>
+      <link>https://example.com/post/techdiary202012/</link>
       <pubDate>Tue, 01 Dec 2020 08:40:36 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202012/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;最后一个月&lt;/p&gt;
-&lt;p&gt;支棱起来咯&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/techdiary202012/</guid>
+      <description>&lt;p&gt;最后一个月&lt;/p&gt;
+&lt;p&gt;支棱起来咯&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.11</title>
-      <link>https://hishark777.com/post/techdiary202011/</link>
+      <link>https://example.com/post/techdiary202011/</link>
       <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202011/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;2020年倒计时开始&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/techdiary202011/</guid>
+      <description>&lt;p&gt;2020年倒计时开始&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.10</title>
-      <link>https://hishark777.com/post/techdiary202010/</link>
+      <link>https://example.com/post/techdiary202010/</link>
       <pubDate>Thu, 01 Oct 2020 09:50:41 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202010/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;庆祝祖国母亲生日 这个月我一定好好学习&lt;/p&gt;
+      <guid>https://example.com/post/techdiary202010/</guid>
+      <description>&lt;p&gt;庆祝祖国母亲生日 这个月我一定好好学习&lt;/p&gt;
 &lt;p&gt;还有三个月 2020 就结束啦&lt;/p&gt;
-&lt;p&gt;年初立的 FLAG 怎么样了？&lt;/p&gt;
-          
-        
-        </description>
+&lt;p&gt;年初立的 FLAG 怎么样了？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.09</title>
-      <link>https://hishark777.com/post/techdiary202009/</link>
+      <link>https://example.com/post/techdiary202009/</link>
       <pubDate>Tue, 01 Sep 2020 13:45:48 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202009/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;稀里糊涂就&lt;/p&gt;
-&lt;p&gt;研二啦&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/techdiary202009/</guid>
+      <description>&lt;p&gt;稀里糊涂就&lt;/p&gt;
+&lt;p&gt;研二啦&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.08</title>
-      <link>https://hishark777.com/post/techdiary202008/</link>
+      <link>https://example.com/post/techdiary202008/</link>
       <pubDate>Sat, 01 Aug 2020 17:26:04 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202008/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;最后一个在家的暑假&lt;/p&gt;
-&lt;p&gt;珍惜自由摸鱼的最后一个月_(:з」∠)_&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/techdiary202008/</guid>
+      <description>&lt;p&gt;最后一个在家的暑假&lt;/p&gt;
+&lt;p&gt;珍惜自由摸鱼的最后一个月_(:з」∠)_&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.07</title>
-      <link>https://hishark777.com/post/techdiary202007/</link>
+      <link>https://example.com/post/techdiary202007/</link>
       <pubDate>Wed, 01 Jul 2020 19:38:55 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202007/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;明年暑假在校招&lt;/p&gt;
-&lt;p&gt;今年暑假在撒欢&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/techdiary202007/</guid>
+      <description>&lt;p&gt;明年暑假在校招&lt;/p&gt;
+&lt;p&gt;今年暑假在撒欢&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.06</title>
-      <link>https://hishark777.com/post/techdiary202006/</link>
+      <link>https://example.com/post/techdiary202006/</link>
       <pubDate>Mon, 01 Jun 2020 19:19:19 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202006/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;猝不及防&lt;/p&gt;
-&lt;p&gt;半年又没了&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/techdiary202006/</guid>
+      <description>&lt;p&gt;猝不及防&lt;/p&gt;
+&lt;p&gt;半年又没了&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.05</title>
-      <link>https://hishark777.com/post/techdiary202005/</link>
+      <link>https://example.com/post/techdiary202005/</link>
       <pubDate>Fri, 01 May 2020 22:10:51 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202005/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;武功山好难爬哦&lt;/p&gt;
-&lt;p&gt;但是看到了星空和日出日落(＾－＾)V&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/techdiary202005/</guid>
+      <description>&lt;p&gt;武功山好难爬哦&lt;/p&gt;
+&lt;p&gt;但是看到了星空和日出日落(＾－＾)V&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tech Diary | 2020.04</title>
-      <link>https://hishark777.com/post/techdiary202004/</link>
+      <link>https://example.com/post/techdiary202004/</link>
       <pubDate>Wed, 01 Apr 2020 22:27:09 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/techdiary202004/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;这里是777的四月份bb日记&lt;/p&gt;
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Tech Diary | 2020.03</title>
-      <link>https://hishark777.com/post/techdiary202003/</link>
-      <pubDate>Sun, 01 Mar 2020 22:41:57 +0000</pubDate>
-      
-      <guid>https://hishark777.com/post/techdiary202003/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;有在好好做算法题&lt;/p&gt;
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Tech Diary | 2020.02</title>
-      <link>https://hishark777.com/post/techdiary202002/</link>
-      <pubDate>Sat, 01 Feb 2020 22:48:36 +0000</pubDate>
-      
-      <guid>https://hishark777.com/post/techdiary202002/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;感觉啥也没干的一个月哦？&lt;/p&gt;
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Tech Diary | 2019.12</title>
-      <link>https://hishark777.com/post/techdiary201912/</link>
-      <pubDate>Sun, 01 Dec 2019 22:54:01 +0000</pubDate>
-      
-      <guid>https://hishark777.com/post/techdiary201912/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;2019拜拜&lt;/p&gt;
-&lt;p&gt;2020加油啦&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/techdiary202004/</guid>
+      <description>&lt;p&gt;这里是777的四月份bb日记&lt;/p&gt;</description>
     </item>
     
   </channel>

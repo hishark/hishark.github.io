@@ -1,40 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MOVIE on 777&#39;s Blog</title>
-    
-    
-    
-    <link>https://hishark777.com/tags/movie/</link>
-    <description>Recent content in MOVIE on 777&#39;s Blog</description>
+    <title>MOVIE on 777&#39;s blog</title>
+    <link>https://example.com/tags/movie/</link>
+    <description>Recent content in MOVIE on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2017-2020 ✌️ hishark777</copyright>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 04 Mar 2018 13:29:28 +0000</lastBuildDate>
     
-	<atom:link href="https://hishark777.com/tags/movie/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/movie/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>二〇一八观影记录</title>
-      <link>https://hishark777.com/post/movielist/</link>
+      <link>https://example.com/post/movielist/</link>
       <pubDate>Sun, 04 Mar 2018 13:29:28 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/movielist/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;文采不行 写不出什么影评
+      <guid>https://example.com/post/movielist/</guid>
+      <description>&lt;p&gt;文采不行 写不出什么影评
 单纯存个档
-电影使我快乐&lt;/p&gt;
-          
-        
-        </description>
+电影使我快乐&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,244 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-      <title>
-        使用 ConstraintLayout 构建自适应布局 ::
-        777&#39;s Blog
-      </title>
-    
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta
-  name="description"
-  content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。
-"
-/>
-<meta
-  name="keywords"
-  content=""
-/>
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="777 ">
+<meta name="description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。
+" />
+<meta name="keywords" content=", Android" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://hishark777.com/post/constraint-layout/" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://example.com/post/constraint-layout/" />
+
+
+    <title>
+        
+            使用 ConstraintLayout 构建自适应布局 :: 777&#39;s blog  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://example.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
 
 
 
 
-
-<link rel="stylesheet" href="https://hishark777.com/assets/style.css" />
-
-<link rel="stylesheet" href="https://hishark777.com/style.css" />
-
-
-<link
-  rel="apple-touch-icon-precomposed"
-  sizes="144x144"
-  href="https://hishark777.com/img/apple-touch-icon-144-precomposed.png"
-/>
-<link rel="shortcut icon" href="https://hishark777.com/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://example.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://example.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://example.com/favicon-16x16.png">
+    <link rel="manifest" href="https://example.com/site.webmanifest">
+    <link rel="mask-icon" href="https://example.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://example.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
 
 
-<link href="https://hishark777.com/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+<meta itemprop="name" content="使用 ConstraintLayout 构建自适应布局">
+<meta itemprop="description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。">
+<meta itemprop="datePublished" content="2020-11-23T19:20:55&#43;08:00" />
+<meta itemprop="dateModified" content="2020-11-26T19:41:49&#43;08:00" />
+<meta itemprop="wordCount" content="196">
+<meta itemprop="image" content="https://example.com"/>
 
 
-<meta name="twitter:card" content="summary"/>
+
+<meta itemprop="keywords" content="Android," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com"/>
+
 <meta name="twitter:title" content="使用 ConstraintLayout 构建自适应布局"/>
 <meta name="twitter:description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。"/>
 
 
 
-<meta property="og:title" content="使用 ConstraintLayout 构建自适应布局" />
+    <meta property="og:title" content="使用 ConstraintLayout 构建自适应布局" />
 <meta property="og:description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hishark777.com/post/constraint-layout/" />
+<meta property="og:url" content="https://example.com/post/constraint-layout/" />
+<meta property="og:image" content="https://example.com"/>
 <meta property="article:published_time" content="2020-11-23T19:20:55+08:00" />
-<meta property="article:modified_time" content="2020-11-23T19:20:55+08:00" /><meta property="og:site_name" content="777&#39;s Blog" />
+<meta property="article:modified_time" content="2020-11-26T19:41:49+08:00" />
+
+
+
+
+    <meta property="article:section" content="学习笔记" />
+
+
+
+    <meta property="article:published_time" content="2020-11-23 19:20:55 &#43;0800 CST" />
 
 
 
 
 
 
-  </head>
-  <body class="">
-    <div class="container">
-      <header class="header">
-  <span class="header__inner">
-    <a
-  href="/"
-  class="logo"
-  style="text-decoration: none;"
->
-  
-    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span>
-    <span class="logo__text"
-      >777&#39;s Blog</span
-    >
-    <span class="logo__cursor"></span>
-  
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://example.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /777/blog</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
 </a>
 
-    <span class="header__right">
-      
-        <nav class="menu">
-  <ul class="menu__inner menu__inner--desktop">
-    
-      
-        
-          <li><a href="/about">关于</a></li>
-        
-      
-        
-          <li><a href="/tags">标签</a></li>
-        
-      
-        
-          <li><a href="/categories">分类</a></li>
-        
-      
-        
-          <li><a href="/archive">归档</a></li>
-        
-      
-      
-        <ul class="menu__sub-inner">
-          <li class="menu__sub-inner-more-trigger">
-            其他
-            <span class="menu__sub-inner-more-trigger-icon"
-              ><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span
-            >
-          </li>
-          <ul class="menu__sub-inner-more hidden">
-            
-              
-                <li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-              
-            
-              
-                <li><a href="https://www.douban.com/people/hishark/photos">相册</a></li>
-              
-            
-          </ul>
-        </ul>
-      
-      
-  </ul>
 
-  <ul class="menu__inner menu__inner--mobile">
-    
-      
-        <li><a href="/about">关于</a></li>
-      
-    
-      
-        <li><a href="/tags">标签</a></li>
-      
-    
-      
-        <li><a href="/categories">分类</a></li>
-      
-    
-      
-        <li><a href="/archive">归档</a></li>
-      
-    
-      
-        <li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-      
-    
-      
-        <li><a href="https://www.douban.com/people/hishark/photos">相册</a></li>
-      
-    
-  </ul>
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://example.com/about/">关于</a></li><li><a href="https://example.com/posts/">归档</a></li><li><a href="https://example.com/tags">标签</a></li><li><a href="https://example.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
+    </ul>
 </nav>
 
-        <span class="menu-trigger">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </span>
-      
-      <span class="theme-toggle">
-        <svg
-  class="theme-toggler"
-  width="24"
-  height="24"
-  viewBox="0 0 48 48"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
-  />
-</svg>
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
 
-      </span>
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
     </span>
-  </span>
 </header>
 
 
-      <div class="content">
-        
-  
-  
+            <div class="content">
+                
+    <main class="post">
 
-  <div class="post">
-    <h1 class="post-title">使用 ConstraintLayout 构建自适应布局</h1>
-    <div class="post-meta">
-      
-        <span class="post-date">
-          2020-11-23
-        </span>
+        <div class="post-info">
+            
+            </p>
+        </div>
 
-        
-          
+        <article>
+            <h2 class="post-title"><a href="https://example.com/post/constraint-layout/">使用 ConstraintLayout 构建自适应布局</a></h2>
+
             
 
+            
 
-
-          
-        
-      
-
-      
-
-
-      
-        <span class="post-read-time"
-          >— 1 min read</span
-        >
-      
-    </div>
-
-    
-      <span class="post-tags">
-        
-          <a href="https://hishark777.com/tags/android/">#Android</a>&nbsp;
-        
-      </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      <p>抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。</p>
+            <div class="post-content">
+                <p>抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。</p>
 <blockquote>
 <p>ConstraintLayout 可以使用扁平控件层次结构（无嵌套控件组）来创建复杂的大型布局。它与 RelativeLayout 相似，其中所有的控件均根据同级控件与父布局之间的关系进行布局，但其灵活性要高于 RelativeLayout，并且更易于与 Android Studio 的布局编辑器配合使用。</p>
 <p>ConstraintLayout 的所有功能均可直接通过布局编辑器的可视化工具来使用，因为布局 API 和布局编辑器是专为彼此构建的。 因此，我们完全可以使用 ConstraintLayout 通过拖放的形式（而非修改 XML）来构建布局。</p>
@@ -255,7 +165,7 @@
 <span style="color:#f92672">}</span>
 </code></pre></div><h2 id="2-转换布局">2. 转换布局</h2>
 <p>如果想将其他布局转换为 <code>ConstraintLayout</code> 约束布局，可以直接在 Component Tree 窗口中，右键该布局，点击 <strong>Convert xxx to ConstraintLayout</strong> 即可。</p>
-<img src="https://developer.android.google.cn/training/constraint-layout/images/layout-editor-convert-to-constraint_2x.png?hl=zh-cn" width="400">
+<!-- raw HTML omitted -->
 <h2 id="3-约束条件">3. 约束条件</h2>
 <p>要在 <code>ConstraintLayout</code> 中定义某个控件的位置，必须为该控件添加至少一个水平约束条件和一个垂直约束条件。</p>
 <p>每个约束条件均定义了控件在竖轴或者横轴上的位置，同时均表示了当前控件与其他控件、父布局或隐形引导线之间的连接或对齐方式。因此每个控件在每个轴上都至少有一个约束条件，但通常情况下会需要更多约束条件。</p>
@@ -279,11 +189,11 @@
 <li>在 Component Tree 窗口中，选择要放入屏障内的控件，然后将其拖动到屏障组件中。</li>
 <li>在 Component Tree 中选择屏障，打开 Attributes 窗口，然后设置 barrierDirection。</li>
 </ol>
-<!-- 现在，您可以从另一个控件创建屏障约束。 -->
+<!-- raw HTML omitted -->
 <p>我们还可以将屏障内的控件约束到屏障。这样就可以确保屏障中的所有控件始终相互对齐，即使我们并不知道哪个控件最长或最高。同时，还可以在屏障内添加引导线，以确保屏障的位置“最小”。</p>
 <p>与引导线类似，屏障是一条隐藏的线，我们可以用它来约束控件。屏障不会定义自己的位置。相反，屏障的位置会随着其中所含控件的位置而移动。如果希望将控件限制到一组控件而不是某个特定控件时，屏障约束就非常好用。</p>
 <p>例如在下图中，控件 C 被约束在屏障的右侧。该屏障设置为控件 A 和控件 B 的右侧。因此，屏障根据控件 A 或控件 B 的右侧是否为最右侧来移动。</p>
-<img src="https://developer.android.google.cn/training/constraint-layout/images/barrier-constraint_2x.png?hl=zh-cn" width="400">
+<!-- raw HTML omitted -->
 <h3 id="32-创建约束条件">3.2 创建约束条件</h3>
 <ol>
 <li>
@@ -321,82 +231,61 @@
 <p>Autoconnect 在默认情况下处于停用状态。点击布局编辑器工具栏中的 Enable Autoconnection to Parent，即可启用该功能。</p>
 <h2 id="参考">参考</h2>
 <p><a href="https://developer.android.google.cn/training/constraint-layout?hl=zh-cn">使用 ConstraintLayout 构建自适应界面 - Android Developers</a></p>
-    </div>
-    
-      
-        <div class="pagination">
-          <div class="pagination__title">
-            <span class="pagination__title-h"
-              >Read other posts</span
-            >
-            <hr />
-          </div>
-          <div class="pagination__buttons">
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
             
-              <span class="button previous">
-                <a href="https://hishark777.com/post/techdiary202012/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">Tech Diary | 2020.12</span>
-                </a>
-              </span>
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://example.com/tags/android/">Android</a></span>
+        
+    </p>
+
             
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+        
+    </p>
+
+			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="4d13c3053228fa495de0cebccfc7cfa8ce9e4e5a" target="_blank" rel="noopener">4d13c30</a> @ 2020-11-26</p>
+  		</div>
+    </main>
+
+            </div>
+
             
-              <span class="button next">
-                <a href="https://hishark777.com/post/techdiary202011/">
-                  <span class="button__text">Tech Diary | 2020.11</span>
-                  <span class="button__icon">→</span>
-                </a>
-              </span>
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2017 - 2021</span>
             
-          </div>
         </div>
-      
-    
-
-    
-      
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      
-    
-  </div>
-
-      </div>
-
-      
-        <footer class="footer">
-  <div class="footer__inner">
-    
-      <div class="copyright copyright--user">© 2017-2020 ✌️ hishark777</div>
-      
-  </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+          </div>
+    </div>
 </footer>
 
-<script src="https://hishark777.com/assets/main.js"></script>
-<script src="https://hishark777.com/assets/prism.js"></script>
+            
+        </div>
+
+        
 
 
-      
-    </div>
 
-    
-  </body>
+
+<script type="text/javascript" src="https://example.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
 </html>

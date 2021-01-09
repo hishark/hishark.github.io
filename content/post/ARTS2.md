@@ -32,14 +32,18 @@ categories:
 
 做做每日一题
 
+碰到不想做的每日一题就自己随便找一题做
+
 - 1月4号 [LeetCode 509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
-  - 嗯嗯谢谢大哥
+  - 嗯嗯谢谢大哥节后饶我一命
 - 1月5号 [LeetCode 830. 较大分组的位置](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/string/leetcode-830)
   - 数组简单题
 - 1月6号 [LeetCode 5. 最长回文子串](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/dp/leetcode-5)
   - 这个题居然还没做
 - 1月7号 [LeetCode 547. 省份数量](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/bfs/leetcode-547)
   - 考察连通分量的确定
+- 1月8号 [LeetCode 189. 旋转数组](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/array/leetcode-189)
+  - 原地算法
 
 ## Review
 
@@ -61,4 +65,15 @@ Keynote 真滴好好用嗷
 
 ## Share
 
-还没看 ⌛️
+[LayoutManager详解及使用（一）基本知识](https://juejin.cn/post/6844903497083650061)
+
+[无限循环卡片？我选择自定义LayoutManager](https://mp.weixin.qq.com/s/DpV6iD4rBSgQQHsPNDJe6w)
+
+## 本周时间轴
+
+好多空白啊 效率不行喔
+
+
+
+
+

@@ -1,38 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on 777&#39;s Blog</title>
-    
-    
-    
-    <link>https://hishark777.com/tags/hugo/</link>
-    <description>Recent content in hugo on 777&#39;s Blog</description>
+    <title>hugo on 777&#39;s blog</title>
+    <link>https://example.com/tags/hugo/</link>
+    <description>Recent content in hugo on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2017-2020 ✌️ hishark777</copyright>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 27 Oct 2020 15:00:32 +0800</lastBuildDate>
     
-	<atom:link href="https://hishark777.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo 安装指定版本</title>
-      <link>https://hishark777.com/post/hugo-version/</link>
+      <link>https://example.com/post/hugo-version/</link>
       <pubDate>Tue, 27 Oct 2020 15:00:32 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/hugo-version/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;前些天逛博客看到 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 &lt;a href=&#34;https://github.com/wangchucheng/hugo-eureka&#34;&gt;Eureka&lt;/a&gt;，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/hugo-version/</guid>
+      <description>&lt;p&gt;前些天逛博客看到 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 &lt;a href=&#34;https://github.com/wangchucheng/hugo-eureka&#34;&gt;Eureka&lt;/a&gt;，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。&lt;/p&gt;</description>
     </item>
     
   </channel>

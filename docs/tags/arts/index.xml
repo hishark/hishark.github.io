@@ -1,61 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ARTS on 777&#39;s Blog</title>
-    
-    
-    
-    <link>https://hishark777.com/tags/arts/</link>
-    <description>Recent content in ARTS on 777&#39;s Blog</description>
+    <title>ARTS on 777&#39;s blog</title>
+    <link>https://example.com/tags/arts/</link>
+    <description>Recent content in ARTS on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2017-2020 ✌️ hishark777</copyright>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 04 Jan 2021 13:49:44 +0800</lastBuildDate>
     
-	<atom:link href="https://hishark777.com/tags/arts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/arts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ARTS 2</title>
-      <link>https://hishark777.com/post/arts2/</link>
+      <link>https://example.com/post/arts2/</link>
       <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/arts2/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;第二周～&lt;/p&gt;
+      <guid>https://example.com/post/arts2/</guid>
+      <description>&lt;p&gt;第二周～&lt;/p&gt;
 &lt;p&gt;这周做点每日一题&lt;/p&gt;
 &lt;p&gt;看一篇论文&lt;/p&gt;
-&lt;p&gt;学一学调试技巧&lt;/p&gt;
-          
-        
-        </description>
+&lt;p&gt;学一学调试技巧&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ARTS 1</title>
-      <link>https://hishark777.com/post/arts1/</link>
+      <link>https://example.com/post/arts1/</link>
       <pubDate>Mon, 28 Dec 2020 09:29:49 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/arts1/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          &lt;p&gt;2020 年的最后一周，不如就来开启第一个 ARTS 吧。&lt;/p&gt;
-          
-        
-        </description>
+      <guid>https://example.com/post/arts1/</guid>
+      <description>&lt;p&gt;2020 年的最后一周，不如就来开启第一个 ARTS 吧。&lt;/p&gt;</description>
     </item>
     
   </channel>

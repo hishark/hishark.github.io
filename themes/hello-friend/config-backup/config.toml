@@ -1,0 +1,93 @@
+baseurl = "https://hishark777.com"
+languageCode = "en-us"
+theme = "hello-friend"
+paginate = 15
+disqusShortname = "hishark777"
+
+[blackfriday]
+extensionsmask = ["noIntraEmphasis"]
+fractions = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  # dir name of your blog content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "post"
+
+  # "light" or "dark"
+  defaultTheme = "light"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 4
+
+  # Show reading time in minutes for posts
+  showReadingTime = true
+
+  # Show table of contents at the top of your posts (defaults to false)
+  # Alternatively, add this param to post front matter for specific posts
+  # toc = false
+
+  # Show full page content in RSS feed items
+  #(default is Description or Summary metadata in the front matter)
+  # rssFullText = true
+
+[languages]
+  [languages.en]
+    title = "777's Blog"
+    subtitle = ""
+    keywords = ""
+    copyright = "© 2017-2020 ✌️ hishark777"
+    menuMore = "其他"
+    writtenBy = "Written by 777"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+    # leave empty to disable, enter display text to enable
+    lastModDisplay = "Modified:"
+
+    [languages.en.params.logo]
+      logoText = "777's Blog"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "关于"
+        url = "/about"
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        name = "标签"
+        url = "/tags"
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "categories"
+        name = "分类"
+        url = "/categories"
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "archive"
+        name = "归档"
+        url = "/archive"
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = ""
+        name = "相册"
+        url = "https://www.douban.com/people/hishark/photos"
+        weight = 6
+      [[languages.en.menu.main]]
+        identifier = ""
+        name = "校招笔记"
+        url = "https://hishark777.gitbook.io/777-interview-notes/"
+        weight = 5
+      

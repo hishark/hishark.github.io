@@ -1,250 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-      <title>
-        在 Struts 中应用 Ajax 技术 ::
-        777&#39;s Blog
-      </title>
-    
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta
-  name="description"
-  content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。
-"
-/>
-<meta
-  name="keywords"
-  content=""
-/>
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="777 ">
+<meta name="description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。
+" />
+<meta name="keywords" content=", Struts, Ajax" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://example.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/" />
+
+
+    <title>
+        
+            在 Struts 中应用 Ajax 技术 :: 777&#39;s blog  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://example.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
 
 
 
 
-
-<link rel="stylesheet" href="https://hishark777.com/assets/style.css" />
-
-<link rel="stylesheet" href="https://hishark777.com/style.css" />
-
-
-<link
-  rel="apple-touch-icon-precomposed"
-  sizes="144x144"
-  href="https://hishark777.com/img/apple-touch-icon-144-precomposed.png"
-/>
-<link rel="shortcut icon" href="https://hishark777.com/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://example.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://example.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://example.com/favicon-16x16.png">
+    <link rel="manifest" href="https://example.com/site.webmanifest">
+    <link rel="mask-icon" href="https://example.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://example.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
 
 
-<link href="https://hishark777.com/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+<meta itemprop="name" content="在 Struts 中应用 Ajax 技术">
+<meta itemprop="description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。">
+<meta itemprop="datePublished" content="2018-03-19T14:28:25&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-19T14:28:25&#43;00:00" />
+<meta itemprop="wordCount" content="178">
+<meta itemprop="image" content="https://example.com"/>
 
 
-<meta name="twitter:card" content="summary"/>
+
+<meta itemprop="keywords" content="Struts,Ajax," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com"/>
+
 <meta name="twitter:title" content="在 Struts 中应用 Ajax 技术"/>
 <meta name="twitter:description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。"/>
 
 
 
-<meta property="og:title" content="在 Struts 中应用 Ajax 技术" />
+    <meta property="og:title" content="在 Struts 中应用 Ajax 技术" />
 <meta property="og:description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/" />
+<meta property="og:url" content="https://example.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/" />
+<meta property="og:image" content="https://example.com"/>
 <meta property="article:published_time" content="2018-03-19T14:28:25+00:00" />
-<meta property="article:modified_time" content="2018-03-19T14:28:25+00:00" /><meta property="og:site_name" content="777&#39;s Blog" />
+<meta property="article:modified_time" content="2018-03-19T14:28:25+00:00" />
+
+
+
+
+    <meta property="article:section" content="学习笔记" />
+
+
+
+    <meta property="article:published_time" content="2018-03-19 14:28:25 &#43;0000 UTC" />
 
 
 
 
 
 
-  </head>
-  <body class="">
-    <div class="container">
-      <header class="header">
-  <span class="header__inner">
-    <a
-  href="/"
-  class="logo"
-  style="text-decoration: none;"
->
-  
-    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span>
-    <span class="logo__text"
-      >777&#39;s Blog</span
-    >
-    <span class="logo__cursor"></span>
-  
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://example.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /777/blog</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
 </a>
 
-    <span class="header__right">
-      
-        <nav class="menu">
-  <ul class="menu__inner menu__inner--desktop">
-    
-      
-        
-          <li><a href="/about">关于</a></li>
-        
-      
-        
-          <li><a href="/tags">标签</a></li>
-        
-      
-        
-          <li><a href="/categories">分类</a></li>
-        
-      
-        
-          <li><a href="/archive">归档</a></li>
-        
-      
-      
-        <ul class="menu__sub-inner">
-          <li class="menu__sub-inner-more-trigger">
-            其他
-            <span class="menu__sub-inner-more-trigger-icon"
-              ><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span
-            >
-          </li>
-          <ul class="menu__sub-inner-more hidden">
-            
-              
-                <li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-              
-            
-              
-                <li><a href="https://www.douban.com/people/hishark/photos">相册</a></li>
-              
-            
-          </ul>
-        </ul>
-      
-      
-  </ul>
 
-  <ul class="menu__inner menu__inner--mobile">
-    
-      
-        <li><a href="/about">关于</a></li>
-      
-    
-      
-        <li><a href="/tags">标签</a></li>
-      
-    
-      
-        <li><a href="/categories">分类</a></li>
-      
-    
-      
-        <li><a href="/archive">归档</a></li>
-      
-    
-      
-        <li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-      
-    
-      
-        <li><a href="https://www.douban.com/people/hishark/photos">相册</a></li>
-      
-    
-  </ul>
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://example.com/about/">关于</a></li><li><a href="https://example.com/posts/">归档</a></li><li><a href="https://example.com/tags">标签</a></li><li><a href="https://example.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
+    </ul>
 </nav>
 
-        <span class="menu-trigger">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </span>
-      
-      <span class="theme-toggle">
-        <svg
-  class="theme-toggler"
-  width="24"
-  height="24"
-  viewBox="0 0 48 48"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
-  />
-</svg>
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
 
-      </span>
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
     </span>
-  </span>
 </header>
 
 
-      <div class="content">
-        
-  
-  
+            <div class="content">
+                
+    <main class="post">
 
-  <div class="post">
-    <h1 class="post-title">在 Struts 中应用 Ajax 技术</h1>
-    <div class="post-meta">
-      
-        <span class="post-date">
-          2018-03-19
-        </span>
+        <div class="post-info">
+            
+            </p>
+        </div>
 
-        
-          
+        <article>
+            <h2 class="post-title"><a href="https://example.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/">在 Struts 中应用 Ajax 技术</a></h2>
+
             
 
+            
 
-
-          
-        
-      
-
-      
-
-
-      
-        <span class="post-read-time"
-          >— 1 min read</span
-        >
-      
-    </div>
-
-    
-      <span class="post-tags">
-        
-          <a href="https://hishark777.com/tags/struts/">#Struts</a>&nbsp;
-        
-          <a href="https://hishark777.com/tags/ajax/">#Ajax</a>&nbsp;
-        
-      </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      <p>Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。</p>
+            <div class="post-content">
+                <p>Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。</p>
 <h4 id="一个简单的应用">一个简单的应用</h4>
 <p>注册时输入用户名，要检测该用户名是否已被注册。</p>
 <h5 id="在webcontentweb-inflib中添加jar包">在\WebContent\WEB-INF\lib中添加jar包</h5>
-<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpi4a7fbkzj305m00nwe9.jpg)</center>
+<!-- raw HTML omitted -->
 <h5 id="在jsp中配置库">在jsp中配置库</h5>
 <pre><code class="language-jsp" data-lang="jsp">&lt;%@ taglib uri=&quot;/struts-tags&quot; prefix=&quot;s&quot;%&gt;
 &lt;%@ taglib uri=&quot;/struts-dojo-tags&quot; prefix=&quot;sx&quot; %&gt;
@@ -322,95 +230,68 @@ UserService us <span style="color:#f92672">=</span> <span style="color:#66d9ef">
 </code></pre></div><h5 id="ajaxresultjsp中即可获得checkuserresult的值">ajaxResult.jsp中即可获得checkUserResult的值</h5>
 <pre><code class="language-jsp" data-lang="jsp">&lt;s:property value=&quot;checkUserResult&quot;/&gt;
 </code></pre><h5 id="整个jsp页面将返回到regjsp中id为receiveresult的盒子里">整个jsp页面将返回到reg.jsp中id为receiveResult的盒子里</h5>
-<center>![](https://ws1.sinaimg.cn/large/0068SXX6gy1fpi5an2gvoj308a01i3yb.jpg)</center>
-<hr>
-#### 踩了一些坑
+<!-- raw HTML omitted -->
 <ol>
 <li>struts.xml改动了就要重启服务器。</li>
 <li>前面的工程中有写过一个注册校验的功能，检测用户名是否存在时会提交整个表单所以无法通过校验，会报错。</li>
 <li>表单提交中文没有正确获得中文，而是获得<code>&amp;#21834;&amp;#21834;&amp;#21834;</code>编码，把struts中这一句的gbk换成utf-8即可。</li>
 </ol>
-<center>
-<div>
-~~`<constant name="struts.i18n.encoding" value="gbk"></constant>`~~
-`<constant name="struts.i18n.encoding" value="utf-8"></constant>`
-</div></center>
-    </div>
-    
-      
-        <div class="pagination">
-          <div class="pagination__title">
-            <span class="pagination__title-h"
-              >Read other posts</span
-            >
-            <hr />
-          </div>
-          <div class="pagination__buttons">
+<!-- raw HTML omitted -->
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
             
-              <span class="button previous">
-                <a href="https://hishark777.com/post/%E9%95%BF%E7%97%98%E4%BA%86/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">怎么又长痘了</span>
-                </a>
-              </span>
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://example.com/tags/struts/">Struts</a></span>
+        <span class="tag"><a href="https://example.com/tags/ajax/">Ajax</a></span>
+        
+    </p>
+
             
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+        
+    </p>
+
+  		</div>
+    </main>
+
+            </div>
+
             
-              <span class="button next">
-                <a href="https://hishark777.com/post/as-github%E8%B8%A9%E5%9D%91/">
-                  <span class="button__text">AS - Github 踩坑</span>
-                  <span class="button__icon">→</span>
-                </a>
-              </span>
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2017 - 2021</span>
             
-          </div>
         </div>
-      
-    
-
-    
-      
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      
-    
-  </div>
-
-      </div>
-
-      
-        <footer class="footer">
-  <div class="footer__inner">
-    
-      <div class="copyright copyright--user">© 2017-2020 ✌️ hishark777</div>
-      
-  </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+          </div>
+    </div>
 </footer>
 
-<script src="https://hishark777.com/assets/main.js"></script>
-<script src="https://hishark777.com/assets/prism.js"></script>
+            
+        </div>
+
+        
 
 
-      
-    </div>
 
-    
-  </body>
+
+<script type="text/javascript" src="https://example.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
 </html>
