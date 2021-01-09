@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="777 ">
+<meta name="description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。
+" />
+<meta name="keywords" content=", Struts, Ajax" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://hishark777.com/posts/2018/03/%E5%9C%A8-struts-%E4%B8%AD%E5%BA%94%E7%94%A8-ajax-%E6%8A%80%E6%9C%AF/" />
+
+
+    <title>
+        
+            在 Struts 中应用 Ajax 技术 :: 777&#39;s blog  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://hishark777.com/favicon-16x16.png">
+    <link rel="manifest" href="https://hishark777.com/site.webmanifest">
+    <link rel="mask-icon" href="https://hishark777.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://hishark777.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="在 Struts 中应用 Ajax 技术">
+<meta itemprop="description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。">
+<meta itemprop="datePublished" content="2018-03-19T14:28:25&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-19T14:28:25&#43;00:00" />
+<meta itemprop="wordCount" content="178">
+<meta itemprop="image" content="https://hishark777.com"/>
+
+
+
+<meta itemprop="keywords" content="Struts,Ajax," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hishark777.com"/>
+
+<meta name="twitter:title" content="在 Struts 中应用 Ajax 技术"/>
+<meta name="twitter:description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。"/>
+
+
+
+    <meta property="og:title" content="在 Struts 中应用 Ajax 技术" />
+<meta property="og:description" content="Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/posts/2018/03/%E5%9C%A8-struts-%E4%B8%AD%E5%BA%94%E7%94%A8-ajax-%E6%8A%80%E6%9C%AF/" />
+<meta property="og:image" content="https://hishark777.com"/>
+<meta property="article:published_time" content="2018-03-19T14:28:25+00:00" />
+<meta property="article:modified_time" content="2018-03-19T14:28:25+00:00" />
+
+
+
+
+    <meta property="article:section" content="学习笔记" />
+
+
+
+    <meta property="article:published_time" content="2018-03-19 14:28:25 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://hishark777.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /777/blog</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://hishark777.com/about/">关于</a></li><li><a href="https://hishark777.com/posts/">归档</a></li><li><a href="https://hishark777.com/tags">标签</a></li><li><a href="https://hishark777.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://hishark777.com/posts/2018/03/%E5%9C%A8-struts-%E4%B8%AD%E5%BA%94%E7%94%A8-ajax-%E6%8A%80%E6%9C%AF/">在 Struts 中应用 Ajax 技术</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p>Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。</p>
+<h4 id="一个简单的应用">一个简单的应用</h4>
+<p>注册时输入用户名，要检测该用户名是否已被注册。</p>
+<h5 id="在webcontentweb-inflib中添加jar包">在\WebContent\WEB-INF\lib中添加jar包</h5>
+<!-- raw HTML omitted -->
+<h5 id="在jsp中配置库">在jsp中配置库</h5>
+<pre><code class="language-jsp" data-lang="jsp">&lt;%@ taglib uri=&quot;/struts-tags&quot; prefix=&quot;s&quot;%&gt;
+&lt;%@ taglib uri=&quot;/struts-dojo-tags&quot; prefix=&quot;sx&quot; %&gt;
+</code></pre><h5 id="添加头部">添加头部</h5>
+<pre><code class="language-jsp" data-lang="jsp">&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=GB18030&quot;&gt;
+&lt;title&gt;用户注册&lt;/title&gt;
+&lt;sx:head/&gt;
+&lt;/head&gt;
+</code></pre><h5 id="添加一个链接">添加一个链接</h5>
+<pre><code class="language-jsp" data-lang="jsp">&lt;!-- 添加一个链接检查用户是否存在 --&gt;
+&lt;s:url id=&quot;check&quot; value=&quot;checkUser.action&quot;&gt;&lt;/s:url&gt;
+
+&lt;s:form id=&quot;regForm&quot; action=&quot;regAction&quot; method=&quot;post&quot;&gt;
+&lt;s:textfield label=&quot;用户名&quot; name=&quot;user.userName&quot; title=&quot;请输入用户名！&quot;/&gt;
+
+&lt;!-- 
+	参数含义：
+	1.href：提交给哪个action处理，这里即提交给name为checkUser的action处理。
+	2.formId：提交的是哪个表单，这里提交id为regForm的表单。
+	3.targets：结果返回到哪里，这里就是返回到下面id为receiveResult的盒子里。
+--&gt;
+&lt;sx:a href=&quot;%{check}&quot; formId=&quot;regForm&quot; targets=&quot;receiveResult&quot;&gt;check&lt;/sx:a&gt;
+
+&lt;sx:div id=&quot;receiveResult&quot; theme=&quot;simple&quot;&gt;&lt;/sx:div&gt;
+&lt;/s:form&gt;
+</code></pre><h5 id="userservice接口以及接口的实现">UserService接口以及接口的实现</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">UserService</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">checkUser</span><span style="color:#f92672">(</span>User user<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserServiceImp</span> <span style="color:#66d9ef">implements</span> UserService <span style="color:#f92672">{</span>
+	<span style="color:#75715e">//从数据库里取数据要用db里的一个查询方法！
+</span><span style="color:#75715e"></span>	DbConnection db <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DbConnection<span style="color:#f92672">();</span>
+	<span style="color:#75715e">//取数据先要放到这个里头 利用db查询得到的是一个resultset结果集
+</span><span style="color:#75715e"></span>	ResultSet rs <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">checkUser</span><span style="color:#f92672">(</span>User user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// TODO Auto-generated method stub
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">boolean</span> bl <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+		String strSql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;select * from user_table where userName=N&#39;&#34;</span><span style="color:#f92672">+</span>user<span style="color:#f92672">.</span><span style="color:#a6e22e">getUserName</span><span style="color:#f92672">()+</span><span style="color:#e6db74">&#34;&#39;&#34;</span><span style="color:#f92672">;</span>
+		rs <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span><span style="color:#a6e22e">executeQuery</span><span style="color:#f92672">(</span>strSql<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>rs<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+				bl<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+				<span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>SQLException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			<span style="color:#75715e">// TODO Auto-generated catch block
+</span><span style="color:#75715e"></span>			e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+		<span style="color:#f92672">}</span>
+		<span style="color:#66d9ef">return</span> bl<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="在regaction中添加checkuser方法">在RegAction中添加checkUser方法</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">User user<span style="color:#f92672">;</span>
+String checkUserResult <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+UserService us <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> UserServiceImp<span style="color:#f92672">();</span>
+
+<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">checkUser</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+	String str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;checkDone&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>us<span style="color:#f92672">.</span><span style="color:#a6e22e">checkUser</span><span style="color:#f92672">(</span>user<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+		checkUserResult <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;用户名已存在！换一个啦！&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+		checkUserResult <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;用户名不存在！可以使用！&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>	
+	<span style="color:#66d9ef">return</span> str<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="在strutsxml中配置checkuseraction">在struts.xml中配置checkUser.action</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;checkUser&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;jxnu.edu.cn.x3321.action.RegAction&#34;</span> <span style="color:#a6e22e">method=</span><span style="color:#e6db74">&#34;checkUser&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;result</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;checkDone&#34;</span><span style="color:#f92672">&gt;</span>/reg/ajaxResult.jsp<span style="color:#f92672">&lt;/result&gt;</span>
+<span style="color:#f92672">&lt;/action&gt;</span>
+</code></pre></div><h5 id="ajaxresultjsp中即可获得checkuserresult的值">ajaxResult.jsp中即可获得checkUserResult的值</h5>
+<pre><code class="language-jsp" data-lang="jsp">&lt;s:property value=&quot;checkUserResult&quot;/&gt;
+</code></pre><h5 id="整个jsp页面将返回到regjsp中id为receiveresult的盒子里">整个jsp页面将返回到reg.jsp中id为receiveResult的盒子里</h5>
+<!-- raw HTML omitted -->
+<ol>
+<li>struts.xml改动了就要重启服务器。</li>
+<li>前面的工程中有写过一个注册校验的功能，检测用户名是否存在时会提交整个表单所以无法通过校验，会报错。</li>
+<li>表单提交中文没有正确获得中文，而是获得<code>&amp;#21834;&amp;#21834;&amp;#21834;</code>编码，把struts中这一句的gbk换成utf-8即可。</li>
+</ol>
+<!-- raw HTML omitted -->
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://hishark777.com/tags/struts/">Struts</a></span>
+        <span class="tag"><a href="https://hishark777.com/tags/ajax/">Ajax</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        178 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2018-03-19 22:28
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://hishark777.com/posts/2018/03/%E6%80%8E%E4%B9%88%E5%8F%88%E9%95%BF%E7%97%98%E4%BA%86/">
+                <span class="button__icon">←</span>
+                <span class="button__text">怎么又长痘了</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://hishark777.com/posts/2018/03/as-github-%E8%B8%A9%E5%9D%91/">
+                <span class="button__text">AS - Github 踩坑</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2017 - 2021</span>
+            
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://hishark777.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

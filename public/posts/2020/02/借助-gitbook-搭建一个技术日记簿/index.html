@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="777 ">
+<meta name="description" content="整了个Gitbook挂到博客下面 来写技术日记
+去年十二月偶然发现了joyee的tech-diary 觉得挺有意思于是依葫芦画瓢也给自己整了个777-Tech-Diary 用了大概一个月发现了一些小问题：
+ 查看某日日记时无法直接查看前一日和后一日的内容 日历小bug有点多  第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。
+找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。
+" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://hishark777.com/posts/2020/02/%E5%80%9F%E5%8A%A9-gitbook-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0%E7%B0%BF/" />
+
+
+    <title>
+        
+            借助 Gitbook 搭建一个技术日记簿 :: 777&#39;s blog  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://hishark777.com/favicon-16x16.png">
+    <link rel="manifest" href="https://hishark777.com/site.webmanifest">
+    <link rel="mask-icon" href="https://hishark777.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://hishark777.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="借助 Gitbook 搭建一个技术日记簿">
+<meta itemprop="description" content="整了个Gitbook挂到博客下面
+来写技术日记
+去年十二月偶然发现了joyee的tech-diary
+觉得挺有意思于是依葫芦画瓢也给自己整了个777-Tech-Diary
+用了大概一个月发现了一些小问题：
+
+查看某日日记时无法直接查看前一日和后一日的内容
+日历小bug有点多
+
+第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。
+找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。">
+<meta itemprop="datePublished" content="2020-02-15T13:24:17&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-15T13:24:17&#43;00:00" />
+<meta itemprop="wordCount" content="40">
+<meta itemprop="image" content="https://hishark777.com"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hishark777.com"/>
+
+<meta name="twitter:title" content="借助 Gitbook 搭建一个技术日记簿"/>
+<meta name="twitter:description" content="整了个Gitbook挂到博客下面
+来写技术日记
+去年十二月偶然发现了joyee的tech-diary
+觉得挺有意思于是依葫芦画瓢也给自己整了个777-Tech-Diary
+用了大概一个月发现了一些小问题：
+
+查看某日日记时无法直接查看前一日和后一日的内容
+日历小bug有点多
+
+第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。
+找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。"/>
+
+
+
+    <meta property="og:title" content="借助 Gitbook 搭建一个技术日记簿" />
+<meta property="og:description" content="整了个Gitbook挂到博客下面
+来写技术日记
+去年十二月偶然发现了joyee的tech-diary
+觉得挺有意思于是依葫芦画瓢也给自己整了个777-Tech-Diary
+用了大概一个月发现了一些小问题：
+
+查看某日日记时无法直接查看前一日和后一日的内容
+日历小bug有点多
+
+第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。
+找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/posts/2020/02/%E5%80%9F%E5%8A%A9-gitbook-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0%E7%B0%BF/" />
+<meta property="og:image" content="https://hishark777.com"/>
+<meta property="article:published_time" content="2020-02-15T13:24:17+00:00" />
+<meta property="article:modified_time" content="2020-02-15T13:24:17+00:00" />
+
+
+
+
+    <meta property="article:section" content="学习笔记" />
+
+
+
+    <meta property="article:published_time" content="2020-02-15 13:24:17 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://hishark777.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /777/blog</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://hishark777.com/about/">关于</a></li><li><a href="https://hishark777.com/posts/">归档</a></li><li><a href="https://hishark777.com/tags">标签</a></li><li><a href="https://hishark777.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://hishark777.com/posts/2020/02/%E5%80%9F%E5%8A%A9-gitbook-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0%E7%B0%BF/">借助 Gitbook 搭建一个技术日记簿</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p>整了个Gitbook挂到博客下面
+来写技术日记</p>
+<p>去年十二月偶然发现了<a href="https://www.github.com/joyeecheung/diary">joyee的tech-diary</a>
+觉得挺有意思于是依葫芦画瓢也给自己整了个<a href="https://www.hishark777.com/diary/">777-Tech-Diary</a>
+用了大概一个月发现了一些小问题：</p>
+<ol>
+<li>查看某日日记时无法直接查看前一日和后一日的内容</li>
+<li>日历小bug有点多</li>
+</ol>
+<p>第一点是joyee的TODO，但是她好像已经没有维护了，我又是个大懒鬼所以打算另找出路。</p>
+<p>找了一圈都没有找到满意的工具，本月初突然想起Gitbook好像很符合我的需求，于是开始动手。</p>
+<h2 id="1-安装gitbook">1. 安装Gitbook</h2>
+<p>跟着<a href="https://www.jianshu.com/p/dc53e589897a">Gitbook入门</a>把Gitbook装好了在本地跑了起来，安装过程中遇到个<a href="https://blog.csdn.net/w5688414/article/details/94172354">小错误</a>，重装node解决了。</p>
+<h2 id="2-部署到github">2. 部署到Github</h2>
+<p>再参照<a href="https://www.jianshu.com/p/4e109a1113b2">用gitbook做笔记如何部署到github</a>成功把gitbook挂到博客域名下。</p>
+<h2 id="3-gitbook更新步骤">3. Gitbook更新步骤</h2>
+<p>上面两步全部做好之后，以后只需要四条指令即可更新日记。</p>
+<pre><code>1. npm run build
+2. git add .
+3. git commit -m &quot;update&quot;
+4. git push
+</code></pre><h3 id="4-done">4. Done</h3>
+<p>最后我就拥有了一个写技术日记和瞎bb的小旮旯——<a href="https://hishark777.com/777-Tech-Diary/">777 Tech Diary</a>。
+耶✌️</p>
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        40 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-02-15 21:24
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://hishark777.com/posts/2020/03/tech-diary-2020.03/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Tech Diary | 2020.03</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://hishark777.com/posts/2020/02/tech-diary-2020.02/">
+                <span class="button__text">Tech Diary | 2020.02</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2017 - 2021</span>
+            
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://hishark777.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

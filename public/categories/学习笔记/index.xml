@@ -14,10 +14,10 @@
     
     <item>
       <title>ARTS 2</title>
-      <link>https://hishark777.com/post/arts2/</link>
+      <link>https://hishark777.com/posts/2021/01/arts-2/</link>
       <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/arts2/</guid>
+      <guid>https://hishark777.com/posts/2021/01/arts-2/</guid>
       <description>&lt;p&gt;第二周～&lt;/p&gt;
 &lt;p&gt;这周做点每日一题&lt;/p&gt;
 &lt;p&gt;看一篇论文&lt;/p&gt;
@@ -26,84 +26,84 @@
     
     <item>
       <title>ARTS 1</title>
-      <link>https://hishark777.com/post/arts1/</link>
+      <link>https://hishark777.com/posts/2020/12/arts-1/</link>
       <pubDate>Mon, 28 Dec 2020 09:29:49 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/arts1/</guid>
+      <guid>https://hishark777.com/posts/2020/12/arts-1/</guid>
       <description>&lt;p&gt;2020 年的最后一周，不如就来开启第一个 ARTS 吧。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用 ConstraintLayout 构建自适应布局</title>
-      <link>https://hishark777.com/post/constraint-layout/</link>
+      <link>https://hishark777.com/posts/2020/11/%E4%BD%BF%E7%94%A8-constraintlayout-%E6%9E%84%E5%BB%BA%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80/</link>
       <pubDate>Mon, 23 Nov 2020 19:20:55 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/constraint-layout/</guid>
+      <guid>https://hishark777.com/posts/2020/11/%E4%BD%BF%E7%94%A8-constraintlayout-%E6%9E%84%E5%BB%BA%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80/</guid>
       <description>&lt;p&gt;抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>中英文空格使用指北</title>
-      <link>https://hishark777.com/post/chinese-copywriting/</link>
+      <link>https://hishark777.com/posts/2020/10/%E4%B8%AD%E8%8B%B1%E6%96%87%E7%A9%BA%E6%A0%BC%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8C%97/</link>
       <pubDate>Tue, 27 Oct 2020 18:18:26 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/chinese-copywriting/</guid>
+      <guid>https://hishark777.com/posts/2020/10/%E4%B8%AD%E8%8B%B1%E6%96%87%E7%A9%BA%E6%A0%BC%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8C%97/</guid>
       <description>&lt;p&gt;你会在中文和英文之间加空格「 」吗？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo 安装指定版本</title>
-      <link>https://hishark777.com/post/hugo-version/</link>
+      <link>https://hishark777.com/posts/2020/10/hugo-%E5%AE%89%E8%A3%85%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC/</link>
       <pubDate>Tue, 27 Oct 2020 15:00:32 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/hugo-version/</guid>
+      <guid>https://hishark777.com/posts/2020/10/hugo-%E5%AE%89%E8%A3%85%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC/</guid>
       <description>&lt;p&gt;前些天逛博客看到 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 &lt;a href=&#34;https://github.com/wangchucheng/hugo-eureka&#34;&gt;Eureka&lt;/a&gt;，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>What’s new in AS 4.1</title>
-      <link>https://hishark777.com/post/as-4-1/</link>
+      <link>https://hishark777.com/posts/2020/10/whats-new-in-as-4.1/</link>
       <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/as-4-1/</guid>
+      <guid>https://hishark777.com/posts/2020/10/whats-new-in-as-4.1/</guid>
       <description>&lt;p&gt;看看 Android Studio 4.1 更新了一些什么新特性&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Room Database</title>
-      <link>https://hishark777.com/post/room-database/</link>
+      <link>https://hishark777.com/posts/2020/10/room-database/</link>
       <pubDate>Thu, 15 Oct 2020 17:04:10 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/room-database/</guid>
+      <guid>https://hishark777.com/posts/2020/10/room-database/</guid>
       <description>&lt;p&gt;虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。&lt;/p&gt;
 &lt;p&gt;来看看 Room 怎么用。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>SRGAN</title>
-      <link>https://hishark777.com/post/srgan/</link>
+      <link>https://hishark777.com/posts/2020/09/srgan/</link>
       <pubDate>Tue, 29 Sep 2020 13:39:31 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/srgan/</guid>
+      <guid>https://hishark777.com/posts/2020/09/srgan/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;好的，为了毕业，开始读论文 T T&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Mkdocs-Material Tutorial</title>
-      <link>https://hishark777.com/post/mkdocs-material-tutorial/</link>
+      <link>https://hishark777.com/posts/2020/09/mkdocs-material-tutorial/</link>
       <pubDate>Mon, 07 Sep 2020 20:06:19 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/mkdocs-material-tutorial/</guid>
+      <guid>https://hishark777.com/posts/2020/09/mkdocs-material-tutorial/</guid>
       <description>&lt;p&gt;总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个&lt;a href=&#34;https://hishark777.com/777-Tech-Diary/&#34;&gt;Gitbook&lt;/a&gt;放&lt;del&gt;技术日记&lt;/del&gt;乱七八糟的碎碎念，最后迁移到了&lt;a href=&#34;http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/&#34;&gt;博客&lt;/a&gt;。前阵子看到有人用&lt;a href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;&gt;Mkdocs-Material&lt;/a&gt;写博客，转了一圈官网觉得有点意思，&lt;del&gt;也比Gitbook更好看&lt;/del&gt;（比以前的Gitbook好看），于是来整一个做校招笔记。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Room Database Viewer</title>
-      <link>https://hishark777.com/post/roomdatabaseviewer/</link>
+      <link>https://hishark777.com/posts/2020/05/room-database-viewer/</link>
       <pubDate>Fri, 01 May 2020 01:18:15 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/roomdatabaseviewer/</guid>
+      <guid>https://hishark777.com/posts/2020/05/room-database-viewer/</guid>
       <description>&lt;p&gt;Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。&lt;/p&gt;
 &lt;p&gt;纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？&lt;/p&gt;
 &lt;p&gt;查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。&lt;/p&gt;</description>

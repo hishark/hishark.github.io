@@ -16,6 +16,14 @@ tags:
 
 <!--more-->
 
+## 2021-01-09 Sat
+
+### Hugo
+
+[hugo编译出的页面没有样式怎么办？](https://www.zhihu.com/question/414295803/answer/1410344932)
+
+- 智障了忘记改baseurl
+
 ## 2021-01-08 Fri
 
 ### Android 技术博客

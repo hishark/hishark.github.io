@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="777 ">
+<meta name="description" content="Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
+纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？
+查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。
+" />
+<meta name="keywords" content=", Android, Room, Database" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://hishark777.com/posts/2020/05/room-database-viewer/" />
+
+
+    <title>
+        
+            Room Database Viewer :: 777&#39;s blog  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://hishark777.com/favicon-16x16.png">
+    <link rel="manifest" href="https://hishark777.com/site.webmanifest">
+    <link rel="mask-icon" href="https://hishark777.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://hishark777.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Room Database Viewer">
+<meta itemprop="description" content="Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
+纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？
+查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。">
+<meta itemprop="datePublished" content="2020-05-01T01:18:15&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-01T01:18:15&#43;00:00" />
+<meta itemprop="wordCount" content="62">
+<meta itemprop="image" content="https://hishark777.com"/>
+
+
+
+<meta itemprop="keywords" content="Android,Room,Database," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hishark777.com"/>
+
+<meta name="twitter:title" content="Room Database Viewer"/>
+<meta name="twitter:description" content="Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
+纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？
+查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。"/>
+
+
+
+    <meta property="og:title" content="Room Database Viewer" />
+<meta property="og:description" content="Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
+纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？
+查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/posts/2020/05/room-database-viewer/" />
+<meta property="og:image" content="https://hishark777.com"/>
+<meta property="article:published_time" content="2020-05-01T01:18:15+00:00" />
+<meta property="article:modified_time" content="2020-05-01T01:18:15+00:00" />
+
+
+
+
+    <meta property="article:section" content="学习笔记" />
+
+
+
+    <meta property="article:published_time" content="2020-05-01 01:18:15 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://hishark777.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /777/blog</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://hishark777.com/about/">关于</a></li><li><a href="https://hishark777.com/posts/">归档</a></li><li><a href="https://hishark777.com/tags">标签</a></li><li><a href="https://hishark777.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://hishark777.com/posts/2020/05/room-database-viewer/">Room Database Viewer</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p>Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。</p>
+<p>纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？</p>
+<p>查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。</p>
+<h2 id="1-stetho">1. Stetho</h2>
+<p>Github: <a href="https://github.com/facebook/stetho">https://github.com/facebook/stetho</a></p>
+<p>Stetho是Facebook开发的工具，功能还是非常强大的，具体使用方法README里说得很清楚。</p>
+<p>如果按照教程做完了还是没用，检查一下是否在Application里对Stetho进行了初始化。</p>
+<h2 id="2-android-debug-database">2. Android Debug Database</h2>
+<p>Github: <a href="https://github.com/amitshekhariitbhu/Android-Debug-Database">https://github.com/amitshekhariitbhu/Android-Debug-Database</a></p>
+<p>如果按照教程做完了还是没用，打开终端输入<code>adb forward tcp:8080 tcp:8080</code>，再访问http://localhost:8080 就ok了。</p>
+<h2 id="3-注意">3. 注意⚠️</h2>
+<p>不管是Stetho还是Android Debug Database，二者的共同点就是不能自定义Room Database的路径。由于我之前自定义了路径，导致使用这两个都没法取到数据库，坑了我好一会儿。</p>
+<p>像下面这样就是只指定了数据库的名字，没有自定义路径，是可行的。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String DB_NAME <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;xxx-db&#34;</span><span style="color:#f92672">;</span>
+Room<span style="color:#f92672">.</span><span style="color:#a6e22e">databaseBuilder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> AppDatabase<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> DB_NAME<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">fallbackToDestructiveMigration</span><span style="color:#f92672">()</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">allowMainThreadQueries</span><span style="color:#f92672">()</span>  
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>  
+</code></pre></div><p>像下面这样就是自定义了数据库的存储路径，最终导致取不到数据库的数据。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String DB_NAME <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;xxx-db&#34;</span><span style="color:#f92672">;</span>
+String DB_PATH <span style="color:#f92672">=</span> String<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%s/%s&#34;</span><span style="color:#f92672">,</span>Environment<span style="color:#f92672">.</span><span style="color:#a6e22e">getExternalStorageDirectory</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getAbsolutePath</span><span style="color:#f92672">(),</span> DB_NAME<span style="color:#f92672">);</span>
+Room<span style="color:#f92672">.</span><span style="color:#a6e22e">databaseBuilder</span><span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> AppDatabase<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> DB_PATH<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">fallbackToDestructiveMigration</span><span style="color:#f92672">()</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">allowMainThreadQueries</span><span style="color:#f92672">()</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+</code></pre></div><h2 id="4-总结">4. 总结</h2>
+<p>虽然Stetho在Github的Star更多，但是我个人还是更喜欢ADD，毕竟界面好看就很吸引本颜狗了哈！还能直接修改、删除数据，Debug效率蹭蹭往上涨📈。</p>
+<h2 id="5-参考">5. 参考</h2>
+<ul>
+<li><a href="https://stackoverflow.com/questions/44429372/view-contents-of-database-created-with-room-persistence-library">https://stackoverflow.com/questions/44429372/view-contents-of-database-created-with-room-persistence-library</a></li>
+<li><a href="https://developer.android.com/training/data-storage/room?hl=zh-cn">https://developer.android.com/training/data-storage/room?hl=zh-cn</a></li>
+</ul>
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://hishark777.com/tags/android/">Android</a></span>
+        <span class="tag"><a href="https://hishark777.com/tags/room/">Room</a></span>
+        <span class="tag"><a href="https://hishark777.com/tags/database/">Database</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        62 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-05-01 09:18
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://hishark777.com/posts/2020/05/tech-diary-2020.05/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Tech Diary | 2020.05</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://hishark777.com/posts/2020/04/tech-diary-2020.04/">
+                <span class="button__text">Tech Diary | 2020.04</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2017 - 2021</span>
+            
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://hishark777.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

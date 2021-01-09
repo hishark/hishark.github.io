@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="777 ">
+<meta name="description" content="拦截器流程概览" />
+<meta name="keywords" content=", Struts" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://hishark777.com/posts/2018/03/interceptor/" />
+
+
+    <title>
+        
+            Interceptor :: 777&#39;s blog  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://hishark777.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://hishark777.com/favicon-16x16.png">
+    <link rel="manifest" href="https://hishark777.com/site.webmanifest">
+    <link rel="mask-icon" href="https://hishark777.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://hishark777.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Interceptor">
+<meta itemprop="description" content="拦截器流程概览">
+<meta itemprop="datePublished" content="2018-03-14T09:00:54&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-14T09:00:54&#43;00:00" />
+<meta itemprop="wordCount" content="281">
+<meta itemprop="image" content="https://hishark777.com"/>
+
+
+
+<meta itemprop="keywords" content="Struts," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hishark777.com"/>
+
+<meta name="twitter:title" content="Interceptor"/>
+<meta name="twitter:description" content="拦截器流程概览"/>
+
+
+
+    <meta property="og:title" content="Interceptor" />
+<meta property="og:description" content="拦截器流程概览" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hishark777.com/posts/2018/03/interceptor/" />
+<meta property="og:image" content="https://hishark777.com"/>
+<meta property="article:published_time" content="2018-03-14T09:00:54+00:00" />
+<meta property="article:modified_time" content="2018-03-14T09:00:54+00:00" />
+
+
+
+
+    <meta property="article:section" content="学习笔记" />
+
+
+
+    <meta property="article:published_time" content="2018-03-14 09:00:54 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://hishark777.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /777/blog</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://hishark777.com/about/">关于</a></li><li><a href="https://hishark777.com/posts/">归档</a></li><li><a href="https://hishark777.com/tags">标签</a></li><li><a href="https://hishark777.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://hishark777.com/posts/2018/03/interceptor/">Interceptor</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <h4 id="拦截器流程概览">拦截器流程概览</h4>
+<h5 id="定义一个自定义拦截器myinterceptor实现interceptor接口">定义一个自定义拦截器MyInterceptor实现Interceptor接口</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/*
+</span><span style="color:#75715e"> * 拦截器需要定义 
+</span><span style="color:#75715e"> * 默认的那些拦截器都定义在struts-default.xml中 
+</span><span style="color:#75715e"> * 自定义拦截器要去struts.xml中定义
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyInterceptor</span> <span style="color:#66d9ef">implements</span> Interceptor <span style="color:#f92672">{</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">destroy</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// TODO Auto-generated method stub
+</span><span style="color:#75715e"></span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">init</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// TODO Auto-generated method stub
+</span><span style="color:#75715e"></span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">intercept</span><span style="color:#f92672">(</span>ActionInvocation action<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// TODO Auto-generated method stub
+</span><span style="color:#75715e"></span>		String str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+
+		<span style="color:#75715e">// 执行action之前
+</span><span style="color:#75715e"></span>		System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;before action...&#34;</span><span style="color:#f92672">);</span>
+
+		<span style="color:#75715e">/*
+</span><span style="color:#75715e">		 * 进入action 唤醒action
+</span><span style="color:#75715e">		 * 此时系统流程进入action
+</span><span style="color:#75715e">		 * action中execute方法返回的字符串赋给这里的str
+</span><span style="color:#75715e">		 */</span>
+		str <span style="color:#f92672">=</span> action<span style="color:#f92672">.</span><span style="color:#a6e22e">invoke</span><span style="color:#f92672">();</span>
+
+		<span style="color:#75715e">// 执行action之后
+</span><span style="color:#75715e"></span>		System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;after action...&#34;</span><span style="color:#f92672">);</span>
+
+		<span style="color:#75715e">// str返回到struts.xml中根据action的result进行匹配
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">return</span> str<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="在strutsxml中定义拦截器">在struts.xml中定义拦截器</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;!-- 定义自定义的拦截器 --&gt;</span>
+<span style="color:#f92672">&lt;interceptors&gt;</span>
+	<span style="color:#f92672">&lt;interceptor</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;MyInterceptor&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;interceptor.MyInterceptor&#34;</span><span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;/interceptors&gt;</span>
+</code></pre></div><h5 id="创建一个action来进行拦截器测试">创建一个action来进行拦截器测试</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.opensymphony.xwork2.ActionSupport<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InterceptorTestAction</span> <span style="color:#66d9ef">extends</span> ActionSupport <span style="color:#f92672">{</span>
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">execute</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// TODO Auto-generated method stub
+</span><span style="color:#75715e"></span>		String str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;succ&#34;</span><span style="color:#f92672">;</span>
+		System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;in action...&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> str<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="在strutsxml中定义action">在struts.xml中定义action</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;InterceptorTest&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;jxnu.edu.cn.x3321.action.InterceptorTestAction&#34;</span><span style="color:#f92672">&gt;</span>
+	<span style="color:#75715e">&lt;!-- 在想要插入拦截器的action中加上下一句 --&gt;</span>
+	<span style="color:#f92672">&lt;interceptor-ref</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;MyInterceptor&#34;</span> <span style="color:#f92672">/&gt;</span>
+	<span style="color:#75715e">&lt;!-- 还要指定系统必需的拦截器栈 --&gt;</span>
+	<span style="color:#f92672">&lt;interceptor-ref</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;defaultStack&#34;</span> <span style="color:#f92672">/&gt;</span>
+	<span style="color:#f92672">&lt;result</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;succ&#34;</span><span style="color:#f92672">&gt;</span>/login/login.jsp<span style="color:#f92672">&lt;/result&gt;</span>
+	<span style="color:#f92672">&lt;result</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fail&#34;</span><span style="color:#f92672">&gt;</span>/login/error.jsp<span style="color:#f92672">&lt;/result&gt;</span>
+<span style="color:#f92672">&lt;/action&gt;</span>
+</code></pre></div><h5 id="调用interceptortestaction">调用InterceptorTestAction</h5>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>实际上应该在User表里定义一个Role字段来判断用户的角色，这里为了应用演示就简化为直接通过用户名来判断用户角色。</p>
+</blockquote>
+<h5 id="先在loginaction中定义一个session来存储登录的用户名">先在LoginAction中定义一个session来存储登录的用户名</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span>Object<span style="color:#f92672">&gt;</span> session <span style="color:#f92672">=</span> ActionContext<span style="color:#f92672">.</span><span style="color:#a6e22e">getContext</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getSession</span><span style="color:#f92672">();</span>
+session<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">,</span> user<span style="color:#f92672">.</span><span style="color:#a6e22e">getUserName</span><span style="color:#f92672">());</span>
+</code></pre></div><h5 id="创建一个自定义的权限判断拦截器">创建一个自定义的权限判断拦截器</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">InterceptorPower</span> <span style="color:#66d9ef">implements</span> Interceptor <span style="color:#f92672">{</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">destroy</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// TODO Auto-generated method stub
+</span><span style="color:#75715e"></span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">init</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// TODO Auto-generated method stub
+</span><span style="color:#75715e"></span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#75715e">// 分调用之前、调用action、调用之后
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// 组件化 即插即用 可扩展性可维护性很强
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">intercept</span><span style="color:#f92672">(</span>ActionInvocation arg0<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// TODO Auto-generated method stub
+</span><span style="color:#75715e"></span>		String str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span><span style="color:#75715e">// 接受从action传来的字符串
+</span><span style="color:#75715e"></span>		String role <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span><span style="color:#75715e">// 角色
+</span><span style="color:#75715e"></span>		
+		<span style="color:#75715e">// 从session中取得角色
+</span><span style="color:#75715e"></span>		role <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>String<span style="color:#f92672">)</span> ServletActionContext<span style="color:#f92672">.</span><span style="color:#a6e22e">getRequest</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getSession</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getAttribute</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">);</span>
+
+		<span style="color:#75715e">//判断是否是合法用户
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>role <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>role<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+			<span style="color:#75715e">//这里假设小添添是管理员哈哈哈哈哈哈
+</span><span style="color:#75715e"></span>			<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>role<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;zzm&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+				<span style="color:#75715e">//唤醒action
+</span><span style="color:#75715e"></span>				str <span style="color:#f92672">=</span> arg0<span style="color:#f92672">.</span><span style="color:#a6e22e">invoke</span><span style="color:#f92672">();</span>
+			<span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+				System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;你不是管理员别瞎按！&#34;</span><span style="color:#f92672">);</span>
+				<span style="color:#75715e">//记得在struts.xml中配置powerfail的result
+</span><span style="color:#75715e"></span>				str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;powerfail&#34;</span><span style="color:#f92672">;</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span><span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+			System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;请登录！&#34;</span><span style="color:#f92672">);</span>
+			<span style="color:#75715e">//记得在struts.xml中配置loginfail的result
+</span><span style="color:#75715e"></span>			str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;loginfail&#34;</span><span style="color:#f92672">;</span>
+		<span style="color:#f92672">}</span>
+
+		<span style="color:#66d9ef">return</span> str<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="在strutsxml中配置拦截器">在struts.xml中配置拦截器</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;book_*&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;jxnu.edu.cn.x3321.action.BookManagementAction&#34;</span> <span style="color:#a6e22e">method=</span><span style="color:#e6db74">&#34;{1}&#34;</span><span style="color:#f92672">&gt;</span>
+	<span style="color:#75715e">&lt;!-- 添加图书时需要进行用户权限判断 所以加上一个拦截器 --&gt;</span>
+	<span style="color:#f92672">&lt;interceptor-ref</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;InterceptorPower&#34;</span> <span style="color:#f92672">/&gt;</span>
+	<span style="color:#75715e">&lt;!-- 系统缺省的拦截器栈别忘了加 --&gt;</span>
+	<span style="color:#f92672">&lt;interceptor-ref</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;defaultStack&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+	<span style="color:#f92672">&lt;result</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;AddBookSucc&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;redirect&#34;</span><span style="color:#f92672">&gt;</span>/curd/BookAdd.jsp<span style="color:#f92672">&lt;/result&gt;</span>
+	<span style="color:#f92672">&lt;result</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;AddBookFail&#34;</span><span style="color:#f92672">&gt;</span>/curd/error.jsp<span style="color:#f92672">&lt;/result&gt;</span>
+
+	<span style="color:#75715e">&lt;!-- 这里记得配置 --&gt;</span>
+	<span style="color:#f92672">&lt;result</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;loginfail&#34;</span><span style="color:#f92672">&gt;</span>/login/login.jsp<span style="color:#f92672">&lt;/result&gt;</span>
+	<span style="color:#f92672">&lt;result</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;powerfail&#34;</span><span style="color:#f92672">&gt;</span>/login/login.jsp<span style="color:#f92672">&lt;/result&gt;</span>
+<span style="color:#f92672">&lt;/action&gt;</span>
+</code></pre></div>
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://hishark777.com/tags/struts/">Struts</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        281 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2018-03-14 17:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://hishark777.com/posts/2018/03/%E4%B8%8D%E8%83%BD%E5%8F%98%E6%87%92%E5%99%A2/">
+                <span class="button__icon">←</span>
+                <span class="button__text">不能变懒噢</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://hishark777.com/posts/2018/03/%E6%89%8B%E7%94%B5%E7%AD%92%E4%B9%8B%E5%85%89/">
+                <span class="button__text">手电筒之光</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hishark777" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2017 - 2021</span>
+            
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://hishark777.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
