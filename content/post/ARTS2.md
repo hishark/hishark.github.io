@@ -44,6 +44,12 @@ categories:
   - 考察连通分量的确定
 - 1月8号 [LeetCode 189. 旋转数组](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/array/leetcode-189)
   - 原地算法
+- 1月9号 [LeetCode 12. 整数转罗马数字](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/greedy/leetcode-12)
+  - 贪心
+- 1月9号 [LeetCode 17. 电话号码的字母组合](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/backtrack/leetcode-17)
+  - 回溯
+- 1月10号 [LeetCode 228. 汇总区间](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/array/leetcode-228)
+  - 简单数组遍历题
 
 ## Review
 
@@ -69,11 +75,13 @@ Keynote 真滴好好用嗷
 
 [无限循环卡片？我选择自定义LayoutManager](https://mp.weixin.qq.com/s/DpV6iD4rBSgQQHsPNDJe6w)
 
+[Atomic Habits](https://jamesclear.com/)
+
 ## 本周时间轴
 
 好多空白啊 效率不行喔
 
-
+![](https://777blog.oss-cn-shanghai.aliyuncs.com/pic/week2-timeline.png)
 
 
 
