@@ -1,7 +1,7 @@
 ---
 title: "ARTS 3"
 date: 2021-01-11T00:19:11+08:00
-draft: true
+draft: false
 tags:
 - ARTS
 categories: 
@@ -10,7 +10,7 @@ categories:
 
 第三周
 
-加油
+最近好冷
 
 <!--more-->
 
@@ -25,6 +25,17 @@ categories:
 <p align="right">2021/01/11 - 2021/01/17</p>
 
 ## Algorithm
+
+- [LeetCode 19. 删除链表的倒数第N个节点](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/link/leetcode-19)
+
+  - 快慢指针
+
+- [LeetCode 62. 不同路径](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/dp/leetcode-62)
+
+  - 动态规划
+
+  
+
 
 ## Review
 

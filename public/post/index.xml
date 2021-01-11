@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>ARTS 3</title>
+      <link>https://hishark777.com/post/arts3/</link>
+      <pubDate>Mon, 11 Jan 2021 00:19:11 +0800</pubDate>
+      
+      <guid>https://hishark777.com/post/arts3/</guid>
+      <description>&lt;p&gt;第三周&lt;/p&gt;
+&lt;p&gt;最近好冷&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>ARTS 2</title>
       <link>https://hishark777.com/post/arts2/</link>
       <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
@@ -99,15 +109,6 @@
       
       <guid>https://hishark777.com/post/hugo-version/</guid>
       <description>&lt;p&gt;前些天逛博客看到 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 &lt;a href=&#34;https://github.com/wangchucheng/hugo-eureka&#34;&gt;Eureka&lt;/a&gt;，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>What’s new in AS 4.1</title>
-      <link>https://hishark777.com/post/as-4-1/</link>
-      <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
-      
-      <guid>https://hishark777.com/post/as-4-1/</guid>
-      <description>&lt;p&gt;看看 Android Studio 4.1 更新了一些什么新特性&lt;/p&gt;</description>
     </item>
     
   </channel>
