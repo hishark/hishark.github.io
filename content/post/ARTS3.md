@@ -12,6 +12,10 @@ categories:
 
 最近好冷
 
+//
+
+周三开始暖起来啦～
+
 <!--more-->
 
 > A: Algorithm，每周至少做一道 Leetcode
@@ -29,18 +33,42 @@ categories:
 - [LeetCode 19. 删除链表的倒数第N个节点](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/link/leetcode-19)
 
   - 快慢指针
-
 - [LeetCode 62. 不同路径](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/dp/leetcode-62)
-
   - 动态规划
-
-  
-
+- [LeetCode 75. 颜色分类](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/array/leetcode-75)
+  - 双指针
+- [LeetCode 560. 和为K的子数组](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/hashmap/leetcode-560)
+  - 哈希表，前缀和
+- [LeetCode 494. 目标和](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/dp/leetcode-494)
+  - 动态规划，DFS
+- [LeetCode 617. 合并二叉树](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/binarytree/leetcode-617)
+  - DFS
+- [LeetCode 461. 汉明距离](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/bit/leetcode-461)
+  - 位运算
+- [LeetCode 448. 找到所有数组中消失的数字](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/array/leetcode-448)
+  - 数组，哈希表
+- [LeetCode 94. 二叉树的中序遍历](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/binarytree/leetcode-94)
+  - 递归，栈
+- [LeetCode 46. 全排列](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/backtrack/leetcode-46.-quan-pai-lie)
+  - 回溯，题解里为了节省空间把 visited 扔掉了，我还是更喜欢有 visited 数组的解法，比较清晰直观。
+- [LeetCode 165. 比较版本号](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/string/leetcode-165)
+  - 字符串分割，双指针（双指针解法的还没看）
+- [LeetCode 24. 反转链表](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/link/lcof-24)
+  - 基础链表题
+- [LeetCode 543. 二叉树的直径](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/binarytree/leetcode-543)
+  - 典型 DFS
+- [LeetCode 112. 路径总和](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/binarytree/leetcode-112)
+  - 递归简单，BFS的话利用队列完成即可。
 
 ## Review
+
+[Impressive Source Codes That Every Developer Should See](https://medium.com/swlh/impressive-sources-codes-that-every-developer-should-see-b68028b36da5)
+
+> Past developers have done great work to give a peaceful world for modern developers.
 
 ## Tips
 
 ## Share
 
 ## 本周时间轴
+

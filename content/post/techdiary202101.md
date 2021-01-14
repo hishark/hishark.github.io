@@ -16,6 +16,42 @@ tags:
 
 <!--more-->
 
+## 2021-01-14 Thu
+
+## NCM
+
+fcp 不能直接添加 ncm 格式的音频
+
+这个网站方便
+
+[NCM TO MP3](https://ncm.worthsee.com/)
+
+## Android 
+
+[轮子收集仓库](https://github.com/Vension/V-AndroidCollectSources)
+
+## Android File
+
+[Android7.0以上通过FileProvider访问文件](https://www.jianshu.com/p/bd8a80ecba3f)
+
+[Android遍历某个文件夹的图片并实现滑动查看的的Gallery](https://www.cnblogs.com/sfshine/archive/2012/06/26/2742899.html)
+
+[加载本地图片模糊，Glide加载网络图片却很清晰](https://blog.csdn.net/weixin_33998125/article/details/91362039?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control)
+
+## Archive
+
+[ibiblio - The Public's Library and Digital Archive](https://www.ibiblio.org/)
+
+## Apollo-11
+
+cool
+
+[Github Repo](https://github.com/chrislgarry/Apollo-11)
+
+## Git
+
+[Linus Torvalds](https://zh.wikipedia.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9)
+
 ## 2021-01-09 Sat
 
 ### Hugo
