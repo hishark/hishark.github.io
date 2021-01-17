@@ -16,6 +16,142 @@ tags:
 
 <!--more-->
 
+## 2021-01-17 Sun
+
+### Git
+
+[Git各指令的本质，真是通俗易懂啊](https://juejin.cn/post/6895246702614806542)
+
+### SSL Error
+
+[javax.net.ssl.SSLHandshakeException: Chain validation failed](https://blog.csdn.net/weixin_39397471/article/details/103877854)
+
+- Pixel 的时间一直没对上，修改为正确时间后就好了。
+
+### Gradle
+
+[Android Studio 下载Gradle 超时解决方案](https://www.cnblogs.com/emanlee/p/13263457.html)
+
+### RecyclerView
+
+[RecyclerView/ListView嵌套CheckBox选中状态错乱解决方案](https://blog.csdn.net/qq_20521573/article/details/52655570)
+
+### Glide
+
+[加载本地图片](https://blog.csdn.net/yulyu/article/details/55056352)
+
+- 没差，就 new 个 File
+
+### AS
+
+我真的要被这个卡死的问题烦死了
+
+过两天抽空把AS全部卸掉重装
+
+[Mac Big Sur version 11.0.1 java.lang.UnsatisfiedLinkError: Unable to load library 'CoreFoundation'](https://stackoverflow.com/questions/64954777/mac-big-sur-version-11-0-1-java-lang-unsatisfiedlinkerror-unable-to-load-librar)
+
+```
+java.lang.UnsatisfiedLinkError: Unable to load library 'CoreFoundation':
+dlopen(libCoreFoundation.dylib, 9): image not found
+dlopen(libCoreFoundation.dylib, 9): image not found
+Native library (darwin/libCoreFoundation.dylib) not found in resource path (/Applications/Android Studio 2.app/Contents/lib/bootstrap.jar:/Applications/Android Studio 2.app/Contents/lib/extensions.jar:/Applications/Android Studio 2.app/Contents/lib/util.jar:/Applications/Android Studio 2.app/Contents/lib/jdom.jar:/Applications/Android Studio 2.app/Contents/lib/log4j.jar:/Applications/Android Studio 2.app/Contents/lib/trove4j.jar:/Applications/Android Studio 2.app/Contents/lib/jna.jar:/Applications/Android Studio 2.app/Contents/jre/jdk/Contents/Home/lib/tools.jar)
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:302)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:455)
+	at com.sun.jna.Library$Handler.<init>(Library.java:192)
+	at com.sun.jna.Native.load(Native.java:596)
+	at com.sun.jna.Native.load(Native.java:570)
+	at com.intellij.util.text.DateFormatUtil.getMacFormats(DateFormatUtil.java:345)
+	at com.intellij.util.text.DateFormatUtil.getDateTimeFormats(DateFormatUtil.java:284)
+	at com.intellij.util.text.DateFormatUtil.<clinit>(DateFormatUtil.java:45)
+	at com.intellij.vcs.log.ui.table.VcsLogGraphTable.getColumnWidthFromData(VcsLogGraphTable.java:348)
+	at com.intellij.vcs.log.ui.table.VcsLogGraphTable.updateAuthorAndDataWidth(VcsLogGraphTable.java:296)
+	at com.intellij.vcs.log.ui.table.VcsLogGraphTable.reLayout(VcsLogGraphTable.java:259)
+	at com.intellij.vcs.log.ui.table.VcsLogGraphTable.onColumnOrderSettingChanged(VcsLogGraphTable.java:208)
+	at com.intellij.vcs.log.ui.table.VcsLogGraphTable.initColumns(VcsLogGraphTable.java:157)
+	at com.intellij.vcs.log.ui.table.VcsLogGraphTable.<init>(VcsLogGraphTable.java:122)
+	at com.intellij.vcs.log.ui.frame.MainFrame$MyVcsLogGraphTable.<init>(MainFrame.java:366)
+	at com.intellij.vcs.log.ui.frame.MainFrame.<init>(MainFrame.java:88)
+	at com.intellij.vcs.log.ui.VcsLogUiImpl.<init>(VcsLogUiImpl.java:55)
+	at com.intellij.vcs.log.impl.VcsLogManager$MainVcsLogUiFactory.createLogUi(VcsLogManager.java:249)
+	at com.intellij.vcs.log.impl.VcsLogManager$MainVcsLogUiFactory.createLogUi(VcsLogManager.java:229)
+	at com.intellij.vcs.log.impl.VcsLogManager.createLogUi(VcsLogManager.java:115)
+	at com.intellij.vcs.log.impl.VcsLogManager.createLogUi(VcsLogManager.java:105)
+	at com.intellij.vcs.log.impl.VcsLogContentProvider.addMainUi(VcsLogContentProvider.java:73)
+	at com.intellij.vcs.log.impl.VcsLogContentProvider.<init>(VcsLogContentProvider.java:60)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.picocontainer.defaults.InstantiatingComponentAdapter.newInstance(InstantiatingComponentAdapter.java:193)
+	at com.intellij.util.pico.CachingConstructorInjectionComponentAdapter.doGetComponentInstance(CachingConstructorInjectionComponentAdapter.java:88)
+	at com.intellij.util.pico.CachingConstructorInjectionComponentAdapter.instantiateGuarded(CachingConstructorInjectionComponentAdapter.java:66)
+	at com.intellij.util.pico.CachingConstructorInjectionComponentAdapter.getComponentInstance(CachingConstructorInjectionComponentAdapter.java:48)
+	at com.intellij.openapi.vcs.changes.ui.ChangesViewContentEP.newClassInstance(ChangesViewContentEP.java:92)
+	at com.intellij.openapi.vcs.changes.ui.ChangesViewContentEP.getInstance(ChangesViewContentEP.java:68)
+	at com.intellij.openapi.vcs.changes.ui.ChangesViewContentManager$MyContentManagerListener.selectionChanged(ChangesViewContentManager.java:248)
+	at sun.reflect.GeneratedMethodAccessor67.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.util.EventDispatcher.dispatchVoidMethod(EventDispatcher.java:130)
+	at com.intellij.util.EventDispatcher.access$000(EventDispatcher.java:24)
+	at com.intellij.util.EventDispatcher$1.invoke(EventDispatcher.java:88)
+	at com.sun.proxy.$Proxy102.selectionChanged(Unknown Source)
+	at com.intellij.ui.content.impl.ContentManagerImpl.fireSelectionChanged(ContentManagerImpl.java:554)
+	at com.intellij.ui.content.impl.ContentManagerImpl.addSelectedContent(ContentManagerImpl.java:370)
+	at com.intellij.ui.content.impl.ContentManagerImpl$1.run(ContentManagerImpl.java:461)
+	at com.intellij.ui.content.impl.ContentManagerImpl.setSelectedContent(ContentManagerImpl.java:477)
+	at com.intellij.ui.content.impl.ContentManagerImpl.setSelectedContentCB(ContentManagerImpl.java:428)
+	at com.intellij.ui.content.impl.ContentManagerImpl.setSelectedContentCB(ContentManagerImpl.java:417)
+	at com.intellij.ui.content.impl.ContentManagerImpl.setSelectedContentCB(ContentManagerImpl.java:495)
+	at com.intellij.ui.content.impl.ContentManagerImpl.setSelectedContent(ContentManagerImpl.java:500)
+	at com.intellij.ui.content.impl.ContentManagerImpl.doAddContent(ContentManagerImpl.java:152)
+	at com.intellij.ui.content.impl.ContentManagerImpl.addContent(ContentManagerImpl.java:129)
+	at com.intellij.openapi.vcs.changes.ui.ChangesViewContentManager.addIntoCorrectPlace(ChangesViewContentManager.java:307)
+	at com.intellij.openapi.vcs.changes.ui.ChangesViewContentManager.setUp(ChangesViewContentManager.java:70)
+	at com.intellij.openapi.vcs.changes.ui.ChangesViewToolWindowFactory.createToolWindowContent(ChangesViewToolWindowFactory.java:30)
+	at com.intellij.openapi.wm.impl.ToolWindowImpl.ensureContentInitialized(ToolWindowImpl.java:533)
+	at com.intellij.openapi.wm.impl.ToolWindowImpl.getContentManager(ToolWindowImpl.java:356)
+	at com.intellij.vcs.log.impl.VcsLogTabsWatcher.installContentListener(VcsLogTabsWatcher.java:76)
+	at com.intellij.vcs.log.impl.VcsLogTabsWatcher.lambda$new$0(VcsLogTabsWatcher.java:51)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:312)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:433)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:416)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:399)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:764)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:734)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:878)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:827)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$8(IdeEventQueue.java:466)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:704)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:465)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libCoreFoundation.dylib, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:191)
+		... 80 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libCoreFoundation.dylib, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:204)
+		... 80 more
+	Suppressed: java.io.IOException: Native library (darwin/libCoreFoundation.dylib) not found in resource path (/Applications/Android Studio 2.app/Contents/lib/bootstrap.jar:/Applications/Android Studio 2.app/Contents/lib/extensions.jar:/Applications/Android Studio 2.app/Contents/lib/util.jar:/Applications/Android Studio 2.app/Contents/lib/jdom.jar:/Applications/Android Studio 2.app/Contents/lib/log4j.jar:/Applications/Android Studio 2.app/Contents/lib/trove4j.jar:/Applications/Android Studio 2.app/Contents/lib/jna.jar:/Applications/Android Studio 2.app/Contents/jre/jdk/Contents/Home/lib/tools.jar)
+		at com.sun.jna.Native.extractFromResourcePath(Native.java:1095)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:276)
+		... 80 more
+```
+
+
+
 ## 2021-01-14 Thu
 
 ## NCM

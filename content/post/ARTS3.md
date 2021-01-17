@@ -59,6 +59,8 @@ categories:
   - 典型 DFS
 - [LeetCode 112. 路径总和](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/binarytree/leetcode-112)
   - 递归简单，BFS的话利用队列完成即可。
+- [LCOF 58-I. 翻转单词顺序](https://hishark777.gitbook.io/777-interview-notes/algorithm/lcof/lcof-58-1)
+  - 字符串，双指针
 
 ## Review
 
@@ -68,7 +70,29 @@ categories:
 
 ## Tips
 
+AS 里  `Download gradle` 半天下不下来就打开 `gradle-wrapper.properties` ：
+
+```properties
+#Sun Mar 15 19:17:15 CST 2020
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+#distributionUrl=https\://services.gradle.org/distributions/gradle-5.4.1-all.zip
+distributionUrl=gradle-5.4.1-all.zip
+```
+
+访问 `distributionUrl` 下的地址 `https://services.gradle.org/distributions/gradle-5.4.1-all.zip` 把 zip 包下载下来放到 `/gradle/wrapper`  下，然后修改 `distributionUrl` 的值即可。
+
 ## Share
+
+[Git各指令的本质，真是通俗易懂啊](https://juejin.cn/post/6895246702614806542)
+
+- 不管是`HEAD`还是`分支`，它们都只是`引用`而已，`引用`+`节点`是 Git 构成分布式的关键
+- `merge`相比于`rebase`有更明确的时间历史，而`rebase`会使提交更加线性应当优先使用
+- 通过移动`HEAD`可以查看每个提交对应的代码
+- `clone`或`fetch`都会将远程仓库的所有`提交`、`引用`保存在本地一份
+- `pull`的本质其实就是`fetch`+`merge`，也可以加入`--rebase`通过rebase方式合并
 
 ## 本周时间轴
 
