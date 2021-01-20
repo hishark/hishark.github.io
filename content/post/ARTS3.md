@@ -96,3 +96,4 @@ distributionUrl=gradle-5.4.1-all.zip
 
 ## 本周时间轴
 
+![](https://777blog.oss-cn-shanghai.aliyuncs.com/pic/week3-timeline.png)

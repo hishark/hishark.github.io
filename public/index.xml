@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Jan 2021 00:19:11 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 18 Jan 2021 16:00:34 +0800</lastBuildDate>
     
 	<atom:link href="https://hishark777.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ARTS 4</title>
+      <link>https://hishark777.com/post/arts4/</link>
+      <pubDate>Mon, 18 Jan 2021 16:00:34 +0800</pubDate>
+      
+      <guid>https://hishark777.com/post/arts4/</guid>
+      <description>&lt;p&gt;买了回家的票 🎫&lt;/p&gt;
+&lt;p&gt;归心似箭&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>ARTS 3</title>
@@ -103,15 +113,6 @@
       
       <guid>https://hishark777.com/post/chinese-copywriting/</guid>
       <description>&lt;p&gt;你会在中文和英文之间加空格「 」吗？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 安装指定版本</title>
-      <link>https://hishark777.com/post/hugo-version/</link>
-      <pubDate>Tue, 27 Oct 2020 15:00:32 +0800</pubDate>
-      
-      <guid>https://hishark777.com/post/hugo-version/</guid>
-      <description>&lt;p&gt;前些天逛博客看到 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 &lt;a href=&#34;https://github.com/wangchucheng/hugo-eureka&#34;&gt;Eureka&lt;/a&gt;，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -16,6 +16,20 @@ tags:
 
 <!--more-->
 
+## 2021-01-18 Mon
+
+### ExoPlayer
+
+[Doc](https://exoplayer.dev/hello-world.html)
+
+这文档看着是真舒服
+
+[Android文件列表RecyclerView中点击视频播放](https://blog.csdn.net/greatyoulv/article/details/104066787)
+
+## RecyclerView
+
+
+
 ## 2021-01-17 Sun
 
 ### Git
@@ -35,6 +49,10 @@ tags:
 ### RecyclerView
 
 [RecyclerView/ListView嵌套CheckBox选中状态错乱解决方案](https://blog.csdn.net/qq_20521573/article/details/52655570)
+
+[RecyclerView-->点击和长按事件](https://www.jianshu.com/p/1b7dd65a7e65?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
+
+
 
 ### Glide
 
