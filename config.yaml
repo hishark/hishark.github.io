@@ -2,7 +2,7 @@ baseurl: https://hishark777.com/
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 15
-title: 777's blog
+title: ᐕ)୨ 乾杯 # ୨つロ 
 
 # blackfriday:
 #     extensionsmask: ["noIntraEmphasis"]
@@ -48,7 +48,7 @@ params:
             src: img/avatar.png
 
     article:
-        math: false
+        math: true
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
@@ -57,9 +57,9 @@ params:
         enabled: false
         provider: disqus
         utterances:
-            repo:
+            repo: https://github.com/hishark/hishark.github.io
             issueTerm: pathname
-            label:
+            label: comment
             theme: preferred-color-scheme
 
     widgets:
@@ -107,13 +107,13 @@ menu:
         - identifier: posts
           name: Posts
           url: /post
-          weight: -100
-          pre: hash
+          weight: 1
+          pre: infinity
 
         - identifier: about
           name: About
           url: about
-          weight: -90
+          weight: 2
           pre: user
 
         # - identifier: tags
@@ -122,29 +122,69 @@ menu:
         #   weight: -90
         #   pre: tag
 
+        
+
         - identifier: archives
-          name: Archives
+          name: Timeline
           url: archives
-          weight: -40
-          pre: archives
+          weight: 3
+          pre: clock
 
         - identifier: search
           name: Search
           url: search
-          weight: -60
+          weight: 4
           pre: search
 
         - identifier: album
-          name: Album
+          name: Photos
           url: https://www.douban.com/people/hishark/photos
-          weight: -20
+          weight: 5
           pre: album
+
+        - identifier: github
+          name: Github
+          url: https://github.com/hishark
+          weight: 5
+          pre: github
+
+        - identifier: linkedin
+          name: Linkedin
+          url: https://www.linkedin.com/in/zhangxiaoqi
+          weight: 5
+          pre: linkedin
 
         - identifier: Notes
           name: Interview Notes
           url: https://hishark777.gitbook.io/777-interview-notes/
-          weight: -10
+          weight: 6
           pre: notes
+
+#   # Social icons
+#   [[params.social]]
+#     name = "twitter"
+#     url  = "https://twitter.com/hishark777"
+
+#   [[params.social]]
+#     name = "instagram"
+#     url  = "https://www.instagram.com/hishark777"
+
+#   [[params.social]]
+#     name = "email"
+#     url  = "mailto:hishark777@gmail.com"
+
+#   [[params.social]]
+#     name = "github"
+#     url  = ""
+
+#   [[params.social]]
+#     name = "telegram"
+#     url  = "https://t.me/hishark777"
+
+#   [[params.social]]
+#     name = "linkedin"
+#     url  = ""
+
 
 related:
     includeNewer: true

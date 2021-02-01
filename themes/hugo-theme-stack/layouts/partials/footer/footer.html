@@ -1,11 +1,11 @@
 {{- $ThemeVersion := "2.0.1" -}}
 <footer class="site-footer">
     <section class="copyright">
-        &copy; 
+        <a href="https://hishark777.com/">hishark777</a> &copy;
         {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
             {{ .Site.Params.footer.since }} - 
         {{ end }}
-        {{ now.Format "2006" }} {{ .Site.Title }}
+        {{ now.Format "2006" }} 
     </section>
     
     <section class="powerby">
