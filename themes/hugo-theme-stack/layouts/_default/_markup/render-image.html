@@ -1,0 +1,30 @@
+{{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
+{{- if $image -}}
+	{{- $alt := .PlainText | safeHTML -}}
+	<figure style="flex-grow: {{ div (mul $image.Width 100) $image.Height }}; flex-basis: {{ div (mul $image.Width 240) $image.Height }}px">
+		<a href="{{ $image.RelPermalink }}" data-size="{{ $image.Width }}x{{ $image.Height }}">
+			{{- $Permalink := $image.RelPermalink -}}
+			{{- $Width := $image.Width -}}
+			{{- $Height := $image.Height -}}
+			{{- $Srcset := "" -}}
+
+			{{- if (default true .Page.Site.Params.imageProcessing.content.enabled) -}}
+				{{- $small := $image.Resize "480x" -}}
+				{{- $big := $image.Resize "1024x" -}}
+				{{- $Srcset = printf "%s 480w, %s 1024w" $small.RelPermalink $big.RelPermalink -}}
+			{{- end -}}
+			
+			<img src="{{ $Permalink }}"
+				{{ with $Srcset }}srcset="{{ . }}"{{ end }}
+				width="{{ $Width }}"
+				height="{{ $Height }}"
+				loading="lazy"
+				{{ with $alt }}alt="{{ . }}"{{ end }}>
+		</a>
+		{{ with $alt }}
+		<figcaption>{{ . | markdownify }}</figcaption>
+		{{ end }}
+	</figure>
+{{- else -}}
+	<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }} />
+{{- end -}}

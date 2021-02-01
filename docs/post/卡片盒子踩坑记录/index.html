@@ -1,167 +1,273 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="777 ">
-<meta name="description" content="毕设over🎈 两周爆肝碰到不少问题 记录一下
-" />
-<meta name="keywords" content=", Android, SSM, 踩坑" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" />
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='毕设over🎈 两周爆肝碰到不少问题 记录一下
+'><title>卡片盒子踩坑记录</title>
 
+<link rel='canonical' href='https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/'>
 
-    <title>
-        
-            卡片盒子踩坑记录 :: Xiaoqi Zhang 
-        
-    </title>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='卡片盒子踩坑记录'>
+<meta property='og:description' content='毕设over🎈 两周爆肝碰到不少问题 记录一下
+'>
+<meta property='og:url' content='https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/'>
+<meta property='og:site_name' content='777&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='SSM' /><meta property='article:tag' content='踩坑' /><meta property='article:published_time' content='2018-11-01T20:54:46&#43;00:00'/><meta property='article:modified_time' content='2018-11-01T20:54:46&#43;00:00'/><meta property='og:image' content='https://hishark777.com/' />
+<meta name="twitter:site" content="hishark777"><meta name="twitter:title" content="卡片盒子踩坑记录">
+<meta name="twitter:description" content="毕设over🎈 两周爆肝碰到不少问题 记录一下
+"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://hishark777.com/' /><style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
 
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://hishark777.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
-
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://hishark777.com/favicon-16x16.png">
-    <link rel="manifest" href="https://hishark777.com/site.webmanifest">
-    <link rel="mask-icon" href="https://hishark777.com/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://hishark777.com/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
-
-<meta itemprop="name" content="卡片盒子踩坑记录">
-<meta itemprop="description" content="毕设over🎈
-两周爆肝碰到不少问题
-记录一下">
-<meta itemprop="datePublished" content="2018-11-01T20:54:46&#43;00:00" />
-<meta itemprop="dateModified" content="2018-11-01T20:54:46&#43;00:00" />
-<meta itemprop="wordCount" content="6260">
-<meta itemprop="image" content="https://hishark777.com/"/>
-
-
-
-<meta itemprop="keywords" content="Android,SSM,踩坑," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://hishark777.com/"/>
-
-<meta name="twitter:title" content="卡片盒子踩坑记录"/>
-<meta name="twitter:description" content="毕设over🎈
-两周爆肝碰到不少问题
-记录一下"/>
-
-
-
-    <meta property="og:title" content="卡片盒子踩坑记录" />
-<meta property="og:description" content="毕设over🎈
-两周爆肝碰到不少问题
-记录一下" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" />
-<meta property="og:image" content="https://hishark777.com/"/>
-<meta property="article:published_time" content="2018-11-01T20:54:46+00:00" />
-<meta property="article:modified_time" content="2018-11-01T20:54:46+00:00" />
-
-
-
-
-    <meta property="article:section" content="学习笔记" />
-
-
-
-    <meta property="article:published_time" content="2018-11-01 20:54:46 &#43;0000 UTC" />
-
-
-
-
-
-
-
-
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    
+            customFont.href = "<https://fonts.lug.ustc.edu.cn/css2?family=Noto+Serif+SC:wght@400;700&display=swap>";
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
     </head>
-
     <body class="">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://hishark777.com/" style="text-decoration: none;">
-    <div class="logo">
-        
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /777/blog</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
-    </div>
-</a>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://hishark777.com/about/">关于</a></li><li><a href="https://hishark777.com/post">归档</a></li><li><a href="https://hishark777.com/tags">标签</a></li><li><a href="https://hishark777.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-    </ul>
-</nav>
-
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column compact article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
         </span>
-    </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu020072fae18b0f62237d6df7241b8457_91547_300x0_resize_box_2.png" width="300"
+                            height="273" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🧸</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://hishark777.com/">777&#39;s blog</a></h1>
+        <h2 class="site-description">&gt; $ cd /777/blog</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/post'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://www.douban.com/people/hishark/photos'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#939393" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="15" y1="8" x2="15.01" y2="8" />
+  <rect x="4" y="4" width="16" height="16" rx="3" />
+  <path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
+  <path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
+</svg>
+                
+                <span>Album</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://hishark777.gitbook.io/777-interview-notes/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#939393" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+  <line x1="13" y1="8" x2="15" y2="8" />
+  <line x1="13" y1="12" x2="15" y2="12" />
+</svg>
+                
+                <span>Interview Notes</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://hishark777.com/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" >
+                学习笔记
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">卡片盒子踩坑记录</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Nov 01, 2018</time>
+    </footer></div>
 </header>
 
-
-            <div class="content">
-                
-  <main class="post">
-
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        13分钟
-
-        
-      </p>
-    </div>
-
-    <article>
-      <h1 class="post-title">
-        <a href="https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">卡片盒子踩坑记录</a>
-      </h1>
-
-      
-
-      <div class="post-content">
-        <p>毕设over🎈
+    <section class="article-content">
+    <p>毕设over🎈
 两周爆肝碰到不少问题
 记录一下</p>
 <p>保研结束之后就开始在家躺尸
@@ -175,11 +281,13 @@
 <ol>
 <li>
 <p>ConstraintLayout</p>
-<p><a href="https://blog.csdn.net/guolin_blog/article/details/53122387">Android新特性介绍，ConstraintLayout完全解析 - 郭霖的专栏 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/guolin_blog/article/details/53122387"  target="_blank" rel="noopener"
+    >Android新特性介绍，ConstraintLayout完全解析 - 郭霖的专栏 - CSDN博客</a></p>
 </li>
 <li>
 <p>安卓分辨率</p>
-<p><a href="https://blog.csdn.net/sarsscofy/article/details/9249397">android 常见分辨率（mdpi、hdpi 、xhdpi、xxhdpi ）及屏幕适配注意事项 - sarsscofy的专栏 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/sarsscofy/article/details/9249397"  target="_blank" rel="noopener"
+    >android 常见分辨率（mdpi、hdpi 、xhdpi、xxhdpi ）及屏幕适配注意事项 - sarsscofy的专栏 - CSDN博客</a></p>
 </li>
 <li>
 <p>控件长宽dp 字体大小sp</p>
@@ -201,88 +309,111 @@
 </li>
 <li>
 <p>recycleview实现list和grid的转换，依葫芦画瓢就可以实现list和stagger的转换了吧</p>
-<p><a href="https://www.jianshu.com/p/bd0b18cc7671">RecyclerView实现List布局到Grid布局切换</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/bd0b18cc7671"  target="_blank" rel="noopener"
+    >RecyclerView实现List布局到Grid布局切换</a></p>
 </li>
 <li>
 <p>MySQL数据库更新提醒</p>
-<p><a href="https://blog.csdn.net/qinjuning/article/details/7047607">Android中内容观察者的使用&mdash;- ContentObserver类详解 - qinjuning、lets go - CSDN博客</a></p>
-<p><a href="https://blog.csdn.net/yue31313/article/details/19309731">android,内容观察者，数据库变化通知 - 韩亚飞_yue31313_韩梦飞沙（我是一个机器化的人） - CSDN博客</a></p>
-<p><a href="https://blog.csdn.net/qq_32059827/article/details/52276743">Android简易实战教程&ndash;第二十一话《内容观察者监听数据库变化》 - 态度决定高度A=X+Y+Z - CSDN博客</a></p>
-<p><a href="https://blog.csdn.net/u010563350/article/details/81025090">连接数据库的url - u010563350的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/qinjuning/article/details/7047607"  target="_blank" rel="noopener"
+    >Android中内容观察者的使用&mdash;- ContentObserver类详解 - qinjuning、lets go - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/yue31313/article/details/19309731"  target="_blank" rel="noopener"
+    >android,内容观察者，数据库变化通知 - 韩亚飞_yue31313_韩梦飞沙（我是一个机器化的人） - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/qq_32059827/article/details/52276743"  target="_blank" rel="noopener"
+    >Android简易实战教程&ndash;第二十一话《内容观察者监听数据库变化》 - 态度决定高度A=X+Y+Z - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/u010563350/article/details/81025090"  target="_blank" rel="noopener"
+    >连接数据库的url - u010563350的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>AppBarLayout高度为250dp的时候视觉效果比较好</p>
 </li>
 <li>
 <p>加密保护</p>
-<p><a href="https://blog.csdn.net/wlwh90/article/details/46011619">Android登录记住密码，AES加密保存密码 - wlwh90的专栏 - CSDN博客</a></p>
-<p><a href="https://blog.csdn.net/deniro_li/article/details/79594352">说说在 Android 中如何实现记住密码功能 - 生命不息，编程不止 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/wlwh90/article/details/46011619"  target="_blank" rel="noopener"
+    >Android登录记住密码，AES加密保存密码 - wlwh90的专栏 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/deniro_li/article/details/79594352"  target="_blank" rel="noopener"
+    >说说在 Android 中如何实现记住密码功能 - 生命不息，编程不止 - CSDN博客</a></p>
 </li>
 <li>
 <p>卡片式折叠交互</p>
-<p><a href="https://blog.csdn.net/s2421458535/article/details/80539009">卡片式折叠交互效果 - s2421458535的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/s2421458535/article/details/80539009"  target="_blank" rel="noopener"
+    >卡片式折叠交互效果 - s2421458535的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>Material Design</p>
-<p><a href="https://yifeng.studio/2016/11/28/android-textinputlayout/">MD风格的文本输入框</a></p>
+<p><a class="link" href="https://yifeng.studio/2016/11/28/android-textinputlayout/"  target="_blank" rel="noopener"
+    >MD风格的文本输入框</a></p>
 </li>
 <li>
-<p><a href="https://bbs.csdn.net/topics/391029643">android如何设置drawableleft导入的图片大小-CSDN论坛</a></p>
+<p><a class="link" href="https://bbs.csdn.net/topics/391029643"  target="_blank" rel="noopener"
+    >android如何设置drawableleft导入的图片大小-CSDN论坛</a></p>
 </li>
 <li>
 <p>如果界面设计和运行到手机上的不一样，检查一下两边的分辨率是否一致</p>
 </li>
 <li>
 <p>TextInputLayout用于输入密码时如果想要小眼睛（密码显示or隐藏）和左边的图标同时显示，把里面的TextInputEditText换成EditText即可</p>
-<p><a href="https://blog.csdn.net/u012792686/article/details/73089227">TextInputLayout与TextInputEditText详解 - 默小铭的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/u012792686/article/details/73089227"  target="_blank" rel="noopener"
+    >TextInputLayout与TextInputEditText详解 - 默小铭的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>png或者jpg模糊的话就用svg啦！无敌！</p>
-<p><a href="https://jingyan.baidu.com/article/7f766daf8775df4101e1d0e1.html">Android Studio 如何使用SVG矢量图_百度经验</a></p>
+<p><a class="link" href="https://jingyan.baidu.com/article/7f766daf8775df4101e1d0e1.html"  target="_blank" rel="noopener"
+    >Android Studio 如何使用SVG矢量图_百度经验</a></p>
 </li>
 <li>
 <p>点击软键盘回车完成登录等自定义操作</p>
-<p><a href="https://blog.csdn.net/liuweiballack/article/details/46708697">Android 软键盘事件imeOptions响应 - liuweiballack的专栏 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/liuweiballack/article/details/46708697"  target="_blank" rel="noopener"
+    >Android 软键盘事件imeOptions响应 - liuweiballack的专栏 - CSDN博客</a></p>
 </li>
 <li>
 <p>ModelAndView.addObject(&ldquo;au&rdquo;,xxx);第一个参数不能叫ac啊！！被坑半天</p>
 </li>
 <li>
 <p>android内置了切换动画啦直接用，以前还自己写OTZ</p>
-<p><a href="https://www.jianshu.com/p/37e94f8b6f59">酷炫的Activity切换动画，打造更好的用户体验</a></p>
-<p><a href="https://blog.csdn.net/u012702547/article/details/51289789">Android5.0之Activity的转场动画 - 江南一点雨的专栏 - CSDN博客</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/37e94f8b6f59"  target="_blank" rel="noopener"
+    >酷炫的Activity切换动画，打造更好的用户体验</a></p>
+<p><a class="link" href="https://blog.csdn.net/u012702547/article/details/51289789"  target="_blank" rel="noopener"
+    >Android5.0之Activity的转场动画 - 江南一点雨的专栏 - CSDN博客</a></p>
 </li>
 <li>
 <p>一箩筐UI库</p>
-<p><a href="https://www.jianshu.com/p/47a4a7b99364">Android主流UI开源库整理</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/47a4a7b99364"  target="_blank" rel="noopener"
+    >Android主流UI开源库整理</a></p>
 </li>
 <li>
 <p>改Dialog的字体颜色</p>
-<p><a href="https://blog.csdn.net/cike978/article/details/74530488">AlertDialog更改按钮颜色 - cike978的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/cike978/article/details/74530488"  target="_blank" rel="noopener"
+    >AlertDialog更改按钮颜色 - cike978的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>检测是否有网络</p>
-<p><a href="https://blog.csdn.net/bzlj2912009596/article/details/70882300">android 判断网络是否可用 - 谢岩的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/bzlj2912009596/article/details/70882300"  target="_blank" rel="noopener"
+    >android 判断网络是否可用 - 谢岩的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>cookie</p>
-<p><a href="https://www.jianshu.com/p/bd1be47a16c1">Cookie、Session、Token那点事儿（原创）</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/bd1be47a16c1"  target="_blank" rel="noopener"
+    >Cookie、Session、Token那点事儿（原创）</a></p>
 </li>
 <li>
 <p>登录状态</p>
-<p><a href="https://blog.csdn.net/baidu_34045013/article/details/80687522">Android SharedPreferences保存登录状态 - shaomingshan的博客 - CSDN博客</a></p>
-<p><a href="https://blog.csdn.net/lg_1996/article/details/69497571">Android&ndash;SharedPreferences的存储和获取数据&ndash;案例《登录》 - lg_1996的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/baidu_34045013/article/details/80687522"  target="_blank" rel="noopener"
+    >Android SharedPreferences保存登录状态 - shaomingshan的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/lg_1996/article/details/69497571"  target="_blank" rel="noopener"
+    >Android&ndash;SharedPreferences的存储和获取数据&ndash;案例《登录》 - lg_1996的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>关闭所有活动，第一行代码pdf里的P195</p>
 </li>
 <li>
 <p>双击退出程序</p>
-<p><a href="https://blog.csdn.net/carson_ho/article/details/52857429">Android小技巧：如何实现&quot;再按一次退出程序&quot;效果 - 专注分享 Android开发 干货 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/carson_ho/article/details/52857429"  target="_blank" rel="noopener"
+    >Android小技巧：如何实现&quot;再按一次退出程序&quot;效果 - 专注分享 Android开发 干货 - CSDN博客</a></p>
 </li>
 <li>
 <p>实现自动登录</p>
-<p><a href="https://blog.csdn.net/eyckwu/article/details/53024106">Android程序跳过登录界面直接进入主界面（自动登录） - eyckwu的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/eyckwu/article/details/53024106"  target="_blank" rel="noopener"
+    >Android程序跳过登录界面直接进入主界面（自动登录） - eyckwu的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>七牛云新建存储空间的时候取名字不要作死用英文大写（CardBox），创建完成后会自动变成小写，然后代码里如果用<code>Auth.create(AccessKey, SecretKey).uploadToken(&quot;cardbox&quot;)</code>会没有用，谁知道中间出了什么奇奇怪怪的问题哦，反正创建的时候直接用小写英文就没问题啦。</p>
@@ -298,7 +429,8 @@
 </li>
 <li>
 <p>卡片翻转</p>
-<p><a href="https://www.jianshu.com/p/7db8425e84fc">实现翻转卡片的动画效果</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/7db8425e84fc"  target="_blank" rel="noopener"
+    >实现翻转卡片的动画效果</a></p>
 </li>
 <li>
 <p>RecyclerView使用GridLayoutManager时item若无法居中，检查一下item的根结点width是否为match_parent</p>
@@ -308,7 +440,8 @@
 </li>
 <li>
 <p>Gson简查</p>
-<p><a href="https://www.jianshu.com/p/886f7b7fca7d">Android：Gson解析&ndash;从简单数据到复杂数据</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/886f7b7fca7d"  target="_blank" rel="noopener"
+    >Android：Gson解析&ndash;从简单数据到复杂数据</a></p>
 </li>
 <li>
 <p>xml取值用#{}，jsp取值用${}。这里由于要在单引号里取值所以用${}。</p>
@@ -320,12 +453,15 @@
 </li>
 <li>
 <p>TextView固定字数</p>
-<p><a href="https://blog.csdn.net/lvi_166/article/details/53762008">Android Textview 显示固定字数 省略号表示多余部分 - lvi_166的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/lvi_166/article/details/53762008"  target="_blank" rel="noopener"
+    >Android Textview 显示固定字数 省略号表示多余部分 - lvi_166的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>EditText的imeOptions属性的更改可以更改软键盘回车的作用</p>
-<p><a href="http://407827531.iteye.com/blog/1150474">自定义软键盘中Enter键，及其相应事件 - xSTARx - ITeye博客</a></p>
-<p><a href="https://blog.csdn.net/Iceshow0428/article/details/24428417">Android监听软键盘回车事件 - 技术宅注定孤独 - CSDN博客</a></p>
+<p><a class="link" href="http://407827531.iteye.com/blog/1150474"  target="_blank" rel="noopener"
+    >自定义软键盘中Enter键，及其相应事件 - xSTARx - ITeye博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/Iceshow0428/article/details/24428417"  target="_blank" rel="noopener"
+    >Android监听软键盘回车事件 - 技术宅注定孤独 - CSDN博客</a></p>
 </li>
 <li>
 <p>用eclipse的时候检查一万遍都找不出错误的话，来关闭一下全部标签页，你肯定有文件没有保存：）</p>
@@ -338,22 +474,29 @@
 </li>
 <li>
 <p>终于知道咋整了ffffffff*ck 感谢最后那位大哥呜呜呜呜TUT</p>
-<p><a href="https://blog.csdn.net/wuwei1378/article/details/80374870">求助App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW - wuwei1378的博客 - CSDN博客</a></p>
-<p><a href="http://www.cnblogs.com/zzjbk/p/5608799.html">android studio安卓项目出现Error: Default Activity Not Found错误无法编译的解决方案 - 猿哥爱码 - 博客园</a></p>
-<p><a href="https://stackoverflow.com/questions/15825081/error-default-activity-not-found">Error: Default Activity Not Found</a></p>
-<p><a href="https://github.com/googlesamples/android-CommitContentSampleIME/issues/2#issuecomment-428936292">Default Activity not found · Issue #2 · googlesamples/android-CommitContentSampleIME</a></p>
+<p><a class="link" href="https://blog.csdn.net/wuwei1378/article/details/80374870"  target="_blank" rel="noopener"
+    >求助App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW - wuwei1378的博客 - CSDN博客</a></p>
+<p><a class="link" href="http://www.cnblogs.com/zzjbk/p/5608799.html"  target="_blank" rel="noopener"
+    >android studio安卓项目出现Error: Default Activity Not Found错误无法编译的解决方案 - 猿哥爱码 - 博客园</a></p>
+<p><a class="link" href="https://stackoverflow.com/questions/15825081/error-default-activity-not-found"  target="_blank" rel="noopener"
+    >Error: Default Activity Not Found</a></p>
+<p><a class="link" href="https://github.com/googlesamples/android-CommitContentSampleIME/issues/2#issuecomment-428936292"  target="_blank" rel="noopener"
+    >Default Activity not found · Issue #2 · googlesamples/android-CommitContentSampleIME</a></p>
 </li>
 <li>
 <p>FloatingActionButton改变颜色以及取消边框 ，bgTint改颜色 border=0取消边框，ripple是点击的颜色</p>
-<p><a href="https://codeday.me/bug/20170405/7003.html">java - Android更改浮动操作按钮颜色 - 代码日志</a></p>
-<p><a href="https://blog.csdn.net/lmj623565791/article/details/46678867">FloatingActionButton 完全解析[Design Support Library(2)] - Hongyang - CSDN博客</a></p>
+<p><a class="link" href="https://codeday.me/bug/20170405/7003.html"  target="_blank" rel="noopener"
+    >java - Android更改浮动操作按钮颜色 - 代码日志</a></p>
+<p><a class="link" href="https://blog.csdn.net/lmj623565791/article/details/46678867"  target="_blank" rel="noopener"
+    >FloatingActionButton 完全解析[Design Support Library(2)] - Hongyang - CSDN博客</a></p>
 </li>
 <li>
 <p>爱上新字体 Corbel</p>
 </li>
 <li>
 <p>fab滚动隐藏以及小菜单</p>
-<p><a href="https://blog.csdn.net/w_kahn/article/details/50364149">FloatingActionButton的滚动隐藏和弹出特效的实现 - w_kahn的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/w_kahn/article/details/50364149"  target="_blank" rel="noopener"
+    >FloatingActionButton的滚动隐藏和弹出特效的实现 - w_kahn的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>AS新建Basic Activity的时候状态栏莫名其妙没颜色，用这句就ok了</p>
@@ -362,28 +505,35 @@
 </li>
 <li>
 <p>Toolbar去阴影</p>
-<p><a href="https://blog.csdn.net/ngl272/article/details/70217099">Android 去掉toolbar阴影 - 每天进步一点就够了 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/ngl272/article/details/70217099"  target="_blank" rel="noopener"
+    >Android 去掉toolbar阴影 - 每天进步一点就够了 - CSDN博客</a></p>
 <p>Toolbar去除默认title显示</p>
 <pre><code>getSupportActionBar().setDisplayShowTitleEnabled(false);
 </code></pre>
 </li>
 <li>
 <p>RadioGroup/RadioButton</p>
-<p><a href="https://blog.csdn.net/codefarmercxy/article/details/55099919">Android 如何获取RadioGroup选中RadioButton的内容 - Android开发-CXY的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/codefarmercxy/article/details/55099919"  target="_blank" rel="noopener"
+    >Android 如何获取RadioGroup选中RadioButton的内容 - Android开发-CXY的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>布局文件里警告unknown attribute，老有些莫名其妙的问题，感觉就不该更新到3.2，是2.3.3不好用吗fuxxxxxxxxxxk，下面第三个方法有用！</p>
-<p><a href="https://blog.csdn.net/DeMonliuhui/article/details/83060944">AndroidStudio Unknown attribute（在xml中没有了代码提示） - DeMon - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/DeMonliuhui/article/details/83060944"  target="_blank" rel="noopener"
+    >AndroidStudio Unknown attribute（在xml中没有了代码提示） - DeMon - CSDN博客</a></p>
 </li>
 <li>
 <p>一下午报各种错嘻嘻AS辣鸡，最后重装sdk搞定，参照第三个链接的Seeker。不过最后一步我选的是do not import settings</p>
-<p><a href="https://stackoverflow.com/questions/28668252/android-studio-error-unsupported-modules-detected-compilation-is-not-supported/32525334">Android studio Error &ldquo;Unsupported Modules Detected: Compilation is not supported for following modules&rdquo;</a></p>
-<p><a href="https://stackoverflow.com/questions/35308735/unknown-attribute-androidlayout-width-layout-height-id-gravity-layout-gravi">Unknown attribute android:layout_width, layout_height, id, gravity, layout_gravity, padding</a></p>
-<p><a href="https://stackoverflow.com/questions/50740240/no-idea-annotations-attached-to-the-jdk-1-8-c-some-issues-will-not-be-fo">No IDEA annotations attached to the JDK 1.8 (C:...), some issues will not be found</a></p>
+<p><a class="link" href="https://stackoverflow.com/questions/28668252/android-studio-error-unsupported-modules-detected-compilation-is-not-supported/32525334"  target="_blank" rel="noopener"
+    >Android studio Error &ldquo;Unsupported Modules Detected: Compilation is not supported for following modules&rdquo;</a></p>
+<p><a class="link" href="https://stackoverflow.com/questions/35308735/unknown-attribute-androidlayout-width-layout-height-id-gravity-layout-gravi"  target="_blank" rel="noopener"
+    >Unknown attribute android:layout_width, layout_height, id, gravity, layout_gravity, padding</a></p>
+<p><a class="link" href="https://stackoverflow.com/questions/50740240/no-idea-annotations-attached-to-the-jdk-1-8-c-some-issues-will-not-be-fo"  target="_blank" rel="noopener"
+    >No IDEA annotations attached to the JDK 1.8 (C:...), some issues will not be found</a></p>
 </li>
 <li>
 <p>FloatingActionButton滑动消失后不再出现，把GONE改成INVISIBLE就好</p>
-<p><a href="https://blog.csdn.net/dreamsever/article/details/58173340">使用FloatingActionButton滑动消失后不再显示问题 - dreamsever的专栏 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/dreamsever/article/details/58173340"  target="_blank" rel="noopener"
+    >使用FloatingActionButton滑动消失后不再显示问题 - dreamsever的专栏 - CSDN博客</a></p>
 </li>
 <li>
 <p>闲得发慌拿爸爸手机运行了一下，报错如下，暂时无解，华为可能有毒，做完了再研究。</p>
@@ -411,8 +561,10 @@
 </li>
 <li>
 <p>ViewPager实现卡片浏览最重要滴一点【The most important thing here is the attribute clipToPadding. When this is false, the ViewPager won’t cut off the views that we want to show partially and the current item will still be centered.】</p>
-<p><a href="https://rubensousa.github.io/2016/08/viewpagercards">ViewPager cards inspired by Duolingo</a></p>
-<p><a href="https://www.jianshu.com/p/c4f9f5ccc0e1">一分钟实现ViewPager卡片ViewPagerCards</a></p>
+<p><a class="link" href="https://rubensousa.github.io/2016/08/viewpagercards"  target="_blank" rel="noopener"
+    >ViewPager cards inspired by Duolingo</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/c4f9f5ccc0e1"  target="_blank" rel="noopener"
+    >一分钟实现ViewPager卡片ViewPagerCards</a></p>
 </li>
 <li>
 <p>所有的报错里面我最爱的就是空指针，啾咪。</p>
@@ -422,11 +574,13 @@
 </li>
 <li>
 <p>感谢老哥救我于水火</p>
-<p><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2013/0804/1504.html">ViewPager如何获取当前的子view - 泡在网上的日子</a></p>
+<p><a class="link" href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2013/0804/1504.html"  target="_blank" rel="noopener"
+    >ViewPager如何获取当前的子view - 泡在网上的日子</a></p>
 </li>
 <li>
 <p>TextView根据字数自动调节字体大小</p>
-<p><a href="https://blog.csdn.net/venusic/article/details/52383877">Android根据文字长度自动调整字号的TextView - venusic的专栏 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/venusic/article/details/52383877"  target="_blank" rel="noopener"
+    >Android根据文字长度自动调整字号的TextView - venusic的专栏 - CSDN博客</a></p>
 </li>
 <li>
 <p>从某项目复制来的一张图片放到drawable自带了括号(v24)，然后运行就报错OTZ 删了自己新建一个就没问题勒</p>
@@ -441,14 +595,16 @@
 </li>
 <li>
 <p>button.setVisibility莫名其妙报错，stackoverflow是万能的！</p>
-<p><a href="https://stackoverflow.com/questions/41150995/appcompatactivity-oncreate-can-only-be-called-from-within-the-same-library-group/41251316#41251316">AppCompatActivity.onCreate can only be called from within the same library group</a></p>
+<p><a class="link" href="https://stackoverflow.com/questions/41150995/appcompatactivity-oncreate-can-only-be-called-from-within-the-same-library-group/41251316#41251316"  target="_blank" rel="noopener"
+    >AppCompatActivity.onCreate can only be called from within the same library group</a></p>
 </li>
 <li>
 <p>我正式宣布张小琪是个傻逼，要用CoordinatorLayout，自带的根节点是ConstraintLayout，都是C开头然后没仔细看，所以fab的behavior没有用，以为是别地方出了bug，找了三个小时🙂智障🙂</p>
 </li>
 <li>
 <p>Gson解析复杂数据</p>
-<p><a href="https://www.jianshu.com/p/886f7b7fca7d">Android：Gson解析&ndash;从简单数据到复杂数据</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/886f7b7fca7d"  target="_blank" rel="noopener"
+    >Android：Gson解析&ndash;从简单数据到复杂数据</a></p>
 <p>哎哟Gson真好用，string转json一句就好啦，不怕复杂数据了~</p>
 <pre><code>//boxresult是从服务器端查询回来的result里拔出来的Box的信息，然后Box里还有User和TimeStamp所以再往里还得解析一下
 JsonObject boxJsonObject = new JsonParser().parse(boxresult).getAsJsonObject();
@@ -471,22 +627,26 @@ List&lt;Card&gt; cardList = (List&lt;Card&gt;)getIntent().getSerializableExtra(&
 </li>
 <li>
 <p>RecyclerViwdianji子项跳转Activity</p>
-<p><a href="https://blog.csdn.net/watermusicyes/article/details/44963773">Calling startActivity() from outside of an Activity context requires the FLAG_ACTIVITY_NEW_TASK - ZhangGeng&rsquo;s Blog - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/watermusicyes/article/details/44963773"  target="_blank" rel="noopener"
+    >Calling startActivity() from outside of an Activity context requires the FLAG_ACTIVITY_NEW_TASK - ZhangGeng&rsquo;s Blog - CSDN博客</a></p>
 </li>
 <li>
 <p>EditText光标</p>
-<p><a href="https://blog.csdn.net/wxilin2111/article/details/78443554">Android修改 EditText 中的光标位置 - wxilin2111的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/wxilin2111/article/details/78443554"  target="_blank" rel="noopener"
+    >Android修改 EditText 中的光标位置 - wxilin2111的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>经本人多次测试发现24dp是最适合toolbar的图标大小。</p>
 </li>
 <li>
 <p>RT</p>
-<p><a href="https://blog.csdn.net/qq_15267341/article/details/54708657">Handler实现Adapter和Activity之间的通信 - 海涛高软 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/qq_15267341/article/details/54708657"  target="_blank" rel="noopener"
+    >Handler实现Adapter和Activity之间的通信 - 海涛高软 - CSDN博客</a></p>
 </li>
 <li>
 <p>stackoverflow是万能的，9patch右边只允许黑一条噢</p>
-<p><a href="https://stackoverflow.com/questions/50112281/error-too-many-padding-sections-on-right-border">error: too many padding sections on right border</a></p>
+<p><a class="link" href="https://stackoverflow.com/questions/50112281/error-too-many-padding-sections-on-right-border"  target="_blank" rel="noopener"
+    >error: too many padding sections on right border</a></p>
 </li>
 <li>
 <p>在adapter里直接startActivity的时候有时候会报错有时候又不会，报错的话加一句就好了。</p>
@@ -495,8 +655,10 @@ android.util.AndroidRuntimeException: Calling startActivity() from outside of an
 //solution：startActivity前加一句
 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 </code></pre>
-<p><a href="https://stackoverflow.com/questions/3689581/calling-startactivity-from-outside-of-an-activity">Calling startActivity() from outside of an Activity?</a></p>
-<p><a href="https://www.jianshu.com/p/165d88db2124">在非Activity中使用startActivity：Calling startActivity() from outside of an Activity context requires the FLAG_ACTIVITY_NEW_TASK flag</a></p>
+<p><a class="link" href="https://stackoverflow.com/questions/3689581/calling-startactivity-from-outside-of-an-activity"  target="_blank" rel="noopener"
+    >Calling startActivity() from outside of an Activity?</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/165d88db2124"  target="_blank" rel="noopener"
+    >在非Activity中使用startActivity：Calling startActivity() from outside of an Activity context requires the FLAG_ACTIVITY_NEW_TASK flag</a></p>
 </li>
 <li>
 <p>FloatingActionButton动态设置图标用这句，只能用mipmap里的图片噢。</p>
@@ -521,14 +683,18 @@ intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 </li>
 <li>
 <p>发送邮件的对话框里的EditText改成圆框比较好看</p>
-<p><a href="https://blog.csdn.net/u013527937/article/details/52054344">android editText 自定义为圆角矩形背景 - 码农渣渣的博客 - CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/u013527937/article/details/52054344"  target="_blank" rel="noopener"
+    >android editText 自定义为圆角矩形背景 - 码农渣渣的博客 - CSDN博客</a></p>
 </li>
 <li>
 <p>存储emoji的问题前几天没解决然后今天继续搞，因为用的mysql-front所以直接在可视化界面更改了字符集，把utf-8改为utf8mb4即可。但是这时候的问题是部分emoji可以存入，部分emoji存入会持续报错Incorrect string value: &lsquo;\xF0\x9F\x98\x84&rsquo;，查了查发现还要改mysql根目录下的一个配置文件，linux中是my.cnf，windows中是my.ini。</p>
-<p><a href="https://www.cnblogs.com/h--d/p/5712490.html">【Mysql】存储emoji表情报错（Incorrect string value: &lsquo;\xF0\x9F\x98\x82\xF0\x9F&hellip;'）的解决方案 - H__D - 博客园</a></p>
-<p><a href="https://blog.csdn.net/fhzaitian/article/details/53168551">该错误的解决办法：Incorrect string value: &lsquo;\xF0\x9F&hellip;&rsquo; for column &lsquo;XXX&rsquo; at row 1 - 浪漫鼠 - CSDN博客</a></p>
+<p><a class="link" href="https://www.cnblogs.com/h--d/p/5712490.html"  target="_blank" rel="noopener"
+    >【Mysql】存储emoji表情报错（Incorrect string value: &lsquo;\xF0\x9F\x98\x82\xF0\x9F&hellip;'）的解决方案 - H__D - 博客园</a></p>
+<p><a class="link" href="https://blog.csdn.net/fhzaitian/article/details/53168551"  target="_blank" rel="noopener"
+    >该错误的解决办法：Incorrect string value: &lsquo;\xF0\x9F&hellip;&rsquo; for column &lsquo;XXX&rsquo; at row 1 - 浪漫鼠 - CSDN博客</a></p>
 <p>我在my.ini中没有添加别人那么多，只在[client]中添加了default-character-set = utf8mb4，然后[mysql]和[mysqld]中的utf8改为utf8mb4即可。</p>
-<p><a href="https://segmentfault.com/q/1010000002385806/a-1020000002390412">mysql+jdbc的emoji异常问题 - lymee的回答 - SegmentFault 思否</a></p>
+<p><a class="link" href="https://segmentfault.com/q/1010000002385806/a-1020000002390412"  target="_blank" rel="noopener"
+    >mysql+jdbc的emoji异常问题 - lymee的回答 - SegmentFault 思否</a></p>
 <p>然后切记大于5.1.13的connector不能加characterEncoding=utf8。</p>
 <p>jdbc的配置也没别人那么多，<code>jdbc:mysql://localhost:3306/cardbox_database?autoReconnect=true</code>就ok了。</p>
 <p><strong>最后记得重启mysql啊！！‘net stop mysql57’ ‘net start mysql57’</strong></p>
@@ -538,11 +704,12 @@ intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 </li>
 <li>
 <p>mysql-front增加级联删除选这个就好了</p>
-<p><img src="https://user-images.githubusercontent.com/29684201/48269518-b80c0400-e472-11e8-81df-397e46cb1eba.png" alt=""></p>
+<p><img src="https://user-images.githubusercontent.com/29684201/48269518-b80c0400-e472-11e8-81df-397e46cb1eba.png" alt=""  /></p>
 </li>
 <li>
 <p>以前没怎么用过游标今天突然要用到就头痛了我仿佛一个智障。不要直接BEGIN END啦这个要写在存储过程里头啊！！游标查询完所有结果之后报错no data - zero rows fetched,selected,or processed，加一句话就好啦！ps存储过程里记得每句都要加分号</p>
-<p><a href="https://blog.csdn.net/scfscf114/article/details/71023827"></a></p>
+<p><a class="link" href="https://blog.csdn.net/scfscf114/article/details/71023827"  target="_blank" rel="noopener"
+    ></a></p>
 <pre><code>drop PROCEDURE if exists test;
 create procedure test()
 BEGIN
@@ -573,129 +740,221 @@ call test();
 </li>
 <li>
 <p>apk打包最后一步</p>
-<p><a href="https://www.jianshu.com/p/975439c6a26e">Android Studio 项目打包成apk时 Signature Version 的选择</a></p>
+<p><a class="link" href="https://www.jianshu.com/p/975439c6a26e"  target="_blank" rel="noopener"
+    >Android Studio 项目打包成apk时 Signature Version 的选择</a></p>
 </li>
 <li>
 <p>啊！做完了！感动！BUG过两天中期答辩结束就开始找实习啦！</p>
 </li>
 </ol>
 <p>没什么用的总结：用了很多轮子，以后要学会自己造轮子。以及，好想学ios开发啊，学了就可以做APP给自己日常用了&gt; &lt;等明年开学入了mbp再来学着玩ε=ε=ε=(~￣▽￣)~</p>
-      </div>
-    </article>
+</section>
 
-    <hr />
 
-    <div class="post-info">
-      
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
-
-        <span class="tag"><a href="https://hishark777.com/tags/android/">Android</a></span>
-        <span class="tag"><a href="https://hishark777.com/tags/ssm/">SSM</a></span>
-        <span class="tag"><a href="https://hishark777.com/tags/%E8%B8%A9%E5%9D%91/">踩坑</a></span>
+    <footer class="article-footer">
+    
+    <section class="article-tags">
         
-    </p>
-
-      
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-
-        <span class="tag"><a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+            <a href="/tags/android/">Android</a>
         
-    </p>
-
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        6260字
-      </p>
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
+            <a href="/tags/ssm/">SSM</a>
         
-          2018-11-02 04:54
+            <a href="/tags/%E8%B8%A9%E5%9D%91/">踩坑</a>
         
+    </section>
 
-         
-          
-        
-      </p>
-    </div>
 
     
-      <div class="pagination">
-        <div class="pagination__title">
-          <span class="pagination__title-h"></span>
-          <hr />
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">卡片校园踩坑记录</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/constraint-layout/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">使用 ConstraintLayout 构建自适应布局</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/as-4-1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">What’s new in AS 4.1</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/room-database/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Room Database</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/roomdatabaseviewer/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Room Database Viewer</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2021 777&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
         </div>
 
-        <div class="pagination__buttons">
-          
-            <span class="button previous">
-              <a href="https://hishark777.com/post/%E4%BA%8C%E4%B8%80%E5%85%AB%E5%8D%81%E6%9C%88/">
-                <span class="button__icon">←</span>
-                <span class="button__text">二〇一八 十月</span>
-              </a>
-            </span>
-          
+        
+        <div class="pswp__ui pswp__ui--hidden">
 
-          
-            <span class="button next">
-              <a href="https://hishark777.com/post/%E4%BA%8C%E4%B8%80%E5%85%AB%E4%B9%9D%E6%9C%88/">
-                <span class="button__text">二〇一八 九月</span>
-                <span class="button__icon">→</span>
-              </a>
-            </span>
-          
-        </div>
-      </div>
-    
+            <div class="pswp__top-bar">
 
+                
 
-    
+                <div class="pswp__counter"></div>
 
-  </main>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2017 - 2021</span>
-            
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            
-            
-          </div>
-    </div>
-</footer>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
 
-            
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
         </div>
 
-        
+    </div>
 
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 
-<script type="text/javascript" src="https://hishark777.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
 
-
+        document.head.appendChild(customFont);
+    }());
+</script>
 
     </body>
 </html>

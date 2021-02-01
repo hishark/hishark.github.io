@@ -1,954 +1,808 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-	<meta name="generator" content="Hugo 0.74.0" />
-    
-      <title>
-        777&#39;s Blog
-      </title>
-    
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta
-  name="description"
-  content=""
-/>
-<meta
-  name="keywords"
-  content=""
-/>
-<meta name="robots" content="noodp" />
-<link rel="canonical" href="https://hishark777.com/" />
+<html lang="en-us">
+    <head>
+	<meta name="generator" content="Hugo 0.80.0" /><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=' $ cd /777/blog'><title>777&#39;s blog</title>
 
+<link rel='canonical' href='https://hishark777.com/'>
 
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='777&#39;s blog'>
+<meta property='og:description' content=' $ cd /777/blog'>
+<meta property='og:url' content='https://hishark777.com/'>
+<meta property='og:site_name' content='777&#39;s blog'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2021-02-01T18:41:58&#43;08:00 '/><meta property='og:image' content='https://hishark777.com/' />
+<meta name="twitter:site" content="hishark777"><meta name="twitter:title" content="777&#39;s blog">
+<meta name="twitter:description" content=" $ cd /777/blog"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://hishark777.com/' /><link rel="alternate" type="application/rss&#43;xml" href="https://hishark777.com/index.xml"><style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
 
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    
+            customFont.href = "<https://fonts.lug.ustc.edu.cn/css2?family=Noto+Serif+SC:wght@400;700&display=swap>";
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-
-<link rel="stylesheet" href="https://hishark777.com/assets/style.css" />
-
-<link rel="stylesheet" href="https://hishark777.com/style.css" />
-
-
-<link
-  rel="apple-touch-icon-precomposed"
-  sizes="144x144"
-  href="https://hishark777.com/img/apple-touch-icon-144-precomposed.png"
-/>
-<link rel="shortcut icon" href="https://hishark777.com/img/favicon.png" />
-
-
-<link href="https://hishark777.com/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="https://hishark777.com/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="777&#39;s Blog"/>
-<meta name="twitter:description" content=""/>
-
-
-
-<meta property="og:title" content="777&#39;s Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://hishark777.com/" />
-<meta property="og:updated_time" content="2021-01-04T13:49:44+08:00" /><meta property="og:site_name" content="777&#39;s Blog" />
-
-
-
-<link rel="alternate" type="application/rss+xml" href="/index.xml" title="777's Blog" />
-
-
-
-  </head>
-  <body class="">
-    <div class="container">
-      <header class="header">
-  <span class="header__inner">
-    <a
-  href="/"
-  class="logo"
-  style="text-decoration: none;"
->
-  
-    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span>
-    <span class="logo__text"
-      >777&#39;s Blog</span
-    >
-    <span class="logo__cursor"></span>
-  
-</a>
-
-    <span class="header__right">
-      
-        <nav class="menu">
-  <ul class="menu__inner menu__inner--desktop">
-    
-      
-        
-          <li><a href="/about">关于</a></li>
-        
-      
-        
-          <li><a href="/tags">标签</a></li>
-        
-      
-        
-          <li><a href="/categories">分类</a></li>
-        
-      
-        
-          <li><a href="/archive">归档</a></li>
-        
-      
-      
-        <ul class="menu__sub-inner">
-          <li class="menu__sub-inner-more-trigger">
-            其他
-            <span class="menu__sub-inner-more-trigger-icon"
-              ><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span
-            >
-          </li>
-          <ul class="menu__sub-inner-more hidden">
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
-              
-                <li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-              
-            
-              
-                <li><a href="https://www.douban.com/people/hishark/photos">相册</a></li>
-              
-            
-          </ul>
-        </ul>
-      
-      
-  </ul>
 
-  <ul class="menu__inner menu__inner--mobile">
-    
-      
-        <li><a href="/about">关于</a></li>
-      
-    
-      
-        <li><a href="/tags">标签</a></li>
-      
-    
-      
-        <li><a href="/categories">分类</a></li>
-      
-    
-      
-        <li><a href="/archive">归档</a></li>
-      
-    
-      
-        <li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-      
-    
-      
-        <li><a href="https://www.douban.com/people/hishark/photos">相册</a></li>
-      
-    
-  </ul>
-</nav>
-
-        <span class="menu-trigger">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column compact ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
         </span>
-      
-      <span class="theme-toggle">
-        <svg
-  class="theme-toggler"
-  width="24"
-  height="24"
-  viewBox="0 0 48 48"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
-  />
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu020072fae18b0f62237d6df7241b8457_91547_300x0_resize_box_2.png" width="300"
+                            height="273" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🧸</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://hishark777.com/">777&#39;s blog</a></h1>
+        <h2 class="site-description">&gt; $ cd /777/blog</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/post'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
 </svg>
 
-      </span>
-    </span>
-  </span>
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://www.douban.com/people/hishark/photos'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#939393" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="15" y1="8" x2="15.01" y2="8" />
+  <rect x="4" y="4" width="16" height="16" rx="3" />
+  <path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
+  <path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
+</svg>
+                
+                <span>Album</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://hishark777.gitbook.io/777-interview-notes/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#939393" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+  <line x1="13" y1="8" x2="15" y2="8" />
+  <line x1="13" y1="12" x2="15" y2="12" />
+</svg>
+                
+                <span>Interview Notes</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    
+    
+    
+    
+
+    <section class="article-list">
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/post/%E4%BA%8C%E4%B8%80%E5%85%AB%E5%8D%81%E6%9C%88/">二〇一八 十月</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Nov 10, 2018</time>
+    </footer></div>
 </header>
-
-
-      <div class="content">
+</article>
         
-  
-  
-
-  
-  
-    
-  
-  
-
-  
-
-  <div class="posts">
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/the-economist/">The Economist</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2018-08-01
-          </span>
-
-          
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 26 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/english/">#ENGLISH</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>发现了一个不错的公众号
-👉 <em><strong>onebabbler</strong></em>
-每天一小段经济学人
-之前特意买了一本英语本摘抄
-可是越发觉得效率低下 不如电子笔记
-所以选择记到这啦
-（内容均原封不动摘自公众号）</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/the-economist/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/%E4%BA%8C%E4%B8%80%E5%85%AB%E4%B8%83%E6%9C%88/">二〇一八 七月</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-07-31
-          </span>
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" >
+                学习笔记
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">卡片盒子踩坑记录</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Nov 01, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-            <a href="https://hishark777.com/tags/vlog/">#VLOG</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>暑假过去一半啦
-夏令营一切顺利</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/%E4%BA%8C%E4%B8%80%E5%85%AB%E4%B8%83%E6%9C%88/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/neural-networks-basics/">Neural Networks Basics</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-07-30
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/%E4%BA%8C%E4%B8%80%E5%85%AB%E4%B9%9D%E6%9C%88/">二〇一八 九月</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Oct 03, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 3 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/deep-learning/">#Deep Learning</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>deadline是第一生产力*(੭*ˊᵕˋ)੭*ଘ</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/neural-networks-basics/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/introduction-to-deep-learning/">Introduction to Deep Learning</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-07-20
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/%E4%BA%8C%E4%B8%80%E5%85%AB%E5%85%AB%E6%9C%88/">二〇一八 八月</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Aug 31, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 2 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/deep-learning/">#Deep Learning</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>暑假好忙啊又要复习又要自学新东西OTZ
-btw Ng讲话真的好温柔啊哈哈哈</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/introduction-to-deep-learning/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/aaa/">び太の宝島</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-06-01
-          </span>
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" >
+                学习笔记
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/the-economist/">The Economist</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Aug 01, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>什么六一儿童节 六一情人节吧^^
-终于去电影院看了一次哆啦A梦
-好开心555
-大家都还是那么可爱=3=
-大雄真的好幸福噢我也想要一只哆啦A梦T T</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/aaa/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/%E7%BB%88%E4%BA%8E%E8%80%83%E5%AE%8C%E4%BA%86886/">终于考完了886</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-05-27
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/%E4%BA%8C%E4%B8%80%E5%85%AB%E4%B8%83%E6%9C%88/">二〇一八 七月</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jul 31, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>信管咱们再也不要见面了8！</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/%E7%BB%88%E4%BA%8E%E8%80%83%E5%AE%8C%E4%BA%86886/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/%E6%AF%95%E4%B8%9A%E5%AD%A3/">毕业季🎓</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-05-10
-          </span>
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" >
+                学习笔记
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/neural-networks-basics/">Neural Networks Basics</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jul 30, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p><embed src="//music.163.com/style/swf/widget.swf?sid=480286151&type=2&auto=1&width=320&height=66" width="340" height="86"  allowNetworking="all"></embed>
-学校里到处都是穿着学士服拍照的学长学姐
-天天在工作室都能听到窗外的毕业快乐
-一年年看下来
-明年就是我啦
-紧张又期待
-希望未来是闪闪发光的啊
-（闪闪发光这个词矫情的一比可是我还是很喜欢</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/%E6%AF%95%E4%B8%9A%E5%AD%A3/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">阿里云服务器部署 Java Web 项目</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-05-03
-          </span>
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" >
+                学习笔记
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/introduction-to-deep-learning/">Introduction to Deep Learning</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jul 20, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/aliyun/">#aliyun</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>和小洁一起买了个半年的服务器，学生特惠还挺便宜。
-脑子不好，记一下流程。</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/juicy-realm/">Juicy Realm</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-05-01
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/aaa/">び太の宝島</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jun 01, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>恶果之地终于要上架啦</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/juicy-realm/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/lucky/">LUCKY</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-04-21
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/%E7%BB%88%E4%BA%8E%E8%80%83%E5%AE%8C%E4%BA%86886/">终于考完了886</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">May 27, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <img src="https://user-images.githubusercontent.com/29684201/48276067-1096cd80-e482-11e8-84e2-f07cbb508985.JPG" width="350" height="350">
-<p>小爱心终于到了 比心</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/lucky/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/sunny-day/">SUNNY DAY?</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-04-15
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/%E6%AF%95%E4%B8%9A%E5%AD%A3/">毕业季🎓</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">May 10, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>昨天在微博上看到同性恋拥抱的那个视频</p>
-<p>啊真的看的我很难过：（</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/sunny-day/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%83%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/">面向对象的七大设计原则</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-04-10
-          </span>
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" >
+                学习笔记
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">阿里云服务器部署 Java Web 项目</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">May 03, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">#设计模式</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>开始学设计模式了，记一下最基本的设计原则。</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%83%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/%E6%87%92%E6%87%92%E6%95%A3%E6%95%A3/">懒懒散散</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-04-08
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/juicy-realm/">Juicy Realm</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">May 01, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>春困</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/%E6%87%92%E6%87%92%E6%95%A3%E6%95%A3/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">卡片校园踩坑记录</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-04-08
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/lucky/">LUCKY</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Apr 21, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
             
+<article class="">
+    <header class="article-header">
 
-
-
-          
-        
-
-        
-
-        
-          <span class="post-read-time">— 2 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/android/">#Android</a>&nbsp;
-          
-            <a href="https://hishark777.com/tags/ssm/">#SSM</a>&nbsp;
-          
-            <a href="https://hishark777.com/tags/%E8%B8%A9%E5%9D%91/">#踩坑</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            <p>这次开发过程中碰到的问题都扔这，看最后能不能破百哦哈哈</p>
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">Read more →</a></div>
-      
-    </div>
+    <div class="article-details">
     
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://hishark777.com/post/2018-4-6/">HIRE</a></h1>
-      <div class="post-meta">
+    <header class="article-category">
         
-          <span class="post-date">
-            2018-04-06
-          </span>
+            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" >
+                碎碎念
+            </a>
+        
+    </header>
+    
 
-          
+    <h2 class="article-title">
+        <a href="/post/sunny-day/">SUNNY DAY?</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Apr 15, 2018</time>
+    </footer></div>
+</header>
+</article>
+        
+    </section>
+    <nav class='pagination'>
+        
+        
+
+        
             
+                    <a class='page-link' href='/'>1</a>
+                
+            
+            
+                    
+                        
+                        <span class='page-link dots'>&hellip;</span>
+                    
+                
+            
+            
+                    <a class='page-link' href='/page/3/'>3</a>
+                
+            
+            
+                <span class='page-link current'>4</span>
+                
+            
+            
+                    <a class='page-link' href='/page/5/'>5</a>
+                
+            
+            
+                    
+                        
+                        <span class='page-link dots'>&hellip;</span>
+                    
+                
+            
+            
+                    
+                
+            
+            
+                    
+                
+            
+            
+                    <a class='page-link' href='/page/9/'>9</a>
+                
+            
+    </nav>
 
-
-
-          
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
         
-
+            2017 - 
         
-
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-      
-        <span class="post-tags">
-          
-            <a href="https://hishark777.com/tags/diaries/">#DIARIES</a>&nbsp;
-          
-        </span>
-      
-
-      
-
-      <div class="post-content">
-        
-          
-        
-      </div>
-      
-        <div><a class="read-more button" href="/post/2018-4-6/">Read more →</a></div>
-      
-    </div>
+        2021 777&#39;s blog
+    </section>
     
-    <div class="pagination">
-  <div class="pagination__buttons">
-    
-      <span class="button previous">
-        <a href="/page/3/">
-          <span class="button__icon">←</span>
-          <span class="button__text">Newer posts</span>
-        </a>
-      </span>
-    
-    
-      <span class="button next">
-        <a href="/page/5/">
-          <span class="button__text">Older posts</span>
-          <span class="button__icon">→</span>
-        </a>
-      </span>
-    
-  </div>
-</div>
-
-  </div>
-
-      </div>
-
-      
-        <footer class="footer">
-  <div class="footer__inner">
-    
-      <div class="copyright copyright--user">© 2017-2020 ✌️ hishark777</div>
-      
-  </div>
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
 </footer>
-
-<script src="https://hishark777.com/assets/main.js"></script>
-<script src="https://hishark777.com/assets/prism.js"></script>
-
-
-      
-    </div>
-
+            </main>
     
-  </body>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
 </html>

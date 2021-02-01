@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>分类 on Xiaoqi Zhang</title>
+    <title>Categories on 777&#39;s blog</title>
     <link>https://hishark777.com/categories/</link>
-    <description>Recent content in 分类 on Xiaoqi Zhang</description>
+    <description>Recent content in Categories on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    
-	<atom:link href="https://hishark777.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 18:41:58 +0800</lastBuildDate><atom:link href="https://hishark777.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>周报打卡</title>
-      <link>https://hishark777.com/categories/%E5%91%A8%E6%8A%A5%E6%89%93%E5%8D%A1/</link>
-      <pubDate>Mon, 18 Jan 2021 16:00:34 +0800</pubDate>
+      <title>技术日记</title>
+      <link>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Feb 2021 18:41:58 +0800</pubDate>
       
-      <guid>https://hishark777.com/categories/%E5%91%A8%E6%8A%A5%E6%89%93%E5%8D%A1/</guid>
+      <guid>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>技术日记</title>
-      <link>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</link>
-      <pubDate>Sun, 03 Jan 2021 12:38:50 +0800</pubDate>
+      <title>周报打卡</title>
+      <link>https://hishark777.com/categories/%E5%91%A8%E6%8A%A5%E6%89%93%E5%8D%A1/</link>
+      <pubDate>Mon, 01 Feb 2021 11:27:54 +0800</pubDate>
       
-      <guid>https://hishark777.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/</guid>
+      <guid>https://hishark777.com/categories/%E5%91%A8%E6%8A%A5%E6%89%93%E5%8D%A1/</guid>
       <description></description>
     </item>
     

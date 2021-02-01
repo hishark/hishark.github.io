@@ -1,173 +1,291 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="777 ">
-<meta name="description" content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。
-" />
-<meta name="keywords" content=", hugo" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://hishark777.com/post/hugo-version/" />
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。
+'><title>Hugo 安装指定版本</title>
 
+<link rel='canonical' href='https://hishark777.com/post/hugo-version/'>
 
-    <title>
-        
-            Hugo 安装指定版本 :: Xiaoqi Zhang 
-        
-    </title>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Hugo 安装指定版本'>
+<meta property='og:description' content='前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。
+'>
+<meta property='og:url' content='https://hishark777.com/post/hugo-version/'>
+<meta property='og:site_name' content='777&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2020-10-27T15:00:32&#43;08:00'/><meta property='article:modified_time' content='2020-10-27T15:00:32&#43;08:00'/><meta property='og:image' content='https://hishark777.com/' />
+<meta name="twitter:site" content="hishark777"><meta name="twitter:title" content="Hugo 安装指定版本">
+<meta name="twitter:description" content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。
+"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://hishark777.com/' /><style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
 
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://hishark777.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
-
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://hishark777.com/favicon-16x16.png">
-    <link rel="manifest" href="https://hishark777.com/site.webmanifest">
-    <link rel="mask-icon" href="https://hishark777.com/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://hishark777.com/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
-
-<meta itemprop="name" content="Hugo 安装指定版本">
-<meta itemprop="description" content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。">
-<meta itemprop="datePublished" content="2020-10-27T15:00:32&#43;08:00" />
-<meta itemprop="dateModified" content="2021-01-09T11:49:40&#43;08:00" />
-<meta itemprop="wordCount" content="1015">
-<meta itemprop="image" content="https://hishark777.com/"/>
-
-
-
-<meta itemprop="keywords" content="hugo," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://hishark777.com/"/>
-
-<meta name="twitter:title" content="Hugo 安装指定版本"/>
-<meta name="twitter:description" content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。"/>
-
-
-
-    <meta property="og:title" content="Hugo 安装指定版本" />
-<meta property="og:description" content="前些天逛博客看到 Hugo 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 Eureka，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://hishark777.com/post/hugo-version/" />
-<meta property="og:image" content="https://hishark777.com/"/>
-<meta property="article:published_time" content="2020-10-27T15:00:32+08:00" />
-<meta property="article:modified_time" content="2021-01-09T11:49:40+08:00" />
-
-
-
-
-    <meta property="article:section" content="学习笔记" />
-
-
-
-    <meta property="article:published_time" content="2020-10-27 15:00:32 &#43;0800 CST" />
-
-
-
-
-
-
-
-
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    
+            customFont.href = "<https://fonts.lug.ustc.edu.cn/css2?family=Noto+Serif+SC:wght@400;700&display=swap>";
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
     </head>
-
     <body class="">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://hishark777.com/" style="text-decoration: none;">
-    <div class="logo">
-        
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /777/blog</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
-    </div>
-</a>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://hishark777.com/about/">关于</a></li><li><a href="https://hishark777.com/post">归档</a></li><li><a href="https://hishark777.com/tags">标签</a></li><li><a href="https://hishark777.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-    </ul>
-</nav>
-
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column compact article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
         </span>
-    </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu020072fae18b0f62237d6df7241b8457_91547_300x0_resize_box_2.png" width="300"
+                            height="273" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🧸</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://hishark777.com/">777&#39;s blog</a></h1>
+        <h2 class="site-description">&gt; $ cd /777/blog</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/post'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://www.douban.com/people/hishark/photos'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#939393" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="15" y1="8" x2="15.01" y2="8" />
+  <rect x="4" y="4" width="16" height="16" rx="3" />
+  <path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
+  <path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
+</svg>
+                
+                <span>Album</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://hishark777.gitbook.io/777-interview-notes/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#939393" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+  <line x1="13" y1="8" x2="15" y2="8" />
+  <line x1="13" y1="12" x2="15" y2="12" />
+</svg>
+                
+                <span>Interview Notes</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://hishark777.com/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" >
+                学习笔记
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/post/hugo-version/">Hugo 安装指定版本</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Oct 27, 2020</time>
+    </footer></div>
 </header>
 
-
-            <div class="content">
-                
-  <main class="post">
-
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        3分钟
-
-        
-      </p>
-    </div>
-
-    <article>
-      <h1 class="post-title">
-        <a href="https://hishark777.com/post/hugo-version/">Hugo 安装指定版本</a>
-      </h1>
-
-      
-
-      <div class="post-content">
-        <p>前些天逛博客看到 <a href="https://gohugo.io/">Hugo</a> 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 <a href="https://github.com/wangchucheng/hugo-eureka">Eureka</a>，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。</p>
+    <section class="article-content">
+    <p>前些天逛博客看到 <a class="link" href="https://gohugo.io/"  target="_blank" rel="noopener"
+    >Hugo</a> 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 <a class="link" href="https://github.com/wangchucheng/hugo-eureka"  target="_blank" rel="noopener"
+    >Eureka</a>，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。</p>
 <h2 id="1-起因">1. 起因</h2>
 <blockquote>
 <p>我真是浪费了无数时间在折腾博客上- - 不过真好玩哈哈</p>
 </blockquote>
-<p>电脑系统为 MacOS，直接执行了 <code>brew install hugo</code> 安装了 Hugo，装完之后按照 <a href="https://www.wangchucheng.com/zh/docs/">Eureka 的文档</a> 一步步来配置，最后快乐的执行  <code>hugo server</code> 收到了一大串报错，现场未保留，总之是对主题中的一些文件进行了报错。</p>
-<p>接着回头思考是哪一步出了错，发现在<a href="https://www.wangchucheng.com/zh/docs/eureka/getting-started/#%E5%89%8D%E6%8F%90">前提</a>中提到了 Eureka 需要安装 v0.74.0 的 Hugo，瞅了瞅 Hugo 官方<a href="https://github.com/gohugoio/hugo/releases/tag/v0.76.5">最新发布的版本</a>是 v0.76.5，错以为自己电脑上的版本就是 v0.76.5，然后开始 Google 要如何对 Hugo 进行降级。</p>
+<p>电脑系统为 MacOS，直接执行了 <code>brew install hugo</code> 安装了 Hugo，装完之后按照 <a class="link" href="https://www.wangchucheng.com/zh/docs/"  target="_blank" rel="noopener"
+    >Eureka 的文档</a> 一步步来配置，最后快乐的执行  <code>hugo server</code> 收到了一大串报错，现场未保留，总之是对主题中的一些文件进行了报错。</p>
+<p>接着回头思考是哪一步出了错，发现在<a class="link" href="https://www.wangchucheng.com/zh/docs/eureka/getting-started/#%E5%89%8D%E6%8F%90"  target="_blank" rel="noopener"
+    >前提</a>中提到了 Eureka 需要安装 v0.74.0 的 Hugo，瞅了瞅 Hugo 官方<a class="link" href="https://github.com/gohugoio/hugo/releases/tag/v0.76.5"  target="_blank" rel="noopener"
+    >最新发布的版本</a>是 v0.76.5，错以为自己电脑上的版本就是 v0.76.5，然后开始 Google 要如何对 Hugo 进行降级。</p>
 <h2 id="2-经过">2. 经过</h2>
 <p>经过 Google 找到了一篇靠谱的教程来安装旧版本的 Hugo：</p>
-<p><a href="https://networm.me/2019/10/27/installing-old-homebrew-formulas/">Homebrew 安装旧版本软件 - 狂飙</a></p>
-<!-- 这里闲下来也写一下详细的步骤 -->
+<p><a class="link" href="https://networm.me/2019/10/27/installing-old-homebrew-formulas/"  target="_blank" rel="noopener"
+    >Homebrew 安装旧版本软件 - 狂飙</a></p>
+<!-- raw HTML omitted -->
 <p>之前这个方法应该是管用的，毕竟评论区中前排的评论都在感谢作者哈哈，但是现在按照这个流程来做会出现报错：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">Error: Calling Non-checksummed download of hugo formula file 
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">Error: Calling Non-checksummed download of hugo formula file 
 from an arbitrary URL is disabled! Use &#39;brew extract&#39; 
 or &#39;brew create&#39; and &#39;brew tap-new&#39; to create a formula file 
 in a tap on GitHub instead.
@@ -176,13 +294,16 @@ in a tap on GitHub instead.
 <p>所以我应该升级而不是降级。</p>
 <h2 id="3-究极解决方案">3. 究极解决方案</h2>
 <p>想升级很简单，直接执行 <code>brew upgrade hugo</code> 就好啦，会自动给你的电脑安装 hugo 的最新稳定版本。但是问题又来了，目前通过 brew 成功安装到的 Hugo 版本为 v0.73.0，比我需要的 v0.74.0更低，所以我执行该条指令并没有任何帮助。</p>
-<p>最后，我需要解决的问题应该是——如何安装指定版本的 Hugo。很简单，根据 <a href="https://discourse.gohugo.io/t/how-to-install-a-specific-version-of-gohugo/23542">How to install a specific version of gohugo </a>这个问题中的第二个评论找到了解决方案：</p>
+<p>最后，我需要解决的问题应该是——如何安装指定版本的 Hugo。很简单，根据 <a class="link" href="https://discourse.gohugo.io/t/how-to-install-a-specific-version-of-gohugo/23542"  target="_blank" rel="noopener"
+    >How to install a specific version of gohugo </a>这个问题中的第二个评论找到了解决方案：</p>
 <ol>
 <li>
-<p>去 Hugo-Github 的 <a href="https://github.com/gohugoio/hugo/releases">Releases</a> 页面找到你需要的指定版本</p>
+<p>去 Hugo-Github 的 <a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
+    >Releases</a> 页面找到你需要的指定版本</p>
 </li>
 <li>
-<p>根据电脑系统定位到对应的压缩包进行下载（我的电脑系统为 MacOS 所以选择的是 <a href="https://github.com/gohugoio/hugo/releases/download/v0.74.0/hugo_0.74.0_macOS-64bit.tar.gz">hugo_0.74.0_macOS-64bit.tar.gz</a>）</p>
+<p>根据电脑系统定位到对应的压缩包进行下载（我的电脑系统为 MacOS 所以选择的是 <a class="link" href="https://github.com/gohugoio/hugo/releases/download/v0.74.0/hugo_0.74.0_macOS-64bit.tar.gz"  target="_blank" rel="noopener"
+    >hugo_0.74.0_macOS-64bit.tar.gz</a>）</p>
 </li>
 <li>
 <p>解压该压缩包，用其中名为 <code>hugo</code> 的可执行文件去替换当前电脑中已有的 <code>hugo</code> 可执行文件，MacOS 下 hugo 所在的路径为 <code>/usr/local/bin</code>。</p>
@@ -190,144 +311,224 @@ in a tap on GitHub instead.
 </ol>
 <p>替换后就成功装上想要的版本啦～</p>
 <h2 id="4-注意">4. 注意</h2>
-<p>另外有个要注意的小问题是 MacOS 使用 homebrew 安装的话默认会安装 extended 版本。发现这个问题是还看上了另外一款主题 <a href="https://github.com/reuixiy/hugo-theme-meme">MemE</a>，这款主题要求安装 extended 版本的 Hugo，而我在 <a href="https://gohugo.io/getting-started/installing/">Install-Hugo</a> 中也没有查找到 MacOS 中要如何安装 extended 版本，最后在 Hugo 的 Github 库中看到了一个 <a href="https://github.com/gohugoio/hugoDocs/issues/823">issue</a>，里面提到：</p>
+<p>另外有个要注意的小问题是 MacOS 使用 homebrew 安装的话默认会安装 extended 版本。发现这个问题是还看上了另外一款主题 <a class="link" href="https://github.com/reuixiy/hugo-theme-meme"  target="_blank" rel="noopener"
+    >MemE</a>，这款主题要求安装 extended 版本的 Hugo，而我在 <a class="link" href="https://gohugo.io/getting-started/installing/"  target="_blank" rel="noopener"
+    >Install-Hugo</a> 中也没有查找到 MacOS 中要如何安装 extended 版本，最后在 Hugo 的 Github 库中看到了一个 <a class="link" href="https://github.com/gohugoio/hugoDocs/issues/823"  target="_blank" rel="noopener"
+    >issue</a>，里面提到：</p>
 <blockquote>
 <p>An extended is default on macOS with <code>brew install hugo</code></p>
 </blockquote>
 <p>所以 MacOS 中使用 homebrew 安装 Hugo 的话是默认安装 extended 版本的。</p>
 <h2 id="参考">参考</h2>
 <ul>
-<li><a href="https://discourse.gohugo.io/t/how-to-install-a-specific-version-of-gohugo/23542">How to install a specific version of gohugo </a></li>
-<li><a href="https://networm.me/2019/10/27/installing-old-homebrew-formulas/">Homebrew 安装旧版本软件 - 狂飙</a></li>
+<li><a class="link" href="https://discourse.gohugo.io/t/how-to-install-a-specific-version-of-gohugo/23542"  target="_blank" rel="noopener"
+    >How to install a specific version of gohugo </a></li>
+<li><a class="link" href="https://networm.me/2019/10/27/installing-old-homebrew-formulas/"  target="_blank" rel="noopener"
+    >Homebrew 安装旧版本软件 - 狂飙</a></li>
 </ul>
-      </div>
-    </article>
+</section>
 
-    <hr />
 
-    <div class="post-info">
-      
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
-
-        <span class="tag"><a href="https://hishark777.com/tags/hugo/">hugo</a></span>
+    <footer class="article-footer">
+    
+    <section class="article-tags">
         
-    </p>
-
-      
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-
-        <span class="tag"><a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+            <a href="/tags/hugo/">hugo</a>
         
-    </p>
+    </section>
 
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        1015字
-      </p>
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        
-          2020-10-27 15:00
-        
-
-         
-          
-            
-              (最后修改: 2021-01-09 11:49)
-            
-          
-        
-      </p>
-        <p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit">
-            <circle cx="12" cy="12" r="4"></circle>
-            <line x1="1.05" y1="12" x2="7" y2="12"></line>
-            <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
-          </svg>
-
-          <a href="https://github.com/hishark/hishark.github.io/commit/5044ede160eb23c0e54c85dcf336fe7c8baacf27" target="_blank" rel="noopener">5044ede</a>
-          @ 2021-01-09
-        </p>
-    </div>
 
     
-      <div class="pagination">
-        <div class="pagination__title">
-          <span class="pagination__title-h"></span>
-          <hr />
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/post/constraint-layout/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">使用 ConstraintLayout 构建自适应布局</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/chinese-copywriting/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">中英文空格使用指北</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/as-4-1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">What’s new in AS 4.1</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/room-database/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Room Database</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/srgan/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">SRGAN</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2021 777&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
         </div>
 
-        <div class="pagination__buttons">
-          
-            <span class="button previous">
-              <a href="https://hishark777.com/post/chinese-copywriting/">
-                <span class="button__icon">←</span>
-                <span class="button__text">中英文空格使用指北</span>
-              </a>
-            </span>
-          
+        
+        <div class="pswp__ui pswp__ui--hidden">
 
-          
-            <span class="button next">
-              <a href="https://hishark777.com/post/as-4-1/">
-                <span class="button__text">What’s new in AS 4.1</span>
-                <span class="button__icon">→</span>
-              </a>
-            </span>
-          
-        </div>
-      </div>
-    
+            <div class="pswp__top-bar">
 
+                
 
-    
+                <div class="pswp__counter"></div>
 
-  </main>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2017 - 2021</span>
-            
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            
-            
-          </div>
-    </div>
-</footer>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
 
-            
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
         </div>
 
-        
+    </div>
 
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 
-<script type="text/javascript" src="https://hishark777.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
 
-
+        document.head.appendChild(customFont);
+    }());
+</script>
 
     </body>
 </html>

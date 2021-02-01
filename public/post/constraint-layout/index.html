@@ -1,161 +1,273 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="777 ">
-<meta name="description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。
-" />
-<meta name="keywords" content=", Android" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://hishark777.com/post/constraint-layout/" />
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。
+'><title>使用 ConstraintLayout 构建自适应布局</title>
 
+<link rel='canonical' href='https://hishark777.com/post/constraint-layout/'>
 
-    <title>
-        
-            使用 ConstraintLayout 构建自适应布局 :: Xiaoqi Zhang 
-        
-    </title>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='使用 ConstraintLayout 构建自适应布局'>
+<meta property='og:description' content='抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。
+'>
+<meta property='og:url' content='https://hishark777.com/post/constraint-layout/'>
+<meta property='og:site_name' content='777&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:published_time' content='2020-11-23T19:20:55&#43;08:00'/><meta property='article:modified_time' content='2020-11-23T19:20:55&#43;08:00'/><meta property='og:image' content='https://hishark777.com/' />
+<meta name="twitter:site" content="hishark777"><meta name="twitter:title" content="使用 ConstraintLayout 构建自适应布局">
+<meta name="twitter:description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。
+"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://hishark777.com/' /><style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
 
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://hishark777.com/main.154a87e0ff720e102948892a8eb80881aa81a4faf37376f3093be219f6296c3d.css">
-
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://hishark777.com/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://hishark777.com/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://hishark777.com/favicon-16x16.png">
-    <link rel="manifest" href="https://hishark777.com/site.webmanifest">
-    <link rel="mask-icon" href="https://hishark777.com/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://hishark777.com/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
-
-<meta itemprop="name" content="使用 ConstraintLayout 构建自适应布局">
-<meta itemprop="description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。">
-<meta itemprop="datePublished" content="2020-11-23T19:20:55&#43;08:00" />
-<meta itemprop="dateModified" content="2021-01-09T11:49:40&#43;08:00" />
-<meta itemprop="wordCount" content="2001">
-<meta itemprop="image" content="https://hishark777.com/"/>
-
-
-
-<meta itemprop="keywords" content="Android," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://hishark777.com/"/>
-
-<meta name="twitter:title" content="使用 ConstraintLayout 构建自适应布局"/>
-<meta name="twitter:description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。"/>
-
-
-
-    <meta property="og:title" content="使用 ConstraintLayout 构建自适应布局" />
-<meta property="og:description" content="抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://hishark777.com/post/constraint-layout/" />
-<meta property="og:image" content="https://hishark777.com/"/>
-<meta property="article:published_time" content="2020-11-23T19:20:55+08:00" />
-<meta property="article:modified_time" content="2021-01-09T11:49:40+08:00" />
-
-
-
-
-    <meta property="article:section" content="学习笔记" />
-
-
-
-    <meta property="article:published_time" content="2020-11-23 19:20:55 &#43;0800 CST" />
-
-
-
-
-
-
-
-
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    
+            customFont.href = "<https://fonts.lug.ustc.edu.cn/css2?family=Noto+Serif+SC:wght@400;700&display=swap>";
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
     </head>
-
     <body class="">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://hishark777.com/" style="text-decoration: none;">
-    <div class="logo">
-        
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /777/blog</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
-    </div>
-</a>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://hishark777.com/about/">关于</a></li><li><a href="https://hishark777.com/post">归档</a></li><li><a href="https://hishark777.com/tags">标签</a></li><li><a href="https://hishark777.com/categories">分类</a></li><li><a href="https://www.douban.com/people/hishark/photos">相册</a></li><li><a href="https://hishark777.gitbook.io/777-interview-notes/">校招笔记</a></li>
-    </ul>
-</nav>
-
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column compact article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
         </span>
-    </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu020072fae18b0f62237d6df7241b8457_91547_300x0_resize_box_2.png" width="300"
+                            height="273" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🧸</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://hishark777.com/">777&#39;s blog</a></h1>
+        <h2 class="site-description">&gt; $ cd /777/blog</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/post'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://www.douban.com/people/hishark/photos'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#939393" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="15" y1="8" x2="15.01" y2="8" />
+  <rect x="4" y="4" width="16" height="16" rx="3" />
+  <path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
+  <path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
+</svg>
+                
+                <span>Album</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://hishark777.gitbook.io/777-interview-notes/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#939393" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+  <line x1="13" y1="8" x2="15" y2="8" />
+  <line x1="13" y1="12" x2="15" y2="12" />
+</svg>
+                
+                <span>Interview Notes</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://hishark777.com/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" >
+                学习笔记
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/post/constraint-layout/">使用 ConstraintLayout 构建自适应布局</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Nov 23, 2020</time>
+    </footer></div>
 </header>
 
-
-            <div class="content">
-                
-  <main class="post">
-
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        4分钟
-
-        
-      </p>
-    </div>
-
-    <article>
-      <h1 class="post-title">
-        <a href="https://hishark777.com/post/constraint-layout/">使用 ConstraintLayout 构建自适应布局</a>
-      </h1>
-
-      
-
-      <div class="post-content">
-        <p>抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。</p>
+    <section class="article-content">
+    <p>抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。</p>
 <blockquote>
 <p>ConstraintLayout 可以使用扁平控件层次结构（无嵌套控件组）来创建复杂的大型布局。它与 RelativeLayout 相似，其中所有的控件均根据同级控件与父布局之间的关系进行布局，但其灵活性要高于 RelativeLayout，并且更易于与 Android Studio 的布局编辑器配合使用。</p>
 <p>ConstraintLayout 的所有功能均可直接通过布局编辑器的可视化工具来使用，因为布局 API 和布局编辑器是专为彼此构建的。 因此，我们完全可以使用 ConstraintLayout 通过拖放的形式（而非修改 XML）来构建布局。</p>
@@ -163,29 +275,29 @@
 <h2 id="1-如何添加">1. 如何添加</h2>
 <p>如果要在项目中使用 <code>ConstraintLayout</code> ，需要确保两点：</p>
 <p>在模块级别的 <code>build.gradle</code> 文件中声明 <code>maven.google.com</code> 代码库：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">repositories <span style="color:#f92672">{</span>
-	google<span style="color:#f92672">()</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">repositories</span> <span class="o">{</span>
+	<span class="n">google</span><span class="o">()</span>
+<span class="o">}</span>
 </code></pre></div><p>在模块级别的 <code>build.gradle</code> 文件中添加 <code>ConstraintLayout</code> 库作为依赖项。（此处版本为 2.0.0）</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">dependencies <span style="color:#f92672">{</span>
-    implementation <span style="color:#e6db74">&#34;androidx.constraintlayout:constraintlayout:2.0.0&#34;</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">implementation</span> <span class="s">&#34;androidx.constraintlayout:constraintlayout:2.0.0&#34;</span>
+<span class="o">}</span>
 </code></pre></div><h2 id="2-转换布局">2. 转换布局</h2>
 <p>如果想将其他布局转换为 <code>ConstraintLayout</code> 约束布局，可以直接在 Component Tree 窗口中，右键该布局，点击 <strong>Convert xxx to ConstraintLayout</strong> 即可。</p>
-<img src="https://developer.android.google.cn/training/constraint-layout/images/layout-editor-convert-to-constraint_2x.png?hl=zh-cn" width="400">
+<!-- raw HTML omitted -->
 <h2 id="3-约束条件">3. 约束条件</h2>
 <p>要在 <code>ConstraintLayout</code> 中定义某个控件的位置，必须为该控件添加至少一个水平约束条件和一个垂直约束条件。</p>
 <p>每个约束条件均定义了控件在竖轴或者横轴上的位置，同时均表示了当前控件与其他控件、父布局或隐形引导线之间的连接或对齐方式。因此每个控件在每个轴上都至少有一个约束条件，但通常情况下会需要更多约束条件。</p>
 <p>当我们将控件拖放到布局编辑器中时，即使没有任何约束条件，它也会停留在放置的位置。但是当运行应用后，若一个控件没有任何约束条件，则会在位置 [0,0]（即左上角）处进行绘制。</p>
 <p>例如，在下图中，布局在编辑器中看着很完美，没什么问题，但是由于控件 C 上没有垂直约束条件，所以它会显示在屏幕的顶部。</p>
-<p><img src="https://developer.android.google.cn/training/constraint-layout/images/constraint-fail_2x.png?hl=zh-cn" alt=""></p>
+<p><img src="https://developer.android.google.cn/training/constraint-layout/images/constraint-fail_2x.png?hl=zh-cn" alt=""  /></p>
 <p>下图对控件 C 添加了垂直约束条件，所以控件 C 会乖乖的处于控件 A 的正下方。</p>
-<p><img src="https://developer.android.google.cn/training/constraint-layout/images/constraint-fail-fixed_2x.png?hl=zh-cn" alt=""></p>
+<p><img src="https://developer.android.google.cn/training/constraint-layout/images/constraint-fail-fixed_2x.png?hl=zh-cn" alt=""  /></p>
 <blockquote>
 <p>缺少约束条件并不会导致编译错误，但是布局编辑器会将缺少约束条件作为错误显示在工具栏中。</p>
 </blockquote>
 <h3 id="31-添加引导线约束">3.1 添加引导线约束</h3>
-<p><img src="https://developer.android.google.cn/training/constraint-layout/images/guideline-constraint_2x.png?hl=zh-cn" alt="img"></p>
+<p><img src="https://developer.android.google.cn/training/constraint-layout/images/guideline-constraint_2x.png?hl=zh-cn" alt="img"  /></p>
 <p>可以添加垂直或水平的引导线来约束控件，该引导线是隐形的，我们可以根据相对于布局边缘的 dp 单位或百分比在布局中定位引导线。</p>
 <p>要创建引导线，请点击工具栏中的 Guidelines，然后点击 Add Vertical Guideline 或 Add Horizontal Guideline。</p>
 <p>拖动虚线将其重新定位，然后点击引导线边缘的圆圈以切换测量模式。</p>
@@ -196,11 +308,11 @@
 <li>在 Component Tree 窗口中，选择要放入屏障内的控件，然后将其拖动到屏障组件中。</li>
 <li>在 Component Tree 中选择屏障，打开 Attributes 窗口，然后设置 barrierDirection。</li>
 </ol>
-<!-- 现在，您可以从另一个控件创建屏障约束。 -->
+<!-- raw HTML omitted -->
 <p>我们还可以将屏障内的控件约束到屏障。这样就可以确保屏障中的所有控件始终相互对齐，即使我们并不知道哪个控件最长或最高。同时，还可以在屏障内添加引导线，以确保屏障的位置“最小”。</p>
 <p>与引导线类似，屏障是一条隐藏的线，我们可以用它来约束控件。屏障不会定义自己的位置。相反，屏障的位置会随着其中所含控件的位置而移动。如果希望将控件限制到一组控件而不是某个特定控件时，屏障约束就非常好用。</p>
 <p>例如在下图中，控件 C 被约束在屏障的右侧。该屏障设置为控件 A 和控件 B 的右侧。因此，屏障根据控件 A 或控件 B 的右侧是否为最右侧来移动。</p>
-<img src="https://developer.android.google.cn/training/constraint-layout/images/barrier-constraint_2x.png?hl=zh-cn" width="400">
+<!-- raw HTML omitted -->
 <h3 id="32-创建约束条件">3.2 创建约束条件</h3>
 <ol>
 <li>
@@ -237,135 +349,211 @@
 <p>Autoconnect to parent 是可以启用的独立功能。启用后，当我们将子控件添加到父控件时，此功能会自动为每个控件创建两个或多个约束条件，但前提是可以将子控件约束到父布局。Autoconnect 不会为布局中的其他控件创建约束条件。</p>
 <p>Autoconnect 在默认情况下处于停用状态。点击布局编辑器工具栏中的 Enable Autoconnection to Parent，即可启用该功能。</p>
 <h2 id="参考">参考</h2>
-<p><a href="https://developer.android.google.cn/training/constraint-layout?hl=zh-cn">使用 ConstraintLayout 构建自适应界面 - Android Developers</a></p>
-      </div>
-    </article>
+<p><a class="link" href="https://developer.android.google.cn/training/constraint-layout?hl=zh-cn"  target="_blank" rel="noopener"
+    >使用 ConstraintLayout 构建自适应界面 - Android Developers</a></p>
+</section>
 
-    <hr />
 
-    <div class="post-info">
-      
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
-
-        <span class="tag"><a href="https://hishark777.com/tags/android/">Android</a></span>
+    <footer class="article-footer">
+    
+    <section class="article-tags">
         
-    </p>
-
-      
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-
-        <span class="tag"><a href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span>
+            <a href="/tags/android/">Android</a>
         
-    </p>
+    </section>
 
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        2001字
-      </p>
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        
-          2020-11-23 19:20
-        
-
-         
-          
-            
-              (最后修改: 2021-01-09 11:49)
-            
-          
-        
-      </p>
-        <p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit">
-            <circle cx="12" cy="12" r="4"></circle>
-            <line x1="1.05" y1="12" x2="7" y2="12"></line>
-            <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
-          </svg>
-
-          <a href="https://github.com/hishark/hishark.github.io/commit/5044ede160eb23c0e54c85dcf336fe7c8baacf27" target="_blank" rel="noopener">5044ede</a>
-          @ 2021-01-09
-        </p>
-    </div>
 
     
-      <div class="pagination">
-        <div class="pagination__title">
-          <span class="pagination__title-h"></span>
-          <hr />
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/post/as-4-1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">What’s new in AS 4.1</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/room-database/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Room Database</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/roomdatabaseviewer/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Room Database Viewer</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/genymotion/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">使用 Genymotion 运行基于 ARM 架构的 APP</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/post/cardbox/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">卡片盒子</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2021 777&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
         </div>
 
-        <div class="pagination__buttons">
-          
-            <span class="button previous">
-              <a href="https://hishark777.com/post/techdiary202012/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Tech Diary | 2020.12</span>
-              </a>
-            </span>
-          
+        
+        <div class="pswp__ui pswp__ui--hidden">
 
-          
-            <span class="button next">
-              <a href="https://hishark777.com/post/techdiary202011/">
-                <span class="button__text">Tech Diary | 2020.11</span>
-                <span class="button__icon">→</span>
-              </a>
-            </span>
-          
-        </div>
-      </div>
-    
+            <div class="pswp__top-bar">
 
+                
 
-    
+                <div class="pswp__counter"></div>
 
-  </main>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2017 - 2021</span>
-            
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            
-            
-          </div>
-    </div>
-</footer>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
 
-            
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
         </div>
 
-        
+    </div>
 
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 
-<script type="text/javascript" src="https://hishark777.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
 
-
+        document.head.appendChild(customFont);
+    }());
+</script>
 
     </body>
 </html>

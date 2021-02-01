@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>周报打卡 on Xiaoqi Zhang</title>
+    <title>周报打卡 on 777&#39;s blog</title>
     <link>https://hishark777.com/categories/%E5%91%A8%E6%8A%A5%E6%89%93%E5%8D%A1/</link>
-    <description>Recent content in 周报打卡 on Xiaoqi Zhang</description>
+    <description>Recent content in 周报打卡 on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 18 Jan 2021 16:00:34 +0800</lastBuildDate>
-    
-	<atom:link href="https://hishark777.com/categories/%E5%91%A8%E6%8A%A5%E6%89%93%E5%8D%A1/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 11:27:54 +0800</lastBuildDate><atom:link href="https://hishark777.com/categories/%E5%91%A8%E6%8A%A5%E6%89%93%E5%8D%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ARTS 4</title>
       <link>https://hishark777.com/post/arts4/</link>
-      <pubDate>Mon, 18 Jan 2021 16:00:34 +0800</pubDate>
+      <pubDate>Mon, 01 Feb 2021 11:27:54 +0800</pubDate>
       
       <guid>https://hishark777.com/post/arts4/</guid>
-      <description>&lt;p&gt;买了回家的票 🎫&lt;/p&gt;
-&lt;p&gt;归心似箭&lt;/p&gt;</description>
+      <description> A: Algorithm，每周至少做一道 Leetcode
+R: Review，阅读并点评至少一篇英文文章
+T: Tips，学习至少一个技术技巧
+S: Share，分享一篇有观点和思考的技术文章
+ Algorithm LCOF 03. 数组中重复的数字
+ 比较交换  Review Tips Share 本周时间轴 </description>
     </item>
     
     <item>
@@ -28,10 +27,18 @@
       <pubDate>Mon, 11 Jan 2021 00:19:11 +0800</pubDate>
       
       <guid>https://hishark777.com/post/arts3/</guid>
-      <description>&lt;p&gt;第三周&lt;/p&gt;
-&lt;p&gt;最近好冷&lt;/p&gt;
-&lt;p&gt;//&lt;/p&gt;
-&lt;p&gt;周三开始暖起来啦～&lt;/p&gt;</description>
+      <description>A: Algorithm，每周至少做一道 Leetcode
+R: Review，阅读并点评至少一篇英文文章
+T: Tips，学习至少一个技术技巧
+S: Share，分享一篇有观点和思考的技术文章
+ Algorithm   LeetCode 19. 删除链表的倒数第N个节点
+ 快慢指针    LeetCode 62. 不同路径
+ 动态规划    LeetCode 75. 颜色分类
+ 双指针    LeetCode 560. 和为K的子数组
+ 哈希表，前缀和    LeetCode 494. 目标和
+ 动态规划，DFS    LeetCode 617. 合并二叉树
+ DFS    LeetCode 461. 汉明距离
+ 位运算    LeetCode 448.</description>
     </item>
     
     <item>
@@ -40,10 +47,13 @@
       <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
       
       <guid>https://hishark777.com/post/arts2/</guid>
-      <description>&lt;p&gt;第二周～&lt;/p&gt;
-&lt;p&gt;这周做点每日一题&lt;/p&gt;
-&lt;p&gt;看一篇论文&lt;/p&gt;
-&lt;p&gt;学一学调试技巧&lt;/p&gt;</description>
+      <description>A: Algorithm，每周至少做一道 Leetcode
+R: Review，阅读并点评至少一篇英文文章
+T: Tips，学习至少一个技术技巧
+S: Share，分享一篇有观点和思考的技术文章
+ Algorithm 做做每日一题
+碰到不想做的每日一题就自己随便找一题做
+ 1月4号 LeetCode 509. 斐波那契数  嗯嗯谢谢大哥节后饶我一命   1月5号 LeetCode 830. 较大分组的位置  数组简单题   1月6号 LeetCode 5. 最长回文子串  这个题居然还没做   1月7号 LeetCode 547. 省份数量  考察连通分量的确定   1月8号 LeetCode 189. 旋转数组  原地算法   1月9号 LeetCode 12. 整数转罗马数字  贪心   1月9号 LeetCode 17. 电话号码的字母组合  回溯   1月10号 LeetCode 228.</description>
     </item>
     
     <item>
@@ -52,7 +62,27 @@
       <pubDate>Mon, 28 Dec 2020 09:29:49 +0800</pubDate>
       
       <guid>https://hishark777.com/post/arts1/</guid>
-      <description>&lt;p&gt;2020 年的最后一周，不如就来开启第一个 ARTS 吧。&lt;/p&gt;</description>
+      <description>A: Algorithm，每周至少做一道 Leetcode
+R: Review，阅读并点评至少一篇英文文章
+T: Tips，学习至少一个技术技巧
+S: Share，分享一篇有观点和思考的技术文章
+ Algorithm 这周做了几个算法题
+LeetCode 122. 买卖股票的最佳时机 II
+因为交易次数不受限，如果可以把所有的上坡全部收集到，一定是利益最大化的。——seven
+LeetCode 316. 去除重复字母
+这个有点难想嗷
+LeetCode 605. 种花问题
+这个判断条件官方题解写太好了
+LeetCode 860. 柠檬水找零
+核心是模拟
+LeetCode 239. 滑动窗口最大值
+如题
+LeetCode 86. 分隔链表
+双指针
+Review Medium 上的优质文章有很多，找了一篇对比 MVC、MVP、MVVM 的文章看看：MVC vs MVP vs MVVM
+不过类似的 MVX 的总结其实看过不少了
+文末提到三者最主要的区别：
+Performance Evaluation — When we are testing the UI performance, MVP turns out to be the one with the highest reliability and lowest hindrance when it comes to rendering frames.</description>
     </item>
     
   </channel>

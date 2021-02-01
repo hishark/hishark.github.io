@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>markdown on Xiaoqi Zhang</title>
+    <title>markdown on 777&#39;s blog</title>
     <link>https://hishark777.com/tags/markdown/</link>
-    <description>Recent content in markdown on Xiaoqi Zhang</description>
+    <description>Recent content in markdown on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 07 Sep 2020 20:06:19 +0000</lastBuildDate>
-    
-	<atom:link href="https://hishark777.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Sep 2020 20:06:19 +0000</lastBuildDate><atom:link href="https://hishark777.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mkdocs-Material Tutorial</title>
       <link>https://hishark777.com/post/mkdocs-material-tutorial/</link>
       <pubDate>Mon, 07 Sep 2020 20:06:19 +0000</pubDate>
       
       <guid>https://hishark777.com/post/mkdocs-material-tutorial/</guid>
-      <description>&lt;p&gt;总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个&lt;a href=&#34;https://hishark777.com/777-Tech-Diary/&#34;&gt;Gitbook&lt;/a&gt;放&lt;del&gt;技术日记&lt;/del&gt;乱七八糟的碎碎念，最后迁移到了&lt;a href=&#34;http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/&#34;&gt;博客&lt;/a&gt;。前阵子看到有人用&lt;a href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;&gt;Mkdocs-Material&lt;/a&gt;写博客，转了一圈官网觉得有点意思，&lt;del&gt;也比Gitbook更好看&lt;/del&gt;（比以前的Gitbook好看），于是来整一个做校招笔记。&lt;/p&gt;</description>
+      <description>&lt;p&gt;总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个&lt;a class=&#34;link&#34; href=&#34;https://hishark777.com/777-Tech-Diary/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gitbook&lt;/a&gt;放&lt;del&gt;技术日记&lt;/del&gt;乱七八糟的碎碎念，最后迁移到了&lt;a class=&#34;link&#34; href=&#34;http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;博客&lt;/a&gt;。前阵子看到有人用&lt;a class=&#34;link&#34; href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mkdocs-Material&lt;/a&gt;写博客，转了一圈官网觉得有点意思，&lt;del&gt;也比Gitbook更好看&lt;/del&gt;（比以前的Gitbook好看），于是来整一个做校招笔记。&lt;/p&gt;</description>
     </item>
     
   </channel>

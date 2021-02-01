@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TechDiary on Xiaoqi Zhang</title>
+    <title>TechDiary on 777&#39;s blog</title>
     <link>https://hishark777.com/tags/techdiary/</link>
-    <description>Recent content in TechDiary on Xiaoqi Zhang</description>
+    <description>Recent content in TechDiary on 777&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 03 Jan 2021 12:38:50 +0800</lastBuildDate>
-    
-	<atom:link href="https://hishark777.com/tags/techdiary/index.xml" rel="self" type="application/rss+xml" />
-    
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 18:41:58 +0800</lastBuildDate><atom:link href="https://hishark777.com/tags/techdiary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech Diary | 2021.02</title>
+      <link>https://hishark777.com/post/techdiary202102/</link>
+      <pubDate>Mon, 01 Feb 2021 18:41:58 +0800</pubDate>
+      
+      <guid>https://hishark777.com/post/techdiary202102/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Tech Diary | 2021.01</title>
@@ -18,9 +22,19 @@
       <pubDate>Sun, 03 Jan 2021 12:38:50 +0800</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202101/</guid>
-      <description>&lt;p&gt;2021 年也要&lt;/p&gt;
-&lt;p&gt;好好学习&lt;/p&gt;
-&lt;p&gt;天天向上&lt;/p&gt;</description>
+      <description>2021-01-18 Mon ExoPlayer Doc
+这文档看着是真舒服
+Android文件列表RecyclerView中点击视频播放
+2021-01-17 Sun Git Git各指令的本质，真是通俗易懂啊
+SSL Error javax.net.ssl.SSLHandshakeException: Chain validation failed
+ Pixel 的时间一直没对上，修改为正确时间后就好了。  Gradle Android Studio 下载Gradle 超时解决方案
+RecyclerView RecyclerView/ListView嵌套CheckBox选中状态错乱解决方案
+RecyclerView&amp;ndash;&amp;gt;点击和长按事件
+Glide 加载本地图片
+ 没差，就 new 个 File  AS 我真的要被这个卡死的问题烦死了
+过两天抽空把AS全部卸掉重装
+Mac Big Sur version 11.0.1 java.lang.UnsatisfiedLinkError: Unable to load library &amp;lsquo;CoreFoundation&amp;rsquo;
+java.lang.UnsatisfiedLinkError: Unable to load library &amp;#39;CoreFoundation&amp;#39;: dlopen(libCoreFoundation.dylib, 9): image not found dlopen(libCoreFoundation.dylib, 9): image not found Native library (darwin/libCoreFoundation.dylib) not found in resource path (/Applications/Android Studio 2.</description>
     </item>
     
     <item>
@@ -29,8 +43,26 @@
       <pubDate>Tue, 01 Dec 2020 08:40:36 +0800</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202012/</guid>
-      <description>&lt;p&gt;最后一个月&lt;/p&gt;
-&lt;p&gt;支棱起来咯&lt;/p&gt;</description>
+      <description>2020-12-30 Wed VS Code VS-Code-Extension-Doc-ZH
+有一个想法，有空了试试看
+IconPark 字节跳动的开源图标库：http://iconpark.bytedance.com/
+Hugo 换了个主题发现 html 代码无法渲染了 查了一下配置里加点东西就成了
+Hugo博客中.md文件中嵌入的html代码无法被渲染
+hugo 真的比 hexo 好用好多
+最喜欢的是 url
+实在是受不了 hexo 那个日期拼接的 url 了- -
+2020-12-29 Tue chrome extension 又发现一个好用的插件：SourceGraph
+比之前找到的那个好用诶
+2020-12-24 Thu 🎄
+HUAWEI安装app 烦死了老跳出来那个应用安装确认
+如何彻底关闭“外部来源应用检查”，真的很烦
+ 安全设置里搞一下 开发人员选项里搞一下  成了
+2020-12-23 Wed AS打开崩溃问题 最近每次打开 AS 都会卡死在 [Tip of the day] 那个界面上，而且是全屏卡住OTZ
+查到这个终于解决了：A1ndroid Studio suddenly crashes at startup
+stackoverflow永远滴神！
+杂 遇到问题千万不要一个人死磕 谨记
+问题抛出去之后往往比你一个人钻牛角尖解决起来快得多🆙
+2020-12-22 Tue DICOM生成问题  要相信 Bug总是会一个一个一个的解决的</description>
     </item>
     
     <item>
@@ -110,6 +142,34 @@
       
       <guid>https://hishark777.com/post/techdiary202004/</guid>
       <description>&lt;p&gt;这里是777的四月份bb日记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tech Diary | 2020.03</title>
+      <link>https://hishark777.com/post/techdiary202003/</link>
+      <pubDate>Sun, 01 Mar 2020 22:41:57 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/techdiary202003/</guid>
+      <description>&lt;p&gt;有在好好做算法题&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tech Diary | 2020.02</title>
+      <link>https://hishark777.com/post/techdiary202002/</link>
+      <pubDate>Sat, 01 Feb 2020 22:48:36 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/techdiary202002/</guid>
+      <description>&lt;p&gt;感觉啥也没干的一个月哦？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tech Diary | 2019.12</title>
+      <link>https://hishark777.com/post/techdiary201912/</link>
+      <pubDate>Sun, 01 Dec 2019 22:54:01 +0000</pubDate>
+      
+      <guid>https://hishark777.com/post/techdiary201912/</guid>
+      <description>&lt;p&gt;2019拜拜&lt;/p&gt;
+&lt;p&gt;2020加油啦&lt;/p&gt;</description>
     </item>
     
   </channel>
