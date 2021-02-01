@@ -5,7 +5,7 @@ paginate: 15
 title: ᐕ)୨ 乾杯 # ୨つロ 
 
 # blackfriday:
-#     extensionsmask: ["noIntraEmphasis"]
+#     extensionsmask: noIntraEmphasis
 #     fractions: false
 
 # markup:
@@ -105,7 +105,7 @@ params:
 menu:
     main:
         - identifier: posts
-          name: Posts
+          name: All Post
           url: /post
           weight: 1
           pre: infinity
@@ -114,7 +114,7 @@ menu:
           name: About
           url: about
           weight: 2
-          pre: user
+          pre: messages
 
         # - identifier: tags
         #   name: Tags

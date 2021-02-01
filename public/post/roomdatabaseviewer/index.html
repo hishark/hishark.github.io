@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta name='description' content='Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。
 纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？
 查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。
 '><title>Room Database Viewer</title>
@@ -107,7 +108,7 @@
 
 
                 
-                <span>Posts</span>
+                <span>All Post</span>
             </a>
         </li>
         
@@ -116,10 +117,10 @@
         <li >
             <a href='/about'>
                 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
 </svg>
 
 
@@ -472,10 +473,24 @@
             2017 - 
         
         2021 
+        
+        
     </section>
     
+     
+    
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        2021/02/01 <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank">Busuanzi</a> Start
+        <br>
+        <span id="busuanzi_container_site_pv">
+            PageView <span id="busuanzi_value_site_pv"></span>
+        </span>
+         / 
+        <span id="busuanzi_container_site_uv">
+            UniqueVisitor <span id="busuanzi_value_site_uv"></span>
+        </span>
+        <br>
+        
         Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>

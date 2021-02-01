@@ -65,7 +65,7 @@
     
     {{/* List only pages that are not a subsection */}}
     {{ $paginator := .Paginate $pages }}
-    <h2 class="section-title">OTHERS</h2>
+    <h2 class="section-title">ARTICLES</h2>
     <section class="article-list--compact">
         {{ range $paginator.Pages }}
             {{ partial "article-list/compact" . }}
