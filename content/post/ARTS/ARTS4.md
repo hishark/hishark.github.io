@@ -28,6 +28,10 @@ image: https://777blog.oss-cn-shanghai.aliyuncs.com/pic/hans-eiskonen-GspQ747pjQ
 
 ## Tips
 
+Hugo 的文章链接可以自定义
+
+[Hugo - URL Management - Permalinks Config](https://gohugo.io/content-management/urls/#permalinks)
+
 ## Share
 
 ## 本周时间轴

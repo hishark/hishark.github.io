@@ -25,7 +25,7 @@ lastmod = "2021-02-01"
 - [力扣](https://leetcode-cn.com/u/hishark/) 
 - [微博](https://weibo.com/hishark777) 
 - [豆瓣](https://www.douban.com/people/hishark/)
-
+- [知乎](https://www.zhihu.com/people/hishark777)
 
 ## 联系我
 

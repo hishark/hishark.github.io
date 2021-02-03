@@ -13,8 +13,13 @@
     <section class="powerby">
         2021/02/01 <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank">Busuanzi</a> Start
         <br>
-            PageView <span id="busuanzi_value_site_pv"></span> / 
+        <!-- <span id="busuanzi_container_site_pv"> -->
+            PageView <span id="busuanzi_value_site_pv"></span>
+        <!-- </span> -->
+         / 
+        <!-- <span id="busuanzi_container_site_uv"> -->
             UniqueVisitor <span id="busuanzi_value_site_uv"></span>
+        <!-- </span> -->
         <br>
         {{ with .Site.Params.footer.customText }}
             {{ . | safeHTML }} <br/>

@@ -6,16 +6,7 @@
     <description>Recent content in TechDiary on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Feb 2021 18:41:58 +0800</lastBuildDate><atom:link href="https://hishark777.com/tags/techdiary/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tech Diary | 2021.02</title>
-      <link>https://hishark777.com/post/techdiary202102/</link>
-      <pubDate>Mon, 01 Feb 2021 18:41:58 +0800</pubDate>
-      
-      <guid>https://hishark777.com/post/techdiary202102/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 03 Jan 2021 12:38:50 +0800</lastBuildDate><atom:link href="https://hishark777.com/tags/techdiary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tech Diary | 2021.01</title>
       <link>https://hishark777.com/post/techdiary202101/</link>
@@ -71,7 +62,22 @@ stackoverflow永远滴神！
       <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202011/</guid>
-      <description>&lt;p&gt;2020年倒计时开始&lt;/p&gt;</description>
+      <description>2020-11-27 Doocs 如何加入
+ 加入啦！  First-contribution How to?
+ 明天来提交第一个PR！  https://github.com/doocs/technical-books/blob/b3fd88c6b39efad1b2235a1f40d26d7be7a0646d/README.md
+2020-11-26 DSL 这种语言就是领域特定语言（Domain Specific Language，简称 DSL），它是一种用于某个特定领域的程序设计语言。这种特定于某个领域是相对于通用语言而言的，通用语言可以横跨各个领域，我们熟悉的大多数程序设计语言都是通用语言。我在第 8 讲说过，它们都是图灵完备的，但 DSL 不必做到图灵完备，它只要做到满足特定领域的业务需求，就足以缩短问题和解决方案之间的距离，降低理解的门槛。
+hugo-even even自定义配置1
+even自定义配置2
+ yarn build报错 先不搞了OTZ
+ 2020-11-25 启动优化 深入探索Android启动速度优化
+2020-11-24 Intent &amp;amp; IntentFilter Intent 和 Intent 过滤器
+2020-11-23 Wifi连接方式 Android 代码连接wifi
+依赖注入框架 使用 Hilt 实现依赖项注入
+ConstraintLayout 使用ConstraintLayout构建自适应界面
+2020-11-19 DisplayMetrics Android DisplayMetrics 获取和屏幕相关的信息
+FullScreen Android SurfaceView to full screen
+MVVM Android之MVVM架构指南
+2020-11-18 Big Sur Charging Problem “Battery is not charging” after updating to MacOS Big Sur</description>
     </item>
     
     <item>

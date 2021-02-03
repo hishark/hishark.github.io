@@ -8,11 +8,8 @@ tags:
 - Android
 authors:
 - hishark777
+description: 抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。
 ---
-
-抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。
-
-<!--more-->
 
 
 > ConstraintLayout 可以使用扁平控件层次结构（无嵌套控件组）来创建复杂的大型布局。它与 RelativeLayout 相似，其中所有的控件均根据同级控件与父布局之间的关系进行布局，但其灵活性要高于 RelativeLayout，并且更易于与 Android Studio 的布局编辑器配合使用。

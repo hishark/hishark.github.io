@@ -6,7 +6,7 @@ categories:
 - 技术日记
 tags:
 - TechDiary
-description: 2021 年要好好学习天天向上。
+description: 2021 年要好好学习天天向上
 ---
 
 ## 2021-01-18 Mon

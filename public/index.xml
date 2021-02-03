@@ -12,7 +12,41 @@
         <pubDate>Mon, 01 Feb 2021 18:41:58 +0800</pubDate>
         
         <guid>https://hishark777.com/post/techdiary202102/</guid>
-        <description></description>
+        <description>&lt;h2 id=&#34;2021-02-02-tue&#34;&gt;2021-02-02 Tue&lt;/h2&gt;
+&lt;h3 id=&#34;macos-鼠标卡顿问题&#34;&gt;MacOS 鼠标卡顿问题&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/431284020&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MacOS Big Sur连接外接鼠标dock栏卡顿掉帧的解决办法？&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;困扰我太久了，终于解决了555&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2021-02-01-mon&#34;&gt;2021-02-01 Mon&lt;/h2&gt;
+&lt;h3 id=&#34;google-国内&#34;&gt;Google 国内&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6844904175898198029&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;科大博客提供-Google-Fonts-加速&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;icons&#34;&gt;icons&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://tablericons.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tabler Icons&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;介个好用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hugo-url&#34;&gt;Hugo URL&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/urls/#permalinks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo - URL Management - Permalinks Config&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hugo-html&#34;&gt;Hugo Html&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://corpython.github.io/post/hugo6.0%E4%BB%A5%E4%B8%8A%E7%BC%BA%E5%B0%91html%E6%A0%87%E7%AD%BE%E5%86%85%E5%AE%B9/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo0.60以上缺少html标签内的内容&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://d.cosx.org/d/421422-hugomdhtml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo博客中.md文件中嵌入的html代码无法被渲染&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/rbind/yihui/commit/61e29cd12&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Don&amp;rsquo;t ignore raw HTML content&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stack 这样设置没用哦？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;杂&#34;&gt;杂&lt;/h3&gt;
+&lt;p&gt;老这么折腾 blog&lt;/p&gt;
+&lt;p&gt;啥时候自己写个 theme 得了&lt;/p&gt;
+&lt;p&gt;列入遥远待办&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>ARTS 4</title>
@@ -34,6 +68,9 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
 &lt;h2 id=&#34;tips&#34;&gt;Tips&lt;/h2&gt;
+&lt;p&gt;Hugo 的文章链接可以自定义&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/urls/#permalinks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo - URL Management - Permalinks Config&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;share&#34;&gt;Share&lt;/h2&gt;
 &lt;h2 id=&#34;本周时间轴&#34;&gt;本周时间轴&lt;/h2&gt;
 </description>
@@ -1087,8 +1124,7 @@ Native library (darwin/libCoreFoundation.dylib) not found in resource path (/App
         <pubDate>Mon, 23 Nov 2020 19:20:55 +0800</pubDate>
         
         <guid>https://hishark777.com/post/constraint-layout/</guid>
-        <description>&lt;p&gt;抛弃冗余的嵌套布局，来试试清爽的 ConstraintLayout 吧。&lt;/p&gt;
-&lt;blockquote&gt;
+        <description>&lt;blockquote&gt;
 &lt;p&gt;ConstraintLayout 可以使用扁平控件层次结构（无嵌套控件组）来创建复杂的大型布局。它与 RelativeLayout 相似，其中所有的控件均根据同级控件与父布局之间的关系进行布局，但其灵活性要高于 RelativeLayout，并且更易于与 Android Studio 的布局编辑器配合使用。&lt;/p&gt;
 &lt;p&gt;ConstraintLayout 的所有功能均可直接通过布局编辑器的可视化工具来使用，因为布局 API 和布局编辑器是专为彼此构建的。 因此，我们完全可以使用 ConstraintLayout 通过拖放的形式（而非修改 XML）来构建布局。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1170,7 +1206,8 @@ Native library (darwin/libCoreFoundation.dylib) not found in resource path (/App
 &lt;p&gt;Autoconnect 在默认情况下处于停用状态。点击布局编辑器工具栏中的 Enable Autoconnection to Parent，即可启用该功能。&lt;/p&gt;
 &lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.android.google.cn/training/constraint-layout?hl=zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;使用 ConstraintLayout 构建自适应界面 - Android Developers&lt;/a&gt;&lt;/p&gt;</description>
+    &gt;使用 ConstraintLayout 构建自适应界面 - Android Developers&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Tech Diary | 2020.11</title>
@@ -1178,8 +1215,7 @@ Native library (darwin/libCoreFoundation.dylib) not found in resource path (/App
         <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
         
         <guid>https://hishark777.com/post/techdiary202011/</guid>
-        <description>&lt;p&gt;2020年倒计时开始&lt;/p&gt;
-&lt;h2 id=&#34;2020-11-27&#34;&gt;2020-11-27&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;2020-11-27&#34;&gt;2020-11-27&lt;/h2&gt;
 &lt;h3 id=&#34;doocs&#34;&gt;Doocs&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://doocs.github.io/#/README_CN?id=%e5%a6%82%e4%bd%95%e5%8a%a0%e5%85%a5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;如何加入&lt;/a&gt;&lt;/p&gt;
@@ -1418,7 +1454,8 @@ Native library (darwin/libCoreFoundation.dylib) not found in resource path (/App
 &lt;h3 id=&#34;杂-2&#34;&gt;杂&lt;/h3&gt;
 &lt;p&gt;今天和鲂聊了一通&lt;/p&gt;
 &lt;p&gt;我太佩服会输出的人啦！&lt;/p&gt;
-&lt;p&gt;加油加油&lt;/p&gt;</description>
+&lt;p&gt;加油加油&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>中英文空格使用指北</title>
@@ -1426,8 +1463,7 @@ Native library (darwin/libCoreFoundation.dylib) not found in resource path (/App
         <pubDate>Tue, 27 Oct 2020 18:18:26 +0800</pubDate>
         
         <guid>https://hishark777.com/post/chinese-copywriting/</guid>
-        <description>&lt;p&gt;你会在中文和英文之间加空格「 」吗？&lt;/p&gt;
-&lt;h2 id=&#34;1-前言&#34;&gt;1. 前言&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;1-前言&#34;&gt;1. 前言&lt;/h2&gt;
 &lt;p&gt;前阵子逛 Github 看到了一个有意思的库：&lt;a class=&#34;link&#34; href=&#34;https://github.com/sparanoid/chinese-copywriting-guidelines&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;中文文案排版指北&lt;/a&gt;，然后发现中文和英文之间加上空格好像是要更赏心悦目一些。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1475,7 +1511,8 @@ Native library (darwin/libCoreFoundation.dylib) not found in resource path (/App
     &gt;中英文混排时中文与英文之间是否要有空格？ - 知乎&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://sxqx.alljournal.cn/uploadfile/sxqx/20190304/CY%20T154%E2%80%942017%20%E4%B8%AD%E6%96%87%E5%87%BA%E7%89%88%E7%89%A9%E5%A4%B9%E7%94%A8%E8%8B%B1%E6%96%87%E7%9A%84%E7%BC%96%E8%BE%91%E6%A0%87%E5%87%86.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;《中文出版物夹用英文的编辑规范》&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+</description>
         </item>
         <item>
         <title>Hugo 安装指定版本</title>

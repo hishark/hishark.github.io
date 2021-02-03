@@ -13,7 +13,16 @@
       <pubDate>Mon, 01 Feb 2021 18:41:58 +0800</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202102/</guid>
-      <description></description>
+      <description>2021-02-02 Tue MacOS 鼠标卡顿问题 MacOS Big Sur连接外接鼠标dock栏卡顿掉帧的解决办法？
+ 困扰我太久了，终于解决了555  2021-02-01 Mon Google 国内 科大博客提供-Google-Fonts-加速
+icons Tabler Icons
+ 介个好用  Hugo URL Hugo - URL Management - Permalinks Config
+Hugo Html Hugo0.60以上缺少html标签内的内容
+Hugo博客中.md文件中嵌入的html代码无法被渲染
+Don&amp;rsquo;t ignore raw HTML content
+ Stack 这样设置没用哦？  杂 老这么折腾 blog
+啥时候自己写个 theme 得了
+列入遥远待办</description>
     </item>
     
     <item>
@@ -71,7 +80,22 @@ stackoverflow永远滴神！
       <pubDate>Mon, 02 Nov 2020 14:27:04 +0800</pubDate>
       
       <guid>https://hishark777.com/post/techdiary202011/</guid>
-      <description>&lt;p&gt;2020年倒计时开始&lt;/p&gt;</description>
+      <description>2020-11-27 Doocs 如何加入
+ 加入啦！  First-contribution How to?
+ 明天来提交第一个PR！  https://github.com/doocs/technical-books/blob/b3fd88c6b39efad1b2235a1f40d26d7be7a0646d/README.md
+2020-11-26 DSL 这种语言就是领域特定语言（Domain Specific Language，简称 DSL），它是一种用于某个特定领域的程序设计语言。这种特定于某个领域是相对于通用语言而言的，通用语言可以横跨各个领域，我们熟悉的大多数程序设计语言都是通用语言。我在第 8 讲说过，它们都是图灵完备的，但 DSL 不必做到图灵完备，它只要做到满足特定领域的业务需求，就足以缩短问题和解决方案之间的距离，降低理解的门槛。
+hugo-even even自定义配置1
+even自定义配置2
+ yarn build报错 先不搞了OTZ
+ 2020-11-25 启动优化 深入探索Android启动速度优化
+2020-11-24 Intent &amp;amp; IntentFilter Intent 和 Intent 过滤器
+2020-11-23 Wifi连接方式 Android 代码连接wifi
+依赖注入框架 使用 Hilt 实现依赖项注入
+ConstraintLayout 使用ConstraintLayout构建自适应界面
+2020-11-19 DisplayMetrics Android DisplayMetrics 获取和屏幕相关的信息
+FullScreen Android SurfaceView to full screen
+MVVM Android之MVVM架构指南
+2020-11-18 Big Sur Charging Problem “Battery is not charging” after updating to MacOS Big Sur</description>
     </item>
     
     <item>
