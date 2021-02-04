@@ -17,8 +17,13 @@
 R: Review，阅读并点评至少一篇英文文章
 T: Tips，学习至少一个技术技巧
 S: Share，分享一篇有观点和思考的技术文章
- Algorithm LCOF 03. 数组中重复的数字
- 比较交换  Review Tips Hugo 的文章链接可以自定义
+ Algorithm 力扣这个月是滑动窗口月喔
+上个月的并查集提不起兴趣做
+滑动窗口来跟着做一下哈哈
+LeetCode 888. 公平的糖果棒交换
+ 利用HashSet 去重，找差值为 delta 的一对可行解。  LeetCode 424. 替换后的最长重复字符
+ 我更喜欢简短一些的那个官方题解OTZ，另一个太多了。  LeetCode 643. 子数组最大平均数 I
+ 简单滑动窗口  Review Tips Hugo 的文章链接可以自定义
 Hugo - URL Management - Permalinks Config
 Share 本周时间轴 </description>
     </item>

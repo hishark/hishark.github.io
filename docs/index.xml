@@ -12,7 +12,10 @@
         <pubDate>Mon, 01 Feb 2021 18:41:58 +0800</pubDate>
         
         <guid>https://hishark777.com/post/techdiary202102/</guid>
-        <description>&lt;h2 id=&#34;2021-02-02-tue&#34;&gt;2021-02-02 Tue&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;2021-02-04-thu&#34;&gt;2021-02-04 Thu&lt;/h2&gt;
+&lt;h3 id=&#34;notion-page&#34;&gt;Notion Page&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://notionpages.com/&#34;&gt;https://notionpages.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2021-02-02-tue&#34;&gt;2021-02-02 Tue&lt;/h2&gt;
 &lt;h3 id=&#34;macos-鼠标卡顿问题&#34;&gt;MacOS 鼠标卡顿问题&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/431284020&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;MacOS Big Sur连接外接鼠标dock栏卡顿掉帧的解决办法？&lt;/a&gt;&lt;/p&gt;
@@ -61,10 +64,23 @@
 &lt;p&gt;S: Share，分享一篇有观点和思考的技术文章&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hishark777.gitbook.io/777-interview-notes/algorithm/lcof/lcof-03&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;LCOF 03. 数组中重复的数字&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;力扣这个月是滑动窗口月喔&lt;/p&gt;
+&lt;p&gt;上个月的并查集提不起兴趣做&lt;/p&gt;
+&lt;p&gt;滑动窗口来跟着做一下哈哈&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/hashset/leetcode-888&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LeetCode 888. 公平的糖果棒交换&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;比较交换&lt;/li&gt;
+&lt;li&gt;利用HashSet 去重，找差值为 delta 的一对可行解。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/slidewindow/leetcode-424&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LeetCode 424. 替换后的最长重复字符&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我更喜欢简短一些的那个官方题解OTZ，另一个太多了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/slidewindow/leetcode-643&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LeetCode 643. 子数组最大平均数 I&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;简单滑动窗口&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
 &lt;h2 id=&#34;tips&#34;&gt;Tips&lt;/h2&gt;

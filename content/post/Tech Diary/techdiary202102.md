@@ -9,6 +9,12 @@ tags:
 description: 🧨 过年啦，在家低效率输入中。
 ---
 
+## 2021-02-04 Thu
+
+### Notion Page
+
+https://notionpages.com/
+
 ## 2021-02-02 Tue
 
 ### MacOS 鼠标卡顿问题

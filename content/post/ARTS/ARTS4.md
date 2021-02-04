@@ -20,9 +20,23 @@ image: https://777blog.oss-cn-shanghai.aliyuncs.com/pic/hans-eiskonen-GspQ747pjQ
 
 ## Algorithm
 
-[LCOF 03. 数组中重复的数字](https://hishark777.gitbook.io/777-interview-notes/algorithm/lcof/lcof-03) 
+力扣这个月是滑动窗口月喔
 
-- 比较交换
+上个月的并查集提不起兴趣做 
+
+滑动窗口来跟着做一下哈哈
+
+[LeetCode 888. 公平的糖果棒交换](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/hashset/leetcode-888)
+
+- 利用HashSet 去重，找差值为 delta 的一对可行解。
+
+[LeetCode 424. 替换后的最长重复字符](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/slidewindow/leetcode-424)
+
+- 我更喜欢简短一些的那个官方题解OTZ，另一个太多了。
+
+[LeetCode 643. 子数组最大平均数 I](https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/slidewindow/leetcode-643)
+
+- 简单滑动窗口
 
 ## Review
 
