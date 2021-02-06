@@ -82,13 +82,35 @@
 &lt;ul&gt;
 &lt;li&gt;简单滑动窗口&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/slidewindow/leetcode-1208&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LeetCode 1208. 尽可能使字符串相等&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建 diff 数组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hishark777.gitbook.io/777-interview-notes/algorithm/tag/slidewindow/leetcode-1423&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LeetCode 1423. 可获得的最大点数&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;求最大值转换为求滑动窗口的最小值&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
 &lt;h2 id=&#34;tips&#34;&gt;Tips&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
 &lt;p&gt;Hugo 的文章链接可以自定义&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/urls/#permalinks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo - URL Management - Permalinks Config&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;之前没用过，做力扣的时候看到可以这么求数组和：&lt;code&gt;Arrays.stream(arrays).sum();&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;share&#34;&gt;Share&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s/cfsXKYglVVnht_kO_GBNGw&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BigDecimal会丢失精度吗？&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;本周时间轴&#34;&gt;本周时间轴&lt;/h2&gt;
+&lt;p&gt;好的发现真爱 Time Tracker 了，试了那么多之后我要定下来啦。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://timemator.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Timemator&lt;/a&gt;，学生还有半价优惠嘿嘿嘿。&lt;/p&gt;
 </description>
         </item>
         <item>

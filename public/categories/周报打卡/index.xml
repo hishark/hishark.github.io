@@ -13,7 +13,7 @@
       <pubDate>Mon, 01 Feb 2021 11:27:54 +0800</pubDate>
       
       <guid>https://hishark777.com/post/arts4/</guid>
-      <description> A: Algorithm，每周至少做一道 Leetcode
+      <description>A: Algorithm，每周至少做一道 Leetcode
 R: Review，阅读并点评至少一篇英文文章
 T: Tips，学习至少一个技术技巧
 S: Share，分享一篇有观点和思考的技术文章
@@ -23,9 +23,12 @@ S: Share，分享一篇有观点和思考的技术文章
 LeetCode 888. 公平的糖果棒交换
  利用HashSet 去重，找差值为 delta 的一对可行解。  LeetCode 424. 替换后的最长重复字符
  我更喜欢简短一些的那个官方题解OTZ，另一个太多了。  LeetCode 643. 子数组最大平均数 I
- 简单滑动窗口  Review Tips Hugo 的文章链接可以自定义
+ 简单滑动窗口  LeetCode 1208. 尽可能使字符串相等
+ 创建 diff 数组  LeetCode 1423. 可获得的最大点数
+ 求最大值转换为求滑动窗口的最小值  Review Tips   Hugo 的文章链接可以自定义
 Hugo - URL Management - Permalinks Config
-Share 本周时间轴 </description>
+  之前没用过，做力扣的时候看到可以这么求数组和：Arrays.stream(arrays).sum(); 。
+  Share BigDecimal会丢失精度吗？</description>
     </item>
     
     <item>
