@@ -49,3 +49,4 @@ lastmod = "2021-02-01"
 - [AmyZhoucc](https://amyzhoucc.github.io/)
 - [Sophia-fez](https://sophia-fez.blog.csdn.net/)
 - [Zijian Wu](https://zijianlalala.github.io/)
+- [Betterzero](https://betterzero.net/)

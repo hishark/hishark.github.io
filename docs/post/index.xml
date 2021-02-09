@@ -116,7 +116,8 @@ dependencies { implementation &amp;#34;androidx.constraintlayout:constraintlayou
       <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
       
       <guid>https://hishark777.com/post/as-4-1/</guid>
-      <description>&lt;p&gt;看看 Android Studio 4.1 更新了一些什么新特性&lt;/p&gt;</description>
+      <description>Android Studio release notes | Android Developers
+ Android Gradle 插件更新 新的 Database Inspector 在 AS 中直接运行模拟器 使用TensorFlow Native Memory Profiler System Trace 界面更新 独立的 Profilers 更方便的代码跳转 Material Design IDEA 2020.1 IDE 的配置路径更新 Kotlin 1.3.72 自定义控件预览 Apply Changes 优化  </description>
     </item>
     
     <item>
@@ -125,8 +126,20 @@ dependencies { implementation &amp;#34;androidx.constraintlayout:constraintlayou
       <pubDate>Thu, 15 Oct 2020 17:04:10 +0000</pubDate>
       
       <guid>https://hishark777.com/post/room-database/</guid>
-      <description>&lt;p&gt;虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。&lt;/p&gt;
-&lt;p&gt;来看看 Room 怎么用。&lt;/p&gt;</description>
+      <description>1. 前言 ORM，Object Relational Mapping，对象关系映射，用于实现面向对象编程语言里不同类型系统的数据之间的转换。
+目前有很多优秀的第三方框架比如：
+ GreenDao Ormlite LitePal  上面这些也不是不能用，但是每次要用的时候左看看右看看，选数据库都要选个半天，直接用原生的 Room 比较省事啦。
+2. Room 是什么 Room 在 SQLite 上提供了一个抽象层，以便在充分利用 SQLite 的强大功能的同时，能够流畅地访问数据库。
+Room 主要包含三个主要的组件：
+  数据库：包含数据库持有者，并作为应用已保留的持久关系型数据的底层连接的主要接入点。
+使用 @Database 注解的类应该满足以下三个条件：
+  该类是继承 RoomDatabase 的抽象类。
+  在注解中需要添加与数据库关联的实体列表
+  需要包含具 0 个参数且返回使用 @Dao 注解的类的抽象方法。
+    在运行时，可以通过调用 Room.databaseBuilder() 或 Room.inMemoryDatabaseBuilder() 获取 Database 的实例。
+ Entity：实体，表示数据库中的表。
+  DAO：包含用于访问数据库的方法。
+  首先，使用 Room 数据库来获取与该数据库相关联的数据访问对象 (DAO)。然后，使用每个 DAO 从数据库中获取实体，再将对这些实体的所有更改保存回数据库中。 最后，使用实体来获取和设置与数据库中的表列相对应的值。</description>
     </item>
     
     <item>

@@ -8,12 +8,8 @@ categories:
 - 学习笔记
 authors: 
 - hishark777
+description: 虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗，来看看 Room 怎么用。
 ---
-虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。
-
-来看看 Room 怎么用。
-<!--more-->
-
 ## 1. 前言
 ORM，Object Relational Mapping，对象关系映射，用于实现面向对象编程语言里不同类型系统的数据之间的转换。
 

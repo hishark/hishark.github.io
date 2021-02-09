@@ -8,6 +8,7 @@ tags:
 draft: false
 authors:
 - hishark777
+description: 从 Hexo 搬到 Hugo 啦。
 ---
 
 前些天逛博客看到 [Hugo](https://gohugo.io/) 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 [Eureka](https://github.com/wangchucheng/hugo-eureka)，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。

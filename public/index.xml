@@ -1624,8 +1624,7 @@ in a tap on GitHub instead.
         <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
         
         <guid>https://hishark777.com/post/as-4-1/</guid>
-        <description>&lt;p&gt;看看 Android Studio 4.1 更新了一些什么新特性&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio/releases#4-0-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.android.com/studio/releases#4-0-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Android Studio release notes  |  Android Developers&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Android Gradle 插件更新&lt;/li&gt;
@@ -1642,7 +1641,8 @@ in a tap on GitHub instead.
 &lt;li&gt;Kotlin 1.3.72&lt;/li&gt;
 &lt;li&gt;自定义控件预览&lt;/li&gt;
 &lt;li&gt;Apply Changes 优化&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+</description>
         </item>
         <item>
         <title>Room Database</title>
@@ -1650,9 +1650,7 @@ in a tap on GitHub instead.
         <pubDate>Thu, 15 Oct 2020 17:04:10 +0000</pubDate>
         
         <guid>https://hishark777.com/post/room-database/</guid>
-        <description>&lt;p&gt;虽然 Android 的第三方 ORM 框架很多，但是亲儿子 Room 不香吗。&lt;/p&gt;
-&lt;p&gt;来看看 Room 怎么用。&lt;/p&gt;
-&lt;h2 id=&#34;1-前言&#34;&gt;1. 前言&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;1-前言&#34;&gt;1. 前言&lt;/h2&gt;
 &lt;p&gt;ORM，Object Relational Mapping，对象关系映射，用于实现面向对象编程语言里不同类型系统的数据之间的转换。&lt;/p&gt;
 &lt;p&gt;目前有很多优秀的第三方框架比如：&lt;/p&gt;
 &lt;ul&gt;
@@ -1874,7 +1872,8 @@ in a tap on GitHub instead.
     &gt;https://developer.android.com/training/data-storage/room&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/cfde3535233d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.jianshu.com/p/cfde3535233d&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+</description>
         </item>
         <item>
         <title>Tech Diary | 2020.10</title>
@@ -1882,8 +1881,7 @@ in a tap on GitHub instead.
         <pubDate>Thu, 01 Oct 2020 09:50:41 +0000</pubDate>
         
         <guid>https://hishark777.com/post/techdiary202010/</guid>
-        <description>&lt;p&gt;庆祝祖国母亲生日 这个月我一定好好学习&lt;/p&gt;
-&lt;p&gt;还有三个月 2020 就结束啦&lt;/p&gt;
+        <description>&lt;p&gt;还有三个月 2020 就结束啦&lt;/p&gt;
 &lt;p&gt;年初立的 FLAG 怎么样了？&lt;/p&gt;
 &lt;h2 id=&#34;2020-10-29&#34;&gt;2020-10-29&lt;/h2&gt;
 &lt;h3 id=&#34;java&#34;&gt;Java&lt;/h3&gt;
