@@ -6,8 +6,8 @@ tags:
 - ARTS
 categories: 
 - 周报打卡
-description: 荒废了两周，继续打卡。
-image: 牛年大吉，哞哞。
+description: 牛年大吉，哞哞。
+image: 
 ---
 
 > A: Algorithm，每周至少做一道 Leetcode

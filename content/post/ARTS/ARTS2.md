@@ -7,7 +7,7 @@ tags:
 categories: 
 - 周报打卡
 description: 第二周，这周做点每日一题，看篇论文。
-image: https://777blog.oss-cn-shanghai.aliyuncs.com/pic/thomas-renaud-tEzFyBNxcJg-unsplash.jpg
+image: 
 ---
 
 > A: Algorithm，每周至少做一道 Leetcode

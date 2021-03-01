@@ -6,58 +6,13 @@
         <description>Recent content on ᐕ)୨ 乾杯</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 01 Feb 2021 18:41:58 +0800</lastBuildDate><atom:link href="https://hishark777.com/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Tech Diary | 2021.02</title>
-        <link>https://hishark777.com/post/techdiary202102/</link>
-        <pubDate>Mon, 01 Feb 2021 18:41:58 +0800</pubDate>
-        
-        <guid>https://hishark777.com/post/techdiary202102/</guid>
-        <description>&lt;h2 id=&#34;2021-02-04-thu&#34;&gt;2021-02-04 Thu&lt;/h2&gt;
-&lt;h3 id=&#34;notion-page&#34;&gt;Notion Page&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://notionpages.com/&#34;&gt;https://notionpages.com/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;2021-02-02-tue&#34;&gt;2021-02-02 Tue&lt;/h2&gt;
-&lt;h3 id=&#34;macos-鼠标卡顿问题&#34;&gt;MacOS 鼠标卡顿问题&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/431284020&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;MacOS Big Sur连接外接鼠标dock栏卡顿掉帧的解决办法？&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;困扰我太久了，终于解决了555&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2021-02-01-mon&#34;&gt;2021-02-01 Mon&lt;/h2&gt;
-&lt;h3 id=&#34;google-国内&#34;&gt;Google 国内&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6844904175898198029&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;科大博客提供-Google-Fonts-加速&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;icons&#34;&gt;icons&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://tablericons.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Tabler Icons&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;介个好用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;hugo-url&#34;&gt;Hugo URL&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/urls/#permalinks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo - URL Management - Permalinks Config&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hugo-html&#34;&gt;Hugo Html&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://corpython.github.io/post/hugo6.0%E4%BB%A5%E4%B8%8A%E7%BC%BA%E5%B0%91html%E6%A0%87%E7%AD%BE%E5%86%85%E5%AE%B9/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo0.60以上缺少html标签内的内容&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://d.cosx.org/d/421422-hugomdhtml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo博客中.md文件中嵌入的html代码无法被渲染&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/rbind/yihui/commit/61e29cd12&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Don&amp;rsquo;t ignore raw HTML content&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Stack 这样设置没用哦？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;杂&#34;&gt;杂&lt;/h3&gt;
-&lt;p&gt;老这么折腾 blog&lt;/p&gt;
-&lt;p&gt;啥时候自己写个 theme 得了&lt;/p&gt;
-&lt;p&gt;列入遥远待办&lt;/p&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Mon, 01 Feb 2021 12:31:55 +0800</lastBuildDate><atom:link href="https://hishark777.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>ARTS 4</title>
         <link>https://hishark777.com/post/arts4/</link>
         <pubDate>Mon, 01 Feb 2021 11:27:54 +0800</pubDate>
         
         <guid>https://hishark777.com/post/arts4/</guid>
-        <description>&lt;img src="https://777blog.oss-cn-shanghai.aliyuncs.com/pic/hans-eiskonen-GspQ747pjQY-unsplash.jpg" alt="Featured image of post ARTS 4" /&gt;&lt;blockquote&gt;
+        <description>&lt;blockquote&gt;
 &lt;p&gt;A: Algorithm，每周至少做一道 Leetcode&lt;/p&gt;
 &lt;p&gt;R: Review，阅读并点评至少一篇英文文章&lt;/p&gt;
 &lt;p&gt;T: Tips，学习至少一个技术技巧&lt;/p&gt;
@@ -93,6 +48,7 @@
 &lt;li&gt;求最大值转换为求滑动窗口的最小值&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;NULL&lt;/p&gt;
 &lt;h2 id=&#34;tips&#34;&gt;Tips&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -270,7 +226,7 @@ distributionUrl=gradle-5.4.1-all.zip
         <pubDate>Mon, 04 Jan 2021 13:49:44 +0800</pubDate>
         
         <guid>https://hishark777.com/post/arts2/</guid>
-        <description>&lt;img src="https://777blog.oss-cn-shanghai.aliyuncs.com/pic/thomas-renaud-tEzFyBNxcJg-unsplash.jpg" alt="Featured image of post ARTS 2" /&gt;&lt;blockquote&gt;
+        <description>&lt;blockquote&gt;
 &lt;p&gt;A: Algorithm，每周至少做一道 Leetcode&lt;/p&gt;
 &lt;p&gt;R: Review，阅读并点评至少一篇英文文章&lt;/p&gt;
 &lt;p&gt;T: Tips，学习至少一个技术技巧&lt;/p&gt;
