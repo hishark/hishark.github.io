@@ -42,7 +42,7 @@ params:
 
     sidebar:
         emoji: 🧸
-        subtitle: '> $ cd /777/blog'
+        subtitle: '停更，我先去找个实习 :D' # > $ cd /777/blog
         avatar:
             local: true
             src: img/avatar.png
