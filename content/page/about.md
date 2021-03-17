@@ -50,4 +50,4 @@ lastmod = "2021-02-01"
 - [Sophia-fez](https://sophia-fez.blog.csdn.net/)
 - [Zijian Wu](https://zijianlalala.github.io/)
 - [Betterzero](https://betterzero.net/)
-- [Euler](http://euler7.cn/)
+- [Euler](https://euler7.cn/)
