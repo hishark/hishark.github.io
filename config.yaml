@@ -122,8 +122,6 @@ menu:
         #   weight: -90
         #   pre: tag
 
-        
-
         - identifier: archives
           name: Timeline
           url: archives
@@ -145,20 +143,28 @@ menu:
         - identifier: github
           name: Github
           url: https://github.com/hishark
-          weight: 5
+          weight: 6
           pre: github
 
-        - identifier: linkedin
-          name: Linkedin
-          url: https://www.linkedin.com/in/zhangxiaoqi
-          weight: 5
-          pre: linkedin
+        # - identifier: linkedin
+        #   name: Linkedin
+        #   url: https://www.linkedin.com/in/zhangxiaoqi
+        #   weight: 7
+        #   pre: linkedin
+
+        - identifier: Running
+          name: Running Page
+          url: https://hishark777.com/running_page
+          weight: 7
+          pre: run
 
         - identifier: Notes
           name: Interview Notes
           url: https://hishark777.gitbook.io/777-interview-notes/
-          weight: 6
+          weight: 8
           pre: notes
+
+        
 
 #   # Social icons
 #   [[params.social]]
