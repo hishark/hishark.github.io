@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ssh on ᐕ)୨ 乾杯</title>
-    <link>http://localhost:1313/tags/ssh/</link>
+    <link>http://hishark777.com/tags/ssh/</link>
     <description>Recent content in ssh on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 23 Nov 2019 09:29:24 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Nov 2019 09:29:24 +0000</lastBuildDate><atom:link href="http://hishark777.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在同一台电脑上绑定 Github 和阿里云 Code</title>
-      <link>http://localhost:1313/post/git_ssh/</link>
+      <link>http://hishark777.com/post/git_ssh/</link>
       <pubDate>Sat, 23 Nov 2019 09:29:24 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/git_ssh/</guid>
+      <guid>http://hishark777.com/post/git_ssh/</guid>
       <description>&lt;p&gt;老板昨天扔了个阿里云code的项目，电脑之前已经绑定了Github的账号，于是查了一下如何在同一台电脑上绑定两个账号，存档记录一下。&lt;/p&gt;</description>
     </item>
     
