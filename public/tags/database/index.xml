@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database on ᐕ)୨ 乾杯</title>
-    <link>http://hishark777.com/tags/database/</link>
+    <link>https://hishark777.com/tags/database/</link>
     <description>Recent content in Database on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 19 Oct 2020 21:18:33 +0000</lastBuildDate><atom:link href="http://hishark777.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 21:18:33 +0000</lastBuildDate><atom:link href="https://hishark777.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What’s new in AS 4.1</title>
-      <link>http://hishark777.com/post/as-4-1/</link>
+      <link>https://hishark777.com/post/as-4-1/</link>
       <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
       
-      <guid>http://hishark777.com/post/as-4-1/</guid>
+      <guid>https://hishark777.com/post/as-4-1/</guid>
       <description>Android Studio release notes | Android Developers Android Gradle 插件更新 新的 Database Inspector 在 AS 中直接运行模拟器 使用TensorFlow Native Memory Profiler System Trace 界面更新 独立的 Profilers 更方便的代码跳转 Material Design IDEA 2020.1 IDE 的配置路径更新 Kotlin 1.3.72 自定义控件预览 Apply Changes 优化</description>
     </item>
     
     <item>
       <title>Room Database</title>
-      <link>http://hishark777.com/post/room-database/</link>
+      <link>https://hishark777.com/post/room-database/</link>
       <pubDate>Thu, 15 Oct 2020 17:04:10 +0000</pubDate>
       
-      <guid>http://hishark777.com/post/room-database/</guid>
+      <guid>https://hishark777.com/post/room-database/</guid>
       <description>1. 前言 ORM，Object Relational Mapping，对象关系映射，用于实现面向对象编程语言里不同类型系统的数据之间的转换。 目前有很多优秀的第三方框架比如： GreenDao Ormlite LitePal 上面这些也不是不能用，但是每次要用的时候左看看右</description>
     </item>
     
     <item>
       <title>Room Database Viewer</title>
-      <link>http://hishark777.com/post/roomdatabaseviewer/</link>
+      <link>https://hishark777.com/post/roomdatabaseviewer/</link>
       <pubDate>Fri, 01 May 2020 01:18:15 +0000</pubDate>
       
-      <guid>http://hishark777.com/post/roomdatabaseviewer/</guid>
+      <guid>https://hishark777.com/post/roomdatabaseviewer/</guid>
       <description>&lt;p&gt;Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。&lt;/p&gt;
 &lt;p&gt;纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？&lt;/p&gt;
 &lt;p&gt;查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。&lt;/p&gt;</description>

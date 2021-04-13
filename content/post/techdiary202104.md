@@ -21,6 +21,8 @@ tags:
 
 [REMIX ICON - Simply Delightful Icon System](https://remixicon.com/)
 
+[我是真的智障](https://www.zhihu.com/question/414295803/answer/1410344932)
+
 ### 杂
 
 嘿嘿嘿又换主题了：[hugo-theme-zozo](https://github.com/varkai/hugo-theme-zozo)
