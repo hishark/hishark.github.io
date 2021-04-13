@@ -26,7 +26,7 @@ draft: true
 
 ## 技术类
 
-[Wanandroid](https://www.wanandroid.com/index) 这个整合的确实还不错 虽然主页 UI 丑了点哈
+[Wanandroid](https://www.wanandroid.com/index) 这个信息整合的确实还不错，虽然丑了点哈哈哈。
 
 ## 个人网站
 
@@ -39,10 +39,6 @@ draft: true
 ## 信息订阅类
 
 [DEX周刊](https://dexgroup.substack.com/)
-
-[DEX周刊](https://dexgroup.substack.com/)
-
-[Anyway News](https://anyway.fm/news.php)
 
 [Anyway News](https://anyway.fm/news.php)
 

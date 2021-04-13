@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MOVIE on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/tags/movie/</link>
+    <link>http://localhost:1313/tags/movie/</link>
     <description>Recent content in MOVIE on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 04 Mar 2018 13:29:28 +0000</lastBuildDate><atom:link href="https://hishark777.com/tags/movie/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Mar 2018 13:29:28 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/movie/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>二〇一八观影记录</title>
-      <link>https://hishark777.com/post/movielist/</link>
+      <link>http://localhost:1313/post/movielist/</link>
       <pubDate>Sun, 04 Mar 2018 13:29:28 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/movielist/</guid>
+      <guid>http://localhost:1313/post/movielist/</guid>
       <description>&lt;p&gt;文采不行 写不出什么影评
 单纯存个档
 电影使我快乐&lt;/p&gt;</description>

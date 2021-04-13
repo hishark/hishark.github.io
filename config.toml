@@ -1,0 +1,101 @@
+baseURL = "http://localhost:1313/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "ᐕ)୨ 乾杯"                         # site title  # 网站标题
+theme = "zozo"
+hasCJKLanguage = true                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
+summaryLength = 100
+paginate = 15                           # shows the number of articles  # 首页显示文章数量
+enableEmoji = true
+googleAnalytics = ""                   # your google analytics id
+disqusShortname = ""                   # your discuss shortname
+
+pygmentsUseClasses = true
+pygmentCodeFences = true
+pygmentscodefencesguesssyntax = true
+
+[author]                               # essential                     # 必需
+  name = "VarKai"
+
+[blackfriday]
+  smartypants = false
+
+[[menu.main]]                          # config your menu  # 配置菜单
+  name = "主页"
+  weight = 1
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "归档"
+  weight = 2
+  identifier = "archive"
+  url = "/post/"
+[[menu.main]]
+  name = "分类"
+  weight = 3
+  identifier = "categories"
+  url = "/categories/"
+[[menu.main]]
+  name = "标签"
+  weight = 4
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "相册"
+  weight = 5
+  identifier = ""
+  url = "https://www.douban.com/people/hishark/photos"
+[[menu.main]]
+  name = "面试"
+  weight = 6
+  identifier = ""
+  url = "https://hishark777.gitbook.io/777-interview-notes/"
+[[menu.main]]
+  name = "跑步"
+  weight = 7
+  identifier = ""
+  url = "https://hishark777.com/running_page"
+[[menu.main]]
+  name = "关于"
+  weight = 8
+  identifier = "about"
+  url = "/about/"
+
+[params]
+  subTitle = "> $ cd /777/blog"                                       # site's subTitle  # 网站二级标题
+  footerSlogan = ""                                   # site's footer slogan  # 网站页脚标语
+  keywords = ["Hugo","theme","zozo"]                                  # site's keywords  # 网站关键字
+  description = "小站子"                        # site's description  # 网站描述
+  enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
+  enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
+  mainSections = ["posts","post"]
+  
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+[params.valine]
+  enable = false
+  appId = ""
+  appKey = ""
+  placeholder = " "
+  visitor = true
+
+# Your socail's url
+[social]
+  github = "https://github.com/hishark/"
+  code = "https://leetcode-cn.com/u/hishark/"
+  instagram = "https://www.instagram.com/hishark777"
+  twitter = "https://twitter.com/hishark777"
+  weibo = "https://weibo.com/hishark777"
+  bilibili = "https://space.bilibili.com/167148/#/channel/detail?cid=55848"
+  douban = "https://www.douban.com/people/hishark/"
+  netease-cloud-music = "http://music.163.com/#/user/home?id=97746388"
+  zhihu = "https://www.zhihu.com/people/hishark777"
+
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+
+

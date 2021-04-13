@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>论文复现 on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/</link>
+    <link>http://localhost:1313/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/</link>
     <description>Recent content in 论文复现 on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2019 20:46:21 +0000</lastBuildDate><atom:link href="https://hishark777.com/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 18 Nov 2019 20:46:21 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Facial Beauty Prediction</title>
-      <link>https://hishark777.com/post/facial_beauty_prediction/</link>
+      <link>http://localhost:1313/post/facial_beauty_prediction/</link>
       <pubDate>Mon, 18 Nov 2019 20:46:21 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/facial_beauty_prediction/</guid>
+      <guid>http://localhost:1313/post/facial_beauty_prediction/</guid>
       <description>&lt;p&gt;人工智能课程概论作业——论文复现
 期末汇报存档&lt;/p&gt;</description>
     </item>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Valine on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/tags/valine/</link>
+    <link>http://localhost:1313/tags/valine/</link>
     <description>Recent content in Valine on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 30 Sep 2019 09:35:44 +0000</lastBuildDate><atom:link href="https://hishark777.com/tags/valine/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 30 Sep 2019 09:35:44 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/valine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeanCloud 中国版迁移至国际版</title>
-      <link>https://hishark777.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</link>
+      <link>http://localhost:1313/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</link>
       <pubDate>Mon, 30 Sep 2019 09:35:44 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</guid>
+      <guid>http://localhost:1313/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</guid>
       <description>&lt;p&gt;昨天小翁提醒我LeanCloud中国版要停止没绑定备案域名的应用服务了，刚打算把评论系统换回来必力，点击详情发现LeanCloud国际版可以用，做个记录。&lt;/p&gt;</description>
     </item>
     
