@@ -54,7 +54,7 @@ pygmentscodefencesguesssyntax = true
   name = "跑步"
   weight = 7
   identifier = ""
-  url = "https://hishark777.com/running_page"
+  url = "/running_page"
 [[menu.main]]
   name = "关于"
   weight = 8
