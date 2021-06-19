@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gson on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/tags/gson/</link>
+    <link>/tags/gson/</link>
     <description>Recent content in Gson on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Mar 2018 16:02:17 +0000</lastBuildDate><atom:link href="https://hishark777.com/tags/gson/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Mar 2018 16:02:17 +0000</lastBuildDate><atom:link href="/tags/gson/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用 OkHttp 请求网络</title>
-      <link>https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</link>
+      <link>/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Tue, 27 Mar 2018 16:02:17 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</guid>
+      <guid>/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</guid>
       <description>&lt;p&gt;HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和&lt;a href=&#34;http://hishark.cc/2018/03/26/Android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/&#34;&gt;Android客户端访问Tomcat服务器端&lt;/a&gt;一致，只需要改动LoginActivity和LoginUtil即可。&lt;/p&gt;</description>
     </item>
     

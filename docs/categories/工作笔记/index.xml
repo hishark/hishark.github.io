@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>工作笔记 on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/</link>
+    <link>/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 工作笔记 on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 19 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hishark777.com/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>春招实习面筋</title>
-      <link>https://hishark777.com/post/spring-interview/</link>
+      <link>/post/spring-interview/</link>
       <pubDate>Mon, 19 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/spring-interview/</guid>
+      <guid>/post/spring-interview/</guid>
       <description>&lt;p&gt;春招实习总共投了四家公司：阿里、美团、腾讯、字节。&lt;/p&gt;
 &lt;p&gt;字节面最早，挂在第三面。美团、腾讯、阿里顺利走完了所有流程。&lt;/p&gt;</description>
     </item>

@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记 on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <link>/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 学习笔记 on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 23 Nov 2020 19:20:55 +0800</lastBuildDate><atom:link href="https://hishark777.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Nov 2020 19:20:55 +0800</lastBuildDate><atom:link href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 ConstraintLayout 构建自适应布局</title>
-      <link>https://hishark777.com/post/constraint-layout/</link>
+      <link>/post/constraint-layout/</link>
       <pubDate>Mon, 23 Nov 2020 19:20:55 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/constraint-layout/</guid>
+      <guid>/post/constraint-layout/</guid>
       <description>ConstraintLayout 可以使用扁平控件层次结构（无嵌套控件组）来创建复杂的大型布局。它与 RelativeLayout 相似，其中所有的控件均根据同级控件与父布局之间的关系进行布局，但其灵活性要高于 RelativeLayout，并且更易于与 Android Studio 的布局</description>
     </item>
     
     <item>
       <title>中英文空格使用指北</title>
-      <link>https://hishark777.com/post/chinese-copywriting/</link>
+      <link>/post/chinese-copywriting/</link>
       <pubDate>Tue, 27 Oct 2020 18:18:26 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/chinese-copywriting/</guid>
+      <guid>/post/chinese-copywriting/</guid>
       <description>1. 前言 前阵子逛 Github 看到了一个有意思的库：中文文案排版指北，然后发现中文和英文之间加上空格好像是要更赏心悦目一些。 有研究顯示，打字的時候不喜歡在中文和英文之間加空格的人，感情路都走得很辛苦，有七成的比例會</description>
     </item>
     
     <item>
       <title>Hugo 安装指定版本</title>
-      <link>https://hishark777.com/post/hugo-version/</link>
+      <link>/post/hugo-version/</link>
       <pubDate>Tue, 27 Oct 2020 15:00:32 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/hugo-version/</guid>
+      <guid>/post/hugo-version/</guid>
       <description>&lt;p&gt;前些天逛博客看到 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 觉得不错，然后就去官网逛了逛，看到了一个喜欢的主题 &lt;a href=&#34;https://github.com/wangchucheng/hugo-eureka&#34;&gt;Eureka&lt;/a&gt;，且 Hugo 的构建时间秒杀 Hexo 也是个亮点，于是琢磨着转移一下博客，Hugo 搭建起来挺快的，但是遇到了一点版本升级与降级的小问题，记录一下。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>What’s new in AS 4.1</title>
-      <link>https://hishark777.com/post/as-4-1/</link>
+      <link>/post/as-4-1/</link>
       <pubDate>Mon, 19 Oct 2020 21:18:33 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/as-4-1/</guid>
+      <guid>/post/as-4-1/</guid>
       <description>Android Studio release notes | Android Developers Android Gradle 插件更新 新的 Database Inspector 在 AS 中直接运行模拟器 使用TensorFlow Native Memory Profiler System Trace 界面更新 独立的 Profilers 更方便的代码跳转 Material Design IDEA 2020.1 IDE 的配置路径更新 Kotlin 1.3.72 自定义控件预览 Apply Changes 优化</description>
     </item>
     
     <item>
       <title>Room Database</title>
-      <link>https://hishark777.com/post/room-database/</link>
+      <link>/post/room-database/</link>
       <pubDate>Thu, 15 Oct 2020 17:04:10 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/room-database/</guid>
+      <guid>/post/room-database/</guid>
       <description>1. 前言 ORM，Object Relational Mapping，对象关系映射，用于实现面向对象编程语言里不同类型系统的数据之间的转换。 目前有很多优秀的第三方框架比如： GreenDao Ormlite LitePal 上面这些也不是不能用，但是每次要用的时候左看看右</description>
     </item>
     
     <item>
       <title>SRGAN</title>
-      <link>https://hishark777.com/post/srgan/</link>
+      <link>/post/srgan/</link>
       <pubDate>Tue, 29 Sep 2020 13:39:31 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/srgan/</guid>
+      <guid>/post/srgan/</guid>
       <description>&lt;!-- 我决定等论文ppt做的多了之后再整一个论文笔记的分类，不然之后就这一篇岂不是很尴尬OTZ --&gt;
 &lt;p&gt;好的，为了毕业，开始读论文 T T&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Mkdocs-Material Tutorial</title>
-      <link>https://hishark777.com/post/mkdocs-material-tutorial/</link>
+      <link>/post/mkdocs-material-tutorial/</link>
       <pubDate>Mon, 07 Sep 2020 20:06:19 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/mkdocs-material-tutorial/</guid>
+      <guid>/post/mkdocs-material-tutorial/</guid>
       <description>&lt;p&gt;总喜欢折腾一些没什么用的东西，我又开始了。年初给自己整了个&lt;a href=&#34;https://hishark777.com/777-Tech-Diary/&#34;&gt;Gitbook&lt;/a&gt;放&lt;del&gt;技术日记&lt;/del&gt;乱七八糟的碎碎念，最后迁移到了&lt;a href=&#34;http://localhost:4000/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/&#34;&gt;博客&lt;/a&gt;。前阵子看到有人用&lt;a href=&#34;https://squidfunk.github.io/mkdocs-material/&#34;&gt;Mkdocs-Material&lt;/a&gt;写博客，转了一圈官网觉得有点意思，&lt;del&gt;也比Gitbook更好看&lt;/del&gt;（比以前的Gitbook好看），于是来整一个做校招笔记。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Room Database Viewer</title>
-      <link>https://hishark777.com/post/roomdatabaseviewer/</link>
+      <link>/post/roomdatabaseviewer/</link>
       <pubDate>Fri, 01 May 2020 01:18:15 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/roomdatabaseviewer/</guid>
+      <guid>/post/roomdatabaseviewer/</guid>
       <description>&lt;p&gt;Android已经有很多基于SQLite的第三方ORM框架，比如GreenDao、LitePal、OrmLite等等，而Google又在2017年推出了亲儿子Room——在SQLite上提供了一个抽象层，以便在充分利用SQLite的强大功能的同时，能够流畅地访问数据库。于是Android本地数据的可选储存方案又多了一个。&lt;/p&gt;
 &lt;p&gt;纠结了三分钟之后还是选了Room来保存本地数据，那么随之而来有一个新的问题，如何方便的查看数据库里的数据？&lt;/p&gt;
 &lt;p&gt;查了一大堆之后选定了两个比较好用的工具——Stetho和Android Debug Database。&lt;/p&gt;</description>
@@ -84,10 +84,10 @@
     
     <item>
       <title>使用 Genymotion 运行基于 ARM 架构的 APP</title>
-      <link>https://hishark777.com/post/genymotion/</link>
+      <link>/post/genymotion/</link>
       <pubDate>Wed, 01 Apr 2020 15:55:55 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/genymotion/</guid>
+      <guid>/post/genymotion/</guid>
       <description>&lt;p&gt;前阵子需要做个直播demo，用到了阿里云的直播sdk，阿里云文档中说明了只支持arm架构的cpu，而Android Studio自带的模拟器只能顺畅的跑x86架构的虚拟机，跑arm64架构的简直卡成树懒，查了一下发现Android Studio自带的AVD就是这个德行，遂放弃，转用Genymotion。&lt;/p&gt;
 &lt;p&gt;二月底决定毕业找Android岗的时候，下单了一台Pixel 2XL做自己以后的测试机，这篇文章写于购入Pixel之前，现在发现真机+模拟器一起用的测试环境还是挺舒服的。BTW谷歌亲儿子是真的好用啊，原生Android太香了，不出啥意外的话我以后就是iPhone主力机+Pixel备用机的快乐配置了哈哈哈哈哈。&lt;/p&gt;
 &lt;p&gt;好的扯远了，聊正事。&lt;/p&gt;</description>
@@ -95,10 +95,10 @@
     
     <item>
       <title>借助 Gitbook 搭建一个技术日记簿</title>
-      <link>https://hishark777.com/post/gitbook_techdiary/</link>
+      <link>/post/gitbook_techdiary/</link>
       <pubDate>Sat, 15 Feb 2020 13:24:17 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/gitbook_techdiary/</guid>
+      <guid>/post/gitbook_techdiary/</guid>
       <description>&lt;p&gt;整了个Gitbook挂到博客下面
 来写技术日记&lt;/p&gt;
 &lt;p&gt;去年十二月偶然发现了&lt;a href=&#34;https://www.github.com/joyeecheung/diary&#34;&gt;joyee的tech-diary&lt;/a&gt;
@@ -114,29 +114,29 @@
     
     <item>
       <title>在同一台电脑上绑定 Github 和阿里云 Code</title>
-      <link>https://hishark777.com/post/git_ssh/</link>
+      <link>/post/git_ssh/</link>
       <pubDate>Sat, 23 Nov 2019 09:29:24 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/git_ssh/</guid>
+      <guid>/post/git_ssh/</guid>
       <description>&lt;p&gt;老板昨天扔了个阿里云code的项目，电脑之前已经绑定了Github的账号，于是查了一下如何在同一台电脑上绑定两个账号，存档记录一下。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Facial Beauty Prediction</title>
-      <link>https://hishark777.com/post/facial_beauty_prediction/</link>
+      <link>/post/facial_beauty_prediction/</link>
       <pubDate>Mon, 18 Nov 2019 20:46:21 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/facial_beauty_prediction/</guid>
+      <guid>/post/facial_beauty_prediction/</guid>
       <description>&lt;p&gt;人工智能课程概论作业——论文复现
 期末汇报存档&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>JetBrains Student</title>
-      <link>https://hishark777.com/post/jetbrains%E5%AD%A6%E7%94%9F%E7%94%B3%E8%AF%B7/</link>
+      <link>/post/jetbrains%E5%AD%A6%E7%94%9F%E7%94%B3%E8%AF%B7/</link>
       <pubDate>Tue, 01 Oct 2019 22:13:03 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/jetbrains%E5%AD%A6%E7%94%9F%E7%94%B3%E8%AF%B7/</guid>
+      <guid>/post/jetbrains%E5%AD%A6%E7%94%9F%E7%94%B3%E8%AF%B7/</guid>
       <description>&lt;p&gt;为了下&lt;code&gt;Ultimate&lt;/code&gt;版本申请一下学生免费授权。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/zh/student/&#34;&gt;学生申请&lt;/a&gt;&lt;/li&gt;
@@ -149,29 +149,29 @@
     
     <item>
       <title>LeanCloud 中国版迁移至国际版</title>
-      <link>https://hishark777.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</link>
+      <link>/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</link>
       <pubDate>Mon, 30 Sep 2019 09:35:44 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</guid>
+      <guid>/post/leancloud%E4%B8%AD%E5%9B%BD%E7%89%88%E8%BF%81%E8%87%B3%E5%9B%BD%E9%99%85%E7%89%88/</guid>
       <description>&lt;p&gt;昨天小翁提醒我LeanCloud中国版要停止没绑定备案域名的应用服务了，刚打算把评论系统换回来必力，点击详情发现LeanCloud国际版可以用，做个记录。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>卡片盒子</title>
-      <link>https://hishark777.com/post/cardbox/</link>
+      <link>/post/cardbox/</link>
       <pubDate>Sat, 10 Nov 2018 15:58:43 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/cardbox/</guid>
+      <guid>/post/cardbox/</guid>
       <description>&lt;p&gt;毕设放到Github私有库了
 就先把README放这了嘿嘿&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>卡片盒子踩坑记录</title>
-      <link>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <link>/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Thu, 01 Nov 2018 20:54:46 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/post/%E5%8D%A1%E7%89%87%E7%9B%92%E5%AD%90%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;毕设over🎈
 两周爆肝碰到不少问题
 记录一下&lt;/p&gt;</description>
@@ -179,10 +179,10 @@
     
     <item>
       <title>The Economist</title>
-      <link>https://hishark777.com/post/the-economist/</link>
+      <link>/post/the-economist/</link>
       <pubDate>Wed, 01 Aug 2018 10:17:34 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/the-economist/</guid>
+      <guid>/post/the-economist/</guid>
       <description>&lt;p&gt;发现了一个不错的公众号
 👉 &lt;em&gt;&lt;strong&gt;onebabbler&lt;/strong&gt;&lt;/em&gt;
 每天一小段经济学人
@@ -194,156 +194,156 @@
     
     <item>
       <title>Neural Networks Basics</title>
-      <link>https://hishark777.com/post/neural-networks-basics/</link>
+      <link>/post/neural-networks-basics/</link>
       <pubDate>Mon, 30 Jul 2018 20:39:20 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/neural-networks-basics/</guid>
+      <guid>/post/neural-networks-basics/</guid>
       <description>&lt;p&gt;deadline是第一生产力*(੭*ˊᵕˋ)੭*ଘ&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introduction to Deep Learning</title>
-      <link>https://hishark777.com/post/introduction-to-deep-learning/</link>
+      <link>/post/introduction-to-deep-learning/</link>
       <pubDate>Fri, 20 Jul 2018 15:42:35 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/introduction-to-deep-learning/</guid>
+      <guid>/post/introduction-to-deep-learning/</guid>
       <description>&lt;p&gt;暑假好忙啊又要复习又要自学新东西OTZ
 btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>阿里云服务器部署 Java Web 项目</title>
-      <link>https://hishark777.com/post/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</link>
+      <link>/post/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 03 May 2018 15:04:57 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</guid>
+      <guid>/post/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</guid>
       <description>&lt;p&gt;和小洁一起买了个半年的服务器，学生特惠还挺便宜。
 脑子不好，记一下流程。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>面向对象的七大设计原则</title>
-      <link>https://hishark777.com/post/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%83%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</link>
+      <link>/post/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%83%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</link>
       <pubDate>Tue, 10 Apr 2018 09:58:05 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%83%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</guid>
+      <guid>/post/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%83%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</guid>
       <description>&lt;p&gt;开始学设计模式了，记一下最基本的设计原则。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>卡片校园踩坑记录</title>
-      <link>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <link>/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 08 Apr 2018 09:43:08 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/post/%E5%8D%A1%E7%89%87%E6%A0%A1%E5%9B%AD%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;这次开发过程中碰到的问题都扔这，看最后能不能破百哦哈哈&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>eclipse连接github踩坑</title>
-      <link>https://hishark777.com/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</link>
+      <link>/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</link>
       <pubDate>Fri, 06 Apr 2018 10:35:11 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</guid>
+      <guid>/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</guid>
       <description>从github上push下来的时候项目出现红叉叉。解决方法 无法pull。解决方法</description>
     </item>
     
     <item>
       <title>SSM 边缘试探</title>
-      <link>https://hishark777.com/post/ssm%E8%BE%B9%E7%BC%98%E8%AF%95%E6%8E%A2/</link>
+      <link>/post/ssm%E8%BE%B9%E7%BC%98%E8%AF%95%E6%8E%A2/</link>
       <pubDate>Tue, 03 Apr 2018 20:38:10 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/ssm%E8%BE%B9%E7%BC%98%E8%AF%95%E6%8E%A2/</guid>
+      <guid>/post/ssm%E8%BE%B9%E7%BC%98%E8%AF%95%E6%8E%A2/</guid>
       <description>&lt;p&gt;SSM真的很好用啊鼓掌！👏&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>利用 OkHttp 请求网络</title>
-      <link>https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</link>
+      <link>/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Tue, 27 Mar 2018 16:02:17 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</guid>
+      <guid>/post/%E5%88%A9%E7%94%A8okhttp%E8%AF%B7%E6%B1%82%E7%BD%91%E7%BB%9C/</guid>
       <description>&lt;p&gt;HttpClient已经被亲爸抛弃了，那就来拥抱OkHttp吧。其余部分都和&lt;a href=&#34;http://hishark.cc/2018/03/26/Android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/&#34;&gt;Android客户端访问Tomcat服务器端&lt;/a&gt;一致，只需要改动LoginActivity和LoginUtil即可。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Android 客户端访问 Tomcat 服务器端</title>
-      <link>https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/</link>
+      <link>/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/</link>
       <pubDate>Mon, 26 Mar 2018 14:47:24 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/</guid>
+      <guid>/post/android%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BF%E9%97%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/</guid>
       <description>&lt;p&gt;终于学会客户端访问服务端啦，JSON可以说是媒婆吧(●ˇ∀ˇ●)，记录一下总感觉没过几天就会忘了OTZ。另外HttpClient已经被谷歌亲爹抛弃啦，添添说学会一个再举一反三就好，之后再自学一下怎么用OkHttp。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>在 Struts 中应用 Ajax 技术</title>
-      <link>https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</link>
+      <link>/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Mon, 19 Mar 2018 14:28:25 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</guid>
+      <guid>/post/%E5%9C%A8struts%E4%B8%AD%E5%BA%94%E7%94%A8ajax%E6%8A%80%E6%9C%AF/</guid>
       <description>&lt;p&gt;Ajax在浏览器与Web服务器之间使用了异步数据传输，从而减少了网页向服务器请求的信息量，使得每次请求并不需要返回整个页面。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AS - Github 踩坑</title>
-      <link>https://hishark777.com/post/as-github%E8%B8%A9%E5%9D%91/</link>
+      <link>/post/as-github%E8%B8%A9%E5%9D%91/</link>
       <pubDate>Sun, 18 Mar 2018 20:14:40 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/as-github%E8%B8%A9%E5%9D%91/</guid>
+      <guid>/post/as-github%E8%B8%A9%E5%9D%91/</guid>
       <description>&lt;p&gt;踩了一点坑记一下&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Interceptor</title>
-      <link>https://hishark777.com/post/interceptor/</link>
+      <link>/post/interceptor/</link>
       <pubDate>Wed, 14 Mar 2018 09:00:54 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/interceptor/</guid>
+      <guid>/post/interceptor/</guid>
       <description>&lt;h4 id=&#34;拦截器流程概览&#34;&gt;拦截器流程概览&lt;/h4&gt;</description>
     </item>
     
     <item>
       <title>分页/通配符/ORDER</title>
-      <link>https://hishark777.com/post/%E5%88%86%E9%A1%B5-%E9%80%9A%E9%85%8D%E7%AC%A6-order/</link>
+      <link>/post/%E5%88%86%E9%A1%B5-%E9%80%9A%E9%85%8D%E7%AC%A6-order/</link>
       <pubDate>Tue, 13 Mar 2018 13:44:56 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%88%86%E9%A1%B5-%E9%80%9A%E9%85%8D%E7%AC%A6-order/</guid>
+      <guid>/post/%E5%88%86%E9%A1%B5-%E9%80%9A%E9%85%8D%E7%AC%A6-order/</guid>
       <description>&lt;p&gt;乱七八糟的笔记&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Comparable 接口和 Arrays.sort() 实现对对象数组的排序</title>
-      <link>https://hishark777.com/post/%E5%88%A9%E7%94%A8comparable%E6%8E%A5%E5%8F%A3%E5%92%8Carrays-sort-%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/</link>
+      <link>/post/%E5%88%A9%E7%94%A8comparable%E6%8E%A5%E5%8F%A3%E5%92%8Carrays-sort-%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/</link>
       <pubDate>Mon, 12 Mar 2018 19:37:37 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E5%88%A9%E7%94%A8comparable%E6%8E%A5%E5%8F%A3%E5%92%8Carrays-sort-%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/</guid>
+      <guid>/post/%E5%88%A9%E7%94%A8comparable%E6%8E%A5%E5%8F%A3%E5%92%8Carrays-sort-%E5%AE%9E%E7%8E%B0%E5%AF%B9%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/</guid>
       <description>&lt;p&gt;RT&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Struts-CURD</title>
-      <link>https://hishark777.com/post/struts-curd/</link>
+      <link>/post/struts-curd/</link>
       <pubDate>Fri, 09 Mar 2018 15:33:53 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/struts-curd/</guid>
+      <guid>/post/struts-curd/</guid>
       <description>&lt;p&gt;CURD教你做人&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>访问数据库的工具类</title>
-      <link>https://hishark777.com/post/%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</link>
+      <link>/post/%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</link>
       <pubDate>Fri, 09 Mar 2018 15:33:53 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</guid>
+      <guid>/post/%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</guid>
       <description>&lt;p&gt;一大段代码&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Glide 大法好</title>
-      <link>https://hishark777.com/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/</link>
+      <link>/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/</link>
       <pubDate>Fri, 09 Mar 2018 13:03:01 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/</guid>
+      <guid>/post/glide%E5%A4%A7%E6%B3%95%E5%A5%BD/</guid>
       <description>&lt;p&gt;项目突然要加几个界面
 然后打开了将近两个月没摸过的的AS
 findViewById都给忘了我怕是智障&lt;/p&gt;
@@ -360,20 +360,20 @@ Glide这么美好的库为什么上学期没发现
     
     <item>
       <title>Got a meeting? Take a walk</title>
-      <link>https://hishark777.com/post/got-a-meeting-take-a-walk/</link>
+      <link>/post/got-a-meeting-take-a-walk/</link>
       <pubDate>Sat, 03 Mar 2018 21:41:16 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/got-a-meeting-take-a-walk/</guid>
+      <guid>/post/got-a-meeting-take-a-walk/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/nilofer_merchant_got_a_meeting_take_a_walk?referrer=playlist-short_talks_to_watch_during_yo&#34;&gt;Nilofer Merchant at TED2013 &amp;ndash; Got a meeting? Take a walk&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Highlight your ability, not your experience</title>
-      <link>https://hishark777.com/post/to-learn-is-to-be-free/</link>
+      <link>/post/to-learn-is-to-be-free/</link>
       <pubDate>Fri, 02 Mar 2018 19:32:48 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/to-learn-is-to-be-free/</guid>
+      <guid>/post/to-learn-is-to-be-free/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/jason_shen_looking_for_a_job_highlight_your_ability_not_your_experience&#34;&gt;Jason Shen at TED Residency &amp;ndash; Looking for a job? Highlight your ability, not your experience&lt;/a&gt;
 我的妈这小哥太帅了
@@ -383,10 +383,10 @@ Glide这么美好的库为什么上学期没发现
     
     <item>
       <title>You don&#39;t have to be an expert to solve big problems</title>
-      <link>https://hishark777.com/post/you-dont-have-to-be-an-expert-to-solve-big-problems/</link>
+      <link>/post/you-dont-have-to-be-an-expert-to-solve-big-problems/</link>
       <pubDate>Wed, 28 Feb 2018 19:15:02 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/you-dont-have-to-be-an-expert-to-solve-big-problems/</guid>
+      <guid>/post/you-dont-have-to-be-an-expert-to-solve-big-problems/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/tapiwa_chiwewe_you_don_t_have_to_be_an_expert_to_solve_big_problems&#34;&gt;Tapiwa Chiwewe at TED@IBM You don&amp;rsquo;t have to be an expert to solve big problems&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这个小哥就很酷了
@@ -397,20 +397,20 @@ Glide这么美好的库为什么上学期没发现
     
     <item>
       <title>LruCache</title>
-      <link>https://hishark777.com/post/lrucache/</link>
+      <link>/post/lrucache/</link>
       <pubDate>Sat, 30 Dec 2017 21:28:47 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/lrucache/</guid>
+      <guid>/post/lrucache/</guid>
       <description>&lt;p&gt;一直拖着图片缓存的小视频没看今天看了一哈
 梳理一下&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Why I&#39;m a weekday vegetarian</title>
-      <link>https://hishark777.com/post/why-i-m-a-weekday-vegetarian/</link>
+      <link>/post/why-i-m-a-weekday-vegetarian/</link>
       <pubDate>Sun, 24 Dec 2017 21:20:04 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/why-i-m-a-weekday-vegetarian/</guid>
+      <guid>/post/why-i-m-a-weekday-vegetarian/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/graham_hill_weekday_vegetarian/transcript?referrer=playlist-short_talks_to_watch_during_yo#t-223126&#34;&gt;Graham Hill at TED2010 &amp;ndash; Why I&amp;rsquo;m a weekday vegetarian&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;哇这篇真的听的很糟糕
@@ -422,10 +422,10 @@ Glide这么美好的库为什么上学期没发现
     
     <item>
       <title>Try something new for 30 days</title>
-      <link>https://hishark777.com/post/try-sth-new-for-30-days/</link>
+      <link>/post/try-sth-new-for-30-days/</link>
       <pubDate>Sat, 23 Dec 2017 01:46:02 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/try-sth-new-for-30-days/</guid>
+      <guid>/post/try-sth-new-for-30-days/</guid>
       <description>&lt;h4 id=&#34;link&#34;&gt;LINK&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.ted.com/talks/matt_cutts_try_something_new_for_30_days&#34;&gt;Matt Cutts at TED2011 &amp;ndash; Try something new for 30 days&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;就很喜欢这个胖子

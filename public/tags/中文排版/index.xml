@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>中文排版 on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/</link>
+    <link>/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/</link>
     <description>Recent content in 中文排版 on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Oct 2020 18:18:26 +0800</lastBuildDate><atom:link href="https://hishark777.com/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Oct 2020 18:18:26 +0800</lastBuildDate><atom:link href="/tags/%E4%B8%AD%E6%96%87%E6%8E%92%E7%89%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中英文空格使用指北</title>
-      <link>https://hishark777.com/post/chinese-copywriting/</link>
+      <link>/post/chinese-copywriting/</link>
       <pubDate>Tue, 27 Oct 2020 18:18:26 +0800</pubDate>
       
-      <guid>https://hishark777.com/post/chinese-copywriting/</guid>
+      <guid>/post/chinese-copywriting/</guid>
       <description>1. 前言 前阵子逛 Github 看到了一个有意思的库：中文文案排版指北，然后发现中文和英文之间加上空格好像是要更赏心悦目一些。 有研究顯示，打字的時候不喜歡在中文和英文之間加空格的人，感情路都走得很辛苦，有七成的比例會</description>
     </item>
     

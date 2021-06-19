@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep Learning on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/tags/deep-learning/</link>
+    <link>/tags/deep-learning/</link>
     <description>Recent content in Deep Learning on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 30 Jul 2018 20:39:20 +0000</lastBuildDate><atom:link href="https://hishark777.com/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jul 2018 20:39:20 +0000</lastBuildDate><atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Neural Networks Basics</title>
-      <link>https://hishark777.com/post/neural-networks-basics/</link>
+      <link>/post/neural-networks-basics/</link>
       <pubDate>Mon, 30 Jul 2018 20:39:20 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/neural-networks-basics/</guid>
+      <guid>/post/neural-networks-basics/</guid>
       <description>&lt;p&gt;deadline是第一生产力*(੭*ˊᵕˋ)੭*ଘ&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introduction to Deep Learning</title>
-      <link>https://hishark777.com/post/introduction-to-deep-learning/</link>
+      <link>/post/introduction-to-deep-learning/</link>
       <pubDate>Fri, 20 Jul 2018 15:42:35 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/introduction-to-deep-learning/</guid>
+      <guid>/post/introduction-to-deep-learning/</guid>
       <description>&lt;p&gt;暑假好忙啊又要复习又要自学新东西OTZ
 btw Ng讲话真的好温柔啊哈哈哈&lt;/p&gt;</description>
     </item>

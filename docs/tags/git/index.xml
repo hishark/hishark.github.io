@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on ᐕ)୨ 乾杯</title>
-    <link>https://hishark777.com/tags/git/</link>
+    <link>/tags/git/</link>
     <description>Recent content in git on ᐕ)୨ 乾杯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 23 Nov 2019 09:29:24 +0000</lastBuildDate><atom:link href="https://hishark777.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Nov 2019 09:29:24 +0000</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在同一台电脑上绑定 Github 和阿里云 Code</title>
-      <link>https://hishark777.com/post/git_ssh/</link>
+      <link>/post/git_ssh/</link>
       <pubDate>Sat, 23 Nov 2019 09:29:24 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/git_ssh/</guid>
+      <guid>/post/git_ssh/</guid>
       <description>&lt;p&gt;老板昨天扔了个阿里云code的项目，电脑之前已经绑定了Github的账号，于是查了一下如何在同一台电脑上绑定两个账号，存档记录一下。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>eclipse连接github踩坑</title>
-      <link>https://hishark777.com/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</link>
+      <link>/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</link>
       <pubDate>Fri, 06 Apr 2018 10:35:11 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</guid>
+      <guid>/post/eclipse%E8%BF%9E%E6%8E%A5github%E8%B8%A9%E5%9D%91/</guid>
       <description>从github上push下来的时候项目出现红叉叉。解决方法 无法pull。解决方法</description>
     </item>
     
     <item>
       <title>AS - Github 踩坑</title>
-      <link>https://hishark777.com/post/as-github%E8%B8%A9%E5%9D%91/</link>
+      <link>/post/as-github%E8%B8%A9%E5%9D%91/</link>
       <pubDate>Sun, 18 Mar 2018 20:14:40 +0000</pubDate>
       
-      <guid>https://hishark777.com/post/as-github%E8%B8%A9%E5%9D%91/</guid>
+      <guid>/post/as-github%E8%B8%A9%E5%9D%91/</guid>
       <description>&lt;p&gt;踩了一点坑记一下&lt;/p&gt;</description>
     </item>
     
