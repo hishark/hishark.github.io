@@ -8,17 +8,17 @@
     {
       "name": "twitter",
       "url": "https://twitter.com/hishark777",
-      "image": "images/social/twitter.svg"
+      "image": "images/social/twitter2.svg"
     },
     {
       "name": "weibo",
       "url": "https://weibo.com/hishark777",
-      "image": "images/social/weibo.svg"
+      "image": "images/social/weibo2.svg"
     },
     {
       "name": "ins",
       "url": "https://www.instagram.com/hishark777",
-      "image": "images/social/ins.svg"
+      "image": "images/social/instagram.svg"
     },
     {
       "name": "douban",
@@ -28,7 +28,7 @@
     {
       "name": "bilibili",
       "url": "https://space.bilibili.com/167148/#/channel/detail?cid=55848",
-      "image": "images/social/bilibili.svg"
+      "image": "images/social/bili.svg"
     },
     {
       "name": "music",
@@ -38,12 +38,12 @@
     {
       "name": "github",
       "url": "https://github.com/hishark",
-      "image": "images/social/github.svg"
+      "image": "images/social/git2.svg"
     },
     {
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/zhangxiaoqi/",
-      "image": "images/social/linkedin.svg"
+      "image": "images/social/linked.svg"
     },
     {
       "name": "mail",
