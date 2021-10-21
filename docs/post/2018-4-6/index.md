@@ -1,4 +1,0 @@
-
-在知乎F12一下发现了这个，太可爱了哈哈
-
-![](https://ws1.sinaimg.cn/large/0068SXX6gy1fq2uyd42yoj30j809i0t5.jpg)
