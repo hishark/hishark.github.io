@@ -11,6 +11,16 @@
       "image": "images/social/twitter2.svg"
     },
     {
+      "name": "github",
+      "url": "https://github.com/hishark",
+      "image": "images/social/git2.svg"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/zhangxiaoqi/",
+      "image": "images/social/linked.svg"
+    },
+    {
       "name": "weibo",
       "url": "https://weibo.com/hishark777",
       "image": "images/social/weibo2.svg"
@@ -34,16 +44,6 @@
       "name": "music",
       "url": "http://music.163.com/#/user/home?id=97746388",
       "image": "images/social/neteasemusic.svg"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/hishark",
-      "image": "images/social/git2.svg"
-    },
-    {
-      "name": "linkedin",
-      "url": "https://www.linkedin.com/in/zhangxiaoqi/",
-      "image": "images/social/linked.svg"
     },
     {
       "name": "mail",
