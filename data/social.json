@@ -1,9 +1,39 @@
 {
   "links": [
     {
+      "name": "telegram",
+      "url": "https://t.me/hishark777",
+      "image": "images/social/telegram.svg"
+    },
+    {
       "name": "twitter",
       "url": "https://twitter.com/hishark777",
       "image": "images/social/twitter.svg"
+    },
+    {
+      "name": "weibo",
+      "url": "https://weibo.com/hishark777",
+      "image": "images/social/weibo.svg"
+    },
+    {
+      "name": "ins",
+      "url": "https://www.instagram.com/hishark777",
+      "image": "images/social/ins.svg"
+    },
+    {
+      "name": "douban",
+      "url": "https://www.douban.com/people/hishark/",
+      "image": "images/social/douban.svg"
+    },
+    {
+      "name": "bilibili",
+      "url": "https://space.bilibili.com/167148/#/channel/detail?cid=55848",
+      "image": "images/social/bilibili.svg"
+    },
+    {
+      "name": "music",
+      "url": "http://music.163.com/#/user/home?id=97746388",
+      "image": "images/social/neteasemusic.svg"
     },
     {
       "name": "github",
@@ -14,6 +44,11 @@
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/zhangxiaoqi/",
       "image": "images/social/linkedin.svg"
+    },
+    {
+      "name": "mail",
+      "url": "mailto:hishark777@gmail.com",
+      "image": "images/social/mail.svg"
     }
   ]
 }

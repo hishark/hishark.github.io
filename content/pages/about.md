@@ -3,6 +3,6 @@ title: 'About'
 image: 
 menu:
   main:
-    name: "About"
+    name: "ABOUT"
 ---
 TBC.
