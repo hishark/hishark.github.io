@@ -6,6 +6,11 @@
       "image": "images/social/telegram.svg"
     },
     {
+      "name": "wechat",
+      "url": "https://i.loli.net/2021/10/30/VEjiWrBKZ7NAOf4.jpg",
+      "image": "images/social/wechat.svg"
+    },
+    {
       "name": "twitter",
       "url": "https://twitter.com/hishark777",
       "image": "images/social/twitter2.svg"
@@ -34,6 +39,11 @@
       "name": "douban",
       "url": "https://www.douban.com/people/hishark/",
       "image": "images/social/douban.svg"
+    },
+    {
+      "name": "zhihu",
+      "url": "https://www.zhihu.com/people/hishark777/",
+      "image": "images/social/zhihu.svg"
     },
     {
       "name": "bilibili",
