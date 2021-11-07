@@ -21,6 +21,11 @@
       "image": "images/social/git2.svg"
     },
     {
+      "name": "medium",
+      "url": "https://hishark777.medium.com/",
+      "image": "images/social/medium.svg"
+    },
+    {
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/zhangxiaoqi/",
       "image": "images/social/linked.svg"
