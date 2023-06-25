@@ -7,14 +7,14 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Sun, 25 Jun 2023 22:32:00 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>New Start</title>
-        <link>https://example.com/p/new-start/</link>
+        <title>Hello World</title>
+        <link>https://example.com/p/hello-world/</link>
         <pubDate>Sun, 25 Jun 2023 22:32:00 +0800</pubDate>
         
-        <guid>https://example.com/p/new-start/</guid>
+        <guid>https://example.com/p/hello-world/</guid>
         <description>&lt;h1 id=&#34;bong&#34;&gt;Bong&lt;/h1&gt;
 &lt;blockquote&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;A famous person, &lt;/span&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Book&#34;&gt;&lt;cite&gt;The book they wrote&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+    &lt;p&gt;Make some changes.&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
